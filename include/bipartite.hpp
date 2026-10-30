@@ -1,5 +1,5 @@
 #pragma once
-#include <vector>
+#include "vector.hpp"
 #include <unordered_map> //for now until we implement our own hashmap
 
 struct Edge {
@@ -14,8 +14,8 @@ class BipartiteGraph{
         void add_node(T item, bool is_set1);
         void add_edge(T set1, T set2, double weight = 1.0);
 
-        std::vector<std::pair<T, T>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
-        std::vector<std::pair<T, T>> get_max_weight_matching(); //returns result of Hungarian algorithm
+        Vector<std::pair<T, T>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
+        Vector<std::pair<T, T>> get_max_weight_matching(); //returns result of Hungarian algorithm
         void debug_print(); // Testing the graph (Function made by AI)
 
     private:
@@ -23,13 +23,13 @@ class BipartiteGraph{
         int num_set2; // Number of internships for example
         std::unordered_map<T, int> set1_ids; // Name to ID
         std::unordered_map<T, int> set2_ids;
-        std::vector<T> id_to_set1; // ID to Name (reverse map)
-        std::vector<T> id_to_set2;
+        Vector<T> id_to_set1; // ID to Name (reverse map)
+        Vector<T> id_to_set2;
 
-        std::vector<std::vector<Edge>> adj_list; //for Hopcroft-Karp
-        std::vector<int> match_set1,match_set2,dist;
+        Vector<Vector<Edge>> adj_list; //for Hopcroft-Karp
+        Vector<int> match_set1,match_set2,dist;
 
-        std::vector<std::vector<double>> cost_matrix; //for Hungarian algorithm
+        Vector<Vector<double>> cost_matrix; //for Hungarian algorithm
 
         bool hk_bfs();
         bool hk_dfs(int set1_id);
@@ -93,7 +93,7 @@ template<class T>
 void BipartiteGraph<T>::prepare_hungarian_matrix() {
     int K = std::max(num_set1, num_set2);
 
-    cost_matrix.assign(K, std::vector<double>(K, 0.0));
+    cost_matrix.assign(K, Vector<double>(K, 0.0));
 
     for (int i = 0; i < num_set1; ++i) {
         for (const Edge& edge : adj_list[i]) {
@@ -109,12 +109,12 @@ void BipartiteGraph<T>::solve_hungarian() {
     //TODO
 }
 template<class T>
-std::vector<std::pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
+Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
     //TODO
 }
 
 template<class T>
-std::vector<std::pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
+Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
     //TODO
 }
 
