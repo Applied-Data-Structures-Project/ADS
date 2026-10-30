@@ -5,8 +5,17 @@
 #include <string>
 #include <utility>
 using namespace std;
+//// HashMap
+// This is our hash map and  It stores pairs like
+// "Bob" -> 1, where the key is always a string and the value can be any type as we made it a template.
+//
+// Inside, it's an array of boxes. Each key goes in box hash(key) % capacity,
+// and if two keys land in the same box they share a linked list there.
+// When the table gets more than 75% full, it doubles and moves everything over.
+//
+// In our project we use it for things like student name -> ID or one to many relationships like student name -> list of courses, so the graph can find anyone by name quickly.
+// so the graph can find anyone by name quickly.
 
-//  we used  separate chaining: an array of boxes, each box is a linked list.
 template <typename Value>
 class HashMap {
 public:
