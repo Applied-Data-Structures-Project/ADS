@@ -18,6 +18,54 @@ HashMap<Value>::HashMap(int cap) : capacity(cap), count(0)
 }
 
 template <typename Value>
+HashMap<Value>::HashMap(const HashMap& other)
+    : table(nullptr), capacity(other.capacity), count(0)
+{
+    table = new HashNode *[capacity]();
+    try
+    {
+        for (int i = 0; i < capacity; i++)
+        {
+            HashNode** tail = &table[i];
+            for (HashNode* current = other.table[i]; current != nullptr; current = current->next)
+            {
+                *tail = new HashNode(current->key, current->value);
+                tail = &((*tail)->next);
+                count++;
+            }
+        }
+    }
+    catch (...)
+    {
+        for (int i = 0; i < capacity; i++)
+        {
+            HashNode* current = table[i];
+            while (current != nullptr)
+            {
+                HashNode* next = current->next;
+                delete current;
+                current = next;
+            }
+        }
+        delete[] table;
+        throw;
+    }
+}
+
+template <typename Value>
+HashMap<Value>& HashMap<Value>::operator=(const HashMap& other)
+{
+    if (this != &other)
+    {
+        HashMap copy(other);
+        std::swap(table, copy.table);
+        std::swap(capacity, copy.capacity);
+        std::swap(count, copy.count);
+    }
+    return *this;
+}
+
+template <typename Value>
 HashMap<Value>::~HashMap()
 {
     for (int i = 0; i < capacity; i++)
@@ -83,12 +131,12 @@ void HashMap<Value>::insert(const string &key, const Value &value)
 
     if (table[index] == nullptr)
     {
-        // slot is empty so the new node is the first one
+       
         table[index] = newNode;
     }
     else
     {
-        // slot already has nodes so put the new node at the front
+        
         newNode->next = table[index];
         table[index] = newNode;
     }
@@ -114,10 +162,10 @@ void HashMap<Value>::rehash()
         while (current != nullptr)
         {
             HashNode *nextNode = current->next; // save next first
-            int newIndex = hash(current->key);  // new slot (uses new capacity)
+            int newIndex = hash(current->key);  
             current->next = table[newIndex];    // put it at the front
             table[newIndex] = current;
-            current = nextNode;
+            current = nextNode; 
         }
     }
     delete[] oldTable; // free the old table
@@ -175,21 +223,20 @@ double HashMap<Value>::loadFactor() const
 {
     return static_cast<double>(count) / capacity;
 }
- template <typename Value>
- template <typename Func>
+template <typename Value>
+template <typename Func>
 void HashMap<Value>::forEach(Func visit) const
 {
-    for (int i = 0; i < capacity; i++)   // every box, including empty ones
+    for (int i = 0; i < capacity; i++)
     {
         HashNode *current = table[i];
-        while (current != nullptr)       // every node in this box's list
+        while (current != nullptr)
         {
             visit(current->key, current->value);
             current = current->next;
         }
     }
 }
-
 template <typename Value>
 void HashMap<Value>::printTable() const
 {
@@ -212,5 +259,5 @@ void HashMap<Value>::printTable() const
         }
         cout << endl;
     }
-} // for testing
+} // for testing 
 #endif

@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <utility>
 using namespace std;
 
 //  we used  separate chaining: an array of boxes, each box is a linked list.
@@ -13,8 +14,8 @@ public:
     ~HashMap();              // frees all nodes and the table
 
 
-    HashMap(const HashMap& other) = delete;
-    HashMap& operator=(const HashMap& other) = delete;
+    HashMap(const HashMap& other);
+    HashMap& operator=(const HashMap& other);
 
     bool search(const string& key) const;                 // true if key is found
     void insert(const string& key, const Value& value);  // add key, or update its value
