@@ -82,7 +82,7 @@ int HashMap<Value>::hash(const string &key) const
     unsigned long hash_value = 0; // did it unsigned so that we dont go negative
     for (char c : key)
     {
-        hash_value = (hash_value * 31) + static_cast<unsigned char>(c); // used 31 because it is a prime number and helps in reducing collisions
+        hash_value = (hash_value * 31) + static_cast<unsigned char>(c); // used 31 because it is a prime number and keeping each linked list short so lookups stay toward O(1)
     }
     return hash_value % capacity;
 }

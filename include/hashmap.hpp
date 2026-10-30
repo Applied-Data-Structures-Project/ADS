@@ -13,7 +13,7 @@ using namespace std;
 // and if two keys land in the same box they share a linked list there.
 // When the table gets more than 75% full, it doubles and moves everything over.
 //
-// In our project we use it for things like student name -> ID or one to many relationships like student name -> list of courses, so the graph can find anyone by name quickly.
+// In our project we use it for things like student name -> ID.
 // so the graph can find anyone by name quickly.
 
 template <typename Value>
@@ -46,10 +46,10 @@ private:
     };
 
     HashNode** table;   // array of boxes; each box points to the first node of its list
-    int capacity;       // number of boxes in the table (doubles on rehash)
+    int capacity;       // number of boxes in the table
     int count;          // number of keys stored
 
-    int hash(const string& key) const;   // key -> box number
+    int hash(const string& key) const;
     void rehash();                       // doubles the table and moves every node
 };
 
