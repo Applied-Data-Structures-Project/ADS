@@ -22,8 +22,8 @@ HashMap<Value>::HashMap(const HashMap& other)
     : table(nullptr), capacity(other.capacity), count(0)
 {
     table = new HashNode *[capacity]();
-    try
-    {
+
+
         for (int i = 0; i < capacity; i++)
         {
             HashNode** tail = &table[i];
@@ -34,22 +34,8 @@ HashMap<Value>::HashMap(const HashMap& other)
                 count++;
             }
         }
-    }
-    catch (...)
-    {
-        for (int i = 0; i < capacity; i++)
-        {
-            HashNode* current = table[i];
-            while (current != nullptr)
-            {
-                HashNode* next = current->next;
-                delete current;
-                current = next;
-            }
-        }
-        delete[] table;
-        throw;
-    }
+
+
 }
 
 template <typename Value>
@@ -58,9 +44,19 @@ HashMap<Value>& HashMap<Value>::operator=(const HashMap& other)
     if (this != &other)
     {
         HashMap copy(other);
-        std::swap(table, copy.table);
-        std::swap(capacity, copy.capacity);
-        std::swap(count, copy.count);
+
+
+        HashNode **tempTable = table;
+        table = copy.table;
+        copy.table = tempTable;
+
+        int tempCapacity = capacity;
+        capacity = copy.capacity;
+        copy.capacity = tempCapacity;
+
+        int tempCount = count;
+        count = copy.count;
+        copy.count = tempCount;
     }
     return *this;
 }
