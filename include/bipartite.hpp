@@ -1,6 +1,6 @@
 #pragma once
 #include "vector.hpp"
-#include <unordered_map> //for now until we implement our own hashmap
+#include "hashmap.hpp" //for now until we implement our own hashmap
 
 struct Edge {
     int to;
@@ -21,8 +21,8 @@ class BipartiteGraph{
     private:
         int num_set1; // Number of students for example
         int num_set2; // Number of internships for example
-        std::unordered_map<T, int> set1_ids; // Name to ID
-        std::unordered_map<T, int> set2_ids;
+        HashMap<T, int> set1_ids; // Name to ID
+        HashMap<T, int> set2_ids;
         Vector<T> id_to_set1; // ID to Name (reverse map)
         Vector<T> id_to_set2;
 

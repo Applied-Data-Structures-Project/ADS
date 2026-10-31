@@ -26,7 +26,7 @@ int main() {
     cout << "=== HASHMAP DEBUG INFO ===\n";
 
     // --- insert ---
-    HashMap<int> ids;   // student name -> student ID
+    HashMap<string,int> ids;   // student name -> student ID
     ids.insert("Alice", 0);
     ids.insert("Bob", 1);
     ids.insert("Charlie", 2);
@@ -75,7 +75,7 @@ int main() {
 
     
     cout << "\n--- REHASH (start with 2 boxes, insert 20 keys) ---\n";
-    HashMap<int> big(2);
+    HashMap<string,int> big(2);
     for (int i = 0; i < 20; i++) {
         big.insert("student" + to_string(i), i);
     }
