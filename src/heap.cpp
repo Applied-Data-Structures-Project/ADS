@@ -1,5 +1,5 @@
 #include <iostream>
-#include "heap.h"
+#include "include/heap.hpp"
 
 // example record: a possible match with a compatibility score
 struct Match {

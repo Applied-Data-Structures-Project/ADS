@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include "bipartite.hpp"
-#include "hashmap.hpp"
+#include "include/hashmap.hpp"
 
 int main() {
     BipartiteGraph<std::string> graph;
