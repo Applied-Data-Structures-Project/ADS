@@ -1,11 +1,18 @@
 #pragma once
 #include <iostream>
-#include <utility>
 #include <algorithm>
 #include <limits>
-#include <cmath>
 #include "vector.hpp"
 #include "hashmap.hpp" //for now until we implement our own hashmap
+
+// implemented our own pair struct so we can avoid stl
+template<class U, class V>
+struct Pair {
+    U first;
+    V second;
+    Pair() : first(), second() {}
+    Pair(const U& f, const V& s) : first(f), second(s) {}
+};
 
 struct Edge {
     int to;
@@ -19,9 +26,9 @@ class BipartiteGraph{
         void add_node(T item, bool is_set1);
         void add_edge(T set1, T set2, double weight = 1.0);
 
-        Vector<std::pair<T, T>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
-        Vector<std::pair<T, T>> get_max_weight_matching(); //returns result of Hungarian algorithm
-        Vector<std::pair<T, T>> get_max_weight_matching_jv(); //returns result of Jonker-Volgenant algorithm
+        Vector<Pair<T, T>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
+        Vector<Pair<T, T>> get_max_weight_matching(); //returns result of Hungarian algorithm
+        Vector<Pair<T, T>> get_max_weight_matching_jv(); //returns result of Jonker-Volgenant algorithm
         void debug_print(); // Testing the graph (Function made by AI)
 
     private:
@@ -385,14 +392,14 @@ void BipartiteGraph<T>::solve_jonker_volgenant() {
 }
 
 template<class T>
-Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
+Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
     //TODO
-    return Vector<std::pair<T, T>>();
+    return Vector<Pair<T, T>>();
 }
 
 template<class T>
-Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
-    Vector<std::pair<T, T>> result;
+Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
+    Vector<Pair<T, T>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
     prepare_hungarian_matrix();
@@ -420,8 +427,8 @@ Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
 
 //exact same as other one just runs jv not hungarian
 template<class T>
-Vector<std::pair<T, T>> BipartiteGraph<T>::get_max_weight_matching_jv() {
-    Vector<std::pair<T, T>> result;
+Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching_jv() {
+    Vector<Pair<T, T>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
     prepare_hungarian_matrix();
