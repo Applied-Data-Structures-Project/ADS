@@ -33,8 +33,8 @@ public:
     const T& operator[](const int& idx) const;
     T& at(const int& idx);
 
-    int size();
-    int capacity();
+    int size() const;
+    int capacity() const;
     void erase();
     void reserve(const int& new_cap);
     void resize(const int& size);
@@ -87,6 +87,7 @@ int Vector<T>::capacity() {
 template<class T>
 void Vector<T>::erase() {
     for (int i=0; i<s; ++i) arr[i] = T();
+    s = 0;
 }
 
 template<class T>
