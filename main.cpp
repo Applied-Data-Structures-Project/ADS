@@ -21,6 +21,8 @@ int main() {
 
     std::cout << "\nPhase 1: Verification after edge insertion\n";
     graph.debug_print();
+
+
     /// ================= Testing the HashMap =================
     cout << "\nPhase 2: HashMap verification\n";
     cout << "=== HASHMAP DEBUG INFO ===\n";
@@ -91,5 +93,15 @@ int main() {
 
     cout << "==========================\n";
 
+
+    //Testing the Hopcroft-Karp algorithm
+    std::cout << "\nPhase 3: Hopcroft-Karp algorithm\n";
+
+    Vector<Pair<std::string, std::string>> m = graph.get_max_cardinality_matching();
+
+    std::cout << "Matching size: " << m.size()<< "\n";
+    for (int i = 0; i < m.size(); ++i) {
+        std::cout << m[i].first << " <-> " << m[i].second << "\n";
+    }
     return 0;
 }

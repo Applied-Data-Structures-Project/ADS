@@ -34,6 +34,7 @@ class BipartiteGraph{
     private:
         int num_set1; // Number of students for example
         int num_set2; // Number of internships for example
+        enum { HK_INF = 1000000000 }; // "infinite" distance for Hopcroft-Karp layers
         HashMap<T, int> set1_ids; // Name to ID
         HashMap<T, int> set2_ids;
         Vector<T> id_to_set1; // ID to Name (reverse map)
@@ -95,14 +96,92 @@ void BipartiteGraph<T>::add_edge(T set1, T set2, double weight){
 
 template<class T>
 bool BipartiteGraph<T>::hk_bfs(){
-    //TODO
-    return false;
+    dist.assign(num_set1, HK_INF);
+
+    // Queue implemented with a Vector and a head index (no std::queue)
+    Vector<int> queue;
+    int head = 0;
+
+    // Every free set1 node starts at layer 0
+    for (int u = 0; u < num_set1; ++u) {
+        if (match_set1[u] == -1) {
+            dist[u] = 0;
+            queue.push_back(u);
+        }
+    }
+
+    int shortest = HK_INF; // layer of the first free set2 node we reach
+    bool found = false;
+
+    while (head < (int)queue.size()) {
+        int u = queue[head++];
+
+        // Nodes deeper than the shortest augmenting path are useless
+        if (dist[u] >= shortest) continue;
+
+        for (int k = 0; k < (int)adj_list[u].size(); ++k) {
+            int v = adj_list[u][k].to;
+            int w = match_set2[v]; // set1 node currently matched to v
+
+            if (w == -1) {
+                // v is free -> augmenting path ends here
+                found = true;
+                shortest = dist[u] + 1;
+            } else if (dist[w] == HK_INF) {
+                // first time reaching w: place it in the next layer
+                dist[w] = dist[u] + 1;
+                queue.push_back(w);
+            }
+        }
+    }
+    return found;
 }
 
 template<class T>
 bool BipartiteGraph<T>::hk_dfs(int set1_id){
-    //TODO
+    for (int k = 0; k < (int)adj_list[set1_id].size(); ++k) {
+        int v = adj_list[set1_id][k].to;
+        int w = match_set2[v];
+
+        // Case 1: v is free -> path ends here.
+        // Case 2: v is matched to w in the next layer and w can be re-routed.
+        if (w == -1 || (dist[w] == dist[set1_id] + 1 && hk_dfs(w))) {
+            match_set1[set1_id] = v;
+            match_set2[v] = set1_id;
+            return true;
+        }
+    }
+
+    // Dead end: remove this node from the layered graph for this phase
+    dist[set1_id] = HK_INF;
     return false;
+}
+
+template<class T>
+Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
+    Vector<Pair<T, T>> result;
+    if (num_set1 == 0 || num_set2 == 0) return result;
+
+    // Start with an empty matching (-1 = unmatched)
+    match_set1.assign(num_set1, -1);
+    match_set2.assign(num_set2, -1);
+
+    // Each successful BFS means at least one more augmentation is possible
+    while (hk_bfs()) {
+        for (int u = 0; u < num_set1; ++u) {
+            if (match_set1[u] == -1) {
+                hk_dfs(u);
+            }
+        }
+    }
+
+    // Convert internal ids back to the user's items
+    for (int u = 0; u < num_set1; ++u) {
+        if (match_set1[u] != -1) {
+            result.push_back({id_to_set1[u], id_to_set2[match_set1[u]]});
+        }
+    }
+    return result;
 }
 
 template<class T>
@@ -389,12 +468,6 @@ void BipartiteGraph<T>::solve_jonker_volgenant() {
             j = next_j;
         } while (i != free_row);
     }
-}
-
-template<class T>
-Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
-    //TODO
-    return Vector<Pair<T, T>>();
 }
 
 template<class T>
