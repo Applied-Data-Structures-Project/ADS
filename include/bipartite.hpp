@@ -20,26 +20,28 @@ struct Edge {
     double weight;
 };
 
-template<class T>
+template<class T1,class T2>
 class BipartiteGraph{
     public:
         BipartiteGraph();
-        void add_node(T item, bool is_set1);
-        void add_edge(T set1, T set2, double weight = 1.0);
+        void add_edge(T1 set1_item, T2 set2_item, double weight = 1.0);
 
-        Vector<Pair<T, T>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
-        Vector<Pair<T, T>> get_max_weight_matching(); //returns result of Hungarian algorithm
-        Vector<Pair<T, T>> get_max_weight_matching_jv(); //returns result of Jonker-Volgenant algorithm
+        Vector<Pair<T1, T2>> get_max_cardinality_matching(); //returns result of Hopcroft-Karp
+        Vector<Pair<T1,T2>> get_max_weight_matching(); //returns result of Hungarian algorithm
+        Vector<Pair<T1,T2>> get_max_weight_matching_jv(); //returns result of Jonker-Volgenant algorithm
         void debug_print(); // Testing the graph (Function made by AI)
 
     private:
+        void add_node_set1(T1 item);
+        void add_node_set2(T2 item);
+
         int num_set1; // Number of students for example
         int num_set2; // Number of internships for example
         enum { HK_INF = 1000000000 }; // "infinite" distance for Hopcroft-Karp layers
-        HashMap<T, int> set1_ids; // Name to ID
-        HashMap<T, int> set2_ids;
-        Vector<T> id_to_set1; // ID to Name (reverse map)
-        Vector<T> id_to_set2;
+        HashMap<T1, int> set1_ids; // Name to ID
+        HashMap<T2, int> set2_ids;
+        Vector<T1> id_to_set1; // ID to Name (reverse map)
+        Vector<T2> id_to_set2;
 
         Vector<Vector<Edge>> adj_list; //for Hopcroft-Karp
         Vector<int> match_set1,match_set2,dist;
@@ -55,48 +57,49 @@ class BipartiteGraph{
         
 };
 
-template<class T>
-BipartiteGraph<T>::BipartiteGraph(): num_set1(0), num_set2(0){}
+template<class T1,class T2>
+BipartiteGraph<T1,T2>::BipartiteGraph(): num_set1(0), num_set2(0){}
 
-template<class T>
-void BipartiteGraph<T>::add_node(T item, bool is_set1){
-    if(is_set1){
-        set1_ids[item] = num_set1;
-        if (num_set1 >= id_to_set1.size()) {
-            id_to_set1.resize(num_set1 + 1);
-        }
-        id_to_set1[num_set1++] = item;
-        adj_list.resize(num_set1);
-    }else{
-        set2_ids[item] = num_set2;
-        if (num_set2 >= id_to_set2.size()) {
-            id_to_set2.resize(num_set2 + 1);
-        }
-        id_to_set2[num_set2++] = item;
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::add_node_set1(T1 item){
+    set1_ids[item] = num_set1;
+    if (num_set1 >= id_to_set1.size()) {
+        id_to_set1.resize(num_set1 + 1);
     }
+    id_to_set1[num_set1++] = item;
+    adj_list.resize(num_set1);
 }
 
-template<class T>
-void BipartiteGraph<T>::add_edge(T set1, T set2, double weight){
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::add_node_set2(T2 item){
+    set2_ids[item] = num_set2;
+    if (num_set2 >= id_to_set2.size()) {
+        id_to_set2.resize(num_set2 + 1);
+    }
+    id_to_set2[num_set2++] = item;
+}
+
+template<class T1,class T2>
+void BipartiteGraph<T1,T2>::add_edge(T1 set1_item, T2 set2_item, double weight){
     int set1_id, set2_id;
     try {
-        set1_id = set1_ids.at(set1);
+        set1_id = set1_ids.at(set1_item);
     } catch (const std::out_of_range& e) {
-        add_node(set1, true);
-        set1_id = set1_ids.at(set1);
+        add_node_set1(set1_item);
+        set1_id = set1_ids.at(set1_item);
     }
     try {
-        set2_id = set2_ids.at(set2);
+        set2_id = set2_ids.at(set2_item);
     } catch (const std::out_of_range& e) {
-        add_node(set2, false);
-        set2_id = set2_ids.at(set2);
+        add_node_set2(set2_item);
+        set2_id = set2_ids.at(set2_item);
     }
 
     adj_list[set1_id].push_back({set2_id, weight});
 }
 
-template<class T>
-bool BipartiteGraph<T>::hk_bfs(){
+template<class T1,class T2>
+bool BipartiteGraph<T1,T2>::hk_bfs(){
     dist.assign(num_set1, HK_INF);
 
     // Using our custom Queue class instead of Vector + head index
@@ -138,8 +141,8 @@ bool BipartiteGraph<T>::hk_bfs(){
     return found;
 }
 
-template<class T>
-bool BipartiteGraph<T>::hk_dfs(int set1_id){
+template<class T1,class T2>
+bool BipartiteGraph<T1,T2>::hk_dfs(int set1_id){
     for (int k = 0; k < (int)adj_list[set1_id].size(); ++k) {
         int v = adj_list[set1_id][k].to;
         int w = match_set2[v];
@@ -158,9 +161,9 @@ bool BipartiteGraph<T>::hk_dfs(int set1_id){
     return false;
 }
 
-template<class T>
-Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
-    Vector<Pair<T, T>> result;
+template<class T1,class T2>
+Vector<Pair<T1,T2>> BipartiteGraph<T1,T2>::get_max_cardinality_matching() {
+    Vector<Pair<T1, T2>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
     // Reset matching arrays
@@ -204,8 +207,8 @@ Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
     return result;
 }
 
-template<class T>
-void BipartiteGraph<T>::prepare_hungarian_matrix() {
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::prepare_hungarian_matrix() {
     // hungarian works on nxn matrix so we make dummy nodes to balance it
     int K = std::max(num_set1, num_set2);
 
@@ -232,8 +235,8 @@ void BipartiteGraph<T>::prepare_hungarian_matrix() {
     }
 }
 
-template<class T>
-void BipartiteGraph<T>::solve_hungarian() {
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::solve_hungarian() {
     int K = cost_matrix.size();
     if (K == 0) return;
 
@@ -305,8 +308,8 @@ void BipartiteGraph<T>::solve_hungarian() {
 
 // this is a variant algorithm which is industry standard and gives way better average time complexity than hungarian
 // but is a lot longer and more complicated, we can decide whether to keep or not later.
-template<class T>
-void BipartiteGraph<T>::solve_jonker_volgenant() {
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::solve_jonker_volgenant() {
     int K = cost_matrix.size();
     if (K == 0) return;
 
@@ -490,9 +493,9 @@ void BipartiteGraph<T>::solve_jonker_volgenant() {
     }
 }
 
-template<class T>
-Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
-    Vector<Pair<T, T>> result;
+template<class T1,class T2>
+Vector<Pair<T1, T2>> BipartiteGraph<T1, T2>::get_max_weight_matching() {
+    Vector<Pair<T1, T2>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
     prepare_hungarian_matrix();
@@ -519,9 +522,9 @@ Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching() {
 }
 
 //exact same as other one just runs jv not hungarian
-template<class T>
-Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching_jv() {
-    Vector<Pair<T, T>> result;
+template<class T1,class T2>
+Vector<Pair<T1, T2>> BipartiteGraph<T1, T2>::get_max_weight_matching_jv() {
+    Vector<Pair<T1, T2>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
     prepare_hungarian_matrix();
@@ -545,8 +548,8 @@ Vector<Pair<T, T>> BipartiteGraph<T>::get_max_weight_matching_jv() {
     return result;
 }
 
-template<class T>
-void BipartiteGraph<T>::debug_print() {
+template<class T1,class T2>
+void BipartiteGraph<T1, T2>::debug_print() {
     std::cout << "=== GRAPH DEBUG INFO ===\n\n";
 
     std::cout << "--- SET 1 (Students) [" << num_set1 << "] ---\n";

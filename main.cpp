@@ -4,7 +4,7 @@
 #include "include/hashmap.hpp"
 
 int main() {
-    BipartiteGraph<std::string> graph;
+    BipartiteGraph<std::string,std::string> graph;
  //Testing the graph
  
     graph.add_edge("Alice", "Google", 0.95);
