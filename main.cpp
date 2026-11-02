@@ -119,8 +119,7 @@ int main() {
     }
 
     // test hungarian
-    std::cout << "\nPhase 4: Hungarian Algorithm (Max Weight Matching)\n";
-    std::cout << "(Finds optimal pairing using compatibility weights rather than just max count)\n";
+    std::cout << "\nPhase 4: Hungarian Algorithm\n";
     
     Vector<Pair<std::string, std::string>> weighted_m = graph.get_max_weight_matching();
 
