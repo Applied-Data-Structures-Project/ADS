@@ -1,6 +1,8 @@
 #ifndef HASHMAP_HPP
 #define HASHMAP_HPP
-
+#include <iostream>
+#include <functional>
+#include <string>
 #include <stdexcept>
 using namespace std;
 //// HashMap
@@ -74,21 +76,31 @@ template <typename Index,typename Value>
 HashMap<Index,Value>::HashMap(const HashMap& other)
     : table(nullptr), capacity(other.capacity), count(0)
 {
-    table = new HashNode *[capacity]();
+    table = new HashNode *[capacity](); // new empty boxes, same size as other
 
+    for (int i = 0; i < capacity; i++)
+    {
+        HashNode *last = nullptr; // last node we copied into this box
 
-        for (int i = 0; i < capacity; i++)
-        {
-            HashNode** tail = &table[i];
-            for (HashNode* current = other.table[i]; current != nullptr; current = current->next)
+            HashNode *current = other.table[i];
+            while (current != nullptr)
             {
-                *tail = new HashNode(current->key, current->value);
-                tail = &((*tail)->next);
-                count++;
+                HashNode *newNode = new HashNode(current->key, current->value);
+
+            if (last == nullptr)
+            {
+                table[i] = newNode;     // first node: attach it to the box
             }
+            else
+            {
+                last->next = newNode;   // later nodes: attach after the last one (keeps the same order)
+            }
+            last = newNode;
+            count++;
+
+            current = current->next;
         }
-
-
+    }
 }
 
 template <typename Index,typename Value>
@@ -151,7 +163,7 @@ HashMap<Index,Value>::~HashMap()
 template <typename Index,typename Value>
 int HashMap<Index,Value>::hash(const Index &key) const
 {
-    unsigned long hash_value = std::hash<Index>{}(key); // did it unsigned so that we dont go negative
+    unsigned long hash_value = std::hash<Index>{}(key);
     return hash_value % capacity;
 }
 
@@ -339,7 +351,7 @@ void HashMap<Index,Value>::forEach(Func visit) const
 {
     for (int i = 0; i < capacity; i++)
     {
-        HashNode *current = table[i];
+        const HashNode *current = table[i];
         while (current != nullptr)
         {
             visit(current->key, current->value);
