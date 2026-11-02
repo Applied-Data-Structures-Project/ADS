@@ -4,6 +4,7 @@
 #include <limits>
 #include "vector.hpp"
 #include "hashmap.hpp" //for now until we implement our own hashmap
+#include "queue.hpp"
 
 // implemented our own pair struct so we can avoid stl
 template<class U, class V>
@@ -98,23 +99,23 @@ template<class T>
 bool BipartiteGraph<T>::hk_bfs(){
     dist.assign(num_set1, HK_INF);
 
-    // Queue implemented with a Vector and a head index (no std::queue)
-    Vector<int> queue;
-    int head = 0;
+    // Using our custom Queue class instead of Vector + head index
+    Queue<int> queue;
 
     // Every free set1 node starts at layer 0
     for (int u = 0; u < num_set1; ++u) {
         if (match_set1[u] == -1) {
             dist[u] = 0;
-            queue.push_back(u);
+            queue.push(u); // push into Queue
         }
     }
 
     int shortest = HK_INF; // layer of the first free set2 node we reach
     bool found = false;
 
-    while (head < (int)queue.size()) {
-        int u = queue[head++];
+    while (!queue.empty()) {
+        int u = queue.front(); // get item at front of queue
+        queue.pop();           // remove front item
 
         // Nodes deeper than the shortest augmenting path are useless
         if (dist[u] >= shortest) continue;
@@ -130,7 +131,7 @@ bool BipartiteGraph<T>::hk_bfs(){
             } else if (dist[w] == HK_INF) {
                 // first time reaching w: place it in the next layer
                 dist[w] = dist[u] + 1;
-                queue.push_back(w);
+                queue.push(w); // push into Queue
             }
         }
     }
@@ -162,11 +163,30 @@ Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
     Vector<Pair<T, T>> result;
     if (num_set1 == 0 || num_set2 == 0) return result;
 
-    // Start with an empty matching (-1 = unmatched)
+    // Reset matching arrays
     match_set1.assign(num_set1, -1);
     match_set2.assign(num_set2, -1);
 
-    // Each successful BFS means at least one more augmentation is possible
+    // ==========================================
+    // 1. GREEDY WARM-UP PHASE
+    // ==========================================
+    for (int u = 0; u < num_set1; ++u) {
+        for (int k = 0; k < (int)adj_list[u].size(); ++k) {
+            int v = adj_list[u][k].to;
+            
+            // If internship 'v' is free, pair student 'u' with 'v' immediately
+            if (match_set2[v] == -1) {
+                match_set1[u] = v;
+                match_set2[v] = u;
+                break; // Student 'u' is matched, stop checking their other edges
+            }
+        }
+    }
+
+    // ==========================================
+    // 2. MAIN HOPCROFT-KARP LOOP
+    // ==========================================
+    // Runs BFS/DFS phases only for nodes that greedy missed or couldn't pair easily
     while (hk_bfs()) {
         for (int u = 0; u < num_set1; ++u) {
             if (match_set1[u] == -1) {
@@ -175,7 +195,7 @@ Vector<Pair<T, T>> BipartiteGraph<T>::get_max_cardinality_matching() {
         }
     }
 
-    // Convert internal ids back to the user's items
+    // Post-processing: collect matched pairs
     for (int u = 0; u < num_set1; ++u) {
         if (match_set1[u] != -1) {
             result.push_back({id_to_set1[u], id_to_set2[match_set1[u]]});
