@@ -60,23 +60,18 @@ class BipartiteGraph{
 template<class T1,class T2>
 BipartiteGraph<T1,T2>::BipartiteGraph(): num_set1(0), num_set2(0){}
 
-template<class T1,class T2>
-void BipartiteGraph<T1, T2>::add_node_set1(T1 item){
-    set1_ids[item] = num_set1;
-    if (num_set1 >= id_to_set1.size()) {
-        id_to_set1.resize(num_set1 + 1);
-    }
-    id_to_set1[num_set1++] = item;
-    adj_list.resize(num_set1);
+template<class T1, class T2>
+void BipartiteGraph<T1, T2>::add_node_set1(T1 item) {
+    set1_ids[item] = num_set1++;
+    id_to_set1.push_back(item);
+    adj_list.push_back(Vector<Edge>()); // adds an empty list for this new node
 }
 
-template<class T1,class T2>
-void BipartiteGraph<T1, T2>::add_node_set2(T2 item){
-    set2_ids[item] = num_set2;
-    if (num_set2 >= id_to_set2.size()) {
-        id_to_set2.resize(num_set2 + 1);
-    }
-    id_to_set2[num_set2++] = item;
+template<class T1, class T2>
+void BipartiteGraph<T1, T2>::add_node_set2(T2 item) {
+    set2_ids[item] = num_set2++;
+    id_to_set2.push_back(item);
+    adj_list.push_back(Vector<Edge>()); // adds an empty list for this new node
 }
 
 template<class T1,class T2>
