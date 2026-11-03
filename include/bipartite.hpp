@@ -242,11 +242,13 @@ void BipartiteGraph<T1, T2>::solve_hungarian() {
 
     const double INF = std::numeric_limits<double>::infinity();
 
-    // 1-indexed potentials (u for rows, v for cols) and matching arrays
-    Vector<double> u(K + 1, 0.0);
-    Vector<double> v(K + 1, 0.0);
-    Vector<int> p(K + 1, 0);   // p[j] = row matched to column j
-    Vector<int> way(K + 1, 0); // tracks augmenting path
+    // we use u and v to store how much delta weve subtracted from each column/row
+    //so we dont have to update cost matrix
+    // these start at 1 not 0 as 0 is dummy row and column
+    Vector<double> u(K + 1, 0.0); //rows
+    Vector<double> v(K + 1, 0.0); // columns
+    Vector<int> p(K + 1, 0);   // this stores which row has claimed this column p[column] = row
+    Vector<int> way(K + 1, 0); // helps us make the switch if 2 rows want the same column
 
     for (int i = 1; i <= K; ++i) {
         p[0] = i;
@@ -254,18 +256,19 @@ void BipartiteGraph<T1, T2>::solve_hungarian() {
         Vector<double> minv(K + 1, INF);
         Vector<bool> used(K + 1, false);
 
-        // Find augmenting path using potentials (Dijkstra-like step)
         do {
             used[j0] = true;
             int i0 = p[j0];
             double delta = INF;
             int j1 = 0;
 
+            //loop through each column for this row and find min val so we can create a zero
             for (int j = 1; j <= K; ++j) {
                 if (!used[j]) {
                     double cur = cost_matrix[i0 - 1][j - 1] - u[i0] - v[j];
                     if (cur < minv[j]) {
                         minv[j] = cur;
+                        // this is new lowest cost for this column so we mark it
                         way[j] = j0;
                     }
                     if (minv[j] < delta) {
@@ -275,10 +278,11 @@ void BipartiteGraph<T1, T2>::solve_hungarian() {
                 }
             }
 
-            // Update dual potentials to create new tight edges
+            // create our 0s using the mins we calculated
             for (int j = 0; j <= K; ++j) {
                 if (used[j]) {
                     u[p[j]] += delta;
+                    // need to update both so 0s remain and dont go negative
                     v[j] -= delta;
                 } else {
                     minv[j] -= delta;
@@ -287,7 +291,8 @@ void BipartiteGraph<T1, T2>::solve_hungarian() {
             j0 = j1;
         } while (p[j0] != 0);
 
-        // Invert edges along the found augmenting path
+        // if a shift is required, follow all the second options
+        // and shift them till everyone has 0
         do {
             int j1 = way[j0];
             p[j0] = p[j1];
@@ -295,7 +300,7 @@ void BipartiteGraph<T1, T2>::solve_hungarian() {
         } while (j0 != 0);
     }
 
-    // Store final matches (ignoring dummy nodes later)
+    // we store final matches (with dummy nodes)
     match_set1.assign(K, -1);
     match_set2.assign(K, -1);
     for (int j = 1; j <= K; ++j) {
