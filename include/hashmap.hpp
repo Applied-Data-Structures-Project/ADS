@@ -1,3 +1,27 @@
+
+// HashMap<Index, Value>
+//
+// Our hash map stores pairs like "Malak" -> 0 and can find any key in O(1) time
+// on average. The key and the value are both templates, so we use the same class
+// everywhere in the project: the graph uses it to turn a name into a vertex ID,
+// and we use it to find candidates, like all the universities that offer a major.
+//
+// How it works:
+// The map is an array of buckets. Each key goes into bucket hash(key) % capacity.
+// If two different keys end up in the same bucket (a collision), they are kept
+// in a linked list in that bucket.
+//
+// Why we built it this way:
+// - We used chaining (a linked list per bucket) because deleting a key is simple:
+//   we just unlink its node. With open addressing we would need to mark deleted
+//   slots, and the table could never be more than full.
+// - When the table would become more than 75% full, we double its size and move
+//   every key to its new bucket. This keeps the lists short, so lookups stay fast.
+// - New keys are added at the front of the list, because that takes O(1) time and
+//   the order inside a list doesn't matter.
+// - The class has a destructor, a copy constructor and an assignment operator
+//  , so copying a map gives it its own nodes and no memory
+//   is leaked or freed twice.
 #ifndef HASHMAP_HPP
 #define HASHMAP_HPP
 #include <iostream>
@@ -5,17 +29,6 @@
 #include <string>
 #include <stdexcept>
 using namespace std;
-//// HashMap
-// This is our hash map and  It stores pairs like
-// "Bob" -> 1, where the key and  value can be any type as we made it a template.
-//
-// Inside, it's an array of boxes. Each key goes in box hash(key) % capacity,
-// and if two keys land in the same box they share a linked list there.
-// When the table gets more than 75% full, it doubles and moves everything over.
-//
-// In our project we use it for things like student name -> ID.
-// so the graph can find anyone by name quickly.
-
 template <typename Index,typename Value>
 class HashMap {
 public:
