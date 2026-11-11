@@ -1,0 +1,13 @@
+{
+  "name": "ads-workspace",
+  "private": true,
+  "description": "Root convenience scripts so npm commands work from the repo root as well as frontend/",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "check": "npm --prefix frontend run check",
+    "check:watch": "npm --prefix frontend run check:watch"
+  }
+}
+

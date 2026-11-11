@@ -1,9 +1,30 @@
+# Build output
 /out
 bin/
 build/
+cmake-build-*/
+Makefile
+CMakeSettings.json
+compile_commands.json
+
+# Local database (each dev has their own; schema lives in db/migrations)
+db/*.db
+db/*.db-journal
+db/*.db-wal
+db/*.db-shm
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Frontend
+frontend/node_modules/
+frontend/.svelte-kit/
+frontend/build/
+
+# Editors / OS
 /.vs
 .vscode
 .idea/
-CMakeSettings.json
-Makefile
-cmake-build-debug
+.DS_Store

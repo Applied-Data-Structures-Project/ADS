@@ -1,0 +1,3 @@
+# db/migrations
+Numbered SQL files applied in order on server startup: 001_init.sql, 002_add_x.sql, ...
+Rules: never edit a migration after it is merged - add a new one. Announce the number in your PR to avoid clashes.
