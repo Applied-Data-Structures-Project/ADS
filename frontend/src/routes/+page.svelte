@@ -53,5 +53,14 @@
 				Could not reach the backend ({error}). Is <code>./build/ads_server</code> running on port 18080?
 			</p>
 		{/if}
+
+		<div class="mt-6 pt-5 border-t border-slate-100">
+			<a
+				href="/admin"
+				class="w-full h-10 px-4 bg-[#131b2e] hover:bg-[#1e293b] text-white text-sm font-semibold rounded-lg shadow-sm flex items-center justify-center transition-colors"
+			>
+				Open IPSO Admin Dashboard (/admin)
+			</a>
+		</div>
 	</div>
 </main>

@@ -1,2 +1,310 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
+
+@layer base {
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #f8f9ff;
+		color: #0b1c30;
+		font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', Roboto,
+			sans-serif;
+		font-size: 14.5px;
+		line-height: 21px;
+		-webkit-font-smoothing: antialiased;
+		overscroll-behavior: none;
+	}
+}
+
+.font-mono-num {
+	font-family: 'JetBrains Mono', 'SF Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+		monospace;
+	font-variant-numeric: tabular-nums;
+}
+
+.tnum {
+	font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+.no-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type='number'] {
+	-moz-appearance: textfield;
+}
+
+input[type='range'] {
+	accent-color: #131b2e;
+}
+
+.stitch-select {
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: none;
+}
+
+/* Bipartite graph & root-tree solver animation */
+.bg-edge {
+	fill: none;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-dasharray: 420;
+	stroke-dashoffset: 420;
+	transition:
+		stroke-dashoffset 0.55s cubic-bezier(0.22, 1, 0.36, 1),
+		stroke 0.35s ease,
+		stroke-width 0.35s ease,
+		opacity 0.35s ease;
+}
+
+.bg-edge.grown {
+	stroke-dashoffset: 0;
+}
+
+.bg-edge.bfs {
+	stroke: #2563eb;
+	stroke-width: 2;
+	opacity: 0.9;
+}
+
+.bg-edge.amber {
+	stroke: #d97706;
+	stroke-width: 2.1;
+	opacity: 0.95;
+}
+
+.bg-edge.matched {
+	stroke: #15803d;
+	stroke-width: 3;
+	opacity: 1;
+}
+
+.bg-edge.pruned {
+	stroke: #94a3b8;
+	stroke-width: 1.1;
+	opacity: 0.2;
+}
+
+.bg-node {
+	transition: all 0.3s ease;
+}
+
+@keyframes modalPop {
+	from {
+		opacity: 0;
+		transform: scale(0.97) translateY(6px);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+
+.modal-pop {
+	animation: modalPop 0.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+/* ========================================================= */
+/* Executive Midnight Slate Dark Theme Scope (.admin-dark)   */
+/* ========================================================= */
+.admin-dark {
+	color-scheme: dark;
+	background-color: #0b1120;
+	color: #f1f5f9;
+}
+
+/* Core surfaces */
+.admin-dark .bg-\[\#f8f9ff\] {
+	background-color: #0b1120;
+	color: #f1f5f9;
+}
+
+@media (min-width: 40rem) {
+	.admin-dark .sm\:bg-\[\#f8f9ff\] {
+		background-color: #0b1120;
+		color: #f1f5f9;
+	}
+}
+
+.admin-dark .bg-white {
+	background-color: #111827;
+}
+
+.admin-dark .bg-\[\#eff4ff\] {
+	background-color: #182235;
+}
+
+.admin-dark .bg-\[\#e5eeff\] {
+	background-color: #1e293b;
+}
+
+.admin-dark .bg-\[\#dce9ff\],
+.admin-dark .bg-\[\#dce9ff\]\/80 {
+	background-color: rgba(37, 99, 235, 0.22);
+}
+
+.admin-dark .bg-\[\#d3e4fe\]\/40 {
+	background-color: #0f172a;
+}
+
+.admin-dark .bg-\[\#d3e4fe\]\/40 .bg-white {
+	background-color: #24324b;
+}
+
+.admin-dark .bg-\[\#131b2e\] {
+	background-color: #2563eb;
+}
+
+.admin-dark .hover\:bg-\[\#1e293b\]:hover {
+	background-color: #3b82f6;
+}
+
+/* Hover states */
+.admin-dark .hover\:bg-\[\#eff4ff\]:hover {
+	background-color: #1a263b;
+}
+
+.admin-dark .hover\:bg-\[\#eff4ff\]\/50:hover {
+	background-color: rgba(30, 41, 59, 0.55);
+}
+
+.admin-dark .hover\:bg-\[\#e5eeff\]:hover {
+	background-color: #24324b;
+}
+
+.admin-dark .hover\:bg-\[\#dce9ff\]:hover {
+	background-color: rgba(37, 99, 235, 0.28);
+}
+
+.admin-dark .hover\:bg-white\/70:hover {
+	background-color: rgba(36, 50, 75, 0.75);
+}
+
+/* Typography */
+.admin-dark .text-\[\#0b1c30\],
+.admin-dark .hover\:text-\[\#0b1c30\]:hover {
+	color: #f1f5f9;
+}
+
+.admin-dark .text-\[\#515f74\],
+.admin-dark .text-\[\#45464d\],
+.admin-dark .placeholder\:text-\[\#515f74\]::placeholder {
+	color: #94a3b8;
+}
+
+.admin-dark .text-\[\#003ea8\] {
+	color: #60a5fa;
+}
+
+.admin-dark .text-\[\#c6c6cd\] {
+	color: #475569;
+}
+
+/* Semantic status pills */
+.admin-dark .bg-\[\#f0fdf4\] {
+	background-color: rgba(21, 128, 61, 0.2);
+}
+
+.admin-dark .text-\[\#15803d\] {
+	color: #4ade80;
+}
+
+.admin-dark .bg-\[\#fffbeb\] {
+	background-color: rgba(180, 83, 9, 0.22);
+}
+
+.admin-dark .text-\[\#b45309\] {
+	color: #fbbf24;
+}
+
+.admin-dark .bg-\[\#fef2f2\] {
+	background-color: rgba(186, 26, 26, 0.22);
+}
+
+.admin-dark .text-\[\#ba1a1a\] {
+	color: #f87171;
+}
+
+/* Borders, dividers & form controls */
+.admin-dark .border-\[\#c6c6cd\] {
+	border-color: #334155;
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/70 {
+	border-color: rgba(51, 65, 85, 0.85);
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/60 {
+	border-color: rgba(51, 65, 85, 0.75);
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/50 {
+	border-color: rgba(51, 65, 85, 0.65);
+}
+
+@media (min-width: 40rem) {
+	.admin-dark .sm\:border-\[\#c6c6cd\]\/50 {
+		border-color: rgba(51, 65, 85, 0.65);
+	}
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/40 {
+	border-color: rgba(51, 65, 85, 0.55);
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/30 {
+	border-color: rgba(51, 65, 85, 0.45);
+}
+
+.admin-dark .border-\[\#c6c6cd\]\/25,
+.admin-dark .border-\[\#c6c6cd\]\/20 {
+	border-color: rgba(51, 65, 85, 0.35);
+}
+
+.admin-dark .divide-\[\#c6c6cd\]\/20 > :not(:first-child) {
+	border-color: rgba(51, 65, 85, 0.45);
+}
+
+.admin-dark .bg-\[\#c6c6cd\] {
+	background-color: #334155;
+}
+
+.admin-dark input[type='range'],
+.admin-dark input[type='checkbox'] {
+	accent-color: #3b82f6;
+}
+
+.admin-dark .focus\:border-black:focus {
+	border-color: #60a5fa;
+}
+
+/* Bipartite graph edges in dark mode */
+.admin-dark .bg-edge.bfs {
+	stroke: #60a5fa;
+}
+
+.admin-dark .bg-edge.amber {
+	stroke: #fbbf24;
+}
+
+.admin-dark .bg-edge.matched {
+	stroke: #4ade80;
+}
+
+.admin-dark .bg-edge.pruned {
+	stroke: #475569;
+	opacity: 0.28;
+}
