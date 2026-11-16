@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-konstanz",
+  "excel_rows": [
+    138
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1aG_di-d7cOr6x-QTaKQMxgZSgePZnSXE"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Konstanz/2024-2025/UniKonstanz-Fact-Sheet_2024-25.pdf",
+      "data/raw/factsheets/Konstanz/2025-2026/UniKonstanz-Fact-Sheet_2025-26.pdf",
+      "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Konstanz/2024-2025/UniKonstanz-Fact-Sheet_2024-25.pdf.txt",
+      "data/raw/extracted/Konstanz/2025-2026/UniKonstanz-Fact-Sheet_2025-26.pdf.txt",
+      "data/raw/extracted/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Konstanz",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Konstanz",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": "Fact Sheet notes more English-taught courses are offered at Master's level than Bachelor's; English-as-a-foreign-language courses are closed to exchange; free SLI German courses (A1–C1)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 CEFR in English if studying in English (B1 not sufficient; native speakers exempt from certificate). No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum B2 CEFR in German if studying in German (B1 not sufficient; native speakers exempt); free SLI German A1–C1 available.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": "SLI info on #page=3."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Winter Semester: Oct 1, 2026 – Mar 31, 2027; Lectures Oct 19, 2026 – Feb 6, 2027 (winter break Dec 23 – Jan 6); Exams Feb + Mar.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Summer Semester: Apr 1 – Sep 30, 2027; Lectures Apr 5 – Jul 17, 2027 (break May 24–30); Exams Jul + Aug.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet 2026-27 does not explicitly confirm exchange waiver text; see official costs page https://www.uni-konstanz.de/en/international-office/study-in-konstanz/preparation/costs-associated-with-studying/."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet specifies €992/month strictly as German visa financial proof (#page=4); check official costs page https://www.uni-konstanz.de/en/international-office/study-in-konstanz/preparation/costs-associated-with-studying/ for total monthly budget."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No separate official Konstanz monthly living budget verified directly on uni-konstanz.de."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Social contribution fee required (amount listed on uni-konstanz.de costs page); non-EU students require German statutory health insurance before arrival + travel insurance until semester start; EU/UK students use EHIC/GHIC.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": "Also detailed on #page=4."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": "Integrated in Mobility-Online application: Seezeit dorm applications forwarded automatically upon €900 payment (€850 deposit + €50 non-refundable admin fee) by deadline; private housing tight without university assistance."
+  },
+  "housing_notes": {
+    "value": "Seezeit student dorms (https://seezeit.com/en/accommodation/halls-of-residence/) require €900 upfront (€850 deposit + €50 non-refundable fee); private market is tight.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/non-exempt students require a German student visa valid through end of March/August (no 1-month extension) plus post-arrival Konstanz residence permit; financial proof requirement €992/month.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=4",
+    "notes": "Also https://www.uni-konstanz.de/en/international-office/study-in-konstanz/preparation/visa-and-residence-permit/."
+  },
+  "official_website_url": {
+    "value": "https://www.uni-konstanz.de/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:138",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/exchange-studies/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://zeus.uni-konstanz.de:443/hioserver/pages/startFlow.xhtml?_flowId=showCourseCatalog-flow&periodId=792&path=title%3A22786&navigationPosition=studiesOffered,courseoverviewShow",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=1",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.uni-konstanz.de/en/international-office/study-in-konstanz/academic-offer-for-international-students/courses-taught-in-english",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; full-time exchange load 24–30 ECTS per semester; >=50% recommended in main subject.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "English-as-a-foreign-language courses are closed to exchange students; >=50% coursework recommended in host department.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Mobility-Online application form",
+      "Academic transcript",
+      "B2 language certificate (if non-native speaker)",
+      "Passport copy",
+      "Seezeit €900 housing payment proof",
+      "Enrollment uploads: health insurance, social contribution fee proof, photo, visa/financial proof"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation: either GO-Konstanz (4-week intensive German + OriPro, €385) or free OriPro orientation, plus Webinars, Buddy Programme, ESN Konstanz, Student Service Centre (SSZ), and Welcome Centre (PhD).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=3",
+    "notes": "Also detailed on #page=4."
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester: Nomination Mar 15 – May 1, Application May 15, Enrollment Jul 15; Summer Semester: Nomination Sep 15 – Nov 1, Application Nov 15, Enrollment Jan 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Konstanz/UniKonstanz_Fact-Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

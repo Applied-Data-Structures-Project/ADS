@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ozyegin-university",
+  "excel_rows": [
+    83
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1EgyRE_BoLTSwsrrxv5JexZ2J8k1EZBVT"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf",
+      "data/raw/factsheets/Ozyegin University/ozyegin_university_fact_sheet_2024-25 - Ozyegin University International Exchange Programs.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf.txt",
+      "data/raw/extracted/Ozyegin University/ozyegin_university_fact_sheet_2024-25 - Ozyegin University International Exchange Programs.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Ozyegin University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "short_name": {
+    "value": "OzU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=2",
+    "notes": "Used as institutional abbreviation in OzU fact sheet URLs and text."
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Istanbul",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No host incoming exchange minimum GPA stated in AY 2025-2026 fact sheet."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Turkish"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ozyegin.edu.tr/en/ects-course-catalog-courses-offered/courses-offered?utm_source=footer",
+    "notes": "Primary medium of instruction across most undergraduate programmes is English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 English required (TOEFL iBT 80 or home-institution letter; IELTS is NOT accepted per Turkish CoHE regulation; exempt for native speakers or students at fully English-taught partner universities).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=2",
+    "notes": "Confirm AUC English-medium certificate acceptance with OzU."
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught courses; optional 4-ECTS Turkish for Foreigners course available.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 Fall: Recommended arrival Sep 15, 2025 (semester dates per academic calendar).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026 Spring: Recommended arrival Feb 2, 2026 (semester dates per academic calendar).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": "Tuition and registration fees are waived for incoming exchange students."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 600,
+      "max": 700
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=5",
+    "notes": "AY 2025-2026 fact sheet p.5 quotes official monthly living cost estimate in EUR (EUR 600-700/month, incl. rent EUR 450-650); local Turkish currency is TRY."
+  },
+  "living_cost_usd_est": {
+    "value": 3592,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=5",
+    "notes": "5-month midpoint estimate from EUR 600-700/month (EUR 650/mo) converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 650 * 5 * 1.1052 = 3591.90 USD (approx. USD 3592)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory valid health insurance required (EHIC is NOT valid in Türkiye); one-time EUR 20 residence permit card fee; tuition and registration fees waived.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=5",
+    "notes": "Tuition/reg fee waiver on p.3; insurance & EUR 20 fee on p.5."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=4",
+    "notes": "Fact sheet p.4 states all registered students may live in on-campus dormitories by signing the binding housing agreement; dormitory deposit waived for exchange students."
+  },
+  "housing_notes": {
+    "value": "On-campus Çekmeköy dormitories available upon signing binding housing agreement (deposit waived for exchange students); estimated rent EUR 450-650/month.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=4",
+    "notes": "Dorm policy p.4; rent range p.5."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Turkish student visa processing takes 6-8 weeks before departure; mandatory Turkish Residence Permit application required upon arrival (EUR 20 fee); financial proof threshold not specified.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=4",
+    "notes": "6-8 week visa lead time on p.4; EUR 20 fee on p.5."
+  },
+  "official_website_url": {
+    "value": "https://www.ozyegin.edu.tr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ozyegin.edu.tr/en/international-cooperation-exchange-programs/exchange-programs/global-exchange/incoming-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ozyegin.edu.tr/en/ects-course-catalog-courses-offered/courses-offered?utm_source=footer",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Dynamic ECTS Courses Offered portal; primary instruction language across undergraduate programmes is English."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; regular load 30 ECTS/semester (maximum 36 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "AUC agreement covers Undergraduate (UG) level only per Excel.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:83",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US letter grading scale (minimum passing grade D for UG, C for GR); English-medium campus in Çekmeköy, Istanbul.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Istanbul is Turkey's largest metropolis, Çekmeköy campus is on the Asian side; schema city_tier label not explicitly classified in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Çekmeköy campus in Istanbul; schema campus_type category not explicitly specified in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "IEPP international exchange office, optional 4-ECTS Turkish for Foreigners course, residence permit guidance, and on-campus sports facilities.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=3",
+    "notes": "Turkish course on p.3; IEPP/permit guidance on p.4."
+  },
+  "nomination_deadlines": {
+    "value": "AY 2025-2026: Fall application Jul 16 (nominations ~1 month prior); Spring application Dec 1 (nominations ~1 month prior).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ozyegin University/2025-2026/ozyegin_university_fact_sheet_2025-26.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

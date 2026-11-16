@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "institute-barcelona-d-estudis-internacionals-ibei",
+  "excel_rows": [
+    47
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1UBiESwHjY6orytBwMnYK9GYnbFhW1Wr7"
+    ],
+    "local_files": [
+      "data/raw/factsheets/IBEI/2021_2022/Academic_Calendar_21-22.pdf",
+      "data/raw/factsheets/IBEI/IBEI_ExchangeFactSheet_2021.pdf",
+      "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/IBEI/2021_2022/Academic_Calendar_21-22.pdf.txt",
+      "data/raw/extracted/IBEI/IBEI_ExchangeFactSheet_2021.pdf.txt",
+      "data/raw/extracted/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Institute Barcelona d'Estudis Internacionals (IBEI)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Barcelona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "GAPP only",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "http://www.ibei.org/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IBEI",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Master/graduate-level exchange only; requires completed undergraduate degree / diploma and undergraduate + current graduate transcript.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:47",
+    "notes": "Excel Col H specifies 'GAPP only' for GR students."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Agreement scoped to AUC School of Global Affairs and Public Policy (GAPP) graduate students; no separate major restriction list."
+  },
+  "excluded_majors": {
+    "value": [
+      "Core/Compulsory degree courses"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": "Exchange students can ONLY register for elective courses at IBEI."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No numeric GPA cutoff published in IBEI Fact Sheet or ibei.org."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Spanish"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": "Primarily English, with some electives taught in Spanish."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": "Elective curriculum predominantly taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 90 (institution code 6567), IELTS 6.5, or Cambridge C1/C2. Exempt if native speaker or prior undergraduate degree was taught completely in English.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Spanish required only if selecting Spanish-taught electives.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Semester 1: Welcome Day Sep 14, Shopping Week Sep 15-18, Semester Sep 23, 2026 - Jan 15, 2027 (Exams Jan 11-15, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Semester 2: Jan 25 - May 28, 2027 (Exams May 24-28, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": "Partner-nominated bilateral/Erasmus exchange students pay no tuition to IBEI (free-mover visitors pay fees)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 900,
+      "max": 1000
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/living-expenses",
+    "notes": "Official ibei.org/en/living-expenses states €900-€1,000/month (note older 2023-24 Fact Sheet p.2 listed EUR 800-900/month incl. EUR 350-500 accommodation)."
+  },
+  "living_cost_usd_est": {
+    "value": 5249.7,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/living-expenses",
+    "notes": "5-month estimate derived from monthly EUR range 900-1,000 (midpoint 950.0)/month. FX rate 1 EUR = 1.1052 USD from ECB Euro reference exchange rates (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 950.0 EUR * 5 * 1.1052 = 5,249.70 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Non-EU students must obtain private international medical insurance before travelling to Spain (EU students need EHIC).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/accommodation-99859",
+    "notes": "IBEI does not own residence halls (Fact Sheet p.2) but provides housing resources and partner residence discounts (Livensa Living, Cotown, Aluni.net); shared flats ~EUR 450-650/mo."
+  },
+  "housing_notes": {
+    "value": "Shared apartment rooms average EUR 450-650/month; partner discount options listed on ibei.org/en/accommodation-99859.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/accommodation-99859",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: ibei-scholarships-69817 is for degree applicants, not incoming bilateral exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU exchange students require a Spanish Type D student visa for stays >90 days (up to 180 days visa; TIE card if >180 days); official details at https://www.ibei.org/en/visa-non-eu-students_125018.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=2",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ibei.org/en/elective-courses-for-exchange-students-361953",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/elective-courses-for-exchange-students-361953",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.ibei.org/en/elective-courses-for-exchange-students-361953",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/elective-courses-for-exchange-students-361953",
+    "notes": "Elective course listings indicate language of instruction (predominantly English)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; full-time load approx. 10-20 ECTS per semester; electives carry 3-4 ECTS each (2-4 weekly teaching hrs); 0-10 grading scale (5.0 pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Restricted to IBEI graduate elective courses only (no compulsory core modules); requires course presentations + personal tutor approval; enrollment closes end of week 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university email nomination",
+      "Undergraduate diploma",
+      "Undergraduate academic transcript",
+      "Current academic transcript",
+      "Proof of English language proficiency",
+      "Brief motivation letter",
+      "CV",
+      "Passport",
+      "Photo"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Small specialized graduate institute in International Affairs/Security/Public Policy on UPF Ciutadella campus; seminar courses assessed on 0-10 Spanish scale (5.0 pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Barcelona; IBEI fact sheet/web do not explicitly state city population tier."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located at Ramon Trias Fargas 25-27 (Ciutadella campus in Barcelona, p.2), without explicit campus_type label in IBEI docs."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated by IBEI docs."
+  },
+  "international_support_services": {
+    "value": "International Mobility Office advising, Welcome Day & course shopping presentations, UPF language center link, and partner housing/insurance guidance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IBEI/Institute Barcelona d'Estudis Internacionals 2023-24.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 Fall/Semester 1: Nomination May 1, Application May 15. Spring/Semester 2: Nomination Oct 15, Application Oct 31.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ibei.org/en/incoming-exchange-students-361952",
+    "notes": null
+  },
+  "ext": {}
+}

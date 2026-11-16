@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "heilbronn-university-of-applied-sciences-faculty-of-international-business",
+  "excel_rows": [
+    39
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1l9wLwgfFBDt9Elw60gZKqygBkYYi5yuG?usp=drive_lin",
+      "https://drive.google.com/drive/folders/1l9wLwgfFBDt9Elw60gZKqygBkYYi5yuG"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Heilbronn University of Applied Sciences, Faculty of International Business",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "short_name": {
+    "value": "HHN",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Heilbronn-Sontheim",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Expected to be nominated in good academic standing by home partner; no fixed completed-semester count stated."
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "German GPA 2.5 benchmark observed on HHN web applies to degree Master's admissions; no incoming exchange GPA cutoff stated."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": "IB and WI International Programme in English; students may combine modules across faculties on request."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 English required for Bachelor exchange courses (Master requirements vary); consult HHN application page regarding TOEFL/IELTS vs home-partner certification.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught international programmes; German C1 needed only for regular German-taught modules.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": "Fall/ Spring"
+  },
+  "fall_term_dates": {
+    "value": "Winter Semester runs September-February (exact WS2024-25 orientation/exam dates per annual academic calendar).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer Semester runs March-July.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hs-heilbronn.de/en/incoming-general-information",
+    "notes": "Partner exchange students are exempt from EUR 1,500/semester non-EU Baden-Württemberg tuition fees and pay only the semester contribution."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 934,
+      "max": 934
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": "WS2024-25 fact sheet p.4 cites approx. EUR 934/month covering rent, food, health insurance, and broadcasting fee (official incoming site updates German visa financial benchmark to EUR 992/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 5161,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": "5-month midpoint estimate from EUR 934/month converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 934 * 5 * 1.1052 = 5,161.28 USD (approx. USD 5,161)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory student contribution fee EUR 94/semester for partner exchange students in WS2024-25 (regular fee EUR 188/semester per HHN site) plus mandatory health insurance (~EUR 120/month unless EU EHIC exempt).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": "Students can apply for dormitories via exchange application, but demand exceeds supply; student tutors assist with private housing search."
+  },
+  "housing_notes": {
+    "value": "Dormitories ~EUR 350/month (supply < demand); assisted private rooms EUR 350-600/month.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Deutschlandstipendium applies to regular enrolled students; no HHN-funded grant documented for short-term incoming non-EU exchange students."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students should apply for a German student visa 5-6 months prior (fact sheet p.4); HHN incoming web page specifies EUR 992/month financial proof (blocked account/scholarship).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=4",
+    "notes": "Lead time 5-6 months from WS2024-25 fact sheet p.4; EUR 992/month statutory threshold updated on hs-heilbronn.de/en/incoming-general-information."
+  },
+  "official_website_url": {
+    "value": "https://www.hs-heilbronn.de/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:39",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.hs-heilbronn.de/en/incoming-general-information",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hs-heilbronn.de/en/incoming-general-information",
+    "notes": "Application portal link https://www.hs-heilbronn.de/en/application-for-incomings also in fact sheet p.3."
+  },
+  "course_catalog_url": {
+    "value": "https://www.hs-heilbronn.de/international-course-offer",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.hs-heilbronn.de/international-course-offer",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": "HHN dedicated International Course Offer for incoming exchange students."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Uses ECTS; normal semester credit load for incoming exchange students not explicitly stated in WS2024-25 fact sheet."
+  },
+  "course_restrictions_note": {
+    "value": "AUC agreement covers Business Administration (IB/WI programmes at Bildungscampus Heilbronn); combining modules across faculties possible upon request.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Incoming exchange document checklist hosted on https://www.hs-heilbronn.de/en/application-for-incomings; not fully enumerated in WS2024-25 fact sheet."
+  },
+  "academic_style": {
+    "value": "University of Applied Sciences (Hochschule für angewandte Wissenschaften) offering practice-oriented International Business modules.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Heilbronn city scale not explicitly categorized into schema city_tier options in fact sheet."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=1",
+    "notes": "Four campuses: Bildungscampus Heilbronn (IB, WI), Heilbronn-Sontheim (TE, IT), Schwäbisch Hall (MV), and Künzelsau (TW)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Introductory days, intensive German courses (pre-semester and semester), and student tutor assistance for private housing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester (Fall): nomination May 1, application May 15; Summer Semester (Spring): nomination Nov 15, application Dec 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Heilbronn University of Applied Sciences/Information Sheet HHN WS2024-25 for Incomings.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

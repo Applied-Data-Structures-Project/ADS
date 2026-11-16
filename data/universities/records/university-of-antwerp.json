@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-antwerp",
+  "excel_rows": [
+    128
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1OCBjSnizxzCxiLk1zDQfEb9s-PCohXzL",
+      "https://drive.google.com/drive/folders/19LHON_BRXv3VnqFr3MgPyCn59NRlsGNG"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Antwerp/2024-2025/Exchange poster_FBE.pdf",
+      "data/raw/factsheets/Antwerp/2024-2025/UAntwerp - City Campus banner.jpg",
+      "data/raw/factsheets/Antwerp/2024-2025/UAntwerp FBE Factsheet Exchange 2025-2026.pdf",
+      "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf",
+      "data/raw/factsheets/Antwerp/Exchange poster_FBE_2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Antwerp/2024-2025/Exchange poster_FBE.pdf.txt",
+      "data/raw/extracted/Antwerp/2024-2025/UAntwerp - City Campus banner.jpg.txt",
+      "data/raw/extracted/Antwerp/2024-2025/UAntwerp FBE Factsheet Exchange 2025-2026.pdf.txt",
+      "data/raw/extracted/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf.txt",
+      "data/raw/extracted/Antwerp/Exchange poster_FBE_2025.pdf.txt"
+    ],
+    "notes": "Col H link (1OCBjSnizxzCxiLk1zDQfEb9s-PCohXzL) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Antwerp",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UAntwerp",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Belgium",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Antwerp",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Bachelor-level (1... codes) courses require >=120 ECTS (2 completed years); Master-level (2... codes) courses require >=150 ECTS (5 completed semesters) prior to arrival.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/incoming-students/",
+    "notes": "150 ECTS / 5 semesters Master requirement also stated in UAntwerp FBE Factsheet Exchange 2026.pdf#page=2."
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Dutch"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=2",
+    "notes": "FBE offers >330 ECTS of non-Dutch/English courses open to exchange students."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Good command of English (typically B2 CEFR level) required for English-taught FBE courses; RHET 1020 not mentioned.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/incoming-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught FBE courses; proficiency in Dutch required only if taking Dutch-taught subjects.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 1st Semester (Fall): Exchange Orientation Day Sep 18, 2026; Classes start Sep 21-22, 2026; Christmas break Dec 19, 2026-Jan 3, 2027; Exams Jan 4-Jan 30, 2027 (mandatory in-person exam presence; Aug-Sep resits).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/education-and-exam-management/academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 2nd Semester (Spring): Begins early Feb 2027 (Feb 8, 2027); 13 weeks lectures + Easter break late Mar-mid Apr + 4-week June exam session (mandatory in-person exam presence; Aug-Sep resits).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/education-and-exam-management/academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/erasmus-and-exchange-students/",
+    "notes": "Incoming exchange students under valid bilateral/Erasmus agreements do not pay tuition fees to the University of Antwerp."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived for exchange students; mandatory health insurance and Belgian municipal registration/residence permit fees apply. Overall Antwerp living costs estimated at €17,000-€18,000/year (~12-month cost-of-living guide).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/international-mobility/erasmus-and-exchange-students/prepare-for-your-arrival/cost-of-living/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/erasmus-and-exchange-students/prepare-for-your-arrival/housing/",
+    "notes": "University-affiliated student residences (e.g., Kot Merckx, AG Vespa) allocated for diversity rather than first-come-first-served and are not automatically guaranteed; IRO emails application instructions after acceptance."
+  },
+  "housing_notes": {
+    "value": "University-affiliated residence rooms typically €360-€495/month (utilities included), or private Antwerp student market (UAntwerp Accommodation Team guides applicants; also in FBE Factsheet p. 3).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/erasmus-and-exchange-students/prepare-for-your-arrival/housing/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EEA nationals staying >90 days must apply for a long-term student visa (Type D) at the Belgian embassy/consulate before traveling (do not enter on a tourist visa); UAntwerp issues an official invitation letter after Mobility-Online approval, and students must prove financial solvency (scholarship/grant, Annex 32, or UAntwerp blocked account). Residence permit required for stays >3 months (https://www.uantwerpen.be/en/study/international-mobility/erasmus-and-exchange-students/prepare-for-your-arrival/residence-permit/ and Factsheet p. 3). Exact lead time not stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/international-mobility/erasmus-and-exchange-students/prepare-for-your-arrival/visa/",
+    "notes": "Also cross-referenced in UAntwerp FBE Factsheet Exchange 2026.pdf#page=3."
+  },
+  "official_website_url": {
+    "value": "https://www.uantwerpen.be/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:128",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/incoming-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/incoming-students/",
+    "notes": "General UAntwerp exchange hub: https://www.uantwerpen.be/en/study/erasmus-and-exchange-students/."
+  },
+  "course_catalog_url": {
+    "value": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/non-dutch-courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/non-dutch-courses/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/non-dutch-courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/about-uantwerp/faculties/faculty-of-business-and-economics/studying-and-education/non-dutch-courses/",
+    "notes": "Lists >330 ECTS of FBE English-taught courses open to exchange students."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system: recommended workload is 21-30 ECTS per semester (FBE offers >330 ECTS worth of English-taught exchange courses per Factsheet p. 2).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/international-mobility/erasmus-and-exchange-students/application-documents/",
+    "notes": "330 ECTS catalog size verified in UAntwerp FBE Factsheet Exchange 2026.pdf#page=2."
+  },
+  "course_restrictions_note": {
+    "value": "Master courses (2...) require >=150 ECTS (5 completed semesters); allowed up to 2 courses from other UAntwerp faculties under conditions. Mandatory in-person exam presence in Jan/Jun.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=2",
+    "notes": "Mandatory exam presence detailed on p. 3."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Mobility-Online application",
+      "Transcript of Records (verifying >=120 ECTS for Bachelor / >=150 ECTS for Master)",
+      "English language proof (B2)",
+      "Passport / ID copy"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uantwerpen.be/en/study/erasmus-and-exchange-students/how-to-apply/",
+    "notes": "Also detailed on https://www.uantwerpen.be/en/study/international-mobility/erasmus-and-exchange-students/application-documents/ and FBE Factsheet p. 2."
+  },
+  "academic_style": {
+    "value": "Young, dynamic European business faculty (FBE at Prinsstraat 13 in Antwerp, a city home to +40,000 students) with mandatory in-person Jan/Jun exam sessions and Aug/Sep on-campus resits.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=1",
+    "notes": "Exam presence and retake policy detailed on p. 3."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory Orientation Day, FBE buddy system + ESN Antwerp, and Housing / Visa / Residence Permit support teams.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Antwerp/2026-2027/UAntwerp FBE Factsheet Exchange 2026.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

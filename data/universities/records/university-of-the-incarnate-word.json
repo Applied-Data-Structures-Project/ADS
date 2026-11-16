@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-the-incarnate-word",
+  "excel_rows": [
+    147
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1-E_vRdUJdc51EPBIyWndWrXZvoNaKGOO",
+      "https://drive.google.com/drive/folders/1lZ24KZrJntD1dQGCjpTCll5zPS10p6bK"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf.txt"
+    ],
+    "notes": "Col H link (1-E_vRdUJdc51EPBIyWndWrXZvoNaKGOO) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of the Incarnate Word",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UIW",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Texas",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "city": {
+    "value": "San Antonio & Alamo Heights",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Undergraduate exchange only; exchange students are not permitted to enroll in graduate-level courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=147",
+    "notes": "University-wide UG exchange agreement (Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=147",
+    "notes": "40+ undergraduate programs across Humanities/Arts/Social Sciences, Education, Business, Media & Design, and Math/Science/Engineering (excluding clinical health programs)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": "Instruction is in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Compulsory test minimum: TOEFL iBT 79, IELTS 6.5 overall, TOEIC 650 (sent by testing agency code 6303), CAE C1, PTE Academic 53, or Duolingo English Test 110.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2025-2026 Fact Sheet Fall 2025: Mandatory arrival Aug 14–16, Classes Aug 25 – Dec 12, 2025 (1-wk NISO orientation prior to classes; check https://my.uiw.edu/registrar/academics/calendar.html for Fall 2026 schedule starting late August).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2025-2026 Fact Sheet Spring 2026: Mandatory arrival Jan 4–5, Classes Jan 12 – May 8, 2026 (1-wk NISO orientation prior to classes; check https://my.uiw.edu/registrar/academics/calendar.html for Spring 2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": 2,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=1",
+    "notes": "Fact sheet page 1 states UIW may accept up to 2 undergraduate exchange students per academic semester, or 1 undergraduate student for a full academic year (2 semesters)."
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uiw.edu/studyabroad/incoming-students/index.html",
+    "notes": "Straight exchange agreements waive UIW tuition (confirmed by 2025-2026 DS-2019 cost table excluding tuition on page 2)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1970.6,
+      "max": 1970.6
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": "2025-2026 Fact Sheet page 2 estimates 1-semester Living Expenses ($7,645) + Miscellaneous Expenses ($2,208) = $9,853 USD/semester (excluding $2,260 Fees), prorated over 5 months = $1,970.60 USD/month."
+  },
+  "living_cost_usd_est": {
+    "value": 9853.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": "5-month exchange semester estimate: $7,645 living + $2,208 misc = $9,853 USD/semester ($1,970.60 USD/month * 5 months * 1.0 = $9,853 USD, 1 USD = 1.0 USD, checked 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory exchange student fees ($2,260 for 1 semester / $4,470 for 2 semesters), $225 housing deposit, mandatory UIW international health insurance (no external insurance accepted), and Parchment transcript fee ($2.90 electronic / $5.40 mailed).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": "Insurance rule & $225 housing deposit on page 5; transcript fees on page 4."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=5",
+    "notes": "Fact sheet page 5 states: 'Exchange students are required to live on campus and purchase a meal plan. No exceptions.' ($225 housing deposit)."
+  },
+  "housing_notes": {
+    "value": "Mandatory on-campus residence hall housing and meal plan ('No exceptions'); $225 housing deposit; assigned after admission (https://my.uiw.edu/housing/index.html).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=5",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 DS-2019 requires bank statement showing >= $12,113 USD (1 semester) or $24,176 USD (2 semesters) plus Exchange Student Financial Requirements form; students under age 22 must also submit Texas SB 62 bacterial meningitis vaccine proof >=10 days before semester.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": "Vaccine & J-1 DS-2019 details on pages 4–5."
+  },
+  "official_website_url": {
+    "value": "http://www.uiw.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:147",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uiw.edu/studyabroad/incoming-students/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://bannerssb.uiwtx.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": "Live Banner course search; programs overview at https://www.uiw.edu/academics/academic-programs.html."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours; exchange students must enroll in 12 to 18 credit hours per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Graduate-level courses are closed to exchange students; Nursing, Pharmacy, Medicine, Optometry, and Physical Therapy are excluded; first-come, first-served enrollment.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application",
+      "Official university transcripts in English",
+      "English proficiency test scores",
+      "Bank statement ($12,113 / 1 sem or $24,176 / 2 sems)",
+      "Copy of passport",
+      "Exchange Student Financial Requirements form"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Free San Antonio (SAT) airport pick-up during arrival dates, mandatory 1-week New International Student Orientation (NISO), and International Ambassador Buddy Program.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=3",
+    "notes": "Buddy Program on page 5."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Apr 15 / Application May 1; Spring: Nomination Oct 1 / Application Nov 1 (late nominations considered case-by-case based on visa timing).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Incarnate Word/UIW-25-26-Fact-Sheet.Updated 3-2025.pdf#page=3",
+    "notes": "Late consideration note on page 1."
+  },
+  "ext": {}
+}

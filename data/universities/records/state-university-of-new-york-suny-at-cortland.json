@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "state-university-of-new-york-suny-at-cortland",
+  "excel_rows": [
+    102
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1X9p2jzjSWtIID2RcMI7D6gwH4dS_wuiW"
+    ],
+    "local_files": [
+      "data/raw/factsheets/SUNY - Cortland/2020-2021/SUNY Cortland international_piece20 - Daniela _.docx",
+      "data/raw/factsheets/SUNY - Cortland/2020-2021/SUNY Cortland international_piece20 - Daniela _.pdf",
+      "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/SUNY - Cortland/2020-2021/SUNY Cortland international_piece20 - Daniela _.docx.txt",
+      "data/raw/extracted/SUNY - Cortland/2020-2021/SUNY Cortland international_piece20 - Daniela _.pdf.txt",
+      "data/raw/extracted/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "State University of New York (SUNY) at Cortland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "short_name": {
+    "value": "SUNY Cortland",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "city": {
+    "value": "Cortland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "SUNY Cortland 2.0 GPA threshold noted on web for visiting/non-degree students; confirm whether identical minimum applies to bilateral incoming exchange."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English proficiency proof required via FSA-3 form or Duolingo, IELTS, or TOEFL score (per AY 2026-2027 fact sheet p.2; confirm AUC RHET 1020 / English-medium FSA-3 attestation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (US university; see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Arrival Aug 25, 2026; Orientation Aug 26-30, 2026; Classes Aug 31-Dec 18, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Arrival Jan 20, 2027; Orientation Jan 21-24, 2027; Classes Jan 25-May 15, 2027 (fact sheet p.1 has a '2026' typo on May 15 end date under Spring 2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=3",
+    "notes": "Tuition listed as USD 0 for bilateral exchange students."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 fact sheet p.2-3 publishes semester figures rather than a monthly range (West Campus Apts USD 4,530/sem [no meal plan required] or DeGroat Hall USD 4,580 double / USD 5,315 single + USD 3,475 meal plan, est books USD 500/sem, est personal USD 2,000/sem)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official monthly living range published; see semester USD housing/meal/personal breakdown in housing_notes and mandatory_host_fees_and_insurance."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "USD 0 tuition; mandatory SUNY UHC health insurance USD 908/semester; mandatory College fees USD 902/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": "On-campus housing available at West Campus Apartments or DeGroat Hall; winter/spring break housing included at no extra cost."
+  },
+  "housing_notes": {
+    "value": "West Campus Apartments USD 4,530/semester (no meal plan required) or DeGroat Hall USD 4,580 double / USD 5,315 single (requires USD 3,475 meal plan); break housing included free; est books USD 500/sem + est personal USD 2,000/sem (p.3).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "SUNY Cortland International Award (USD 7,500/yr) applies to full-time degree-seeking students, not short-term tuition-waived exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "F-1 or J-1 visa required; applicants must submit FSA-4 financial verification form with supporting bank statement (exact minimum proof total not stated in PDF).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www2.cortland.edu/home/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:102",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www2.cortland.edu/offices/international-programs/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www2.cortland.edu/offices/international-programs/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://banner.cortland.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No separate English-only list; all courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "US credit system; exact min/max semester credit load not stated in AY 2026-2027 fact sheet."
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Academic transcripts",
+      "English proficiency proof (FSA-3 form or Duolingo/IELTS/TOEFL)",
+      "250-word essay",
+      "Passport copy",
+      "FSA-4 financial form with bank statement",
+      "TB and immunization forms"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2020-2021/SUNY Cortland international_piece20 - Daniela _.docx",
+    "notes": "AY 2020-2021 SUNY Cortland guide describes Cortland as a town of ~19,000 residents / college town."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Physical campus type not explicitly classified in AY 2026-2027 fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Free Syracuse (SYR) airport pickup on official arrival day and 4-5 day incoming orientation.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 application deadlines: Fall May 8; Spring Nov 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - Cortland/2026-2027/Fact Sheet SUNY Cortland Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

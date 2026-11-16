@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "peking-university",
+  "excel_rows": [
+    85
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1PXVKfwtF1DBACWY6pVSktsdaT5AVtaQe"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Peking University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "short_name": {
+    "value": "PKU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "country": {
+    "value": "China",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Beijing",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Applicants must have completed at least the first year of their current study programme during the exchange, remain registered at home university, be non-Chinese citizens aged 18-45 (graduate-year students are not recommended to apply).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "GAPP",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": "Excel agreement scope states 'GAPP'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement scope specifies AUC School 'GAPP' rather than 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": [
+      "Health Science Center",
+      "School of Software and Microelectronics",
+      "Tailor-made and Double-degree programs",
+      "MBA / Master in International Relations / Master in Public Policy / LLM in Chinese Law / Yenching Academy special English graduate programs",
+      "Shenzhen Graduate School (case-by-case only)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=4",
+    "notes": "Chinese-taught Master's courses require departmental permission; faculties with special prerequisites excluded."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No fixed numeric host GPA cutoff appears in PKU Fact Sheet 2020-21 or on verified PKU web pages."
+  },
+  "instruction_languages": {
+    "value": [
+      "Chinese",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": "Courses primarily taught in Chinese at UG/Master levels; select English-taught courses offered."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": "Fact sheet p.3 notes instruction is mainly Chinese with some English-taught courses available (reference list at http://dean.pku.edu.cn/englishcourses/index.html)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Fact sheet p.3 states English test proof is not required during the application process, though select English-taught courses/departments may require proficiency verification or test scores (RHET 1020 policy not mentioned).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Chinese HSK Level 6 (over 70 points per item) required for Chinese-taught UG/GR courses; NO Chinese proficiency required for Chinese language training courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2020-2021 reference calendar (Fact Sheet p.2; check http://www.pku.edu.cn/campuslife/xl/index.htm for 2026-27 dates): Autumn semester Sep 14 - Jan 17.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "General PKU Fall semester runs early September through mid-January."
+  },
+  "spring_term_dates": {
+    "value": "AY 2020-2021 reference calendar (Fact Sheet p.2; check http://www.pku.edu.cn/campuslife/xl/index.htm for 2026-27 dates): Spring semester Feb 22 - Jun 27.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "General PKU Spring semester runs late February through late June."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "PKU Fact Sheet p.3 states: 'Students in the graduate year at home university are NOT recommended to apply' (not an explicit absolute ban)."
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=5",
+    "notes": "Fact sheet p.5 states: 'Normally exchange students do not pay any application, tuition or administrative fees as per the university bilateral agreement.' Verified on isd.pku.edu.cn."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "CNY",
+      "min": 1000.0,
+      "max": 3000.0
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=5",
+    "notes": "PKU Fact Sheet p.5 lists general monthly living expenses of 1,000-3,000 RMB/month EXCLUDING accommodation (Global Village dorm 3,300-4,500 RMB/mo or off-campus 2,000-5,000 RMB/mo; bilateral agreements may cover free housing per p.4). Live ISD guide (https://www.isd.pku.edu.cn/en/index.php?m=content&c=index&a=lists&catid=31) lists annual estimates of RMB 15,000 food, RMB 5,000 misc, and RMB 35,000 accommodation."
+  },
+  "living_cost_usd_est": {
+    "value": 1498.82,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=5",
+    "notes": "Midpoint CNY 2,000/month (1,000-3,000 CNY/month excluding accommodation) * 5 months = CNY 10,000; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 7.3738 CNY & 1 EUR = 1.1052 USD -> 1 CNY = 0.14988201 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 1,498.82 USD (excludes dorm 3,300-4,500 CNY/mo unless covered by bilateral agreement)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Application, tuition, and administrative fees normally waived under bilateral agreements. Exchange students MUST purchase the designated Chinese medical insurance plan at CNY 400 per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=5",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=4",
+    "notes": "If covered by bilateral exchange agreement, a shared room at Zhongguanyuan Global Village is automatically allocated upon arrival; otherwise students apply online via studyatpku.com in mid-Jul / mid-Jan (~3,300-4,500 RMB/mo) or rent off campus (~2,000-5,000 RMB/mo)."
+  },
+  "housing_notes": {
+    "value": "Global Village (Zhong Guan Xin Yuan) on-campus dorms ~3,300-4,500 RMB/month (shared facilities, automatic if agreement covers free dorms; else online booking mid-Jul/mid-Jan via studyatpku.com); off-campus ~2,000-5,000 RMB/month (Ziroom/BeijingBuddy).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=4",
+    "notes": "Monthly rent rates and booking timeline on data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=5."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": "Applicants must be non-Chinese citizens holding a valid foreign passport, aged between 18 and 45.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "PKU 2020-21 Fact Sheet p.1/p.5 references ISD (http://www.isd.pku.edu.cn/) for incoming student visa onboarding; exact live pku.edu.cn visa subpage URL was not surfaced in plain text (X1/X2 student visa & JW201/JW202 rules managed via ISD)."
+  },
+  "official_website_url": {
+    "value": "http://english.pku.edu.cn/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:85",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "http://www.oir.pku.edu.cn/en/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "ISD website: https://isd.pku.edu.cn; online portal: http://www.studyatpku.com."
+  },
+  "course_catalog_url": {
+    "value": "http://dean.pku.edu.cn/pkudean/course/kcb.php?ll=1",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "Also course preview at http://dean.pku.edu.cn/jiaoxuejihua/kcbxs.php?ll=1 (p.3); next-semester lists posted mid-Jan / mid-Jul."
+  },
+  "english_course_list_url": {
+    "value": "http://dean.pku.edu.cn/englishcourses/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "Also noted on p.3."
+  },
+  "credit_system_and_load": {
+    "value": "Chinese academic credit system (16-week semester; 1 credit = 1 class hour/week): Chinese-language track requires min 18 class hrs/week (2-5 courses); regular UG/GR coursework load is 6-20 credits (2-10 courses) per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Excluded: Health Science Center, School of Software & Microelectronics, Shenzhen Graduate School (case-by-case), special English Master's (MBA, MIR, MPP, LLM, Yenching), double-degree/tailor-made programmes. Chinese-taught Master's courses require faculty permit; departments retain right to restrict course enrollment.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university email nomination + official paper nomination letter",
+      "Completed PKU online application (studyatpku.com)",
+      "Original English-version hard copies mailed via home international office",
+      "Language proof if required (HSK 6 for Chinese-taught degree courses)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Historic Yanyuan main campus at No. 5 Yiheyuan Road, Haidian District, Beijing (no strict urban/suburban label in verified schema terms)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Office of International Relations (OIR, exchange@pku.edu.cn) and International Students Division (ISD Room 330 New Sun Student Center, study@pku.edu.cn) handle nominations, Global Village dorm placement, orientation Chinese placement interviews, and visa documents.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=1",
+    "notes": "Orientation and ISD services on p.4-5."
+  },
+  "nomination_deadlines": {
+    "value": "Autumn / Full Year: Nomination deadline March 30; Online application Feb 20 - Apr 15. Spring Semester: Nomination deadline October 30; Online application Sep 20 - Nov 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Peking University/Fact Sheet PKU 2020-2021 (updated).pdf#page=2",
+    "notes": "2026-27 web cycle retains Mar 30 / Apr 15 and Oct 30 / Nov 15."
+  },
+  "ext": {}
+}

@@ -1,0 +1,378 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ramon-llull-university-blanquerna-school-of-communication-and-international-relations",
+  "excel_rows": [
+    92
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1MO6b1Qz6JhinJu3cRp_V-E1fbUw9nzfI",
+      "https://drive.google.com/drive/folders/1qY6tugesQQt5SzP5AO8_b1KRgVgC371N"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Ramon Llull University/2024-2025/Academic Calendar 2024-2025.pdf",
+      "data/raw/factsheets/Ramon Llull University/2024-2025/Blanquerna School of Communication and International Relations Ramon Llull University.pdf",
+      "data/raw/factsheets/Ramon Llull University/2024-2025/IQS Fact Sheet 2024-25_v3.pdf",
+      "data/raw/factsheets/Ramon Llull University/2024-2025/⚠️ Changes for enrolment - Students Workload.docx",
+      "data/raw/factsheets/Ramon Llull University/2025-2026/Academic calendar 25-26 (2).pdf",
+      "data/raw/factsheets/Ramon Llull University/2025-2026/FCRI FACT SHEET 2025-2026 (1).pdf",
+      "data/raw/factsheets/Ramon Llull University/2025-2026/PROVISIONAL LIST OF COURSES FALL semester exchange students 25-26.xlsx - FALL SEMESTER 24-25 (1).pdf",
+      "data/raw/factsheets/Ramon Llull University/2025-2026/PROVISIONAL LIST OF COURSES SPRING semester exchange students 25-26 .xlsx - SPRING SEMESTER 25-26.pdf",
+      "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Ramon Llull University/2024-2025/Academic Calendar 2024-2025.pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2024-2025/Blanquerna School of Communication and International Relations Ramon Llull University.pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2024-2025/IQS Fact Sheet 2024-25_v3.pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2024-2025/⚠️ Changes for enrolment - Students Workload.docx.txt",
+      "data/raw/extracted/Ramon Llull University/2025-2026/Academic calendar 25-26 (2).pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2025-2026/FCRI FACT SHEET 2025-2026 (1).pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2025-2026/PROVISIONAL LIST OF COURSES FALL semester exchange students 25-26.xlsx - FALL SEMESTER 24-25 (1).pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2025-2026/PROVISIONAL LIST OF COURSES SPRING semester exchange students 25-26 .xlsx - SPRING SEMESTER 25-26.pdf.txt",
+      "data/raw/extracted/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf.txt"
+    ],
+    "notes": "Col H link (1MO6b1Qz6JhinJu3cRp_V-E1fbUw9nzfI) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Ramon Llull University-Blanquerna School of Communication and International Relations",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Barcelona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://www.url.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Blanquerna-URL",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=6",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum completed-semester requirement stated in AY 2026/2027 Blanquerna FCRI Fact Sheet (Master courses closed unless holding prior bachelor's degree, p.3)."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": "Excel scope is University-wide (though partner unit itself is specifically Blanquerna School of Communication & International Relations)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:92",
+    "notes": "University-wide scope at AUC, hosted at Blanquerna FCRI (Communication, Journalism, Advertising/PR, Audiovisual, International Relations, Global Communication Management)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Official Master degrees (without completed Bachelor)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=5",
+    "notes": "Students without a completed university degree cannot take Official Master courses (if eligible, max 30% of Learning Agreement); IQS Fact Sheet in Drive belongs to a separate URL school and is excluded."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No numeric minimum GPA published in Blanquerna 2026/2027 Fact Sheet."
+  },
+  "instruction_languages": {
+    "value": [
+      "Catalan",
+      "Spanish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": "International Relations & Global Communication Management degrees taught ALL in English; Communication degrees mainly Catalan/Spanish with select English electives."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": "All courses in International Relations and Global Communication Management are taught in English, plus English electives in Communication."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 compulsory for any English-taught course (Cambridge First, IELTS 5-6.5, TOEFL iBT 87-109, PTE Academic 59-75, Trinity ISE II, Michigan ECCE). Exempt if studying a degree totally in English (e.g., AUC) or holding home coordinator certificate / English-waiver clause.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Spanish/Catalan CEFR B1 strongly recommended (no certificate upload required) for Communication courses in Spanish/Catalan; free 2-ECTS Catalan & Spanish courses provided.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Term: Mandatory Welcome Day Sep 8; Classes Sep 14 - Dec 22; Christmas Holidays Dec 23 - Jan 6; Exams Jan 7 - Jan 18; Retakes Jan 25 - Feb 4.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=4",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Term: Mandatory Welcome Day Feb 4; Classes Feb 8 - May 20; Easter Mar 22 - 29; Exams May 25 - Jun 3; Retakes Jun 14 - Jun 23.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=4",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Tuition-waiver clause is not stated explicitly inside Blanquerna 2026/2027 Fact Sheet or verified blanquerna.edu pages."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No monthly EUR living-cost table published in Blanquerna 2026/2027 Fact Sheet (avoiding unverified third-party/unanchored Barcelona estimates)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No Blanquerna-published local monthly living budget."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "All students must hold mandatory complementary private medical insurance (accidents, civil liability, repatriation, medical interventions; Spanish insurer strongly recommended; URL details at https://www.url.edu/en/international/asseguranca). EU citizens also need EHIC.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=6",
+    "notes": "Blanquerna-URL has no own accommodation, but helps students find rooms/apartments/residences with priority access via All Roomies and Ramon Llull agency partners (https://www.blanquerna.edu/en/accommodation)."
+  },
+  "housing_notes": {
+    "value": "Early search strongly recommended in Barcelona; priority access through All Roomies + URL residence hall agreements.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: FCRI Fact Sheet lists no incoming stipend for non-Erasmus bilateral exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-Schengen students must apply early for a Spanish Study Visa upon acceptance; arriving with a valid visa on mandatory Welcome Day is required (see https://www.url.edu/en/international/international-students-procedure/non-eu-community-students).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.blanquerna.edu/en/incoming-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.blanquerna.edu/en/incoming-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.blanquerna.edu/en/incoming-students",
+    "notes": "Provisional Fall/Spring course spreadsheets and syllabi are linked post-application (see also 2025-26 provisional course PDFs)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Courses & syllabi use dynamic per-course URLs (serveis.blq.url.edu) and seasonal Google Drive provisional Excel/PDF lists linked from Fact Sheet p.5 rather than one static URL."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system (1 ECTS = 25 hrs total: 10 attendance + 15 independent study). Grading 0-10 (5.0 minimum pass; 1-month exam calendar notice; on-site exams).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=5",
+    "notes": "Note: 2025-26 provisional course sheet cites min 18 / max 30 ECTS learning agreement targets; 2026-27 PDF specifies 25 hrs/ECTS and LA windows Jun 15-30 / Nov 15-30."
+  },
+  "course_restrictions_note": {
+    "value": "Limited seats allocated first-come, first-served after application; Learning Agreements accepted only Jun 15-30 (Fall/AY) and Nov 15-30 (Spring); Master courses require completed degree and cap at 30% of LA; Welcome Day English placement test mandatory for ESL courses with no second call.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home coordinator email nomination",
+      "Online application form",
+      "Copy of valid passport",
+      "Current academic transcript",
+      "Copy of health insurance coverage",
+      "English B2 proficiency proof (or English-degree waiver)",
+      "Spanish B1 proof (recommended if taking Spanish/Catalan courses)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Compulsory Welcome Day attendance; 10-point grading scale (5.0 pass) with two sittings (ordinary + retake) and mandatory on-site exams.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=5",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Barcelona (Plaça Joan Coromines, s/n, 08001); Fact Sheet does not state city population tier."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "City building in central Barcelona (08001), without explicit urban/campus_type classification label in Fact Sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not rated in Blanquerna Fact Sheet."
+  },
+  "international_support_services": {
+    "value": "Blanquerna Mobility Office, compulsory Welcome Day orientation, free 2-ECTS Catalan & Spanish courses, All Roomies housing priority, and URL insurance/visa procedure guides.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 First Semester (Fall): Nomination May 15 (email), Online Application Jun 15. Second Semester (Spring): Nomination Oct 15, Online Application Nov 15 (strict; Learning Agreements Jun 15-30 / Nov 15-30).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ramon Llull University/2026-2027/2026_2027 Fact Sheet (1).pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "yildiz-technical-university",
+  "excel_rows": [
+    163
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Yildiz Technical University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "short_name": {
+    "value": "YTU",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/",
+    "notes": null
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Istanbul",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "AENG major",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "SSE"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": "Agreement scope literally says 'AENG major' (Architectural Engineering belongs to AUC's School of Sciences and Engineering, SSE)."
+  },
+  "eligible_majors": {
+    "value": [
+      "AENG (Architectural Engineering)"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": "Restricted to Architectural Engineering (AENG) majors per Excel agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Turkish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bologna.yildiz.edu.tr",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bologna.yildiz.edu.tr",
+    "notes": "English-taught tracks and courses are offered alongside Turkish-taught programs; verify Architecture/AENG teaching languages in Bologna catalog."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B1–B2 English level required/recommended for English-taught courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "B1 Turkish required/recommended for Turkish-taught courses; B1–B2 English for English-taught courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Fall semester typically runs late September–mid-January.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/16/Academic-Calendar/470",
+    "notes": "Verify annual dates on YTU Erasmus Academic Calendar (also https://erasmus.yildiz.edu.tr/page/Academic-Calendar/16)."
+  },
+  "spring_term_dates": {
+    "value": "Spring semester typically starts around February with exams extending through June.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/16/Academic-Calendar/470",
+    "notes": "Verify annual dates on YTU Erasmus Academic Calendar (also https://erasmus.yildiz.edu.tr/page/Academic-Calendar/16)."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": "Incoming Erasmus and bilateral exchange students under active inter-institutional agreements do not pay tuition fees to YTU."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Valid health insurance covering the entire mobility period is required (especially for Turkish residence permit applications); students pay residence permit card fees and tax.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": "YTU does not offer on-campus dormitories for incoming exchange or international students; students arrange off-campus accommodation."
+  },
+  "housing_notes": {
+    "value": "No university dormitory spots for incoming exchange students; students rent shared apartments or private Istanbul dormitories (landlords typically require 1–2 months security deposit upfront), with support from ESN Yildiz and buddy program.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Foreign exchange students staying >90 days must apply online for a Turkish student residence permit via https://e-ikamet.goc.gov.tr/ regardless of nationality, holding full-period health insurance and paying card/tax fees (extensions typically applied ~60 days before expiry).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.yildiz.edu.tr/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:163",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.bologna.yildiz.edu.tr",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bologna.yildiz.edu.tr",
+    "notes": "Official YTU Bologna Information System listing ECTS credits and course languages."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; standard full-time exchange load is 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application via www.ytuerasmus.yildiz.edu.tr",
+      "Signed and stamped Learning Agreement (PDF)",
+      "Headshot ID photo (JPG)",
+      "Copy of passport ID page"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Turkish public technical university following Bologna ECTS frameworks across Istanbul campuses (Faculty of Architecture / AENG is located at historic Yıldız Campus in Beşiktaş; other faculties at Davutpaşa Campus).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bologna.yildiz.edu.tr",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.yildiz.edu.tr/en",
+    "notes": "Distinct Istanbul campuses: Yıldız Campus (Beşiktaş, Faculty of Architecture/AENG) and Davutpaşa Campus."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ESN Yildiz and buddy program support for incoming exchange students (housing assistance, residence permit guidance, welcome activities).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall/AY: nom Apr 30 / app Jun 1–30; Spring: nom Sep 30 / app Dec 1–31 (Nov 1–30 also noted on prior cycle info; online portal www.ytuerasmus.yildiz.edu.tr).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://erasmus.yildiz.edu.tr/page/Incoming-Student/232",
+    "notes": null
+  },
+  "ext": {}
+}

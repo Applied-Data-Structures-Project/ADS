@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "east-carolina-university",
+  "excel_rows": [
+    28
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "unmatched_here",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Marked 'Here' in Excel Col H without hyperlink; no matching folder in master Drive folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "East Carolina University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "short_name": {
+    "value": "ECU",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": "Official university acronym."
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "North Carolina",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "city": {
+    "value": "Greenville",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum incoming exchange GPA is stated on https://global-affairs.ecu.edu/incoming-exchange-students/ (2.5 GPA on getting-started/ applies to outgoing ECU students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.ecu.edu/undergraduate/",
+    "notes": "US public university operating in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.ecu.edu/undergraduate/",
+    "notes": "Full undergraduate and graduate degree curriculum delivered in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Incoming exchange online application requires uploading 'proof of English language proficiency if applicable'; specific exchange test cutoffs and RHET 1020 equivalency are not stated on the incoming exchange portal.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (proof of English language proficiency required in the incoming application if applicable).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: All residence halls open Aug 15 (move-in Aug 12-14); Classes Aug 17 - Nov 30, 2026; Fall Break Oct 3-6; Final Exams Dec 2-9, 2026; Residence halls close Dec 10, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://facultysenate.ecu.edu/academic-calendars/",
+    "notes": "Exam and residence hall move-in/close dates per ECU 2026-27 university calendar & housing schedule."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Residence halls reopen Jan 7, 2027; Classes Jan 11 - Apr 27, 2027; Spring Break Mar 6-14, 2027; Final Exams Apr 29 - May 6, 2027; Residence halls close May 7, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://facultysenate.ecu.edu/academic-calendars/",
+    "notes": "Exam and residence hall move-in/close dates per ECU 2026-27 university calendar & housing schedule."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "https://global-affairs.ecu.edu/incoming-exchange-students/ does not publicly specify tuition-waiver terms for partner agreements."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1140.1,
+      "max": 1222.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://financialaid.ecu.edu/cost/",
+    "notes": "Derived from ECU 2026-27 on-campus undergraduate Housing + Food Cost of Attendance divided across 10 academic months (two 5-month semesters): Continuing UG $8,313 housing + $3,088 food = $11,401/yr ($1,140.10/month); Entering UG $6,699 housing + $5,521 food = $12,220/yr ($1,222.00/month). Excludes books/supplies ($1,570/yr), personal ($2,067/yr), and health insurance."
+  },
+  "living_cost_usd_est": {
+    "value": 5905.25,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://financialaid.ecu.edu/cost/",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester midpoint of ECU 2026-27 on-campus undergraduate Housing + Food COA ($11,401/yr continuing = $5,700.50/sem to $12,220/yr entering = $6,110.00/sem; midpoint $5,905.25/semester), excluding books/personal expenses and health insurance."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "J-1 exchange visitors are federally required to carry J-1 compliant medical insurance for the full DS-2019 period (home country policies are generally not accepted; enrollment in an ECU/UNC-approved plan is mandatory; degree-seeking Student Blue SHIP is estimated at $1,312/sem UG or $2,366.50/sem GR). On-campus residents are typically required to carry a residential meal plan (Purple plans $2,517+tax/semester).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/required-medical-insurance/",
+    "notes": "Student Blue semester estimate and Purple meal plan rate sourced from ECU Student Financial Services / Campus Living."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": "Page states: 'Exchange students are required to live on campus. Spots are specifically set aside for exchange students.'"
+  },
+  "housing_notes": {
+    "value": "Incoming exchange students are required to live on campus in designated reserved spots and may move in one day prior to orientation. ECU residence hall rates range ~$3,046.50 (standard) to $3,576.00/semester (College Hill Suites), plus required residential meal plans (~$2,517+tax/semester).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires J-1 Exchange Visitor visa with Form DS-2019 issued by ECU Office of Global Affairs after acceptance and verification of financial means (30-day post-program grace period applies; additional financial/insurance proof required for J-2 dependents).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.ecu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:28",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.ecu.edu/undergraduate/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.ecu.edu/undergraduate/",
+    "notes": "Graduate catalog available at https://catalog.ecu.edu/graduate/."
+  },
+  "english_course_list_url": {
+    "value": "https://catalog.ecu.edu/undergraduate/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.ecu.edu/undergraduate/",
+    "notes": "Instruction is in English; graduate catalog at https://catalog.ecu.edu/graduate/."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "US semester credit-hour system; J-1 exchange students must maintain a full-time course load, though specific numeric minimum exchange credits are not published on https://global-affairs.ecu.edu/incoming-exchange-students/ (12-credit figure on getting-started/ applies to outgoing ECU financial aid)."
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university official nomination",
+      "Completed ECU online incoming exchange application (via emailed link)",
+      "Passport biographical page copy",
+      "Current official academic transcripts",
+      "Proof of English language proficiency (if applicable)",
+      "Proof of financial means",
+      "List of intended courses"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Greenville, North Carolina; omitted without an exact verbatim ecu.edu HTML subpage explicitly classifying the schema city_tier."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Greenville footprint spans Main Campus, Health Sciences Campus, and West Research Campus; left unknown without an exact verbatim ecu.edu campus-layout subpage URL."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ECU Office of Global Affairs (https://global-affairs.ecu.edu/) manages incoming exchange onboarding, DS-2019 sponsorship, mandatory international student orientation, J-1 insurance compliance, and reserved on-campus housing coordination.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global-affairs.ecu.edu/incoming-exchange-students/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not published on https://global-affairs.ecu.edu/incoming-exchange-students/; managed directly via home university nomination agreements."
+  },
+  "ext": {}
+}

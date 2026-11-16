@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "auburn-university",
+  "excel_rows": [
+    8
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1ZoWb0Xwlp58EN2k7xBMsEhdPuMYJL7e5"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf",
+      "data/raw/factsheets/Auburn/Spring 2025 Exchange Quick Facts.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf.txt",
+      "data/raw/extracted/Auburn/Spring 2025 Exchange Quick Facts.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Auburn University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "short_name": {
+    "value": "AU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=4",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Alabama",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "city": {
+    "value": "Auburn",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "HUSS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": "Mapped from Excel Col G agreement scope 'HUSS'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col G lists school scope 'HUSS' without restricting specific HUSS majors."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=14",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=14",
+    "notes": "Guide p.14 states: 'The language of instruction is English (with the exception of foreign language courses.)'"
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Proof of English proficiency is required in the incoming exchange application checklist; specific numeric minimum test scores and RHET 1020 equivalency are not stated in the AY23-24 incoming exchange guide.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=7",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (primary language of instruction; proof of English required in application).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=14",
+    "notes": "Application checklist item 'Proof of English' listed in Guide p.7."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes Aug 17 - Dec 4, 2026; Final Exams Dec 7 - Dec 11, 2026 (2-day orientation before classes; arrival 3-4 days prior).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auburn.edu/academic/registrar/pdf/calendar/2026-2027-calendar.pdf",
+    "notes": "Pre-class arrival/orientation timing from data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=6."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes Jan 6 - Apr 23, 2027; Final Exams Apr 26 - Apr 30, 2027 (Spring 2025 orientation Jan 9-10, arrival Jan 1-7).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auburn.edu/academic/registrar/pdf/calendar/2026-2027-calendar.pdf",
+    "notes": "Spring arrival/orientation timing pattern from data/raw/factsheets/Auburn/Spring 2025 Exchange Quick Facts.pdf#page=1."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=9",
+    "notes": "Guide p.9 Finance Information lists Tuition, Student Fees, and International Student Fee as 'Waived'."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1500.0,
+      "max": 2200.0
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=9",
+    "notes": "Derived from AY2024-25 semester estimate in Guide p.9 divided across a 5-month semester: Housing $4,000-$6,500 + Meal Plan $500-$1,500 + Additional Meals $1,000 + Spending Money $2,000 = $7,500-$11,000/semester ($1,500-$2,200/month). Excludes $1,000/sem mandatory insurance; Auburn ISSS 2027-2028 COA (https://www.auburn.edu/academic/international/isss/cost-of-attendance.html) lists $15,000/yr living expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 9250.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=9",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester midpoint of $7,500-$11,000/semester living expenses (Housing $4,000-$6,500 + Meal Plan $500-$1,500 + Additional Meals $1,000 + Spending Money $2,000 = $9,250 midpoint) from Guide p.9. Excludes $1,000/sem mandatory health insurance and waived tuition/fees."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition, Student Fees, and International Student Fee are waived during orientation check-in. Mandatory Auburn University Student Health Insurance Plan (SHIP, Blue Cross Blue Shield of Alabama; cannot be waived by exchange students) estimated at $1,000/semester in AY2024-25 guide ($2,317/year in 2027-2028 ISSS COA). Mandatory meal plan ($500-$1,500/semester) also applies.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=9",
+    "notes": "Non-waivable SHIP policy detailed at data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=13; 2027-2028 annual SHIP rate ($2,317) from https://www.auburn.edu/academic/international/isss/cost-of-attendance.html."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=12",
+    "notes": "Guide p.12 notes limited on-campus availability via University Housing portal (recommended) alongside independent off-campus search options."
+  },
+  "housing_notes": {
+    "value": "On-campus housing is recommended (limited availability; opens ~Feb 15 for Fall / Sept for Spring via https://universityhousing.auburn.edu/; Quad, Village, South Donahue suites, and 160 Ross apartment-style recommended as open during holiday breaks; AY2024-25 rates $4,000-$6,500/semester incl. utilities/internet/laundry). Required meal plan ($500-$1,500/sem). Off-campus resources at https://offcampushousing.auburn.edu/housing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=12",
+    "notes": "Holiday-break recommendation (160 Ross) and arrival hotel guidance on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=11; meal plan cost on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=9."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa required (Form DS-2019 processed by ISSS ~1 week after undergraduate admission / ~2 weeks after graduate admission and mailed physically for U.S. Embassy/Consulate interview; exact visa wait times vary by country). Financial Statement in application checklist must show at least $5,000 USD per semester; passport valid 6+ months post-program.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=10",
+    "notes": "Financial Statement threshold ($5,000/term) and 6-month passport validity from data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=7."
+  },
+  "official_website_url": {
+    "value": "https://www.auburn.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:8",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.auburn.edu/academic/international/auab/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Spring 2025 Exchange Quick Facts.pdf#page=1",
+    "notes": "Also see https://auburn.edu/academic/international/site/incoming-exchange.html."
+  },
+  "course_catalog_url": {
+    "value": "https://bulletin.auburn.edu/coursesofinstruction/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://bulletin.auburn.edu/coursesofinstruction/",
+    "notes": "Tentative per-term course lookup via Dynamic Schedule (https://ssbprod.auburn.edu/pls/PROD/bwckschd.p_disp_dyn_sched) cited in data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=14."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All Auburn courses except foreign languages are taught in English (Guide p.14); filter term offerings in https://bulletin.auburn.edu/coursesofinstruction/ or Dynamic Schedule."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours; J-1 full-time minimum is 12 credit hours/semester for undergraduates (typically 4-5 classes) and 9 credit hours/semester for graduate students (typically 3 classes).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=15",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Course availability depends on seats and AU faculty advisor approval (Business majors and students without an AU advisor coordinate with the Auburn Abroad Exchange Coordinator); specific courses cannot be guaranteed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=14",
+    "notes": "Priority consideration recommendation continued on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=15."
+  },
+  "required_application_docs": {
+    "value": [
+      "Auburn Abroad Portal questionnaire",
+      "Legible passport copy (valid >= 6 months post-program)",
+      "Proof of English proficiency",
+      "Financial Statement (>= $5,000 USD/semester in student's or signed sponsor's name)",
+      "Official Home University Transcript (in English)",
+      "Resume / CV (required for Engineering and certain majors)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=7",
+    "notes": "Post-acceptance ClearWave immunization and negative TB skin test medical clearance also required (data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=5, #page=13)."
+  },
+  "academic_style": {
+    "value": "Public land-grant research university (est. 1856, ~30,000 enrolled students, 150+ majors across 13 colleges); uses Canvas LMS and semester coursework with dedicated Finals Period.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=4",
+    "notes": "Finals Period on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=6; Canvas LMS on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=10."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Auburn Abroad advising, 2-day pre-term orientation, ISSS immigration & DS-2019 advising (intledu@auburn.edu), AU Medical Clinic & ClearWave support, Global Tigers Association (2 events/mo), 300+ clubs via AU Involve, Tiger Transit, Night Security Shuttle, and Atlanta Airport Groome Shuttle.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=5",
+    "notes": "ISSS details on data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=10 & #page=23; shuttle on #page=11; clubs & GTA on #page=19."
+  },
+  "nomination_deadlines": {
+    "value": "Fall Nomination: Feb 1 - Mar 15, Application: Feb 1 - Apr 1; Spring Nomination: Sep 1 - Oct 15, Application: Sep 1 - Nov 15 (rolling weekly review; commitment paperwork due 2 weeks pre-arrival).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Auburn/Auburn University Incoming Exchange Student Guide AY23-24 (1).pdf#page=6",
+    "notes": "Spring dates confirmed in data/raw/factsheets/Auburn/Spring 2025 Exchange Quick Facts.pdf#page=1."
+  },
+  "ext": {}
+}

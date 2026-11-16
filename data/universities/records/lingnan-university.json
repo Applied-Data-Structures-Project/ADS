@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "lingnan-university",
+  "excel_rows": [
+    62
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1B2E8hnb80gUR5vcFkNSG3dSE-xGyRZ2r"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Lingnan University/2026-2027/Factsheet_university.pdf",
+      "data/raw/factsheets/Lingnan University/Lingnan University.docx",
+      "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf",
+      "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1irsRK.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Lingnan University/2026-2027/Factsheet_university.pdf.txt",
+      "data/raw/extracted/Lingnan University/Lingnan University.docx.txt",
+      "data/raw/extracted/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf.txt",
+      "data/raw/extracted/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1irsRK.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Lingnan University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Lingnan University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "country": {
+    "value": "China",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Tuen Mun, Hong Kong",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must have completed at least two terms of full-time study at home institution prior to exchange and must not be in the final year or final semester at home institution.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": "Requires cumulative GPA of 2.5 or higher on a 4.0 scale (matches Lingnan University.docx)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Chinese"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "Lingnan conducts approximately 75% of classes in English."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "Approx. 75% of classes taught in English across Arts, Business, and Social Sciences."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must provide proof: TOEFL iBT 79 (CBT 213 / PBT 550), IELTS Academic 6.0 overall, TOEIC 750 + support letter, or TOEFL ITP 550 + support letter. RHET 1020 / English-medium waiver not explicitly stated in Fall 2025 PDF.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English proficiency scores required for non-native English speakers (no Chinese/Cantonese requirement for English-taught courses).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026 (Term 1): Classes begin Sep 1, 2026; Classes end Nov 30, 2026; Examinations Dec 8-19, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/reg/useful-links/academic-calendar",
+    "notes": "Verified against Lingnan 2026-27 Academic Calendar."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027 (Term 2): Classes begin Jan 11, 2027; Classes end Apr 20, 2027; Examinations Apr 28 - May 11, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/reg/useful-links/academic-calendar",
+    "notes": "Verified against Lingnan 2026-27 Academic Calendar."
+  },
+  "final_semester_allowed": {
+    "value": false,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": "Fall 2025 PDF p.1 states: 'must not be in their final year or final semester at their home institution.'"
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "Incoming exchange students under reciprocal agreements have tuition waived by Lingnan University and continue paying home tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "HKD",
+      "min": 6700.0,
+      "max": 6700.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "Live Lingnan OGE portal estimates ~HKD 6,700/month in living expenses (meals HKD 3,500 + transport HKD 1,200 + entertainment/personal HKD 2,000), excluding on-campus hostel fee (~HKD 8,200 + HKD 330 air-con per term unless waived). Earlier 2020/21 Lingnan.docx estimated HKD 4,800-6,700/month."
+  },
+  "living_cost_usd_est": {
+    "value": 4269.69,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "6,700 HKD/month * 5 months = 33,500 HKD; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 8.6714 HKD & 1 EUR = 1.1052 USD -> 1 HKD = 0.12745347 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 4,269.69 USD (excludes hostel HKD 8,530/term if not waived)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fees waived under bilateral exchange. Mandatory on-campus twin-sharing hostel fee (~HKD 8,200/term + HKD 330 air-con/term) applies unless waived under institutional agreement. Comprehensive health/travel insurance recommended/required for study in Hong Kong.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": "All incoming exchange students are required to live on campus in twin-sharing student hostel rooms."
+  },
+  "housing_notes": {
+    "value": "Mandatory twin-sharing on-campus hostel rooms; approx. HKD 8,200/term hostel fee + HKD 330/term air-conditioning fee (waived under some partner agreements).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Students must obtain a Hong Kong Student Visa/Entry Permit before studying at Lingnan by completing the HKSAR VISA/ENTRY Permit Application Form and returning printed signed forms/documents by the deadline (Apr 30 for Fall) via courier for OGE sponsorship.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=2",
+    "notes": "Hard-copy courier submission deadline & address detailed on p.3."
+  },
+  "official_website_url": {
+    "value": "http://www.ln.edu.hk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:62",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ln.edu.hk/reg/undergraduate-programmes/course-description",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/reg/undergraduate-programmes/course-description",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.ln.edu.hk/reg/undergraduate-programmes/course-registration",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/reg/undergraduate-programmes/course-registration",
+    "notes": "Approx. 75% of classes are taught in English; consult Term Course Offering List."
+  },
+  "credit_system_and_load": {
+    "value": "Full-time HKSAR student visa status requires 12-18 undergraduate credits per term (normal load 15-18 credits; max 18 credits/term and 33 credits/year).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Exchange students may take undergraduate courses across faculties subject to prerequisites and major restrictions; online course registration is first-come, first-served (tentatively July for Fall).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university online nomination",
+      "Completed online student application form",
+      "Printed/hard-copy signed application package & VISA/ENTRY Permit form sent by courier",
+      "Recommendation letter in English from home faculty or International Office",
+      "Official transcript & endorsement from home institution",
+      "English proficiency proof (for non-native speakers)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1",
+    "notes": "Courier hard-copy checklist detailed on p.2-3."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located at 8 Castle Peak Road, Tuen Mun, New Territories, Hong Kong (no explicit urban/suburban schema label on official portal)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Office of Global Education (OGE, exchange@LN.edu.hk) coordinates student visa sponsorship, pre-arrival support, and on-campus hostel placement; CEAL offers English/additional language support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Term / Full Year: Deadline April 30 (incl. hard-copy courier documents). Spring (2nd) Term: Deadline October 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ln.edu.hk/oge/incoming-students/incoming-exchange/application-visa",
+    "notes": "Fall Apr 30 online + paper courier deadline also stated in data/raw/factsheets/Lingnan University/Lingnan University_Student Exchange Programme_Fall 2025__1ZXGSg.pdf#page=1, #page=3."
+  },
+  "ext": {}
+}

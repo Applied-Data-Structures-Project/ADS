@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "philipps-universitat-marburg",
+  "excel_rows": [
+    87
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "blocked",
+    "drive_links": [
+      "https://drive.google.com/open?id=14qPKAp8yXdkNupWq_iJBd86TmL0sItPF"
+    ],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Col H link (14qPKAp8yXdkNupWq_iJBd86TmL0sItPF) unreachable (error_html_response: Drive returned HTML page instead of document payload)"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Philipps-Universität Marburg",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "short_name": {
+    "value": "University of Marburg",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Marburg",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 1 year of undergraduate study required prior to exchange.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": "Agreement scope is University-wide (UG, GR). Verify faculty language and prerequisite criteria."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": "University-wide exchange; verify departmental capacity in restricted Numerus Clausus faculties (e.g., Human Medicine/Dentistry)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": "Features the MIX (Marburg International Exchange) interdisciplinary English-friendly course pool alongside departmental English- and German-taught courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 level (CEFR) strongly recommended or required for English-taught courses; accepted proofs include TOEFL, IELTS, Cambridge certificates, or home university language center confirmations depending on faculty.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "B2 level (CEFR) strongly recommended or required in German for German-taught courses (or B2 English for English-taught courses); optional 4-week preparatory German course before semester start.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Winter semester Oct 1–Mar 31; Winter 2026/27 lecture period Oct 12, 2026–Feb 12, 2027 (typically mid-Oct to mid-Feb).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer semester Apr 1–Sep 30; Summer 2026 lecture period Apr 13–Jul 17, 2026 (typically mid-Apr to mid-Jul).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": "Exchange students pay no regular tuition fees and are exempt from the €50 administrative component of the Semesterbeitrag."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 992,
+      "max": 992
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/get-started/finance",
+    "notes": "Official Marburg finance guide estimate (~€992/month, aligned with German visa/residence-permit blocked account funding requirement)."
+  },
+  "living_cost_usd_est": {
+    "value": 5482,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/get-started/finance",
+    "notes": "5-month USD estimate from official monthly estimate: €992/month × 5 months = €4,960 × 1.1052 USD/EUR (ECB reference rate ref 2026-11-13, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15) = $5,482 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Reduced Semesterbeitrag (Winter reference total ~€424.80 minus €50 admin fee exemption for exchange students) covering public transit semester ticket and Studierendenwerk/Mensa services.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/fl/contributions",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": "Incoming exchange students can reserve a Studierendenwerk dorm room directly within the online exchange application."
+  },
+  "housing_notes": {
+    "value": "Studierendenwerk Marburg dormitory room reservation option is integrated into the Mobility-Online exchange application.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students requiring a German visa or residence permit must show financial solvency aligned with the ~€992/month living-expense/blocked-account benchmark.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/get-started/finance",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.uni-marburg.de/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:87",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": "Excel Col H Google Drive fact sheet (14qPKAp8yXdkNupWq_iJBd86TmL0sItPF) returned unreachable HTML payload; official overseas exchange portal used instead."
+  },
+  "course_catalog_url": {
+    "value": "https://marvin.uni-marburg.de",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://marvin.uni-marburg.de",
+    "notes": "MARVIN central campus portal hosts the official course catalog, MIX modules, and course/exam registration."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Human Medicine (Humanmedizin) and Dentistry carry Numerus Clausus (NC) admission restrictions per degree-program rules; confirm non-degree exchange access with host coordinator.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/degree-programs",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Comprehensive German public university using MARVIN for module/exam registration, including the MIX (Marburg International Exchange) interdisciplinary course pool.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation program and optional 4-week preparatory German language course offered prior to semester start.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter semester application deadline July 10; Summer semester application deadline January 10 (via Mobility-Online following home university nomination).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-marburg.de/en/studying/studying-at-umr/exchange/overseas",
+    "notes": null
+  },
+  "ext": {}
+}

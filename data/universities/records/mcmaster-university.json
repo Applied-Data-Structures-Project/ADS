@@ -1,0 +1,344 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "mcmaster-university",
+  "excel_rows": [
+    70
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "McMaster University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Canada",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Ontario",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "city": {
+    "value": "Hamilton",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "BUS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": "Verified directly from Excel scope 'BUS'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English is the language of instruction; non-native speakers must provide accepted English proficiency certification (TOEFL/IELTS) or a home-institution coordinator proficiency confirmation letter depending on program level. No RHET 1020 waiver stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Early September to late December (including final exams).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": "Exact day dates per academic year managed via McMaster academic calendar / MacIncoming."
+  },
+  "spring_term_dates": {
+    "value": "Winter Term: Early January to late April (including final exams); no general UG Spring/Summer exchange.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": "Official mcmaster.ca confirms reciprocal exchange students are tuition-exempt (some non-reciprocal fee-paying partner exceptions exist)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory enrollment in Ontario University Health Insurance Plan (UHIP), billed automatically to the student Mosaic account (routine dental, vision, and prescription drugs excluded; MSU plan not included).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": "Exact annual/term CAD UHIP rate varies annually and is published via iss.mcmaster.ca / Mosaic."
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Most incoming exchange students arrange off-campus rentals/sublets via McMaster's Off-Campus Housing Marketplace (https://offcampushousing.mcmaster.ca/); residence portal at https://housing.mcmaster.ca/ prioritizes incoming 1st-year degree students.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://offcampushousing.mcmaster.ca/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Canadian Study Permit required for stays longer than 6 months; single-term stays require an eTA or Temporary Resident Visa (TRV) depending on citizenship.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://iss.mcmaster.ca/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.mcmaster.ca/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:70",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studentsuccess.mcmaster.ca/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalogue.mcmaster.ca/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalogue.mcmaster.ca/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://catalogue.mcmaster.ca/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalogue.mcmaster.ca/",
+    "notes": "Courses are taught in English; DeGroote MBA exchange resources at https://mbastudent.degroote.mcmaster.ca/."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online incoming exchange application via McMaster iCent portal (following partner nomination)"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studentsuccess.mcmaster.ca/",
+    "notes": "Exact supporting document checklist is issued to nominated applicants in the iCent portal."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Student Success Centre (macincoming@mcmaster.ca) and International Student Services (https://iss.mcmaster.ca/) provide pre-arrival advising, UHIP administration, and immigration guidance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://iss.mcmaster.ca/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "state-university-of-new-york-suny-at-new-paltz",
+  "excel_rows": [
+    103
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1mSCERJFYMpai0vR8O5Lokp4XMkYA2k2x"
+    ],
+    "local_files": [
+      "data/raw/factsheets/SUNY - New Paltz/Fall 2025/New Paltz Fact sheet Fall 2025.pdf",
+      "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/SUNY - New Paltz/Fall 2025/New Paltz Fact sheet Fall 2025.pdf.txt",
+      "data/raw/extracted/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "State University of New York (SUNY) at New Paltz",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "short_name": {
+    "value": "SUNY New Paltz",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "city": {
+    "value": "New Paltz",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=103",
+    "notes": "University-wide UG exchange agreement (Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=103",
+    "notes": "All majors except Digital Media & Journalism (subject to prerequisites on transcript)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Digital Media & Journalism"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Fact sheet page 1 explicitly states: 'the department of Digital Media & Journalism is NOT open to exchange and visiting due to lack of course availability for majors.'"
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Spring 2026 fact sheet page 1 specifies 2.5 / 4.0 GPA or equivalent."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "All courses taught in English (ESL courses also available)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 80 or IELTS 6.5 (no band score below 6.0); applicants who do not submit scores are tested upon arrival (ESL courses available).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes begin Aug 24, 2026; Thanksgiving Break Nov 25–27, 2026; Last day of classes Dec 7, 2026; Final Exams Dec 11–17, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://webapps.newpaltz.edu/ugc/calendar.html",
+    "notes": "Earlier Fall 2025 fact sheet page 1 listed move-in/pickup Aug 19, Orientation Aug 20, Classes Aug 25 – Dec 18, 2025."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2026 (fact sheet): Airport pickup & move-in Jan 15, Orientation Jan 16, Classes Jan 21 – May 15, 2026 (Spring Break Mar 30 – Apr 3, 2026); Spring 2027 UG registration opens Nov 9, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Spring 2027 registration window on https://webapps.newpaltz.edu/ugc/calendar.html."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": "Exchange students do not pay tuition ($9,180 tuition plus activity/athletic/technology fees waived by sponsor funds totaling $9,780/semester on page 3); students pay room, food service, college fee, health center fee, health insurance, and orientation fee."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2256,
+      "max": 2256
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=3",
+    "notes": "Spring 2026 & Fall 2025 fact sheets page 3 itemize Room Rent ($5,880) + Food Service ($2,960) + Books ($660) + Personal Expenses ($1,780) = $11,280 USD/semester, prorated across a 5-month semester ($2,256 USD/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 11280.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=3",
+    "notes": "5-month exchange semester estimate: Room $5,880 + Food Service $2,960 + Books $660 + Personal $1,780 = $11,280 USD/semester ($2,256 USD/month * 5 months * 1.0 = $11,280 USD, 1 USD = 1.0 USD, checked 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Spring 2026 / Fall 2025 billed non-tuition fees: Health Insurance $1,130/semester, Health Center Fee $170/semester, College Fee $30/semester, one-time Orientation Fee $150 (plus on-campus Room $5,880 and Food Service $2,960).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": "Living on campus in Residence Halls (with meal plan) is strongly recommended; SUNY New Paltz is not involved with off-campus housing (https://www.newpaltz.edu/reslife/)."
+  },
+  "housing_notes": {
+    "value": "On-campus Residence Halls + meal plan strongly recommended ($5,880 room + $2,960 food service/semester in 2025-2026); university does not assist with off-campus housing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": "Cost figures on page 3."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor visa required (unless US citizen); DS-2019 requires demonstrating $12,760 USD Personal Funds for 1 semester (~$25,520 for Academic Year) covering room, meal plan, fees, insurance, books, and personal expenses.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=3",
+    "notes": "Exact embassy processing lead time not stated."
+  },
+  "official_website_url": {
+    "value": "http://www.newpaltz.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:103",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.newpaltz.edu/international/partners/exchange/partner-fact-sheet/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.newpaltz.edu/classes/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Also full course descriptions at https://www.newpaltz.edu/ugc/ucourses.html and programs at https://www.newpaltz.edu/ugc/programs.html."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours; minimum 12 credits/semester required for full-time & international student status (15 credits standard; up to 19 credits permitted).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.newpaltz.edu/ugc/",
+    "notes": "Confirmed on newpaltz.edu academic credit load policies."
+  },
+  "course_restrictions_note": {
+    "value": "Department of Digital Media & Journalism is closed to exchange students; all other areas open provided prerequisites are evidenced on transcript (popular courses include POL370 UN Semester, THE209, SAB353).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Prerequisites & popular courses on page 2."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "SUNY comprehensive public liberal arts college."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Official airport pick-up, mandatory Orientation, ESL courses, student organizations, and dedicated Inbound Exchange Advisor (pollardj@newpaltz.edu).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Also pages 2–3."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Mar 15 / Application Apr 15 (Fall 2025 sheet); Spring: Nomination Oct 15 / Application Nov 15 (Spring 2026 sheet; flexible by agreement).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/SUNY - New Paltz/Spring 2026/New Paltz Fact sheet Spring 2026.pdf#page=1",
+    "notes": "Fall deadlines on New Paltz Fact sheet Fall 2025.pdf#page=1."
+  },
+  "ext": {}
+}

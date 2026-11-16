@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "mci-management-center-innsbruck",
+  "excel_rows": [
+    69
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1A7gOjCJfa56JA9bZz_qPj-nOciVLnQ3P"
+    ],
+    "local_files": [
+      "data/raw/factsheets/MCI- Austria/MA IB&M_New Curriculum.pdf",
+      "data/raw/factsheets/MCI- Austria/MA IB&M_Old Curriculum.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/MCI- Austria/MA IB&M_New Curriculum.pdf.txt",
+      "data/raw/extracted/MCI- Austria/MA IB&M_Old Curriculum.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "MCI Management Center Innsbruck",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "country": {
+    "value": "Austria",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Innsbruck",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Bussineess / only 3 courses in english for UG",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": "Fall semester:\nBeginning of September – End of December\nBeginning of October - End of January/ mid February\n\nSpring semester:\nBeginning of March – End of June | Fall semester: Beginning of September – End of December Beginning of October - End of January/ mid February  Spring semester: Beginning of March – End of June"
+  },
+  "official_website_url": {
+    "value": "https://www.mci.edu/de/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "short_name": {
+    "value": "MCI",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Bachelor exchange applicants must typically have completed at least 4 semesters at their home university prior to exchange start.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": "Mapped from Excel scope 'Bussineess / only 3 courses in english for UG'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": "Mapped from Excel scope 'Bussineess / only 3 courses in english for UG'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Local folder holds only MA IB&M curricula; note Excel scope flags severe English course limit for UG Business ('only 3 courses in english for UG')."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "MCI does not enforce a strict university-wide minimum GPA cutoff; academic eligibility/GPA is vetted by home university at nomination (mci4me.at)."
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/courses-in-english/syllabi",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": "Excel scope explicitly warns 'only 3 courses in english for UG' in Business; graduate MA IB&M offers broader English modules."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 minimum for Bachelor (e.g., TOEFL iBT 75, IELTS 5.5, or passing MCI online English test); CEFR C1 for Master.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "German required only if enrolling in German-taught courses.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester: Sep 2 - Dec 22, 2026 (select Bachelor programmes e.g. Entrepreneurship/Tourism & Leisure; Social/Health/Public Mgmt) OR Oct 1, 2026 - Feb 20, 2027 (all other programmes); incl. orientation & initial exams.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Mar 2 - Jun 30, 2027 across all programmes (Excel also notes Mar-Jun).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": "Partner-nominated bilateral/Erasmus exchange students receive a tuition waiver at MCI."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exact numeric monthly EUR living budget did not trace cleanly to mci.edu/mci4me.at citations (ungrounded summary ranges excluded)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No mci.edu/mci4me.at-verified monthly living budget figure."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Austrian Student Union (ÖH) membership + MCI administrative fee totaling approx. EUR 50 per semester (includes basic accident/liability insurance).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Competitive Innsbruck rental market; MCI accommodation portal at https://international.mci.edu/en/students/international-exchange-students/accommodation guides applicants (OeAD/ISH partner details traced to 3rd-party sheets)."
+  },
+  "housing_notes": {
+    "value": "Consult MCI incoming accommodation guide immediately upon nomination: https://international.mci.edu/en/students/international-exchange-students/accommodation.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.mci.edu/en/students/international-exchange-students/accommodation",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students require Austrian Visa D or Residence Permit (Aufenthaltsbewilligung Student) depending on stay duration; apply early via Austrian Embassy using MCI acceptance docs.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.mci.edu/en/students/international-exchange-students/visa-requirements",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.mci.edu/en/international/study-internationally/courses-in-english/syllabi",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/courses-in-english/syllabi",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.mci.edu/en/international/study-internationally/courses-in-english/syllabi",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/courses-in-english/syllabi",
+    "notes": "Official MCI English-taught courses & syllabi portal; note AUC Excel warning of only 3 English UG courses."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; up to 30 ECTS maximum per semester (no MCI minimum enforced, home university minimum applies).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "AUC Excel list flags 'only 3 courses in english for UG' in Business; MCI policy directs choosing modules from a single primary degree programme plus optional International Program courses (first-come, first-served).",
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:69",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online MCI exchange application",
+      "Academic transcript",
+      "English B2/C1 proficiency proof (standard test or MCI online English test)"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Applied university ('Entrepreneurial School') with degree-cohort scheduling; exact style description unverified on mci.edu."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Innsbruck, Austria; population tier not explicitly cited on verified mci.edu pages."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Campus type not explicitly stated in verified mci.edu sources."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not rated on mci.edu."
+  },
+  "international_support_services": {
+    "value": "MCI International Relations Office pre-arrival, visa, housing, and online English test guidance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall/Winter semester: Nomination Apr 1, Application May 1 (some guidelines extend to May 15); Spring/Summer semester: Nomination Oct 1, Application Nov 1 (up to Nov 15).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mci.edu/en/international/study-internationally/exchange-students",
+    "notes": null
+  },
+  "ext": {}
+}

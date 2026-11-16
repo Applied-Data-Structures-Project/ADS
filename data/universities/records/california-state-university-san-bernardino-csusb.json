@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "california-state-university-san-bernardino-csusb",
+  "excel_rows": [
+    15
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "California State University, San Bernardino (CSUSB)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CSUSB",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "California",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "city": {
+    "value": "San Bernardino",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": "Minimum 2.0/4.0 GPA required for incoming exchange students (2.5 GPA recommended)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate exchange: TOEFL iBT 61 or IELTS 5.5 (TOEFL school code 4099). Graduate: TOEFL iBT 79-80 or IELTS 6.0 (6.5 for MBA/MPA/MS Accountancy per graduate admissions). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (English-medium institution).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": "Summer only"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Instruction begins 24 Aug 2026; Final Exams 7-12 Dec 2026 (Winter Intersession 18 Dec 2026 - 11 Jan 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/academic-programs/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes begin mid-Jan (15-18 Jan 2027); Spring Break 15-21 Mar 2027; Final Exams 7-14 May 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/academic-programs/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AUC Excel agreement limits available_terms to Summer UG only, whereas CSUSB international exchange guidelines state standard semester exchange covers Fall/Spring and excludes January/Summer intersessions (separate out-of-pocket tuition applies for Summer unless covered by bilateral agreement)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 3366,
+      "max": 3366
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/tuition-and-fees",
+    "notes": "Derived from CSUSB 2026-27 9-month Additional/Living Expenses total USD 30,292 (Room & Board USD 20,138 + Health Insurance USD 1,956 + Books/Supplies USD 880 + Transportation USD 2,904 + Personal USD 4,414) divided by 9 months = USD 3,365.78/month."
+  },
+  "living_cost_usd_est": {
+    "value": 16828.89,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/tuition-and-fees",
+    "notes": "5-month USD estimate derived from CSUSB 2026-27 9-month Additional/Living Expenses USD 30,292 (USD 3,365.78/mo x 5 = USD 16,828.89), collected 2026-11-15 (USD local currency; no FX conversion). Note AUC Excel row restricts CSUSB to Summer."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory university-approved health insurance for all F-1/J-1 exchange students via UnitedHealthcare (USD 1,956 estimated for 2026-27; higher if >24 yrs); strict waiver rules per https://www.csusb.edu/international-education/health-insurance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/health-insurance",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/before-you-arrive",
+    "notes": "On-campus housing available via CSUSB Residence Life (first-come, first-served; not guaranteed)."
+  },
+  "housing_notes": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 student DS-2019 requires official financial support proof covering 9-month living costs (USD 30,292 living/additional + tuition if applicable; + USD 6,000 per dependent) per https://www.csusb.edu/international-education/tuition-and-fees.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/tuition-and-fees",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.csusb.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:15",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.csusb.edu/international-education",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "AUC Excel agreement restricts CSUSB to Summer UG, while CSUSB international exchange policy states regular exchange agreements cover Fall/Spring semesters and exclude January/Summer intersessions (separate tuition applies unless specifically waived).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Standard Fall/Spring exchange (reference): Fall nomination 15 Feb, application 15 Mar (select tracks 15 Apr); Spring nomination 1 Sep, application 15 Sep.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.csusb.edu/international-education/application-document-deadlines",
+    "notes": null
+  },
+  "ext": {}
+}

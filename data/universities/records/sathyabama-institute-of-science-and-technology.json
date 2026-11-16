@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "sathyabama-institute-of-science-and-technology",
+  "excel_rows": [
+    98
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1c020HMSHDYohrOyJ6m5-g0o8Jv9Rdoqm"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Sathyabama Institute of Science and Technology",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "India",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Chennai",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "region": {
+    "value": "South Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be an active registered student at home university in good standing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Science and Technology",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Good command of English required (no specific IELTS/TOEFL score cutoff or RHET 1020 rule published in 2020-2021 fact sheet).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sathyabama.ac.in/international-relations/student-exchange-programme",
+    "notes": "Official sathyabama.ac.in states tuition fees are generally waived for inbound exchange students coming from official partner universities under reciprocal agreements."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": "Separate on-campus men's and women's hostels available upon submitting the Hostel Reservation form during application (also verified on sathyabama.ac.in)."
+  },
+  "housing_notes": {
+    "value": "On-campus hostel accommodation (AC/Non-AC sharing with mess meals, Wi-Fi, medical care) requested via Hostel Reservation Form; earlier fee link http://www.sathyabama.ac.in/hostelfees_home.php cited in 2020-2021 DOCX.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Inbound exchange students receive institutional visa sponsorship support from Sathyabama after submitting official nomination, signed Learning Agreement, active registration, English proof, and medical clearance; exact visa lead time and financial proof threshold not specified.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.sathyabama.ac.in/international-relations/student-exchange-programme",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.sathyabama.ac.in/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:98",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.sathyabama.ac.in/international-relations/student-exchange-programme",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sathyabama.ac.in/international-relations/student-exchange-programme",
+    "notes": "International Relations overview at https://www.sathyabama.ac.in/international-relations/overview; 2020-2021 DOCX cited http://www.sathyabama.ac.in/sitepagethree.php?firstref=76."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official home university nomination & signed Learning Agreement",
+      "Application form",
+      "Doctor-signed Health Report form / medical clearance",
+      "Hostel Reservation form (if on-campus hostel desired)",
+      "English proficiency confirmation",
+      "Active home-university registration proof"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sathyabama Institute of Science and Technology/Sathyabama Institute of Science and Technology, Chennai (2).docx",
+    "notes": "Learning Agreement and medical clearance confirmed on https://www.sathyabama.ac.in/international-relations/student-exchange-programme."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

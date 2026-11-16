@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "eberhard-karls-universitat-tubingen",
+  "excel_rows": [
+    29,
+    149
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1mSPm1n1F39q8ZvNfbT9pKcT-9jXAWC-i?usp=drive_link",
+      "https://drive.google.com/drive/folders/1mSPm1n1F39q8ZvNfbT9pKcT-9jXAWC-i"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoTübingen/University of Tuebingen Fact Sheet.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Eberhard Karls Universität Tübingen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Tübingen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Political Science- Dual degree",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=29",
+    "notes": "Merged rows [29, 149]: row 29 specifies GR Fall 'Political Science- Dual degree' (hosted by HUSS at AUC); row 149 merges general 'University of Tubingen' entry with blank level/terms/scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "Political Science (Dual degree)"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=29",
+    "notes": "Excel row 29 specifies 'Political Science- Dual degree' (GR, Fall); row 149 is blank general listing."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "2020/2021 fact sheet confirms German and English course offerings."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "Courses available in German and English; English courses available in selected departments/programs (German-taught courses predominate across standard degree curricula)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English (if studying in English) or B2 German (if studying in German); 2020/2021 fact sheet notes no formal language certificate required at application (check current departmental dual-degree rules).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "2020/2021 fact sheet; dual-degree Political Science students should verify current MA admission standards."
+  },
+  "host_language_requirement": {
+    "value": "B2 German required only for German-taught courses (not required if taking English-taught courses); German language classes offered from B1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": "Fall only"
+  },
+  "fall_term_dates": {
+    "value": "Winter Semester 2026/2027: Oct 1, 2026 – Mar 31, 2027 (Orientation Oct 5–13, 2026; Lectures Oct 12, 2026 – Feb 6, 2027; Christmas Break Dec 23, 2026 – Jan 6, 2027; Exams from Feb 6, 2027 onward).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Administration/Dezernat_V/International_Office/Incomings/Exchange_students/Academic_Calendar_Winter_2026-2027.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer Semester: Apr 1 – Sep 30 annually (standard German semester dates per fact sheet; note Excel row 29 specifies Fall term for the dual-degree agreement).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "2020/2021 fact sheet gives standard Summer Semester Apr 1 – Sep 30."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/en/study/organizing-your-studies/fees/semester-and-administration-fees/",
+    "notes": "Students under institutional exchange / mutual-waiver dual-degree agreements pay only the Semesterbeitrag rather than the €1,500/semester non-EU degree tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 947,
+      "max": 947
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/en/study/organizing-your-studies/costs-and-funding/",
+    "notes": "University of Tübingen estimates 947 EUR/month minimum student living budget."
+  },
+  "living_cost_usd_est": {
+    "value": 5233.12,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/en/study/organizing-your-studies/costs-and-funding/",
+    "notes": "5-month exchange semester estimate: 947 EUR/month * 5 months * 1.1052 = 5233.12 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Semester contribution (Semesterbeitrag) ca. 194.80–197.80 EUR/semester (Studierendenwerk, administration, student union); unlimited German-compliant health insurance required for enrollment.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/en/study/organizing-your-studies/fees/semester-and-administration-fees/",
+    "notes": "Health insurance requirement per University of Tuebingen Fact Sheet.docx."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "Allocated quota of single student dormitory rooms via Studierendenwerk Tübingen-Hohenheim (http://en.my-stuwe.de/housing/halls-of-residence-tuebingen/); deadlines May 31 (Winter) / Dec 31 (Summer)."
+  },
+  "housing_notes": {
+    "value": "Exchange dorm quota via Studierendenwerk Tübingen-Hohenheim (single rooms); apply by May 31 (Winter) or Dec 31 (Summer).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.uni-tuebingen.de/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:29,149",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://uni-tuebingen.de/en/international/study-in-tuebingen/erasmus-and-exchange-to-tuebingen/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uni-tuebingen.de/en/international/study-in-tuebingen/erasmus-and-exchange-to-tuebingen/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://campus.verwaltung.uni-tuebingen.de/lsfpublic/rds?state=wtree&search=1&category=veranstaltung.browse&menuid=lectureindex&breadcrumb=lectureindex&breadCrumbSource=lectures&noDBAction=y&init=y",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "Course catalog URL recovered from DOCX external relationship."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS system; normal full-time load is 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Excel agreement specifies GR Fall 'Political Science- Dual degree'; general fact sheet also notes Medicine is restricted (fluent German required) and Faculty of Science requires study plan and transcript.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "German/European research university",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": "Traditional German research university using ECTS."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester: Nomination May 15 / Application May 31; Summer Semester: Nomination Nov 15 / Application Nov 30 (2020/2021 fact sheet).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoTübingen/University of Tuebingen Fact Sheet.docx",
+    "notes": null
+  },
+  "ext": {}
+}

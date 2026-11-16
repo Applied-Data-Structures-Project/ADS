@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-university-of-akron",
+  "excel_rows": [
+    116
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1VYRymN3qrBbb2CO3Tz1xpoorOg7WDUuf"
+    ],
+    "local_files": [
+      "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.docx",
+      "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/University of Akron/UoAkron Exchange Partner Fact Spring 2022.docx.txt",
+      "data/raw/extracted/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The University of Akron",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Ohio",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "city": {
+    "value": "Akron",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Good academic standing with minimum 2.5/4.0 GPA and at least 2 semesters of full-time university study completed prior to enrollment.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=1",
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uakron.edu/international/apply/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uakron.edu/international/apply/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate minimum: TOEFL iBT 71 or IELTS Academic 6.0 (see Proof of English Proficiency at https://uakron.edu/international/apply/). RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uakron.edu/international/apply/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (TOEFL iBT 71 or IELTS 6.0).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uakron.edu/international/apply/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-24 to 2026-12-13 (classes begin Aug 24; final exams Dec 7–13, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/calendar/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-11 to 2027-05-09 (classes begin Jan 11; Spring recess Mar 22–28; final exams May 3–9, 2027)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/calendar/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=3",
+    "notes": "Tuition and fees are waived for incoming exchange students (12 to 18 undergraduate credits)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1588,
+      "max": 1588
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/international/future-students/tuition-scholarships.dot",
+    "notes": "Derived as $7,938 / 5 months = $1,587.60/mo (rounded to $1,588) from half of UA international I-20 living estimate ($13,317 room & board + $2,559 books/personal = $15,876/yr, excluding $1,328 insurance). Spring 2022 factsheet (#page=3) listed $5,610/sem room & board + $500/sem books."
+  },
+  "living_cost_usd_est": {
+    "value": 7938.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/international/future-students/tuition-scholarships.dot",
+    "notes": "1-semester USD estimate derived as half of annual international student Room & Board ($13,317) + Books & Personal Expenses ($2,559) = $7,938.00 USD (excluding health insurance ~$1,328/yr; already in USD, recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory international student health insurance (LewerMark, ~$1,328/year per health-insurance.dot unless waived; Spring 2022 factsheet listed $736/sem); SEVIS fee ($220) and J-1 visa fee ($160). No UA application fee.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/international/current-students/health-insurance.dot",
+    "notes": "SEVIS/J-1 and zero application fee also confirmed in Spring 2022 Fact Sheet #page=2–3."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=1",
+    "notes": "Spring 2022 Fact Sheet mandates: 'Must agree to live on campus and purchase a campus meal plan. UA does not offer exceptions to this requirement for exchange students.'"
+  },
+  "housing_notes": {
+    "value": "On-campus residence hall and meal plan mandatory for exchange students (no exceptions on Spring 2022 factsheet); recent room & board ~$13,317–$13,396/academic year (`tuition-scholarships.dot` & `cost-of-attendance.dot`).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/finaid/cost-of-attendance.dot",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor visa (Form DS-2019) required; financial documents required after acceptance ($220 SEVIS + $160 J-1 visa fees).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=2",
+    "notes": "Fees noted on #page=3; pre-arrival guidance at https://www.uakron.edu/international/plan/."
+  },
+  "official_website_url": {
+    "value": "https://www.uakron.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:116",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uakron.edu/international/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uakron.edu/international/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://bulletin.uakron.edu/undergraduate/courses-instruction/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: 12 to 18 undergraduate credits per semester covered under exchange tuition waiver.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Not all catalog courses run every semester; courses with prerequisites require proof of equivalent prior coursework or departmental advisor permission.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "UA online application (select UA Application, not Common App; placeholder SSN 999-99-9999)",
+      "Official transcript emailed directly from home school official to intlrecruit@uakron.edu",
+      "Proof of English language proficiency",
+      "Passport biographical page (submitted with coordinator nomination)",
+      "Financial documentation for DS-2019 (after acceptance)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Center advising, UANet ID onboarding, orientation, and pre-arrival planning (https://www.uakron.edu/international/plan/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year application: May 1. Spring nomination: October 15; Spring application: November 1 (consecutive Fall+Spring AY only; no summer exchange).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Akron/UoAkron Exchange Partner Fact Spring 2022.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

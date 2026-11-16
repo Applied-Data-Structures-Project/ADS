@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "paris-school-of-business",
+  "excel_rows": [
+    84
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1G_zeOnKRNiaiq55tUXM04iM-b3FPnS51"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2025.pdf",
+      "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2025__13YtYs.docx",
+      "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2025__1omszP.docx",
+      "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Paris School of Business/Exchange-Fact-Sheet_Partner_2025.pdf.txt",
+      "data/raw/extracted/Paris School of Business/Exchange-Fact-Sheet_Partner_2025__13YtYs.docx.txt",
+      "data/raw/extracted/Paris School of Business/Exchange-Fact-Sheet_Partner_2025__1omszP.docx.txt",
+      "data/raw/extracted/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Paris School of Business",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "short_name": {
+    "value": "PSB",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Paris",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=84",
+    "notes": "Agreement scope is Business Administration (UG/GR, Fall/Spring), mapping to AUC's School of Business."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=84",
+    "notes": "All Business majors within School of Business per Business Administration scope (row 84)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.3,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": "2026-2027 Partner Fact Sheet states minimum GPA 2.3."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": "Undergraduate courses in English or French; graduate courses in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": "Full English-taught exchange curriculum available at both UG and GR levels alongside UG French options."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English: IELTS 5.5, Duolingo 100, TOEFL iBT 4 (new 1–6 scale; 72 for scores taken before Jan 31, 2026), or home-university B2 letter; exempt if current degree program is taught fully in English.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: Orientation Sep 17, 2026; Term Sep 21 – Dec 19, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Orientation Jan 21, 2027; Term Jan 25 – Apr 23, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": "Partner exchange students pay tuition at their home institution (non-partner fee-paying Study Abroad students pay €5,500 for 30 ECTS)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1200,
+      "max": 1500
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": "2026-2027 Partner Fact Sheet budgets €1,200–€1,500/month in Paris."
+  },
+  "living_cost_usd_est": {
+    "value": 7460.1,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": "5-month exchange semester estimate: midpoint 1350 EUR/month (range 1200–1500 EUR) * 5 months * 1.1052 = 7460.10 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": "PSB has no on-campus student housing; provides Accommodation Guide and external partner platforms (https://www.psbedu.paris/en/student-housing)."
+  },
+  "housing_notes": {
+    "value": "No on-campus dormitories; PSB provides an Accommodation Guide and housing partner referrals (https://www.psbedu.paris/en/student-housing).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students staying >90 days need VLS-TS long-stay student visa (via Campus France / France-Visas) with ~€615/month financial means requirement.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf#page=5",
+    "notes": "Links https://france-visas.gouv.fr/en/web/france-visas/assistant-visa and https://www.campusfrance.org/en on page 5."
+  },
+  "official_website_url": {
+    "value": "https://www.psbedu.paris/fr",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:84",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.psbedu.paris/en/programs/exchange-program",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf#page=2",
+    "notes": "Also live at https://www.psbedu.paris/en/programs/exchange-program."
+  },
+  "course_catalog_url": {
+    "value": "https://oxymis-my.sharepoint.com/:b:/g/personal/s_mabeau_psbedu_paris/IQC1NS63WiHpRYvDUUTgj_ZIAVF81sspGvfD46n3UyuZmxc?e=E7UFf0",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf#page=4",
+    "notes": "Course catalogue SharePoint PDF link embedded on page 4 of 2026-2027 Partner Fact Sheet."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; up to 30 ECTS per semester (1–5 courses, 6 ECTS each).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": "Confirmed on https://www.psbedu.paris/en/programs/exchange-program."
+  },
+  "course_restrictions_note": {
+    "value": "Business/Management curriculum (PSB Grande Ecole Program UG/PG and International Program); graduate courses taught in English.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "French grande école business school (ECTS)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.psbedu.paris/en/programs/exchange-program",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 Fall: Nomination May 15 / Application May 31; Spring: Nomination Oct 15 / Application Oct 31.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Paris School of Business/Exchange-Fact-Sheet_Partner_2026-27.pdf",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "brandeis-university",
+  "excel_rows": [
+    14
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/16Zp8bvPapiKkicFAWFwAYISON45EuZ14"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Brandeis/2022/FactSheet_Fall2022.pdf",
+      "data/raw/factsheets/Brandeis/2025/FactSheet_25-26.pdf",
+      "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Brandeis/2022/FactSheet_Fall2022.pdf.txt",
+      "data/raw/extracted/Brandeis/2025/FactSheet_25-26.pdf.txt",
+      "data/raw/extracted/Brandeis/2026-2027/FactSheet_26-27.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Brandeis University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Massachusetts",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "city": {
+    "value": "Waltham",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "http://www.brandeis.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be an enrolled university degree candidate and have completed at least one year of study at the home institution.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:14",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": [
+      "Graduate-level programs"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": "Graduate-level courses are not available to undergraduate exchange students; Business & Economics are open with high-demand registration difficulty."
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": "Minimum 3.0 GPA or equivalent."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": "US institution; all undergraduate Arts & Sciences courses taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT >=90, IELTS 6.5-7.0 (no band below 6.5), or Cambridge C1/C2. Applicants studying for a degree taught fully in English (e.g., AUC) are typically exempted upon emailing Brandeis Study Abroad to request an exemption.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required; no secondary language requirement.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027: Classes Aug 26 - Dec 3, 2026; Study Days Dec 4 & Dec 7; Final Exams Dec 8 - Dec 16, 2026 (late August arrival/mandatory orientation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=8",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027: Classes Jan 19 - May 6, 2027; Study Day May 7; Final Exams May 10 - May 18, 2027 (early January arrival/mandatory orientation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=8",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.brandeis.edu/abroad/study-at-brandeis/incoming-exchange/index.html",
+    "notes": "Reciprocal bilateral exchange students continue paying home-institution tuition and receive a Brandeis tuition waiver; mandatory fees/insurance/room & board still apply."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2304,
+      "max": 2304
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=6",
+    "notes": "Derived monthly cost from AY 2026-2027 Fact Sheet p.6 estimated per-semester living expenses divided by 5 months: Room & Board $10,422 (Ziv suite + required All Access + 5 Meal Plan) + Books & supplies $500 + Personal expenses $600 = $11,522/semester -> $2,304.40/mo (~$2,304/mo). Excludes Health insurance ($3,917/sem), Visa fees ($400), and Airfare ($1,850)."
+  },
+  "living_cost_usd_est": {
+    "value": 11520.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=6",
+    "notes": "5-month estimate derived from monthly USD range 2,304/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 2,304.0 USD = 11,520.00 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "AY 2026-2027 estimated per semester: Mandatory Health Insurance $3,917 and Visa fees $400; mandatory on-campus housing & meal plan included in $10,422 Room & Board estimate.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": "All incoming exchange students are required to live in on-campus residence hall suites with a meal plan."
+  },
+  "housing_notes": {
+    "value": "Typically 2-6 person suites with single bedrooms (~80-100 sq ft), shared bathrooms, and common space (Ziv suite + All Access + 5 Meal Plan modeled at $10,422/sem for 2026-27).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange grant verified; financial aid/scholarships on brandeis.edu apply to degree students."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor visa sponsorship (Form DS-2019) coordinated by Brandeis ISSO via electronic VIDOF (Visa Information/Declaration of Finances) portal requiring proof of liquid financial support for full exchange duration; 2026-27 Fact Sheet p.6 estimates ~$400 visa fees.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.brandeis.edu/isso/new-students/pre-arrival/visa/vidof-docs-i20-ds2019.html",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.brandeis.edu/abroad/study-at-brandeis/incoming-exchange/index.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.brandeis.edu/abroad/study-at-brandeis/incoming-exchange/index.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.brandeis.edu/registrar/registration/schedule.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.brandeis.edu/registrar/registration/schedule.html",
+    "notes": "Admitted exchange students view open sections and register via Workday."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in Brandeis Registrar Schedule (https://www.brandeis.edu/registrar/registration/schedule.html) are taught in English; no separate English-only filter URL."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credits (most courses 4 credits). Exchange students must take 12 credits min, up to 20 credits max with permission; typical load 16 credits (4 courses).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Graduate-level courses are closed to undergraduate exchange students; Business and Economics courses are high-demand and difficult to register for; some courses require instructor/prerequisite review; add/drop spans first 2 weeks.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online Application (Personal & Academic Info, Emergency Contact, Personal Statement, Profile Photo, Passport photo page)",
+      "Official Transcript",
+      "TOEFL/English proficiency proof (if applicable)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=4",
+    "notes": "Transcript and English scores submitted via home exchange coordinator."
+  },
+  "academic_style": {
+    "value": "US liberal arts seminar/lecture participation model: class attendance often counts toward final grades, continuous multi-assignment assessment throughout semester, active class discussion.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=8",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Waltham, MA (~10 miles outside downtown Boston); official city population tier threshold not verified on brandeis.edu."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "brandeis.edu describes Waltham campus as ~10 miles outside downtown Boston without explicit suburban/urban classification label in verified excerpts."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on brandeis.edu or Fact Sheet (US English-speaking campus)."
+  },
+  "international_support_services": {
+    "value": "Office of Study Abroad, ISSO visa advising, mandatory Orientation, Brandeis Counseling Center, BUGS peer tutoring, Brandeis Writing Center, Spiritual Life chapels/Muslim prayer room, 250+ clubs, Gosman Sports Center.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=7",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall/Academic Year: Partner Nomination Apr 1 (apps open Feb 1), Student Application May 1. Spring: Partner Nomination Sep 15 (apps open Aug 1), Student Application Oct 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Brandeis/2026-2027/FactSheet_26-27.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

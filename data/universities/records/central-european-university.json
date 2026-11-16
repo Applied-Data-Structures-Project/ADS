@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "central-european-university",
+  "excel_rows": [
+    17
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/14CNwnYXZw8YyJm3mAsH7G1Sk91xJLUwW"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Central European University (CEU)/2025-2026/CEU Fact Sheet 2025_2026_Final.pdf",
+      "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Central European University (CEU)/2025-2026/CEU Fact Sheet 2025_2026_Final.pdf.txt",
+      "data/raw/extracted/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Central European University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CEU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Austria",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Vienna",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Home nomination and competitive application review required; BA exchange students can only be nominated for Winter + Spring terms combined, not Spring-only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2025-2026/CEU Fact Sheet 2025_2026_Final.pdf#page=1",
+    "notes": "2025-2026 fact sheet page 1 explicitly states BA students can only apply for Winter + Spring combined; asterisk retained in 2026-2027 fact sheet page 1."
+  },
+  "agreement_scope_raw": {
+    "value": "Political science",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=17",
+    "notes": "Agreement scope is Political science (UG, Fall/Spring), hosted in HUSS at AUC."
+  },
+  "eligible_majors": {
+    "value": [
+      "Political Science"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=17",
+    "notes": "Partner list row 17 restricts scope to Political science."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "English is the working and instructional language at CEU."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "All listed CEU courses are taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2–C1 English expected (C1 cited on 2025-2026 sheet); TOEFL/IELTS/Cambridge or home institution CEFR confirmation letter; native speakers and graduates of fully English-taught BA/MA programs are exempt.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "2026-2027 fact sheet page 1 specifies B2–C1 expected; 2025-2026 fact sheet page 2 details exemptions."
+  },
+  "host_language_requirement": {
+    "value": "None required (English is the working language; optional free German courses offered).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: Mandatory Orientation Week Aug 31 – Sep 5, 2026; Fall Term Sep – Dec 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "2026-2027 fact sheet page 1 and https://www.ceu.edu/orientation give Aug 31 – Sep 5, 2026 orientation week."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Winter Term Jan – Mar 2027; Spring Term Apr – Jun 2027 (BA exchange students must take Winter + Spring combined).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "2025-2026 fact sheet page 1 confirms BA students cannot apply for Spring term alone."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/academics/bachelors/exchange",
+    "notes": "Reciprocal exchange students continue paying home tuition and are exempt from CEU tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1000,
+      "max": 1000
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2025-2026/CEU Fact Sheet 2025_2026_Final.pdf#page=2",
+    "notes": "2025-2026 fact sheet page 2 estimates 1,000 EUR/month living expenses in Vienna; 2026-2027 fact sheet page 2 links https://www.ceu.edu/student-life/arriving/cost-of-living."
+  },
+  "living_cost_usd_est": {
+    "value": 5526.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2025-2026/CEU Fact Sheet 2025_2026_Final.pdf#page=2",
+    "notes": "5-month exchange semester estimate: 1000 EUR/month * 5 months * 1.1052 = 5526.00 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Austrian Student Union (ÖH) fee 26.20 EUR/semester (52.40 EUR/year); mandatory health insurance required (EHIC for EU/EEA or MA35-compliant Austrian insurance for non-EU/EEA).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/tuition-fees",
+    "notes": "ÖH fee from CEU Tuition & Fees page; health insurance rules from 2026-2027 fact sheet page 2."
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=2",
+    "notes": "2026-2027 fact sheet page 2 states 'CEU does not operate dormitories'; housing FAQ: https://www.ceu.edu/student-life/arriving/accommodation/faq."
+  },
+  "housing_notes": {
+    "value": "CEU does not operate dormitories; incoming students arrange private/student housing in Vienna via guidance at https://www.ceu.edu/student-life/arriving/accommodation/faq.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA stays over 90 days require Visa D (up to 6 months) or Student Residence Permit; Austrian financial proof thresholds: 533.85 EUR/month (under 24) or 966.65 EUR/month (24+), plus rent exceeding 299.95 EUR/month.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/student-life/arriving/residence-documents",
+    "notes": "URL linked from 2026-2027 fact sheet page 2 visa section."
+  },
+  "official_website_url": {
+    "value": "https://www.ceu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:17",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ceu.edu/academics/bachelors/exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/academics/bachelors/exchange",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://ceu.studyguide.timeedit.net/studies?mainTab=studies",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "URL recovered from PDF hyperlink annotation on 2026-2027 fact sheet page 1."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Dual US credit and ECTS system (1 US credit = 2 ECTS); grading scale A (3.67+) down to C+ (2.33 minimum pass), F (0).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/cat/annex-6-assignment-credit-hours",
+    "notes": "Credit conversion from CEU Catalog Annex 6; grading scale from 2026-2027 fact sheet page 2."
+  },
+  "course_restrictions_note": {
+    "value": "Exchange students must take at least 50% of courses/ECTS in their host department; BA students cannot enroll for Spring term alone without Winter term.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": "50% host-department rule on 2026-2027 fact sheet page 1; Winter+Spring rule on 2025-2026 fact sheet page 1."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online non-degree application form",
+      "Official university transcripts",
+      "Proof of English proficiency (or CEFR letter)",
+      "Approved course selection"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/admissions/non-degree",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ceu.edu/cat/annex-6-assignment-credit-hours",
+    "notes": "US-accredited institution issuing US credit hours (dual with ECTS) and A–F letter grades."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory Orientation Week, Student Life Office visa/residence assistance, Academic Support, Counseling, Career Services, Disability Rights Officer, and free German classes.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=2",
+    "notes": "Orientation Week also on page 1."
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 Fall: Nomination Apr 15 / Application Apr 30; Winter & Spring: Nomination Oct 15 / Application Oct 30.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Central European University (CEU)/2026-2027/CEU Fact Sheet_2026-27.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

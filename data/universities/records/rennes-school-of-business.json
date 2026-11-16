@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "rennes-school-of-business",
+  "excel_rows": [
+    94
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/18hNmYQXTGbcNzNpjoQVzc4fFpXWufJg5"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Rennes School of Business",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Rennes SB",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Rennes",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "BUSINESS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=94",
+    "notes": "Agreement scope is BUSINESS (UG/GR, Fall/Spring/Summer), mapping to AUC's School of Business."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=94",
+    "notes": "All Business majors within School of Business per BUSINESS scope (row 94)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": "Exchange tracks (Levels 2–5) taught in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": "All incoming exchange track modules taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 English level (TOEFL/IELTS/TOEIC/home certificate; native speakers exempt; Double Degree requires TOEFL 80 / IELTS 6.5 per 2024-2025 fact sheet).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf",
+    "notes": "Also stated on incoming-exchange-students page."
+  },
+  "host_language_requirement": {
+    "value": "None (exchange courses taught in English).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": "Official page explicitly states: 'Tuition is paid only to your home university, not RSB.'"
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 640.2,
+      "max": 945.2
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf",
+    "notes": "Sum of itemized monthly ranges in 2024-2025 fact sheet: housing 450–700 + food 150–200 + bus 25.20 + phone 15–20 = 640.20–945.20 EUR/month (plus 150–300 EUR/year miscellaneous)."
+  },
+  "living_cost_usd_est": {
+    "value": 4380.46,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf",
+    "notes": "5-month exchange semester estimate: midpoint 792.70 EUR/month (range 640.20–945.20 EUR) * 5 months * 1.1052 = 4380.46 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Incoming exchange students are exempt from paying the French CVEC student life fee.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": "Health insurance and personal liability coverage still required in France."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf#page=2",
+    "notes": "Dedicated RSB Studapart housing platform (https://rennes-sb.studapart.com/en/) shared with admitted students."
+  },
+  "housing_notes": {
+    "value": "Access to Rennes SB's Studapart platform (https://rennes-sb.studapart.com/en/) for residences/apartments (~€450–€700/month).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.rennes-sb.com/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:94",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": "Also Aloha portal https://aloha.rennes-sb.com/hc/en-us/categories/01HZPKKTNRFR8HN2ET16XW1VMK."
+  },
+  "course_catalog_url": {
+    "value": "https://aloha.rennes-sb.com/hc/en-us/sections/360004232819-Course-lists",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf#page=2",
+    "notes": "Also https://aloha.rennes-sb.com/hc/en-us/sections/6910609340946-Exchange-Transfer-of-Credits-Course-lists-."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; normal exchange load 15 to 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Rennes School of Business/2024- 2025/Factsheet RSB 2024-2025.pdf",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Exchange Levels 2–3 (UG Bachelor in Management; Level 2 Fall only) and Levels 4–5 (Master in Management / graduate); Business/Management tracks only.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "French grande école business school (ECTS)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rennes-sb.com/programmes/exchange-programmes/incoming-exchange-students/",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

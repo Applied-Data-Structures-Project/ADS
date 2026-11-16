@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ecole-de-management-de-normandie-em-normandie",
+  "excel_rows": [
+    31
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Yx-wbVUZMdpLolPbOjhFAohvsuWXLMO_?usp=drive_link",
+      "https://drive.google.com/drive/folders/1Yx-wbVUZMdpLolPbOjhFAohvsuWXLMO_"
+    ],
+    "local_files": [
+      "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Ecole de Management de Normandie (EM Normandie)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "short_name": {
+    "value": "EM Normandie",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Le Havre",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement scope specifies 'Business Administration' major/field rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": "Excel agreement scope states 'Business Administration'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": "Undergraduate and graduate programmes offered fully in English or fully in French."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": "Undergraduate and graduate business tracks available fully in English across campuses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "For English-taught programmes (waived for native English speakers; home university certificates accepted): UG requires CEFR B2 (TOEFL iBT 72, IELTS 5.5, TOEIC 750); GR requires CEFR B2 (TOEFL iBT 83, IELTS 6.0, TOEIC 790). RHET 1020 waiver not mentioned.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "French CEFR B2 (DELF/TCF scores) required only for French-taught programmes; waived for English-taught tracks and native speakers.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "Fall semester: Early September to late December (exams included; exact dates vary by chosen programme and campus).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester: Early January to April/May (exams included; Year 3 students start late January; exact dates depend on programme and campus).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "notes": "Official EM Normandie exchange guidelines confirm nominated partner exchange students are exempt from EM Normandie tuition fees (free-movers pay EUR 3,500-4,000/semester)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800.0,
+      "max": 800.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": "2024-25 Fact Sheet p.3 lists monthly expense estimate for primary campus Le Havre (and Caen) as approx. EUR 800/month. Other campuses listed on p.3: Paris approx. EUR 1,200/month, Oxford approx. GBP 1,000/month, Dublin approx. EUR 1,600/month, Dubai approx. EUR 1,700/month."
+  },
+  "living_cost_usd_est": {
+    "value": 4420.8,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": "Le Havre primary campus EUR 800.00/month * 5 months = EUR 4,000.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 4,420.80 USD (higher for Paris/Dublin/Dubai campuses)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "In France, French Social Security registration is mandatory and free of charge (EU students bring EHIC; supplementary private coverage recommended, promo code 76EMN-10 for Studcorp/Heyme). UK/Ireland/UAE campuses require local/home private medical insurance or UAE residence permit insurance. Optional Student Concierge Club membership is EUR 150 for 6 months.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": "No on-campus dormitories; EM Normandie partners with Studapart online housing platform (accessible once school login is issued; email accommodation@em-normandie.fr)."
+  },
+  "housing_notes": {
+    "value": "No on-campus housing offered; students use the Studapart housing platform partnered with EM Normandie (property owners, student residences, agencies) once admitted.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "EM Normandie issues an official acceptance letter upon complete application for visa purposes (Campus France / Etudes en France and VLS-TS long-stay student visa apply for non-EU students in France; UK/Ireland/UAE rules vary by chosen campus).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.em-normandie.fr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:31",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": "Confirmed live exchange programmes & 2026-27 course offer downloads hub."
+  },
+  "course_catalog_url": {
+    "value": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "notes": "Hosts downloadable 'Course Offer - Exchange & Free Movers Students 2026-27' and Road Map PDFs."
+  },
+  "english_course_list_url": {
+    "value": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://en.em-normandie.com/em-normandie-experience/open-world-studying-abroad/exchange-programmes",
+    "notes": "Course offer PDFs include English-taught undergraduate and graduate business tracks."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; minimum requirement of 15 ECTS credits per semester for exchange students.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Access to the 6 campuses (Le Havre, Caen, Paris, Dublin, Oxford, Dubai) depends on study level; students may change campuses during a full-year exchange (except dual-degree).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university online nomination",
+      "Online exchange application form",
+      "Language certificate from home university or TOEFL/IELTS/TOEIC/DELF/TCF scores"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": "Language certificate rule on p.2; full document checklist provided inside online application portal."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": "6 campuses across Caen, Le Havre, Paris (Clichy), Dublin, Oxford, and Dubai."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Affairs team (incoming@em-normandie.fr), Studapart housing support (accommodation@em-normandie.fr), complimentary French classes for English-taught programmes, and optional Student Concierge Club.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=2",
+    "notes": "Concierge Club and Studapart details on p.3."
+  },
+  "nomination_deadlines": {
+    "value": "2024-25 Fact Sheet: Fall/Full Year nomination Apr 15, application Apr 30; Spring nomination Oct 15, application Oct 31 (later cycles note up to May 15/30).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EM Normandie/FACTSHEET 24-25 EM Normandie.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

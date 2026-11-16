@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "middle-tennessee-state-university",
+  "excel_rows": [
+    73
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Middle Tennessee State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "short_name": {
+    "value": "MTSU",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/programs/international/exchange-incoming.php",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Tennessee",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "city": {
+    "value": "Murfreesboro",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'; see excluded_majors/course_restrictions_note for host exceptions."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": "Minimum cumulative GPA of 2.5 on a 4.0 scale required for incoming international exchange students on MTSU's official Studio Abroad portal."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/ucat/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/ucat/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Official test scores must be sent directly by testing service (waived only if English is the native language of citizenship): UG TOEFL iBT 61 (ITP 500, Essentials 6.5), IELTS 5.5, or Duolingo 85; GR TOEFL iBT 71, IELTS 6.0, or Duolingo 95. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall full-term classes begin Aug 24, 2026 (full-term runs Aug 24-Dec 10, 2026 per mtsu.edu Fee/Registration calendar).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/academic-calendar/",
+    "notes": "Fall 2026 start Aug 24, 2026 confirmed on https://www.mtsu.edu/academic-calendar/ via search_web."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Jan 19-May 6, 2027 (Last day of classes Apr 28, 2027; Spring Break Mar 8-13, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/academic-calendar/",
+    "notes": "Dates verified verbatim on https://www.mtsu.edu/academic-calendar/ via search_web."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory J-1 health insurance required by US Dept of State regulations ($100,000+ medical benefits, $50,000 medical evacuation, $25,000 repatriation of remains) plus mandatory immunizations (MMR, Varicella, Meningitis under 22 on-campus, TB screening, Hepatitis B).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": "Department of State J-1 insurance minimums confirmed on official mtsu.edu."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/studyabroad/housing.php",
+    "notes": "Office of Education Abroad coordinates with Campus Housing to reserve spaces for incoming exchange students, who must apply online early after receiving M-number."
+  },
+  "housing_notes": {
+    "value": "Incoming students complete the Residential Life online housing application as early as possible after admission; Campus Housing coordinates reserved spaces via Education Abroad (https://www.mtsu.edu/studyabroad/housing.php).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/studyabroad/housing.php",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 non-immigrant visa required for all incoming exchange students. Requires Financial Support Form + official bank verification proving >=$13,000/year ($6,500/semester) for Tuition-Only Exchange agreements (or >=$4,500/year, $2,500/semester for Full Exchange).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": "Exact visa processing lead time not specified."
+  },
+  "official_website_url": {
+    "value": "https://www.mtsu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:73",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.mtsu.edu/programs/international/exchange-incoming.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/programs/international/exchange-incoming.php",
+    "notes": "Application instructions at https://www.mtsu.edu/studyabroad/incoming-app.php and portal https://mtsu.studioabroad.com."
+  },
+  "course_catalog_url": {
+    "value": "https://www.mtsu.edu/ucat/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/ucat/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.mtsu.edu/ucat/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mtsu.edu/ucat/",
+    "notes": "All catalog offerings are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "MTSU Studio Abroad online application",
+      "Official transcript",
+      "Official English test score report (TOEFL/IELTS/Duolingo)",
+      "Financial Support Form + bank verification letter",
+      "Passport copy",
+      "Immunization records via MTSU Patient Portal",
+      "Residential Life Housing Application"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": "Also referenced on https://www.mtsu.edu/studyabroad/incoming-app.php."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Full Year: Nomination Mar 1, Application materials Apr 15; Spring: Nomination Oct 1, Application materials Oct 31.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://mtsu.studioabroad.com",
+    "notes": null
+  },
+  "ext": {}
+}

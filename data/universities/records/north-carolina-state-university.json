@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "north-carolina-state-university",
+  "excel_rows": [
+    77
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1IBynKwXHDmRmE682e8CEz0-0aYyaqsj0"
+    ],
+    "local_files": [
+      "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "North Carolina State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NC State",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "North Carolina",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "city": {
+    "value": "Raleigh",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'; see excluded_majors/course_restrictions_note for host exceptions."
+  },
+  "excluded_majors": {
+    "value": [
+      "Biomedical Engineering",
+      "Veterinary Medicine"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=2",
+    "notes": "Fact Sheet p. 2 explicitly states: 'Exclusions: College of Veterinary Medicine and Biomedical Engineering'."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 80 (min 18 subscores; MBA requires 100), IELTS 6.5 (min 6.0 UG / 6.5 GR; MBA 7.5), Duolingo 110, OR official home-university letter confirming completion of >=1 semester of English-taught study at a 4-year university (RHET 1020 not named specifically, but English-medium university instruction exemption explicitly applies).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: First day of classes Aug 17, 2026; Last day of classes Dec 1, 2026; Final exams Dec 3-9, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentservices.ncsu.edu/calendars/academic/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: First day of classes Jan 11, 2027; Last day of classes Apr 27, 2027; Final exams Apr 29-May 5, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentservices.ncsu.edu/calendars/academic/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/financial-matters/",
+    "notes": "Incoming exchange students pay tuition directly to their home institution rather than NC State."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "AY 2026-2027 incoming exchange costs: Mandatory Health Insurance $773.18/semester (Global Solutions Plan); SEVIS fee $220; ResNet internet $140 (on-campus residents); optional streaming/cable ~$35; Books $400-$600. Immunizations and HealthWeb compliance required.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/financial-matters/",
+    "notes": "2024-2025 Fact Sheet p. 4-5 listed ~$1,400/sem Student Blue prior rate; 2026-2027 financial-matters updates plan to $773.18."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=4",
+    "notes": "On-campus housing (https://housing.dasa.ncsu.edu/) has reserved spots for exchange students, though competitive and not guaranteed."
+  },
+  "housing_notes": {
+    "value": "AY 2026-2027 on-campus housing: $3,970/semester (shared residence hall room) to $4,780/semester (Wolf Village apartment); meal plans $800-$3,176/semester (apply via https://housing.dasa.ncsu.edu/).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/financial-matters/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 visa ONLY (NC State does not issue F-1 visas for exchange students); submit DS-2019 request in Global Home with passport and official proof of funding covering living expenses, insurance, and fees. Mandatory OIS immigration check-in at orientation.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/visa-and-immigration-process/",
+    "notes": "Confirmed with AY 2024-2025 Fact Sheet p. 5; exact DS-2019 minimum USD threshold not published on public page."
+  },
+  "official_website_url": {
+    "value": "https://www.ncsu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:77",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studyabroad.ncsu.edu/incoming-exchange-student/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/",
+    "notes": "Earlier Fact Sheet p. 5 also lists http://studyabroad.ncsu.edu/incoming-student/."
+  },
+  "course_catalog_url": {
+    "value": "https://www.acs.ncsu.edu/php/coursecat/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=2",
+    "notes": "Majors and careers overview at https://www.ncsu.edu/majors-and-careers/."
+  },
+  "english_course_list_url": {
+    "value": "https://www.acs.ncsu.edu/php/coursecat/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=2",
+    "notes": "All catalog offerings are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: full-time minimum is 12 credits/semester (UG) or 9 credits/semester (GR). Grading A-F.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Excluded: College of Veterinary Medicine and Biomedical Engineering. Must declare a major field and take the majority of courses in that major. Final semester NOT recommended if specific required courses or thesis work are needed for graduation.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online NC State exchange application",
+      "Official English academic transcript",
+      "Passport copy",
+      "English proficiency proof (test score or home univ English-instruction letter)",
+      "DS-2019 request + proof of funding in Global Home (post-nomination)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=1",
+    "notes": "DS-2019 Global Home workflow detailed on https://studyabroad.ncsu.edu/incoming-exchange-student/visa-and-immigration-process/."
+  },
+  "academic_style": {
+    "value": "Large public research university (>35,000 students in Raleigh, NC) using continuous semester coursework and A-F grading within a declared primary major.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation and OIS immigration check-in; Study Abroad Office pre-arrival advising and MyPack/Global Home support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/North Carolina State/2024-2025/AY 2024-2025 Fact Sheet - Incoming Exchange - Study Abroad Office.pdf#page=5",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall 2026: Nomination Feb 2-Mar 1, 2026; Application Mar 15, 2026. Spring 2027: Nomination Sep 1-Oct 1, 2026; Application Oct 15, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ncsu.edu/incoming-exchange-student/",
+    "notes": "Consistent with AY 2024-2025 Fact Sheet p. 1 seasonal windows (Feb 1-Mar 1 / Mar 15 Fall; Sep 1-Oct 1 / Oct 15 Spring)."
+  },
+  "ext": {}
+}

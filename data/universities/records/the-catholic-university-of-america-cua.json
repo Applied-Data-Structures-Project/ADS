@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-catholic-university-of-america-cua",
+  "excel_rows": [
+    111
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/13z9N8-B050E-wJirR8faXQT5RvDoPBbg"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Catholic University of America/2024-2025/Catholic University of America 2024-25.pdf",
+      "data/raw/factsheets/Catholic University of America/2024-2025/Exchange Program Fact Sheet - CUA - 2024-2025.pdf",
+      "data/raw/factsheets/Catholic University of America/2025- 2026/CUA Exchange Program Fact Sheet_ 2025-2026.docx.pdf",
+      "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+      "data/raw/factsheets/Catholic University of America/Exchange Program Fact Sheet - CUA_ 2025-2026 - Revised.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Catholic University of America/2024-2025/Catholic University of America 2024-25.pdf.txt",
+      "data/raw/extracted/Catholic University of America/2024-2025/Exchange Program Fact Sheet - CUA - 2024-2025.pdf.txt",
+      "data/raw/extracted/Catholic University of America/2025- 2026/CUA Exchange Program Fact Sheet_ 2025-2026.docx.pdf.txt",
+      "data/raw/extracted/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx.txt",
+      "data/raw/extracted/Catholic University of America/Exchange Program Fact Sheet - CUA_ 2025-2026 - Revised.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The Catholic University of America (CUA)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CUA",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "District of Columbia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "city": {
+    "value": "Washington",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be in good academic and disciplinary standing at home institution.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": "Host fact sheet excludes School of Professional Studies (SPS) and off-campus abroad programs; Law is GR-only with extra requirements."
+  },
+  "excluded_majors": {
+    "value": [
+      "School of Professional Studies (SPS)",
+      "Off-campus study abroad programs"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": "Columbus School of Law is open only to graduate/law-track candidates meeting additional admission requirements."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 incoming fact sheet requires good academic standing without stating a fixed numeric GPA minimum."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum TOEFL subscore >=20/30 per section (and CUA international English proficiency standards at https://www.catholic.edu/admission/international-students/english-proficiency.html, e.g. TOEFL iBT 80 / IELTS 6.5 / Duolingo 120).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (US university; see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Orientation Aug 26, 2026; Classes start Aug 31, 2026; Final Exams Dec 15-19, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Orientation Jan 8, 2027; Classes start Jan 11, 2027; Final Exams May 4-8, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral partner exchange per Excel; AY 2026-2027 DOCX fact sheet lists non-tuition expenses without explicitly printing tuition waiver wording."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 fact sheet publishes semester non-tuition budgets rather than a monthly range (housing USD 4,930-7,040, meal plan USD 2,320-4,390, books USD 1,000, local transport USD 900, personal USD 2,000/semester)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official monthly range published; see semester non-tuition USD breakdown in housing_notes and USD 11,430/semester financial proof in visa_lead_time_and_financial_proof."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Incoming exchange students are NOT eligible for CUA's student health insurance plan and must purchase external compliant medical insurance (see https://studentinsurance.cua.edu/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": "On-campus housing is not guaranteed for incoming exchange students, though CUA makes every effort to accommodate them."
+  },
+  "housing_notes": {
+    "value": "On-campus housing USD 4,930-7,040/semester (not guaranteed; off-campus portal also linked); meal plans USD 2,320-4,390/semester; est books USD 1,000, local transport USD 900, personal USD 2,000/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Tuition Exchange Program (TEP) on catholic.edu applies to dependents of participating US member employees, not incoming international exchange students."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Minimum proof of finances USD 11,430 per semester required for incoming exchange visa documentation; lead time varies by embassy.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.catholic.edu/index.html",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:111",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://global-strategies.catholic.edu/partnerships/exchanges/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.catholic.edu/academics/course-catalog/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No separate English-only list; all courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit system; normal full-time load 12-15 credits/semester (UG) and 9-12 credits/semester (GR).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "School of Professional Studies (SPS) and off-campus study abroad programmes are excluded; School of Law open at graduate level only with additional requirements.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official transcript",
+      "Course request list",
+      "Proof of finances (min USD 11,430/sem)",
+      "Immunization records",
+      "English proficiency proof",
+      "Passport copy",
+      "Statement of purpose"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Washington, D.C. campus; schema city_tier label not explicitly classified in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Main campus in Washington, D.C.; physical campus layout category not explicitly stated in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory incoming orientation, Office of Global Strategies exchange advising, and housing/health guidance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nomination Feb 15, application Mar 1; Spring: nomination Sep 15, application Oct 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of America/2026-2027/Exchange Program Fact Sheet - CUA_ 2026-2027 Academic Year.docx",
+    "notes": null
+  },
+  "ext": {}
+}

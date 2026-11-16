@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "new-mexico-institute-of-mining-and-technology-new-mexico-tech",
+  "excel_rows": [
+    76
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "New Mexico Institute of Mining and Technology (New Mexico Tech)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "short_name": {
+    "value": "New Mexico Tech",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New Mexico",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "city": {
+    "value": "Socorro",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No explicit incoming exchange standing or GPA cutoff published on nmt.edu/international/."
+  },
+  "agreement_scope_raw": {
+    "value": "SSE",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "SSE"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": "Excel agreement_scope_raw is 'SSE' (School of Sciences and Engineering)."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange GPA cutoff published on nmt.edu/international/ (2.5 GPA on nmt.edu applies to freshman/degree or outgoing study-abroad rules)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate minimums: TOEFL iBT 79 (PBT 550), IELTS 6.5, Duolingo 105+, PTE Academic 53+, or Cambridge C1/C2 180+ (waived for US/English-country degree study). RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (TOEFL iBT 79 / IELTS 6.5 or accepted equivalents).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-17 to 2026-12 (Fall 2026 classes begin August 17, 2026; exact end date per Registrar calendar)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/registrar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-19 to 2027-05 (Spring 2027 classes begin January 19, 2027; exact end date per Registrar calendar)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/registrar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1426,
+      "max": 1426
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/finaid/tuition.php",
+    "notes": "Derived by dividing 1 semester of AY 2026-2027 NMT UG Cost of Attendance Housing & Meals ($10,661/yr) + Personal Expenses ($3,600/yr) = $14,261/yr -> $7,130.50/semester by 5 months = $1,426.10/mo (excludes Books $1,000/yr, Travel $2,128/yr, and international health insurance)."
+  },
+  "living_cost_usd_est": {
+    "value": 7130.5,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/finaid/tuition.php",
+    "notes": "1-semester USD living estimate summing half of AY 2026-2027 Housing & Meals ($10,661/yr) + Personal Expenses ($3,600/yr) = $7,130.50 USD (excludes Books $1,000/yr, Travel $2,128/yr, and health insurance; already in USD, recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory medical/health insurance for F-1, J-1, and J-2 international students meeting minimum coverage thresholds ($50,000+ overall medical benefits plus emergency evacuation and repatriation) prior to registration.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/insurance.php",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/reslife/housingrates.php",
+    "notes": "On-campus residence halls and apartments available ($2,298–$3,705/semester; meal plans $733–$2,475/semester)."
+  },
+  "housing_notes": {
+    "value": "On-campus double rooms to apartment pods ($2,298–$3,705/sem) and meal plans ($733–$2,475/sem, Bronze $2,258/sem).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/reslife/housingrates.php",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.nmt.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:76",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.nmt.edu/international/index.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "NMT International Programs office coordinates exchange advising and health insurance/visa compliance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nmt.edu/international/index.php",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "sciences-po-institute-d-etudes-politiques-de-paris",
+  "excel_rows": [
+    99
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1JYs-MDRtqMEpnyVY5ttIZk-ndC5qsD2j"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Sciences Po/2024-2025/Sciences Po.pdf",
+      "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf",
+      "data/raw/factsheets/Sciences Po/Useful Info. Science Po.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Sciences Po/2024-2025/Sciences Po.pdf.txt",
+      "data/raw/extracted/Sciences Po/2025-2026/factsheet2025-2026.pdf.txt",
+      "data/raw/extracted/Sciences Po/Useful Info. Science Po.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Sciences Po (Institute d'Etudes Politiques de Paris)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Sciences Po",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Paris",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Undergraduate exchange: >=4 completed semesters of undergraduate study. Graduate exchange: Bachelor's degree or >=6 semesters of undergraduate study.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide  for UG -GR must notify science po in advance on their field as choices are limited",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement_scope_raw states 'University-wide for UG - GR must notify science po in advance on their field as choices are limited'; UG is university-wide while GR is field-restricted and subject to advance Master programme placement."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UG exchange is University-wide across Undergraduate College disciplines; GR exchange is restricted to one approved Master's programme."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": "Exclusive English-taught study options available at both UG and GR levels (bilingual Paris UG track discontinued; students choose French OR English on Paris campus)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate & Graduate English-track minimums: IELTS 6.5, TOEFL / TOEFL iBT Home Edition 100, Duolingo English Test 130, or Cambridge C1 (FCE/CAE/CPE); native English speakers exempt. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "French not required for English-taught programs. For French-taught courses: UG requires TCF 400 or DELF/DALF B2; GR requires TCF 500 or DELF/DALF C1 (native French speakers exempt).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2025-09-01 to 2025-12-19 (AY 2025-2026 Sem 1 classes incl. exams; Welcome Programme Aug 25–30, 2025; mandatory presence through last exam day)",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": "2026-2027 dates not verified directly on sciencespo.fr (university calendar portal: https://www.sciencespo.fr/students/en/study/academic-affairs/university-calendar/)."
+  },
+  "spring_term_dates": {
+    "value": "2026-01-24 to 2026-05-22 (AY 2025-2026 Sem 2 classes incl. exams; 2nd-yr Law School Jan 5–Apr 24; Welcome Jan 19–24, 2026)",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Partner exchange operates under bilateral institutional agreement, though neither factsheet2025-2026.pdf nor observed sciencespo.fr excerpts explicitly state incoming exchange tuition waiver terms."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Neither factsheet2025-2026.pdf nor directly observed sciencespo.fr pages publish a numeric monthly living cost range (avoiding unverified third-party Paris cost blogs)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Omitted because no official sciencespo.fr or fact-sheet monthly living cost range was observed."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Bilateral exchange students are exempt from paying the French CVEC student life contribution (obtain free exemption attestation per etudiant.gouv.fr and https://www.campusfrance.org/en/the-cvec-student-and-campus-life-contribution). Campus health center and student first-steps info at www.sciencespo.fr/students/en.html.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.etudiant.gouv.fr/en/do-you-have-to-pay-the-cvec-contribution-739",
+    "notes": "Health center reference on data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sciencespo.fr/students/en/support/housing",
+    "notes": "Sciences Po housing portal guides incoming exchange students to external/private accommodation; campus-level guidance noted on factsheet2025-2026.pdf#page=2."
+  },
+  "housing_notes": {
+    "value": "Housing support provided via Sciences Po Students website (https://www.sciencespo.fr/students/en/support/housing); regional campuses generally offer more affordable accommodation than Paris (`Useful Info. Science Po.docx`).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sciencespo.fr/students/en/support/housing",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA/Swiss exchange students must obtain a French student visa before arrival even if already enrolled in an EU university (`factsheet2025-2026.pdf#page=2`). Effective August 1, 2026, Décret n° 2026-526 increased French VLS-TS student financial proof from EUR 615/mo to EUR 877.50/month (EUR 10,530/year; 47% of gross SMIC).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.legifrance.gouv.fr/eli/decret/2026/6/22/INTV2605727D/jo/texte",
+    "notes": "Mandatory non-EU student visa rule also in data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2."
+  },
+  "official_website_url": {
+    "value": "http://www.sciencespo.fr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:99",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.sciencespo.fr/college/en/academics/exchange/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": "International affairs hub: https://www.sciencespo.fr/en/international/international-vision/ (`#page=1`)."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS: minimum 5 ECTS to maximum 30 ECTS per semester (up to 60 ECTS/year). Starting Sept 2025, language courses are 4 ECTS graded Pass/Fail (`Useful Info. Science Po.docx`); strict attendance policy allows max 2 absences per class.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Paris UG campus offers French OR English track (bilingual track discontinued); regional UG campuses feature specific geographical minors (max 2 campuses, 1–2 disciplines). GR students must enroll within one specific Master's programme and may add up to 2 Common Academic Curriculum courses/sem.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "CV",
+      "Personal statement",
+      "Photo ID",
+      "University transcripts",
+      "French and/or English language test results"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": "Seven campuses: Paris (main/Saint-Guillaume) plus six UG regional campuses (Dijon, Le Havre, Menton, Nancy, Poitiers, Reims)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Student Exchanges Team, optional Welcome Programme, Health Center, and Disability Support Service.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "2025-2026 cycle (`#page=1`): Autumn nomination Mar 4–26, student application Apr 2; Spring nomination Sep 23–Oct 7, student application Oct 9. Admitted students must accept offer within 15 days or forfeit spot (`Useful Info. Science Po.docx`).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Sciences Po/2025-2026/factsheet2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

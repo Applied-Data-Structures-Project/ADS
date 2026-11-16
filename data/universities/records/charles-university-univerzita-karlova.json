@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "charles-university-univerzita-karlova",
+  "excel_rows": [
+    19
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Charles University (Univerzita Karlova)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "country": {
+    "value": "Czech Republic",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Prague",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://cuni.cz/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Official abbreviation CUNI/CU appears in URL domain (cuni.cz) without a dedicated short_name specification."
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Managed at faculty/agreement level under Inter-University Agreements (https://cuni.cz/UKEN-179.html); no uniform university-wide year-of-study rule verified."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:19",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Faculty-specific capacity/course prerequisites vary across Charles University's 17 faculties."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No fixed numeric minimum GPA published on cuni.cz Inter-University Agreement incoming page (academic standing/transcript reviewed holistically by host faculty)."
+  },
+  "instruction_languages": {
+    "value": [
+      "Czech",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-364.html",
+    "notes": "Wide English-taught exchange course catalog alongside Czech-taught offerings."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-364.html",
+    "notes": "University-wide English course catalogue available to incoming exchange students across faculties."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 English minimum required for English-taught courses (IELTS >=5.5, TOEFL iBT >=72, TOEFL ITP >=543); exempt if prior degree study is taught completely in English with institutional confirmation.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required if taking English-taught courses; Czech B2 needed for Czech-taught coursework.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Winter/First Semester typically runs late September/early October through mid-February (exact start/exam windows decentralized by individual faculty; e.g., classes Oct-Dec/Jan, exams Jan-Feb).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-33.html",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer/Spring Semester typically runs mid-February through late June/early July (exact start/exam dates decentralized by faculty).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-33.html",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": "Students nominated under bilateral Inter-University Agreements are exempt from Charles University tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 550,
+      "max": 1000
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-363.html",
+    "notes": "Official cuni.cz living expenses estimate: EUR 550-600/month (modest dormitory lifestyle) to EUR 800-1,000/month (private/shared apartment lifestyle), incl. shared dorm ~EUR 180 (4,500 CZK), single dorm ~EUR 260, shared flat EUR 400-520, groceries EUR 140-250."
+  },
+  "living_cost_usd_est": {
+    "value": 4282.65,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-363.html",
+    "notes": "5-month estimate derived from monthly EUR range 550-1,000 (midpoint 775.0)/month. FX rate 1 EUR = 1.1052 USD from ECB Euro reference exchange rates (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 775.0 EUR * 5 * 1.1052 = 4,282.65 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived; mandatory comprehensive travel/medical health insurance required by Czech law for non-EU visa/residence permit holders plus refundable dormitory caution deposit (see UKEN-365 / UKEN-366).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-366.html",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-365.html",
+    "notes": "Charles University Dormitories and Refectories allocates double/twin dorm rooms via online portal (e.g., Větrník, Hvězda, Kajetánka, Hostivař, 17. listopadu); refundable deposit required and space is subject to application timelines."
+  },
+  "housing_notes": {
+    "value": "Shared dorm room ~EUR 180/mo (~4,500 CZK); single dorm ~EUR 260/mo; private shared apartment EUR 400-520/mo; Prague subsidized student transit ~720 CZK for 3 months.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-363.html",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: UKEN-178.html is a Post-Doc/research grant fund NOT for incoming exchange students; no incoming bilateral exchange stipend published on UKEN-179."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students staying >90 days must apply for a Czech Long-Term Visa/Residence Permit for study at a Czech Embassy prior to departure, with acceptance letter, housing proof, comprehensive health insurance, and bank balance financial proof.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-366.html",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://cuni.cz/UKEN-179.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": "Overview hub also at https://cuni.cz/UKEN-142.html."
+  },
+  "course_catalog_url": {
+    "value": "https://is.cuni.cz/studium/eng/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://is.cuni.cz/studium/eng/",
+    "notes": "Official Student Information System (SIS) course catalog."
+  },
+  "english_course_list_url": {
+    "value": "https://cuni.cz/UKEN-364.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-364.html",
+    "notes": "Dedicated Charles University English-language incoming course catalogue guide."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; full-time semester load typically ~30 ECTS (subject to faculty/home-university Learning Agreement approval).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-142.html",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Incoming students enroll primarily within their hosting faculty (may request select courses in other faculties subject to seat availability/faculty approval); exact academic calendars vary by faculty.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online CU application",
+      "Learning Agreement",
+      "Current academic transcript",
+      "English B2 proficiency proof (or English-medium degree confirmation)",
+      "Passport copy"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Decentralized 17-faculty Central European research university structure; exact pedagogical format varies by host faculty."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Prague (Czech Republic capital), though cuni.cz living-cost pages do not specify population bracket metrics explicitly."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Multi-faculty city distribution across Prague; official campus_type label not explicitly classified on verified cuni.cz pages."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "English widely used in Prague university centers/student services, though Czech is the everyday municipal language; no official level rating published on cuni.cz."
+  },
+  "international_support_services": {
+    "value": "Charles University European Office / International Relations Office, Central Library, Orientation Days, and CU Point student support.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-142.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Inter-University Agreements: Winter semester Nomination Mar 10, Application Mar 31 (Apr 30 for DE/CH); Summer/Spring semester Nomination Sep 10, Application Sep 30 (Oct 30 for DE/CH).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://cuni.cz/UKEN-179.html",
+    "notes": null
+  },
+  "ext": {}
+}

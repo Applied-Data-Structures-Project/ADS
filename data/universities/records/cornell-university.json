@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "cornell-university",
+  "excel_rows": [
+    25
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Cornell University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "city": {
+    "value": "Ithaca",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must have completed at least 2 full-time university semesters prior to exchange and be nominated by home institution.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=25",
+    "notes": "Partner list row 25 lists University-wide UG scope (host college placement still subject to bilateral agreement coverage)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=25",
+    "notes": "University-wide UG agreement in Excel (row 25); subject to Cornell college/school placement under the bilateral agreement."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "Minimum cumulative GPA 3.0 on 4.0 scale (to remain in good standing at Cornell, term GPA 2.0+ across >=12 credits is required)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://courses.cornell.edu/",
+    "notes": "Undergraduate instruction at Cornell University is in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum TOEFL iBT 100, IELTS Academic 7.5, or Duolingo English Test 130 (exempt for native speakers or applicants studying at an institution where English is the official language).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: Instruction Aug 24 – Dec 4, 2026; Final Exams Dec 11–19, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.cornell.edu/academic-calendar/2026-2027",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Instruction Jan 25 – May 11, 2027; Final Exams May 15–22, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.cornell.edu/academic-calendar/2026-2027",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "Official page explicitly states: 'Exchange students do not pay Cornell tuition, but are responsible for charges billed through Cornell's Office of the Bursar system: Student Health Insurance, Student health fee, [and] Student activity fee.'"
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2292,
+      "max": 2292
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://international.globallearning.cornell.edu/tuition-and-living-expenses",
+    "notes": "2026-2027 undergraduate living expenses estimated at $27,507 USD/year (prorated monthly = $2,292 USD/month over 12 months)."
+  },
+  "living_cost_usd_est": {
+    "value": 11460.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://international.globallearning.cornell.edu/tuition-and-living-expenses",
+    "notes": "5-month exchange semester estimate: $2,292 USD/month * 5 months * 1.0 = $11,460 USD (already in USD, 1 USD = 1.0 USD, checked 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Bursar charges: Cornell Student Health Plan (2026-2027: $4,092/year; Fall new $1,705; Spring new $2,046), Student Health Fee ($300/semester 2026-2027), and Student Activity Fee.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studenthealthbenefits.cornell.edu/shp-costs-dates-2026-27",
+    "notes": "Student Health Fee ($300/semester 2026-2027) at https://health.cornell.edu/billing-insurance/student-health-fee; fee requirement on international-exchange page."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/prepare-go/apply-housing",
+    "notes": "On-campus housing is limited and not guaranteed for incoming exchange/visiting students; off-campus housing/sublet guidance provided."
+  },
+  "housing_notes": {
+    "value": "On-campus housing is limited and NOT guaranteed for incoming exchange students; if assigned on-campus housing or meal plan, fees appear on the Cornell Bursar bill.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "See also https://abroad.globallearning.cornell.edu/prepare-go/apply-housing."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Accepted international exchange students must submit Declaration of Finances and bank documentation for J-1/F-1 immigration processing (reference UG living expense budget $27,507/year).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://international.globallearning.cornell.edu/j-1-financial-support",
+    "notes": "Exact visa lead time in weeks not specified; see https://international.globallearning.cornell.edu/tuition-and-living-expenses."
+  },
+  "official_website_url": {
+    "value": "https://www.cornell.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:25",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://courses.cornell.edu/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://courses.cornell.edu/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours; full-time exchange students must complete a minimum of 12 credits per semester with a 2.0+ term GPA to maintain good academic standing.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "12-credit minimum for good academic standing verified on cornell.edu."
+  },
+  "course_restrictions_note": {
+    "value": "Students are placed into an undergraduate Cornell college/school covered by the partner agreement based on proposed major; enrollment subject to prerequisites, class size, instructor consent, and college-specific restrictions (major-only capstones, first-year writing seminars, and independent study/lab research typically closed).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "Also see https://abroad.globallearning.cornell.edu/incoming-students/exchange-and-visiting-facts."
+  },
+  "required_application_docs": {
+    "value": [
+      "Statement of purpose",
+      "List of Cornell courses of interest",
+      "Official transcripts (undergraduate and graduate if applicable)",
+      "Proof of English language proficiency"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": "Plus Declaration of Finances / bank letter after acceptance for immigration documents."
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://courses.cornell.edu/",
+    "notes": "US research university with credit-hour system and college-based undergraduate distribution."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Mar 1 / Application Mar 15; Spring: Nomination Sep 1 / Application Sep 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.globallearning.cornell.edu/incoming-students/international-exchange",
+    "notes": null
+  },
+  "ext": {}
+}

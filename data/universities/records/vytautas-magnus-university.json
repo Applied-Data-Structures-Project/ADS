@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "vytautas-magnus-university",
+  "excel_rows": [
+    156
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "unmatched_here",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Marked 'Here' in Excel Col H without hyperlink; no matching folder in master Drive folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Vytautas Magnus University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": null
+  },
+  "short_name": {
+    "value": "VMU",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "notes": null
+  },
+  "country": {
+    "value": "Lithuania",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Kaunas",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Lithuanian"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "notes": "Wide selection of English-taught Artes Liberales courses across disciplines."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English required: IELTS 5.5, TOEFL iBT 72 (PBT/ITP 543), Duolingo 100, OR official signed B2 certificate from the home university. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English B2 required for English-taught exchange courses; Lithuanian not required.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "2026-08-24 to 2026-12-23 (AY 2026-2027 Autumn: Orientation/lectures begin Aug 24–27; lectures end Nov 27; exam session Nov 30–Dec 23, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/studies/academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-02-01 to 2027-06 (AY 2026-2027 Spring semester starts Feb 1, 2027; registration late Jan/early Feb; runs through June 2027)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/studies/academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "VMU Bilateral Exchange Studies operate under institutional MoUs (`vmu-bilateral-exchange-studies/incoming-exchange-students/`), though the incoming page does not print an explicit tuition-waiver text clause."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://apgyvendinimas.vdu.lt/",
+    "notes": "VMU dormitories open to accepted/pre-accepted exchange students via online reservation portal (Spring & Autumn application windows noted on vdu.lt)."
+  },
+  "housing_notes": {
+    "value": "Dormitory rooms reserved online via https://apgyvendinimas.vdu.lt/ (English portal at https://apgyvendinimas.vdu.lt/en/home/) after pre-acceptance notification.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://apgyvendinimas.vdu.lt/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.vdu.lt/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:156",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/courses/",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn / Full Academic Year: Non-EU/EEA nom April 11 / app April 17; EU/EEA nom May 11 / app May 17. Spring / Calendar Year: Non-EU/EEA nom October 11 / app October 17; EU/EEA nom November 11 / app November 17.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vdu.lt/en/international-cooperation/for-students/vmu-bilateral-exchange-studies/incoming-exchange-students/",
+    "notes": null
+  },
+  "ext": {}
+}

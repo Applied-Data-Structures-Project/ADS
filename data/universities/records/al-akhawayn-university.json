@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "al-akhawayn-university",
+  "excel_rows": [
+    4
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1AuQ5ya38rqEUK_WMXfndMlLO7h9ASkRe"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Al Akhawayn University/2024-2025/AUI Fact Sheet 2024-2025 (3).pdf",
+      "data/raw/factsheets/Al Akhawayn University/2025-2026/AUI Fact Sheet 2025-2026.pdf",
+      "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Al Akhawayn University/2024-2025/AUI Fact Sheet 2024-2025 (3).pdf.txt",
+      "data/raw/extracted/Al Akhawayn University/2025-2026/AUI Fact Sheet 2025-2026.pdf.txt",
+      "data/raw/extracted/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Al Akhawayn University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "short_name": {
+    "value": "AUI",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Morocco",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Ifrane",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "region": {
+    "value": "Middle East & North Africa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": "University-wide scope in Excel; host fact sheet p.5 lists SSE, SBA, and SHSS open to exchange students."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly enumerated in AY 2026-2027 fact sheet (open to SSE, SBA, SHSS)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange minimum GPA stated in AY 2026-2027 fact sheet or verified on official AUI exchange pages."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": "North American curriculum taught in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 fact sheet does not specify TOEFL/IELTS score thresholds or RHET 1020 waiver for incoming exchange students."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Primary instruction is English; fact sheet does not specify an Arabic or French proficiency prerequisite."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Orientation Sep 2-6, 2026; Classes Sep 7-Dec 11, 2026; Final Exams Dec 13-21, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Orientation Jan 15-17, 2027; Classes start Jan 18, 2027; Final Exams May 8-15, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=4",
+    "notes": "Tuition (48,000 MAD regular rate) is waived for exchange students."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact sheet p.4 lists semester costs (some conditionally waived per agreement) and USD 1,500/semester pocket money rather than an official monthly local living range."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official monthly local living range published; fact sheet p.4 estimates USD 1,500/semester pocket money plus 3,810 MAD non-waived fees (housing 6,762 MAD and meal plan 12,100 MAD waived or charged per agreement)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Non-waived semester fees totaling 3,810 MAD (books 2,000 MAD, housing deposit 1,000 MAD, health insurance 550 MAD, residency card 160 MAD, printing 100 MAD); pre-registration (5,100 MAD), housing (6,762 MAD), and meal plan (12,100 MAD) may be waived depending on bilateral agreement.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=4",
+    "notes": "Mandatory on-campus double-room dormitories for incoming exchange students."
+  },
+  "housing_notes": {
+    "value": "Mandatory on-campus double-occupancy dorms (sex-segregated, no alcohol/drugs, Sun-Thu midnight curfew); housing fee 6,762 MAD/semester (or waived per bilateral agreement) plus 1,000 MAD deposit.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Residency card fee of 160 MAD noted on fact sheet p.4; visa lead time and financial proof amounts not specified."
+  },
+  "official_website_url": {
+    "value": "http://www.aui.ma/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:4",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://aui.ma/international-experience",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aui.ma/international-experience",
+    "notes": "Official AUI international experience / Office of International Programs portal."
+  },
+  "course_catalog_url": {
+    "value": "https://www.aui.ma/hubfs/AUI%20Catalog_2023-2024_New_Version.pdf?hsLang=en",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=5",
+    "notes": "Embedded catalog hyperlink in AY 2026-2027 fact sheet p.5."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No separate English-only list; courses are taught in English across AUI's American-system catalog."
+  },
+  "credit_system_and_load": {
+    "value": "North American credit system; normal full-time load 15 credits (5 courses)/semester (minimum 12 credits UG, 9 credits GR).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Open to exchange students across SSE (Science & Engineering), SBA (Business Administration), and SHSS (Humanities & Social Sciences).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly itemized in AY 2026-2027 fact sheet."
+  },
+  "academic_style": {
+    "value": "North American liberal arts curriculum taught in English; average class size 19; mandatory class attendance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Ifrane is a mountain town in Morocco's Middle Atlas; no official schema tier classification explicitly stated."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Residential campus in Ifrane; not explicitly classified into schema campus_type options in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation program and Fez airport pickup service.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nomination Mar 1, application Mar 15; Spring: nomination Oct 1, application Oct 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Al Akhawayn University/2026-2027/AUI OIP Fact Sheet 2026-2027 .pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

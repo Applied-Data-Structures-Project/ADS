@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "jagiellonian-university",
+  "excel_rows": [
+    50
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1h3DAfmkOFlUG6Y-Yy6aUscmiY8uDjFIv"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Jagiellonian University/A step-by-step instruction on how to apply for exchange programmes at JU.pdf",
+      "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Jagiellonian University/A step-by-step instruction on how to apply for exchange programmes at JU.pdf.txt",
+      "data/raw/extracted/Jagiellonian University/JU FACT SHEET 2025-2026.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Jagiellonian University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "short_name": {
+    "value": "JU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Poland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Krakow",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=50",
+    "notes": "Agreement scope is University-wide (UG/GR, Spring & Academic Year)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=50",
+    "notes": "University-wide exchange agreement (row 50); see course_restrictions_note for restricted JU units."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Polish",
+      "English"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=3",
+    "notes": "Courses taught in English and Polish available to exchange students via USOSweb/course offer."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=3",
+    "notes": "Wide course offerings in English across many faculties alongside Polish-taught offerings."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English required: TOEFL iBT 65, IELTS 5.5, or equivalent CEFR B2 documentation.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf",
+    "notes": "From JU FACT SHEET 2025-2026.pdf."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": "AY/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "PLN",
+      "min": 3000,
+      "max": 3300
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=5",
+    "notes": "2025-2026 fact sheet page 5 estimates 3,000–3,300 PLN/month living costs in Kraków."
+  },
+  "living_cost_usd_est": {
+    "value": 3945.98,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=5",
+    "notes": "5-month exchange semester estimate: midpoint 3150 PLN/month (range 3000–3300 PLN) * 5 months * (1.1052 / 4.4113) = 3945.98 USD using ECB 2026-11-13 euro reference rates (1 EUR = 1.1052 USD, 1 EUR = 4.4113 PLN -> 1 PLN = 0.250538 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=4",
+    "notes": "4 JU student dormitories (~560–610 PLN/month); allocation/selection handled by the International Students Office (https://erasmus.uj.edu.pl/incoming/dormitory)."
+  },
+  "housing_notes": {
+    "value": "Four JU dormitories (~560–610 PLN/month); International Students Office handles placement selection (https://erasmus.uj.edu.pl/incoming/dormitory).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.uj.edu.pl/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:50",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://dwm.uj.edu.pl/en_GB/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=1",
+    "notes": "JU Centre for International Cooperation / exchange portal linked on fact sheet page 1."
+  },
+  "course_catalog_url": {
+    "value": "https://internationalstudents.uj.edu.pl/en_GB/wymiany/kursy",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=3",
+    "notes": "Course catalog link embedded on fact sheet page 3."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; course registration via USOSweb.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Restricted units: Collegium Medicum, School of Polish Language and Culture, and Centre for International Studies and Development; places in the Institute of English Studies are limited.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "European research university (ECTS)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Students Office (https://dwm.uj.edu.pl/en_GB/), Disability Support Service DON (https://don.uj.edu.pl/en_GB/start), SOWA Student Counseling (https://sowa.uj.edu.pl/english), and Safe Student support (https://safe-student.uj.edu.pl/en_GB/contact).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf#page=4",
+    "notes": "DON on page 4; SOWA and Safe Student links on page 5."
+  },
+  "nomination_deadlines": {
+    "value": "Fall/Winter Semester: Nomination Apr 30 / Application May 31; Spring/Summer Semester: Nomination Oct 30 / Application Nov 30 (2025-2026 fact sheet; note AUC Excel lists Spring and Academic Year).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jagiellonian University/JU FACT SHEET 2025-2026.pdf",
+    "notes": null
+  },
+  "ext": {}
+}

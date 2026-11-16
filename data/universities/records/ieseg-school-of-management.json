@@ -1,0 +1,421 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ieseg-school-of-management",
+  "excel_rows": [
+    42
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1MdLAadIqe5iZ60AKf6SYbbKri6pM42_x?usp=drive_link",
+      "https://drive.google.com/drive/folders/1MdLAadIqe5iZ60AKf6SYbbKri6pM42_x"
+    ],
+    "local_files": [
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_BACHELOR_IN_INTERNATIONAL_BUSINESS_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_BACHELOR_IN_MANAGEMENT__AND_TECH_DESIGN_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_MASTER_IN_MANAGEMENT_PGE_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_PROGRAMME_GRANDE_ECOLE_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_SPECIALIZED_MASTERS_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-GLOBAL_MBA_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-PORTFOLIO-PROGRAMMES_MASTERS-(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Lille_Fall2025_ListCourses.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Lille_Fall2025_Syllabi.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Paris_Fall2025_ListCourses.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Paris_Fall2025_Syllabi.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Lille_Fall2025_ListCourses.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Lille_Fall2025_Syllabi.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Paris_Fall2025_ListCourses.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Paris_Fall2025_Syllabi.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_COURSES_LILLE_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_COURSES_PARIS_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_SYLLABI_LILLE_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_SYLLABI_PARIS_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_COURSES_LILLE_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_COURSES_PARIS_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_SYLLABI_LILLE_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_SYLLABI_PARIS_SPRING_2025.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Executive - Corporate Relations/IESEG-BROCHURE_LEARNING_EXPEDITIONS_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Executive - Corporate Relations/IESEG-Relation_Entreprise_-_International_(GB).PDF",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG IR Presentation 2025-2026.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Short Term Programs/Flyer IESEG Short-Term Programs 2026.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/IESEG Short Term Programs/IESEG Short-Term Programs presentation 2026.pdf",
+      "data/raw/factsheets/IÉSEG School of Management/Lille-Paris_ExchangeProgramme_Factsheet_2022.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_BACHELOR_IN_INTERNATIONAL_BUSINESS_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_BACHELOR_IN_MANAGEMENT__AND_TECH_DESIGN_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_MASTER_IN_MANAGEMENT_PGE_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_PROGRAMME_GRANDE_ECOLE_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-BROCHURE_-_SPECIALIZED_MASTERS_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-GLOBAL_MBA_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Degree Fee-paying programs_brochures/IESEG-PORTFOLIO-PROGRAMMES_MASTERS-(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Lille_Fall2025_ListCourses.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Lille_Fall2025_Syllabi.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Paris_Fall2025_ListCourses.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Bachelor_Paris_Fall2025_Syllabi.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Lille_Fall2025_ListCourses.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Lille_Fall2025_Syllabi.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Paris_Fall2025_ListCourses.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Fall 2025/IESEG_ExchangeStudents_Master_Paris_Fall2025_Syllabi.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_COURSES_LILLE_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_COURSES_PARIS_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_SYLLABI_LILLE_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_BACHELOR_SYLLABI_PARIS_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_COURSES_LILLE_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_COURSES_PARIS_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_SYLLABI_LILLE_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/Course offer_Exchange Program/Spring 2025/IESEG_MASTER_SYLLABI_PARIS_SPRING_2025.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Executive - Corporate Relations/IESEG-BROCHURE_LEARNING_EXPEDITIONS_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Executive - Corporate Relations/IESEG-Relation_Entreprise_-_International_(GB).PDF.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG IR Presentation 2025-2026.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Short Term Programs/Flyer IESEG Short-Term Programs 2026.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/IESEG Short Term Programs/IESEG Short-Term Programs presentation 2026.pdf.txt",
+      "data/raw/extracted/IÉSEG School of Management/Lille-Paris_ExchangeProgramme_Factsheet_2022.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "IÉSEG School of Management",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IÉSEG",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lille",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": "Mapped from Excel scope 'Business Administration'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": "Verified via Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": "All business exchange courses in Grande Ecole Program are taught in English; free French as a Foreign Language (FFL) courses also offered (#page=9)."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Working level of English requested; no official standardized test required for partner universities' exchange students. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=7",
+    "notes": "Also noted on #page=8."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026: Term incl. exams Aug 25 – Dec 21, 2025 (arrival preferred Aug 19; mandatory orientation Aug 21–22).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=6",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026: Term incl. exams Jan 7 – May 31, 2026 (arrival Jan 2; orientation Jan 5–6).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=6",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ieseg.fr/en/international/study-at-ieseg-in-exchange/",
+    "notes": "Official ieseg.fr confirms exchange students from partner universities are exempt from tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 900.0,
+      "max": 1850.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=13",
+    "notes": "Fact Sheet budgets EUR 900–1,250/month on Lille campus and EUR 1,200–1,850/month on Paris (La Defense) campus."
+  },
+  "living_cost_usd_est": {
+    "value": 7598.25,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=13",
+    "notes": "5-month estimate in EUR: midpoint 1375 EUR/month * 5 * 1.105200 USD/EUR = 7598.25 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Fact Sheet budgets EUR 900–1,250/month on Lille campus and EUR 1,200–1,850/month on Paris (La Defense) campus."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "OFII fiscal stamp €50; accommodation insurance €59/yr + civil liability insurance; ALL card €11 (Lille). Non-EU students register for free French Social Security (Ameli) and must provide a pre-arrival doctor medical attestation with vaccination record.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=12",
+    "notes": "Detailed across #page=12-13."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=10",
+    "notes": "ISO sends housing booking instructions upon acceptance on a first-come, first-served basis (#page=10-11)."
+  },
+  "housing_notes": {
+    "value": "Estimated rent: Lille €450–€800/month (avg €600); Paris €600–€1,200/month (avg €850). CAF housing subsidy may apply after arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=10",
+    "notes": "See also #page=11 and https://www.ieseg.fr/en/life-at-ieseg/practical-information/housing/."
+  },
+  "host_grants_or_stipends": {
+    "value": "French CAF housing subsidy (€30–€250/month possible for stays >=90 days with valid residence title and French bank account; 2+ months processing).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=11",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "VLS-TS long-stay student visa required for >90 days (Schengen if <90 days), Campus France procedure where applicable, plus €50 OFII validation stamp post-arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=12",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.ieseg.fr/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:42",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ieseg.fr/en/international/study-at-ieseg-in-exchange/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ieseg.fr/en/international/study-at-ieseg-in-exchange/course-list/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.ieseg.fr/en/international/study-at-ieseg-in-exchange/course-list/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": "Dedicated Fall/Spring exchange course lists & syllabi for Lille and Paris."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; regular load 30 ECTS (8–12 courses), minimum 20 ECTS; French 0–20 grading scale (10/20 pass); no retake exams for exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": "Also on #page=9."
+  },
+  "course_restrictions_note": {
+    "value": "Exchange restricted to Grande Ecole Program only. Bachelor students take Semester 6 (4th-year BA students may choose BA or Master); Master students take Master courses; no course changes after Learning Agreement signed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=8",
+    "notes": "Detailed across #page=8-9."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application (https://candidate.ieseg.fr/)",
+      "ID photo",
+      "Official university transcripts",
+      "Passport or EU ID card copy",
+      "CV / resume",
+      "Learning Agreement (submitted after course selection)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=7",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=1",
+    "notes": "Two campuses: Lille and Paris (La Defense), #page=1 & #page=5."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory Orientation Week, International Club buddy program/language cafe/events, free FFL French courses, and MAS disability support (mas-sante@ieseg.fr).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=3",
+    "notes": "Detailed on #page=3 & #page=13."
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: Nomination Apr 15, Application Apr 20; Spring: Nomination Sep 30, Application Oct 20.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IÉSEG School of Management/IESEG Exchange Program/IESEG_Lille-Paris_Exchange Program Factsheet_25-26.pdf#page=7",
+    "notes": null
+  },
+  "ext": {}
+}

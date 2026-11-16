@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "northwestern-university",
+  "excel_rows": [
+    79
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Northwestern University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NU",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/international/index.html",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Illinois",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "city": {
+    "value": "Evanston",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by a partner university and have completed at least one full year of university study prior to attending (no numeric minimum GPA published for incoming visiting exchange).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/getting-started/applying-to-study-at-northwestern.html",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (Northwestern school-level exclusions noted in excluded_majors)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (Northwestern school-level exclusions noted in excluded_majors)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Integrated Marketing Communications (IMC)",
+      "Bienen School of Music",
+      "Kellogg School of Management",
+      "Pritzker School of Law",
+      "Feinberg School of Medicine"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/course-planning.html",
+    "notes": "Medill School of Journalism is Limited Access (not fully excluded), whereas IMC, Bienen, Kellogg, Pritzker Law, and Feinberg Medicine are excluded for visiting undergraduate exchange."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Incoming visiting exchange eligibility (applying-to-study-at-northwestern.html) requires partner nomination, >=1 year completed study, and English proficiency; no numeric minimum GPA is published (3.0 GPA on GLO Study Abroad applies to outgoing NU students, not incoming exchange)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/index.html",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/index.html",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must provide proof of English proficiency via TOEFL/IELTS scores or an official supporting letter from their home university confirming English proficiency (no fixed numeric exchange minimum or RHET 1020 exemption stated on GLO visiting-student page).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/getting-started/applying-to-study-at-northwestern.html",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/getting-started/applying-to-study-at-northwestern.html",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall Quarter 2026: Classes Sep 23 – Dec 5, 2026; Final Exams Dec 7 – Dec 12, 2026 (plus mandatory pre-term arrival/orientation).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.registrar.northwestern.edu/calendars/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Quarter system — Winter Quarter 2027: Classes Jan 4 – Mar 13, 2027, Final Exams Mar 15 – Mar 20, 2027; Spring Quarter 2027: Classes Mar 30 – Jun 5, 2027, Final Exams Jun 7 – Jun 11, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.registrar.northwestern.edu/calendars/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html",
+    "notes": "GLO visiting exchange page specifies $0 Northwestern tuition; exchange students continue paying home university tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2833,
+      "max": 2833
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html",
+    "notes": "Derived monthly figure from GLO AY 2026-2027 per-quarter visiting exchange recurring living budget: Housing $4,200 + Meals $2,950 + Books & Supplies $300 + Transportation $200 + Personal Expenses $850 = $8,500/quarter / 3 months = $2,833/month (excludes $2,000/quarter NU-SHIP health insurance documented in mandatory_host_fees_and_insurance and $2,000 one-time pre-arrival travel/misc)."
+  },
+  "living_cost_usd_est": {
+    "value": 14165,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html",
+    "notes": "USD official GLO per-quarter budget scaled to 5-month equivalent (1 USD = 1.0 USD, no FX conversion; 5 * $2,833/mo = $14,165 USD; calculated 2026-11-15). Note: Northwestern operates a 10-week quarter system (1 quarter recurring living budget is $8,500, or $10,500 incl. $2,000 NU-SHIP, or $12,500 incl. $2,000 one-time pre-arrival); a two-quarter stay scales proportionally."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Northwestern University Student Health Insurance Plan (NU-SHIP): estimated $2,000/quarter on GLO visiting student budget (annual 2026-2027 NU-SHIP rate is $5,996 for Sep 1, 2026 - Aug 31, 2027; automatically billed unless an approved comparable waiver is granted).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/student-insurance/plan-info-reqs/nu-ship-information/index.html",
+    "notes": "Quarterly $2,000 NU-SHIP line item also listed at https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/housing.html",
+    "notes": "On-campus housing is not guaranteed, but Northwestern assists admitted visiting exchange students via an online housing contract placed based on availability."
+  },
+  "housing_notes": {
+    "value": "On-campus housing is not guaranteed; admitted visiting students submit a binding online housing contract through Residential Services and are placed based on availability (billed directly by NU for room and board; GLO estimates $4,200/quarter housing + $2,950/quarter meals). Early check-in before hall opening is restricted.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/housing.html",
+    "notes": "Quarterly housing/meal budget figures from https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-U.S. visiting exchange students require a J-1 Student Visa (Form DS-2019) via OISS. After admission and OISS Portal access (https://oissportal.northwestern.edu), OISS processing takes up to 4 weeks once a complete DS-2019 request and financial packet are submitted. Financial proof: liquid funds (bank statement dated within 6 months, plus Sponsor Statement of Support if family/friend-funded) guaranteed for the full program length (GLO 1-quarter visiting student budget totals $12,500 incl. NU-SHIP and pre-arrival; plus additional funds if bringing J-2 dependents).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/international/students/steps-for-newly-admitted-students/financial-documentation-requirements.html",
+    "notes": "Up to 4-week OISS DS-2019 processing timeline from https://www.northwestern.edu/international/students/steps-for-newly-admitted-students/index.html; visiting student J-1/DS-2019 requirement and $12,500/quarter budget from https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/costs-money-management.html."
+  },
+  "official_website_url": {
+    "value": "https://www.northwestern.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:79",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.northwestern.edu/abroad/visiting-students/index.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/index.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalogs.northwestern.edu/undergraduate/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalogs.northwestern.edu/undergraduate/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All undergraduate courses in the main Northwestern catalog (https://catalogs.northwestern.edu/undergraduate/) are taught in English; no separate English-taught course list exists."
+  },
+  "credit_system_and_load": {
+    "value": "Quarter unit system (10-week Fall/Winter/Spring quarters; 1 course = 1 credit unit). Full-time visiting exchange load is 3 to 4 course units per quarter.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/course-planning.html",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Visiting exchange students have full access (prerequisites and open seats permitting) to undergraduate courses in Weinberg College of Arts & Sciences and McCormick School of Engineering & Applied Science; limited access to Medill (School of Journalism, Media, Integrated Marketing Communications), School of Education and Social Policy (SESP), School of Communication, and School of Professional Studies (SPS); Integrated Marketing Communications (IMC), Bienen School of Music, Kellogg School of Management, Pritzker School of Law, Feinberg School of Medicine, and 400-level+ graduate courses are closed/not open.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/course-planning.html",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online GLO visiting student application (post-nomination)",
+      "500-word personal statement in English",
+      "Preliminary course plan",
+      "Official university transcripts",
+      "Proof of English proficiency (TOEFL/IELTS or home university supporting letter)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/getting-started/applying-to-study-at-northwestern.html",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Fast-paced 10-week quarter system at a private research university with full liberal arts & engineering integration (Weinberg & McCormick); course prerequisites and attendance policies vary by department.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/preparing-for-northwestern/course-planning.html",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Evanston campus borders Chicago 12 miles north of downtown, but exact city population threshold was not verified from northwestern.edu."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Northwestern describes its Evanston campus (12 miles north of downtown Chicago) as a 'Blend of Urban and Suburban' (https://admissions.northwestern.edu/student-life/evanston-and-chicago.html), which does not map cleanly to a single schema enum ('urban' vs 'suburban'); left unknown per strict provenance rules."
+  },
+  "daily_life_english_friendliness": {
+    "value": "high",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/index.html",
+    "notes": "US host institution operating fully in English."
+  },
+  "international_support_services": {
+    "value": "Mandatory pre-term orientation & GLO advising, OISS immigration & J-1 compliance check-in, and International Wildcat Welcome / peer transition programming.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/studying-at-northwestern/arrival-and-check-in.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Quarter: Opens Mar 1, Deadline Apr 1; Winter Quarter: Opens Jun 1, Deadline Jul 1; Spring Quarter: Opens Sep 1, Deadline Oct 1 (must be nominated by home university first).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.northwestern.edu/abroad/visiting-students/getting-started/applying-to-study-at-northwestern.html",
+    "notes": null
+  },
+  "ext": {}
+}

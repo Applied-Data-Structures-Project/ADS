@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "technische-hochschule-ingolstadt-thi",
+  "excel_rows": [
+    107
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Technische Hochschule Ingolstadt (THI)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "short_name": {
+    "value": "THI",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Ingolstadt",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": "THI publishes designated English-language course lists/module handbooks for incoming exchange students across faculties (Business, CS, Engineering)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B1 English required for English-taught classes. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum B2 German required for German-taught classes.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Semester 1 (Winter): Oct 1 – Feb 4 (arrive ~1 week prior for mandatory orientation).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Semester 2 (Summer): Mar 15 – Jul 22.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": "Official thi.de confirms exchange students from partner universities are exempt from tuition fees (unlike third-country degree students subject to €800 BA / €1,200 MA fees at https://www.thi.de/en/studies/tuition-fees/)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 700.0,
+      "max": 900.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": "Official thi.de estimates €700–€900+/month overall (note dorms €400–600/mo, private housing €600–1,000/mo, Deutschlandticket €47/mo, internet/mobile ~€25/mo)."
+  },
+  "living_cost_usd_est": {
+    "value": 4420.8,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": "5-month estimate in EUR: midpoint 800 EUR/month * 5 * 1.105200 USD/EUR = 4420.80 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Official thi.de estimates €700–€900+/month overall (note dorms €400–600/mo, private housing €600–1,000/mo, Deutschlandticket €47/mo, internet/mobile ~€25/mo)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Studierendenwerk student union fee €82/semester; valid German-compliant health insurance required for enrollment.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": "THI has limited student housing across Ingolstadt and Neuburg campuses; International Office/IWC provides guidance and private/WG resources."
+  },
+  "housing_notes": {
+    "value": "Student dormitories €400–€600/month (incl. utilities); private housing €600–€1,000/month (incl. utilities); limited availability.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students requiring a visa or residence permit must show blocked account (Sperrkonto) / financial proof of ~EUR 992/month (EUR 11,904/year).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.thi.de/en/university/university-profile/hochschulorganisation/international-office/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:107",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": "Also accessible via https://www.thi.de/en/studies/exchange-students/ and Fact Sheet at https://www.thi.de/fileadmin/daten/I_Office/Incomings/THI_International_Office_Fact_Sheet.pdf."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Standard regular university exam registration and re-registration deadlines do not apply to incoming exchange students; International Office provides exchange instructions at Orientation.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online Mobility Online application (following partner nomination)",
+      "Signed Learning Agreement",
+      "Valid health insurance documentation (upon enrollment)"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": "Official thi.de cites campuses in Ingolstadt and Neuburg."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Office (incomings@thi.de, Bldg J Service Point) and International Welcome Center (IWC): orientation week, residence permit support, intercultural programs, German courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/university/international-university/practical-tips-for-international-students/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester: Nomination Apr 1–30, Application May 1–31; Summer Semester: Nomination Oct 1–31, Application Nov 1–30.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.thi.de/en/studies/during-my-degree/exchange-students/",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-palermo",
+  "excel_rows": [
+    153
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Palermo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UniPa",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-and-exchange-students/",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Palermo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "letter_of_intent",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Italian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/english-subjects.html",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/english-subjects.html",
+    "notes": "UniPa offers >20 full English-taught degree programs for 2026-2027 plus individual English-taught departmental modules open to incoming exchange students."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English CEFR B2 proficiency proof (certificate or home university endorsement) generally required if taking English-taught courses; RHET 1020 not mentioned.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-and-exchange-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Italian proficiency required if selecting Italian-taught courses per Learning Agreement; ITASTRA / CLA provides Italian language courses for incoming students.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-and-exchange-students/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 1st Semester (Autumn): Classes run Sep 28 / Oct 1-Dec 22, 2026 (with catch-up windows into Jan 2027); Winter exam session Jan-Feb 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/en/target/futuristudenti/Academic-Calendars/",
+    "notes": "Rectoral Decree 2026/2027 Calendario Didattico at https://www.unipa.it/target/futuristudenti/calendario-didattico-di-ateneo.html."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 2nd Semester (Spring): Classes typically mid-Feb/Mar-May/Jun 2027; Summer exams Jun-Jul 2027; Autumn resits Sep 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/en/target/futuristudenti/Academic-Calendars/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/accommodation.html",
+    "notes": "UniPa assists incoming mobility students via Sturent platform (verified private rooms/apartments with English-speaking advisors) and housing desk (servizioalloggi@unipa.it); ERSU residences also exist subject to eligibility."
+  },
+  "housing_notes": {
+    "value": "Sturent partner platform for private rooms/flats (servizioalloggi@unipa.it; https://www.unipa.it/target/international-students/facilities/rooms-or-apartment-rentals.html); Santi Romano canteen meals ~€3.50.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/accommodation.html",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU incoming students require an acceptance letter to apply for an Italian Study Visa (Type D) via Universitaly / Italian Embassy/Consulate, and must apply for Permesso di Soggiorno within 8 working days of arrival in Italy. Lead time/financial floor not specified.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-extra---eu/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.unipa.it/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:153",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-extra---eu/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-extra---eu/",
+    "notes": "General incoming portal: https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-and-exchange-students/."
+  },
+  "course_catalog_url": {
+    "value": "https://www.unipa.it/target/international-students/international-course-offerings.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/target/international-students/international-course-offerings.html",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.unipa.it/mobilita/en/incoming-students/english-subjects.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/english-subjects.html",
+    "notes": "Full English Master's programs also at https://www.unipa.it/target/international-students/master-degrees-in-english.html."
+  },
+  "credit_system_and_load": {
+    "value": "CFU (Crediti Formativi Universitari, 1:1 equivalent to ECTS): standard full-time load is 30 CFU per semester (60 CFU/year).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-and-exchange-students/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Welcome Office staff support for Permesso di Soggiorno, Sturent English-speaking housing advisors, Santi Romano student canteen (~€3.50/meal), and ITASTRA Italian language courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/accommodation.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "1st Semester / Full Year nomination deadline: June 30; 2nd Semester nomination deadline: November 30 (sent to incoming.students@unipa.it).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unipa.it/mobilita/en/incoming-students/incoming-erasmus-extra---eu/",
+    "notes": null
+  },
+  "ext": {}
+}

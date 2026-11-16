@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-groningen",
+  "excel_rows": [
+    121,
+    136
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1QfOMFjYJE6QTKBdAnENcvcB0OLkSBWgf",
+      "https://drive.google.com/drive/folders/1LJyGXsQSdLRz5EMf7zwTz5DfDRanqPok"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf",
+      "data/raw/factsheets/UoGronigen/2025-2026/Fact Sheet Faculty BSS, University of Groningen 2025-26.pdf",
+      "data/raw/factsheets/UoGronigen/2026-2027/Factsheet 2026-2027.pdf",
+      "data/raw/factsheets/UoGronigen/University of Groningen 2024-25.pdf",
+      "data/raw/factsheets/UoGronigen/University of Groningen.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf.txt",
+      "data/raw/extracted/UoGronigen/2025-2026/Fact Sheet Faculty BSS, University of Groningen 2025-26.pdf.txt",
+      "data/raw/extracted/UoGronigen/2026-2027/Factsheet 2026-2027.pdf.txt",
+      "data/raw/extracted/UoGronigen/University of Groningen 2024-25.pdf.txt",
+      "data/raw/extracted/UoGronigen/University of Groningen.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Groningen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "short_name": {
+    "value": "RUG",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rug.nl/education/incoming-students/",
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Groningen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Bachelor exchange students are strongly advised to have completed their first 2 years before exchange; Master-level BSS courses require a completed Bachelor's degree and sufficient academic background.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Psychology and Sociology",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=121",
+    "notes": "Merged rows [121, 136]: agreement scope is 'Psychology and Sociology' (both under AUC HUSS), corresponding to UG's Faculty of Behavioural and Social Sciences (BSS); Drive folder also contains a Faculty of Arts 2026-2027 factsheet."
+  },
+  "eligible_majors": {
+    "value": [
+      "Psychology",
+      "Sociology"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=121",
+    "notes": "Excel row 121 specifies 'Psychology and Sociology'; BSS 2026-2027 fact sheet page 2 confirms students must major in Psychology, Sociology, or Pedagogical/Educational Sciences."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Dutch"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": "Extensive English-taught undergraduate and graduate offerings in BSS (and Arts)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Faculty of BSS requires CEFR B2 English for Bachelor courses and C1 for Master courses (Faculty of Arts requires B2/C1: IELTS 6.5 / TOEFL iBT 92, or C1/IELTS 7.0–8.0 / TOEFL 100–110 for selected MA tracks).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": "Language proof details: https://www.rug.nl/gmw/exchange/how_to_apply/language-requirements; Faculty of Arts thresholds in UoGronigen/2026-2027/Factsheet 2026-2027.pdf#page=3."
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught courses (CEFR B2/C1 Dutch required only for Dutch-taught courses).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGronigen/2026-2027/Factsheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Autumn Semester: September – January (expected arrival last week of August; see https://www.rug.nl/gmw/exchange/academic_calender/).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester: February – June/July (expected arrival last week of January; CRITICAL: Sociology exchange courses in BSS are ONLY offered in Autumn semester!).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": "Autumn-only Sociology restriction stated on BSS 2026-2027 fact sheet page 3."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rug.nl/education/bachelor/international-students/practical-information/cost-of-living",
+    "notes": "Incoming exchange students are not required to pay tuition fees to the University of Groningen."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800,
+      "max": 1000
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.rug.nl/education/bachelor/bachelor-programmes/financial-matters/living-expenses",
+    "notes": "RUG estimates average student living expenses at €800–€1,000/month excluding tuition (separate annual IND living-money standard applies to non-EU visa permits)."
+  },
+  "living_cost_usd_est": {
+    "value": 4973.4,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.rug.nl/education/bachelor/bachelor-programmes/financial-matters/living-expenses",
+    "notes": "5-month exchange semester estimate: midpoint 900 EUR/month (range 800–1000 EUR) * 5 months * 1.1052 = 4973.40 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Sufficient health insurance coverage is obligatory during the exchange (https://www.rug.nl/education/exchange/financial-matters/health-insurance-for-exchange-students); travel & third-party liability insurance strongly advised.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": "UG is not a campus university and does not own student dorms; reserved short-stay international rooms via SSH (https://www.sshxl.nl/en) plus At Home in Groningen / Hospi Housing; rooms fill quickly."
+  },
+  "housing_notes": {
+    "value": "No campus-owned dorms; UG reserves short-stay rooms via SSH (https://www.sshxl.nl/en), plus At Home in Groningen; book as early as possible after admission.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "University of Groningen Immigration Service Desk contacts admitted non-EU/EEA students with MVV/residence permit instructions (https://www.rug.nl/education/exchange/visa-and-immigration/); Dutch IND financial proof applies.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.rug.nl/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:121,136",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "http://www.rug.nl/gmw/exchange",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=1",
+    "notes": "General UG incoming portal: https://www.rug.nl/education/incoming-students/; Faculty of Arts: www.rug.nl/arts-exchange."
+  },
+  "course_catalog_url": {
+    "value": "https://www.rug.nl/gmw/exchange/course_information/course-offer",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system (1 EC = 28 hours); normal workload 15 EC per block / 30 EC per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "BSS exchange students must major in Psychology, Sociology, or Pedagogical/Educational Sciences; Sociology & Pedagogical/Educational Sciences courses are offered ONLY in Autumn semester; no guarantee of taking courses at other faculties; Sem 1b resits are held in Groningen in April only (no remote exams).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": "Page 3 details Autumn-only Sociology, no external faculty guarantees, and in-person April resits."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Dutch/European research university (ECTS)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Immigration Service Desk, Faculty Mobility Office, Welcoming Ceremony & Faculty Introduction Week.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=3",
+    "notes": "Welcoming ceremony / introduction week on Arts 2026-2027 fact sheet page 7."
+  },
+  "nomination_deadlines": {
+    "value": "BSS 2026-2027: Autumn Nom May 1 (App: Non-EU May 15 / EU Jun 1); Spring Nom Oct 1 (App: Non-EU Oct 15 / EU Nov 1 — Sociology Autumn-only). Arts 2026-2027: Non-EU Nom Apr 15 / App May 1 (Fall) and Nom Sep 15 / App Oct 1 (Spring).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Groningen/Fact Sheet Faculty BSS, University of Groningen 2026-27.pdf#page=2",
+    "notes": "Arts non-EU deadlines on UoGronigen/2026-2027/Factsheet 2026-2027.pdf#page=5."
+  },
+  "ext": {}
+}

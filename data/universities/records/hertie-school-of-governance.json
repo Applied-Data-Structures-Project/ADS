@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "hertie-school-of-governance",
+  "excel_rows": [
+    40
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/16bIRUhOhI5PeryEPcJbyBCRxQYhL_rPI?usp=drive_link",
+      "https://drive.google.com/drive/folders/1aGvpU8d_CwLq0JyfDiSyWWlxHbdh1qda"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Hertie School of Governance/2021-2022/Hertie Study abroad Flyer 2021.pdf",
+      "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf",
+      "data/raw/factsheets/Hertie School of Governance/Hertie Dual Degree Fact Sheet 2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Hertie School of Governance/2021-2022/Hertie Study abroad Flyer 2021.pdf.txt",
+      "data/raw/extracted/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf.txt",
+      "data/raw/extracted/Hertie School of Governance/Hertie Dual Degree Fact Sheet 2025.pdf.txt"
+    ],
+    "notes": "Col H link (16bIRUhOhI5PeryEPcJbyBCRxQYhL_rPI) unreachable (http_404: HTTP 404: Not Found) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Hertie School of Governance",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Berlin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Graduate (Master-level) exchange for nominated partner students; Spring semester exchange spots are very limited.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": "Confirmed in Hertie School Exchange Fact Sheet 2024 page 1."
+  },
+  "agreement_scope_raw": {
+    "value": "GAPP only/ Incoming students are not restricted only ours !",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=40",
+    "notes": "Excel row 40 specifies 'GAPP only/ Incoming students are not restricted only ours !' (GR, Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=40",
+    "notes": "Open to graduate programs within AUC's School of Global Affairs and Public Policy (GAPP) per row 40."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": "Instruction language at Hertie School is English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 100, IELTS 7.0 (minimum 7.0 Writing), Cambridge CAE Grade B, or CPE Grade C (waived for native speakers or if previous undergraduate degree was completed entirely in English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (courses taught in English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester: Aug 1 – Jan 31 (required physical attendance late August – mid-December).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": "Also stated in Hertie School Exchange Fact Sheet 2024 page 1."
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester: Feb 1 – Jul 31 (very few Spring exchange spots available).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2021-2022/Hertie Study abroad Flyer 2021.pdf#page=1",
+    "notes": "Feb 1 – Jul 31 term dates from 2021 flyer page 1; limited Spring availability confirmed on 2024 fact sheet page 1 and academic-exchanges-inbound."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": "Exchange students pay tuition only to their home institution and are waived from Hertie tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1170,
+      "max": 1170
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": "2024 Exchange Fact Sheet page 2 budgets 650 EUR housing + 120 EUR health insurance + 400 EUR other expenses = 1,170 EUR/month."
+  },
+  "living_cost_usd_est": {
+    "value": 6465.42,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": "5-month exchange semester estimate: 1170 EUR/month * 5 months * 1.1052 = 6465.42 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Campus/semester fee approx. 300 EUR/semester (Studentenwerk + BVG semester ticket, 289.40 EUR itemized on tuition-and-fees page) plus compulsory health insurance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": "Also itemized on https://www.hertie-school.org/en/study/master-programmes/tuition-and-fees."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": "Hertie does not operate its own dorms; Student Affairs & Study Abroad provides guidance on student dorms, shared flats (WGs), Neon Wood, and the Hertie Homes initiative (2024 fact sheet page 2)."
+  },
+  "housing_notes": {
+    "value": "Students secure Berlin housing independently with guidance from Hertie Student Affairs (dorms, WGs, private residences, and Hertie Homes).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": "Small living grants may occasionally be available and advertised at the start of semester (per 2021-2022 flyer; availability not guaranteed).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2021-2022/Hertie Study abroad Flyer 2021.pdf#page=2",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU citizens requiring a German student visa should apply at least 3 months in advance.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": "Exact German blocked-account EUR threshold not listed in Hertie fact sheet."
+  },
+  "official_website_url": {
+    "value": "https://www.hertie-school.org/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:40",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://www.hertie-school.org/course-catalogue/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": "Course catalogue URL printed on 2024 Exchange Fact Sheet page 1."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS system; workload ranges from 6 to 30 ECTS per semester depending on home university requirements.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": "Also stated on 2024 Exchange Fact Sheet page 1."
+  },
+  "course_restrictions_note": {
+    "value": "MPP and MIA courses are open to exchange students; Master of Data Science (MDS) courses require satisfying prerequisites (2024 fact sheet page 1).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application form",
+      "Letter of Motivation",
+      "CV",
+      "Official university transcript",
+      "English proficiency test results (unless waived)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Graduate public policy school (European/international ECTS)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation program, visa support, Hertie Homes housing guidance, and Student Affairs & Study Abroad advising.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Hertie School of Governance/2024/Hertie School Exchange Fact Sheet 2024.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination April 15 (academic-exchanges-inbound & 2024 fact sheet page 1); Spring: Nomination November 15 per 2021 flyer page 1 (very limited Spring places).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.hertie-school.org/en/study/study-abroad/academic-exchanges-inbound",
+    "notes": null
+  },
+  "ext": {}
+}

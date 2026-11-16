@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "west-virginia-university",
+  "excel_rows": [
+    162
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1e23_KGWzdED_KGJ57qCKdbWZJ5hS0j7P",
+      "https://drive.google.com/drive/folders/18wnQRAU5hYFgOEFkRAtUjk4qk6d6WypU"
+    ],
+    "local_files": [
+      "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf",
+      "data/raw/factsheets/West Virginia/WVU 202526 Fact sheet.pdf",
+      "data/raw/factsheets/West Virginia/West Virginia University 2024-25.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf.txt",
+      "data/raw/extracted/West Virginia/WVU 202526 Fact sheet.pdf.txt",
+      "data/raw/extracted/West Virginia/West Virginia University 2024-25.pdf.txt"
+    ],
+    "notes": "Col H link (1e23_KGWzdED_KGJ57qCKdbWZJ5hS0j7P) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "West Virginia University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "short_name": {
+    "value": "WVU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "West Virginia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "city": {
+    "value": "Morgantown",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Residence halls exclude students >=24 years old; College of Law exchange requires a completed bachelor's degree (p.2)."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": [
+      "Forensics",
+      "Pharmacy",
+      "MBA (Master of Business Administration)",
+      "Online courses",
+      "WVUIT and Potomac State campuses",
+      "Practicums, seminars, and independent study (case-by-case only)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": "Medicine, Nursing, Law, and Dentistry require >=6 months advance application; Law requires completed Bachelor's; Graduate courses need departmental permission."
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": "Fact sheet p.2 states: 'MINIMUM GPA: 2.5/4.0. Students with a GPA of 2.0-2.49 may be considered on an individual basis. Course request list required for review.'"
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://catalog.wvu.edu/morgantown/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Required for non-native English speakers: TOEFL iBT 79 / PBT 550, IELTS 6.5, or Duolingo English Test 105 (Fact sheet p.2; RHET 1020 / English-medium waiver not mentioned).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (TOEFL iBT 79 / PBT 550, IELTS 6.5, or Duolingo 105 for non-native speakers).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Registration Aug 17; Classes begin Aug 18, 2026; Fall Break Oct 9-11; Final Exam Week Dec 7-11, 2026 (arrive ~1 week prior for mandatory New International Student Orientation; no late arrivals).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://provost.wvu.edu/academic-calendar",
+    "notes": "Orientation arrival & no-late-arrival rule on data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Registration Jan 8; Classes begin Jan 11, 2027; Final Exam Week May 3-7, 2027 (arrive ~1 week prior for mandatory New International Student Orientation; no late arrivals).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://provost.wvu.edu/academic-calendar",
+    "notes": "Orientation arrival rule on data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "WVU 2025-26 Fact Sheet notes a $150 USD admin fee and 'WVU Exchange Housing Waiver, if included in institutional agreement', without publicly printing a standard incoming tuition-waiver statement on educationabroad.wvu.edu/incoming."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1502.8,
+      "max": 1502.8
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://admissions.wvu.edu/cost-and-aid",
+    "notes": "Derived from WVU 2026-27 average on-campus Food & Housing COA ($15,028/year divided across 10 academic months / two 5-month semesters = $1,502.80/month). Excludes $150 admin fee and SHIP health insurance ($1,277 Fall / $1,980 Spring-Summer); note select agreements include WVU Exchange Housing Waiver (Stalnaker Hall)."
+  },
+  "living_cost_usd_est": {
+    "value": 7514.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://admissions.wvu.edu/cost-and-aid",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester equivalent of WVU 2026-27 average Food & Housing COA ($15,028/yr / 2 = $7,514.00/semester), excluding $150 admin fee and health insurance."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "WVU 2026-27 Aetna Student Health Insurance Plan (SHIP) premiums: $1,277 Fall, $1,980 Spring/Summer ($3,257 annual). J-1 exchange visitors must meet 22 CFR 62.14 insurance minimums ($100k medical, $25k repatriation, $50k evacuation, <=$500 deductible). WVU also charges a $150 USD exchange administration fee.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studentinsurance.wvu.edu/",
+    "notes": "J-1 insurance criteria at https://isss.wvu.edu/students-services/health-insurance-in-the-u-s; $150 administration fee at data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": "Global Live-Learn Community at Stalnaker Hall (covered by WVU Exchange Housing Waiver if included in partner agreement); students >=24 are ineligible for residence halls (University Apartments recommended for >19). Note WVU housing/dining close during breaks (Thanksgiving/Winter/Spring) — Fact sheet p.1."
+  },
+  "housing_notes": {
+    "value": "Morgantown residence hall rates per semester: Traditional towers double ~$3,682, single ~$4,628; Stalnaker/Summit double suite ~$4,038-$4,133, single ~$4,759-$4,863; Honors/Lincoln double ~$4,660-$4,729, single ~$4,863-$4,936; Seneca studios $5,718-$6,248; $225 deposit and required dining plan.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housing.wvu.edu/residence-halls/room-and-dining-plan-rates",
+    "notes": "WVU 2025-26 Fact Sheet (data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1, #page=2) also specifies Global LLC at Stalnaker Hall (housing waiver if included in agreement), >=24 residence hall age cap, and hall/dining closures during breaks."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Age rule for housing: students 24 years old or older are not permitted in WVU residence halls (Fact sheet p.2)."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Visa requires Form DS-2019 from WVU ISSS supported by Proof of Financial Support (liquid bank statements <=6 months old or sponsor/award letters covering COA; add $9,700 per J-2 dependent) and 22 CFR 62.14 compliant health insurance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://isss.wvu.edu/students-services/j-1-students",
+    "notes": "Financial documentation rules ($9,700/dependent) at https://isss.wvu.edu/students-services/new-student-on-boarding; Fact Sheet (data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2) also lists .../students/j-1-students."
+  },
+  "official_website_url": {
+    "value": "https://www.wvu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:162",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "http://educationabroad.wvu.edu/incoming",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://catalog.wvu.edu/morgantown/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://catalog.wvu.edu/morgantown/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "http://catalog.wvu.edu/morgantown/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://catalog.wvu.edu/morgantown/",
+    "notes": "All coursework on Morgantown Campus delivered in English."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit-hour system: mandatory minimum 12 credit hours/semester UG (courses 100-499) and 9 credit hours/semester GR (courses 500+).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Morgantown Campus courses only (WVUIT and Potomac State not open; no online courses). Forensics, Pharmacy, and MBA closed; Medicine/Nursing/Law/Dentistry require 6-month advance application (Law requires bachelor's degree); graduate courses need departmental permission; practicums/seminars/independent study generally closed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home institution nomination emailed to incomingexchange@mail.wvu.edu (name, email, field, level)",
+      "Unique online exchange application (emailed post-nomination)",
+      "Official transcript showing >=2.5 GPA (2.0-2.49 needs course request list for individual review)",
+      "English proficiency scores (TOEFL 79 / IELTS 6.5 / DET 105 for non-native speakers)",
+      "Proof of financial support for DS-2019"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1",
+    "notes": "Academic/GPA/English & DS-2019 requirements on data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Morgantown Campus spans Downtown, Evansdale, and Sunnyside neighborhoods in Morgantown, WV (WVUIT and Potomac State campuses are closed to exchange students)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Education Abroad (incomingexchange@mail.wvu.edu), International Students & Scholars Services (ISSS, https://isss.wvu.edu/), mandatory New International Student Orientation, scheduled shuttle pickups from Pittsburgh International Airport, Stalnaker Hall Global LLC, and Accessibility Services.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1",
+    "notes": "ISSS/Accessibility/Emergency contact on data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=2."
+  },
+  "nomination_deadlines": {
+    "value": "Fall (Aug-Dec): Nomination Mar 15, Application Apr 1. Spring (Jan-May): Nomination Sep 1, Application Sep 15 (late apps case-by-case; Medicine/Nursing/Law/Dentistry >=6 months advance).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/West Virginia/2025-2026/WVU 202526 Fact sheet.pdf#page=1",
+    "notes": "6-month advance rule for health/law programs on p.2."
+  },
+  "ext": {}
+}

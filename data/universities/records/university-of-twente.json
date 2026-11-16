@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-twente",
+  "excel_rows": [
+    150
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Fpy02d0nsJgTNWi2n-LFzxDAXTRnFBxq"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UCollege Twente/University College Twente.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UCollege Twente/University College Twente.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Twente",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Enschede",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Limited schools agree to the agreement",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement_scope_raw states 'Limited schools agree to the agreement' without naming specific AUC schools; UT hosts 5 faculties (BMS, EEMCS, ET, ITC, TNW/S&T)."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": "Wide selection of English-taught courses/modules across UT faculties (Bachelor 15 EC quartile modules, Master 5 EC courses); see course-catalogue."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Required: IELTS Academic >=6.0 (min 5.5 all subscores) OR TOEFL iBT >=80 (min 18 all subscores; MyBest/IELTS Online not accepted), OR home university signs official English Language Proficiency Exception Statement for fully English-taught degree students. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Semester 1 (Q1 + Q2): September (orientation/registration starting Mon Sep 7, 2026) through end of January.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/ces/planning-schedules/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Semester 2 (Q3 + Q4): February through July (Q4 resits in July/August).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/ces/planning-schedules/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Verify partner tuition waiver at https://www.utwente.nl/en/education/exchange-students/ (UCollege Twente.docx is an outdated 2020-21 UCT residential-college file)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1300.0,
+      "max": 1300.0
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/financial-matters/cost-of-living/",
+    "notes": "Official utwente.nl / Nibud estimates ~EUR 1,300/month excl. tuition (approx. rent €350–550/mo, groceries ~€244/mo, insurance/transport/books/leisure ~€500+/mo)."
+  },
+  "living_cost_usd_est": {
+    "value": 7183.8,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/financial-matters/cost-of-living/",
+    "notes": "5-month estimate in EUR: midpoint 1300 EUR/month * 5 * 1.105200 USD/EUR = 7183.80 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Official utwente.nl / Nibud estimates ~EUR 1,300/month excl. tuition (approx. rent €350–550/mo, groceries ~€244/mo, insurance/transport/books/leisure ~€500+/mo)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/campus/housing/",
+    "notes": "Official utwente.nl states non-EEA exchange students receive one guaranteed housing offer (e.g. Boulevard 1945 in Enschede center; if declined, must find own), while EEA exchange students find their own accommodation."
+  },
+  "housing_notes": {
+    "value": "Campus/city student rooms ~€350–550/month; 1 guaranteed offer provided for non-EEA exchange students via UT.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/campus/housing/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EEA students need Dutch IND MVV entry visa / residence permit initiated by UT Student Services post-conditional admission. Strict Osiris visa milestones: Fall Jun 15 (questions), Jun 30 (fee/financial proof), Jul 15 (final upload); Spring Nov 15, Nov 30, Dec 15.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.utwente.nl/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:150",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.utwente.nl/en/education/exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.utwente.nl/en/education/course-catalogue/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/course-catalogue/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (EC): standard full-time load 30 EC per semester (60 EC/year). Bachelor students take complete 15 EC quartile modules; Master students select individual 5 EC courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Exchange students must take >=60% of courses (Master) or >=1 module (Bachelor) from their assigned hosting faculty (BMS, EEMCS, ET, ITC, or TNW/S&T).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall (Sep): Partner Nom Feb 1–Apr 1; Non-EEA App Apr 15 (Eng test May 25, LA Jun 5); EEA App May 15. Spring (Feb): Partner Nom Jul 1–Sep 1; Non-EEA App Sep 15 (Eng test Oct 25, LA Nov 5); EEA App Oct 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utwente.nl/en/education/exchange-students/",
+    "notes": null
+  },
+  "ext": {}
+}

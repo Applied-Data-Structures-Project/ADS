@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "queen-s-university-at-kingston",
+  "excel_rows": [
+    90
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1jp4StnKDMQrojpoVaJmvNkHdO1SvNSwK"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf",
+      "data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf",
+      "data/raw/factsheets/Queens University/Smith UG/Smith-Undergraduate-Fact-Sheet.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf.txt",
+      "data/raw/extracted/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf.txt",
+      "data/raw/extracted/Queens University/Smith UG/Smith-Undergraduate-Fact-Sheet.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Queen's University at Kingston",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Canada",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Ontario",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "city": {
+    "value": "Kingston",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by home partner university in good/competitive academic standing (Smith Commerce notes partner selection; Queen's uses a 4.3 grading scale).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=9",
+    "notes": "Home university nomination & academic standing noted on https://www.queensu.ca/international/incoming-exchange."
+  },
+  "agreement_scope_raw": {
+    "value": "BUS, Law, arts&science",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement_scope_raw is 'BUS, Law, arts&science' (for UG level); maps unambiguously to BUS for Business while arts&science spans HUSS & SSE and Queen's Law is noted in scope despite UG agreement level."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business",
+      "Law",
+      "Arts & Science"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Queen's incoming exchange relies on partner university nomination benchmarks (note: the 2.7/2.8 cGPA figures on queensu.ca/international/bilateral-exchange-program govern outgoing Queen's students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-English-medium applicants must submit IELTS Academic 6.5 (no band <6.0), TOEFL iBT/Home Edition 88 (min 20 in Writing, Speaking, Reading, and Listening; code 0949), Duolingo 120, CAEL 70, PTE 60, or Cambridge 175 (Smith #page=2 also lists TOEFL PBT 580). Exempt with IB diploma (excl. SL English B alone) or >=3 years residency in an English-primary country or full-time study in an English-medium institution. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+    "notes": "Confirmed on Smith Commerce 2026-27 Fact Sheet (data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf#page=2)."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required unless exempt via 3+ years English-medium instruction.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/admission/about-applying/english-language-requirements",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": "AUC Spring corresponds to Queen's Winter term (January–April)."
+  },
+  "fall_term_dates": {
+    "value": "2026-09-08 to 2026-12-23 (Mandatory orientation Sep 4; classes Sep 8–Dec 8; exams Dec 10–23, 2026)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=4",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-15 to 2027-04-23 (Winter term: classes Jan 15–Apr 5; exams Apr 9–23, 2027; orientation Jan 2027)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=4",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/international/incoming-exchange/costs",
+    "notes": "Incoming bilateral exchange students pay regular tuition to their home university and do not pay tuition fees to Queen's."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "CAD",
+      "min": 1560,
+      "max": 2250
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf#page=4",
+    "notes": "Sum of Smith Commerce 2026-2027 monthly Kingston estimates: off-campus housing incl. utilities CAD $720–$1,380 + food $450 + phone $35–$65 + misc >=$355 = CAD $1,560–$2,250+/month (local Kingston Transit pass included with student card)."
+  },
+  "living_cost_usd_est": {
+    "value": 6680.4,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf#page=4",
+    "notes": "5-month midpoint estimate: 1,905 CAD/month * 5 months = 9,525 CAD * 0.701358 USD/CAD = 6,680.44 USD (ECB 2026-11-13 cross rate 1 EUR = 1.5758 CAD and 1 EUR = 1.1052 USD -> 1 CAD = 0.701358 USD, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory automatic enrollment in University Health Insurance Plan (UHIP) for international/exchange students (~CAD $264/1 term or CAD $528/2 terms per 2026-27 factsheets; transcripts held if UHIP balance owed). Student card includes Kingston Transit.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf#page=4",
+    "notes": "Transcript hold rule on Arts & Science Fact Sheet #page=10; UHIP mandatory confirmation on https://www.queensu.ca/international/incoming-exchange/costs."
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=12",
+    "notes": "Both 2026-2027 Arts & Science (#page=12) and Smith Commerce (#page=4) fact sheets state verbatim: 'On-campus residence is not available.'"
+  },
+  "housing_notes": {
+    "value": "Off-campus rentals only (est. CAD $720–$1,380/month incl. utilities); supported by Queen's Off-Campus Living Advisor (OCLA) and Queen's University International Centre (QUIC).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=13",
+    "notes": "Monthly rental estimate from Smith Commerce Fact Sheet #page=4."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Single-semester exchange (<6 months) can enter as a visitor (TRV or eTA, no Canadian Study Permit required); stays of 6 months or more (full-year) require a Canadian Study Permit.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=13",
+    "notes": "Same rule stated on Smith Commerce Fact Sheet #page=4."
+  },
+  "official_website_url": {
+    "value": "https://www.queensu.ca/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:90",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.queensu.ca/international/incoming-exchange/costs",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.queensu.ca/international/incoming-exchange/costs",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Queen's credit units (3.0 units = 1 one-term course; 6.0 units = full-year course). Standard full-time load: 12.0–15.0 units (4–5 courses) per semester; 4.3 GPA grading scale.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=8",
+    "notes": "4.3 GPA scale on #page=9."
+  },
+  "course_restrictions_note": {
+    "value": "Arts & Science excludes History (300-level+) and Political Studies (300-level+) and limits high-demand subjects (e.g., Economics, Psychology, Sociology).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=9",
+    "notes": "For Smith Commerce exchange (`data/raw/factsheets/Queens University/2026-2027/Smith Commerce Undergraduate Exchange Fact Sheet.pdf#page=3`), students must take the majority of courses in Smith School of Business (pre-requisites apply; >=6 Business/Economics foundation courses recommended on #page=2)."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Smith Commerce 2026-27 Fact Sheet describes Kingston as a \"small size city\"; left unknown rather than guessing college_town vs mid_size_city."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Arts & Science Fact Sheet describes a campus-based university ~10-minute walk from downtown Kingston; left unknown rather than assuming urban vs suburban."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Programs Office (IPO), Queen's University International Centre (QUIC), Off-Campus Living Advisor (OCLA), Orientation, and free transcript dispatch (if account clear).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=13",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Full Year: nomination April 1, application April 30. Winter: early nomination April 1 / final nomination September 1, final application September 30 (fixed annual dates).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Queens University/2026-2027/Queen′s University - Arts and Science Exchange Fact Sheet.pdf#page=4",
+    "notes": "Same deadlines confirmed on Smith Commerce Fact Sheet #page=2."
+  },
+  "ext": {}
+}

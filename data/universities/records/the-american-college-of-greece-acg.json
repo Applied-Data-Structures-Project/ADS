@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-american-college-of-greece-acg",
+  "excel_rows": [
+    109
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1__nVFZjtm1gAiawSCoAa1bsbbNghI7pD"
+    ],
+    "local_files": [
+      "data/raw/factsheets/ACG- The American College of Greece/2026-2027/Academic Calendar 2026_2027_Study Abroad.pdf",
+      "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/ACG- The American College of Greece/2026-2027/Academic Calendar 2026_2027_Study Abroad.pdf.txt",
+      "data/raw/extracted/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The American College of Greece (ACG)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "short_name": {
+    "value": "ACG",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "country": {
+    "value": "Greece",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Athens",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 30 earned university credits and a declared major required for incoming exchange admission.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": "Exchange Partner Info Sheet #page=1 states minimum C.I. >= 2.5/4.0 scale for inbound exchange students (note 2.75 on acg.edu applies to ACG's outbound study abroad students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": "American English instruction across Deree Liberal Arts & Sciences, Business, Fine & Performing Arts, and Graduate Arts & Sciences."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Proof of English proficiency required for non-native speakers per Exchange Partner Info Sheet #page=1 (specific test cutoffs or RHET 1020 exemption not enumerated in local fact sheets).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required (courses taught in American English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Move-in 6-7 Sep, Orientation 9 Sep, Classes 10 Sep - 9 Dec, Finals 11-18 Dec, Move-out 19 Dec 2026 (Fall Intensive: 15 Oct - 19 Dec 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/2026-2027/Academic Calendar 2026_2027_Study Abroad.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Move-in 10-11 Jan, Orientation 12 Jan, Classes 14 Jan - 14 Apr, Finals 16-23 Apr, Move-out 24 Apr 2027 (also Summer 2027 Term 16 May - 15 Jul; Sessions I & II May-Jul).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/2026-2027/Academic Calendar 2026_2027_Study Abroad.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exchange Partner Info Sheet #page=2 states tuition and fees are handled 'per agreement with each institution' rather than unambiguously proving unconditional waiver; independent non-US students pay Comprehensive Study Abroad Fees (https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/tuition-fees-non-us-students/)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "acg.edu/admissions/study-abroad/inbound-study-abroad/tuition-fees-non-us-students/ budgets EUR 3,000/semester for daily living/meals/transport and EUR 300/semester for books excluding housing (which is bundled into Comprehensive Fees); no total all-in monthly living range published."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Cannot be derived without an all-in housing-inclusive monthly living cost figure."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition & fees per bilateral agreement (Exchange Partner Info Sheet #page=2); ACG budgets ~EUR 300/semester for books and ~EUR 3,000/semester for personal/meals/transport excluding housing (https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/tuition-fees-non-us-students/).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/tuition-fees-non-us-students/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/housing-at-acg/",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Furnished apartments in Aghia Paraskevi with equipped kitchens managed via ACG Study Abroad Housing (https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/housing-at-acg/; check-in/out aligned to semester move-in/move-out calendar).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.acg.edu/admissions/study-abroad/inbound-study-abroad/housing-at-acg/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Greek student visa process should begin ~10 weeks prior to term start (Exchange Partner Info Sheet #page=2; guidance at https://www.acg.edu/admissions/student-visa).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.acg.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:109",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.acg.edu/admissions/study-abroad/study-in-greece/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.acg.edu/admissions/study-abroad/study-in-greece/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit system (NEASC + OU UK accredited; 128 credits/BA, most courses 3 credits); maximum load 15 credits in Fall/Spring and 6 credits in Summer.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application form",
+      "1 faculty recommendation letter",
+      "Official academic transcript",
+      "Proof of English proficiency",
+      "Copy of passport"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation before classes (#page=2; 9 Sep 2026 Fall / 12 Jan 2027 Spring / 18 May 2027 Summer) and student visa support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Rolling admissions deadlines (start application early enough to allow ~10 weeks before classes for Greek student visa processing).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ACG- The American College of Greece/Exchange Partner Info Sheet.pdf#page=1",
+    "notes": "Visa lead time noted on #page=2."
+  },
+  "ext": {}
+}

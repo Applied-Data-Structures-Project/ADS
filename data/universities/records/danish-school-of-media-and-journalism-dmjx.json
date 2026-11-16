@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "danish-school-of-media-and-journalism-dmjx",
+  "excel_rows": [
+    26
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/158kL6-59DIMUkqLCRNxE78KhkdiWK9o4?usp=drive_link",
+      "https://drive.google.com/drive/folders/158kL6-59DIMUkqLCRNxE78KhkdiWK9o4"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/DMJX international programs.pdf",
+      "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Danish School of Media and Journalism.pdf",
+      "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Danish School of Media and Journalism (DMJX)/DMJX international programs.pdf.txt",
+      "data/raw/extracted/Danish School of Media and Journalism (DMJX)/Danish School of Media and Journalism.pdf.txt",
+      "data/raw/extracted/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Danish School of Media & Journalism (DMJX)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "country": {
+    "value": "Denmark",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Copenhagen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Journalism",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "http://www.dmjx.dk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": null
+  },
+  "short_name": {
+    "value": "DMJX",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=1",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Programmes target specific bachelor year levels (e.g., 2nd, 3rd, or 4th year depending on chosen English semester track).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/DMJX international programs.pdf#page=4",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col H specifies 'Journalism' major rather than a specific AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Journalism"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:26",
+    "notes": "Excel scope specifies 'Journalism'; English exchange tracks span Journalism, Photojournalism, Corporate Communication, TV/Media Production, and Interactive Design."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No free-choice multi-department course picking: exchange students enroll in fixed 30-ECTS international semester programmes (Fact Sheet p.2; https://www.dmjx.dk/international/studies-english)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No numeric minimum GPA published; portfolio and year-level prerequisites apply to specific programmes (DMJX international programs.pdf)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": "International semester programmes are taught completely in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": "Fixed 30-ECTS international exchange programmes taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Fact Sheet lists IELTS >=6.5, Cambridge C1, or 'at least 80 in the computer based Toefl test' (likely referring to Internet-based TOEFL 80). Test waived if applicant studied >=1 year in an English-language environment (applicable to AUC).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English programmes.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Fall semester: Week 34 - Week 52/Week 3 (late August to December/mid-January including exams).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester: Week 4 - Week 25 (late January to late June including exams).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact sheet/website mentions welcoming ~60 exchange students across partners per semester total, not an AUC-specific quota."
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/studies-english",
+    "notes": "Partner-nominated exchange students are exempt from DMJX tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1180,
+      "max": 1180
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=3",
+    "notes": "Derived monthly cost from Fact Sheet p.3 (dated 2025-01-21) separate semester rows: Living costs for a semester 3,500 EUR + Housing costs 2,400 EUR = 5,900 EUR total per 5-month semester (~1,180 EUR/month; excludes housing 700 EUR/month alone)."
+  },
+  "living_cost_usd_est": {
+    "value": 6520.68,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=3",
+    "notes": "5-month estimate derived from monthly EUR range 1,180/month. FX rate 1 EUR = 1.1052 USD from ECB Euro reference exchange rates (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 1,180.0 EUR * 5 * 1.1052 = 6,520.68 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition exempt for partner nominees; students must arrange health/travel insurance at their own expense.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": "Housing partly offered: Campus Copenhagen provides rooms located near campus; most Campus Aarhus students must find student housing independently using links provided by DMJX."
+  },
+  "housing_notes": {
+    "value": "Estimated semester housing cost 2,400 EUR (~480 EUR/month over 5 months).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact sheet p.3 references Erasmus+ grants only for European/Erasmus+ partners; no institutional stipend for bilateral non-EU partners."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students must obtain a Danish student residence permit prior to arrival; visa instructions are sent upon admission (Fact Sheet p.3 & https://www.dmjx.dk/international/coming-denmark).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/coming-denmark",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.dmjx.dk/international/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.dmjx.dk/international/studies-english",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/studies-english",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.dmjx.dk/international/studies-english",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/studies-english",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; fixed full-time workload of 30 ECTS per semester (single packaged programme with no open elective swapping).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Students enroll in one fixed 30-ECTS programme (Aarhus or Copenhagen campus depending on track); Photojournalism / TV & Media Production / Interactive Design require portfolios and prior experience.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Coordinator email nomination",
+      "Online application via dmjx.dk/international",
+      "English proficiency proof (IELTS 6.5 / Cambridge C1 / TOEFL 80; waived if >=1 yr English-language study per Fact Sheet p.2)",
+      "Programme portfolio / CV (where required)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.dmjx.dk/international/studies-english",
+    "notes": "Nominations/applications on Fact Sheet p.1; English & portfolio rules on Fact Sheet p.2 & dmjx.dk/international/studies-english."
+  },
+  "academic_style": {
+    "value": "Practice-oriented journalism/media workshop and studio project programmes mixing international and Danish students across Aarhus and Copenhagen campuses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/DMJX international programs.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Two campuses in Aarhus and Copenhagen; Excel lists Copenhagen, Fact Sheet p.1 lists both."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/DMJX international programs.pdf#page=3",
+    "notes": "Explicitly operates Two Campuses: Campus Aarhus (Helsingforsgade 6A-D, Aarhus N) and Campus Copenhagen (Amagerfælledvej 190, København S); also Fact Sheet p.1."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on dmjx.dk or fact sheet."
+  },
+  "international_support_services": {
+    "value": "International Office coordinators for Aarhus and Copenhagen campuses, housing application links/guidance, and Coming to Denmark survival info.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=1",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall semester: Nomination Mar 15 (via email), Application Apr 1. Spring semester: Nomination Sep 15, Application Oct 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Danish School of Media and Journalism (DMJX)/Fact sheet DMJX.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

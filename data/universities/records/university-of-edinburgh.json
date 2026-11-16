@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-edinburgh",
+  "excel_rows": [
+    134
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1ihit-uaBYRhF2I7iXk-F0ZLkaQZQE0iO",
+      "https://drive.google.com/drive/folders/1HVniR10ZqU1C_sx8Sqryk6I1aSFTcUdJ"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf",
+      "data/raw/factsheets/UoEdinburgh/University of Edinburgh.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoEdinburgh/International Exchange factsheet.pdf.txt",
+      "data/raw/extracted/UoEdinburgh/University of Edinburgh.docx.txt"
+    ],
+    "notes": "Col H link (1ihit-uaBYRhF2I7iXk-F0ZLkaQZQE0iO) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Edinburgh",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "country": {
+    "value": "United Kingdom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Edinburgh",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide/Law restricted - Erasmus will be used coming years EAIE 2026",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://www.ed.ac.uk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "CAHSS applicants must show >=1 full year of completed university study at application (case-by-case if from prior institution); College of Science & Engineering applicants must show >=1 completed semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=3",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": "Excel scope specifies 'University-wide/Law restricted - Erasmus will be used coming years EAIE 2026'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:134",
+    "notes": "University-wide exchange agreement with Law restricted and specific school exclusions per Fact Sheet."
+  },
+  "excluded_majors": {
+    "value": [
+      "Medicine",
+      "Veterinary Medicine",
+      "Studio-based Architecture, Art and Design",
+      "Education",
+      "Sport"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": "Fact Sheet p.4 bars these areas unless coming on a subject-specific agreement; Excel Col H also flags Law restricted."
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=3",
+    "notes": "Cumulative GPA >=3.0/4.0 (or B average / ECTS 'C') at home university."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=3",
+    "notes": "UK research university teaching all regular courses in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Standard requirements: IELTS Academic 6.5 (5.5 each band) or TOEFL iBT 92 (20 each section), higher for some 3rd-yr humanities/social science courses. Exempt if studying at an Edinburgh-approved English-medium university, or if on <6 month Standard Visitor route (unless taking 3rd/4th-yr courses per Fact Sheet p.5).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.ed.ac.uk/study-abroad/study-options-and-entry-requirements",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only; in-session English Language Education support available (p.5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=5",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Semester 1: Welcome Week Sep 14, Teaching Sep 21 - Dec 4, Semester ends Dec 21, 2026 (incl. revision & exams).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/semester-dates",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Semester 2: January Welcome Jan 6, Teaching Jan 11 - Apr 2, 2027, Spring break & exams ending May 21, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/semester-dates",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.ed.ac.uk/study-abroad/international-exchange",
+    "notes": "Reciprocal International Exchange students do not pay tuition to the University of Edinburgh."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "GBP",
+      "min": 1546,
+      "max": 1546
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/students/finance/student-funding/undergraduate/cost-of-living",
+    "notes": "Official University of Edinburgh AY 2026-2027 UG cost-of-living average £1,546/month (£13,914 per 39-wk AY; £18,552 per 52-wk yr): Accommodation & utilities £980 avg (range £752-1,249), food £248, socialising/leisure £248, local bus £58 (often free under age 22 via Young Scot NEC), mobile £12. Separate UK Student Visa outside-London threshold is £1,203/mo."
+  },
+  "living_cost_usd_est": {
+    "value": 10224.15,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/students/finance/student-funding/undergraduate/cost-of-living",
+    "notes": "5-month estimate derived from monthly GBP range 1,546/month. ECB cross-rate 1 EUR = 1.1052 USD and 1 EUR = 0.83559 GBP -> 1 GBP = 1.322658 USD (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 1,546.0 GBP * 5 * 1.322658 = 10,224.15 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Single-semester students in private (non-university) accommodation may owe UK Council Tax; Student Route (>6 mo) requires Immigration Health Surcharge for NHS access; Standard Visitor (<=6 mo) receives free emergency/NHS treatment but travel/medical insurance recommended; resit exam charges apply.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=6",
+    "notes": "International Exchange students are guaranteed University accommodation provided they apply by the accommodation deadline (Jul 31 Sep start / Nov 30 Jan start in 2024-25 PDF); specific hall preference not guaranteed."
+  },
+  "housing_notes": {
+    "value": "Apply post-offer via http://www.accom.ed.ac.uk/applying/ready-to-apply; contents insurance included in university accommodation rent (2026-27 ed.ac.uk estimates acc + utilities avg £980/mo, £752-1,249).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No University of Edinburgh incoming exchange stipend verified."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "<=6 months (1 semester): Standard Visitor route / Electronic Travel Authorisation (ETA) for non-visa nationals or advance Standard Visitor visa for visa nationals (no Student Route financial proof). >6 months (full year): full UK Student Visa (CAS) requiring £1,203/month outside-London funds (up to £10,827 for 9 mo) plus Immigration Health Surcharge.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/student-administration/immigration/student-visa/standard-visitor",
+    "notes": "Student Visa financial requirements also at https://www.ed.ac.uk/student-administration/immigration/student-visa/financial-requirements."
+  },
+  "exchange_page_url": {
+    "value": "https://global.ed.ac.uk/study-abroad/international-exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.ed.ac.uk/study-abroad/international-exchange",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ed.ac.uk/global/study-abroad/course-finder",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ed.ac.uk/global/study-abroad/course-finder",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in the Study Abroad Course Finder (https://www.ed.ac.uk/global/study-abroad/course-finder) are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "Scottish credit framework: standard and mandatory full-time load is strictly 60 credits per semester (majority of courses 20 cr/sem or 40 cr/yr); students cannot normally take >60 or <60 credits.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Excluded unless subject-specific agreement: Medicine, Veterinary Medicine, Studio Arch/Art/Design, Education & Sport. High-pressure/no guarantee (incl. Law per Excel & PDF p.4): Law, Politics, Informatics, History, Psychology, Classics, Archaeology, English Lit, Geography, Music, Philosophy, Health, Nursing, Art/Design electives, AEVS/EIBC. Add/drop closes end of teaching week 2.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online University of Edinburgh application",
+      "Official academic transcript",
+      "Personal statement",
+      "English language proficiency proof (if applicable)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": "Fact Sheet p.4 explicitly states academic references are NOT required; allow 6 weeks processing."
+  },
+  "academic_style": {
+    "value": "Ancient Scottish research university (est. 1583) with formal 20-credit semester modules, strict add/drop deadline (week 2), and separate exam diets; transcripts issued Feb (S1) / Aug (S2/FY).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet p.1 describes Edinburgh as 'Scotland's vibrant capital city' (Edinburgh city ~500k inhabitants, though UK non-capital/Scottish capital tier ambiguity makes mid_size_city vs capital_or_major_metro ambiguous without explicit census figure)."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=2",
+    "notes": "Fact Sheet p.2 describes multiple Edinburgh campuses: George Square (central, CAHSS + Informatics + Main Library) and The King's Buildings (Science & Engineering, 2 km south), connected by free University shuttle bus."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated in Fact Sheet or ed.ac.uk (UK English-speaking city & campus)."
+  },
+  "international_support_services": {
+    "value": "Edinburgh Global, EUSA Student Union (270+ societies, 65 sports clubs), Edinburgh/Global Buddies schemes, Advice Place, Nightline, Wellbeing/Disability/Counselling Services, Career Service, Sport & Exercise, and free campus shuttle.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=7",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Student Application Deadlines (after home nomination): May 31 for September start (apply early May for July offer/housing); October 31 for January start (apply early Oct for Nov offer); strict, no late apps.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoEdinburgh/International Exchange factsheet.pdf#page=4",
+    "notes": null
+  },
+  "ext": {}
+}

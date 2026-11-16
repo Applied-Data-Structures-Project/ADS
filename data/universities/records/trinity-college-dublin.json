@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "trinity-college-dublin",
+  "excel_rows": [
+    120
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1ONP_TUdhjh7V-JJ_uy0aXskHS42geDRA"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Trinity College/2021/SAGuideMarch21.pdf",
+      "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Trinity College/2021/SAGuideMarch21.pdf.txt",
+      "data/raw/extracted/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Trinity College Dublin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "short_name": {
+    "value": "TCD",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=31",
+    "notes": null
+  },
+  "country": {
+    "value": "Ireland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Dublin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Currently registered at a university in good standing with at least 2 years of university study completed at a high standard.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=18",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=120",
+    "notes": "University-wide UG/GR exchange agreement (Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=120",
+    "notes": "Open across Trinity's three faculties subject to area admission and prerequisite restrictions (see course_restrictions_note)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.1,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=18",
+    "notes": "Minimum cumulative GPA 3.1 out of 4.0 (or equivalent)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=8",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=8",
+    "notes": "English-speaking university in Dublin (language subjects exempt)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Proof of English language proficiency required if English is not your first language (see TCD Admission Requirements portal).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=18",
+    "notes": "Exact test cutoffs hosted at linked online Admission Requirements page."
+  },
+  "host_language_requirement": {
+    "value": "None (English-speaking university; non-English language majors require subject prerequisites e.g. French/Spanish).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=8",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Michaelmas Term (Autumn): End of August – mid-December (AY 2026-2027 Semester 1 Assessment session Dec 11–22, 2026 per TCD Academic Year Structure).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=9",
+    "notes": "2026-2027 exam window from https://www.tcd.ie/calendar/academic-year-structure/."
+  },
+  "spring_term_dates": {
+    "value": "Hilary Term (Spring): Mid-January – beginning of May (AY 2026-2027 Semester 2 Assessment session Apr 19–30, 2027 per TCD Academic Year Structure).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=9",
+    "notes": "2026-2027 exam window from https://www.tcd.ie/calendar/academic-year-structure/."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tcd.ie/study/non-eu/study-abroad/non-euexchange/",
+    "notes": "Reciprocal exchange students have TCD tuition waived and pay regular tuition only to their home institution."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1686,
+      "max": 1686
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tcd.ie/study/international/before-arrival/cost-of-living/",
+    "notes": "TCD student budget averages ~€1,686/month in Dublin (Global Mobility Guide page 18 separately estimates accommodation alone at ~€1,300/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 9316.84,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.tcd.ie/study/international/before-arrival/cost-of-living/",
+    "notes": "5-month exchange semester estimate: 1686 EUR/month * 5 months * 1.1052 = 9316.84 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Non-EU/EEA students must register with Irish immigration post-arrival (€300 stamp/registration fee) and hold valid health insurance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=18",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=27",
+    "notes": "Trinity provides advice and referral agreements with 3rd-party private student accommodation providers after each deadline, but explicitly notes accommodation is NOT guaranteed."
+  },
+  "housing_notes": {
+    "value": "Not guaranteed; TCD refers admitted students to 3rd-party private student housing in Dublin (~€1,300/month per Guide page 18; details sent after deadline via global.mobility@tcd.ie).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=27",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.tcd.ie/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:120",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.tcd.ie/study/non-eu/study-abroad/non-euexchange/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tcd.ie/study/non-eu/study-abroad/non-euexchange/",
+    "notes": "Guide page 18 also links http://www.tcd.ie/study/study-abroad/inbound/apply/sa-exchange/index.php."
+  },
+  "course_catalog_url": {
+    "value": "https://www.tcd.ie/students/orientation/visiting-exchange/module-enrolment.php",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=10",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; normal full-time load 30 ECTS/semester (minimum 20 ECTS/semester, 45 ECTS/academic year; modules typically 5, 10, or 15 ECTS); 70–100% = First Class Honours (40% pass threshold).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=11",
+    "notes": "Marking table on page 12."
+  },
+  "course_restrictions_note": {
+    "value": "Apply to max 5 subject areas and enroll only in admitted areas; major/minor/prereq restrictions apply widely (e.g., CS requires CS major; PolSci/Philosophy/Sociology/Math require major/minor; Economics & English upper-level require major/minor; Business prioritizes major/minor; Psychology requires intro psych; Music capped at 2 modules; Microbiology full-year only; Nursing theory-only, no clinical).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=10",
+    "notes": "Detailed subject table on pages 13–16."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application form (home university email required)",
+      "Official academic transcript",
+      "Signed letter of recommendation",
+      "English proficiency proof (if non-native)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=18",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Irish/UK-style research university (ECTS)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=6",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation, optional Semester Start-Up Programme (SSP), Global Mobility Team, Trinity Global Room & Student Ambassadors, Department Global Officers, International Tutor's Office, Student Learning & Development, EAP, Student Counselling, Disability Service, and College Health Service.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=27",
+    "notes": "Also pages 10, 21, 29–31."
+  },
+  "nomination_deadlines": {
+    "value": "Autumn / Full Year: Applications open Jan 20, close Apr 15 (Apr 19 also noted on TCD Non-EU Exchange web page); Spring: Applications open Aug 1, close Oct 15 (check home office internal nomination deadlines earlier).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Trinity College/2025-2026/TCD Global_Mobility_Guide 2025-26.pdf#page=20",
+    "notes": "Web page: https://www.tcd.ie/study/non-eu/study-abroad/non-euexchange/."
+  },
+  "ext": {}
+}

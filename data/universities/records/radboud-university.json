@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "radboud-university",
+  "excel_rows": [
+    91
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1UoV56g8WQKWBfETCqAfUh_DqewZ3h0cM"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf",
+      "data/raw/factsheets/Radboud University/Radboud University Student Datasheet 2024 2025 v3.pdf",
+      "data/raw/factsheets/Radboud University/Radboud University Student Datasheet 2024 2025__1eP4W8.pdf",
+      "data/raw/factsheets/Radboud University/Radboud University Student Datasheet 2024 2025__1xcOpH.pdf",
+      "data/raw/factsheets/Radboud University/Radboud University Student Datasheet 2025 2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf.txt",
+      "data/raw/extracted/Radboud University/Radboud University Student Datasheet 2024 2025 v3.pdf.txt",
+      "data/raw/extracted/Radboud University/Radboud University Student Datasheet 2024 2025__1eP4W8.pdf.txt",
+      "data/raw/extracted/Radboud University/Radboud University Student Datasheet 2024 2025__1xcOpH.pdf.txt",
+      "data/raw/extracted/Radboud University/Radboud University Student Datasheet 2025 2026.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Radboud University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "short_name": {
+    "value": "RU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Nijmegen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Dutch"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": "English & Dutch primary; select Spanish/German/French department courses also offered."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum CEFR B2 English required (C1 required for English Language & Culture Dept and Nijmegen School of Management Master's courses). Non-EEA exchange students must submit official test scores unless exempt: IELTS >=6.0 (no IELTS Online; Arts/English require 6.5) or TOEFL iBT >=80 (no Home Edition) per https://www.ru.nl/en/studying-at-radboud-university/application-and-admission/language-requirements/english-language-test-results-for-exchange-students. No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/en/studying-at-radboud-university/application-and-admission/language-requirements/english-language-test-results-for-exchange-students",
+    "notes": "Also see AY 2025-2026 Student Datasheet #page=2."
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught courses; free social Dutch language course offered on campus (limited spots).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Semester 1 (AY 2026-2027): Mon 31 Aug 2026 - Fri 22 Jan 2027 (Period 1 classes 31 Aug - 16 Oct, exams 19-30 Oct; Period 2 classes 2 Nov - 18 Dec, exams 4-22 Jan 2027). Orientation mid/late Aug.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/en/services/academic-calendar/academic-calendar-2026-2027",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Semester 2 (AY 2026-2027): Mon 25 Jan 2027 - Fri 9 Jul 2027 (Period 3: 25 Jan - 2 Apr 2027; Period 4: 5 Apr - 9 Jul 2027). Orientation late Jan.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/en/services/academic-calendar/academic-calendar-2026-2027",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/en/education/bachelors-and-masters-programmes/practical-matters/financial-matters/costs-and-financial-means",
+    "notes": "ru.nl explicitly states in visa/financial procedures: 'tuition fee for the first year (not applicable to exchange students)'."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1000,
+      "max": 1200
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": "Consistent with https://www.ru.nl/en/education/studying-at-radboud-university/finances/costs-and-expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 6078.6,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": "5-month USD estimate from official EUR 1,000-1,200/month range (midpoint EUR 1,100/mo x 5 = EUR 5,500) converted at ECB 2026-11-13 rate (1 EUR = 1.1052 USD, collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Health, Legal Liability, and Travel insurance required during exchange stay.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": "Non-EU/EEA students requiring a Dutch residence permit/MVV pay the statutory IND processing fee of EUR 254 via Radboud Student Admissions (https://www.ru.nl/en/education/bachelors-and-masters-programmes/practical-matters/financial-matters/costs-and-financial-means; university charges no service fee)."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Housing assistance available via housing@ru.nl, but rooms are limited and NOT guaranteed; apply promptly upon admission.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Radboud Admissions submits Schengen entry visa (MVV) and residence permit (VVR) applications for non-EEA students; non-EEA students must enroll in >=20 ECTS on their Learning Agreement.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": "IND 2026 monthly income norm EUR 1,130.77/month per https://ind.nl/en/residence-permits/study/student-residence-permit-for-university-or-higher-professional-education#income-requirements; IND fee EUR 254 via https://www.ru.nl/en/education/bachelors-and-masters-programmes/practical-matters/financial-matters/costs-and-financial-means."
+  },
+  "official_website_url": {
+    "value": "http://www.ru.nl/io/english",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:91",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ru.nl/exchangestudents/admission",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/exchangestudents/admission",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ru.nl/en/education/more-education-and-training/exchange-students/exchange-courses",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ru.nl/en/education/more-education-and-training/exchange-students/exchange-courses",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (Dutch 1-10 grading scale; 6.0 minimum pass); non-EEA visa holders must take minimum >=20 ECTS per semester on Learning Agreement (typical full load 30 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination + online application",
+      "Learning Agreement (>=20 ECTS minimum for non-EEA visa students)",
+      "Official English test certificate (non-EEA unless exempt)",
+      "Proof of mandatory Health, Liability & Travel insurance"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Free social Dutch language course (limited spots), Admissions visa/MVV/VVR sponsorship, and housing assistance (housing@ru.nl).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Semester 1 (Fall): Nomination 1 May, Application 23 May. Semester 2 (Spring): Nomination 1 November, Application 23 November.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Radboud University/2025-2026/Radboud University Student Datasheet 2025 2026.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

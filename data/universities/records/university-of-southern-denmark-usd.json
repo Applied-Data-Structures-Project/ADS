@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-southern-denmark-usd",
+  "excel_rows": [
+    143
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1jfj51MpbI5U018hhIebpyUPcvVHwSqAO"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoSouthern Denmark/2024- 2025/SDU Fact Sheet 24-25.pdf",
+      "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoSouthern Denmark/2024- 2025/SDU Fact Sheet 24-25.pdf.txt",
+      "data/raw/extracted/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Southern Denmark (USD)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "short_name": {
+    "value": "USD",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "country": {
+    "value": "Denmark",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Odense",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Faculty of Health Sciences requires at least 2 years (120 ECTS) of completed relevant university studies prior to arrival.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange/courses_by_faculty/health+sciences",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Medicine (BSc/MSc taught entirely in Danish with no English-taught semester; clinical rotations are competitive, capacity-limited, and require >=120 ECTS)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange/courses_by_faculty/health+sciences",
+    "notes": "Clinical rotations details at https://www.sdu.dk/en/uddannelse/exchange/courses_by_faculty/health+sciences/clinical+rotations+for+medical+students."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Danish"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL and IELTS certificates are NOT required for exchange applicants; instead SDU requires a signed Language Requirement Form from the home university certifying CEFR B2 English proficiency (no RHET 1020 exemption stated).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": "https://www.sdu.dk/en/uddannelse/exchange/apply_as_exchange_or_guest_student notes SDU general English standard corresponds to IELTS 6.5 / TOEFL iBT 83."
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught courses (Danish required for Danish-taught programs like Medicine). SDU does not offer Danish classes on campus; external city language schools offer classes.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Autumn semester: 1 Sep - 31 Dec (with exam period extending into Jan).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester: 1 Feb - 31 May (with exam period extending into Jun).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange_and_guest_students",
+    "notes": "Exchange students from partner universities pay 0 tuition fees at SDU."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 750,
+      "max": 1100
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=5",
+    "notes": "Breakdown: EUR 350-500 accommodation, EUR 250-350 food, EUR 50 transport, EUR 100-200 books/other = EUR 750-1,100/month (consistent with https://www.sdu.dk/en/uddannelse/liv_i_danmark/living+costs listing EUR 750-900/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 5111.55,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=5",
+    "notes": "5-month USD estimate from official EUR 750-1,100/month range (midpoint EUR 925/mo x 5 = EUR 4,625) converted at ECB 2026-11-13 rate (1 EUR = 1.1052 USD, collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Guaranteed student accommodation if application is submitted before 1 May (Autumn) / 1 Nov (Spring); contact bolig@sdu.dk; estimated EUR 350-500/month (#page=3,5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students require a Danish student residence permit prior to arrival; SIRI financial threshold is DKK 7,426/month per https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.sdu.dk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:143",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.sdu.dk/en/uddannelse/exchange/apply_as_exchange_or_guest_student",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange/apply_as_exchange_or_guest_student",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.sdu.dk/en/uddannelse/exchange/bachelor_courses",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange/bachelor_courses",
+    "notes": "Master exchange courses by faculty at https://www.sdu.dk/en/uddannelse/exchange/master_courses; general exchange portal https://www.sdu.dk/en/uddannelse/exchange."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; normal full-time semester workload is 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Medicine BSc/MSc taught solely in Danish (no English semester; clinical rotations capacity-limited and competitive per https://www.sdu.dk/en/uddannelse/exchange/courses_by_faculty/health+sciences/clinical+rotations+for+medical+students); Health Sciences requires >=120 ECTS completed prior to arrival.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.sdu.dk/en/uddannelse/exchange/courses_by_faculty/health+sciences",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online exchange application + proof of partner university nomination",
+      "Official academic transcript in English (signed/stamped or verifiable)",
+      "Signed SDU Language Requirement Form (confirming B2 English)",
+      "Copy of passport (or EU national ID card)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=1",
+    "notes": "Main campus in Odense plus regional campuses in Esbjerg, Kolding, and Sonderborg."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Guaranteed housing support (bolig@sdu.dk) and Digital Diploma Mailbox integration.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn semester: Nomination 15 Mar (Non-EU) / 15 Apr (EU); Application 1 Apr (Non-EU) / 1 May (EU). Spring semester: Nomination 15 Sep (Non-EU) / 15 Oct (EU); Application 1 Oct (Non-EU) / 1 Nov (EU).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoSouthern Denmark/Fact_Sheet_University_of_Southern_Denmark.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

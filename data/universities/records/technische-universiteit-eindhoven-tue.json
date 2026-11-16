@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "technische-universiteit-eindhoven-tue",
+  "excel_rows": [
+    108
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/12rkhOnevpfEjBwlMIuqWeBZzeEBHs_jc"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Technische Universiteit Eindhoven (TUE)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "short_name": {
+    "value": "TUE",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Eindhoven",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Industrial Engineering and Innovation Sciences",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement_scope_raw is 'Industrial Engineering and Innovation Sciences' (IE&IS), which spans engineering/innovation science and operations/management across AUC SSE/BUS without a single exact 1-to-1 AUC school mapping."
+  },
+  "eligible_majors": {
+    "value": [
+      "Industrial Engineering and Innovation Sciences"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Dutch"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-graduate-school/exchange-ieis",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-graduate-school/exchange-ieis",
+    "notes": "IE&IS Master's tracks (OML, IM, IS) and advanced 3rd-year Bachelor electives offered in English for incoming exchange students."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-EEA students require TOEFL iBT >= 90 (min 21 per section; code 8615/dept 99), IELTS Academic >= 6.5 (min 6.0 per section), Cambridge C1 Advanced >= 176 (min 169) or C2 Proficiency >= 180 (min 169); scores <= 2 years old (exemptions only for citizens/degrees from AU, CA, IE, NZ, UK, US). RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx",
+    "notes": "Current general English guidance at https://www.tue.nl/en/education/tue-education-guide/practical-info/information-for-international-students."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (B2/C1); Dutch not required for English-taught IE&IS courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/information-for-international-students",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": "Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-02 to 2027-07-03 (AY 2026-2027 Semester B / Quartiles 3–4; Q3 exams Apr 5–17; Q4 classes Apr 19–Jun 18; Q4 exams Jun 21–Jul 3, 2027)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/academic-year-agenda",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/practical-info/financial-matters/tuition-fees-living-expenses",
+    "notes": "Incoming exchange students nominated under a formal partnership agreement are exempt from TU/e tuition fees (unlike free movers)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 833,
+      "max": 1000
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx",
+    "notes": "Derived by dividing TU/e's published annual living budget (EUR 10,000–12,000/year covering rent EUR 400–700/mo, insurance, living expenses, books, and local transport) by 12 months. Consistent with EUR 800–1,100+/month on tue.nl financial-matters."
+  },
+  "living_cost_usd_est": {
+    "value": 5064.6,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx",
+    "notes": "5-month midpoint estimate: 916.5 EUR/month * 5 months = 4,582.5 EUR * 1.1052 USD/EUR = 5,064.58 USD (ECB 2026-11-13 rate, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Health and liability insurance are mandatory in the Netherlands (recommended Aon ICS Complete+ via www.aonstudentinsurance.com/tue for non-EU students unless home coverage meets equivalent Dutch terms).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technische Universiteit Eindhoven (TUE)/Technische Universiteit Eindhoven (TUE).docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/housing",
+    "notes": "Tight Eindhoven housing market; TU/e housing support/lottery prioritizes degree cohorts, while exchange students search early via Vestide and private rentals (EUR 400 room – EUR 700 studio/month per docx)."
+  },
+  "housing_notes": {
+    "value": "Students look early via Vestide or private Eindhoven rentals (~EUR 400 room to EUR 700 studio/month per TU/e factsheet).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/housing",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EEA students require an MVV entry visa and/or VVR residence permit processed collectively through TU/e International Office with IND proof of sufficient monthly financial means (deposit to TU/e or full-cost scholarship).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/information-for-international-students",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.tue.nl/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:108",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.tue.nl/en/education/tue-graduate-school/exchange-ieis",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-graduate-school/exchange-ieis",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Scoped to Department of Industrial Engineering and Innovation Sciences (IE&IS: Master courses in Operations Management & Logistics, Innovation Management, Innovation Sciences, or advanced 3rd-year Bachelor options).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-graduate-school/exchange-ieis",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "TU/e International Programs Office, Mobility-Online nomination/application portal, collective IND immigration processing.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.tue.nl/en/education/tue-education-guide/practical-info/information-for-international-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

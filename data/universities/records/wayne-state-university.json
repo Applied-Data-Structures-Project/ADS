@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "wayne-state-university",
+  "excel_rows": [
+    160
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1DvhloqNa6JA69ID5MBVaT2rImnD77YNL"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf",
+      "data/raw/factsheets/Wayne State University/Wayne State University.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf.txt",
+      "data/raw/extracted/Wayne State University/Wayne State University.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Wayne State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "short_name": {
+    "value": "WSU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Michigan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "city": {
+    "value": "Detroit",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No completed-year minimum stated in AY 2026-2027 incoming exchange fact sheet (sophomore standing rule applies to WSU outbound study abroad)."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UG exchange students take courses numbered 5000 or below; 6000-7000 level courses require department/professor approval (p.2)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "3.0 GPA on wayne.edu applies to outgoing WSU study abroad; no incoming exchange GPA cutoff stated in AY 2026-2027 incoming fact sheet."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 79, IELTS 6.5, TOEIC 900, or Duolingo 110 required for full academic admission (confirm English-medium/RHET 1020 waiver with WSU OIP).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (US university; see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Arrival Aug 30, 2026; Orientation Aug 31-Sep 4, 2026; Term Aug 31-Dec 23, 2026 (Finals Dec 17-23).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring/Winter 2027: Arrival Jan 10, 2027; Orientation Jan 11-15, 2027; Term Jan 11-May 4, 2027 (Finals Apr 28-May 4).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral exchange partner per Excel; AY 2026-2027 incoming fact sheet lists J-1/fee/insurance costs without explicitly printing tuition waiver wording."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 fact sheet p.3 publishes semester/annual J-1 living financial proof totals (USD 9,474/semester; USD 21,125/academic year) rather than a monthly range."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No monthly range published; see USD 9,474/semester J-1 financial proof requirement in visa_lead_time_and_financial_proof."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory WSU student health insurance (home waivers NOT accepted); mandatory TB testing; USD 125 housing application fee; J-1 fees: USD 220 SEVIS I-901, USD 50/semester WSU SEVIS fee, USD 185 DS-160 visa fee.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=3",
+    "notes": "Housing USD 125 fee on p.2; mandatory insurance, TB, and J-1 fees on p.3."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": "On-campus housing available via application (USD 125 non-refundable fee); detailed costs at https://housing.wayne.edu/live/costs."
+  },
+  "housing_notes": {
+    "value": "On-campus housing requires USD 125 application fee; exact residence rates listed at https://housing.wayne.edu/live/costs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires J-1 Exchange Visitor visa (DS-2019); mandatory financial proof of USD 9,474 for one semester or USD 21,125 for an academic year, plus USD 220 I-901, USD 50/sem WSU SEVIS, and USD 185 DS-160 fees.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://wayne.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:160",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://oip.wayne.edu/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=1",
+    "notes": "Abroad/incoming portal also linked at https://abroad.wayne.edu/."
+  },
+  "course_catalog_url": {
+    "value": "https://bulletins.wayne.edu/courses/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No separate English-only list; all courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit system; full-time load 12-18 credits/semester (UG) and 8-12 credits/semester (GR).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate exchange students take <=5000 level courses; 6000-7000 level courses require department or instructor approval.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Application steps handled via OIP/OISS portals; check https://oip.wayne.edu/ and https://abroad.wayne.edu/."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Detroit, Michigan; schema city_tier label not explicitly classified in AY 2026-2027 fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Detroit; physical campus type not explicitly classified in AY 2026-2027 fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "5-day mandatory orientation, OIP & OISS international student support, DTW airport shuttle links, campus health and rec center access.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=2",
+    "notes": "Orientation/airport p.2; OISS/health/rec p.3."
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027: Fall nom May 1 / app Jun 1; Spring-Winter nom Sep 1 / app Oct 1; Spring-Summer nom/app Feb-Apr.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wayne State University/2026-2027/2026-2027 Wayne State University Exchange Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

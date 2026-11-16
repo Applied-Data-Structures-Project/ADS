@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "oslomet",
+  "excel_rows": [
+    82
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "OsloMet",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "country": {
+    "value": "Norway",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Oslo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business, Social Sciences, Art & Design & Masscom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://www.oslomet.no/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": null
+  },
+  "short_name": {
+    "value": "OsloMet",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be enrolled at a partner institution and meet department-specific prerequisites/portfolios where required.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel scope lists majors/disciplines ('Business, Social Sciences, Art & Design & Masscom') rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business",
+      "Social Sciences",
+      "Art & Design",
+      "Mass Communication"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:82",
+    "notes": "Parsed directly from Excel scope 'Business, Social Sciences, Art & Design & Masscom'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exchange limited to the four contracted subject areas in the AUC agreement."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "OsloMet waives strict institutional GPA cutoffs for exchange nominees vetted by their home university ('C' ECTS average applies to regular degree admissions, not bilateral exchange)."
+  },
+  "instruction_languages": {
+    "value": [
+      "Norwegian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/studies/exchange-students/english-proficiency-requirements-exchange",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": "Wide English-taught exchange offerings across Business, Social Sciences, Art & Design, and Journalism/Media."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers outside specific European partnership waivers must submit TOEFL iBT >=80, IELTS Academic >=6.0 (min 6.0 each band), or PTE Academic.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/studies/exchange-students/english-proficiency-requirements-exchange",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught exchange modules.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/studies/exchange-students/english-proficiency-requirements-exchange",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Autumn Semester runs approximately August through December (exact academic calendar dates not retrieved verbatim in search_web).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester runs approximately January through June (exact academic calendar dates not retrieved verbatim in search_web).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: Tuition exemption statement in search summary lacked a direct [oslomet.no] inline tag and Norwegian exchange fee-waiver URL was not directly verified as a citation; left unknown (SiO NOK semester-fee exemption IS verified at /student/semester-fee)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "NOK",
+      "min": 13000,
+      "max": 16500
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/finance-your-studies",
+    "notes": "Official oslomet.no monthly student budget estimate: NOK 13,000-16,500/month covering housing, groceries, public transport, books, and personal costs."
+  },
+  "living_cost_usd_est": {
+    "value": 7711.67,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/finance-your-studies",
+    "notes": "5-month estimate derived from monthly NOK range 13,000-16,500 (midpoint 14,750.0)/month. ECB cross-rate 1 EUR = 1.1052 USD and 1 EUR = 10.5695 NOK -> 1 NOK = 0.104565 USD (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 14,750.0 NOK * 5 * 0.104565 = 7,711.67 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Incoming exchange students are officially EXEMPT from OsloMet's SiO semester fee (semesteravgift); optional SAIH donations or course material fees may apply.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/semester-fee",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/accommodation-international-students",
+    "notes": "Housing in Oslo arranged via SiO (Student Welfare Organisation in Oslo and Akershus) or alternatives; standard SiO priority housing windows typically close Jun 1 (Autumn) and Nov 1 (Spring)."
+  },
+  "housing_notes": {
+    "value": "Apply early via SiO housing portal per guidance on oslomet.no/en/student/accommodation-international-students.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/accommodation-international-students",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange stipend published on oslomet.no."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students require a Norwegian Study Permit (UDI) and must document financial funds per UDI thresholds; refer to OsloMet finance/UDI links.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/finance-your-studies",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.oslomet.no/en/education/international/partner-information-nomination",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/education/international/partner-information-nomination",
+    "notes": "See admission-exchange-students and partner-information-nomination portals."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No static English-only exchange course list URL observed on oslomet.no."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Norwegian ECTS system standard, though exact exchange credit load limits were not verified directly on an oslomet.no page."
+  },
+  "course_restrictions_note": {
+    "value": "Some departments/art & design courses enforce prerequisites or portfolio reviews; AUC agreement limits intake to Business, Social Sciences, Art & Design, and Mass Communication.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university online nomination",
+      "Online student exchange application",
+      "Official academic transcript",
+      "English proficiency proof (TOEFL/IELTS/PTE unless exempt)",
+      "Department portfolio (if required)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/education/international/partner-information-nomination",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Applied metropolitan university structure across two campuses; pedagogical style details unverified on oslomet.no."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Oslo, Norway (plus Kjeller campus 20 km outside); oslomet.no excerpts do not cite explicit population tier figures."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/campuses",
+    "notes": "OsloMet explicitly operates two campuses: Campus Pilestredet (central Oslo) and Campus Kjeller (~20 km outside Oslo near Lillestrøm)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on verified oslomet.no pages."
+  },
+  "international_support_services": {
+    "value": "Exchange admissions & partner support, English-requirement guidance, and SiO student welfare/housing access (with semester-fee exemption for exchange students).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/student/semester-fee",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn semester: Nomination Apr 1, Application Apr 15. Spring semester: Nomination Sep 23, Application Oct 1-5.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oslomet.no/en/about/admission-exchange-students",
+    "notes": null
+  },
+  "ext": {}
+}

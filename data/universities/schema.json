@@ -1,0 +1,722 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aucegypt.edu/ads/schemas/university_record.schema.json",
+  "title": "AUC Outgoing Exchange Partner University Record",
+  "description": "Canonical per-university JSON record schema with strict field-level provenance and zero-fabrication invariants for the AUC Exchange Matcher dataset (155 canonical partner universities).",
+  "version": "1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "slug",
+    "excel_rows",
+    "shard",
+    "fact_sheet_status",
+    "cross_references",
+    "official_name",
+    "short_name",
+    "country",
+    "state_or_province",
+    "city",
+    "region",
+    "agreement_status",
+    "agreement_student_levels",
+    "min_standing_note",
+    "agreement_scope_raw",
+    "eligible_auc_schools",
+    "eligible_majors",
+    "excluded_majors",
+    "min_gpa_host",
+    "instruction_languages",
+    "english_course_availability",
+    "english_proficiency_and_rhet1020",
+    "host_language_requirement",
+    "available_terms",
+    "fall_term_dates",
+    "spring_term_dates",
+    "final_semester_allowed",
+    "seat_quota",
+    "tuition_model",
+    "est_monthly_living_local",
+    "living_cost_usd_est",
+    "mandatory_host_fees_and_insurance",
+    "housing_availability",
+    "housing_notes",
+    "host_grants_or_stipends",
+    "citizenship_restrictions",
+    "visa_lead_time_and_financial_proof",
+    "official_website_url",
+    "exchange_page_url",
+    "course_catalog_url",
+    "english_course_list_url",
+    "credit_system_and_load",
+    "course_restrictions_note",
+    "required_application_docs",
+    "academic_style",
+    "city_tier",
+    "campus_type",
+    "daily_life_english_friendliness",
+    "international_support_services",
+    "nomination_deadlines",
+    "ext"
+  ],
+  "$defs": {
+    "provenance_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "status", "source_type", "source_ref", "notes"],
+      "properties": {
+        "value": {},
+        "status": {
+          "type": "string",
+          "enum": ["verified", "partial", "unknown"]
+        },
+        "source_type": {
+          "type": "string",
+          "enum": ["excel_list", "fact_sheet", "official_web", "unknown"]
+        },
+        "source_ref": {
+          "type": ["string", "null"]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": { "status": { "const": "unknown" } },
+            "required": ["status"]
+          },
+          "then": {
+            "properties": {
+              "value": { "type": "null" },
+              "source_type": { "const": "unknown" },
+              "source_ref": { "type": "null" }
+            }
+          },
+          "else": {
+            "properties": {
+              "value": { "not": { "type": "null" } },
+              "source_type": {
+                "enum": ["excel_list", "fact_sheet", "official_web"]
+              },
+              "source_ref": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": { "source_type": { "const": "official_web" } },
+            "required": ["source_type"]
+          },
+          "then": {
+            "properties": {
+              "source_ref": {
+                "type": "string",
+                "pattern": "^https?://[^\\s/$.?#].[^\\s]*$"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provenance_string": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "minLength": 1,
+              "pattern": "\\S"
+            }
+          }
+        }
+      ]
+    },
+    "provenance_url": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "format": "uri",
+              "pattern": "^https?://[^\\s/$.?#].[^\\s]*$"
+            }
+          }
+        }
+      ]
+    },
+    "provenance_boolean": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["boolean", "null"]
+            }
+          }
+        }
+      ]
+    },
+    "provenance_nonneg_integer": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["integer", "null"],
+              "minimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "provenance_nonneg_number": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["number", "null"],
+              "minimum": 0
+            }
+          }
+        }
+      ]
+    },
+    "provenance_gpa": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["number", "null"],
+              "minimum": 0.0,
+              "maximum": 4.0
+            }
+          }
+        }
+      ]
+    },
+    "provenance_string_array": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["array", "null"],
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provenance_string_array_allow_empty": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["array", "null"],
+              "minItems": 0,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "provenance_monthly_living_local": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["object", "null"],
+              "additionalProperties": false,
+              "required": ["currency", "min", "max"],
+              "properties": {
+                "currency": {
+                  "type": "string",
+                  "pattern": "^[A-Z]{3}$",
+                  "description": "3-letter uppercase ISO 4217 currency code (e.g. EUR, USD, GBP, JPY)."
+                },
+                "min": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "max": {
+                  "type": "number",
+                  "minimum": 0
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0",
+      "x-tier": 0,
+      "description": "Schema version identifier."
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 120,
+      "x-tier": 0,
+      "x-plan-alias": "id",
+      "description": "Canonical deterministic ASCII kebab-case identifier; matches filename <slug>.json."
+    },
+    "excel_rows": {
+      "type": "array",
+      "items": { "type": "integer", "minimum": 2 },
+      "minItems": 1,
+      "uniqueItems": true,
+      "x-tier": 1,
+      "description": "1-based Excel row numbers from 'Universities List' merged into this canonical record."
+    },
+    "shard": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8,
+      "x-tier": 0,
+      "description": "Assigned research shard (1-8) from manifest.json."
+    },
+    "fact_sheet_status": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["match_status", "drive_links", "local_files", "extracted_files"],
+      "x-tier": 0,
+      "description": "Google Drive fact sheet linkage metadata from manifest.json.",
+      "properties": {
+        "match_status": {
+          "type": "string",
+          "enum": ["matched", "unmatched_here", "blocked", "none"]
+        },
+        "drive_links": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^https?://.+" }
+        },
+        "local_files": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "extracted_files": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    },
+    "cross_references": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+      "uniqueItems": true,
+      "x-tier": 0,
+      "description": "Slugs of distinct but related partner agreements (e.g. nova-sbe <-> universidade-nova-de-lisboa)."
+    },
+
+    "official_name": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Official canonical institution name."
+    },
+    "short_name": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Common concise display name or acronym (e.g. 'UC Berkeley', 'Sciences Po')."
+    },
+    "country": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Normalized host country name (e.g. 'United States', 'Canada', 'Germany')."
+    },
+    "state_or_province": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Normalized state or province when applicable (US states, Canadian provinces, etc.); unknown/null when not applicable."
+    },
+    "city": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Normalized primary campus city."
+    },
+    "region": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": [
+                "Europe",
+                "North America",
+                "Latin America & Caribbean",
+                "Middle East & North Africa",
+                "East Asia",
+                "Southeast Asia",
+                "South Asia",
+                "Central Asia",
+                "Sub-Saharan Africa",
+                "Oceania",
+                null
+              ]
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "Canonical geographic region."
+    },
+    "agreement_status": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["active", "letter_of_intent", "check_slots", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "AUC partner agreement operational status."
+    },
+    "agreement_student_levels": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["array", "null"],
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["UG", "GR", "PhD", "Staff"]
+              }
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "Eligible student levels covered by the AUC agreement."
+    },
+    "min_standing_note": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Minimum academic standing or completed-year requirement (e.g. '2nd and 3rd year AUCians')."
+    },
+    "agreement_scope_raw": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Exact Col F agreement scope / restriction notes preserved from Excel."
+    },
+    "eligible_auc_schools": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["array", "null"],
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["ALL", "BUS", "GAPP", "HUSS", "SSE"]
+              }
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "AUC schools eligible under this agreement ('ALL' for University-wide)."
+    },
+    "eligible_majors": {
+      "$ref": "#/$defs/provenance_string_array",
+      "x-tier": 1,
+      "description": "Allowed AUC majors/programs ('ALL' if open to all majors within eligible schools)."
+    },
+    "excluded_majors": {
+      "$ref": "#/$defs/provenance_string_array_allow_empty",
+      "x-tier": 1,
+      "description": "Explicitly excluded majors/faculties (empty array [] if verified none are excluded)."
+    },
+    "min_gpa_host": {
+      "$ref": "#/$defs/provenance_gpa",
+      "x-tier": 1,
+      "description": "Host university minimum GPA on a 4.0 scale."
+    },
+    "instruction_languages": {
+      "$ref": "#/$defs/provenance_string_array",
+      "x-tier": 1,
+      "description": "Languages of instruction available to exchange students."
+    },
+    "english_course_availability": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["full", "substantial", "limited", "none", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "Availability of English-taught courses for incoming exchange students."
+    },
+    "english_proficiency_and_rhet1020": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "English proficiency requirements (TOEFL/IELTS minimums and whether AUC English-medium/RHET 1020 waiver is accepted)."
+    },
+    "host_language_requirement": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Host-country language requirement (e.g. CEFR level or none for English track)."
+    },
+    "available_terms": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["array", "null"],
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "enum": ["Fall", "Spring", "Academic Year", "Summer"]
+              }
+            }
+          }
+        }
+      ],
+      "x-tier": 1,
+      "description": "Academic terms open to incoming AUC exchange students."
+    },
+    "fall_term_dates": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Official Fall semester calendar dates (orientation through exams)."
+    },
+    "spring_term_dates": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 1,
+      "description": "Official Spring semester calendar dates (orientation through exams)."
+    },
+    "final_semester_allowed": {
+      "$ref": "#/$defs/provenance_boolean",
+      "x-tier": 1,
+      "description": "Whether students in their final graduating semester are permitted to attend."
+    },
+    "seat_quota": {
+      "$ref": "#/$defs/provenance_nonneg_integer",
+      "x-tier": 1,
+      "description": "Published exchange seat quota (state semester vs academic year basis in notes)."
+    },
+
+    "tuition_model": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": [
+                "auc_exchange_waiver",
+                "host_tuition_required",
+                "fee_paying_study_abroad",
+                "hybrid_or_special",
+                null
+              ]
+            }
+          }
+        }
+      ],
+      "x-tier": 2,
+      "description": "Tuition payment model under the agreement."
+    },
+    "est_monthly_living_local": {
+      "$ref": "#/$defs/provenance_monthly_living_local",
+      "x-tier": 2,
+      "description": "Official published monthly living cost range in host local currency {currency, min, max} with max >= min."
+    },
+    "living_cost_usd_est": {
+      "$ref": "#/$defs/provenance_nonneg_number",
+      "x-tier": 2,
+      "x-plan-alias": "est_semester_living_usd",
+      "description": "5-month semester living cost estimate in USD. Must have status='partial' when non-null (unless officially stated in USD by the university), backed by est_monthly_living_local with FX rate & date in notes."
+    },
+    "mandatory_host_fees_and_insurance": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 2,
+      "description": "Mandatory semester/student-union fees and compulsory host health insurance costs."
+    },
+    "housing_availability": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["guaranteed", "assisted", "lottery", "off_campus_only", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 2,
+      "description": "On-campus or university-managed housing allocation model."
+    },
+    "housing_notes": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 2,
+      "description": "Housing application process, deadlines, and typical monthly rent details."
+    },
+    "host_grants_or_stipends": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 2,
+      "description": "Host-side or bilateral mobility grants/stipends (e.g. Erasmus+, JASSO, DAAD) or explicitly none."
+    },
+    "citizenship_restrictions": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 2,
+      "description": "Nationality/dual-citizenship eligibility notes or host-citizen restrictions."
+    },
+    "visa_lead_time_and_financial_proof": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 2,
+      "description": "Student visa processing lead time and official financial solvency proof requirements."
+    },
+
+    "official_website_url": {
+      "$ref": "#/$defs/provenance_url",
+      "x-tier": 3,
+      "description": "Official primary university homepage URL."
+    },
+    "exchange_page_url": {
+      "$ref": "#/$defs/provenance_url",
+      "x-tier": 3,
+      "description": "Official incoming exchange / study-abroad portal URL."
+    },
+    "course_catalog_url": {
+      "$ref": "#/$defs/provenance_url",
+      "x-tier": 3,
+      "description": "Official university course catalog URL."
+    },
+    "english_course_list_url": {
+      "$ref": "#/$defs/provenance_url",
+      "x-tier": 3,
+      "description": "Direct official URL listing courses taught in English for exchange students."
+    },
+    "credit_system_and_load": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 3,
+      "description": "Credit framework (e.g. ECTS, US credits, CATS) and normal full-time semester load."
+    },
+    "course_restrictions_note": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 3,
+      "description": "Closed faculties, quota-restricted courses, or prerequisite policies for exchange students."
+    },
+    "required_application_docs": {
+      "$ref": "#/$defs/provenance_string_array",
+      "x-tier": 3,
+      "description": "Official list of documents required by the host institution during exchange application."
+    },
+    "academic_style": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 3,
+      "description": "Brief official profile of teaching/assessment format or specialized institutional focus."
+    },
+
+    "city_tier": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["metropolis", "large_city", "mid_size_city", "college_town", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 4,
+      "description": "Urban scale classification of the host campus city."
+    },
+    "campus_type": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["urban", "suburban", "rural", "multi_campus", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 4,
+      "description": "Physical campus layout."
+    },
+    "daily_life_english_friendliness": {
+      "allOf": [
+        { "$ref": "#/$defs/provenance_base" },
+        {
+          "properties": {
+            "value": {
+              "type": ["string", "null"],
+              "enum": ["high", "moderate", "low", null]
+            }
+          }
+        }
+      ],
+      "x-tier": 4,
+      "description": "Everyday English usability on campus and in host city services."
+    },
+    "international_support_services": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 4,
+      "description": "Orientation, buddy programs, language support, and international student office services."
+    },
+    "nomination_deadlines": {
+      "$ref": "#/$defs/provenance_string",
+      "x-tier": 4,
+      "description": "Host nomination and student application deadlines for Fall and Spring."
+    },
+    "ext": {
+      "type": "object",
+      "additionalProperties": true,
+      "x-tier": 4,
+      "description": "Open extensible key-value map for future student application fields and supplemental attributes."
+    }
+  }
+}

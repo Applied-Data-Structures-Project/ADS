@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "boston-college",
+  "excel_rows": [
+    13
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Boston College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "short_name": {
+    "value": "BC",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Massachusetts",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "city": {
+    "value": "Chestnut Hill/Boston",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Official nomination by home partner university required; minimum cumulative GPA 3.0.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "IELTS Academic minimum 6.5 verified on bc.edu (TOEFL MyBest and certain at-home tests restricted per BC International Applicants guidelines). RHET 1020 waiver not stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": "International admissions details at https://www.bc.edu/content/bc-web/admission/undergraduate/apply/international-applicants.html."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (IELTS >= 6.5; TOEFL also accepted per BC admissions).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-09-07 to 2026-12-21 (classes begin Sep 7; final exams Dec 14–21, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/student-services/academic-calendar.html",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-19 to 2027-05 (Spring 2027 classes begin Jan 19, 2027; exam end date per Registrar calendar)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/student-services/academic-calendar.html",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Non-degree international exchange requires home-university partner nomination (exchange-students.html), though bc.edu public pages observed did not print the bilateral tuition-waiver clause verbatim."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1883,
+      "max": 1883
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/student-services/tuition-fees.html",
+    "notes": "Derived by dividing 1 semester of AY 2026-2027 standard Room and Board ($18,834/year -> $9,417/semester) by 5 months = $1,883.40/mo (excludes books/incidentals ~$3,250/yr, mandatory fees $1,354/yr, and BC SHIP health insurance)."
+  },
+  "living_cost_usd_est": {
+    "value": 9417.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/student-services/tuition-fees.html",
+    "notes": "1-semester USD Room & Board baseline: half of AY 2026-2027 Room and Board ($18,834/year) = $9,417.00 USD (excludes books/incidentals ~$3,250/yr and health insurance; already in USD, recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Boston College Student Health Insurance Plan (SHIP) mandatory for full-time/international students under Massachusetts law unless approved comparable waiver (e.g., CSOM graduate rate ~$4,723/yr: $2,083 Fall / $2,604 Spring); UG mandatory fees $1,354/year.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/student-services/tuition-fees/medical-insurance.html",
+    "notes": "UG mandatory fees $1,354/yr from https://www.bc.edu/content/bc-web/offices/student-services/tuition-fees.html."
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_notes": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 or F-1 student visa required via BC Office of International Students and Scholars (OISS) with proof of adequate liquid funds.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/international-students-scholarships.html",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.bc.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:13",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/sites/global-engagement/sites/office-of-global-education/exchange-students.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Office of Global Education (OGE) exchange advising and Office of International Students and Scholars (OISS).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bc.edu/content/bc-web/offices/international-students-scholarships.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

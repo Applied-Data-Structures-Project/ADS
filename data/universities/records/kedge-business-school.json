@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "kedge-business-school",
+  "excel_rows": [
+    56
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "blocked",
+    "drive_links": [
+      "https://drive.google.com/open?id=1zS2C9Jfno91UroLtVfPgBfnjLVLhZHAr"
+    ],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Col H link (1zS2C9Jfno91UroLtVfPgBfnjLVLhZHAr) unreachable (error_html_response: Drive returned HTML page instead of document payload)"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "KEDGE Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KEDGE",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Talence",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR",
+      "Staff"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=56",
+    "notes": "Agreement scope is Business Administration (UG, GR, Staff; Fall/Spring), hosted in AUC's School of Business. Drive fact sheet access is blocked."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=56",
+    "notes": "All Business majors within School of Business per Business Administration scope (row 56)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": "Fall features English- and French-taught courses; Spring offers a broader English-taught selection; survival French (FLE) available during orientation."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": "Broad English-taught management offerings in both semesters (particularly expansive in Spring) alongside French-taught tracks."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Incoming non-degree exchange students are exempt from paying the French CVEC fee, though must obtain an official CVEC exemption certificate online prior to administrative registration; French social security health registration applies.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housing.kedge.edu",
+    "notes": "Centralized KEDGE housing portal (housing.kedge.edu) provides pre-visited private listings and partner residences/apart-hotels across Bordeaux, Marseille, Paris, and Toulon campuses."
+  },
+  "housing_notes": {
+    "value": "Access to https://housing.kedge.edu upon admission for verified private rentals and partner student residences (e.g., Kley) across Bordeaux, Marseille, Paris, and Toulon; campus housing emails logementparis@kedgebs.com / logementmarseille@kedgebs.com.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housing.kedge.edu",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.kedgebs.com/fr",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:56",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://student.kedge.edu",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": "Partner Drive fact sheet is blocked; student.kedge.edu and https://welcome.kedge.edu serve incoming students."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; standard courses typically carry 5 ECTS (~30 contact hours) each.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://student.kedge.edu",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "French grande école business school (ECTS)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://welcome.kedge.edu",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housing.kedge.edu",
+    "notes": "Multiple French campuses including Bordeaux (Talence), Marseille, Paris, and Toulon."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

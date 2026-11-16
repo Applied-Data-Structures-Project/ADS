@@ -1,0 +1,343 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "universidad-del-rosario",
+  "excel_rows": [
+    124
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "blocked",
+    "drive_links": [
+      "https://drive.google.com/open?id=1xU2KwIELxdhuh1IzHhOf4TViokotE-H9"
+    ],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Col H link (1xU2KwIELxdhuh1IzHhOf4TViokotE-H9) unreachable (error_html_response: Drive returned HTML page instead of document payload)"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Universidad del Rosario",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "short_name": {
+    "value": "URosario",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "country": {
+    "value": "Colombia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bogotá",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "region": {
+    "value": "Latin America & Caribbean",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be at least 18 years old prior to start of mobility and actively enrolled at home partner university.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Spanish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers taking courses in English must present a CEFR B1 English certificate (institutional/language center certificates accepted); RHET 1020 not mentioned.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Non-native Spanish speakers taking Spanish-taught courses must present a CEFR B1 Spanish certificate (institutional/language center certificates accepted; B2 required for double-degree tracks).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Fall"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": "Semester I\nAcademic period: January 1, 2026 – June 1, 2026.\nSemester II\nAcademic period: July 25, 2026 – December 1, 2026. | Semester I Academic period: January 1, 2026 – June 1, 2026. Semester II Academic period: July 25, 2026 – December 1, 2026."
+  },
+  "fall_term_dates": {
+    "value": "Semester II (Fall equivalent): Late July to late November / Dec 1 (Excel 2026 dates: Jul 25-Dec 1, 2026).",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": "Late July-late November seasonal window confirmed on https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student."
+  },
+  "spring_term_dates": {
+    "value": "Semester I (Spring equivalent): Late January to late May / Jun 1 (Excel 2026 dates: Jan 1-Jun 1, 2026; official web late Jan-late May).",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": "Late Jan-late May teaching dates confirmed on https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": "Under bilateral student exchange agreements, incoming exchange students are exempt from tuition fees (matrícula) at Universidad del Rosario and pay tuition to their home university."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory international medical insurance required upon acceptance covering the full mobility period (illness, accidents, medical repatriation, and repatriation of remains); exact dollar coverage floor not confirmed on urosario.edu.co.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": "URosario has no university-owned dormitories, but incoming@urosario.edu.co provides guidance, recommendations, and housing networks for off-campus accommodation in Bogotá."
+  },
+  "housing_notes": {
+    "value": "No official university dormitories; International Office (incoming@urosario.edu.co) provides housing guidance and student residence recommendations in Bogotá.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Stays under 6 months (1 semester): visa-exempt nationals enter on a PID (Permission for Integration and Development) stamp and must show a return flight ticket. Stays >6 months: Student Visa via Colombian Cancillería (http://www.cancilleria.gov.co/tramites_servicios/visa) + Cédula de Extranjería upon arrival.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://urosario.edu.co/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:124",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Colombian UR credits (1 UG credit = 1.7 ECTS; 1 PG credit = 2.1 ECTS per urosario.edu.co); exchange students take min 1 course up to max 18 UR credits/semester (~30.6 ECTS).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "First Semester (Jan-May): Nomination Sep 1-30, Application Oct 1-31. Second Semester (Jul-Nov): Nomination Apr 1-30, Application May 1-31.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://urosario.edu.co/ur-internacional/estudiantes-internacionales/incoming-student",
+    "notes": null
+  },
+  "ext": {}
+}

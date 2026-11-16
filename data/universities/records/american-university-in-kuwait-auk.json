@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "american-university-in-kuwait-auk",
+  "excel_rows": [
+    5
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1pZbiOQ1mMgJb8JHj9gJk_R16E6tcUiZq"
+    ],
+    "local_files": [
+      "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf",
+      "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025__1Putc-.docx",
+      "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025__1rBsbD.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf.txt",
+      "data/raw/extracted/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025__1Putc-.docx.txt",
+      "data/raw/extracted/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025__1rBsbD.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "American University in Kuwait (AUK)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "short_name": {
+    "value": "AUK",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "country": {
+    "value": "Kuwait",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Salmiya",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "region": {
+    "value": "Middle East & North Africa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=5",
+    "notes": "Agreement scope is University-wide (UG, Fall/Spring); fact sheet page 2 lists Arts & Sciences, Business & Economics, and Engineering & Applied Sciences."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=5",
+    "notes": "University-wide UG exchange agreement (R5)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=1",
+    "notes": "2024-2025 fact sheet explicitly states English is the language of instruction."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=1",
+    "notes": "Instruction at AUK is in English across the curriculum."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Proof of English proficiency required (e.g., TOEFL/IELTS or waiver for equivalent home English coursework); no fixed exchange test cutoff published.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.auk.edu.kw/admissions/undergraduate/visiting-students",
+    "notes": "AUK visiting-student admissions page requires proof of English proficiency (or equivalent completed English coursework), without publishing a bilateral exchange score cutoff."
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=1",
+    "notes": "No Arabic prerequisite stated for incoming exchange students; curriculum taught in English."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: New Student Orientation Sep 13, 2026; Classes Sep 15, 2026 – Jan 14, 2027 (Exams Jan 10–14, 2027; Winter Break Dec 24–31, 2026).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auk.edu.kw/academics/academic-calendar",
+    "notes": "Official AY 2026-2027 academic calendar (earlier 2024-2025 fact sheet page 4 listed Sep 22 – Jan 23)."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Classes Jan 31, 2027 – Jun 3, 2027 (Exams May 30 – Jun 3, 2027; lunar holidays tentative).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auk.edu.kw/academics/academic-calendar",
+    "notes": "Official AY 2026-2027 academic calendar (earlier 2024-2025 fact sheet page 4 listed Feb 16 – Jun 19)."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Various off-campus accommodation options near campus in Salmiya; on-campus dormitories are not stated.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=1",
+    "notes": "Fact sheet states 'Various accommodation options near campus' in Salmiya without specifying university-operated housing guarantees or off-campus exclusivity."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Kuwait visitor e-Visa via https://evisa.moi.gov.kw/evisa/home_e.do; expires every 90 days.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=3",
+    "notes": "Fact sheet specifies Kuwait visitor e-Visa portal and 90-day expiry; exact lead time and bank-balance threshold are not stated."
+  },
+  "official_website_url": {
+    "value": "http://www.auk.edu.kw/index.jsp",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:5",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.auk.edu.kw/academics/international-student-programs/study-abroad-at-auk/incoming-international-student-programs",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auk.edu.kw/academics/international-student-programs/study-abroad-at-auk/incoming-international-student-programs",
+    "notes": "Official AUK incoming international student programs page."
+  },
+  "course_catalog_url": {
+    "value": "https://ssb-prod.ec.auk.edu.kw/PROD/bwckschd.p_disp_dyn_sched",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=4",
+    "notes": "Dynamic schedule URL recovered from PDF hyperlink annotation on page 4."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "American credit-hour model; full-time undergraduate course load is 12 to 18 credit hours per regular semester (11 or fewer is part-time).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.auk.edu.kw/academics/catalog",
+    "notes": "2024-2025 fact sheet page 1 notes American model of higher learning; AUK Academic Catalog specifies 12–18 credit hours full-time UG load."
+  },
+  "course_restrictions_note": {
+    "value": "Prerequisites apply across the Colleges of Arts & Sciences, Business & Economics, and Engineering & Applied Sciences.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=2",
+    "notes": "No closed majors listed; prerequisites apply."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=1",
+    "notes": "Fact sheet describes AUK as following the American model of higher learning and liberal arts curriculum."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Pre-arrival & on-campus orientation, welcome packet, internship guide, and support from the International Programs team (studyabroad@auk.edu.kw).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: End of April; Spring: End of August (2024-2025 fact sheet).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/(AUK)- American University in Kuwait/International Student Programs Incoming Factsheet - 2024-2025.pdf#page=4",
+    "notes": "2024-2025 fact sheet; newer AY deadlines not published separately."
+  },
+  "ext": {}
+}

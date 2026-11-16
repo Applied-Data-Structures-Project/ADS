@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-st-andrews",
+  "excel_rows": [
+    144
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1STeYKk01QP6JZrXuhZgh5ZBETNGve5nn?usp=drive_link",
+      "https://drive.google.com/drive/folders/1HbwBGDWem64xnuD4qL5dHCq6o-WYHeLT",
+      "https://drive.google.com/drive/folders/1STeYKk01QP6JZrXuhZgh5ZBETNGve5nn"
+    ],
+    "local_files": [
+      "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf",
+      "data/raw/factsheets/UoSt. Andrews/University of St Andrews.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/St. Andrews/Inbound Partner Factsheet.pdf.txt",
+      "data/raw/extracted/UoSt. Andrews/University of St Andrews.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of St. Andrews",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "country": {
+    "value": "United Kingdom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "St. Andrews",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Political Science",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "For St. ANdrews 3rd year, For outgoing Aucian 2nd and 3rd year"
+  },
+  "official_website_url": {
+    "value": "https://www.st-andrews.ac.uk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Excel Row 144 Col E specifies: 'For St. Andrews 3rd year, For outgoing Aucian 2nd and 3rd year'.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col H specifies 'Political Science' major rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Political Science"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:144",
+    "notes": "Excel scope specifies 'Political Science' (housed in School of International Relations at St Andrews per st-andrews.ac.uk); subject-specific exchange requires >=1 module/sem in exchange subject (Fact Sheet p.3)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Medicine",
+      "Evening degree courses",
+      "5000-level postgraduate taught courses (for UG)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": "Exchange and ISAP students cannot take evening courses or School of Medicine modules; 5000-level PG modules closed to UG."
+  },
+  "min_gpa_host": {
+    "value": 3.2,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=1",
+    "notes": "Minimum average grade 3.2/4.0 GPA for undergraduate exchange applicants (PG: 3.3/4.0 US GPA / UK 2.1 / Europe 2.2 or B+, p.1)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": "Scottish English-speaking university."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must meet official undergraduate English requirements at https://www.st-andrews.ac.uk/subjects/entry/language-requirements/undergraduate/ (accepted test tables hosted online; note unverified third-party IELTS 7.0 quotes excluded).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/subjects/entry/language-requirements/undergraduate/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only; non-credit English language support available (cannot satisfy entry requirement, p.3).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Martinmas (Semester 1): Teaching Sep 14 - Dec 21, 2026 (2025-26 PDF pattern shows early-Sep Orientation & residence exit Dec 23).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/semester-dates/2026-2027/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Candlemas (Semester 2): Teaching Jan 25 - May 22, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/semester-dates/2026-2027/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/study-abroad/inbound/fee-information/",
+    "notes": "Official exchange students do not pay St Andrews tuition/programme fees (non-exchange ISAP students pay £11,975/sem or £23,950/yr in 2026-27)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "GBP",
+      "min": 1779,
+      "max": 1779
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/study/fees-and-funding/undergraduate/cost-of-attendance/",
+    "notes": "Derived monthly cost from St Andrews official UG Cost of Attendance 9-month (38-wk) academic year budget divided by 9 months: University residence/utilities/food £12,208 + personal living expenses £3,800 = £16,008 / 9 = £1,778.67/month (~£1,779/mo; excludes ~£800 books/computer & travel). Note UKVI outside-London visa threshold is £1,171/mo (gov.uk)."
+  },
+  "living_cost_usd_est": {
+    "value": 11765.05,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/study/fees-and-funding/undergraduate/cost-of-attendance/",
+    "notes": "5-month estimate derived from monthly GBP range 1,779/month. ECB cross-rate 1 EUR = 1.1052 USD and 1 EUR = 0.83559 GBP -> 1 GBP = 1.322658 USD (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 1,779.0 GBP * 5 * 1.322658 = 11,765.05 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Student Visa (>6 mo) requires UK Immigration Health Surcharge (IHS) for NHS care; Standard Visitor/ETA (<=6 mo) does not pay IHS (may incur non-emergency NHS charges — private medical insurance advised).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": "Undergraduate exchange and study abroad students are guaranteed university accommodation if applying by Accommodation Services deadline (invitation arrives 48 hrs after offer acceptance)."
+  },
+  "housing_notes": {
+    "value": "University halls (£12,208 estimated 38-wk residence + food budget in 2026-27 per st-andrews.ac.uk Cost of Attendance); September confirmations issue in summer, January in December.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: China Scholarship Council guidance on p.2 applies to Chinese PhD/CSC candidates, not incoming AUC exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Short-term <6 mo: Electronic Travel Authorisation (ETA) for non-visa nationals or Standard Visitor Visa. Longer >6 mo: UK Student Visa + Immigration Health Surcharge (NHS access).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=2",
+    "notes": "Note: UKVI outside-London financial threshold is £1,171/mo (https://www.st-andrews.ac.uk/study/support/student-immigration/)."
+  },
+  "exchange_page_url": {
+    "value": "https://www.st-andrews.ac.uk/study-abroad/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/study-abroad/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.st-andrews.ac.uk/subjects/modules/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.st-andrews.ac.uk/subjects/modules/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://www.st-andrews.ac.uk/subjects/modules/ are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "Scottish credit framework: standard full-time load is 60 credits (30 ECTS) per semester; 50-70 credits (25-35 ECTS) permitted with home university & Associate Dean approval (1 cr = 10 notional learning hrs).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "School of Medicine, evening courses, and 5000-level PG modules (for UG) are excluded; subject-specific Political Science exchange students must take at least 1 module per semester in Political Science/International Relations; 3000-4000 Honours modules require prerequisites.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Coordinator email nomination (studyabroad@st-andrews.ac.uk)",
+      "Online application form",
+      "Recent academic transcript",
+      "Recent academic reference on letterheaded paper",
+      "Proof of English language proficiency (if applicable)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=1",
+    "notes": "Typical decision turnaround is 2-4 weeks (p.2)."
+  },
+  "academic_style": {
+    "value": "Traditional Scottish tutorial/seminar academic model with high independent workload (10 notional study hrs/credit) and compulsory matriculation; pre-advising 1 mo prior and online advising 1 wk prior.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "St Andrews, Fife, Scotland; explicit population count not verified on st-andrews.ac.uk or Fact Sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Integrated university town/coastal setting descriptions came from third-party domains (studee.com); kept unknown."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated in Fact Sheet or st-andrews.ac.uk (UK English-speaking town & campus)."
+  },
+  "international_support_services": {
+    "value": "Global Office (weekly Tue-Thu drop-ins, Student Mobility Officer appointments, social events), Student Immigration Service, Pre-advising/Advising, English language support, and Student Services.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "For 2026 pattern (from 2025-26 partner sheet): January entry Nomination Sep 30, Application Sep 1 - Oct 31; September entry Nomination Apr 1, Application Feb 14 - Apr 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Andrews/Inbound Partner Factsheet.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

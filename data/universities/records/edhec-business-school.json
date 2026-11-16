@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "edhec-business-school",
+  "excel_rows": [
+    32
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=17l6hJ3PEVazSKO3CDNkVNY4CLY8MNjAW",
+      "https://drive.google.com/drive/folders/19NqIX4-rGNaTRaXlEPC-Z3OCEJC9t2V9"
+    ],
+    "local_files": [
+      "data/raw/factsheets/EDHEC Business School/2024-2025/Factsheet_EDHEC_BBA_2024-2025_2.pdf",
+      "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf",
+      "data/raw/factsheets/EDHEC Business School/Factsheet_Master_2025-26.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/EDHEC Business School/2024-2025/Factsheet_EDHEC_BBA_2024-2025_2.pdf.txt",
+      "data/raw/extracted/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf.txt",
+      "data/raw/extracted/EDHEC Business School/Factsheet_Master_2025-26.pdf.txt"
+    ],
+    "notes": "Col H link (17l6hJ3PEVazSKO3CDNkVNY4CLY8MNjAW) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "EDHEC Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Nice",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": "Mapped from Excel scope 'Business Administration'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": "Verified via Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=3",
+    "notes": "All BBA Year 2/IBT/Year 3 exchange tracks and Master/MSc tracks are taught in English; BBA Year 2 French track in Nice and Master Classic Track are French/mixed (#page=5-6 in Master fact sheet)."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=3",
+    "notes": "Full English-taught business exchange tracks at both BBA and Master levels."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "No official English test score required for Simple Exchange partner students; Double Degree applicants require TOEFL/TOEIC/IELTS + GMAT (#page=4). No RHET 1020 waiver stated.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_Master_2025-26.pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.edhec.edu/en/student-experience/international-experience/studying-abroad",
+    "notes": "EDHEC official web confirms tuition fees are waived for Simple Exchange partner students."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "EDHEC International Students Office portal (https://www.edhec.edu/en/iso/international-student-office) publishes housing and living-cost guidance (e.g., rent starting €550/mo Lille, €600/mo Nice, ~€80/mo utilities, 1-2 months deposit, ~€50 Assurance Habitation) without stating an official combined monthly min-max figure in the BBA/Master fact sheets."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official combined monthly budget range stated by EDHEC BBA/Master fact sheets or https://www.edhec.edu/en/iso/international-student-office (third-party estimates excluded)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "EU citizens: EHIC or private insurance. Non-EU: 1-semester stays require comprehensive private health insurance; 2-semester stays register for free French Social Security. Personal & civil liability insurance mandatory for all students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=5",
+    "notes": "Also in Factsheet_Master_2025-26.pdf#page=7."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=5",
+    "notes": "EDHEC International Students Office (ISO) sends housing options allocated first-come, first-served. Lille offers on-campus EDHEC residence and off-campus options; Nice offers off-campus options only (Master #page=7)."
+  },
+  "housing_notes": {
+    "value": "Lille Campus: on-campus accommodation in the EDHEC residence (kots and private studios) plus off-campus offers via ISO when available; Nice Campus: off-campus accommodation only; first-come, first-served allocation (#page=5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=5",
+    "notes": "Also in Factsheet_Master_2025-26.pdf#page=7. EDHEC ISO portal (https://www.edhec.edu/en/iso/international-student-office) provides housing platform access, guarantor (VISALE/Garantme/Smartgarant), and Assurance Habitation guidance."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students require a VLS-TS long-stay student visa supported by EDHEC ISO acceptance/enrollment documentation.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.edhec.edu/en/iso/international-student-office",
+    "notes": "Exact consulate financial proof EUR threshold varies by French consulate."
+  },
+  "official_website_url": {
+    "value": "https://www.edhec.edu/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:32",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.edhec.edu/en/student-experience/international-experience/studying-abroad",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=1",
+    "notes": "ISO portal at https://www.edhec.edu/en/iso/international-student-office."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; BBA regular/max 30 ECTS per semester (no EDHEC minimum for visiting BBA); Master (#page=8) minimum 20 ECTS, regular/max 30 ECTS. French 0–20 scale (10/20 pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=6",
+    "notes": "Master workload on Factsheet_Master_2025-26.pdf#page=8."
+  },
+  "course_restrictions_note": {
+    "value": "Cannot combine courses across different levels/programmes; MSc Data Science & AI Fall only (exceptional); MSc Financial Engineering restricted to QTEM/Double Degree; MSc finance tracks have strict prerequisites/excellence screening; Learning Agreement locked after add/drop/start.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_Master_2025-26.pdf#page=4",
+    "notes": "Also detailed on #page=6."
+  },
+  "required_application_docs": {
+    "value": [
+      "Learning Agreement / OLA",
+      "Headshot photo",
+      "Academic transcript in English",
+      "Passport or ID card copy",
+      "CV and Bachelor's degree certificate (Master/MSc tracks, Master Fact Sheet #page=4)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=4",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Mandatory class attendance; personal laptop required (tablets/Chromebooks incompatible with exam software; Windows preferred at Master level).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=6",
+    "notes": "Also in Factsheet_Master_2025-26.pdf#page=8."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=1",
+    "notes": "Nice and Lille campuses (Master #page=1/5 also covers Jean Arnault campus)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "EDHEC International Students Office (ISO, https://www.edhec.edu/en/iso/international-student-office) provides pre-arrival, visa documentation, housing guidance, and campus sports access.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=5",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "BBA: Fall Nom Apr 3 / App Apr 25; Spring Nom end Sept / App mid Oct. Master (#page=3): Fall Nom Apr 3 / App Apr 25; Spring Nom Sep 29 / App Oct 10.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EDHEC Business School/Factsheet_EDHEC_BBA_25-26.pdf#page=4",
+    "notes": null
+  },
+  "ext": {}
+}

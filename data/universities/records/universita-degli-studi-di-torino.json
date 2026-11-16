@@ -1,0 +1,335 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "universita-degli-studi-di-torino",
+  "excel_rows": [
+    146
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Università degli Studi di Torino",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UniTo",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Turin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Italian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Formal English certificates are not strictly mandatory for admission, but UniTo strongly recommends CEFR B2 in English (or Italian depending on chosen courses). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility/nomination-and-application",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "CEFR B2 Italian recommended for Italian-taught courses (not strictly required for English courses); UniTo offers a free 5 ECTS Italian language course starting mid-October.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility/nomination-and-application",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "First Semester (AY 2026-2027): Lectures run roughly late Sep / mid-Oct (around 28 Sep 2026) through mid-Dec / Jan; exam window Jan-Feb 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Second Semester (AY 2026-2027): Lectures run roughly mid-Feb (around 22 Feb 2027) through end of May / Jun; exam window Jun-Jul 2027; academic year ends 30 Sep 2027 (incl. Sep resit exams).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": "Incoming exchange students under Erasmus+ or bilateral cooperation agreements do not pay tuition fees to UniTo (continue paying tuition to home university)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "en.unito.it provides Turin accommodation guidance via https://en.unito.it/living-turin without publishing a unified official EUR monthly living cost range; third-party city cost estimates excluded."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Cannot be derived without an official UniTo monthly living cost estimate."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Voluntary enrollment in the Italian National Health Service (SSN) costs EUR 700/calendar year (expiring Dec 31 regardless of activation date) per en.unito.it.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/living-turin",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/living-turin",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "UniTo does not provide direct guaranteed university housing; students apply for regional EDISU Piemonte beds or rent privately in Turin with guidance at https://en.unito.it/living-turin.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/living-turin",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU exchange students must obtain an Italian study entry visa prior to arrival via Universitaly / Visto per Italia portals (plus residence permit application 'permesso di soggiorno' and Italian tax code 'codice fiscale' on arrival).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://en.unito.it/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:146",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": "Course offerings (CFU/ECTS and syllabi) are accessed per department/degree page via the UniTo exchange portal."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "CFU / ECTS credit system.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Students select courses mainly from their host department (cross-registration possible subject to nomination requirements and restricted-access capped programs 'corsi ad accesso programmato').",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester / Full Year: Nominations open mid-Feb to 15 June. Spring Semester: Nominations open mid-Feb to 15 November.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.unito.it/international-relations/students-mobility/exchange-students-and-erasmus-mobility/nomination-and-application",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "roanoke-college",
+  "excel_rows": [
+    97
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Roanoke College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Roanoke College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Virginia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "city": {
+    "value": "Salem",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum incoming exchange GPA is published on https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Proof of English proficiency is required if the primary language of instruction at the home institution is not English; accepted tests include TOEFL, IELTS, Duolingo, CEFR, Pearson's English Test, or Cambridge Exams (exact numeric cutoffs and RHET 1020 equivalency are not stated; AUC is an English-medium institution).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (proficiency demonstration required unless home institution instruction is primarily in English).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: New students move in Aug 22; Evening classes begin Aug 25 / Day classes begin Aug 26; Fall Break Oct 15-18; Thanksgiving Break Nov 23-29; Last day of classes Dec 4; Final Exams Dec 7-11, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_calendars/2026-2027_calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Residence halls open Jan 5-6; Classes begin Jan 7; Spring Break Mar 1-7; Last day of classes Apr 19; Final Exams Apr 20-26; Commencement May 1, 2027 (optional May Intensive Learning Term May 10-28, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_calendars/2026-2027_calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Tuition-waiver wording is not explicitly stated on https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students (lists American University in Cairo as partner institution; regular 2026-27 non-exchange UG tuition list price is $38,420/yr)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1634.6,
+      "max": 1851.8
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/business_office/tuition_and_fees/international_tuition_and_financial_aid",
+    "notes": "Derived from Roanoke College 2026-27 on-campus Housing + 19-Meal Plan rates divided across a 5-month semester: Standard double housing ($7,614/yr = $3,807/sem) to single/apartment rooms up to $9,786/yr ($4,893/sem), plus 19-Meal Plan ($8,732/yr = $4,366/sem) = $8,173-$9,259/semester ($1,634.60-$1,851.80/month). Excludes $1,580/yr health insurance and books/personal expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 8716.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/business_office/tuition_and_fees/international_tuition_and_financial_aid",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester midpoint of 2026-27 on-campus housing ($3,807 double to $4,893 Maroon Village single/apt per sem) + 19-Meal Plan ($4,366/sem) = $8,173-$9,259/semester (midpoint $8,716.00/semester). Excludes $1,580/yr international health insurance and books/personal costs."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2026-2027 mandatory international student health insurance plan is $1,580/year (official ISEP exchange students are exempt from this institutional insurance charge). Regular residential student/technology fees range $2,208-$3,788/year.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/business_office/tuition_and_fees/international_tuition_and_financial_aid",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/business_office/tuition_and_fees/international_tuition_and_financial_aid",
+    "notes": "Residential campus with residence halls including Global Village (Chalmers Hall); exchange housing guarantee status is not explicitly stated."
+  },
+  "housing_notes": {
+    "value": "2026-27 on-campus standard double room is $7,614/yr ($3,807/sem), single rooms up to $8,668-$9,786/yr; required 19-meal plan $8,732/yr ($4,366/sem). International and domestic students may reside in the Global Village community (Chalmers Hall).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/business_office/tuition_and_fees/international_tuition_and_financial_aid",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "International students coordinate visa sponsorship via International Student Services (I-20 for F-1 status or DS-2019 for J-1 sponsored exchange students such as ISEP).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_student_services/admitted_students",
+    "notes": "Visa process portal: https://www.roanoke.edu/inside/a-z_index/international_student_services/visa_process."
+  },
+  "official_website_url": {
+    "value": "http://roanoke.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:97",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Course unit system: 1 unit = 4 semester hours. Minimum full-time load is 3 units (12 credits); normal full-time load is 4 or 5 units/semester (16-20 credits; overload tuition applies above 5 units).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/registrar/academic_catalog/units_and_academic_credit",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home institution partner nomination (Part I of Exchange Application)",
+      "Roanoke College Exchange Student Application Form (Part II, emailed directly to mhancock@roanoke.edu — do NOT use standard admissions portal)",
+      "Current university transcript",
+      "Demonstration of English proficiency (if primary instruction is not in English)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_education/information_for_prospective_students",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Roanoke College is located in Salem, Virginia (Roanoke Valley); no explicit city-tier classification appears on verified roanoke.edu pages."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Residential historic campus in Salem, Virginia; explicit schema campus_type label omitted without ambiguous third-party sources."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Incoming partner exchange applications handled directly by Dr. Michael Hancock-Parmer (mhancock@roanoke.edu); International Student Services (Morehead Hall) and Office of Global Engagement (Lucas Hall) handle F-1/J-1 advising and Global Village housing.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.roanoke.edu/inside/a-z_index/international_student_services/visa_process",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Incoming exchange deadlines are coordinated via partner offices / mhancock@roanoke.edu (standard non-exchange international admission deadlines are Nov 30 for Spring and Apr 15 for Fall)."
+  },
+  "ext": {}
+}

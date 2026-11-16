@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "national-chengchi-university",
+  "excel_rows": [
+    75
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1nYjTZVZQohliB2TzrV7NSqNneS9oWsRi"
+    ],
+    "local_files": [
+      "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/National Chengchi University/NCCU_Factsheet_2025 2026.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "National Chengchi University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NCCU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "Taiwan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Taipei",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": "Mapped from Excel scope 'Business Administration'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": "Verified via Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "College of Commerce Fact Sheet (#page=3) explicitly states: 'No GPA or English proficiency certificate required'."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Mandarin"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://qrysub.nccu.edu.tw/",
+    "notes": "Fact sheet does not enumerate languages; official NCCU portals confirm English-taught courses (especially Commerce/Social Sciences/Int'l Affairs) alongside Mandarin courses and free OIC Mandarin support."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://qrysub.nccu.edu.tw/",
+    "notes": "Official nccu.edu.tw confirms wide selection of English-taught courses across Commerce and other colleges."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "No GPA or English proficiency certificate required for College of Commerce International Exchange Programs (OIP) applicants (#page=3). No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Early Sep – late Dec (AY 2025-2026 Fall: Sep 1 – Dec 19, 2025; compulsory orientation Aug 27, 2025).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=3",
+    "notes": "Orientation date on #page=4."
+  },
+  "spring_term_dates": {
+    "value": "Late Feb – mid Jun (AY 2025-2026 Spring: Feb 23 – Jun 12, 2026; orientation Feb 23, 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=3",
+    "notes": "Orientation date on #page=4."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://incoming-iep.nccu.edu.tw/",
+    "notes": "Official NCCU College of Commerce Incoming IEP (https://incoming-iep.nccu.edu.tw/) and OIC (https://oic.nccu.edu.tw) confirm incoming partner exchange students under reciprocal agreements are exempt from tuition fees at NCCU."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet quotes housing rates in USD (i-House $1,300–1,800/4.5-mo sem, dorm $400–800/sem, off-campus $400–700/mo) and NTD 250 accident insurance without a full monthly food/living budget (third-party estimates excluded)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official complete monthly living budget published by NCCU."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Basic student accident insurance NTD 250 (~USD 8) required at registration; students must arrange comprehensive overseas medical insurance before arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=4",
+    "notes": "Exchange students may apply online for NCCU i-House ($1,300–$1,800 / 4.5-mo sem) or request on-campus shared dorms ($400–$800 / 4.5-mo sem) via email, or arrange off-campus housing ($400–$700/mo)."
+  },
+  "housing_notes": {
+    "value": "i-House USD 1,300–1,800 (4.5 mos); on-campus shared dorm USD 400–800 (4.5 mos, request by email); off-campus USD 400–700/month.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": "Special Entry Permits apply for Hong Kong, Macau, and Mainland China passport holders instead of standard ROC visas.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=6",
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "<180 days (1 semester): Visitor/Study Visa (single/multiple entry; single-entry extendable to 6 mos free). >180 days (1 academic year): Resident Visa + Alien Resident Certificate (ARC) application within 15 days of arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=6",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.nccu.edu.tw/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:75",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://iep.nccu.edu.tw",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=2",
+    "notes": "NCCU College of Commerce Office of International Programs (OIP) incoming exchange portal."
+  },
+  "course_catalog_url": {
+    "value": "https://qrysub.nccu.edu.tw/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=4",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Dynamic course search system at https://qrysub.nccu.edu.tw/ requires filtering for English-taught courses."
+  },
+  "credit_system_and_load": {
+    "value": "Taiwan credits (3 credits = 48 in-class hours); average exchange load ~12 credits/sem (local UG 15–20, GR 9–15); 100-point grading scale.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=5",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "College of Commerce exchange students are allowed to take courses offered by all Colleges across NCCU.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Passport copy",
+      "Passport-sized photo",
+      "CV / resume"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Compulsory orientation 1 week prior to term, local student volunteer Buddy Program (#page=4-5), plus free Mandarin courses via OIC.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=4",
+    "notes": "Buddy program on #page=5."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Apr 20, Application May 1; Spring: Nomination Oct 20, Application Nov 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/National Chengchi University/NCCU_Factsheet_2025 2026.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

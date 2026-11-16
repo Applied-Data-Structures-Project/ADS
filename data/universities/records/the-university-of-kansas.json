@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-university-of-kansas",
+  "excel_rows": [
+    117
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1E0mfllVPRBHJNPK5EDpGLJ6EREqKbhBf"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Kansas University/2026 Undergraduate Exchange Application instructions.pdf",
+      "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf",
+      "data/raw/factsheets/Kansas University/KU Exchange Fact Sheet 2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Kansas University/2026 Undergraduate Exchange Application instructions.pdf.txt",
+      "data/raw/extracted/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf.txt",
+      "data/raw/extracted/Kansas University/KU Exchange Fact Sheet 2025.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The University of Kansas",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Kansas",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "city": {
+    "value": "Lawrence",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Incoming exchange students must be officially nominated by their home university and remain in good academic standing as non-degree seeking study abroad students.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studyabroad.ku.edu/exchangestudents",
+    "notes": "Official partner nomination rule also on AY 2026-27 Fact Sheet #page=2."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": "University-wide Excel agreement; AY 2026-27 Fact Sheet #page=3 excludes Athletic Training, Law, Medicine, and Pharmacy, and restricts courses to Lawrence campus only."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": "Nearly 200 fields of study (Architecture/Design/Planning, Arts, Business, Engineering, Journalism & Mass Comm, Liberal Arts & Sciences, Music, Applied English Center per #page=1), excluding restricted health/law fields."
+  },
+  "excluded_majors": {
+    "value": [
+      "Athletic Training",
+      "Law",
+      "Medicine",
+      "Pharmacy"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": "AY 2026-27 Fact Sheet #page=3 also states exchange students may only take courses at the Lawrence campus (excluding KU Med, Edwards, and Regents campuses) and Independent Study/research credit is typically unavailable."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum incoming exchange GPA stated in AY 2026-27 Fact Sheet (the 2.5 GPA on #page=2 applies solely to an English-proficiency test waiver for students who graduated from an English-language high school; 2.5 on KU Study Abroad pages applies to outgoing KU students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL and IELTS scores are NOT required to apply for exchange at KU; however, all non-native English speakers must take the Applied English Center (AEC) English Proficiency Exam (online pre-arrival or at orientation) unless waived by TOEFL iBT >=79 (no subscore <18 UG / <23/section Grad) or IELTS >=6.5 (no subscore <6.0). Note 'Assessment of Functional Level of English' J-1 form does NOT waive the AEC exam. RHET 1020 exemption not mentioned.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Orientation Arrival Date 10 Aug 2026; Classes begin 24 Aug 2026; Labor Day 7 Sep; Fall Break 17–20 Oct; Thanksgiving Break 25–29 Nov; Final Exams end 18 Dec 2026 (https://registrar.ku.edu/calendar).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Orientation Arrival Date 11 Jan 2027; MLK Day 18 Jan; Classes begin 19 Jan 2027; Spring Break 15–21 Mar 2027; Final Exams end 13 May 2027 (https://registrar.ku.edu/calendar).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=5",
+    "notes": "AY 2026-27 Fact Sheet #page=5 confirms Tuition, Course Fees, Technology Fee, International Student Service Fee, Infrastructure Fee, Wellness Fee, and Campus Fee are covered by KU Study Abroad & Global Engagement (exchange application fee also waived via code 42626669ku in 2026 UG Application Instructions #page=1)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2047,
+      "max": 2047
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://world.ku.edu/costs",
+    "notes": "Derived from KU International Admissions annual international undergraduate living expenses budget USD 18,424/yr (housing, food, personal items, books, mandatory health insurance) divided over 9 academic months = USD 2,047.11/month."
+  },
+  "living_cost_usd_est": {
+    "value": 10235.56,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://world.ku.edu/costs",
+    "notes": "5-month USD estimate derived from KU International Admissions annual living expenses budget USD 18,424/yr (USD 2,047.11/mo over 9 months x 5 = USD 10,235.56; 1-semester half share = USD 9,212), verified 2026-11-15 (USD local currency; no FX conversion)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Students pay mandatory UnitedHealthcare health insurance (~USD 1,180/semester unless waived via https://iss.ku.edu/waivers by 1st day of class), Orientation Fee (USD 290), ISS Check-In Fee (USD 40), and KUID card (USD 21) — billed after arrival/enrollment.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=5",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Exchange students arrange their own housing once admitted with KUID (https://housing.ku.edu; early move-in ~$40/night). On-campus options: apartments (Jayhawker Towers, Stouffer, McCarthy — open over breaks, optional dining) or Residence Halls (GSP, Corbin, Ellsworth, Hashinger open to all levels; mandatory dining plan at https://union.ku.edu/dining-plans; closed Winter Break unless extra fee paid). Fall-only students can opt out of Spring from AY contracts free of charge. Off-campus adjacent alternative: Naismith Hall (https://www.naismithhall.com/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor (student) DS-2019 required; must arrive no later than DS-2019 Start Date (= Orientation Arrival Date). Proof of financial support must cover the ENTIRE J-1 duration using bank statements/letters <6 months old or sponsorship letters (+ signed Affidavit of Financial Support if not student's own funds) per https://iss.ku.edu/proof-finances and Fact Sheet #page=2,4.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": "Also cites #page=2 (financial docs), 2026 UG Application Instructions #page=4 (select J-1 Exchange Visitor), and https://iss.ku.edu/proof-finances."
+  },
+  "official_website_url": {
+    "value": "https://www.ku.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:117",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studyabroad.ku.edu/exchangestudents",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=5",
+    "notes": "Also verified via search_web."
+  },
+  "course_catalog_url": {
+    "value": "https://classes.ku.edu",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": "Academics overview: https://www.ku.edu/academics/"
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All KU regular coursework at classes.ku.edu is in English."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours. Exchange students must enroll full-time within exact caps: Undergraduates 12–15 credits/semester (typically 4–5 classes); Graduates 9 credits/semester (up to 12 max). Exceeding 15 UG / 12 Grad credits triggers direct tuition/fee charges; max 1 online course/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Enrollment blocked until AEC English test/waiver, 'You at KU' orientation registration, and health check-in appointment are completed. Must select Lawrence campus courses only (KU Med/Edwards/Regents prohibited), avoid Athletic Training/Law/Medicine/Pharmacy, and submit >=2 alternate courses. Independent Study/research credit typically unavailable; portfolios/auditions may apply for Architecture/Design/Art/Music.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online 'KU Non-Degree Study Abroad' application via https://world.ku.edu/apply (enter exchange fee waiver code 42626669ku)",
+      "Official current university transcript + list of courses in progress",
+      "Copy of passport",
+      "Evidence of financial support",
+      "Assessment of Functional Level of English form (for J-1 DS-2019)",
+      "English test score report (optional, for AEC exam waiver)",
+      "Portfolio or audition (Architecture, Design, Visual Art, or Music only)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": "Fee waiver code 42626669ku and online portal steps confirmed in 2026 UG Application Instructions #page=1-5."
+  },
+  "academic_style": {
+    "value": "Comprehensive US AAU research university (~30,000 students, ~200 majors) on 950-acre Mount Oread campus in Lawrence, KS; classes may combine large lectures with LAB/DIS sections; AEC coursework offered if English placement requires.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=1",
+    "notes": "950-acre Mount Oread campus figure confirmed on ku.edu."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory 'You at KU' orientation via ISS (https://iss.ku.edu/newly-admitted-students) including immigration check-in, shuttled shopping excursions, and social activities (#page=4); Applied English Center (https://studyabroad.ku.edu/applied-english-center); Campus Fee covers recreation/fitness center, campus bus, library, health center, >500 student groups (#page=1,5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Full Academic Year: Nomination 1 March (at least 2 weeks pre-app) / Application 15 March; Spring: Nomination 1 October / Application 15 October.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kansas University/Fact Sheet 2026-27/KU Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

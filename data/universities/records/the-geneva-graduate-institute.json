@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-geneva-graduate-institute",
+  "excel_rows": [
+    112
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1mTOlheD9ZzGYkR1yDJu14gwJdVwbM6NV",
+      "https://drive.google.com/drive/folders/1EPeCUtSgeYB8_vhNMkhzoCU9WR3GoQo_",
+      "https://drive.google.com/drive/folders/1UxIwZU3YHRbXh8DSuQkrNC8U4WVQfT9x"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf",
+      "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf.txt",
+      "data/raw/extracted/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf.txt"
+    ],
+    "notes": "Col H link (1mTOlheD9ZzGYkR1yDJu14gwJdVwbM6NV) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The Geneva Graduate Institute",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Switzerland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Geneva",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR",
+      "PhD"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Graduate/PhD exchange open only to partner-nominated students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Priority to MRS MA students, then PPAD and Law students",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=112",
+    "notes": "Excel row 112 specifies GR & PhD exchange with priority to MRS MA students, then PPAD and Law students — all within AUC's School of Global Affairs and Public Policy (GAPP)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Migration and Refugee Studies (MRS)",
+      "Public Policy and Administration (PPAD)",
+      "Law"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=112",
+    "notes": "Priority order per Excel row 112: 1) MRS MA, 2) PPAD and Law."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Majority of courses taught in English; bilingual policy allows participation/written work in either English or French."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Fact sheet page 2 states 'The majority of classes at the Institute, however, are taught in English.'"
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 100, IELTS 7, Cambridge CPE (Grades A, B, or C), or Cambridge CAE (Grades A or B).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (knowledge of French is not required; bilingual English/French submission policy).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Autumn Semester: Info sessions Sep 14, 2026; Classes Sep 15 – Dec 18, 2026 (make-ups Dec 14–18); Semester ends Feb 19, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.graduateinstitute.ch/academic-calendar",
+    "notes": "URL embedded in fact sheet page 2; 2024-2025 sheet also noted mid-Sep to Dec 20."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Classes Feb 22 – Jun 4, 2027 (Easter Break Mar 26 – Apr 4, 2027); Semester ends Sep 17, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.graduateinstitute.ch/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Fact sheet page 2 states: 'exchange students are not required to pay tuition fees to the Graduate Institute.'"
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "CHF",
+      "min": 1800,
+      "max": 2000
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Fact sheet page 2 budgets 1,800–2,000 CHF/month for a modest student lifestyle in Geneva."
+  },
+  "living_cost_usd_est": {
+    "value": 11331.1,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "5-month exchange semester estimate: midpoint 1900 CHF/month (range 1800–2000 CHF) * 5 months * (1.1052 / 0.9266) = 11331.10 USD using ECB 2026-11-13 euro reference rates (1 EUR = 1.1052 USD, 1 EUR = 0.9266 CHF -> 1 CHF = 1.192748 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Health and accident insurance are compulsory in Switzerland (https://www.graduateinstitute.ch/insurance).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Exchange students may apply for housing in the Institute's Student Residences (Picciotto House & Grand Morillon; 2026-2027 rates ~714–1,224+ CHF/month depending on room type at https://www.graduateinstitute.ch/housing)."
+  },
+  "housing_notes": {
+    "value": "Eligible to apply for Institute Student Residences (Edgar and Danièle de Picciotto House & Grand Morillon, ~714–1,224+ CHF/month in 2026-2027) via https://www.graduateinstitute.ch/housing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU citizens typically require a Swiss student visa (filed with Swiss embassy after admission; processing can take up to 3 months) plus mandatory Geneva residence permit via OCP upon arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://graduateinstitute.ch/home.html",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:112",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://graduateinstitute.ch/programmes/exchange-programmes/incoming-exchange-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://iheid.pocketcampus.org/dashboard",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; average MA exchange workload is 5 weekly courses = 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Most courses open to exchange students except compulsory courses for regular degree students and workshops; registration subject to space (adjustable during week 1); AUC agreement prioritizes MRS MA, then PPAD and Law.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": "Priority disciplines per Excel row 112."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "European/Swiss graduate institute (ECTS, bilingual English/French)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn Semester: Application Apr 1 (nomination 2 weeks prior, ~Mar 18); Spring Semester: Application Nov 1 (nomination 2 weeks prior, ~Oct 18).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Geneva Graduate Institute/Geneva Graduate Institute of International and Development Studies.pdf#page=1",
+    "notes": "Apr 1 / Nov 1 deadlines also live on graduateinstitute.ch."
+  },
+  "ext": {}
+}

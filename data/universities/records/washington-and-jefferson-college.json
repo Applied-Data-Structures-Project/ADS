@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "washington-and-jefferson-college",
+  "excel_rows": [
+    157
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Washington & Jefferson College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "short_name": {
+    "value": "W&J",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Pennsylvania",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "city": {
+    "value": "Washington",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No fixed numeric incoming exchange GPA requirement confirmed directly on washjeff.edu (requires official partner institution nomination)."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must submit TOEFL (target >=85 iBT / 580 PBT / 233 CBT), IELTS (target >=6.5), or Duolingo English Test (SAT Critical Reading >600 or ELPT may also be considered). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (English-medium college).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Matriculation 24 Aug 2026; Classes begin 25 Aug 2026; Add/Drop ends 31 Aug 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2026-2027-Academic-Calendar.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes begin 12 Jan 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2026-2027-Academic-Calendar.pdf",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "W&J states exchange tuition/room/board terms depend on the bilateral institutional agreement; Tuition Exchange program on washjeff.edu is an employee-dependent benefit, not incoming partner exchange."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1978,
+      "max": 2067
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/total-cost-of-attendance/",
+    "notes": "Derived from W&J 2026-27 9-month non-tuition COA components totaling USD 17,806-18,606 (Standard Double Housing USD 9,090 + 19-Meal Board USD 6,516 + Books/Supplies USD 1,000 + Personal USD 1,000 + Travel USD 200-1,000) divided by 9 months = USD 1,978.44-2,067.33/month (excludes mandatory CISI health insurance ~USD 115/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 10114.44,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/total-cost-of-attendance/",
+    "notes": "5-month USD estimate from W&J 2026-27 9-month Housing/Food/Books/Personal/Travel budget USD 17,806-18,606 (midpoint USD 18,206 / 9 = USD 2,022.89/mo x 5 = USD 10,114.44; excludes CISI insurance ~USD 115/mo), collected 2026-11-15 (USD local currency; no FX conversion)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "All international exchange students MUST purchase W&J's mandatory non-waivable CISI student health insurance plan (~USD 115/month, billed upfront for Fall/AY).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "On-campus housing is guaranteed and required for exchange students (double room assignments with campus meal plan; residence/dining halls close over major winter breaks). 2026-27 standard double room USD 9,090/year + 19-meal board USD 6,516/year (https://www.washjeff.edu/total-cost-of-attendance/).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires US F-1/J-1 immigration form (I-20/DS-2019) backed by financial support proof covering any non-waived housing/meals/personal expenses and mandatory CISI health insurance (contact studyabroad@washjeff.edu).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.washjeff.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:157",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.washjeff.edu/international-admission/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/international-admission/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Exchange Student Admissions Application",
+      "1 recommendation letter from current professor",
+      "Financial Certification Form + notarized bank statement",
+      "Recent head-and-shoulders photograph",
+      "Short essay in English explaining reasons to study at W&J",
+      "Official English proficiency proof (TOEFL, IELTS, or Duolingo)",
+      "Copy of passport photo page",
+      "Official university-sealed academic transcript",
+      "Housing Preference Form",
+      "Copy of current academic schedule",
+      "Course Selection Form (4 preferred + 4 alternate courses)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Free airport pick-up from Pittsburgh International Airport (PIT) on designated arrival days and on-campus free laundry (washjeff.edu; Office of Global Education studyabroad@washjeff.edu).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: Nomination 1 March, Application 15 March. Spring / Calendar Year: Nomination 1 October, Application 15 October.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washjeff.edu/wp-content/uploads/2022/03/International-Exchange-Student-Checklist-W-J-College.pdf",
+    "notes": null
+  },
+  "ext": {}
+}

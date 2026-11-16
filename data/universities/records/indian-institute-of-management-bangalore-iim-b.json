@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "indian-institute-of-management-bangalore-iim-b",
+  "excel_rows": [
+    43
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Hq2Uskyx3z1i69tKpu4WoJ9D6tgLkGyU"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Indian Institute of Management Bangalore (IIM-B)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IIM-B",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "country": {
+    "value": "India",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bengaluru (Bangalore)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "region": {
+    "value": "South Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be in 2nd year of MBA/PGP (having completed foundation courses) or 5th year of a 5-year integrated degree; undergraduate and 1st-year graduate students are ineligible.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Management",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English proficiency certificate or endorsement letter from home university required; no standardized test score minimum or RHET 1020 mention specified.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": "Fall (semester V)"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Term V (Fall): Teaching Aug 31-Nov 21, 2026; mid-terms Oct 5-10, 2026; end-terms Nov 23-28, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iimb.ac.in/student-exchange-programme",
+    "notes": "2020-2021 Fact Sheet confirms Term V spans Aug-Nov."
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory worldwide health insurance covering at least INR 200,000 (~USD 3,500) valid in India for the duration of stay.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": "On-campus hostel accommodation subject to availability; otherwise OIA provides contact info for nearby off-campus serviced apartments/hotels (confirmed on https://www.iimb.ac.in/about-institute/life-iimb/accommodation)."
+  },
+  "housing_notes": {
+    "value": "On-campus hostel (subject to availability): INR 20,000/term + veg mess INR 25,000/month (+ INR 4,000 non-veg). Off-campus alternatives: serviced apartments ~INR 20,000/month (excl. food) or nearby hotels INR 1,600-3,500/day (per 2020-2021 fact sheet; current page https://www.iimb.ac.in/about-institute/life-iimb/accommodation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": "Exchange program at IIMB is not open to students holding an Indian passport.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iimb.ac.in/student-exchange-programme",
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Student Visa only required (no tourist visa); IIMB provides admission letter for visa application but does not issue financial guarantees. Lead time not specified.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.iimb.ac.in/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:43",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.iimb.ac.in/student-exchange-programme",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iimb.ac.in/student-exchange-programme",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Most courses carry 3 credits (some 1.5 credits); 1 credit = 10 classroom contact hours. Required credit workload is determined by the student's home institution.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Restricted to Term V graduate PGP/MBA elective courses (open to 2nd-year MBA/PGP or 5th-year integrated students who completed foundation coursework; mandatory 80% attendance per course per iimb.ac.in).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online Sarvam ERP upload",
+      "Brief resume",
+      "2 passport-size photos",
+      "Latest academic transcript",
+      "Infectious-disease-free health certificate",
+      "Passport and visa copy",
+      "Signed hostel code of conduct",
+      "Signed release-cum-indemnity bond",
+      "English proficiency certificate/letter"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Rigorous postgraduate management curriculum with mandatory minimum 80% attendance per course and mid-term plus end-term examinations.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iimb.ac.in/student-exchange-programme",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ATHITHI weekend host-family program with IIMB alumni families; Office of International Affairs (OIA) pre-arrival accommodation and ERP onboarding support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Management Bangalore (IIM-B)/Indian Instit. Manag-Bangalore.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Term V nomination deadline Apr 1 (2026-2027 cycle).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.iimb.ac.in/student-exchange-programme",
+    "notes": "Student application deadline after Apr 1 nomination not separately published on public page."
+  },
+  "ext": {}
+}

@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "bogazici-university",
+  "excel_rows": [
+    12
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=13ezxaaoi1bjFIwHkgGz7yy517C0d8ESP",
+      "https://drive.google.com/drive/folders/1ahLatRfYa7MkpPh2QYMis6kyQIZq8ZfY"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Bogazici/2023-2024/Boğaziçi University.pdf",
+      "data/raw/factsheets/Bogazici/2024-2025/Bogazici University Factsheet 2024-2025.pdf",
+      "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Bogazici/2023-2024/Boğaziçi University.pdf.txt",
+      "data/raw/extracted/Bogazici/2024-2025/Bogazici University Factsheet 2024-2025.pdf.txt",
+      "data/raw/extracted/Bogazici/2026-2027/Fact sheet 2026-2027.pdf.txt"
+    ],
+    "notes": "Col H link (13ezxaaoi1bjFIwHkgGz7yy517C0d8ESP) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Boğaziçi University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Istanbul",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by home university; Boğaziçi reviews applications and individual academic units decide on admission (exchange students must take at least one course from their registered host department).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=9",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 Fact Sheet pp.5-7 lists 34 UG programs across 7 faculties and 7 graduate institutes open to incoming students without listing explicit excluded majors (note some Law and Turkish Language & Literature courses are in Turkish on p.4)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No fixed numeric minimum GPA published for incoming exchange students in AY 2026-2027 Fact Sheet or intl.bogazici.edu.tr (2.50 UG / 3.00 GR applies to outgoing Boğaziçi students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Turkish"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=4",
+    "notes": "100% English-medium institution; some courses in the Department of Law and Department of Turkish Language and Literature are offered in Turkish."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=4",
+    "notes": "AY 2026-2027 Fact Sheet p.4 states Boğaziçi University is a 100% English-medium institution (some Law and Turkish Language & Literature courses offered in Turkish)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must provide proof of CEFR B2 or higher: TOEFL iBT 79+ (Writing 22+), IELTS 6.5+, Cambridge Assessment English C1, OR a formal signed B2/C1 certification letter from the home university (no explicit RHET 1020 exemption stated).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=9",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-medium coursework; Turkish applies only to certain courses in Law and Turkish Language and Literature (credited Turkish language courses are offered to exchange students).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=4",
+    "notes": "Credited Turkish language courses noted on Fact sheet 2026-2027.pdf#page=3."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester (AY 2026-2027): Online pre-registration deadline Aug 20, 2026; Orientation Sep 14, 2026; Online course registration Sep 15-17, 2026; Classes Sep 21 – Dec 11, 2026; Final exams through Dec 22, 2026 (Make-up exams Dec 23-25, 2026).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://akademiktakvim.bogazici.edu.tr/en",
+    "notes": "Fact sheet 2026-2027.pdf#page=3 states mid-September to January overview and points to https://akademiktakvim.bogazici.edu.tr/en."
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester (AY 2026-2027): Online pre-registration deadline Dec 25, 2026; Orientation Jan 12, 2027; Online course registration Jan 13-15, 2027; Classes Jan 18 – Apr 22, 2027; Final exams Apr 25 – May 4, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://akademiktakvim.bogazici.edu.tr/en",
+    "notes": "Fact sheet 2026-2027.pdf#page=3 states February to mid-June overview and links to https://akademiktakvim.bogazici.edu.tr/en."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://intl.bogazici.edu.tr/",
+    "notes": "Incoming exchange students under reciprocal bilateral agreements pay tuition to their home university and study tuition-free at Boğaziçi (distinct from fee-paying Visitor/Freemover program)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 Fact Sheet p.10 notes dining hall meals cost 75 TRY, but publishes no official monthly living cost budget."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Boğaziçi University has no separate institutional health insurance requirement, but Turkish law requires valid health insurance covering the full stay for the mandatory Student Residence Permit (EU reciprocity public insurance or private health insurance purchased in Turkey).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=11",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=10",
+    "notes": "AY 2026-2027 Fact Sheet p.10 explicitly states: 'Boğaziçi University does not offer on-campus housing for incoming students.'"
+  },
+  "housing_notes": {
+    "value": "AY 2026-2027 Fact Sheet p.10 states Boğaziçi University does not offer on-campus housing for incoming students; students must arrange their own off-campus accommodation (contact residencepermit@bogazici.edu.tr for recommendations).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=10",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Nationalities eligible for touristic entry may enter Türkiye with an e-Visa or passport entry stamp and complete university registration; other nationalities must obtain a Student Visa (not an internship visa) from a Turkish embassy/consulate beforehand. All students must enter with a valid passport (not national ID) and apply for a Turkish Student Residence Permit after arrival with valid health insurance and proof of accommodation.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=11",
+    "notes": "Pre-arrival country visa rules checked via http://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa (per 2023-2024 guide p.4); exact lead time and financial threshold not stated in AY 2026-2027 Fact Sheet."
+  },
+  "official_website_url": {
+    "value": "http://bogazici.edu.tr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:12",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://intl.bogazici.edu.tr/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://registration.bogazici.edu.tr/schedule.htm",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Boğaziçi is a 100% English-medium institution (except some Law and Turkish Language & Literature courses); view term schedules at http://registration.bogazici.edu.tr/schedule.htm (select 2026/2027-1 Fall or 2026/2027-2 Spring)."
+  },
+  "credit_system_and_load": {
+    "value": "Boğaziçi credit-hour system (typical course is 3-4 credits / 5-7 ECTS); incoming exchange students take 4-6 courses totaling 17-21 Boğaziçi credits (~20-30 ECTS) per semester. Grading scale: AA (4.0) to DD (1.0) pass, F (0.0) fail.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Exchange students must take at least 1 course from their registered host department (Erasmus >=2); application course lists are provisional and finalized during registration subject to quotas and instructor consent. Some Law and Turkish Language & Literature courses are taught in Turkish.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=9",
+    "notes": "Provisional list, registration quotas, and instructor consent noted on p.3; Turkish-taught Law/TLL courses on p.4."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination (via Google Form or EWP)",
+      "Official academic transcript in English",
+      "Provisional course list (at least 1 course in host department)",
+      "Statement of Purpose",
+      "One letter of recommendation from a university instructor (English or Turkish)",
+      "Proof of English proficiency (CEFR B2+ certificate or home university letter)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=9",
+    "notes": "Online application portal link is sent after home university nomination (Fact sheet p.8)."
+  },
+  "academic_style": {
+    "value": "100% English-medium Turkish public research university offering 34 UG programs across 7 faculties and 7 graduate institutes; American-style credit-hour system requiring academic advisor course approval at registration.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=4",
+    "notes": "Program listing on pp.5-7; advisor approval during registration on p.8."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=10",
+    "notes": "AY 2026-2027 Fact Sheet p.10 explicitly lists dining halls across six campuses: North, South, Hisar, Sarıtepe, Kandilli, and Anadolu Hisarı."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation covering course registration, campus life, and procedures; Office of International Relations incoming advising and Residence Permit Operations team; 40+ student clubs, sports centers, cultural series, and credited Turkish language courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=8",
+    "notes": "Turkish courses on p.3; campus life & clubs on p.10; Residence Permit Operations on p.14."
+  },
+  "nomination_deadlines": {
+    "value": "Spring 2027: Nomination Sep 15, 2026, Application Oct 15, 2026; Fall / Full Year 2027-2028: Nomination Apr 15, 2027, Application May 15, 2027; Spring 2028: Nomination Sep 15, 2027, Application Oct 15, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bogazici/2026-2027/Fact sheet 2026-2027.pdf#page=9",
+    "notes": "Also summarized on p.8."
+  },
+  "ext": {}
+}

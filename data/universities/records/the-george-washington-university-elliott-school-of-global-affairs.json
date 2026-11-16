@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-george-washington-university-elliott-school-of-global-affairs",
+  "excel_rows": [
+    113
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/152mbKfihE9FpT3jLRbwTp98HcoFyuN1J",
+      "https://drive.google.com/drive/folders/1QxTTHQ29L5f1bv07KMkQN6MrN49cHpBq"
+    ],
+    "local_files": [
+      "data/raw/factsheets/GW/2025 Fact sheet for partners, Elliott School.pdf",
+      "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf",
+      "data/raw/factsheets/The George Washington University/2026-2027/Spring 2026 Fact Sheet (1).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/GW/2025 Fact sheet for partners, Elliott School.pdf.txt",
+      "data/raw/extracted/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf.txt",
+      "data/raw/extracted/The George Washington University/2026-2027/Spring 2026 Fact Sheet (1).pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The George Washington University Elliott School of Global Affairs",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "short_name": {
+    "value": "GW",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "District of Columbia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "city": {
+    "value": "Washington",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Master's-only exchange (must be enrolled in a Master's program in international relations, area studies, political science, or related fields, nominated by home institution, with cumulative GPA >= 3.0/4.0).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "GAPP",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": "Mapped from Excel Col G agreement scope 'GAPP'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col G lists school scope 'GAPP'; Elliott Fact Sheet p.1 specifies Master's students in international relations, area studies, political science, and related fields."
+  },
+  "excluded_majors": {
+    "value": [
+      "Undergraduate programs (not included in Elliott School Master's exchange; handled separately by GW Office for Study Abroad)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "Cumulative GPA of 3.0/4.0 (B average) or equivalent required."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT >= 100 (PBT >= 600, CBT >= 250), IELTS >= 7.0 (no band below 6.0), Duolingo >= 120, or PTE >= 68. RHET 1020 not applicable (Master's exchange).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (TOEFL iBT >= 100, IELTS >= 7.0 w/ min 6.0 bands, Duolingo >= 120, or PTE >= 68).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes Aug 24 - Dec 8, 2026 (Fall Break Oct 12-13; Thanksgiving Nov 23-28; orientation held week before classes start per Fact Sheet p.1).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.gwu.edu/academic-calendar",
+    "notes": "Orientation timing from data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes Jan 11 - Apr 26, 2027; Final Exams May 1 - May 7, 2027 (Spring Break Mar 8-13; orientation held week before classes start per Fact Sheet p.1).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.gwu.edu/academic-calendar",
+    "notes": "Orientation timing from data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory GW Student Health Insurance Plan (Aetna SHIP): F-1 and J-1 international students are automatically enrolled and billed to their student account unless granted an approved waiver meeting strict ACA/D.C.-network standards. U.S. Dept. of State J-1 minimums apply ($100,000 medical/accident, $25,000 repatriation, $50,000 evacuation, <=$500 deductible).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://healthcenter.gwu.edu/health-insurance",
+    "notes": "Student billing info at https://studentaccounts.gwu.edu/student-health-insurance; J-1 federal insurance minimums verified via https://internationalservices.gwu.edu/."
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "Fact Sheet p.1: 'GW does not offer on-campus housing for Master's exchange students. Students must arrange their own housing, off-campus.'"
+  },
+  "housing_notes": {
+    "value": "No on-campus housing for Master's exchange students; must arrange off-campus housing independently. Resources provided by Off-Campus Student Affairs (https://www.gwoffcampus.com/) and International Student House DC (http://www.ishdc.org/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa required (GW issues Form DS-2019 upon acceptance). Applicants must submit original English/USD financial documentation matching program cost estimates for DS-2019 issuance (exact DS-2019 processing lead time and Elliott-specific exchange living budget not published in Fact Sheet).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "ISO pre-arrival & financial doc rules on https://internationalservices.gwu.edu/before-you-arrive (excluded J-1 Student Interns $2,000/mo threshold and CCAS VRF $24,000/yr as non-Elliott cohorts)."
+  },
+  "official_website_url": {
+    "value": "http://elliott.gwu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:113",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://elliott.gwu.edu/graduate-global-experiential-learning",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://www.gwu.edu/~schedule",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "Fact Sheet p.1 instructs clicking 'Main Campus' for the appropriate semester."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All Main Campus courses in http://www.gwu.edu/~schedule are taught in English; no separate English-only list exists."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Open to Master's students in international relations, area studies, political science, and related fields (select 'Main Campus' on GW Schedule); undergraduate exchange is not covered under the Elliott School agreement.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home institution nomination",
+      "Academic record demonstrating >= 3.0/4.0 cumulative GPA (B average)",
+      "English language proficiency score report (TOEFL 100 iBT / 600 PBT / 250 CBT, IELTS 7.0 w/ min 6.0 bands, Duolingo 120, or PTE 68)"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "Additional portal/visa upload steps (VRF/financial proof) coordinated post-nomination via https://elliott.gwu.edu/graduate-global-experiential-learning."
+  },
+  "academic_style": {
+    "value": "Graduate international affairs school in Washington, D.C. (~700+ graduate students across 12 MA programs and 11 policy research institutes) emphasizing interdisciplinary, policy-focused Master's study.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.gwu.edu/foggy-bottom-campus",
+    "notes": "Foggy Bottom urban campus in the heart of Washington, D.C. (3 campus libraries, Metro access to Capitol); also described at data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=2."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Elliott School International Education & Student Services advising (esintl@email.gwu.edu), week-before-classes orientation, GW International Services Office DS-2019/visa support, and Off-Campus Student Affairs resources.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": "ISO arrival resources also at https://internationalservices.gwu.edu/before-you-arrive."
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester (Sept-Dec): Apply by March 31; Spring Semester (Jan-May): Apply by October 31 (home institution nomination required).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The George Washington University/2026-2027/Elliott School Fact Sheet ( Updated).pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

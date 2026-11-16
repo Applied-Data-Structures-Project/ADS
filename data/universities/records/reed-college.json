@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "reed-college",
+  "excel_rows": [
+    93
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=15GVCZnmwd1ozW-04TBOSRSCOY2jA50AG",
+      "https://drive.google.com/drive/folders/1XyLRXL4qDbuj5fY6EDwj5bouG996qzmo"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Reed College/Reed College.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Reed College/Reed College.docx.txt"
+    ],
+    "notes": "Col H link (15GVCZnmwd1ozW-04TBOSRSCOY2jA50AG) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Reed College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Reed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Oregon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "city": {
+    "value": "Portland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange minimum GPA stated in Reed fact sheet stub or verified official Reed page."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exact incoming exchange TOEFL/IELTS/RHET-waiver rules require confirmation with Reed International Student Services (observed web scores were from third-party partner guides)."
+  },
+  "host_language_requirement": {
+    "value": "English (primary language of US institution).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: Classes Aug 31-Dec 9, 2026; Reading Period Dec 10-13, 2026; Final Exams Dec 14-17, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Classes Jan 25-Apr 30, 2027; Reading Period May 3-9, 2027; Final Exams May 10-13, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral exchange partner per Excel; Reed fact sheet stub and cost-of-attendance page do not explicitly state bilateral tuition waiver terms."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Reed publishes annual/semester living costs rather than a monthly range (AY 2026-27 on-campus dorm USD 9,720/yr, Meal Plan A USD 9,180/yr, books USD 1,050/yr, personal USD 900/yr = USD 10,425/semester; off-campus budget USD 12,690/yr)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official monthly local living range published; see AY 2026-27 Cost of Attendance semester figures in housing_notes."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Student Body Fee USD 310/yr (USD 155/sem per 2026-27 COA); J-1 exchange visitors and dependents must maintain federally compliant comprehensive medical insurance throughout their program.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/international-student-services/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/res_life/residence-halls/index.html",
+    "notes": "On-campus residence halls and college apartments available via Residence Life housing portal."
+  },
+  "housing_notes": {
+    "value": "AY 2026-27 on-campus dorm USD 9,720/yr (USD 4,860/sem), college apartments USD 10,870-12,560/yr, Meal Plan A USD 9,180/yr (Plans B/C USD 8,750/8,190), books USD 1,050/yr, personal USD 900/yr.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/financial-aid/cost-of-attendance.html",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.reed.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:93",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No dedicated public incoming-exchange URL published in local DOCX stub or verified reed.edu search."
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.reed.edu/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.reed.edu/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "Reed unit system; F-1 and J-1 students must enroll full-time in at least 3 units per semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.reed.edu/international-student-services/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Portland, Oregon; schema city_tier not explicitly classified in Reed docs."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Portland campus; schema campus_type not explicitly classified in Reed docs."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

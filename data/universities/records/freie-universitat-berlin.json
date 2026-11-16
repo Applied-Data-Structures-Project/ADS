@@ -1,0 +1,380 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "freie-universitat-berlin",
+  "excel_rows": [
+    36,
+    37
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1wuN41flUPswGwd4J60yc2WHJ_zYAUkTR",
+      "https://drive.google.com/drive/folders/1s1UPTvrn81gxWfUkqtkfM2cVZ05dJqUB"
+    ],
+    "local_files": [
+      "data/raw/factsheets/FUBerlin/2024-2025/Courses/FUB English Courses Summer 2024.pdf",
+      "data/raw/factsheets/FUBerlin/2024-2025/Courses/FUB English Courses Winter 2023-24.pdf",
+      "data/raw/factsheets/FUBerlin/2024-2025/Fact Sheet Direct Exchange Program FU Berlin academic year 2025-2026.pdf",
+      "data/raw/factsheets/FUBerlin/26-27/FUB English Courses Summer 2025.xlsx",
+      "data/raw/factsheets/FUBerlin/26-27/FUB English Courses Winter 2024-25.xlsx",
+      "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf",
+      "data/raw/factsheets/FUBerlin/Fact Sheet Direct Exchange Program FU Berlin academic year 2022-2023.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/FUBerlin/2024-2025/Courses/FUB English Courses Summer 2024.pdf.txt",
+      "data/raw/extracted/FUBerlin/2024-2025/Courses/FUB English Courses Winter 2023-24.pdf.txt",
+      "data/raw/extracted/FUBerlin/2024-2025/Fact Sheet Direct Exchange Program FU Berlin academic year 2025-2026.pdf.txt",
+      "data/raw/extracted/FUBerlin/26-27/FUB English Courses Summer 2025.xlsx.txt",
+      "data/raw/extracted/FUBerlin/26-27/FUB English Courses Winter 2024-25.xlsx.txt",
+      "data/raw/extracted/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf.txt",
+      "data/raw/extracted/FUBerlin/Fact Sheet Direct Exchange Program FU Berlin academic year 2022-2023.pdf.txt"
+    ],
+    "notes": "Col H link (1wuN41flUPswGwd4J60yc2WHJ_zYAUkTR) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Freie Universität Berlin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "short_name": {
+    "value": "FU Berlin",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": "Official abbreviation used in AY 2026/2027 Fact Sheet header/footer and fu-berlin.de."
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Berlin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": "Excel Col D note: 'Exchange and erasmus'"
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by home university; in general BA students cannot enroll in Master's programs or individual Master's-level courses (case-by-case departmental exceptions possible); visiting PhD enrollment possible with prerequisites.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": "Application eligibility also summarized on Fact Sheet p.1."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' across merged rows 36-37 (subject exclusions noted in excluded_majors)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' across merged rows 36-37 (subject exclusions noted in excluded_majors)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Human Medicine",
+      "Veterinary Medicine",
+      "Fee-based continuing education master's programs"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-2027 incoming Direct Exchange fact sheet specifies no numeric minimum GPA (2.5 GPA in FU web search results refers to FU outgoing students, not incoming exchange)."
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": "AY 2026-2027 Fact Sheet p.1 states almost all undergraduate subjects are taught in German and English courses outside English/North American Studies are very limited in number (supplemented by Exchange courses and Drive English course snapshots Winter 2024-25 & Summer 2025)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "No general English test certificate stated for most departments; CEFR C1 English level required for courses at the John F. Kennedy Institute for North American Studies.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Exempt from DSH/TestDaF exam and no certificate required (home university verifies); expected German CEFR B2 for Humanities & Social Sciences and B1 for Natural Sciences. Optional pre-semester 6-week intensive German course (~900 EUR, all levels incl. beginners) and free in-semester German courses (placement test required).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": "Optional pre-semester and free in-semester German course details on Fact Sheet p.2."
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": "AY/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Winter Term 2026/2027: Semester Oct 1, 2026 – Mar 31, 2027; Orientation first week of October; Lecture period Oct 12, 2026 – Feb 19, 2027; Exams typically during last two weeks of lecture period (varies by department).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer Term 2027: Semester Apr 1, 2027 – Sep 30, 2027; Orientation first week of April; Lecture period Apr 12, 2027 – Jul 23, 2027; Exams typically during last two weeks of lecture period (varies by department).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": "Fact Sheet p.2 states exchange students are exempt from university tuition fees, though mandatory semester ticket and social fees still apply."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 934,
+      "max": 934
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.fu-berlin.de/en/sites/cairo/faq/faq-study/living-costs/index.html",
+    "notes": "Official FU Berlin Cairo FAQ lists minimum 934 EUR/month (rental fees, groceries, leisure). AY 2026-2027 Fact Sheet (#page=2,#page=3) separately cites ERG housing 500-1,200 EUR/month, student health insurance ~150 EUR/month (under age 30), and mandatory semester/social fees ~310 EUR/semester; German federal student visa blocked-account threshold is 992 EUR/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5161.28,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.fu-berlin.de/en/sites/cairo/faq/faq-study/living-costs/index.html",
+    "notes": "Converted from FU Berlin official minimum monthly estimate of 934 EUR over 5 months: 934 EUR * 5 * FX rate 1.1052 USD/EUR = 5,161.28 USD. FX rate 1 EUR = 1.1052 USD from ECB Euro reference exchange rates for 2026-11-13 (latest prior to 2026-11-15), retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Exempt from university tuition; mandatory semester ticket and social fees ~310 EUR/semester (paid prior to arrival). Mandatory comprehensive German health insurance required for enrollment and residence permit (~150 EUR/month for students under age 30 via German public student insurance; external waivers rarely accepted unless EHIC/GHIC or unlimited coverage).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "No on-campus accommodation available (per AY 2025-2026 Fact Sheet #page=3). Students may arrange private housing (e.g., WG shared flats) or apply via FU Berlin's ERG Accommodation Service (dorms, shared apartments, furnished single apartments; ~500-1,200 EUR/month). First-come, first-served; mandatory online registration deadlines June 10 (Winter term) and December 10 (Summer term).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": "ERG Accommodation Service options, ~500-1,200 EUR/month range, and June 10 / Dec 10 registration deadlines from AY 2026-2027 Fact Sheet #page=3; 'no on-campus accommodation available' corroborated in data/raw/factsheets/FUBerlin/2024-2025/Fact Sheet Direct Exchange Program FU Berlin academic year 2025-2026.pdf#page=3."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "PROMOS/DAAD links found via web search apply to outgoing FU Berlin students; no incoming host stipend confirmed for AUC Direct Exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA/non-exempt nationals (incl. Egypt) must obtain a German student visa prior to arrival (processing takes at least 8 weeks, up to several months, per Fact Sheet #page=2). After arrival, non-EU students apply for a Berlin residence permit (Aufenthaltserlaubnis) via LEA/FU Pass-Service (typically 8 to 14 weeks processing). Financial proof (e.g., blocked account / Sperrkonto) required per German Federal Foreign Office standard (992 EUR/month / 11,904 EUR/year; FU Berlin general FAQ lists >=934 EUR/month).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": "Pre-arrival entry visa requirement & >=8 weeks visa processing from AY 2026-2027 Fact Sheet #page=2; Berlin residence permit 8-14 week timeline from https://www.fu-berlin.de/en/studium/international/studium_fu/einreise_aufenthalt/aufenthaltserlaubnis/index.html; blocked account 992 EUR/mo (11,904 EUR/yr) from https://www.auswaertiges-amt.de/en/sperrkonto/388600; FU >=934 EUR/mo baseline from https://www.fu-berlin.de/en/sites/cairo/faq/faq-study/living-costs/index.html."
+  },
+  "official_website_url": {
+    "value": "https://www.fu-berlin.de/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:36,37",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.fu-berlin.de/en/studium/international/studium_fu/auslandssemester/direktaustausch_in/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": "Embedded official incoming Direct Exchange URL in AY 2026-2027 Fact Sheet p.1 and verified via fu-berlin.de search."
+  },
+  "course_catalog_url": {
+    "value": "https://www.fu-berlin.de/vv/en/fb",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": "Official FU Berlin course catalog URL embedded in AY 2026-2027 Fact Sheet p.3."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No standalone static live English-only course list URL; use language filter in https://www.fu-berlin.de/vv/en/fb. Past-term Drive snapshots exist in data/raw/factsheets/FUBerlin/26-27/FUB English Courses Winter 2024-25.xlsx & Summer 2025.xlsx."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (Leistungspunkte/LP); regular full-time workload is 30 ECTS per semester (FU recommends 10-30 ECTS for exchange students; no strict host minimum). Grading scale (except Law): 1.0-1.5 very good, 1.6-2.5 good, 2.6-3.5 satisfactory, 3.5-4.0 sufficient, 5.0 fail.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": "Grading scale table detailed on Fact Sheet p.4."
+  },
+  "course_restrictions_note": {
+    "value": "Human Medicine, Veterinary Medicine, and fee-based continuing education Master's programs are closed. Biochemistry, bioinformatics, and biology depend on lab availability and prior departmental approval; restrictions apply in Pharmacy, Law (prefers reciprocal Law exchange partners), and Business & Economics (requires B2+ German; very limited irregular English offerings). Master's courses other than Modern German Literature, Philosophy, and Political Science require prior departmental approval; BA students generally cannot take Master's courses. Cross-registration at HU Berlin, TU Berlin, and University of Potsdam possible with prior lecturer approval.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official home university nomination (email or letter)",
+      "Online MoveON application form",
+      "Passport photocopy (photo page)",
+      "University transcript of records (German or English)",
+      "Copies of completed B.A./M.A./other degrees (if available)",
+      "Proof of comprehensive German/valid health insurance & semester fee payment (for enrollment)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": "Nomination and online MoveON application checklist also referenced on Fact Sheet p.1."
+  },
+  "academic_style": {
+    "value": "Modular structure (lecture + seminar pairings per module) at a German research university (University of Excellence / Berlin University Alliance) with cross-registration across HU Berlin, TU Berlin, and University of Potsdam.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": "metropolis",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": "AY 2026-2027 Fact Sheet p.2 explicitly refers to the 'Berlin metropolitan area' (German capital metropolis)."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Main Iltisstrasse 4 address in Dahlem noted on Fact Sheet p.1, while exact campus_type (multi_campus across Dahlem/Lankwitz/Düppel) was not directly cited from a saved fu-berlin.de URL."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly stated in FU Berlin fact sheets or official fu-berlin.de pages reviewed; left unknown per zero-fabrication rules."
+  },
+  "international_support_services": {
+    "value": "Mandatory orientation program (5-10 days before lectures: course selection, FU-Net/campus tours), Distributed Campus onboarding portal, Pass Service (arrival residence permit assistance), pre-semester and free in-semester German language courses via ZE Sprachenzentrum, plus dedicated Exchange courses in German culture/history/society.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=2",
+    "notes": "Distributed Campus, Pass Service, German language courses, and Exchange courses detailed across Fact Sheet p.1-p.3."
+  },
+  "nomination_deadlines": {
+    "value": "Winter term: Nomination & student application deadline April 30; Summer term: Nomination & student application deadline October 30.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/FUBerlin/26-27/Fact Sheet Direct Exchange Program FU Berlin academic year 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

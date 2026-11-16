@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "emlyon-business-school",
+  "excel_rows": [
+    34
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/15qgbIy01U-loR70Yhhay9z3fEswn3wCn"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Emlyon Business School/2024-2025/Factsheet_GBBA_2024-2025.pdf",
+      "data/raw/factsheets/Emlyon Business School/2024-2025/Fiche_Factsheet_MSc-Management_2024-2025.pdf",
+      "data/raw/factsheets/Emlyon Business School/2024-2025/Partners_user_guide_-_nominations.pdf",
+      "data/raw/factsheets/Emlyon Business School/Factsheet_GBBA_2025_-_2026_V.2.pdf",
+      "data/raw/factsheets/Emlyon Business School/Factsheet_MiM_2025_-_2026_V.1_3_.pdf",
+      "data/raw/factsheets/Emlyon Business School/GBBA outline courses AY 2025-2026.pptx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Emlyon Business School/2024-2025/Factsheet_GBBA_2024-2025.pdf.txt",
+      "data/raw/extracted/Emlyon Business School/2024-2025/Fiche_Factsheet_MSc-Management_2024-2025.pdf.txt",
+      "data/raw/extracted/Emlyon Business School/2024-2025/Partners_user_guide_-_nominations.pdf.txt",
+      "data/raw/extracted/Emlyon Business School/Factsheet_GBBA_2025_-_2026_V.2.pdf.txt",
+      "data/raw/extracted/Emlyon Business School/Factsheet_MiM_2025_-_2026_V.1_3_.pdf.txt",
+      "data/raw/extracted/Emlyon Business School/GBBA outline courses AY 2025-2026.pptx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Emlyon Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "short_name": {
+    "value": "emlyon",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lyon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": "Excel agreement_scope_raw is 'Business Administration', corresponding to AUC's Onsi Sawiris School of Business."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/exchange-students-global-bba",
+    "notes": "English-taught tracks and electives are widely offered across Global BBA and Master in Management exchange programs alongside French-taught offerings (https://em-lyon.com/en/exchange-students-master-management)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 CEFR level in English required for English-taught tracks (standard benchmarks: IELTS >= 6.0 / TOEFL iBT >= 80, or equivalent TOEIC/Cambridge/partner confirmation). RHET 1020 waiver not stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/exchange-students-global-bba",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "French not required for English-taught exchange tracks; B2 French recommended if selecting French-taught courses.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Early September to late December (exact semester dates vary by GBBA vs MiM)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Early January/February to late April/May (exact semester dates vary by GBBA vs MiM)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": "Incoming academic exchange students under partner agreements pay tuition at their home institution and have emlyon tuition fees waived."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1000,
+      "max": 1000
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Emlyon Business School/Factsheet_MiM_2025_-_2026_V.1_3_.pdf#page=1",
+    "notes": "2025-2026 MiM exchange fact sheet estimates overall cost of living at EUR 1,000/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5526.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Emlyon Business School/Factsheet_MiM_2025_-_2026_V.1_3_.pdf#page=1",
+    "notes": "5-month estimate: 1,000 EUR/month * 5 months = 5,000 EUR * 1.1052 USD/EUR = 5,526.00 USD (ECB 2026-11-13 rate, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Bilateral exchange students are EXEMPT from the French CVEC student life fee (obtain free exemption certificate at cvec.etudiant.gouv.fr per Campus France/etudiant.gouv.fr). Registration for French Sécurité Sociale (etudiant-etranger.ameli.fr) is mandatory for stays >3 months, plus third-party civil liability insurance (~EUR 10).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/international/incoming-students/first-steps-france",
+    "notes": "CVEC exemption rules verified via official French student portal (etudiant.gouv.fr / campusfrance.org); ameli portal via https://etudiant-etranger.ameli.fr/#/."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://masters.em-lyon.com/en/Exchange-Students/Life-emlyon-business-school/Accommodation",
+    "notes": "No on-campus dormitories; emlyon assists incoming students via its dedicated Studapart platform, private student residences (e.g., Nomad Campus), and homestay/intergenerational partners."
+  },
+  "housing_notes": {
+    "value": "Off-campus/private residences supported via emlyon's Studapart portal and partner residence networks in Lyon.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://masters.em-lyon.com/en/Exchange-Students/Life-emlyon-business-school/Accommodation",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students staying >90 days must obtain a French VLS-TS long-stay student visa via Etudes en France (pastel.diplomatie.gouv.fr/etudesenfrance) / France-Visas before departure. Effective August 1, 2026, Décret n° 2026-526 increased minimum student financial proof from EUR 615/mo to EUR 877.50/month (EUR 10,530/year; 47% of gross SMIC).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.legifrance.gouv.fr/eli/decret/2026/6/22/INTV2605727D/jo/texte",
+    "notes": "Visa portals also listed at https://france-visas.gouv.fr/en/web/france-visas/visa-wizard and https://pastel.diplomatie.gouv.fr/etudesenfrance."
+  },
+  "official_website_url": {
+    "value": "http://www.em-lyon.com/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:34",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://em-lyon.com/en/incoming-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS system. Global BBA exchange: 25–35 ECTS per semester (Year 3/4 courses). Master in Management (MiM): 2 to 6 graduate elective courses per semester (standard 5 ECTS / 24 contact hours each, ~27.5–30 ECTS full load).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/exchange-students-global-bba",
+    "notes": "MiM rules confirmed on https://em-lyon.com/en/exchange-students-master-management."
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate exchange students select from Global BBA Year 3 or Year 4 courses; graduate exchange students select from MiM electives (2–6 courses).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/exchange-students-global-bba",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/campus/lyon",
+    "notes": "Urban Lyon Gerland campus located at 144 avenue Jean Jaurès, 69007 Lyon."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Incoming Students desk, Studapart housing portal, First Steps in France visa/Sécurité Sociale onboarding support.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/international/incoming-students/first-steps-france",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester: partner nomination May 1, student application May 15. Spring Semester: partner nomination October 1, student application October 10.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://em-lyon.com/en/incoming-students",
+    "notes": null
+  },
+  "ext": {}
+}

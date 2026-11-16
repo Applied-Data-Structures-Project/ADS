@@ -1,0 +1,371 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "international-university-of-language-and-media-arts-milan-iulm",
+  "excel_rows": [
+    48
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1UyxxCQAXpjqWK7eUiYdVIDnxid6j54ut"
+    ],
+    "local_files": [
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2024-2025/IULM University_Course Catalogue 2024-25.xlsx",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2024-2025/Updated Factsheet a.y. 2024-25.pdf",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2025-2026/I MILANO05 Factsheet a.y. 2025-26.pdf",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Course Catalogue a.y. 2026-2027_incoming students.xlsx",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1mZVID.pdf",
+      "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/IULM University_Course Catalogue 2025-26.xlsx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2024-2025/IULM University_Course Catalogue 2024-25.xlsx.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2024-2025/Updated Factsheet a.y. 2024-25.pdf.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2025-2026/I MILANO05 Factsheet a.y. 2025-26.pdf.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2026-2027/Course Catalogue a.y. 2026-2027_incoming students.xlsx.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1mZVID.pdf.txt",
+      "data/raw/extracted/International University of Language and Media Arts Milan (IULM)/2026-2027/IULM University_Course Catalogue 2025-26.xlsx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "International University of Language and Media Arts Milan (IULM)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IULM",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Milan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "media IMAN sent an email sept 20",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": "Excel Col F notes 'media IMAN sent an email sept 20'; media/journalism/communication at AUC maps to GAPP (JRMC), verify current agreement scope with OIP."
+  },
+  "eligible_majors": {
+    "value": [
+      "Media / Communication"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": "Excel Col F notes 'media IMAN sent an email sept 20'; Interpreting & Translation labs at IULM require foreign language/translation majors (fact sheet p.9)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Interpreting & Translation labs restricted to foreign language/translation majors; Master's/capped courses require email approval (p.9)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "IULM 80/100 and 90/110 thresholds on iulm.it apply to full-degree tuition waivers, not incoming exchange students."
+  },
+  "instruction_languages": {
+    "value": [
+      "Italian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=6",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=9",
+    "notes": "2026-27 incoming Excel catalogue includes 135 English-taught and 53 bilingual IT/EN courses out of 756 total course rows (43 ENG + 29 IT/ENG UG; 92 ENG + 24 IT/ENG GR)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 English required (TOEFL, IELTS, Cambridge, home-university declaration, or English-degree enrolment certificate accepted; Duolingo and OLS NOT accepted).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=6",
+    "notes": "English-medium home institution/enrolment certificate explicitly accepted."
+  },
+  "host_language_requirement": {
+    "value": "B2 Italian required if taking Italian-taught courses (optional 3-week pre-session Italian course for EUR 200 / 6 ECTS); none required for English-taught courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=6",
+    "notes": "Pre-session Italian details on p.8."
+  },
+  "available_terms": {
+    "value": [
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": "Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall (host term dates): Orientation Jun 17/Sep 17 & Welcome Sep 18, 2026; Classes Sep 21-Dec 19, 2026 (Extraordinary Dec Exam Session for American-system students); Winter Exams Jan 8-Feb 13, 2027. Note: AUC Excel specifies Spring term.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=4",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Orientation Nov 18, 2026 / Feb 11, 2027 & Welcome Feb 12, 2027; Classes Feb 15-May 22, 2027; Summer Exams May 24-Jun 30, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=4",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iulm.it/en/international/international-students/incoming-students",
+    "notes": "Bilateral exchange students are exempt from paying tuition fees to IULM (unlike free-mover Visiting Students who pay EUR 2,000/semester)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1200,
+      "max": 1200
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=14",
+    "notes": "AY 2026-2027 fact sheet p.14 estimates a EUR 1,200/month Milan living budget."
+  },
+  "living_cost_usd_est": {
+    "value": 6631,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=14",
+    "notes": "5-month midpoint estimate from EUR 1,200/month converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 1,200 * 5 * 1.1052 = 6,631.20 USD (approx. USD 6,631)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory health insurance coverage required; optional 3-week pre-session Italian course EUR 200 (6 ECTS); no IULM tuition for exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=5",
+    "notes": "Health insurance on p.5 and p.15; Italian course fee EUR 200 on p.8."
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=16",
+    "notes": "Very limited residence double rooms (EUR 2,820/semester + EUR 500 deposit); IULM provides no private housing search support and most incoming exchange students arrange private off-campus accommodation."
+  },
+  "housing_notes": {
+    "value": "Limited campus residence double rooms at EUR 2,820/semester plus EUR 500 deposit; no university private housing placement support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=16",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "DSU/merit tuition waivers on iulm.it apply to enrolled degree-seeking students, not incoming bilateral exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students require an Italian entry visa, Tax Code (Codice Fiscale), valid health insurance, and Permesso di Soggiorno application within 8 days of arrival; exact consulate lead time and financial proof amounts not stated.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=15",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.iulm.it/en/home",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:48",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.iulm.it/en/internazionale/studenti-internazionali#incoming-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=3",
+    "notes": "Official incoming exchange URL also reachable via https://www.iulm.it/en/international/international-students/incoming-students."
+  },
+  "course_catalog_url": {
+    "value": "https://iulm.coursecatalogue.cineca.it/cerca-offerta",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=9",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No direct English-filtered URL; use live portal https://iulm.coursecatalogue.cineca.it/cerca-offerta (filter by teaching language) or the incoming Excel catalogue (2026-27 file lists 135 English and 53 IT/EN courses across 756 rows)."
+  },
+  "credit_system_and_load": {
+    "value": "CFU (= ECTS); maximum 30 ECTS/semester for incoming exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=9",
+    "notes": "Max 30 ECTS on p.9; CFU=ECTS and 18-30/30 grading scale on p.12."
+  },
+  "course_restrictions_note": {
+    "value": "Master's and capped-enrolment courses require email approval; Interpreting & Translation labs restricted to foreign language/translation majors; Semester 1 students may request extension until Oct 30, Semester 2 cannot extend.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=9",
+    "notes": "Course restrictions p.9; extension rules p.13."
+  },
+  "required_application_docs": {
+    "value": [
+      "Photo",
+      "ID or passport copy",
+      "Academic transcript in English",
+      "Health insurance proof"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=5",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Italian 18-30/30 grading scale; dedicated December Extraordinary Exam Session available for US/American-system calendar exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=4",
+    "notes": "Extraordinary Dec exam session on p.4; grading scale on p.12."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Milan is a major Italian urban center; exact schema city_tier label not explicitly classified in fact sheet."
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=17",
+    "notes": "Single 7-building urban campus in Milan connected via the IULM M2 metro stop."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Welcome/orientation days, 3-week pre-session Italian course (EUR 200), ESN IULM buddy/student network, YesMilano guidance, and campus tutoring/counseling.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=18",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027: Fall nominations Apr 13-May 8 / applications May 11-29; Spring nominations Sep 14-Oct 9 / applications Oct 12-30.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/International University of Language and Media Arts Milan (IULM)/2026-2027/Factsheet a.y. 2026-27 - Partners with American system__1lUf2m.pdf#page=5",
+    "notes": null
+  },
+  "ext": {}
+}

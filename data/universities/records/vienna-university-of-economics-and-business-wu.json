@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "vienna-university-of-economics-and-business-wu",
+  "excel_rows": [
+    152
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/14_s7m6Nmw3zAFtxjDqCOcK1YV-5pzn3A"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Vienna University of Economics and Business/2026_2027/WU_Factsheet_2627.pdf",
+      "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf",
+      "data/raw/factsheets/Vienna University of Economics and Business/WU-Briefvorlage.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Vienna University of Economics and Business/2026_2027/WU_Factsheet_2627.pdf.txt",
+      "data/raw/extracted/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf.txt",
+      "data/raw/extracted/Vienna University of Economics and Business/WU-Briefvorlage.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Vienna University of Economics and Business (WU)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "short_name": {
+    "value": "WU",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "country": {
+    "value": "Austria",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Vienna",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "BUSINESS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": "Mapped directly from agreement_scope_raw='BUSINESS'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": "Over 350 English-taught courses per semester offered across business and economics (p. 3)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum CEFR B2 English for Bachelor's exchange (C1 for Master's/PhD); WU does NOT require official language test certificates (home partner selection relied upon). RHET 1020 waiver not explicitly named, though certificate exemption simplifies eligibility.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None if taking English-taught courses; CEFR C1 German expected if selecting German-taught courses (no official certificate requested).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:152",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Winter Semester: Pre-sem orientation Sep 7-8, 2026; Main Kickoff Sep 24-25, 2026; Teaching Oct 1, 2026-Jan 31, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2026_2027/WU_Factsheet_2627.pdf#page=2",
+    "notes": "AY 2027-2028 Winter dates also published on WU_Factsheet_2728.pdf#page=2."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Summer Semester: Pre-sem orientation Feb 4-5, 2027; Main Kickoff Feb 22-23, 2027; Teaching Mar 1-Jun 27, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2026_2027/WU_Factsheet_2627.pdf#page=2",
+    "notes": "AY 2027-2028 Summer dates also on WU_Factsheet_2728.pdf#page=2; 3-week ISUWU Summer University program (8 ECTS) detailed on p. 6."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.wu.ac.at/en/programs/international-and-exchange-students/incoming-exchange-students",
+    "notes": "Partner exchange students receive a full tuition waiver at WU; only mandatory Austrian Students' Union (ÖH) dues (~€25-€26/semester) apply."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1250,
+      "max": 2050
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=5",
+    "notes": "WU Factsheet p. 5 total approx. €1,250-€2,050/month (Housing €450-900, ÖGK health ins €75, Food/personal €380, Utilities €40, Entertainment €100-200, plus semester transport €132-294, books €75-150, ÖH €25)."
+  },
+  "living_cost_usd_est": {
+    "value": 9117.9,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=5",
+    "notes": "Midpoint 1650 EUR/month * 5 months * 1.1052 USD/EUR = 9117.90 USD (ECB reference rate dated 2026-11-13, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Austrian Students' Union (ÖH) dues: €25/semester (per Factsheet p. 5; ~€26 on wu.ac.at). Comprehensive health insurance required (ÖGK Student Self-Insurance ~€75/month per WU p. 5, €78.84/month per OeAD; entry travel insurance >=€30,000 needed for first month).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=5",
+    "notes": "Entry travel insurance and ÖGK monthly rate verified on https://oead.at/en/to-austria/entry-and-residence/."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=5",
+    "notes": "WU has no on-campus dormitories, but International Office assists via OeAD Student Housing (pre-reserved rooms; registration fee waived with code 'WUINCOMING' per wu.ac.at) and other student residence providers."
+  },
+  "housing_notes": {
+    "value": "Off-campus student residences (OeAD Student Housing promo 'WUINCOMING' waives registration fee per wu.ac.at) or private flats: €450-€900/month (from ~€437/month at OeAD).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=5",
+    "notes": "Accommodation page linked on p. 5: https://www.wu.ac.at/en/programs/international-and-exchange-students/incoming-exchange-students/exchange-semester/your-semester-at-wu-from-start-to-finish/accommodation."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Start 3-6 months prior (statutory decision period 90 days, extendable by 90 days). Non-EU stays up to 6 months require Visa D; >6 months require Residence Permit - Student. Monthly financial proof required by OeAD: €722.58/month (under age 24) or €1,308.39/month (age 24+), plus rent excess above €386.43/month.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oead.at/en/to-austria/entry-and-residence/",
+    "notes": "OeAD portal linked directly in WU_Factsheet_2728.pdf#page=5."
+  },
+  "official_website_url": {
+    "value": "https://www.wu.ac.at/io/en",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=1",
+    "notes": "Official WU International Office English portal listed on WU Fact Sheet p. 1 (Excel Col N was blank)."
+  },
+  "exchange_page_url": {
+    "value": "https://www.wu.ac.at/en/programs/international-and-exchange-students/incoming-exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.wu.ac.at/en/programs/international-and-exchange-students/incoming-exchange-students",
+    "notes": "Fact Sheet p. 1 also lists https://www.wu.ac.at/io/en."
+  },
+  "course_catalog_url": {
+    "value": "https://www.wu.ac.at/en/incoming-students/exchange-semester/academics/course-catalog/filter/95035/0/0/0/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=6",
+    "notes": "Direct filtered incoming-exchange eVVZ course catalog link from Factsheet p. 6 /Annots."
+  },
+  "english_course_list_url": {
+    "value": "https://www.wu.ac.at/en/incoming-students/exchange-semester/academics/course-catalog/filter/95035/0/0/0/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=6",
+    "notes": "Provides English filter over >350 English-taught courses/semester."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system: Bachelor load 24-30 ECTS/semester (Master 20-30 ECTS; max 36 ECTS excluding language courses). Austrian 1-5 grading scale (1 best, 5 fail).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Bachelor exchange students may ONLY take Bachelor-level courses (Master students only Master-level); online 3-phase registration with preference submission (spots not guaranteed).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online pre-enrollment & registration",
+      "Learning Agreement",
+      "Valid Passport / ID",
+      "Enrollment & arrival forms (post-acceptance)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.wu.ac.at/en/programs/international-and-exchange-students/incoming-exchange-students",
+    "notes": "WU Factsheet p. 3 confirms no official language certificates are requested."
+  },
+  "academic_style": {
+    "value": "Continuous-assessment 'PI' (prüfungs­immanent) coursework with mandatory attendance and group/project assessments rather than a dedicated final exam week.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ÖH Buddy Network, Pre-semester German course (2 ECTS, free + €40 admin fee), semester German (€245), optional Orientation & Cultural Program (€350), and OeAD housing support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Nominations: Winter May 1 (Full Year Apr 1), Summer Nov 1. Student pre-enrollment/application: Winter May 20, Summer Nov 20.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vienna University of Economics and Business/2027-2028/WU_Factsheet_2728.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

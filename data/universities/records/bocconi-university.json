@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "bocconi-university",
+  "excel_rows": [
+    11
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1QXqoof0eDYuXvZnBxZSnZuRN1KaK04C9"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Bocconi/2023- 2024/Bocconi Fact Sheet 2023-2024.pdf",
+      "data/raw/factsheets/Bocconi/2024-2025/Bocconi Fact Sheet 2024-2025 Online website version (2).pdf",
+      "data/raw/factsheets/Bocconi/2024-2025/Bocconi Fact Sheet 2024-2025 Printable version (3).pdf",
+      "data/raw/factsheets/Bocconi/2025-2026/AY2526_Factsheet International Student Desk Exchange_Pieghevole.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Bocconi/2023- 2024/Bocconi Fact Sheet 2023-2024.pdf.txt",
+      "data/raw/extracted/Bocconi/2024-2025/Bocconi Fact Sheet 2024-2025 Online website version (2).pdf.txt",
+      "data/raw/extracted/Bocconi/2024-2025/Bocconi Fact Sheet 2024-2025 Printable version (3).pdf.txt",
+      "data/raw/extracted/Bocconi/2025-2026/AY2526_Factsheet International Student Desk Exchange_Pieghevole.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Bocconi University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Bocconi",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Milan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Requires nomination by a home partner university; undergraduate exchange students select 30xxx undergraduate-level courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": "No central incoming GPA minimum published; academic selection is handled by the home partner university."
+  },
+  "agreement_scope_raw": {
+    "value": "Business and Economics",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": "Excel agreement scope is 'Business and Economics'; at AUC, Business and the Mohamed Shafik Gabr Department of Economics are both housed in the Onsi Sawiris School of Business (BUS) per https://www.aucegypt.edu/academics/school-business."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business",
+      "Economics"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Italian"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://didattica.unibocconi.eu/ts/tsn_ord_ir.php",
+    "notes": "Wide array of undergraduate and graduate courses taught in English alongside Italian offerings in the official exchange course table."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 level in English (or Italian for Italian-taught courses) expected and verified through home-university nomination; no central TOEFL/IELTS test score mandate published on the incoming exchange portal. RHET 1020 exemption not stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Not required for English-taught courses; B2 Italian expected if selecting Italian-taught courses. Optional pre-term Italian crash course offered (Aug 25–Sep 5 Fall; Jan 25–Feb 6 Spring).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://www.ir.unibocconi.eu/itacourse",
+    "notes": "Crash course dates for AY 2026-2027 published on https://www.unibocconi.it/en/for-international-students/incoming-exchange-students."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-09-02 to 2026-12-22 (early exchange exams) / 2027-02-02 (regular exam sessions)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": "AY 2026-2027 Fall schedule: mandatory check-in Aug 25–28; Italian crash course Aug 25–Sep 5; classes Sep 2–Dec 5; mid-terms Oct 19–28; early exchange exam session Dec 9–22 (earliest departure Dec 23); regular exam sessions Jan 7–19 and Jan 20–Feb 2, 2027."
+  },
+  "spring_term_dates": {
+    "value": "2027-02-03 to 2027-07-10 (classes end 2027-05-15; earliest departure 2027-06-01)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": "AY 2026-2027 Spring schedule (TBC welcome): check-in Jan 25–29; crash course Jan 25–Feb 6; classes Feb 3–May 15 (some Law courses end May 22); mid-terms Mar 18–Apr 3; 1st exam session May 17–31; 2nd exam session Jun 3–Jul 10."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": "Incoming bilateral exchange students pay tuition at their home institution and are exempt from Bocconi tuition and academic fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1700,
+      "max": 1800
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/admissions/cost-aid/cost-attendance-ay-2026-2027",
+    "notes": "AY 2026-2027 Cost of Attendance monthly living budget estimate (EUR 1,700–1,800/month, contextually used e.g. for US Direct Loans planning). Incoming-exchange specific page (https://www.unibocconi.it/en/foe/incoming-exchange-students/estimated-costs) and AY25-26 factsheet (data/raw/factsheets/Bocconi/2025-2026/AY2526_Factsheet International Student Desk Exchange_Pieghevole.pdf#page=2) itemize private double room EUR 500–750/mo, single room EUR 600–1,100/mo, flat EUR 800–1,800/mo, dorm EUR 4,000–4,800/sem, canteen ~EUR 5/meal, metro pass EUR 22/mo (<27 yrs)."
+  },
+  "living_cost_usd_est": {
+    "value": 9670.5,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/admissions/cost-aid/cost-attendance-ay-2026-2027",
+    "notes": "5-month midpoint estimate: 1,750 EUR/month * 5 months = 8,750 EUR * 1.1052 USD/EUR = 9,670.50 USD (ECB 2026-11-13 reference rate, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "No mandatory Bocconi enrollment health insurance fee; non-EU students require valid international health insurance for visa/Permesso di Soggiorno (e.g., WAI Italy ~EUR 91/6 months) and pay ~EUR 100.46 + EUR 16 stamp for Permesso di Soggiorno.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/foe/incoming-exchange-students/estimated-costs",
+    "notes": "Confirmed also in data/raw/factsheets/Bocconi/2025-2026/AY2526_Factsheet International Student Desk Exchange_Pieghevole.pdf#page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/housing-information-incoming-exchange-students",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Limited on-campus residence rooms (EUR 4,000–4,800/semester single) allocated on a first-come, first-served basis; Bocconi provides guidance for private rentals (double EUR 500–750/mo, single EUR 600–1,100/mo, entire flat EUR 800–1,800/mo).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/housing-information-incoming-exchange-students",
+    "notes": "Rent itemization from https://www.unibocconi.it/en/foe/incoming-exchange-students/estimated-costs and AY25-26 factsheet #page=2."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU incoming exchange students require an Italian Type D Student Visa prior to arrival via Universitaly / local Italian Consulate and must apply for a Permesso di Soggiorno within 8 working days of arrival (~EUR 100.46 + EUR 16 revenue stamp).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://www.ir.unibocconi.eu/incomingexchangevisa",
+    "notes": "Visa portal URL extracted from Bocconi fact sheet; Permesso fees from https://www.unibocconi.it/en/foe/incoming-exchange-students/estimated-costs."
+  },
+  "official_website_url": {
+    "value": "http://www.unibocconi.eu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:11",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://didattica.unibocconi.eu/ts/tsn_ord_ir.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://didattica.unibocconi.eu/ts/tsn_ord_ir.php",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Course table at https://didattica.unibocconi.eu/ts/tsn_ord_ir.php requires interactive language/level filtering rather than a static English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS equivalent (1 Bocconi credit = ~25h total workload including ~8 lecture hours); incoming exchange students take 1 to 5 courses per semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate exchange students must select undergraduate-level courses (coded in the 30xxx series); graduate and integrated Law offerings are restricted to matching degree levels.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Most recent university academic transcript",
+      "CV / Resume",
+      "Headshot photo (for Bocconi ID card)",
+      "Passport personal data page (or EU national ID card)",
+      "Disability certificate from home university (optional, only if requesting accommodations)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students/online-application",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Lecture and written/oral exam assessment with mid-term sessions and an early December exam session option for Fall exchange students.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/about-bocconi/campus-and-services/buildings-and-classrooms",
+    "notes": "Urban city campus located in Milan."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Student Desk (ISD) online application portal, mandatory Welcome Check-in days, optional pre-term Italian crash course, visa/Permesso guidance, and housing info.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Home partner coordinator submits online nomination first; Spring 2027 student online application window ran Sep 30 – Oct 22, 2026 (15:00 CET). Fall deadlines communicated per partner nomination cycle.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.unibocconi.it/en/for-international-students/incoming-exchange-students/online-application",
+    "notes": null
+  },
+  "ext": {}
+}

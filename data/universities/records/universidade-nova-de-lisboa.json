@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "universidade-nova-de-lisboa",
+  "excel_rows": [
+    125
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [
+    "nova-school-of-business-and-economics-nova-sbe"
+  ],
+  "official_name": {
+    "value": "Universidade Nova de Lisboa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NOVA",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unl.pt/en",
+    "notes": null
+  },
+  "country": {
+    "value": "Portugal",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lisbon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Portuguese",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.fct.unl.pt/en/international/incoming-students-mobilities",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://novalaw.unl.pt/en/education/incoming-students/",
+    "notes": "Varies by decentralized NOVA faculty: NOVA SBE (cross-referenced), NOVA IMS, and NOVA School of Law offer English tracks; NOVA FCSH and NOVA FCT undergraduate teaching is primarily Portuguese with select English electives/graduate courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Varies by NOVA faculty: NOVA Law requires Portuguese B1 (or English B2); NOVA FCSH requires Portuguese A2 for Portuguese-taught study (offers pre-term/semester Portuguese courses); NOVA FCT requires Portuguese A2 or English B1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://novalaw.unl.pt/en/education/incoming-students/",
+    "notes": "School portals: https://www.fcsh.unl.pt/en/current-students/incoming-students/ and https://www.fct.unl.pt/en/student/student-orientation-and-mobility/erasmus-student-mobility-studies-sms."
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 565,
+      "max": 815
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.fct.unl.pt/en/international/studying-and-living-portugal/cost-living",
+    "notes": "Sum of NOVA FCT published monthly Lisbon-area items: room rent EUR 250–500 + food/groceries ~EUR 250 + public transport pass EUR 40 + telecom ~EUR 25 = EUR 565–815/month (excluding misc/leisure; subsidized canteen meals ~EUR 3–4)."
+  },
+  "living_cost_usd_est": {
+    "value": 3812.9,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.fct.unl.pt/en/international/studying-and-living-portugal/cost-living",
+    "notes": "5-month midpoint estimate: 690 EUR/month * 5 months = 3,450 EUR * 1.1052 USD/EUR = 3,812.94 USD (ECB 2026-11-13 rate, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "EU/EEA/Swiss students require valid EHIC; non-EU incoming exchange students must hold private international health insurance (certificate in English) covering medical expenses, treatment, and medical repatriation for the entire mobility stay.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.novaims.unl.pt/en/education/programs/erasmus-incoming",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Housing support is handled per NOVA school without a single consolidated university-wide housing policy across unl.pt portals."
+  },
+  "housing_notes": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.unl.pt/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:125",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.fct.unl.pt/en/international/incoming-students-mobilities",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.fct.unl.pt/en/international/incoming-students-mobilities",
+    "notes": "Mobility is decentralized across NOVA schools (see also cross-referenced Nova SBE, plus NOVA IMS, NOVA Law, NOVA FCSH, NMS)."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS: standard load up to 31.5 ECTS/semester at Nova SBE (30 ECTS recommended at NOVA FCT per fct.unl.pt).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.novasbe.unl.pt/en/programs/exchanges/incoming-exchange-students",
+    "notes": "NOVA FCT reference at https://www.fct.unl.pt/en/student/student-orientation-and-mobility/erasmus-student-mobility-studies-sms."
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.novaims.unl.pt/en/education/programs/erasmus-incoming",
+    "notes": "Decentralized campuses across Greater Lisbon: Campolide (Central Lisbon), Caparica (Almada — FCT), Carcavelos (Nova SBE), and downtown Lisbon (Medical/FCSH)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Decentralized by NOVA faculty: NOVA FCT (1st sem/FY nom May 31 / app Jun 30; 2nd sem nom Oct 31 / app Nov 30); NOVA FCSH (nom May 31 for 1st/2nd sem/FY; Oct 31 for 2nd sem); NOVA Law (May 31 Autumn / Nov 30 Spring); Nova SBE (Fall Feb 20–Apr 20 nom / Apr 27 app; Spring Jul 20–Sep 20 nom).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.fct.unl.pt/en/student/student-orientation-and-mobility/erasmus-student-mobility-studies-sms",
+    "notes": "Confirmed on https://www.fcsh.unl.pt/en/current-students/incoming-students/, https://novalaw.unl.pt/en/education/incoming-students/, and https://www.novasbe.unl.pt/en/programs/exchanges/incoming-exchange-students."
+  },
+  "ext": {}
+}

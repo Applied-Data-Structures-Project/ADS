@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "copenhagen-business-school",
+  "excel_rows": [
+    24
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1TpkP-qd3Isp53RoDbvXhnTO7DQtyV80n?usp=drive_link",
+      "https://drive.google.com/drive/folders/1TpkP-qd3Isp53RoDbvXhnTO7DQtyV80n"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf",
+      "data/raw/factsheets/Copenhagen Business School/2025-2026/Promotional Toolkit for CBS Exchange _ CBS - Copenhagen Business School.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf.txt",
+      "data/raw/extracted/Copenhagen Business School/2025-2026/Promotional Toolkit for CBS Exchange _ CBS - Copenhagen Business School.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Copenhagen Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CBS",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "Denmark",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Copenhagen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Undergraduate exchange courses are open to Bachelor students; graduate exchange courses require a completed relevant Bachelor's degree (or equivalent >=3 years university study).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cbs.dk/en/international-opportunities/international-students/guestexchange-student/graduate-courses",
+    "notes": "Undergraduate requirements also linked at https://www.cbs.dk/en/international-opportunities/international-students/guestexchange-student/undergraduate-courses."
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": "Mapped from Excel agreement scope 'Business Administration' to AUC School of Business (BUS)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=3",
+    "notes": "All exchange courses are taught in English; Swedish and Norwegian speakers may request Danish-taught courses."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=3",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Incoming exchange students must document English proficiency (no explicit RHET 1020 exemption stated). CBS English Proficiency FAQ specifies IELTS Academic 7.0, TOEFL iBT 94 (Home Edition accepted; selective graduate courses may expect higher), Cambridge CAE >=185 / CPE, or Duolingo 130 unless exempt via full English-taught degree in an accepted English-speaking country (Denmark excluded).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cbs.dk/files/cbs.dk/english_proficiency_faq.pdf",
+    "notes": "Verbatim PDF URL extracted from CBS 2025-2026 Promotional Toolkit DOCX; documentation requirement also in Fact Sheet #page=4."
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught exchange courses. CBS offers an optional pre-semester Danish crash course (https://www.studieskolen.dk/en/cbs/crashcourse) and a credit-bearing semester Danish language course.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Autumn semester (AY 2026-2027): 1 Sep 2026 - 31 Jan 2027 (Danish crash course 17-21 Aug 2026; latest arrival 24 Aug 2026; mandatory Introduction Programme 25-28 Aug 2026; exams Oct-Dec/Jan).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cbs.dk/exchange",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester (AY 2026-2027): 1 Feb 2027 - 30 Jun 2027 (Danish crash course 18-22 Jan 2027; latest arrival 25 Jan 2027; mandatory Introduction Programme 26-29 Jan 2027; exams Mar-Jun).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cbs.dk/exchange",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cbs.dk/exchange",
+    "notes": "Nominated exchange students from official CBS partner universities do not pay tuition fees to CBS (pay regular tuition to home institution); distinct from fee-paying freemovers."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "CBS fact sheet and retrieved cbs.dk pages list living expenses as a topic without publishing an official CBS monthly DKK/EUR total budget; non-CBS third-party estimates excluded."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Cannot be derived without an official CBS monthly living cost estimate."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Limited amount of non-guaranteed housing for incoming exchange students via CBS Housing Department (privately owned dorms; link sent via email to registered exchange students; apply late May for Autumn / mid-Nov for Spring via cbs.dk/housing). Private housing supplement facilitated in Autumn semester only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": "Direct housing instructions link from 2025-2026 Promotional Toolkit DOCX: https://www.cbs.dk/en/study/internationals/exchange-students/housing/how-to-apply-student-residences."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA citizens must have their Danish student residence permit processed prior to arrival (unless eligible for visa-free travel to Denmark). EU/EEA citizens apply for a residence certificate if staying >3 months; Nordic citizens need no residence permit.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": "Danish SIRI financial proof requirement is DKK 7,426/month (DKK 89,112/year) per https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education."
+  },
+  "official_website_url": {
+    "value": "https://www.cbs.dk/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:24",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.cbs.dk/en/study/internationals/exchange-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2025-2026/Promotional Toolkit for CBS Exchange _ CBS - Copenhagen Business School.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.cbs.dk/en/international-opportunities/international-students/guestexchange-student/undergraduate-courses",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2025-2026/Promotional Toolkit for CBS Exchange _ CBS - Copenhagen Business School.docx",
+    "notes": "Graduate exchange catalog at https://www.cbs.dk/en/international-opportunities/international-students/guestexchange-student/graduate-courses."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; normal full-time semester workload is 30 ECTS (4 courses x 7.5 ECTS = ~825 total study hours).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Autumn course catalog publishes mid-March and Spring catalog mid-September; course selection occurs late April (Autumn) / late October (Spring). Graduate courses require completed Bachelor's degree.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination (via CBS form to inboundexchange@cbs.dk)",
+      "Updated university transcript in English",
+      "Proof of English proficiency",
+      "Resume/CV in English",
+      "Copy of passport (photo page only)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=2",
+    "notes": "Fact Sheet #page=2 states: 'CBS has an urban campus in Frederiksberg, an integrated part of Copenhagen.'"
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory Introduction Week, optional pre-semester Danish crash course (https://www.studieskolen.dk/en/cbs/crashcourse), and Buddy Programme with airport pick-up.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn/Full Year: Nomination 15 April; Exchange application & course selection late April; Accommodation late May. Spring: Nomination 15 October; Application & course selection late October; Accommodation mid-November (2024 cycle dates in PDF #page=4).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Copenhagen Business School/2024-2025/Copenhagan Business School.pdf#page=4",
+    "notes": "Confirmed recurring 15 Apr / 15 Oct nomination schedule at https://www.cbs.dk/en/study/exchange-students/application-and-deadlines."
+  },
+  "ext": {}
+}

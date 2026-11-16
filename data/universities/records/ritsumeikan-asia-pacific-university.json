@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ritsumeikan-asia-pacific-university",
+  "excel_rows": [
+    96
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1084OFy2nA2ZBYOzhoHm4q55reC4LqJKT"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_APM_2023 Curriculum_General_Subject_List.xlsx",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_APS_2023 Curriculum_General_Subject_List.xlsx",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_Restricted Language Courses.pdf",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_ST_2023 Curriculum_General_Subject_List.xlsx",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/APU Exchange Program Nominations and Applications for the 2025 Spring Semester.docx",
+      "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/APU Information Sheet for AY2025 Spring Exchange Program.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_APM_2023 Curriculum_General_Subject_List.xlsx.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_APS_2023 Curriculum_General_Subject_List.xlsx.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_Restricted Language Courses.pdf.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/2025 Fall Enrollment_ST_2023 Curriculum_General_Subject_List.xlsx.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/APU Exchange Program Nominations and Applications for the 2025 Spring Semester.docx.txt",
+      "data/raw/extracted/Ritsumeikan Asia Pacific University (APU)/APU Information Sheet for AY2025 Spring Exchange Program.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Ritsumeikan Asia Pacific University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "short_name": {
+    "value": "APU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Japan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Beppu, Oita Prefecture",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Undergraduate level; must have completed at least 1 semester at home university with official grades available.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=3",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=3",
+    "notes": "Minimum GPA 2.00 on a 4.00 scale."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Japanese"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": "Fact Sheet states: 'About 90% of all courses at APU are held in both English and Japanese'."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "For non-native English/Japanese students choosing English-basis: TOEFL iBT 79, IELTS 6.0, TOEIC L&R 780, PTE Academic 50, or Cambridge FCE Grade B. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Japanese-basis students require JLPT N1 (>=100), JLPT N2 (>=135), or EJU >=250; none required for English-basis exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester: official period Sep 21 – Mar 31 (arrival/orientation mid-late Sep; classes Oct – early Feb across Q1 & Q2).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=5",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester: official period Apr 1 – Sep 20 (arrival/orientation mid-late Mar; classes Apr – early Aug across Q1 & Q2).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/APU Information Sheet for AY2025 Spring Exchange Program.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.apu.ac.jp/abroad/prospective/incoming/",
+    "notes": "Official en.apu.ac.jp confirms incoming partner exchange students are exempt from application, admission, and tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "JPY",
+      "min": 98000.0,
+      "max": 134000.0
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=9",
+    "notes": "Summed from APU itemized Fact Sheet budgets over 5-month semester: AP House 3/4 (~230,000–300,000 JPY/sem = 46,000–60,000 JPY/mo), food (30,000–50,000 JPY/mo), transport (~50,000 JPY/sem = 10,000 JPY/mo; web lists 45,000–75,000 JPY/sem), books/academic (10,000–20,000 JPY/sem = 2,000–4,000 JPY/mo), and other personal (10,000 JPY/mo per Spring 2025 Fact Sheet #page=7)."
+  },
+  "living_cost_usd_est": {
+    "value": 3625.04,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=9",
+    "notes": "5-month estimate in JPY: midpoint 116000 JPY/month * 5 * 0.006250 USD/JPY = 3625.04 USD (1 EUR = 1.1052 USD and 1 EUR = 176.83 JPY -> 1 JPY = 0.006250 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Summed from APU itemized Fact Sheet budgets over 5-month semester: AP House 3/4 (~230,000–300,000 JPY/sem = 46,000–60,000 JPY/mo), food (30,000–50,000 JPY/mo), transport (~50,000 JPY/sem = 10,000 JPY/mo; web lists 45,000–75,000 JPY/sem), books/academic (10,000–20,000 JPY/sem = 2,000–4,000 JPY/mo), and other personal (10,000 JPY/mo per Spring 2025 Fact Sheet #page=7)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Compulsory Japan National Health Insurance (~JPY 14,000/sem Fall 2025, ~JPY 10,000/sem Spring 2025) plus Student's Comprehensive Renters Insurance (~JPY 3,000/sem per Spring 2025 #page=8).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=9",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://en.apu.ac.jp/abroad/prospective/incoming/accomodation/",
+    "notes": "Official en.apu.ac.jp and Fall 2025 Fact Sheet (#page=9) confirm designated AP House 3 or AP House 4 accommodation is provided/guaranteed for all exchange students (no other housing options allowed)."
+  },
+  "housing_notes": {
+    "value": "Students choose AP House 3 (~JPY 230,000/sem) or AP House 4 (~JPY 300,000/sem; ~5-month package incl. rent, utilities, move-in fee, bedding), paid by lump-sum bank wire prior to arrival; no other housing allowed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=9",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Japanese Student Visa obtained prior to arrival using APU-applied Certificate of Eligibility (CoE) (1-yr visa for 1 sem, 1-yr-3-mo for 1 yr); Work Permit takes ~2 weeks after Residence Card.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=10",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://en.apu.ac.jp/home/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:96",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://en.apu.ac.jp/abroad/prospective/incoming/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://en.apu.ac.jp/abroad/prospective/incoming/course/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://en.apu.ac.jp/abroad/prospective/incoming/course/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=1",
+    "notes": "APU offers ~90% of courses in both English and Japanese; see also 2025 Fall Enrollment Restricted Language Courses.pdf."
+  },
+  "credit_system_and_load": {
+    "value": "Japanese credits (major/liberal arts = 2 credits; language = 2 or 4 credits); visa requires minimum 14 credits/sem AND >=10 class hrs/week (typical load 18–20).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=8",
+    "notes": "Also in Spring 2025 Fact Sheet #page=4."
+  },
+  "course_restrictions_note": {
+    "value": "Students must select 1 affiliated college (APS, APM, or ST, #page=5-6); English/Japanese language courses restricted by study basis and placement test (2025 Fall Restricted Language Courses.pdf#page=1).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Airport pick-up service, mandatory pre-term orientation, APU BUDDY system (#page=5 & #page=10).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=5",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Apr 1, Application Apr 22; Spring: Nomination Oct 1, Application Oct 22.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Ritsumeikan Asia Pacific University (APU)/(Fall 2025) APU Student Exchange Program_Fall 2025 Information Sheet.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

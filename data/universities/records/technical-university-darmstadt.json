@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "technical-university-darmstadt",
+  "excel_rows": [
+    105
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1IRSn5im7TRbhuQ6psm_9laGVaojVbT30",
+      "https://drive.google.com/drive/folders/1J9_Zam7a2XrQKkFTKm9Wq26UQbgvIxDa"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Technical University of Darmstadt/2025-26_Fact_Sheet_Exchange_Overseas.pdf",
+      "data/raw/factsheets/Technical University of Darmstadt/2026-27_Fact_Sheet_Exchange_Overseas__1ISxeR.pdf",
+      "data/raw/factsheets/Technical University of Darmstadt/2026-27_Fact_Sheet_Exchange_Overseas__1hi5yX.pdf",
+      "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2025-26_Fact_Sheet_Exchange_Overseas.pdf",
+      "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Technical University of Darmstadt/2025-26_Fact_Sheet_Exchange_Overseas.pdf.txt",
+      "data/raw/extracted/Technical University of Darmstadt/2026-27_Fact_Sheet_Exchange_Overseas__1ISxeR.pdf.txt",
+      "data/raw/extracted/Technical University of Darmstadt/2026-27_Fact_Sheet_Exchange_Overseas__1hi5yX.pdf.txt",
+      "data/raw/extracted/Technical University of Darmstadt/Technische Universität Darmstadt/2025-26_Fact_Sheet_Exchange_Overseas.pdf.txt",
+      "data/raw/extracted/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf.txt"
+    ],
+    "notes": "Col H link (1IRSn5im7TRbhuQ6psm_9laGVaojVbT30) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Technical University Darmstadt",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "short_name": {
+    "value": "TU Darmstadt",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Darmstadt",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Enrolled degree-seeking student at partner throughout exchange; minimum 2 years completed in an undergraduate program prior to starting at TU Darmstadt; good academic standing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "German",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Fact Sheet notes main language is German, with a growing number of English-taught courses primarily for advanced Bachelor and Master students (tu-darmstadt.de highlights STEM/Master availability)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English (TOEFL/IELTS <=2 years old or reliable home-university language center evaluation accepted). No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum B2 German if taking German-taught courses (transcript, professor evaluation, TestDaF, DSH, or DSD); free 4-week Intensive German during orientation (X-Weeks) plus free semester courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Language center courses also on #page=6."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Winter Semester 2026/27: Oct 1, 2026 – Mar 31, 2027; Orientation/German Sep; Lectures Oct–Feb (starts ~mid-Oct, e.g. Oct 12 per tu-darmstadt.de); Exams Feb–Mar (early/proctored option).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer Semester 2027: Apr 1 – Sep 30, 2027; Orientation/German Mar; Lectures Apr–Jul; Exams Aug–Sep.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Fact Sheet explicitly states 'exempt from paying tuition'."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 992.0,
+      "max": 992.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Fact Sheet specifies EUR 992/month (EUR 5,952/semester) as recommended living budget / German visa proof benchmark."
+  },
+  "living_cost_usd_est": {
+    "value": 5481.79,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "5-month estimate in EUR: midpoint 992 EUR/month * 5 * 1.105200 USD/EUR = 5481.79 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Fact Sheet specifies EUR 992/month (EUR 5,952/semester) as recommended living budget / German visa proof benchmark."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Semester contribution ~€340/semester (includes Deutschland-Semesterticket for Germany-wide regional public transit); mandatory German statutory health insurance (e.g. TK, Oct 1–Mar 31 / Apr 1–Sep 30) plus travel insurance for Sep/Mar arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Insurance/semester coverage detailed across #page=4-5."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=6",
+    "notes": "ESHA housing assistance helps exchange students find single furnished rooms in partner dormitories (€400–€600/month), not guaranteed."
+  },
+  "housing_notes": {
+    "value": "Partner dorm single furnished rooms €400–€600/month via ESHA assistance (not guaranteed).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": "Passport valid >=6 months beyond stay required; APS academic verification certificate required for applicants from China and India.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Also on #page=5."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Contact German embassy at least 4 months prior; financial proof EUR 992/month (EUR 5,952/semester, EUR 11,904/year via blocked account or German bank account for residence permit); passport >=6 mos post-stay; APS for China/India.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=4",
+    "notes": "Detailed across #page=4-5."
+  },
+  "official_website_url": {
+    "value": "https://www.tu-darmstadt.de/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:105",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.tu-darmstadt.de/studieren/studieninteressierte/internationale_studieninteressierte/austauschprogramme_inbound/index.en.jsp",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.tucan.tu-darmstadt.de/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=1",
+    "notes": "TUCaN campus course catalog."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Dynamic TUCaN portal (https://www.tucan.tu-darmstadt.de/) contains 'English Courses' section/filters; no static URL."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; recommended workload 18–30 ECTS per semester (30 ECTS regular full-time load).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": "mid_size_city",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=2",
+    "notes": "Fact Sheet states Darmstadt has '160.000 inhabitants, located in the metropolitan region Frankfurt-Rhine-Main'."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester: Nomination Mar 31, Application Apr 30; Summer Semester: Nomination Sep 30, Application Oct 31.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Technical University of Darmstadt/Technische Universität Darmstadt/2026-2027/2026-27_Fact_Sheet_Exchange_Overseas.pdf#page=3",
+    "notes": "Also confirmed on #page=4."
+  },
+  "ext": {}
+}

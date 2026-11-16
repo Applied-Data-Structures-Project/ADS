@@ -1,0 +1,355 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-manchester-metropolitan-university-mmu",
+  "excel_rows": [
+    114
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1eCzd1E4t50GwbMS2DgrhDgvMz70cFFFC",
+      "https://drive.google.com/drive/folders/1mBQ_Wj4FFDewx5N7s4H354gFhYqziWGh"
+    ],
+    "local_files": [
+      "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/University of Manchester/Manchester Met Fact Sheet 2025-26.docx.txt"
+    ],
+    "notes": "Col H link (1eCzd1E4t50GwbMS2DgrhDgvMz70cFFFC) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The Manchester Metropolitan University (MMU)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "short_name": {
+    "value": "MMU",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "country": {
+    "value": "United Kingdom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Manchester",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "NO for these: Acting, Architecture, Computing, Education, Engineering, Healthcare Science, Journalism, Maths and Sports Science.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Acting",
+      "Architecture",
+      "Computing",
+      "Education",
+      "Engineering",
+      "Healthcare Science",
+      "Journalism",
+      "Maths",
+      "Sports Science"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": "Exact exclusion list from Excel scope."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Standard IELTS Academic 6.0 overall (minimum 5.5 in each component) or accepted equivalent if not previously taught in English; specific courses may require higher. No RHET 1020 waiver stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/study/international/before-you-apply/english-language-requirements",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": "Fact Sheet covers September-start (Fall), January-start (Spring), and Full Academic Year exchanges."
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Semester 1: Welcome Week Sep 28 – Oct 2, 2026; Teaching Oct 5 – Dec 18, 2026; Winter Break Dec 19 – Jan 10, 2027; Assessment Jan 11 – Jan 22, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/about-us/structure/term-dates",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Semester Two: Future Me Week Jan 25 – Jan 29, 2027; Teaching Block 1 Feb 1 – Mar 19, 2027; Spring Break Mar 20 – Apr 11, 2027; Teaching Block 2 Apr 12 – May 7, 2027; Assessment May 10 – May 21, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/about-us/structure/term-dates",
+    "notes": "Manchester Met Fact Sheet 2025-26.docx notes 'January start for one semester only' and links to mmu.ac.uk term dates."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/study/international/exchange-to-manchester-met",
+    "notes": "Official mmu.ac.uk confirms incoming exchange students do not pay tuition fees or tuition fee deposits to Manchester Met."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "mmu.ac.uk (living-costs) states baseline components (>=£170/mo groceries/essentials, >=£80/mo private household bills/utilities, >=£12/mo mobile + variable rent) without publishing an official total monthly GBP range (third-party estimates excluded)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official combined MMU monthly GBP living budget published (see UKVI visa financial requirement £1,171/month)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": "Full-year and January-start students may apply for on-campus halls subject to availability (https://www2.mmu.ac.uk/accommodation/); September-start 1-semester students are assisted via Manchester Student Homes for short-term housing."
+  },
+  "housing_notes": {
+    "value": "Full-year & Jan-start eligible to apply for on-campus accommodation (subject to availability); Sep-start 1-semester supported via Manchester Student Homes (https://www.manchesterstudenthomes.com/Accommodation) with details sent in offer letter.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": "On-campus accommodation site at https://www2.mmu.ac.uk/accommodation/."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "1-semester (<6 months): enter under UK Visitor rules without ATAS. Full-year: UK Student Visa required; UKVI outside-London financial proof is £1,171/month (up to 9 months = £10,539 held for 28 consecutive days unless nationality differentiation applies); ATAS not required for exchange.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/study/international/exchange-to-manchester-met",
+    "notes": "Visas portal at http://www2.mmu.ac.uk/international/visas-and-immigration/."
+  },
+  "official_website_url": {
+    "value": "https://www.mmu.ac.uk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.mmu.ac.uk/study/international/exchange-to-manchester-met",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "UK / Manchester Met credits: 60 MMU credits (= 30 ECTS) per semester; 120 MMU credits (= 60 ECTS) per academic year; includes optional free Uniwide Language unit (7.5 ECTS/term).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Excluded majors per agreement: Acting, Architecture, Computing, Education, Engineering, Healthcare Science, Journalism, Maths, Sports Science.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:114",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Study Abroad Team holds 'Welcome to Manchester Met' session during Welcome Week plus department inductions and Manchester Student Homes short-term accommodation advising.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.mmu.ac.uk/study/international/exchange-to-manchester-met",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Apr 1, Application May 12; Spring: Nomination Oct 1, Application Oct 16.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Manchester/Manchester Met Fact Sheet 2025-26.docx",
+    "notes": null
+  },
+  "ext": {}
+}

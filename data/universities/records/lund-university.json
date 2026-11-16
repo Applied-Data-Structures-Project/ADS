@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "lund-university",
+  "excel_rows": [
+    66
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/17zaSXHRHf5JVvBVvLIqTCY7EUfz0PuKg"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Lund University/2025-2026/LU-fact-sheet-2025-2026.pdf",
+      "data/raw/factsheets/Lund University/2025-2026/Lund University Exchange Student Timeline - Autumn_5.png",
+      "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf",
+      "data/raw/factsheets/Lund University/postcard-Lusem.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Lund University/2025-2026/LU-fact-sheet-2025-2026.pdf.txt",
+      "data/raw/extracted/Lund University/2025-2026/Lund University Exchange Student Timeline - Autumn_5.png.txt",
+      "data/raw/extracted/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf.txt",
+      "data/raw/extracted/Lund University/postcard-Lusem.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Lund University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "short_name": {
+    "value": "LU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=7",
+    "notes": null
+  },
+  "country": {
+    "value": "Sweden",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lund",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": "Excel agreement_scope_raw is 'University-wide' (note: LUSEM university-wide seats cap at 15 ECTS/sem)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Bioinformatics",
+      "Journalism",
+      "Industrial Design"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=5",
+    "notes": "Restricted/unavailable programs per 2025-2026 exchange fact sheet (also on LU-fact-sheet-2025-2026.pdf#page=2)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Swedish"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/exchange-studies",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/exchange-studies",
+    "notes": "Extensive English-taught exchange course catalog alongside Swedish-taught offerings."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Recommended English proficiency equivalent to IELTS 6.5 / TOEFL iBT 90 (certified via partner university nomination; see https://www.lunduniversity.lu.se/english-requirements). RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Not required for English-taught courses; Swedish B2/C1 proficiency required only for courses taught in Swedish.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=4",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-31 to 2027-01-17 (AY 2026-2027 Autumn semester)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/about-lund-university/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-18 to 2027-06-06 (AY 2026-2027 Spring semester; preliminary Arrival Day Jan 11, 2027)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/about-lund-university/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/admissions/tuition-fees",
+    "notes": "Official exchange students pay no application or tuition fees at Lund University."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "SEK",
+      "min": 9000,
+      "max": 12000
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/student-life/before-you-arrive/money-and-living-costs",
+    "notes": "Lund University publishes SEK 9,000–12,000/month overall student budget (itemized guide components: SEK 4,000–8,000 housing + SEK 3,000 food + SEK 400–1,000 course literature + SEK 1,500 misc = SEK 8,900–13,500/mo). Compare Swedish Migration Agency 2026 threshold SEK 10,656/mo."
+  },
+  "living_cost_usd_est": {
+    "value": 5223.8,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/student-life/before-you-arrive/money-and-living-costs",
+    "notes": "5-month midpoint estimate: 10,500 SEK/month * 5 months = 52,500 SEK * 0.099500 USD/SEK = 5,223.75 USD (ECB 2026-11-13 cross rate 1 EUR = 11.1075 SEK and 1 EUR = 1.1052 USD -> 1 SEK = 0.099500 USD, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "No application or tuition fee. Incoming exchange students are automatically covered by the Swedish State's Insurance for Foreign Students (Kammarkollegiet).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=6",
+    "notes": "Insurance details at https://www.lunduniversity.lu.se/insurance."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=6",
+    "notes": "LU Accommodation provides housing applications for exchange students, though housing is NOT guaranteed; alternative student options via AF Bostäder and Student Union service BoPoolen."
+  },
+  "housing_notes": {
+    "value": "Not guaranteed via LU Accommodation (https://www.luaccommodation.lu.se/); alternatives include AF Bostäder and BoPoolen. Typical rent SEK 4,000–8,000/month (`money-and-living-costs`).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.luaccommodation.lu.se/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA exchange students staying >3 months require a Swedish residence permit for higher education studies via Migrationsverket; 2026 minimum maintenance proof is SEK 10,656/month covering the full study period.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.migrationsverket.se/en/private-individuals/studying-in-sweden/universities-and-university-colleges/apply-for-a-residence-permit-for-studies-at-higher-education.html",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.lunduniversity.lu.se/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:66",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.lunduniversity.lu.se/exchange-studies",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/exchange-studies",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.lunduniversity.lu.se/admission-requirements-exchange-courses",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/admission-requirements-exchange-courses",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (1 Lund University credit = 1 ECTS); full-time exchange workload is 30 ECTS/semester (typically four 7.5 ECTS courses) and 60 ECTS/year.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=3",
+    "notes": "Equivalency 1 LU credit = 1 ECTS also on #page=7."
+  },
+  "course_restrictions_note": {
+    "value": "Closed programs: Bioinformatics, Journalism, Industrial Design. University-wide exchange students may enroll in at most 15 ECTS/semester at LUSEM (School of Economics and Management). Limited course changes permitted after semester start.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official Transcript of Records (Bachelor and Master if applicable)",
+      "List of ongoing courses (mandatory if not listed on transcript)",
+      "Eligibility form (required for Faculty of Engineering / LUSEM)",
+      "Portfolio (for Architecture, Design, Music, and Fine Arts)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=1",
+    "notes": "Ongoing courses and portfolio items detailed across #page=1–2."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.lunduniversity.lu.se/exchange-studies",
+    "notes": "Historic university town of Lund in southern Sweden (~95,000–125,000 residents hosting ~44,000–46,000 students)."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=7",
+    "notes": "Campuses located in Lund, Malmö, and Helsingborg."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Arrival Day, Orientation Weeks, LU Accommodation support, Student Health Services, and verifiable LADOK digital transcripts.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=7",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn Semester / Academic Year: nomination March 15–31, student application April 1–15. Spring Semester: nomination September 15–30, student application October 1–15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Lund University/Lund University/LU Fact Sheet 2025-2026 - accessible.pdf#page=1",
+    "notes": "Same fixed annual windows confirmed for 2026-2027 on https://www.lunduniversity.lu.se/exchange-application."
+  },
+  "ext": {}
+}
