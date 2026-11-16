@@ -54,12 +54,18 @@
 			</p>
 		{/if}
 
-		<div class="mt-6 pt-5 border-t border-slate-100">
+		<div class="mt-6 pt-5 border-t border-slate-100 flex flex-col gap-2.5">
 			<a
 				href="/admin"
 				class="w-full h-10 px-4 bg-[#131b2e] hover:bg-[#1e293b] text-white text-sm font-semibold rounded-lg shadow-sm flex items-center justify-center transition-colors"
 			>
 				Open IPSO Admin Dashboard (/admin)
+			</a>
+			<a
+				href="/apply"
+				class="w-full h-10 px-4 bg-[#eff4ff] hover:bg-[#e5eeff] text-[#0b1c30] text-sm font-semibold rounded-lg shadow-sm flex items-center justify-center transition-colors"
+			>
+				Open Student Application (/apply)
 			</a>
 		</div>
 	</div>
