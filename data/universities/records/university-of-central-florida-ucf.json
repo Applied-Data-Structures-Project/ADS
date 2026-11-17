@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-central-florida-ucf",
+  "excel_rows": [
+    132
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1xKI7jzrZpX3OtbfwBCtjOsqP7hf2EDYM?usp=drive_link",
+      "https://drive.google.com/drive/folders/1xKI7jzrZpX3OtbfwBCtjOsqP7hf2EDYM"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UCF/2024-2025/UCF Information Sheet 2024-2025.pdf",
+      "data/raw/factsheets/UCF/2025 - 2026/UCF Fact Sheet 2025-2026.pdf",
+      "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UCF/2024-2025/UCF Information Sheet 2024-2025.pdf.txt",
+      "data/raw/extracted/UCF/2025 - 2026/UCF Fact Sheet 2025-2026.pdf.txt",
+      "data/raw/extracted/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Central Florida (UCF)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UCF",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Florida",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "city": {
+    "value": "Orlando",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Nominated by home partner university; graduate exchange applicants must hold a bachelor's degree or equivalent qualification.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "For non-English official/native-language citizens: TOEFL iBT 80, IELTS 6.5, Duolingo 120, OR signed official letter from home university confirming years of English study and college-level English proficiency. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": "Rule introduced on #page=6 and test cutoffs listed on #page=7."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required for non-English native countries unless home-university English proficiency letter submitted.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-24 to 2026-12-10 (classes Aug 24–Dec 3; exams Dec 4–10, 2026)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-11 to 2027-05-04 (classes Jan 11–Apr 26; exams Apr 28–May 4, 2027)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": "Tuition waiver granted up to maximum load of 16 credit hours per semester."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1350,
+      "max": 1650
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": "Derived by dividing 1-semester exchange living items on #page=7 (Housing $3,500–$5,000 + Food $2,550 + Transportation $700 = $6,750–$8,250/semester, excluding Books $450, International Fee $50, Transcript $18, and Insurance $500–$950) by 5 months = $1,350–$1,650/mo."
+  },
+  "living_cost_usd_est": {
+    "value": 7500.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": "1-semester USD midpoint estimate: ($3,500–$5,000 Housing + $2,550 Food + $700 Transport = $6,750–$8,250, midpoint $7,500.00 USD; excludes Books $450 and Insurance $500–$950; compare DS-2019 minimum proof $7,615/sem noted on abroad.ucf.edu). Recorded 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory adequate health insurance per Florida Board of Governors (UCF Health Insurance ~$500–$950/sem depending on coverage); mandatory immunizations prior to registration; International Fee $50, Transcript $18. Lynx Orlando buses and UCF Shuttle free with UCF ID.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": "Insurance & immunization policies stated on #page=6; fee figures on #page=7."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=5",
+    "notes": "Students secure their own off-campus or UCF-partnered accommodation (The Verge ~$4,999/sem incl. utilities w/ deposits waived; UnionWest for Main/Downtown; Rosen apartments for Hospitality students)."
+  },
+  "housing_notes": {
+    "value": "Partnered off-campus/campus-adjacent options: The Verge (~$4,999/sem all-inclusive utilities, security/background fees waived), UnionWest (Downtown/Main), and Rosen College apartments (Hospitality); Housing instructions sent June (Fall) / Nov (Spring).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=5",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 visa (Form DS-2019) required; must submit passport copy, English proficiency proof, financial documentation (abroad.ucf.edu notes $7,615/sem minimum proof), and Affidavit of Support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=6",
+    "notes": "Document list continues on #page=7; DS-2019 proof $7,615/sem also noted on https://abroad.ucf.edu/."
+  },
+  "official_website_url": {
+    "value": "https://www.ucf.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:132",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://abroad.ucf.edu/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://abroad.ucf.edu/",
+    "notes": "Also referenced as studyabroad.ucf.edu in UCF Fact Sheet #page=8."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Students search courses interactively via my.ucf.edu -> Class Search or Browse Course Catalog (`UCF Fact Sheet 2026-2027.pdf#page=3`)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours (standard course = 3 credits): UG min 12 credits, GR min 9 credits; maximum load covered by tuition waiver is 16 credits.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "UG cannot enroll in 5000+ level courses; Master's students limited to <=6000; PhD any level. Prerequisite courses require department approval contingent on transcript.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Non-Degree Seeking UCF Application + UCF Abroad online profile",
+      "Most recent official academic transcript (+ proof of current enrolled courses if absent)",
+      "Registration Worksheet signed by home/host academic advisor",
+      "Passport copy + English proficiency proof (or home-university letter)",
+      "Financial Documentation & Affidavit of Support for DS-2019"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=3",
+    "notes": "DS-2019 financial/passport/English docs on #page=6–7; application steps on #page=2."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=4",
+    "notes": "Three Orlando campuses open to exchange students: UCF Main Campus (East Orlando), UCF Downtown Campus, and Rosen College of Hospitality Management (West Orlando)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "UCF Abroad advising, Global Knights Society student organization, UCF Health Center, SARC tutoring, CAPS, SAS accessibility, complimentary Lynx transit & campus shuttle.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=7",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall 2026: partner nomination March 1, student application June 1. Spring 2027: partner nomination September 1, student application October 30.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UCF/2026-2027/UCF Fact Sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

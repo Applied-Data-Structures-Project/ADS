@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "nagoya-university-of-commerce-and-business-nucb",
+  "excel_rows": [
+    74
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1o8e3FfflmH3lN2gzJuI0dknEfIFTT_O1"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Nagoya University of Commerce and Business (NUCB)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NUCB",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "country": {
+    "value": "Japan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Nisshin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement scope states 'Business Administration' major/field rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": "Excel agreement scope states 'Business Administration'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum host GPA is stated in NUCB Fact Sheet 2020/21 or on nucba.ac.jp (JASSO scholarship applicants separately require 2.30/3.0 JASSO scale)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Japanese"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": "UG Global BBA and GR MBA/MSc international modules taught in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": "Full English-taught Global BBA (undergraduate) and graduate business exchange curricula."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 80 / PBT 550, TOEIC 750, or IELTS 6.0 (min 5.5 in all 4 components). Students whose home courses are taught in English are exempted from test scores and instead submit a letter of recommendation from their academic advisor (RHET 1020 not explicitly cited; AUC instruction is in English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "No Japanese proficiency required for English-taught Global BBA/MBA exchange tracks.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": "Fall"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester: Early September - Mid-January (Terms 3 & 4; dorm check-in early September; 2020/21 sheet noted Sept-Dec).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": "2020/21 summary in data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx."
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester: Early April - Late July (Terms 1 & 2; dorm check-in late March; note partner Excel currently lists Fall term only for AUC agreement).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": "Bilateral partner exchange students are exempt from paying tuition fees to NUCB."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "JPY",
+      "min": 60000.0,
+      "max": 90000.0
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/faq/exchange/living-expense.html",
+    "notes": "Official NUCB Living Expense FAQ estimates JPY 60,000-90,000/month EXCLUDING accommodation (Greater Nagoya ~30% cheaper than Tokyo). Earlier 2020/21 Fact Sheet quoted JPY 120,000/month excl. accommodation plus dorm rent JPY 42,750-74,000/month."
+  },
+  "living_cost_usd_est": {
+    "value": 2343.78,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/faq/exchange/living-expense.html",
+    "notes": "Midpoint JPY 75,000/month (60,000-90,000 JPY/month excluding accommodation) * 5 months = JPY 375,000; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 176.83 JPY & 1 EUR = 1.1052 USD -> 1 JPY = 0.00625007 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 2,343.78 USD (excludes dorm rent JPY 42,750-74,000/mo)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived under bilateral exchange. All students in Japan are legally required to join Japan National Health Insurance (NHI, avg ~JPY 2,000/month, covering 70% of medical care). Casebooks/materials (~JPY 2,000/course) and residence check-in/deposit fees apply (2020/21 sheet: JPY 30,000 refundable deposit + JPY 22,500 check-in fee/sem).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/campuslife/dormitory/",
+    "notes": "Multiple NUCB residence halls allocated upon application (Meito, Chiyoda, Higashiyama Annex, Sanbongi, Sanbongi Campus / Hiroshi Hall / Koryo Hall); strict rules prohibit partying, gathering, and smoking."
+  },
+  "housing_notes": {
+    "value": "Multiple NUCB halls in Nagoya & Nisshin (2020/21 rates incl. utilities: Sanbongi JPY 42,750/mo, Sanbongi Campus JPY 45,750/mo, Higashiyama Annex JPY 63,750/mo, Meito/Chiyoda JPY 74,000/mo; plus JPY 30,000 refundable deposit & JPY 22,500 non-refundable check-in fee per semester; newer halls include Hiroshi Hall & Koryo Hall).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": "Live dormitory portal at https://www.nucba.ac.jp/en/campuslife/dormitory/."
+  },
+  "host_grants_or_stipends": {
+    "value": "NUCB Housing Scholarship / residence rent reductions automatically evaluated from transcripts/GPA; eligible nominees may also be nominated for the JASSO Short-Term Study in Japan Scholarship (subject to annual slot allocation).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Students cannot enroll on a tourist visa. After registered-mail/portal hard-copy submission, NUCB applies to Japanese Immigration for a Certificate of Eligibility (COE), forwards COE + Acceptance Letter to home university, and student applies for a Student Visa at a Japanese Embassy/Consulate.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.nucba.ac.jp/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:74",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.nucba.ac.jp/en/program/exchange/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.nucba.ac.jp/en/academics/bba/syllabus.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/academics/bba/syllabus.html",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.nucba.ac.jp/en/academics/bba/syllabus.html",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/academics/bba/syllabus.html",
+    "notes": "Global BBA English-taught syllabus portal; graduate courses offered via NUCB Business School."
+  },
+  "credit_system_and_load": {
+    "value": "1 NUCB course = 2 NUCB credits (~3 ECTS, 14 sessions x 100 min + exam). Exchange load: minimum 12 NUCB credits (6 courses / 18 ECTS) and maximum 20 NUCB credits (10 courses / 30 ECTS) per semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/program/exchange/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Business Administration / Management courses only per AUC agreement scope; strict residence conduct rules prohibit partying, gathering, and smoking.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home partner school nomination (emeline@nucba.ac.jp)",
+      "Hard copies of completed application documents sent by registered mail (for COE filing)",
+      "Academic transcript",
+      "TOEFL/IELTS/TOEIC scores OR academic advisor recommendation letter confirming English-medium instruction"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Interactive case-method business education (two mini-terms per semester: Terms 1-2 Spring, Terms 3-4 Fall) across Nisshin UG and central Nagoya campuses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/academics/bba/syllabus.html",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nucba.ac.jp/en/university/advantage/",
+    "notes": "Nisshin Campus (green area east of Nagoya for UG Global BBA) and Nagoya Campus (central Nishiki, Naka-ku, Nagoya)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "NUCB Center for International Affairs handles COE immigration filing, dorm placement across 5+ NUCB residences, and NUCB Housing Scholarship / JASSO nominations.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nagoya University of Commerce and Business (NUCB)/Nagoya University of Commerce and Business (NUCB).docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exact annual deadlines coordinated directly with partner offices (not published statically on NUCB's public page or in 2020/21 Fact Sheet)."
+  },
+  "ext": {}
+}

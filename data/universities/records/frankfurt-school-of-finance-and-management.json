@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "frankfurt-school-of-finance-and-management",
+  "excel_rows": [
+    35
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1hYkLDA896DBrzHduic16B6V6zD7WO3tW?usp=drive_link",
+      "https://drive.google.com/drive/folders/1hYkLDA896DBrzHduic16B6V6zD7WO3tW"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Frankfurt School of Finance & Management/2020_2021/Frankfurt School of Finance _ Management.docx",
+      "data/raw/factsheets/Frankfurt School of Finance & Management/2025_2026/Fact_Sheet_Exchange_Students_2025_26.pdf",
+      "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Frankfurt School of Finance & Management/2020_2021/Frankfurt School of Finance _ Management.docx.txt",
+      "data/raw/extracted/Frankfurt School of Finance & Management/2025_2026/Fact_Sheet_Exchange_Students_2025_26.pdf.txt",
+      "data/raw/extracted/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Frankfurt School of Finance & Management",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Frankfurt School",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Frankfurt",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Bachelor exchange: at least 2 years completed in a business or economics-related programme (eligible for 6th/7th semester modules). Master exchange: completed undergraduate degree and at least 1 semester at graduate level.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": "Mapped from Excel agreement_scope_raw 'Business Administration' (AY 2026-27 Fact Sheet #page=1 lists Finance, Management, Economics, Philosophy & Law, Accounting departments)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": "Excel agreement_scope_raw states 'Business Administration'; AY 2026-27 Fact Sheet #page=1 offers modules in finance, economics, management, accounting, philosophy & law."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No specific majors excluded; AY 2026-27 Fact Sheet #page=2 limits Bachelor exchange students to 6th and 7th semester BA modules."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No institutional minimum GPA stated in AY 2026-27 Fact Sheet; partner institutions handle nomination screening."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": "AY 2026-27 Fact Sheet #page=2: Master programmes are completely taught in English; most 6th/7th-semester Bachelor modules are taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 90, IELTS 7.0, or Cambridge C1 (within 2 years of test date), OR confirmation from home university study advisory office if degree programme at home university is fully taught in English (native speakers provide native-English passport proof). RHET 1020 is not specifically mentioned; AUC English-medium degree confirmation letter satisfies the home-programme English exemption.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "C1 German proficiency required only if enrolling in German-taught modules; no German required for English-taught modules. Optional German courses offered (6 ECTS during semester; optional 1-month intensive August course before Winter semester for a fee).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": "AY/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Winter semester (available under Academic Year option): Mandatory orientation 19–20 Aug 2026; Bachelor lectures 17 Aug–11 Dec 2026 (Exam I 17–24 Oct, Exam II 12–19 Dec 2026); Master term 1 Sep 2026–31 Jan 2027 (lectures begin 31 Aug, end 12 Dec; Exam I 19–24 Oct, Exam II 14–19 Dec 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": "Excel agreement_terms_raw is 'AY/Spring'; Winter semester dates apply to Academic Year students."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Summer semester 2027: Mandatory orientation 21–22 Jan 2027; Bachelor lectures 25 Jan–21 May 2027 (Exam I 13–20 Mar, Exam II 22–29 May 2027); Master term 1 Feb–31 Aug 2027 (lectures begin 11 Jan, end 22 May; Exam I 15–20 Mar, Exam II 24–29 May 2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-27 Fact Sheet #page=2 does not forbid final-semester students, but strongly advises against relying on specific FS courses to meet graduation requirements because course enrollment is not guaranteed."
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.frankfurt-school.de/en/students/international-office/incoming",
+    "notes": "Standard FS tuition fees are waived for incoming exchange students nominated under partner exchange agreements; mandatory Deutschlandticket and Student Council fees still apply."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 900,
+      "max": 1200
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.frankfurt-school.de/en/live/international-student-guide/before-you-apply",
+    "notes": "Official FS International Student Guide ('Before you Apply') cites DAAD guidance of EUR 900–1,200/month covering accommodation, groceries, health insurance, transport, communication, study materials, and personal expenses (note AY 2026-27 Fact Sheet #page=2 also lists optional i-Live dorm rent at EUR 770/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 5802.3,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.frankfurt-school.de/en/live/international-student-guide/before-you-apply",
+    "notes": "5-month USD midpoint estimate derived from EUR 900–1,200/month range (midpoint EUR 1,050/mo x 5 = EUR 5,250) converted at ECB 2026-11-13 reference rate 1 EUR = 1.1052 USD (collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html): 5,250 x 1.1052 = 5,802.30 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory reduced Deutschlandticket (~EUR 189/semester) and Student Council fee (EUR 15/semester) apply to all enrolled students regardless of length of stay. Compulsory German-equivalent unlimited health insurance covering the full semester (travel insurance rejected; checked at mandatory orientation, or students must enroll in German insurance at ~EUR 105/month).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Limited furnished on-campus apartments (private bath and kitchenette) reserved with dorm partner i-Live on a first-come, first-served basis (not guaranteed; apply within online exchange application). Fixed 6-month solidarity contracts (15 Jan–14 Jul or 15 Jul–14 Jan) at EUR 770/month (14-day withdrawal period, after which full 6-month rent applies; contracted directly with i-Live). Other Frankfurt options: http://www.frankfurt-school.de/en/home/about/campus/dorms",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No citizenship restrictions stated; non-EU nationals require a pre-arrival German student visa."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Compulsory pre-arrival German student visa for non-EU students (arranged individually via local German embassy; must be valid for mandatory pre-semester orientation days per AY 2026-27 Fact Sheet #page=2). German Federal Foreign Office blocked-account financial standard is EUR 992/month (EUR 11,904/year) per https://www.auswaertiges-amt.de/en/sperrkonto/388600.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.frankfurt-school.de/content/en.html",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:35",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.frankfurt-school.de/en/students-alumni/international-office/incoming-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": "Embedded PDF /Annots link on p.1 and p.2 of AY 2026-27 Fact Sheet; FS website also hosts https://www.frankfurt-school.de/en/students/international-office/incoming"
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-27 Fact Sheet #page=2 states the module catalogue is made available by the International Office prior to course selection periods (July/December for BA, July/November for MA), and course selection occurs via FS Online Campus."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credits (each FS module = 6 ECTS). Exchange workload: minimum 1 module (6 ECTS), maximum 5 modules (30 ECTS) per semester including optional 6-ECTS German course.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Bachelor exchange limited to 6th and 7th semester BA modules; most Master modules open subject to availability. Add/drop available before semester start; enrollment in specific courses not guaranteed. Lectures and exams run Monday–Saturday (#page=1); exam dates released ~1–2 weeks before exam week.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": "Mon–Sat schedule and exam-release note on #page=1."
+  },
+  "required_application_docs": {
+    "value": [
+      "Proof of English and/or German proficiency",
+      "Official stamped and signed Transcript of Records",
+      "Bachelor degree certificate (Master exchange only)",
+      "Passport copy (valid for full semester)",
+      "Biometric passport-style photograph",
+      "Proof of international health insurance"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Research-led, triple-accredited (AACSB, AMBA, EQUIS) business school focusing on finance, management, economics, accounting, and philosophy & law; lectures and exams run Monday–Saturday, with mandatory orientation and online course selection.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory International Student Orientation (campus tour, FS Online Campus onboarding, compulsory health insurance check), optional semester German course (6 ECTS) and August intensive German course, dedicated Incoming Student Mobility Manager (Patricia Escalera, p.escalera@fs.de; #page=2), International Office walk-in hours Mon–Fri 9:00–16:00 and 24/7 campus reception (#page=3).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=1",
+    "notes": "Also cites #page=2 for German courses/contact and #page=3 for office/reception hours."
+  },
+  "nomination_deadlines": {
+    "value": "Summer Semester (Spring): Nomination 1 October / Application 1 November; Winter Semester (Fall / Academic Year): Nomination 15 April / Application 15 May.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Frankfurt School of Finance & Management/2026-2027/Fact_Sheet_Exchange_Students_2026_27.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

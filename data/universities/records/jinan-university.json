@@ -1,0 +1,357 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "jinan-university",
+  "excel_rows": [
+    52
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1L-vvV-n6H5NNHxPuIZ-eWYHP-L3bcp-m"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Jinan University/1. Jinan University factsheet Y25-26.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Jinan University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "short_name": {
+    "value": "JNU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "China",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Guangzhou",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet (Y25-26, #page=2) explicitly states: 'There is no minimum GPA requirement to participate in the exchange program'."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Chinese"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": "JNU Fact Sheet Y25-26 lists selected English-taught courses alongside regular Chinese-taught courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "No English certificate required to submit; TOEFL iBT >=70 or IELTS >=5.5 recommended for English-taught courses. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "HSK Level >=5 required for Chinese-taught courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Early Sep to mid Jan (Fall 2025: Sep 8, 2025 – Jan 24, 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Late Feb to mid Jul.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Neither Jinan University Fact Sheet Y25-26 nor English jnu.edu.cn incoming pages explicitly state bilateral exchange tuition waivers (jnu.edu.cn Chinese notices only address outgoing students; third-party partner mirrors excluded)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Neither JNU Fact Sheet Y25-26 nor jnu.edu.cn explicitly publishes a full monthly living budget (third-party aggregators excluded)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official JNU monthly living budget published."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Compulsory Mainland China international student medical insurance mandated by Ministry of Education (via lxbx.net), proof required prior to arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=3",
+    "notes": "On-campus 5-bed shared dormitories available on Panyu (CNY 1,300/sem) and Huawen (CNY 3,000/sem) campuses (utilities excluded, no single rooms, no cooking); students may also arrange off-campus housing."
+  },
+  "housing_notes": {
+    "value": "Panyu campus 5-bed shared dorm CNY 1,300/semester; Huawen campus 5-bed shared dorm CNY 3,000/semester (bills excluded, no single rooms, no cooking); self-arranged off-campus allowed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "X1 student visa (>180 days) or X2 study visa (<=180 days) required prior to arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://welcome.jnu.edu.cn/en2014/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:52",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://english.jnu.edu.cn/main.htm",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://english.jnu.edu.cn/main.htm",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "JNUCTS (1 JNUCTS = 18 lecture hours; suggested 20 JNUCTS = 30 ECTS); 100-point grading scale (60 pass; GP 1.0–5.0).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Signed JNU exchange application form",
+      "Passport copy",
+      "Official academic transcript in English",
+      "Digital ID photo (100–200KB jpg/jpeg/png)",
+      "Visa pre-registration form"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": "Exchange students host across Shipai, Panyu, and Huawen campuses."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: April 30; Spring: October 31.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Jinan University/1. Jinan University factsheet Y25-26.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

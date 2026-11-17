@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "augsburg-university",
+  "excel_rows": [
+    9
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1kiQpcteeg8hrI5Jbr5Vd91qwL4XiKooQ"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf",
+      "data/raw/factsheets/Augsburg/2025-2026/WORLDWIDE_ISSS Exchange Flyer.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Augsburg/2025-2026/Augsburg University.pdf.txt",
+      "data/raw/extracted/Augsburg/2025-2026/WORLDWIDE_ISSS Exchange Flyer.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Augsburg University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Minnesota",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "city": {
+    "value": "Minneapolis",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be a full-time degree-seeking student at an exchange partner, have completed at least 1 year of college/university study, and be in good academic standing at the home institution.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Augsburg Fact Sheet requires good academic standing at home institution without specifying a numeric host GPA cutoff; 2025-26 Drive file 'FACT SHEET_ WORLDWIDE_2025-26_INBOUND Exchange.docx.pdf' could not be downloaded."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native speakers: TOEFL iBT 80 (pBT 550 / Essentials 8.5), IELTS 6.5, Duolingo 105, SAT EBRW 570, or ACT English+Reading 22; ISSS Exchange Flyer notes other measures of proficiency may also be accepted. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": "Cross-checked with WORLDWIDE_ISSS Exchange Flyer.pdf#page=2."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026 final exams Dec 14–17, 2026 (full term start/end dates on Augsburg Registrar Academic Calendar).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.augsburg.edu/registrar/",
+    "notes": "Fact Sheet (Augsburg University.pdf#page=2) displays AY 2024-2025 calendar; Registrar confirms AY 2026-2027 Fall exam dates."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027 final exams May 3–6, 2027 (full term start/end dates on Augsburg Registrar Academic Calendar).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.augsburg.edu/registrar/",
+    "notes": "Fact Sheet (Augsburg University.pdf#page=2) displays AY 2024-2025 calendar; Registrar confirms AY 2026-2027 Spring exam dates."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=2",
+    "notes": "Fact Sheet explicitly states 'Tuition (Paid to your home institution): $0'."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet (AY 2024-2025, #page=2) lists semester package costs ($3,494 Anderson double room + $2,817 mandatory 15+ meal plan + $900 student fees/books + $800 est. health insurance = $8,011/semester total, $7,211 excl. health insurance) rather than a monthly living rate."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official monthly living budget published; Fact Sheet (#page=2) gives AY 2024-2025 semester total of $8,011 USD incl. $800 est. health insurance ($7,211 excl. insurance)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Estimated student fees/books/materials $900/semester and health insurance $800/semester (AY 2024-2025 Fact Sheet); SEVIS I-901 fee required for J-1 visa.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=2",
+    "notes": "SEVIS I-901 fee noted on #page=1."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=2",
+    "notes": "Exchange students apply to live on campus (Anderson Hall double room / Global Living Community, $3,494/sem AY 2024-25) with a mandatory 15-meal+ plan ($2,817/sem); Residence Life makes final housing decisions based on availability."
+  },
+  "housing_notes": {
+    "value": "On-campus housing application for Anderson Hall dorm (double room $3,494/sem AY 2024-25) and required 15+ meal plan ($2,817/sem); Global Living Community LLC details at https://www.augsburg.edu/residencelife/living-learning-communities-llcs/.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa using Augsburg-issued DS-2019 form; pay SEVIS I-901 fee and allow at least 1 month for travel/arrival planning.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.augsburg.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:9",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studyabroad.augsburg.edu/index.cfm?FuseAction=Programs.ViewProgramAngular&id=55177",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://www.augsburg.edu/catalog/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": "Live course search available at https://registration.augsburg.edu/recreg/Pages/frmCourseSearch.aspx."
+  },
+  "english_course_list_url": {
+    "value": "http://www.augsburg.edu/catalog/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": "All standard undergraduate courses listed in the catalog are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US Semester Credits; full-time exchange course load 12–19 credits per semester (most courses are 4 credits).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "urban",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/WORLDWIDE_ISSS Exchange Flyer.pdf#page=1",
+    "notes": "ISSS Exchange Flyer states: 'A WELCOMING CAMPUS IN A LIVELY URBAN SETTING' (Minneapolis, MN)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Student and Scholar Services (ISSS, Science Hall 112, isss@augsburg.edu): DS-2019/J-1 advising, mandatory international orientation, scheduled airport pickups, Global Living Community.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.augsburg.edu/isss/",
+    "notes": "Verified via WORLDWIDE_ISSS Exchange Flyer.pdf#page=1 (augsburg.edu/isss) and #page=2."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Mar 1 (Fact Sheet/Flyer) or Mar 15 (official web), Application Mar 15 or Mar 21 (official web); Spring: Nomination Oct 1, Application Oct 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Augsburg/2025-2026/Augsburg University.pdf#page=1",
+    "notes": "Augsburg ISSS J-1 Exchange page (https://www.augsburg.edu/isss/exchange-students-j-1-visa/) states Fall Nomination Mar 15 / Application Mar 21 and Spring Application Oct 15 (Nomination Oct 1)."
+  },
+  "ext": {}
+}

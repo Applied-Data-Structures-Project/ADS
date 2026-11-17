@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "universitat-autonoma-de-barcelona-uab",
+  "excel_rows": [
+    126
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1R21bwA0-3wfkfXQ90e8yPlb19Uyc0oRI"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Universitat Autònoma De Barcelona (UAB)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UAB",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Barcelona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Humanities",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": "Mapped from Excel scope 'Humanities' to AUC School of Humanities and Social Sciences (HUSS)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Humanities"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": "Verified via Excel scope 'Humanities'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Catalan",
+      "Spanish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=5",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=5",
+    "notes": "Fact Sheet notes lectures are mainly taught in Catalan or Spanish, alongside subjects taught in English (see UAB subject lists)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B1 English generally (B2 required for Economics & Business and Political Science & Sociology; no English subjects in Psychology). No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=5",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum B1 Spanish for Spanish-taught courses (B2 for Econ/PoliSci, B1 for Communication/Psychology); no Catalan certificate required; free Initial Catalan course + subsidized Catalan/Spanish courses offered.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=5",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 1st Sem: Sep 8, 2025 – Feb 6, 2026 (Christmas break Dec 22 – Jan 7).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026 2nd Sem: Feb 9 – Jul 3, 2026 (Easter break Mar 30 – Apr 6, 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=3",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uab.cat/web/mobility-international-exchange/mobility-international-exchange-programmes/uab-exchange-programme-incoming/exchange-agreements-1345671990030.html",
+    "notes": "Official uab.cat confirms tuition fees at UAB are waived under UAB Exchange Programme / Erasmus+ bilateral agreements."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 720.0,
+      "max": 1150.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=6",
+    "notes": "Fact Sheet budgets: accommodation EUR 250–500 + food EUR 250–350 + transport EUR 60–80 + personal/leisure EUR 160–220 = EUR 720–1,150/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5166.81,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=6",
+    "notes": "5-month estimate in EUR: midpoint 935 EUR/month * 5 * 1.105200 USD/EUR = 5166.81 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Fact Sheet budgets: accommodation EUR 250–500 + food EUR 250–350 + transport EUR 60–80 + personal/leisure EUR 160–220 = EUR 720–1,150/month."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory complementary accident and civil liability insurance fee (€4.02 in 2024-25).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=6",
+    "notes": "On-campus Vila Universitaria residence hall (https://vilauniversitaria.uab.cat/en/) plus BCU/off-campus assistance."
+  },
+  "housing_notes": {
+    "value": "Estimated rent EUR 250–500/month; on-campus Vila Universitaria (https://vilauniversitaria.uab.cat/en/) and off-campus BCU options.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU citizens staying >90 days must obtain a Spanish Type D Student Visa prior to arrival (using UAB Acceptance Letter). NIE printed on visa for stays up to 180 days; longer stays apply for TIE Student Residence Card post-arrival.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uab.cat/web/mobility-international-exchange/international-support-service/living-in-barcelona-1345819413120.html",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.uab.cat/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:126",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uab.cat/web/mobility-international-exchange/mobility-international-exchange-programmes/uab-exchange-programme-incoming/exchange-agreements-1345671990030.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uab.cat/web/mobility-international-exchange/mobility-international-exchange-programmes/uab-exchange-programme-incoming/exchange-agreements-1345671990030.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.uab.cat/web/mobilitat-internacional/itineraris/incoming-exchange-students/subject-list-incoming-students-1345857540029.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=1",
+    "notes": "SIA portal at https://sia.uab.es/."
+  },
+  "english_course_list_url": {
+    "value": "https://www.uab.cat/web/studies/undergraduate/undergraduate-offer/subjects-in-english-1345678921142.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uab.cat/web/studies/undergraduate/undergraduate-offer/subjects-in-english-1345678921142.html",
+    "notes": "Official UAB undergraduate subjects taught in English list."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; graduate exchange maximum load 30 ECTS per semester.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": ">=50% of credits must be taken in the assigned host faculty (<=50% elsewhere subject to space); Master courses require GR agreement + coordinator approval; thesis research usually not accepted; EINA/Escola Massana require additional direct application; Political Science max 2 English + 1 Spanish/sem; Psychology has 0 English courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=4",
+    "notes": "Detailed across #page=4-5."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online SIA application (https://sia.uab.es/)",
+      "Home university academic transcript",
+      "Signed Learning Agreement",
+      "Passport copy",
+      "Language certificate (where applicable)",
+      "Digital passport photo"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uab.cat/web/mobility-international-exchange/mobility-international-exchange-programmes/uab-exchange-programme-incoming/exchange-agreements-1345671990030.html",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: Nomination Feb 15 – May 1, Application Feb 15 – May 15; Spring: Nomination Sep 15 – Nov 1, Application Sep 15 – Nov 15 (Medicine & Escola Massana Fall window only).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Autònoma de Barcelona (UAB)/Factsheet exchange 2025-26.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "chung-ang-university",
+  "excel_rows": [
+    20
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1_65Iw7x1PpUJF8sWCvV8Bu08r_2-kGIc"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Chung-Ang University/2021/CAU Factsheet 2021.pdf",
+      "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf",
+      "data/raw/factsheets/Chung-Ang University/CAU Fact Sheet [Fall 2025].pdf",
+      "data/raw/factsheets/Chung-Ang University/CAU Fact Sheet_Spring 2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Chung-Ang University/2021/CAU Factsheet 2021.pdf.txt",
+      "data/raw/extracted/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf.txt",
+      "data/raw/extracted/Chung-Ang University/CAU Fact Sheet [Fall 2025].pdf.txt",
+      "data/raw/extracted/Chung-Ang University/CAU Fact Sheet_Spring 2026.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Chung-Ang University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CAU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "South Korea",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Seoul / Anseong",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "CAU does not enforce a strict incoming minimum GPA (Fall 2025 Fact Sheet #page=6: 'CAU does not have strict GPA requirements. Students nominated by their home universities will be deemed qualified'); Spring 2026 Fact Sheet specifies maintaining Minimum 2.0/4.5 (75/100) for the whole semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=6",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": "Mapped from 'University-wide' Excel scope."
+  },
+  "excluded_majors": {
+    "value": [
+      "School of Medicine",
+      "School of Pharmacy",
+      "School of Nursing",
+      "School of Law",
+      "Graduate School (except Global MBA and GSIS)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "At graduate level only Global MBA (business/economics majors) and GSIS (business/economics/IR majors) accept exchange students."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fall 2025 Fact Sheet (#page=6, confirmed via cau.ac.kr) explicitly states 'CAU does not have strict GPA requirements. Students nominated by their home universities will be deemed qualified', and Spring 2026 Fact Sheet (#page=6) drops the 4.0 conversion table and specifies only Minimum 2.0/4.5 (75/100) for the whole semester."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Korean"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "Over 900 courses per academic year are offered in English across departments; primary university instruction is in Korean."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "None formally required; English proficiency equivalent to TOEFL iBT 80 (pBT 550 / CBT 210) or IELTS 5.5 is recommended (especially for Graduate School).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=5",
+    "notes": "Fall 2025 Fact Sheet (#page=6) notes recommendation applies especially at graduate level. No RHET 1020 exemption stated."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Sep 1 – Dec (16 weeks); dorm check-in and mandatory orientation in the last week of August.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "Orientation/check-in timing on #page=4."
+  },
+  "spring_term_dates": {
+    "value": "Mar 2 – Jun (16 weeks); dorm check-in and mandatory orientation in the last week of February.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "Orientation/check-in timing on #page=4."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oia.cau.ac.kr/",
+    "notes": "Official CAU site confirms Student Exchange Program participants from partner universities study tuition-waived (Visiting Students pay tuition)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1075.0,
+      "max": 1075.0
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=6",
+    "notes": "Prorated from CAU Spring 2026 Fact Sheet official 16-week (~4-month) semester budget of $4,300 USD ($1,300 dorm + $700 meals + $600 transport + $200 books + $1,500 personal) = $1,075 USD/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5375.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=6",
+    "notes": "5 months * 1075 USD/month midpoint = 5375.00 USD (rate 1 USD = 1 USD; verified 2026-11-15). Prorated from CAU Spring 2026 Fact Sheet official 16-week (~4-month) semester budget of $4,300 USD ($1,300 dorm + $700 meals + $600 transport + $200 books + $1,500 personal) = $1,075 USD/month."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory South Korean National Health Insurance (NHIS) enrollment upon Residence Card issuance at ~USD 70/month; private home insurance does not exempt from NHIS.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=5",
+    "notes": "Optional intensive Korean language courses carry a 25% discount for exchange students."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=4",
+    "notes": "On-campus dorms assigned first-come, first-served with highly limited/competitive availability; TB test within 4 weeks prior required; no overseas dorm payment (pay in KRW cash on arrival)."
+  },
+  "housing_notes": {
+    "value": "Seoul Campus dorm approx. $1,300 USD/semester; Da Vinci (Anseong) Campus dorm approx. $850 USD/semester (#page=6); meals not included. Competitive first-come, first-served placement (Spring applications Dec, Fall applications Jun; #page=4); TB test within 4 weeks prior and local dorm payment required (#page=5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=6",
+    "notes": "Application periods covered on #page=4; cancellation, TB test, and no-overseas-payment rules covered on #page=5."
+  },
+  "host_grants_or_stipends": {
+    "value": "No general automatic stipend; Fall 2025 Fact Sheet notes potential candidates for student scholar roles or internships are contacted directly by email.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/CAU Fact Sheet [Fall 2025].pdf#page=7",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": "Passport valid >=6 months post-stay required. Additional visa/immigration documentation required for nationals of 26 designated countries including Egypt; non-OECD and Chinese nationals must submit couriered original transcripts with Apostille/Consular authentication/CHSI.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=2",
+    "notes": "Also detailed on #page=3."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "D-2-6 Exchange Student Visa (single-entry prior to Residence Card); post-arrival RC processing takes 7–10 weeks. Financial proof of > USD 6,000 (1 semester) or > USD 12,000 (1 year) issued within 30 days required (add'l docs for Egypt & 25 other nationals).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=2",
+    "notes": "Detailed across #page=2-4."
+  },
+  "official_website_url": {
+    "value": "https://www.cau.ac.kr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:20",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://oia.cau.ac.kr/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://cautis.cau.ac.kr/TIS/websquare/websquare.html?w2xPath=%2FTIS%2Fstd%2Fusk%2FsUskSif005_eng.xml",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "Dynamic CAU TIS course timetable portal."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No static English-only URL; use CAU TIS course portal (https://cautis.cau.ac.kr/TIS/websquare/websquare.html?w2xPath=%2FTIS%2Fstd%2Fusk%2FsUskSif005_eng.xml) and filter by English-taught courses."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Business Administration & Art courses closed to non-majors in Period 1; Art restricted to art majors across all 3 periods; Architecture requires accredited matching major + prerequisites; graduate students cannot take undergraduate courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official academic transcript (couriered original with Apostille/Consular authentication/CHSI for non-OECD & Chinese nationals)",
+      "Passport copy (valid >=6 months past stay)",
+      "Bank balance certificate (> USD 6,000/sem issued within 30 days + sponsorship letter if applicable)",
+      "Digital ID photo (3.5 x 4.5 cm)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=2",
+    "notes": "Detailed across #page=2-3."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=1",
+    "notes": "Two campuses: Seoul Campus and Da Vinci (Anseong) Campus."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "OIA exchange coordination, mandatory pre-term orientation, group Residence Card (RC) application service, GLAM student buddy program, and Korean Language Center (https://korean.cau.ac.kr/english/index.php?mid=n00).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=4",
+    "notes": "Buddy/support services also noted on #page=6."
+  },
+  "nomination_deadlines": {
+    "value": "Fall Term: Nomination April, Application May; Spring Term: Nomination October (prior year), Application November (prior year).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Chung-Ang University/2026-2027/CAU - Fact Sheet_Spring 2026.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

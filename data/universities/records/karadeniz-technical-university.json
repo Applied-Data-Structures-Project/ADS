@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "karadeniz-technical-university",
+  "excel_rows": [
+    54
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Karadeniz Technical University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Trabzon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "POLS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.ktu.edu.tr/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KTÜ",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/en",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Managed per active departmental bilateral protocol; no university-wide year-of-study rule verified on ktu.edu.tr."
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col H specifies 'POLS' major rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Political Science"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:54",
+    "notes": "Expanded from Excel scope 'POLS'; corresponds to Political Science / International Relations coursework at KTÜ."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Course selection aligned to bilateral departmental protocol via Faculty of Economics & Administrative Sciences / IR."
+  },
+  "min_gpa_host": {
+    "value": 2.2,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": "Minimum cumulative GPA 2.20/4.00 for undergraduate exchange applicants (2.50/4.00 for postgraduate applicants) per ktu.edu.tr."
+  },
+  "instruction_languages": {
+    "value": [
+      "Turkish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": "Turkish primary university language, with English-taught elective offerings in departments such as International Relations."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": "Selection of English-taught courses available (e.g., Dept of International Relations offers Intro to Political Science, Political Sociology, Nationalism & World Politics in English)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 proficiency in English (or Turkish depending on selected courses) via official certificate or institutional language assessment.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Turkish required only if taking Turkish-taught courses.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall classes (excl. Medicine/Dentistry) began Sep 21, 2026; Autumn mobility runs approximately September through January.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/oidb",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring/Second semester runs approximately February through June/July per KTÜ academic calendar.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/oidb",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: Tuition-waiver claim in mixed search results mapped to ktu.edu (Kaunas, Lithuania), not verified on ktu.edu.tr itself; left unknown."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official numeric monthly TRY/EUR living budget verified on ktu.edu.tr itself."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Local monthly cost budget not verified on ktu.edu.tr."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Valid health insurance covering duration of stay in Turkey required for student residence permit.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/en/internationalstudentofficeandktu",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": "Incoming exchange students may apply for KTÜ Koru Student Dormitory via Accommodation Form; capacity is limited so applications >=2 months in advance are advised."
+  },
+  "housing_notes": {
+    "value": "KTÜ Koru Student Dormitory has limited capacity; off-campus local housing alternatives coordinated with Office of Exchange Programmes.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming bilateral exchange stipend published on ktu.edu.tr."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Accepted students obtain a Turkish Study/Education Visa prior to travel using KTÜ acceptance letter, then apply on-site for a Short-Term/Student Residence Permit via e-ikamet.goc.gov.tr (passport, biometric photos, health insurance, dorm/address proof).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/en/internationalstudentofficeandktu",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ktu.edu.tr/ofinafen",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.ktu.edu.tr/oidb",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/oidb",
+    "notes": "Departmental/ECTS exchange course lists linked via ktu.edu.tr/ofinafen."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No static English-only course list URL verified on ktu.edu.tr (check Departmental/IR links on https://www.ktu.edu.tr/ofinafen)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system used (e.g., IR English electives carry 4-6 ECTS per course on ktu.edu.tr; exact exchange min/max semester load not explicitly verified on ktu.edu.tr).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Departmental agreement scope applies (Political Science / International Relations courses available in English within Faculty of Economics & Administrative Sciences).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Student Application Form",
+      "Transcript of Records",
+      "Learning Agreement",
+      "Accommodation Form",
+      "Scanned passport copy",
+      "Biometric photos"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly described in verified ktu.edu.tr sources."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Trabzon, Turkey; city_tier not verified from ktu.edu.tr."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly classified on verified ktu.edu.tr pages."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not rated on ktu.edu.tr."
+  },
+  "international_support_services": {
+    "value": "KTÜ Office of Exchange Programmes (OFİNAFEN) and International Student Office assisting with admission, Koru dormitory applications, and e-İkamet residence permit procedures.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/en/internationalstudentofficeandktu",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester / Full Year application deadline: July 15; Spring Semester application deadline: December 15 (prior home-university nomination required).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ktu.edu.tr/ofinafen",
+    "notes": null
+  },
+  "ext": {}
+}

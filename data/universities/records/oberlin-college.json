@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "oberlin-college",
+  "excel_rows": [
+    81
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1l5gA_uHaXpKP-bCR7-7T2MNUXvtdDCDF"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Oberlin College/2025-2026/Oberlin brochure.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Oberlin College/2025-2026/Oberlin brochure.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Oberlin College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Ohio",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "city": {
+    "value": "Oberlin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://www.oberlin.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming-exchange standing note verified in Oberlin brochure or oberlin.edu."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:81",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Undergraduate-only institution (no graduate students, Oberlin brochure p.6); Conservatory of Music applied degree entry requires separate audition/application."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No published minimum numeric GPA cutoff found for incoming non-degree exchange students on oberlin.edu (degree HS stats excluded)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Oberlin College/2025-2026/Oberlin brochure.pdf#page=5",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Oberlin College/2025-2026/Oberlin brochure.pdf#page=5",
+    "notes": "US liberal arts college; all instruction in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT, IELTS, or Duolingo English Test required for non-native English speakers unless prior education was conducted entirely in English (waivers also requestable via admissions); no fixed numeric cutoff stated.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Oberlin College/2025-2026/Oberlin brochure.pdf#page=5",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester: Classes begin Aug 26, 2026 (Int'l F-1/J-1 Pre-Orientation move-in Aug 17, 2026); exact Fall 2026 end date via https://www.oberlin.edu/arts-and-sciences/registrar/academic-calendar.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/arts-and-sciences/registrar/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Classes Feb 1 - May 7, 2027; Spring Break Mar 20-28; Reading May 8-11; Final Exams May 12-16, 2027 (Commencement May 24, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/arts-and-sciences/registrar/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No explicit incoming bilateral exchange tuition-waiver policy verified publicly on oberlin.edu (posted sticker tuition ~$68,340-$70,320 applies to degree billing)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2233,
+      "max": 2233
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees",
+    "notes": "Derived monthly room & board from Oberlin 2025-26 baseline charges (Room $9,970+ and 7-day Board $10,126+ = $20,096/9-mo academic year -> $2,232.89/mo, rounded to $2,233/mo; or $10,048/sem). Excludes mandatory fees (~$1,092+/yr), non-waivable 2026-27 health insurance ($3,028/yr), books, and personal expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 11165.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees",
+    "notes": "5-month estimate derived from monthly USD range 2,233/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 2,233.0 USD = 11,165.00 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2026-27 Anthem/Academic HealthPlans student health insurance is mandatory and non-waivable for F-1/J-1 international students at $3,028/year (Aug 1, 2026 - Jul 31, 2027); standard mandatory fees ~$1,092+/yr (2025-26 baseline).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "notes": "Residential campus housing and meal plans coordinated via Residence Life/OSCA; F-1/J-1 arrival move-in begins Aug 17, 2026."
+  },
+  "housing_notes": {
+    "value": "2025-26 baseline Room ~$9,970+/yr and 7-day meal plan ~$10,126+/yr; OSCA dining/housing cooperatives also exist.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Need-based aid applies to degree applicants; no incoming exchange stipend verified."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Incoming international exchange students require J-1 DS-2019 (or F-1 I-20) issued via International Student Resource Center / ISSS with financial support documentation; mandatory Pre-Orientation check-in Aug 17, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "notes": "See also Study Away Office at https://www.oberlin.edu/study-away."
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.oberlin.edu",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.oberlin.edu",
+    "notes": "Class schedules also at https://www.oberlin.edu/arts-and-sciences/courses-and-study/class-schedules."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://catalog.oberlin.edu are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "US semester credits; exact incoming exchange min/max credit limits not verified on oberlin.edu."
+  },
+  "course_restrictions_note": {
+    "value": "Conservatory of Music applied studios/auditioned courses require audition/permission; undergraduate-only college (no graduate courses).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/admissions-and-aid/tuition-and-fees",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Coordinated directly via partner exchange nomination / non-degree admissions; checklist not publicly posted on oberlin.edu."
+  },
+  "academic_style": {
+    "value": "Undergraduate-only residential liberal arts college + conservatory (~2,900 students, 9:1 student-faculty ratio, 80% of classes <20 students, one-on-one undergraduate faculty research).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Oberlin College/2025-2026/Oberlin brochure.pdf#page=5",
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/about-oberlin/in-and-around-oberlin",
+    "notes": "oberlin.edu explicitly characterizes Oberlin, Ohio (~8,600 residents, 35 miles SW of Cleveland) as a quintessential college town."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Brochure p.8 describes Oberlin as a 'small town' 35 miles SW of Cleveland without specifying 'rural' vs 'suburban' classification."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on oberlin.edu or brochure (US English-speaking campus)."
+  },
+  "international_support_services": {
+    "value": "International Student Resource Center (ISRC/ISSS), F-1/J-1 Pre-Orientation, Residence Life, Allen Memorial Art Museum (free), Winter Term mentorship.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.oberlin.edu/international-student-resource-center/incoming-international-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: Nov 1 / Jan 5 / Jan 15 dates on oberlin.edu are degree admission deadlines and Mar 15 / Oct 15 on Study Away apply to outgoing study away; incoming partner exchange deadlines not publicly published."
+  },
+  "ext": {}
+}

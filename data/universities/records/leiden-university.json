@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "leiden-university",
+  "excel_rows": [
+    61
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1odSL8Uob294gFhArjjEQ3EoQ1RD4xeDt"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+      "data/raw/factsheets/Leiden University/2-Process overview partner (1).pdf",
+      "data/raw/factsheets/Leiden University/3-Leiden University Nomination Instructions1.pdf",
+      "data/raw/factsheets/Leiden University/4-Application guidelines student.pdf",
+      "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf.txt",
+      "data/raw/extracted/Leiden University/2-Process overview partner (1).pdf.txt",
+      "data/raw/extracted/Leiden University/3-Leiden University Nomination Instructions1.pdf.txt",
+      "data/raw/extracted/Leiden University/4-Application guidelines student.pdf.txt",
+      "data/raw/extracted/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Leiden University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Leiden",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must have completed at least 2 years of university education at partner institution and possess relevant academic background for chosen courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=1",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Faculty of Social and Behavioral Science, Faculty of Governance and Global Affairs and Faculty\nof Humanities. Jul 15,2027",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS",
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=61",
+    "notes": "Excel row 61 specifies Faculty of Social and Behavioral Science, Faculty of Governance and Global Affairs, and Faculty of Humanities (Jul 15, 2027), mapping to AUC's HUSS and GAPP."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=61",
+    "notes": "All majors eligible for coursework within Leiden's agreed Faculties of Social and Behavioural Sciences, Governance and Global Affairs, and Humanities (valid until Jul 15, 2027), subject to academic background relevance and prerequisites."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.2,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=1",
+    "notes": "Minimum GPA 3.2 out of 4.0 (or equivalent), also confirmed in 1-Uniwide Leiden University Info Sheet 2024-2025.pdf."
+  },
+  "instruction_languages": {
+    "value": [
+      "Dutch",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": "Courses available in English and Dutch."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": "Wide selection of English-taught exchange courses alongside Dutch-taught degree offerings."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum TOEFL iBT 90 or IELTS Academic 6.5 (Leiden University College The Hague requires TOEFL iBT 100 or IELTS 7.0); AUC's Egyptian degree does not meet secondary-school native-English country exemptions.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=1",
+    "notes": "90 TOEFL / 6.5 IELTS in Brochure page 1; LUC higher requirement and exemption rule in 1-Uniwide Info Sheet 2024-2025.pdf."
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught courses; CEFR B2 Dutch required for Dutch-taught courses.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": "Semester I: 31 August 2026 – 31 January 2027\nSemester II: 1 February 2027 – 4 July 2027 | Semester I: 31 August 2026 – 31 January 2027 Semester II: 1 February 2027 – 4 July 2027"
+  },
+  "fall_term_dates": {
+    "value": "Fall / Semester 1: September – January (exact block/exam dates vary by faculty; consult faculty academic calendar).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/study-programmes/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring / Semester 2: February – June/July (exact block/exam dates vary by faculty; consult faculty academic calendar).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/study-programmes/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/study-abroad-and-exchange/admissions-application/tuition-fee",
+    "notes": "Bilateral exchange students do not pay tuition fees to Leiden University and continue paying home institution tuition (non-exchange Study Abroad students pay €8,800/sem in 2026-2027); also confirmed on 5-Brochure page 1."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 968,
+      "max": 1338
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": "1-Uniwide Info Sheet 2024-2025 estimates €968–€1,338/month; note Leiden's 2026 Dutch IND proof-of-funds minimum is €1,150/month (https://www.universiteitleiden.nl/en/education/international-students/prepare-your-stay/visas-and-residence-permits/proof-of-funds-and-fees)."
+  },
+  "living_cost_usd_est": {
+    "value": 6371.48,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": "5-month exchange semester estimate: midpoint 1153 EUR/month (range 968–1338 EUR) * 5 months * 1.1052 = 6371.48 USD using ECB 2026-11-13 rate (1 EUR = 1.1052 USD, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Non-refundable €285 housing application fee (if applying for university housing); Dutch IND entry visa/residence permit processing fee applies to non-EU/EEA students (€210 on 2024-2025 Info Sheet, updated annually); compulsory health insurance required.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/international-students/housing",
+    "notes": "Housing fee confirmed at housing page; visa/proof-of-funds framework at proof-of-funds-and-fees page and 1-Uniwide Info Sheet 2024-2025.pdf."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/international-students/housing",
+    "notes": "Limited DUWO rooms allocated first-come, first-served based on housing fee payment date (not guaranteed); exchange students get priority if applying & paying €285 fee by Apr 1 (Fall) / Oct 15 (Spring)."
+  },
+  "housing_notes": {
+    "value": "Limited DUWO accommodation (€425–€1,200/month incl. utilities), NOT guaranteed; €285 non-refundable application fee; apply by Apr 1 (Fall) or Oct 15 (Spring).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/international-students/housing",
+    "notes": "Confirmed in 5-Brochure Study Abroad at Leiden University page 5."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Leiden University submits residence permit/MVV applications on behalf of admitted non-EU/EEA students; 2026 Dutch IND proof-of-funds minimum is €1,150/month plus applicable IND fees.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/international-students/prepare-your-stay/visas-and-residence-permits/proof-of-funds-and-fees",
+    "notes": "Exact processing lead time in weeks not specified; visa step sequence on 2-Process overview partner page 1."
+  },
+  "official_website_url": {
+    "value": "https://www.universiteitleiden.nl/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:61",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.universiteitleiden.nl/en/education/study-abroad-and-exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.universiteitleiden.nl/en/education/study-abroad-and-exchange",
+    "notes": "Also https://www.universiteitleiden.nl/en/education/exchange (1-Uniwide Info Sheet page 2)."
+  },
+  "course_catalog_url": {
+    "value": "https://studiegids.universiteitleiden.nl/en/search?for=courses&q=exchange&edition",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf#page=7",
+    "notes": "Leiden Prospectus / Studiegids exchange course search URL from PDF annotation page 7."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; full-time workload is 30 ECTS per semester (minimum 15 ECTS; Faculty of Law capped at 15 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": "30 EC per semester max also noted on Leiden exchange tuition-fee page."
+  },
+  "course_restrictions_note": {
+    "value": "Agreement scope limited to Faculties of Social and Behavioural Sciences, Governance and Global Affairs, and Humanities (through Jul 15, 2027); Law capped at 15 EC (outside scope); Psychology exams held in February with no alternative arrangements.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=61",
+    "notes": "Academic constraints from 1-Uniwide Leiden University Info Sheet 2024-2025.pdf."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online Leiden portal application",
+      "Supporting academic documents / official transcript",
+      "English proficiency proof (if required)",
+      "Course selection requests"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/2-Process overview partner (1).pdf#page=1",
+    "notes": "Followed by optional housing application and visa/residence-permit document upload in portal."
+  },
+  "academic_style": {
+    "value": "Dutch/European research university (ECTS)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=2",
+    "notes": "Brochure pages 1–2 state Leiden University is not campus-based and buildings/housing are spread across two cities: Leiden and The Hague."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Schiphol airport Warm Welcome Service, OWL/HOP introduction weeks, Residence Life Assistants, Plexus (Leiden) & Beehive (The Hague) Student Centres, international student advisers, student psychologists, and Fenestra Disability Centre.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/5-Brochure Study Abroad at Leiden University (4).pdf#page=2",
+    "notes": "Warm Welcome, OWL/HOP, Residence Life, advisers, student psychologists, and Fenestra all on 5-Brochure page 2; Plexus/Beehive also linked on 1-Uniwide Info Sheet page 6."
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Full Year: Nomination Jan 1 – Mar 1 / Application Apr 1; Spring: Nomination Jul 15 – Sep 15 / Application Oct 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Leiden University/1-Uniwide Leiden University Info Sheet 2024-2025.pdf",
+    "notes": null
+  },
+  "ext": {}
+}

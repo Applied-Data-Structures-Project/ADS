@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "kent-state-university",
+  "excel_rows": [
+    57
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1jPSO98uKtTrfHuh1DMJ4JpakVGDmOAu2",
+      "https://drive.google.com/drive/folders/1tjG3DKqsOkJbLORzXBf6VnwsItCP9Oef"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Kent State University/2024-2025/KSU Fact Sheet 2024-2025 UPDATED January 2025.pdf",
+      "data/raw/factsheets/Kent State University/2024-2025/KSU Fact Sheet 2024-2025 UPDATED July 2024.pdf",
+      "data/raw/factsheets/Kent State University/2024-2025/KSU Fact Sheet 2024-2025.pdf",
+      "data/raw/factsheets/Kent State University/2024-2025/Useful Info for Sp. 25.docx",
+      "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf",
+      "data/raw/factsheets/Kent State University/KSU Guide for Exchange Students (2).pdf",
+      "data/raw/factsheets/Kent State University/KSU.png"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Kent State University/2024-2025/KSU Fact Sheet 2024-2025 UPDATED January 2025.pdf.txt",
+      "data/raw/extracted/Kent State University/2024-2025/KSU Fact Sheet 2024-2025 UPDATED July 2024.pdf.txt",
+      "data/raw/extracted/Kent State University/2024-2025/KSU Fact Sheet 2024-2025.pdf.txt",
+      "data/raw/extracted/Kent State University/2024-2025/Useful Info for Sp. 25.docx.txt",
+      "data/raw/extracted/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf.txt",
+      "data/raw/extracted/Kent State University/KSU Guide for Exchange Students (2).pdf.txt",
+      "data/raw/extracted/Kent State University/KSU.png.txt"
+    ],
+    "notes": "Col H link (1jPSO98uKtTrfHuh1DMJ4JpakVGDmOAu2) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Kent State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KSU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Ohio",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "city": {
+    "value": "Kent",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 2.0/4.0 GPA for undergraduate students and 3.0/4.0 for graduate students (individual departments may enforce higher thresholds); in-person course enrollment at the Kent Campus required.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=1",
+    "notes": "In-person Kent Campus requirement stated on #page=2."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=1",
+    "notes": "2.0 out of 4.0 scale for undergraduate exchange students; 3.0 out of 4.0 scale for graduate exchange students."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/globaleducation",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/globaleducation",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate baseline: TOEFL iBT 71, IELTS Academic 6.0, Duolingo 100, or PTE Academic 48. Graduate baseline: TOEFL iBT 71 / IELTS 6.0 (specific programs may require higher). RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/admissions/english-language-proficiency",
+    "notes": "Graduate English requirements at https://www.kent.edu/admissions/graduate-program-english-requirements."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/admissions/english-language-proficiency",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-24 to 2026-12-20 (classes Aug 24–Dec 13; final exams Dec 14–20, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/academic-calendar",
+    "notes": "Fall Break Oct 8–11, 2026; Thanksgiving Break Nov 25–29, 2026."
+  },
+  "spring_term_dates": {
+    "value": "2027-01-19 to 2027-05-09 (classes Jan 19–May 9, 2027 including finals)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=2",
+    "notes": "Tuition is waived per exchange agreement within standard credit limits (12–18 UG / 8–18 GR); credits above maximum are billed per credit hour."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1830,
+      "max": 1830
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=3",
+    "notes": "Derived as $9,147.50 / 5 months = $1,829.50/month (rounded to $1,830) from KSU's AY 2026-2027 1-semester exchange DS-2019 financial proof / living cost estimate ($9,147.50 for 1 semester; $18,295 for 2 semesters)."
+  },
+  "living_cost_usd_est": {
+    "value": 9147.5,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=3",
+    "notes": "Official AY 2026-2027 1-semester exchange living cost / DS-2019 financial support estimate ($9,147.50 USD for 1 semester; $18,295 USD for 2 semesters), already denominated in USD (recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "KSU Student Health Insurance Plan (UHCSR SHIP) is mandatory for all international exchange students and cannot be waived. Mandatory fees: $20/sem international activity fee, $100 first-semester orientation fee, plus UG fees ($15/sem arts, $93.84/sem career services, $90/sem student health); $10/transcript fee.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=2",
+    "notes": "Career services ($93.84), student health ($90), and transcript ($10) fees detailed on #page=3; SHIP portal at https://www.kent.edu/deweese/student-health-insurance-plan-ship."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=2",
+    "notes": "University residence halls and meal plans available for exchange students (apply post-admission); break/early arrival housing $35/night on #page=3."
+  },
+  "housing_notes": {
+    "value": "2026-2027 double residence hall rate approx. $4,335/semester (https://www.kent.edu/housing/room-rates); recommended Blue Meal Plan $5,690/year (~$2,845/sem per https://www.kent.edu/dining/meal-plans); seasonal break housing $35/night (`KSU Fact Sheet 2026-2027.pdf#page=3`).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/housing/room-rates",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor visa (Form DS-2019) required for non-US students; 2026-2027 proof of financial support for exchange students is $9,147.50 USD (1 semester) or $18,295 USD (2 semesters).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=3",
+    "notes": "Visa guidance at https://www.kent.edu/globaleducation/apply-your-visa."
+  },
+  "official_website_url": {
+    "value": "https://www.kent.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:57",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.kent.edu/globaleducation",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/globaleducation",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.kent.edu/coursesaz/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.kent.edu/coursesaz/",
+    "notes": "Live semester course schedule at https://keys.kent.edu/ePROD/bwlkffcs.p_adv_unsecure_sel_crse_search."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Instruction is in English across the main course catalog; live term schedule requires portal filtering at https://keys.kent.edu/ePROD/bwlkffcs.p_adv_unsecure_sel_crse_search."
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: UG 12–18 credits/semester; GR 8–18 credits/semester. Excess credits beyond 18 incur standard per-credit tuition charges.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Students must enroll in in-person courses at the Kent Campus; some programs and courses are not available to international exchange students or at the Kent Campus.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Flagship Kent Campus sits in Kent, Ohio (~28,000 residents per kent.edu); left unknown rather than assuming city_tier label."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Office of Global Education orientation, J-1 visa support, housing/dining coordination, and DeWeese Health Center.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kent.edu/globaleducation",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester or Academic Year: nomination March 1, application April 1. Spring Semester: nomination October 1, application October 15 (KSU Florence deadlines earlier: Sep 15 / Oct 1).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kent State University/2026-2027/KSU Fact Sheet 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

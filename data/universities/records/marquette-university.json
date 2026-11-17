@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "marquette-university",
+  "excel_rows": [
+    68
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Rv4Bcv1ReGyPF-xeukkS9jontDpQ5GZ_"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Marquette University/2020_2021/Marquette University.docx",
+      "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Marquette University/2020_2021/Marquette University.docx.txt",
+      "data/raw/extracted/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Marquette University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Wisconsin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": "Normalized from country_raw 'Wisconson' in Excel list; city 'Milwaukee' confirmed in Fact Sheet OIE address Milwaukee, WI."
+  },
+  "city": {
+    "value": "Milwaukee",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Official partner nomination required; GPA requirement depends upon field of study and home country grading system. Students living in traditional residence halls are preferred to be <=20 years old and within their first two years of university study.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": "Excel agreement_scope_raw is 'University-wide'; AY 2026-27 Fact Sheet excludes specific course codes (AFAS, DECS, DEDS, DEGD, DEIN, DENT, DESS, EXBU, FIAR, LEAD, MISL, MLSC, NASC, PHAS, PHTH) and restricts LAW to law exchange students."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": "University-wide agreement subject to AY 2026-27 Fact Sheet excluded course prefixes and Law exchange restrictions."
+  },
+  "excluded_majors": {
+    "value": [
+      "Law (restricted to law school exchange programs)",
+      "AFAS / Air Force Aerospace Studies",
+      "Dentistry / Dental specialties (DECS, DEDS, DEGD, DEIN, DENT, DESS)",
+      "Military & Naval Science (MISL, MLSC, NASC)",
+      "Physician Assistant Studies & Physical Therapy (PHAS, PHTH)",
+      "EXBU, FIAR, LEAD courses"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": "AY 2026-27 Fact Sheet lists exact prohibited course prefixes and Law restriction; older 2020-21 Fact Sheet also noted Dentistry and Nursing unavailable and Health Science/Grad School limited."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AY 2026-27 Fact Sheet explicitly states 'GPA Requirement: This is dependent upon field of study and home country grading system' (no universal numerical cutoff stated)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate exchange: TOEFL iBT >=80 (min 18/section), IELTS >=6.5 (min 6.5/section), TOEFL ITP >=550 (min 50/section), Cambridge B2/C1/C2 (R/L/S 180, W 175), Duolingo >=115 (min 110 subscore), OR home-university documentation that >=50% of university-level coursework was instructed in English (or objective home-university proficiency letter on case-by-case basis). Graduate requirements vary by program. RHET 1020 not mentioned; AUC's >=50% English instruction documentation satisfies the UG waiver rule.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Arrival 20–23 Aug 2026; Mandatory International Orientation 24–26 Aug 2026; UG/Grad classes start 31 Aug 2026; Fall Break 22–23 Oct; Thanksgiving Break 25–27 Nov; Final Exams 14–19 Dec 2026 (Law: orientation 20–21 Aug, classes 24 Aug, exams 7–18 Dec 2026).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Arrival 7–12 Jan 2027; Mandatory Orientation 13–15 Jan 2027; UG/Grad/Law classes start 19 Jan 2027; Spring & Easter Break 22–29 Mar 2027 (Law: 8–14 Mar); Final Exams 10–15 May 2027 (Law: 3–14 May 2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not stated in AY 2026-27 Fact Sheet."
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Neither the 2026-27 Fact Sheet nor retrieved marquette.edu student exchange pages explicitly publish incoming exchange tuition-waiver wording."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2772,
+      "max": 2772
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.marquette.edu/international-education/tuition-and-costs.php",
+    "notes": "Derived from Marquette OIE 2026-27 Fall & Spring (2 terms, 9 months) Living Expenses estimate of USD 24,950 (shared residence hall, meals, 12-mo mandatory health insurance, books, 9-mo personal, 2-term fees incl. bus pass) divided by 9 months = USD 2,772.22/month."
+  },
+  "living_cost_usd_est": {
+    "value": 13861.11,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.marquette.edu/international-education/tuition-and-costs.php",
+    "notes": "5-month USD estimate derived from Marquette OIE 2026-27 9-month Fall & Spring Living Expenses USD 24,950 (USD 2,772.22/month x 5 = USD 13,861.11; 1-semester half share = USD 12,475), verified 2026-11-15 (USD local currency; no FX conversion)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Marquette University health insurance: all exchange students are automatically enrolled and billed for their entire period of study (AY 2026-27 Fact Sheet; waivers strictly restricted per https://www.marquette.edu/oie/health-insurance.php; OIE notes ~USD 250/month baseline plan cost, included in OIE living budget alongside 2-term student fees with city bus pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": "Additional details from https://www.marquette.edu/oie/health-insurance.php and https://www.marquette.edu/international-education/tuition-and-costs.php."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Rank preferences inside online application by application deadline (Mar 15 Fall / Oct 15 Spring); first-choice not guaranteed. Options: (1) Global Village / Campus Town Apartments (https://www.marquette.edu/residence-life/apartments-global-village.php) — furnished 2BR/4-student shared apartments, heat/water included, UG priority, more available in Spring; (2) Residence Halls (https://www.marquette.edu/residence-life/residence-halls.php) — mandatory meal plan, preferred <=20 yrs & first 2 yrs; (3) Off-campus assistance near campus (https://www.marquette.edu/offcampus/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 student visa documents are emailed after acceptance, typically after April 1 (Fall) or November 1 (Spring) (AY 2026-27 Fact Sheet; http://www.marquette.edu/oie/admitted-students/visa.shtml). Financial sponsorship form and support proof uploaded in https://studyabroad.marquette.edu/?go=incoming; OIE 2026-27 annual living expense basis for F-1/J-1 certification is USD 24,950 (+ USD 12,000 spouse / USD 6,000 per child) per https://www.marquette.edu/international-education/tuition-and-costs.php.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.marquette.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:68",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studyabroad.marquette.edu/?go=incoming",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://bulletin.marquette.edu/azindex/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": "Specific term offerings at https://bulletin.marquette.edu/class-search/; college/department sites at https://www.marquette.edu/academics/"
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Instruction is in English; term course offerings searchable at https://bulletin.marquette.edu/class-search/."
+  },
+  "credit_system_and_load": {
+    "value": "US semester hours on 4.0 GPA scale (A=4.0, A-=3.67, B+=3.33, B=3.00, etc.). Full-time load: UG & Law 12–18 credits/semester (Business exchange students should only take 3-credit courses); Graduate 7–9 credits/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Enrolled by respective college from application Course Approval Form (not guaranteed); add/drop needs prerequisite verification or permission via OIE (Tammy.Meyers@marquette.edu). Excluded: AFAS, DECS, DEDS, DEGD, DEIN, DENT, DESS, EXBU, FIAR, LEAD, MISL, MLSC, NASC, PHAS, PHTH; LAW restricted to law exchange; Business students restricted to 3-credit courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online application at https://studyabroad.marquette.edu/?go=incoming",
+      "Courses of interest / Course Approval Form",
+      "Proof of English language proficiency",
+      "Financial sponsorship form and support documentation",
+      "Academic transcripts (per OIE application portal)",
+      "Housing preference ranking"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US comprehensive Catholic/Jesuit research university (~7,600 UG, ~3,700 graduate/professional students) on 4.0 grading scale; internships/Academic Training possible; official digital transcript sent automatically ~2 weeks after semester grades post.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory International Orientation (https://www.marquette.edu/oie/admitted-students/orientation.php), OIE (https://www.marquette.edu/oie/index.php) advising & J-1 Responsible Officer (Michael Groen), Medical Clinic (https://www.marquette.edu/medical-clinic/), Counseling Center (https://www.marquette.edu/counseling-center/), Disability Services (https://www.marquette.edu/disability-services/), Campus Police (https://www.marquette.edu/mupd/), Student Organizations (https://marquette.presence.io/organizations), Service Learning (https://www.marquette.edu/service-learning/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Application deadlines: Fall semester 15 March; Spring semester 15 October (exceptions case-by-case).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Marquette University/2026-2027/Marquette University 2026-2027 Exchange Student Factsheet.docx",
+    "notes": null
+  },
+  "ext": {}
+}

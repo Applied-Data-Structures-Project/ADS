@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-pennsylvania",
+  "excel_rows": [
+    142
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Svyw9SiRCO-4o2qUgPC3MZtaZMcXiK1t"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoPennsylvania/University of Pennsylvania.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Pennsylvania",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Pennsylvania",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "city": {
+    "value": "Philadelphia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 3.0 GPA equivalency with solid undergraduate academic preparation; official nomination from partner institution required.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": "Excel agreement_scope_raw is 'University-wide' (exchange links to Penn's 4 UG schools: College of Arts & Sciences, Wharton, Engineering, Nursing; Law/Med/Dental/Vet & grad courses excluded)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Law",
+      "Medicine",
+      "Dental Medicine",
+      "Veterinary Medicine"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx",
+    "notes": "Incoming UG exchange students are prohibited from taking graduate-level courses or courses in Penn's Law, Medical, Dental, or Veterinary Schools."
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must submit scores <=2 years old: TOEFL iBT >= 100 (DI code 3221), IELTS Academic >= 7.0, or Duolingo English Test >= 130. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "Updated from 2020-21 docx IELTS 7.5 to 2026-27 Penn Abroad IELTS 7.0 + DET 130."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required for non-native English speakers (TOEFL 100 / IELTS 7.0 / DET 130).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-25 to 2026-12-17 (classes Aug 25–Dec 7; Reading Days Dec 8–9; Final Exams Dec 10–17, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://almanac.upenn.edu/penn-academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-20 to 2027-05-17 (classes Jan 20–May 4; Reading Days May 5–6; Final Exams May 7–17, 2027)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://almanac.upenn.edu/penn-academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "Institutional tuition and academic fees are waived for official reciprocal incoming exchange students."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2060,
+      "max": 2060
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "Derived by dividing 1 semester (half of AY 2026-2027 Room $13,644 + Board $6,960 = $20,604/yr -> $10,302/semester) by 5 months = $2,060.40/mo (excludes Books & Supplies $1,412/yr, PSIP health insurance, Clinical Fee, Orientation Fee, and personal/local transit expenses; 2020-21 docx listed $13,972/sem ISSS visa asset proof)."
+  },
+  "living_cost_usd_est": {
+    "value": 10302.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "1-semester USD Room & Board baseline: half of AY 2026-2027 Room ($13,644) + Board ($6,960) = $10,302.00 USD (excludes Books $1,412/yr, PSIP insurance, Clinical Fee, Orientation Fee, and misc/transit; already in USD, recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Penn Student Insurance Plan (PSIP) unless approved comparable waiver (https://shs.wellness.upenn.edu/psipinsurance/), mandatory Immunization Record, Student Health Service Clinical Fee, and Incoming Exchange Orientation & Activities Fee (~$350 Fall/AY, ~$155 Spring in 2020-21 docx).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "Clinical fee and orientation fee amounts from 2020-21 University of Pennsylvania.docx."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx",
+    "notes": "All exchange students are required to live on campus in Penn housing and purchase an on-campus dining plan (single bedrooms rarely available due to demand; https://www.upenn.edu/services/residential)."
+  },
+  "housing_notes": {
+    "value": "Mandatory on-campus Penn housing & dining plan (AY 2026-27 Penn Abroad estimates: Room $13,644/yr, Board $6,960/yr).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 or F-1 student visa required via Penn ISSS (passport valid >=6 months past program end); must submit financial documentation for DS-2019/I-20 (historical 2020-21 docx threshold $13,972/sem or $27,944/2 sems; see global.upenn.edu/isss).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.upenn.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:142",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.upenn.edu/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://catalog.upenn.edu/",
+    "notes": "Undergraduate majors list: https://admissions.upenn.edu/learning-at-penn/majors-minors (`University of Pennsylvania.docx`)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Penn Credit Units (c.u.): full-time exchange load requires minimum 4 credit units (typically 4 courses) per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate courses up to 499-level only. At least 2 of 4 courses (or 3 of 5) must be inside the admitting undergraduate school (CAS/Wharton/Engineering/Nursing); remaining may be in other UG schools. Nominated major must match admitting school. Graduate, Law, Medical, Dental, and Veterinary School courses are prohibited.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Penn Abroad online exchange application (post-nomination)",
+      "Official/unofficial undergraduate transcripts",
+      "Short essays",
+      "Passport biographical page scan (valid >=6 months past end of program)",
+      "Official TOEFL (100), IELTS (7.0), or Duolingo (130) English test score (if applicable)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": "Transcript, essays, and >=6-month passport validity rules cross-referenced with data/raw/factsheets/UoPennsylvania/University of Pennsylvania.docx."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Penn Abroad Global Programs Manager advising, admitting-school academic advisor, ISSS J-1/F-1 immigration support (iPenn), Penn Libraries, Weingarten/Writing Center, CAPS, and disability services.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/isss",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester / Academic Year: March 20. Spring Semester: September 20 (partner nomination required first; decisions issued ~1 month post-deadline).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.upenn.edu/pennabroad/incoming-exchange/application-financial-information",
+    "notes": null
+  },
+  "ext": {}
+}

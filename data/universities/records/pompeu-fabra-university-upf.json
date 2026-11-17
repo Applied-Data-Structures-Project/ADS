@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "pompeu-fabra-university-upf",
+  "excel_rows": [
+    89,
+    127
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1DTgMuIpl6PT01y5L1lAx3S8mhyT4AL1t"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Pompeu Fabra University (UPF)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UPF",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Barcelona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Global Studies and Humanities",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Spanish",
+      "Catalan",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=1",
+    "notes": "Trilingual teaching environment; see language reqs on p. 3."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=2",
+    "notes": "Substantial English-taught offerings alongside Catalan/Spanish courses in Humanities, Global Studies, Economics, Political Science, etc."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 in English (if taking English-taught courses without Spanish/Catalan B1); RHET 1020 waiver not explicitly mentioned.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Spanish or Catalan CEFR B1 required unless studying under English CEFR B2 track; Idiomes UPF offers reduced-price Spanish/Catalan courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Term 1 (Fall trimester): Welcome Sep 17-18, 2026; Teaching begins Sep 21, 2026; Exams Dec 9-18, 2026; Christmas break Dec 19, 2026-Jan 6, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.upf.edu/web/incoming/exchange-students-academic-information",
+    "notes": "UPF runs a trimester system (Term 1 Sep-Dec, Term 2 Jan-Mar, Term 3 Apr-Jun, 10 wks classes + 2 wks exams each per Factsheet UPF_2026_ER.pdf#page=2)."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Term 2 (Winter): Welcome Jan 8, 2027; Teaching begins Jan 7-11; Easter break Mar 20-29, 2027; Exams mid/late Mar-early Apr 2027. Term 3 (Spring): Apr-Jun 2027.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.upf.edu/web/incoming/exchange-students-academic-information",
+    "notes": "Trimester 2/3 structure aligns with UPF Spring semester window."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.upf.edu/web/incoming/exchange-students-academic-information",
+    "notes": "Confirmed on official upf.edu: incoming exchange students under official bilateral/Erasmus agreements continue paying home tuition and receive a UPF tuition exemption."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800,
+      "max": 1350
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": "Fact sheet p. 4 estimates €800-€1,050/month for a shared flat or €950-€1,350/month for a residence hall."
+  },
+  "living_cost_usd_est": {
+    "value": 5940.45,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": "Midpoint 1075 EUR/month * 5 months * 1.1052 USD/EUR = 5940.45 USD (ECB reference rate dated 2026-11-13, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory accident, travel, and health insurance coverage valid in Spain required for all incoming exchange students (cost varies by provider).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": "No UPF-owned dorms, but UPF offers assistance via Barcelona Centre Universitari (BCU Housing: https://www.bcuhousing.cat/en) and partner residence hall agreements."
+  },
+  "housing_notes": {
+    "value": "BCU Housing Service (https://www.bcuhousing.cat/en) and partner residence agreements: shared flat €800-€1,050/month; student residence hall €950-€1,350/month (total monthly living estimate).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students staying >3 months MUST obtain a Spanish student visa prior to arrival (tourist visas cannot be converted); guide at https://www.upf.edu/barcelona. Lead time/exact solvency threshold not specified in fact sheet.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.upf.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:89,127",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.upf.edu/web/international/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=1",
+    "notes": "Incoming academic portal at https://www.upf.edu/web/incoming/exchange-students-academic-information."
+  },
+  "course_catalog_url": {
+    "value": "https://www.upf.edu/web/incoming/exchange-students-academic-information",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=2",
+    "notes": "Course offerings are linked per faculty on this portal (/web/humanitats/incoming-students, /web/econ, etc.)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (trimester system): normal full load is 20 ECTS per trimester (60 ECTS/year); max 20 ECTS/term (25 in Term 1). Spanish 0-10 grading scale (5 pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=2",
+    "notes": "Trimester maximums (20 ECTS, 25 in T1) detailed on Factsheet UPF_2026_ER.pdf#page=3."
+  },
+  "course_restrictions_note": {
+    "value": "Max 1 course/term from outside your assigned host faculty (p. 3); Final Year Projects (TFG) and certain practical internships are excluded from exchange enrollment (per upf.edu).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online registration / exchange application",
+      "Language proficiency proof (Spanish/Catalan B1 or English B2)",
+      "Mandatory accident, travel, and health insurance policy",
+      "Passport / Spanish student visa (>3 months non-EU)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Public university (12,400 students) operating on a fast-paced 3-trimester calendar (10 weeks instruction + 2 weeks exams per term) with 0-10 grading.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=1",
+    "notes": "Trimester structure and grading detailed on Factsheet UPF_2026_ER.pdf#page=2."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=1",
+    "notes": "Three urban campuses in Barcelona: Ciutadella, Poblenou, and Mar."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mobility and Welcome Office (OMA), Language Volunteering tandem program, reduced-fee Idiomes UPF Spanish/Catalan courses, and BCU Housing assistance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Term 1 (Fall): Nomination Apr 30, Registration May 20; Term 2 & Term 3: Nomination Sep 30, Registration Oct 20.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universitat Pompeu Fabra (UPF)/2026/Factsheet UPF_2026_ER.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

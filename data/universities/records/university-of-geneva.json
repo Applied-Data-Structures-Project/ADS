@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-geneva",
+  "excel_rows": [
+    135
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1CAJDtwmcGwvoXT5e0z4eoCmoGrjFkgO7"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf",
+      "data/raw/factsheets/UoGeneva/UNIGE_Info_sheet for students_25-26_Monde__18rIOG.pdf",
+      "data/raw/factsheets/UoGeneva/UNIGE_Info_sheet for students_25-26_Monde__1vk5FN.pdf",
+      "data/raw/factsheets/UoGeneva/UNIGE_Info_sheet_25-26 NEW Monde.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf.txt",
+      "data/raw/extracted/UoGeneva/UNIGE_Info_sheet for students_25-26_Monde__18rIOG.pdf.txt",
+      "data/raw/extracted/UoGeneva/UNIGE_Info_sheet for students_25-26_Monde__1vk5FN.pdf.txt",
+      "data/raw/extracted/UoGeneva/UNIGE_Info_sheet_25-26 NEW Monde.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Geneva",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UNIGE",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Switzerland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Geneva",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": "UNIGE restricts GSEM, Law, and English Lit/Linguistics to students majoring in those fields at home."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "GSEM (Economics & Management), Law, and English Literature/Linguistics require matching home major; Bachelor students cannot take Master courses; max 2 faculties (p.2)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UNIGE AY 2026-2027 fact sheet specifies a passing grade threshold (>=4/6) during studies, not an incoming admission GPA cutoff."
+  },
+  "instruction_languages": {
+    "value": [
+      "French",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": "French is the primary teaching language with wide English-taught course offerings across faculties."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English required for English-taught courses (C1 required for English Literature/Linguistics), unless English is the language of current university studies.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": "Requirements on p.1-2."
+  },
+  "host_language_requirement": {
+    "value": "Minimum B2 French required for French-taught courses (C1 for French Literature/related), unless French is the language of current studies; optional summer/winter French and 2 free weekly French courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": "Details on p.1-2."
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": "AY/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall (host term dates): Orientation Sep 11, 2026; Term Sep 14, 2026-Feb 12, 2027 (in-person exams Jan-Feb). Note: AUC Excel specifies Spring and Academic Year.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Orientation Feb 19, 2027; Term Feb 22-Jun 25, 2027 (in-person exams May-Jun; PDF notes Jun 25/30).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.unige.ch/exchange/en/incoming/why-geneva/",
+    "notes": "Bilateral international exchange students pay home tuition and are exempt from UNIGE tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "CHF",
+      "min": 2000,
+      "max": 2000
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": "AY 2026-2027 fact sheet p.3 estimates ~CHF 2,000/month in Geneva."
+  },
+  "living_cost_usd_est": {
+    "value": 11927,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": "5-month midpoint estimate from CHF 2,000/month converted via ECB 2026-11-13 cross-rate 1 EUR = 1.1052 USD and 1 EUR = 0.9266 CHF (1 CHF = 1.192748 USD; collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 2,000 * 5 * 1.192748 = 11927.48 USD (approx. USD 11927)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Swiss health and accident insurance from CHF 65/month unless officially exempted via waiver.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "lottery",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": "Cité Universitaire rooms are very limited due to renovations and allocated first-come, first-served (applicants aged >34 ineligible)."
+  },
+  "housing_notes": {
+    "value": "Limited student housing (Cité Universitaire undergoing renovations, fewer rooms available, first-come first-served, age limit <=34); total Geneva monthly budget ~CHF 2,000.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "SEMP grants apply to European mobility, not non-European AUC bilateral exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Age restriction >34 applies to Cité Universitaire residence hall eligibility only (p.3)."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students must apply for a Swiss student visa approximately 3 months in advance and obtain a Geneva OCPM residence permit upon arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.unige.ch/international/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:135",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.unige.ch/exchange/en/incoming/why-geneva/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/UNIGE_Info_sheet for students_25-26_Monde__18rIOG.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://www.unige.ch/progcours",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.unige.ch/exchange/en/incoming/why-geneva/students/international-non-erasmus-students/1-choose-your-classes/studying-english-regular-courses/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Uses ECTS; exact min/max semester credit load not specified on AY 2026-2027 fact sheet."
+  },
+  "course_restrictions_note": {
+    "value": "Students may take courses in maximum 2 faculties; Bachelor students cannot take Master-level courses; GSEM, Law, and English Lit/Linguistics require the student to major in that field at home; C1 required for French/English Literature.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Motivation letter",
+      "Official academic transcripts",
+      "Passport photo",
+      "Passport copy",
+      "B2 French or English proof (unless current study language)",
+      "Study plan"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Swiss 1-6 grading scale (passing grade >=4.0/6 required); in-person exams only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Geneva city scale not explicitly categorized into schema city_tier options in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Urban/multi-site facilities in Geneva; schema campus_type not explicitly classified in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Welcome/orientation day, optional summer/winter French intensive courses, 2 free weekly French support classes, Welcome Center, and disability support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=2",
+    "notes": "Language support p.2; orientation p.1."
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027: Fall / Academic Year nomination Mar 31, application Apr 10; Spring nomination Aug 31, application Sep 10.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoGeneva/2026-2027/UNIGE_Info_sheet_26-27 Monde.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

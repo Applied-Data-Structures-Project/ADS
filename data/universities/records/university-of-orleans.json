@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-orleans",
+  "excel_rows": [
+    140
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Orleans",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Orléans",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "BUSSINES only",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": "Mapped from Excel scope 'BUSSINES only'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": "Excel scope 'BUSSINES only'; managed via UFR DEG (Law, Economics, Management / IAE Orleans)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "French",
+      "English"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/university/international/coming-university/study-english",
+    "notes": "Regular courses are taught predominantly in French; selected modules and specialized programs/tracks are taught in English (including UG/Master Law & Economics classes in UFR DEG, Polytech packages, Sciences/Sport, INSPE ISTEP) or German/Spanish."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/university/international/coming-university/study-english",
+    "notes": "Regular university curriculum is primarily in French, with limited English-taught modules/tracks across specific UFRs (such as UFR DEG, Polytech Orléans, Sciences, INSPE)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No standardized English test score minimum stated on univ-orleans.fr (regular French-taught faculty courses generally require B2 French; English-taught programs require appropriate English proficiency)."
+  },
+  "host_language_requirement": {
+    "value": "Minimum B2 level generally required for regular faculty courses taught in French (TCF, DELF, etc.; lower levels via IDF French language institute).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:140",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Academic calendars vary by host faculty/UFR on univ-orleans.fr (https://www.univ-orleans.fr/fr/univ/etudiants/accueil-scolarite/calendrier-universitaire); partner-sheet monthly estimates excluded."
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Academic calendars vary by host faculty/UFR on univ-orleans.fr (https://www.univ-orleans.fr/fr/univ/etudiants/accueil-scolarite/calendrier-universitaire); partner-sheet monthly estimates excluded."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": "Official univ-orleans.fr confirms Erasmus+ and bilateral exchange students are exempt from university tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Students taking part in an international exchange program in France are exempt from paying the CVEC (Contribution Vie Etudiante et de Campus); EU students need EHIC and non-EU students affiliate with French social security (free online registration).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": "During online pre-inscription, exchange students can request CROUS residence housing or partner host family placement via International Relations; places are limited (apply early) and free VISALE guarantor scheme is recommended."
+  },
+  "housing_notes": {
+    "value": "CROUS residences or host family options requested during online pre-inscription (limited spots, not guaranteed; apply immediately upon acceptance); free VISALE rental guarantor scheme recommended (<30 yrs).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-European students must apply for a student visa via Campus France / French consulate upon acceptance.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.univ-orleans.fr",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": "Faculty of Law, Economics and Management (UFR DEG) exchange page at https://www.univ-orleans.fr/en/deg/international/erasmus-and-international-exchange."
+  },
+  "course_catalog_url": {
+    "value": "https://www.univ-orleans.fr/fr/univ/formation/catalogue-des-formations",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/fr/univ/formation/catalogue-des-formations",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum UFR module percentage quota verified directly on univ-orleans.fr (third-party partner sheets excluded)."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Welcome Center / One-Stop Shop (Guichet Unique) at start of academic year (La Source campus, Amphithéâtre des Sciences) assists international students with registration, visas, health, and housing.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr",
+    "notes": "Pre-arrival practical guidance also via https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange and https://www.univ-orleans.fr/en/deg/international/erasmus-and-international-exchange."
+  },
+  "nomination_deadlines": {
+    "value": "Semester 1 (Fall): Application Jun 1 (UFR nominations in May, e.g. May 20 at UFR LLSH); Semester 2 (Spring): Application Oct 15 (UFR nominations early Oct, e.g. Oct 1) via MoveOn portal; verify exact UFR BRI dates.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.univ-orleans.fr/en/univ/international/venir-luniversite/etudiants-en-programme-dechange",
+    "notes": null
+  },
+  "ext": {}
+}

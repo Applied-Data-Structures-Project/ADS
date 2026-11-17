@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "kdi-school-of-public-policy-and-management",
+  "excel_rows": [
+    55
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "KDI School of Public Policy and Management",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KDI School",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": null
+  },
+  "country": {
+    "value": "South Korea",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Sejong City",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "GAPP",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "GAPP"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": "Agreement scope literally says 'GAPP' (graduate level only per Excel)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": "All eligible GAPP graduate programs."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Three-term academic year (Spring, Summer, Fall); 2026 Fall course lists and calendar schedule managed via One-Stop Academic Calendar.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr/kdis/oneStopAcademicCalendar",
+    "notes": "Exact day-by-day 2026 calendar schedule inside One-Stop portal is login/SPA-gated."
+  },
+  "spring_term_dates": {
+    "value": "Three-term academic year (Spring, Summer, Fall); 2026 Pre-Spring and Spring course lists published via One-Stop Academic Calendar.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr/kdis/oneStopAcademicCalendar",
+    "notes": "Exact day-by-day 2026 calendar schedule inside One-Stop portal is login/SPA-gated."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": "On-campus KDI School dormitory offers optional single and double rooms for international and Korean students within walking distance of lecture halls and library."
+  },
+  "housing_notes": {
+    "value": "Optional on-campus dormitory (single and double rooms) within walking distance of lecture halls and library, featuring communal kitchens, laundry rooms, and dining lounges; monthly utility cap is 90,000–100,000 KRW/month (excess billed to residents).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "D-2 student visa required prior to arrival, plus Alien Registration Card application at Daejeon Immigration Office.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.kdischool.ac.kr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:55",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.kdischool.ac.kr/#/students/cp/academics/study/exchange",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr/#/students/cp/academics/study/exchange",
+    "notes": "Public SPA hash route exposes overview; partner-specific incoming exchange fact sheet is missing locally."
+  },
+  "course_catalog_url": {
+    "value": "https://www.kdischool.ac.kr",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": "2026 Pre-Spring, Spring, Summer, and Fall course lists are published under Academics / Notice Board."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Graduate school of public policy and development management in Sejong City running a three-term academic year (Spring, Summer, Fall).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Buddy program and Home-visiting programs offered for international students via Student Life.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kdischool.ac.kr",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

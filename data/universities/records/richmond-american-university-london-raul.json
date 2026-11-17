@@ -1,0 +1,365 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "richmond-american-university-london-raul",
+  "excel_rows": [
+    95
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1qwWDMW1SQmpZBI2fZdZnQItyTosn9IFh",
+      "https://drive.google.com/drive/folders/1siMEcHUDuUraUfd6d0-_vYo2zW5XSrhw"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Richmond American University, London/2022/study-abroad-visiting-students-2022-web.pdf",
+      "data/raw/factsheets/Richmond American University, London/Fall 2026/FALL 2026 Course List.pdf",
+      "data/raw/factsheets/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.docx",
+      "data/raw/factsheets/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.pdf",
+      "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Richmond American University, London/2022/study-abroad-visiting-students-2022-web.pdf.txt",
+      "data/raw/extracted/Richmond American University, London/Fall 2026/FALL 2026 Course List.pdf.txt",
+      "data/raw/extracted/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.docx.txt",
+      "data/raw/extracted/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.pdf.txt",
+      "data/raw/extracted/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Richmond American University London (RAUL)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "short_name": {
+    "value": "RAUL",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "country": {
+    "value": "United Kingdom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Richmond",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No minimum incoming study abroad/exchange GPA is stated in the 2026-27 Study Abroad Factsheet or 2024-25 VS Factsheet."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "London-based US/UK dual-accredited university operating in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "Full curriculum delivered in English (500+ courses in 2022 Guide; Fall 2026 Course List PDF)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Required for non-native speakers per https://www.richmond.ac.uk/undergraduate-admissions/: IELTS Academic 5.5 (min 5.5 all 4 components), TOEFL iBT 72 (17L/18R/17W/20S), PTE Academic 51 (51 all components), Oxford ELLT B2 in all 4 components, or Cambridge Scale min 168 per skill (2024-25 Factsheet p.2). RHET 1020 waiver not explicitly mentioned.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.pdf#page=2",
+    "notes": "2026-27 Factsheet links https://www.richmond.ac.uk/undergraduate-admissions/; also matches data/raw/factsheets/Richmond American University, London/2022/study-abroad-visiting-students-2022-web.pdf#page=16."
+  },
+  "host_language_requirement": {
+    "value": "English (CEFR B2 equivalent scores required for non-native English speakers).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Orientation Sep 1-6, 2026; Classes Sep 7 - Dec 11, 2026 (Tutorial Week Oct 26 - Nov 1, no classes); Exams Dec 14-18, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Orientation Jan 11-17, 2027; Classes Jan 18 - Apr 23, 2027 (Tutorial Week Mar 8-14, no classes); Exams Apr 26 - May 2, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "fee_paying_study_abroad",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "2026-27 Study Abroad Factsheet explicitly lists Tuition: GBP 6,300/semester (GBP 5,355/semester with partner discount). Earlier 2024-25 factsheet (data/raw/factsheets/Richmond University/2024-2025/International Programmes VS Factsheet - Maggie Burton.pdf#page=3) stated 'as soon as we receive payment (if applicable)' and richmond.ac.uk notes partner-specific fee agreements/waivers vary."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "RAUL does not publish a full official monthly GBP living-cost budget range (accommodation-only rates at Stay Club North Acton are published separately at https://www.richmond.ac.uk/LONDON-Student-Accommodation-for-Fall-2026-Spring-2027; UKVI visa maintenance threshold is not a living-cost guide)."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Omitted because RAUL does not publish a comprehensive monthly local living-cost estimate."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2026-27 Study Abroad tuition is GBP 6,300/semester (GBP 5,355/semester with partner discount); healthcare coverage guidance is linked inside the Study Abroad factsheet.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "2026-27 Factsheet guarantees beds if applied by early housing deadline (Jun 1 Fall / Oct 11 Spring); first-come, first-served thereafter."
+  },
+  "housing_notes": {
+    "value": "Partnered accommodation at The Stay Club North Acton (private en-suite single studios with kitchenettes, utilities, Wi-Fi, RA/RD support, optional meal plan). 2026-27 visitor rates incl. council tax: GBP 445/week (1-term, 16-week contract) or GBP 414/week (2-term, 35-week contract), plus GBP 250 deposit. Guarantee deadline Jun 1 (Fall) / Oct 11 (Spring).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.richmond.ac.uk/LONDON-Student-Accommodation-for-Fall-2026-Spring-2027",
+    "notes": "Facility & RA/RD details in data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Single-semester (<6 months) students enter as Standard Visitors and must obtain a UK Electronic Travel Authorization (ETA) before travel (or apply prior if visa-national). Stays >6 months require a UK Student Visa (no ETA needed; English proof requirements apply).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.richmond.ac.uk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:95",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.richmond.ac.uk/",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "Study Abroad policy and accommodation details hosted on richmond.ac.uk (https://www.richmond.ac.uk/LONDON-Student-Accommodation-for-Fall-2026-Spring-2027)."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Course listings distributed via term PDF (Fall 2026 Course List PDF in Drive) and RAUL Course Specification pages on richmond.ac.uk."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses are taught in English; see Fall 2026 Course List.pdf in partner Drive folder."
+  },
+  "credit_system_and_load": {
+    "value": "US credit system: all Study Abroad classes at RAUL are 4 US credits each.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Academic advisors verify prerequisites ahead of registration; students are advised to have 4 backup courses pre-approved for Add/Drop adjustments.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination (sent to International Programmes team)",
+      "Online portal application",
+      "Scanned copies of all academic transcripts (in English)",
+      "Scanned English proficiency scores (for non-native speakers)",
+      "Colour scan of passport photo page"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": "2026-27 Factsheet explicitly notes academic reference and personal statement are NOT required."
+  },
+  "academic_style": {
+    "value": "Dual US (Middle States) and UK (Taught Degree Awarding Powers) liberal arts university featuring small classes, US credit transferability, Tutorial Weeks, and optional 4-credit London internships.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond American University, London/2022/study-abroad-visiting-students-2022-web.pdf#page=4",
+    "notes": "Dual accreditation & 4-credit internship on p.4 & p.15; Tutorial Week in data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel lists city 'Richmond'; physical campus relocated to Chiswick Park (London W4 5AN). Omitted without unambiguous schema classification."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Chiswick Business Park, West London (mixed landscaped business park / urban transport setting); omitted to avoid urban/suburban ambiguity."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Programmes advising team (pre-arrival Teams course advising), Stay Club Resident Assistants/Resident Directors (RA/RD), Student Affairs wellbeing support (TalkCampus).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall 2026: Nomination May 15, Application Jun 1 (Housing guarantee Jun 1). Spring 2027: Nomination Oct 15, Application Nov 1 (Housing guarantee Oct 11).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Richmond University/2026-2027/Richmond Factsheet - STUDY ABROAD.docx",
+    "notes": null
+  },
+  "ext": {}
+}

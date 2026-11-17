@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-oslo",
+  "excel_rows": [
+    141
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1u-GzRe71c2uIDADFw0bUwVzFhdMbI43D"
+    ],
+    "local_files": [
+      "data/raw/factsheets/University of Oslo/University of Oslo Fact sheet.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/University of Oslo/University of Oslo Fact sheet.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Oslo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UiO",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/",
+    "notes": null
+  },
+  "country": {
+    "value": "Norway",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Oslo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Actuarial Science Department",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Norwegian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": "Department of Mathematics offers multiple upper-level English-taught Actuarial/Insurance Mathematics courses (e.g., STK3505, STK4505, STK4520, STK4540, STK-MAT3700) open to exchange students meeting prerequisites."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native partner exchange students: Bachelor's requires IELTS Academic 5.0 or TOEFL iBT 60 (or 3.5 on post-Jan 2026 0-6 scale); Master's requires IELTS 6.5 (all sub-bands >=6.5) or TOEFL iBT 90 (or 4.5 on 0-6 scale). MyBest / One Skill Retake NOT accepted; specific partnership agreements may specify exemptions; RHET 1020 not mentioned.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/english-requirements.html",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None for English-taught mathematics/actuarial courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": "Semester1/Semester 2"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Autumn Semester: Aug 10-Dec 22, 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/about/calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Jan 4-Jun 18, 2027 (orientation/instruction starts Mon Jan 11, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/about/calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/tuition-fees/",
+    "notes": "Confirmed on official uio.no: nominated exchange students under bilateral and Erasmus+ agreements are exempt from tuition fees at UiO."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "NOK",
+      "min": 15250,
+      "max": 15250
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/student-life/budget/",
+    "notes": "Official UiO student budget (Housing 7,500 + Food 3,500 + Transport 700 + Study 1,000 + Leisure 700 + Phone/net 400 + Health 250 + Other 1,200 = NOK 15,250/month)."
+  },
+  "living_cost_usd_est": {
+    "value": 7973.08,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/student-life/budget/",
+    "notes": "Midpoint 15250 NOK/month * 5 months * 0.104565 USD/NOK = 7973.08 USD (1 EUR = 10.5695 NOK & 1 EUR = 1.1052 USD -> 1 NOK = 0.104565 USD; ECB reference rate dated 2026-11-13, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived for exchange students; travel/health insurance strongly recommended by UiO (non-EU exchange students follow UDI study permit healthcare rules).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Oslo/University of Oslo Fact sheet.docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Oslo/University of Oslo Fact sheet.docx",
+    "notes": "2020-2021 Fact Sheet states student accommodation (SiO) is guaranteed for international exchange students applying before deadline; detailed at https://www.uio.no/english/studies/admission/exchange/housing.html."
+  },
+  "housing_notes": {
+    "value": "Guaranteed SiO student housing for international exchange students applying before the deadline; UiO monthly budget estimates NOK 7,500/month for housing.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/housing.html",
+    "notes": "Monthly NOK 7,500 housing estimate from https://www.uio.no/english/student-life/budget/."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA citizens require a Norwegian UDI Student Residence Permit and must document financial subsistence (transferred to SiO deposit account unless exempt): AY 2026-2027 NOK 170,368 full year, NOK 77,440 Autumn 2026 only, or NOK 92,928 Spring 2027 only. Lead time not specified.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/tuition-fees/finances.html",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.uio.no/english/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:141",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uio.no/english/studies/admission/exchange/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": "Lists English-taught Mathematics/Statistics/Actuarial courses including STK3505 (https://www.uio.no/english/studies/courses/matnat/math/STK3505/)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system: normal full-time load is 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Agreement scoped to Actuarial Science Department / Department of Mathematics; 2000-level+ Mathematics and Insurance Mathematics courses (e.g. STK3505/4505/4540) require solid prerequisites in calculus, linear algebra, and probability.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/courses/matnat/math/index.html",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Knutepunktet International Student Reception at Blindern campus, welcome orientation, and SiO student welfare/housing support.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Application deadlines: May 1 (Autumn semester); Oct 15 (Spring semester) [2020-2021 DOCX listed Nov 1 Spring].",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uio.no/english/studies/admission/exchange/",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-american-university-of-the-emirates",
+  "excel_rows": [
+    110
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1u-q2O2-dk4Geiosp6zb8w8-h4xwfvlIT"
+    ],
+    "local_files": [
+      "data/raw/factsheets/AUEmirates/The American University of the Emirates.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/AUEmirates/The American University of the Emirates.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The American University of the Emirates",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "country": {
+    "value": "United Arab Emirates",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Dubai",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "region": {
+    "value": "Middle East & North Africa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://aue.ae/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": null
+  },
+  "short_name": {
+    "value": "AUE",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Enrolled home-institution students must hold an official No-Objection Letter from their home university and good academic standing to study as Visiting Students (up to two semesters).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:110",
+    "notes": "Exact University-wide agreement scope across AUE's seven colleges (Business, Media & Mass Comm, Security & Global Studies, CIT, Design, Law, Education per DOCX)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No excluded major list published in AUE DOCX or aue.ae/visiting/."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Good academic standing verified via home-university transcript/No-Objection Letter; no numeric GPA threshold published on aue.ae/visiting/."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": "Instruction at AUE uses English (except specific Arabic/law tracks if applicable)."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/AUEmirates/The American University of the Emirates.docx",
+    "notes": "Seven colleges offer UG/GR programs largely in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Undergraduate visiting/admission requirement: Academic IELTS >=5.0, TOEFL iBT >=61, or TOEFL ITP >=500 (Graduate level: IELTS 6.0/6.5 or TOEFL iBT >=79); conditional ELI/IEP tracks exist.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught programs.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester (Weekdays): Classes Aug 30 - Dec 20, 2026 (Add/Drop Aug 31 - Sep 6; Midterms Oct 19-25; Final Exams Dec 14-20; Winter Break Dec 21 - Jan 1).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/academic-calendar-2026-2027/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester (Weekdays): Classes Jan 3 - May 7, 2027 (Add/Drop Jan 4-10; Midterms Feb 22-28; Spring Break Apr 5-11; Final Exams May 1-7, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/academic-calendar-2026-2027/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No bilateral exchange tuition-waiver clause verified publicly on aue.ae (aue.ae lists standard UG ~AED 45,600/yr and GR ~AED 72,000/yr COA without an exchange waiver page)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "AED",
+      "min": 5750,
+      "max": 7000
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": "Derived monthly living range from AUE Cost of Attendance annual figures divided by 12 months: Accommodation AED 15,000-30,000 + Cost of living AED 36,000 + Transportation AED 6,000 + Utilities AED 12,000 = AED 69,000-84,000/yr -> AED 5,750-7,000/month. (Outdated 2020-21 local DOCX estimated 12,500 USD/yr or $1,214-1,938 USD/mo)."
+  },
+  "living_cost_usd_est": {
+    "value": 8679.37,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": "5-month estimate derived from monthly AED range 5,750-7,000 (midpoint 6,375.0)/month. Official peg 1 USD = 3.6725 AED (1 AED = 0.272294 USD) from Central Bank of the UAE (retrieved 2026-11-15 at https://centralbank.ae/en/reports-and-statistics/exchange-rates/); 5-month USD est = 6,375.0 AED * 5 / 3.6725 = 8,679.37 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "AUE Cost of Attendance lists mandatory annual fees (Internet & Lab AED 1,050, Health Care Services AED 252, Admission AED 3,150 UG/3,675 GR; Books AED 1,575) plus University Health Insurance AED 1,000 and UAE student visa fees if sponsored by AUE.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/accommodation/",
+    "notes": "External student residences in Dubai International Academic City (e.g., KSK Homes / Yugo Homes) recommended by AUE (AED 15,000-30,000/yr)."
+  },
+  "housing_notes": {
+    "value": "KSK Homes / Yugo Homes options in Dubai International Academic City estimated at AED 15,000-30,000/yr per AUE Cost of Attendance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming visiting/exchange stipend published on aue.ae."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-UAE students requiring an AUE-sponsored UAE Student Visa must enroll in >=3 courses (9 credit hours) and budget visa fees (AED 3,675 outside UAE / AED 4,200 inside UAE), refundable passport deposit AED 5,500, medical test AED 420, Emirates ID AED 189, and health insurance AED 1,000.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://aue.ae/visiting/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://aue.ae/catalogs-handbooks/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/catalogs-handbooks/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Programs and courses listed inside AUE catalogs at https://aue.ae/catalogs-handbooks/; no separate exchange English filter URL."
+  },
+  "credit_system_and_load": {
+    "value": "US credit-hour system (minimum 3 courses / 9 credit hours required for AUE student visa sponsorship).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/cost-of-attendance/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Visiting students enroll in specific pre-approved courses for up to 2 semesters with home-institution No-Objection Letter; visa holders must take >=9 credits.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official No-Objection Letter from home institution",
+      "Official academic transcript",
+      "English proficiency proof (IELTS/TOEFL)",
+      "Passport & UAE visa documents (if sponsored by AUE)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/visiting/",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "American-style semester weekday calendar (with weekend/evening sections noted separately); pedagogical details not detailed in verified excerpts."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Dubai (Dubai International Academic City, Block 6 & 7); Dubai population threshold not cited on aue.ae."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located inside Dubai International Academic City campus zone (DOCX); aue.ae does not classify campus_type using schema enum labels."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on aue.ae."
+  },
+  "international_support_services": {
+    "value": "Student Life, UAE Student Visa sponsorship processing, DIAC partner housing referrals (KSK/Yugo Homes), and Campus Health Care Services.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://aue.ae/student-life/",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AUE admits Fall, Spring, and Summer cohorts via visiting student process (https://aue.ae/visiting/); exact bilateral partner nomination/application cutoffs not published publicly."
+  },
+  "ext": {}
+}

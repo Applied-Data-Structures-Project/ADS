@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "catholic-university-of-sacred-heart-universita-cattolica-del-sacro-cuore",
+  "excel_rows": [
+    16
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1bhNb35-Gv9qecbsRq5bi9zGNmdSIErLK?usp=drive_link",
+      "https://drive.google.com/drive/folders/1bhNb35-Gv9qecbsRq5bi9zGNmdSIErLK"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2024- 2025/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore).pdf",
+      "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2024- 2025/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore).pdf.txt",
+      "data/raw/extracted/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Catholic University of Sacred Heart (Università Cattolica del Sacro Cuore)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UCSC",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Milan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Completion of a minimum of 2 semesters at the undergraduate level.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.unicatt.it/ucscinternational-semester-programs-exchange-program-in-milan",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.75,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.unicatt.it/ucscinternational-semester-programs-exchange-program-in-milan",
+    "notes": "Good academic standing defined as minimum 2.75/4.0 GPA (or 70-74/100; 24/30 ECTS C/C+)."
+  },
+  "instruction_languages": {
+    "value": [
+      "Italian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=4",
+    "notes": "Dedicated English-taught International Curriculum alongside English- and Italian-taught Laurea Triennale/Magistrale courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "B2 English required (TOEFL iBT 79, IELTS 6.0, or Cambridge B2 First/FCE); exempt if currently studying in English at home university (confirm RHET 1020 / English-medium confirmation letter).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "B2 Italian required for Italian-taught Academic Curriculum courses (otherwise recommended pre-session/semester Italian course); no Italian required for English-taught International Curriculum.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": "Fall/Spring/Summer"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 Fall: Classes start Sep 15, 2025; Exams Jan 7-Feb 21, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026 Spring: Classes start Feb 23, 2026 (Economics Trimester begins Jan 7, 2026); Exams Jun 1-Jul 25, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=3",
+    "notes": "Dates from p.3-4; Faculty of Economics runs on a trimester calendar."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.unicatt.it/ucscinternational-semester-programs-exchange-program-in-milan",
+    "notes": "Exchange students remain enrolled and pay tuition to home institution; UCSC tuition waived (fee-paying Study Abroad is a separate track)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1500,
+      "max": 2200
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.unicatt.it/ucscinternational-milan-accommodation",
+    "notes": "UCSC Milan accommodation/living guide estimates EUR 1,500-2,200/month total (accommodation EUR 4,500-6,000/sem, food EUR 2,000-3,000/sem, leisure EUR 1,500-2,500/sem, transport ~EUR 135/sem, books ~EUR 300/sem)."
+  },
+  "living_cost_usd_est": {
+    "value": 10223,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://international.unicatt.it/ucscinternational-milan-accommodation",
+    "notes": "5-month midpoint estimate from EUR 1,500-2,200/month (EUR 1,850/mo) converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 1,850 * 5 * 1.1052 = 10,223.10 USD (approx. USD 10,223)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory EUR 80 enrolment fee (includes Student Safety Package health/liability insurance); EUR 45 activity fee for International Curriculum courses; pre-session or semester Italian language course EUR 400 each (EUR 600 combo); non-EU students must obtain International Health Insurance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=6",
+    "notes": "Details from p.4 and p.6-7."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=7",
+    "notes": "MIL Service coordinates off-campus shared apartments on a first-come, first-served basis unless guaranteed by specific partner agreement."
+  },
+  "housing_notes": {
+    "value": "Off-campus shared apartments coordinated via MIL Service (first-come, first-served); accommodation budget EUR 4,500-6,000/semester per UCSC living guide.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=7",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No UCSC incoming exchange stipend published; official UCSC grants target outgoing UCSC students."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students require an Italian Type D study visa via Universitaly, valid International Health Insurance, and post-arrival Codice Fiscale; exact lead time and financial proof thresholds vary by consulate.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=8",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.unicatt.it/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:16",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://international.unicatt.it/ucscinternational-semester-programs-exchange-program-in-milan",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://international.unicatt.it/ucscinternational-course-details-ucsc-academic-curriculum",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://international.unicatt.it/ucscinternational-course-details-ucsc-international-curriculum",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=4",
+    "notes": "Dedicated UCSC International Curriculum (English-taught courses) link."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; International Curriculum courses typically carry 6 ECTS each.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=4",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Faculty of Economics follows a trimester calendar (Spring starts Jan 7, 2026 rather than Feb 23); Academic Curriculum courses require Italian B2 if taught in Italian.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Offers both International Curriculum (English-taught US/international cohort modules) and Academic Curriculum (integrated Italian Laurea Triennale/Magistrale lectures).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Milan is a major Italian urban center; exact schema city_tier label not explicitly classified in host documents."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Milan campus; physical campus layout category not explicitly stated in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Cattolica International support office, pre-session/semester Italian language courses, MIL Service housing desk, Student Safety Package, YesMilano onboarding links.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=6",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nomination Mar 15, application Apr 15; Spring: nomination Oct 15, application Nov 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Catholic University of the Sacred Heart (Università Cattolica del Sacro Cuore)/2025-2026/UCSC IIS Spring 2026_all partners MILAN campus.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

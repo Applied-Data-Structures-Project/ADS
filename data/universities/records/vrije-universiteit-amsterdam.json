@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "vrije-universiteit-amsterdam",
+  "excel_rows": [
+    155
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1DVfch3snb59SC9DRceuOKR-qh9Ncarf9"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Vrije Universiteit Amsterdam",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "short_name": {
+    "value": "VU Amsterdam",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Amsterdam",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Students taking Master's-level courses MUST hold a completed Bachelor's degree prior to the start of exchange (Bachelor students are barred from MA courses).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Dutch"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=3",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR C1 required (TOEFL iBT >=92, Academic IELTS >=6.5). Bachelor exchange: proficiency verified by home university. Master's courses: formal test certificate mandatory unless student completed >=2 years of a fully English-taught programme within 2 years prior to exchange (no explicit RHET 1020 exemption stated; AUC English-medium proof aligns with 2-year exemption).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "CEFR C1 Dutch (NT2) required only if taking Dutch-taught courses; optional Dutch NT2 courses available via https://vu.nl/en/education/vu-nt2.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=2",
+    "notes": "NT2 link also on Fact Sheet #page=4."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Semester 1 (AY 2026-2027): Period 1 31 Aug - 23 Oct 2026; Period 2 26 Oct - 18 Dec 2026; Period 3 4 Jan - 29 Jan 2027 (Academic Opening 31 Aug 2026).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://vu.nl/en/education/academic-calendar",
+    "notes": "Introduction days typically held during last 2 weeks of August per Fact Sheet #page=1."
+  },
+  "spring_term_dates": {
+    "value": "Semester 2 (AY 2026-2027): Period 4 1 Feb - 25 Mar 2027; Period 5 30 Mar - 28 May 2027; Period 6 31 May - 25 Jun 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://vu.nl/en/education/academic-calendar",
+    "notes": "Orientation held on Friday before Semester 2 starts per Fact Sheet #page=1."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact Sheet #page=2 distinguishes exchange agreement nominations from fee-paying 'Semester in Amsterdam' non-degree students, but neither the local PDF nor grounded vu.nl excerpts explicitly state partner-exchange tuition waiver wording."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1000,
+      "max": 2000
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.vu.nl/en/education/more-about/cost-of-living-and-working",
+    "notes": "VU Amsterdam official student cost-of-living guidance estimates EUR 1,000-2,000/month depending on lifestyle and Amsterdam housing choices (distinct from the ~EUR 1,200/month IND visa proof floor)."
+  },
+  "living_cost_usd_est": {
+    "value": 8289.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.vu.nl/en/education/more-about/cost-of-living-and-working",
+    "notes": "5-month USD estimate from official EUR 1,000-2,000/month range (midpoint EUR 1,500/mo x 5 = EUR 7,500) converted at ECB 2026-11-13 rate (1 EUR = 1.1052 USD, collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "EUR 250/semester housing handling fee if using VU accommodation service (first paid, first served). Health insurance is mandatory (AON recommended via https://www.students-insurance.eu/educationalinstitutions/en/; EHIC accepted for EU students).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=4",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Assisted VU accommodation (https://vu.nl/en/education/more-about/exchange-accommodation), limited and NOT guaranteed (first paid, first served; EUR 250/semester handling fee; strict application deadline for housing/visa; full-period rental contracts only).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Vrije Universiteit Amsterdam applies for the student's visa and/or residence permit on their behalf.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=4",
+    "notes": "Strict April 15 / Oct 15 application deadlines for visa & housing (#page=2); monthly IND living cost norm ~EUR 1,200/month per https://vu.nl/en/education/more-about/exchange-visa."
+  },
+  "official_website_url": {
+    "value": "https://vu.nl/nl",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:155",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://vu.nl/en/education/more-about/nomination-and-application",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://vu.nl/en/education/more-about/courses",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (Dutch 1-10 grading scale; 6.0 minimum pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Psychology and School of Business & Economics (SBE) have limited exchange capacity (majors prioritized); Bachelor students are barred from taking Master's courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=3",
+    "notes": "Completed Bachelor's degree required before exchange start for Master's courses (#page=2)."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination + online application",
+      "Bachelor's degree copy or completion confirmation statement (if taking Master's courses)",
+      "Formal English test proof (if taking Master's courses and not exempt)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Arrival & Introduction days, Dutch NT2 courses (https://vu.nl/en/education/vu-nt2), student counselling, and disability support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Semester 1 / Full Year: Nomination deadline 1 April. Semester 2: Nomination deadline 1 October.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Vrije Universiteit Amsterdam/Vrije Universiteit Amsterdam.pdf#page=1",
+    "notes": "Strict student application deadlines for visa/housing on #page=2: 15 April (Semester 1 / AY) and 15 October (Semester 2)."
+  },
+  "ext": {}
+}

@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "atlas-university",
+  "excel_rows": [
+    7
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Atlas University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Istanbul",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Turkish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/",
+    "notes": "Atlas University offers programs and elective options in Turkish and English."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/",
+    "notes": "Select English-medium faculties/tracks (e.g., Medicine, Dentistry) plus elective options exist alongside Turkish-medium curricula; exact incoming exchange English course count depends on host faculty OLA approval."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B1 English level document (certificate or documentation accepted by home/host institution); RHET 1020 waiver not explicitly mentioned.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall: Classes begin Sep 21, 2026; orientation Sep 22, 2026; registration/add-drop Sep 21-27, 2026; classes end Jan 8, 2027; finals Jan 8-18, 2027; resits Jan 24-28, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/akademik-takvim",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Classes Feb 8-May 14, 2027; finals May 29-Jun 11, 2027; resits Jun 25-28, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/akademik-takvim",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": "Incoming students under Erasmus+ or active institutional bilateral agreements are exempt from paying tuition fees to Istanbul Atlas University."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800,
+      "max": 1200
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/",
+    "notes": "Estimated monthly living expenses in Istanbul published on Atlas Erasmus guidance (€800.00-€1,200.00/month covering meals, public transit, stationery, and personal needs)."
+  },
+  "living_cost_usd_est": {
+    "value": 5526.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/",
+    "notes": "Midpoint 1000 EUR/month * 5 months * 1.1052 USD/EUR = 5526.00 USD (ECB reference rate dated 2026-11-13, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Post-acceptance requirement: valid Travel Health Insurance covering stay in Türkiye; no separate tuition fee under exchange agreements.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/dormitories-accommodation-options-for-prospective-students/",
+    "notes": "Atlas University does not operate university-owned dormitories, but the International/Erasmus Office assists incoming students with a list of contracted private dormitories near campus."
+  },
+  "housing_notes": {
+    "value": "No on-campus university dormitories; International Office provides a list of contracted private dormitories near Atlas Vadi Campus (Kağıthane, Istanbul).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/dormitories-accommodation-options-for-prospective-students/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-Turkish incoming exchange students must use the Official Letter of Acceptance to apply for an Education/Student Visa at a Turkish Embassy/Consulate prior to arrival, and apply for a student residence permit after arriving in Türkiye; lead time not specified.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://atlas.edu.tr/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:7",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://ois.atlas.edu.tr/bilgipaketi",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://ois.atlas.edu.tr/bilgipaketi",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official Nomination from home university",
+      "Transcript of Records",
+      "English Proficiency Document (min. B1)",
+      "CV",
+      "Motivation Letter",
+      "Online Learning Agreement (OLA, post-nomination)",
+      "Passport copy",
+      "Photo",
+      "Travel Health Insurance valid in Türkiye (post-acceptance)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.atlas.edu.tr/en/erasmus/bilgiler/incoming-ogrenci-icin-bilgiler",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

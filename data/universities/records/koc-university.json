@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "koc-university",
+  "excel_rows": [
+    59,
+    137
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1q526MEN1cewFiemdKPVUjVU3bpRc3OR7"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Koç University/Koc University.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Koç University/Koc University.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Koç University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "country": {
+    "value": "Turkey",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Istanbul",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.ku.edu.tr/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=1",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Open to UG, PG, PhD nominated under active partner agreements (PDF p.5); no fixed semester-count prerequisite published in Fact Sheet."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": "University-wide agreement scope across merged rows 59 and 137."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:59,137",
+    "notes": "University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No excluded major list published in 2024/25 Fact Sheet."
+  },
+  "min_gpa_host": {
+    "value": 2.2,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": "Undergraduate CGPA minimum 2.20/4.00; Graduate CGPA minimum 2.50/4.00 per OIP incoming exchange rules."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=5",
+    "notes": "Medium of instruction at Koç University is English in all cycles and programs."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=5",
+    "notes": "Instruction is in English across all cycles and programs."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 English proficiency required: TOEFL iBT >=80, equivalent accepted test, OR an official letter from the home institution's English Department / Exchange Office confirming adequate English proficiency.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for coursework; optional Turkish Practice Hour and online Turkish course offered (p.4).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=4",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Published on Koç Registrar Academic Calendar (https://registrar.ku.edu.tr/en/academic-calendar/); exact 2026-27 Fall day-by-day dates not retrieved verbatim.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.ku.edu.tr/en/academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Published on Koç Registrar Academic Calendar (https://registrar.ku.edu.tr/en/academic-calendar/); exact 2026-27 Spring day-by-day dates not retrieved verbatim.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.ku.edu.tr/en/academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": "Partner-nominated exchange students receive a full tuition waiver at Koç University."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "OIP notes students fund their own living expenses; no official numeric monthly TRY/EUR living budget verified directly from ku.edu.tr."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No official numeric monthly budget verified from ku.edu.tr."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Active health insurance covering stay in Türkiye required for mandatory Student Residence Permit.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://ico.ku.edu.tr/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": "On-campus dormitories available to exchange students subject to application and space availability (off-campus support also provided)."
+  },
+  "housing_notes": {
+    "value": "On-campus dormitory application handled via exchange portal; off-campus housing guidance also coordinated via OIP/ICO.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No Koç incoming bilateral exchange stipend verified."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Entry visa/e-Visa requirements depend on nationality (check prior to travel); stays >90 days require a Turkish Student Residence Permit coordinated collectively on campus by Koç International Community Services Office (ICO).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://ico.ku.edu.tr/",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://oip.ku.edu.tr/mobility-programs/incoming/students/course-list/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=5",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://oip.ku.edu.tr/mobility-programs/incoming/students/course-list/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=5",
+    "notes": "English is the medium of instruction across all cycles; course list linked directly from Fact Sheet p.5."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Credit limits/ECTS conversion not explicitly printed in the 2024/25 Fact Sheet or verified ku.edu.tr excerpts."
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No course-restriction table verified in Fact Sheet or ku.edu.tr excerpts."
+  },
+  "required_application_docs": {
+    "value": [
+      "Online nomination via KUAPP (https://kuapp.ku.edu.tr)",
+      "Online student exchange application",
+      "Official academic transcript",
+      "English B2 proficiency proof (TOEFL iBT >=80 or home institution letter)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://oip.ku.edu.tr/mobility-programs/incoming/",
+    "notes": "Nomination/application links also listed on 2024/25 Fact Sheet p.5."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly described in Fact Sheet or verified ku.edu.tr snippets."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Sarıyer, Istanbul (Rumelifeneri Yolu); population figure/tier not explicitly cited in Fact Sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Rumelifeneri Yolu campus setting not explicitly labeled urban/suburban/rural in Fact Sheet or ku.edu.tr excerpts."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Campus instruction is English, while daily-life Istanbul level is unrated in Fact Sheet/ku.edu.tr."
+  },
+  "international_support_services": {
+    "value": "International Community Services Office (ICO), Orientation, Mentor Students, KU Office of Learning & Teaching (KOLT), Counseling (KURES), Career Center, Turkish Hospitality & Conversation Circles, clubs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Nomination & Application Period (UG/PG/PhD): Fall/Spring/Academic Year Apr 1 - Jun 1; Spring (second call) Sep 1 - Nov 1; Summer Mar 1 - Apr 25 via https://kuapp.ku.edu.tr.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Koç University/Koc University.pdf#page=5",
+    "notes": null
+  },
+  "ext": {}
+}

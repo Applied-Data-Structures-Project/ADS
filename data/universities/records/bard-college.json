@@ -1,0 +1,349 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "bard-college",
+  "excel_rows": [
+    10
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1XdeC9IQRiT0WV6OqoOZHqJxrJ_hP1Spd"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Bard College/Bard College.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Bard College/Bard College.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Bard College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "city": {
+    "value": "Annandale-on-Hudson",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'; see excluded_majors/course_restrictions_note for host exceptions."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/newstudents/exchange/",
+    "notes": "Undergraduate instruction at Bard College (Annandale-on-Hudson, NY) is conducted in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/academics/courses/",
+    "notes": "All liberal arts courses at Bard College Annandale-on-Hudson are taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "International applicants are typically required to submit English proficiency test scores (such as TOEFL) unless granted an official waiver through Bard's English Proficiency Waiver Request process; exact incoming exchange minimum score is not published on bard.edu (note: Bard Berlin's separate TOEFL 95 requirement is distinct).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/newstudents/exchange/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall classes begin Mon Aug 31, 2026; exact end/exam dates for Annandale-on-Hudson vary by pre-semester program and are published on Bard's calendar.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/academics/calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Late Jan / early Feb through mid-to-late May (Senior Projects and withdrawals typically early May; verify exact Annandale dates on Bard academic calendar).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/academics/calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory 12-month student health insurance ($3,995/year unless waived) plus Health & Counseling fee ($470/year for AY 2026-2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/healthservice/insurance/",
+    "notes": "Health & Counseling fee ($470/year) and Housing & Food ($20,700/year) published on https://www.bard.edu/admission/tuition/."
+  },
+  "housing_availability": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Over 50 coed residence halls (~1/3 single rooms) with peer counselors and Kline Commons dining on Annandale-on-Hudson campus; AY 2026-2027 campus Housing & Food billed at $20,700/year (per https://www.bard.edu/admission/tuition/). Exchange student housing is coordinated via IILE.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bard College/Bard College.pdf#page=2",
+    "notes": "IILE coordination per https://www.bard.edu/newstudents/exchange/."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-degree international incoming exchange students study at Bard on a J-1 exchange visitor visa arranged through Bard's Institute for International Liberal Education (IILE) / OISSS; lead time and exact DS-2019 funding threshold not stated on public page.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/newstudents/exchange/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.bard.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:10",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.bard.edu/newstudents/exchange/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/newstudents/exchange/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.bard.edu/academics/courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/academics/courses/",
+    "notes": "Full catalogue also accessible via https://www.bard.edu/catalogue/."
+  },
+  "english_course_list_url": {
+    "value": "https://www.bard.edu/academics/courses/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.bard.edu/academics/courses/",
+    "notes": "All Bard College courses are offered in English."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Small seminar-based liberal arts education on a 1,000-acre Hudson River campus; average class size 16 in Lower College and 12 in Upper College, with no graduate teaching assistants.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bard College/Bard College.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Peer counselors in residence halls, >100 student clubs including International Student Organization (ISO) and Model UN; dedicated Institute for International Liberal Education (IILE) advisors for exchange students (per https://www.bard.edu/newstudents/exchange/).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Bard College/Bard College.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

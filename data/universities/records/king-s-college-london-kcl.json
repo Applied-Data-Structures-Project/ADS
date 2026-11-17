@@ -1,0 +1,352 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "king-s-college-london-kcl",
+  "excel_rows": [
+    58
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1taehKFp8Q9AqbReXy5E-glzGiOUc18OM"
+    ],
+    "local_files": [
+      "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "King's College London (KCL)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KCL",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "country": {
+    "value": "United Kingdom",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "London",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must have completed at least 1 year of university-level study prior to participation.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/entry-requirements",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.3,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/entry-requirements",
+    "notes": "Study Abroad & Exchange requirement is 3.3/4.0 GPA or equivalent (UK 2:1 standard); also confirmed in 2020-21 Fact Sheet #page=2."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/entry-requirements",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English proficiency required (department bands typically require IELTS 7.0 overall with 6.5 per skill or accepted TOEFL equivalents; full-year Student Visa applicants must meet UKVI English rules, while single-semester students may submit an institutional B2+ letter using King's template). Check https://www.kcl.ac.uk/abroad/applying/entry-requirements. No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/entry-requirements",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (English-medium institution).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": "Summer"
+  },
+  "fall_term_dates": {
+    "value": "Autumn 2026 (reference term-time schedule, though AUC Excel row restricts to Summer): Orientation 21-25 Sep 2026; Teaching begins 28 Sep 2026 (https://www.kcl.ac.uk/abroad/key-dates).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/key-dates",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027 (reference term-time schedule, though AUC Excel row restricts to Summer): Orientation 18-22 Jan 2027; Teaching begins 25 Jan 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/key-dates",
+    "notes": "Undergraduate Summer School 2027 sessions run 5-16 Jul and 19-30 Jul 2027 per https://www.kcl.ac.uk/summer/undergraduate."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "AUC Excel agreement limits available_terms to Summer only. KCL term-time exchange agreements waive tuition (https://www.kcl.ac.uk/abroad/choose-us/fees-and-funding), whereas Undergraduate Summer School lists standard fee-paying tuition GBP 2,650 (1 session) / GBP 5,100 (2 sessions) on https://www.kcl.ac.uk/summer/undergraduate; AUC bilateral Summer waiver terms are not verified in local files."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "GBP",
+      "min": 1770,
+      "max": 1770
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/living-expenses",
+    "notes": "Official KCL London student living expenses estimate is GBP 1,770/month (covering housing, food, travel, personal items)."
+  },
+  "living_cost_usd_est": {
+    "value": 11705.52,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/study/undergraduate/fees-and-funding/living-expenses",
+    "notes": "5-month USD benchmark from official GBP 1,770/month London budget (GBP 1,770 x 5 = GBP 8,850) converted at ECB 2026-11-13 cross-rate (1 EUR = 0.83559 GBP, 1 EUR = 1.1052 USD -> 1 GBP = 1.322658 USD, collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Note AUC Excel row restricts agreement to Summer."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=3",
+    "notes": "Fact Sheet #page=3 states: 'Accommodation for incoming Study Abroad students is readily available, but not guaranteed.'"
+  },
+  "housing_notes": {
+    "value": "Accommodation for incoming Study Abroad students via King's Residences is readily available, but not guaranteed (https://www.kcl.ac.uk/study/accommodation; application at https://www.kcl.ac.uk/study/accommodation/apply/apply).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Short-term stays <=6 months (such as Summer School or single semester) typically fall under UK Standard Visitor / ETA rules; stays >6 months require a UK Student Visa with UKVI English & maintenance proof (https://www.kcl.ac.uk/abroad/applying/how-to-apply; pre-arrival advice linked in 2020-21 Fact Sheet #page=3 at https://www.kcl.ac.uk/abroad/pre-arrival-support/advice-for-offer-holders).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/how-to-apply",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.kcl.ac.uk/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:58",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.kcl.ac.uk/abroad/applying/how-to-apply",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/applying/how-to-apply",
+    "notes": "Undergraduate Summer School at https://www.kcl.ac.uk/summer/undergraduate."
+  },
+  "course_catalog_url": {
+    "value": "https://www.kcl.ac.uk/abroad/module-options",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "KCL credit system (15 KCL credits = ~7.5 ECTS); normal term-time semester load is 4 x 15-credit modules (UG) or 3 x 20-credit modules (PG).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "AUC Excel agreement restricts KCL to Summer UG level (Undergraduate Summer School dates 5-16 Jul and 19-30 Jul 2027 at https://www.kcl.ac.uk/summer/undergraduate). For term-time Study Abroad, Biomedical Engineering, Biosciences, Chemistry, Informatics, Mathematics, Music, Pharmacy, Physics, and Nutrition modules require departmental academic approval with transcript & personal statement (Fact Sheet #page=3).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/summer/undergraduate",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/King's College London/kings-college-london-fact-sheet-2020-2021a.pdf#page=1",
+    "notes": "Multiple central London campuses (Strand, Waterloo, Guy's, St Thomas', Denmark Hill)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Term-time AY 2026-27 (reference): Autumn exchange nomination 15 Jan - 15 Mar 2026, app deadline 31 Mar 2026; Spring exchange nomination 15 Aug - 1 Oct 2026, app deadline 15 Oct 2026 (https://www.kcl.ac.uk/abroad/key-dates). Summer School follows separate deadlines at https://www.kcl.ac.uk/summer/undergraduate.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kcl.ac.uk/abroad/key-dates",
+    "notes": null
+  },
+  "ext": {}
+}

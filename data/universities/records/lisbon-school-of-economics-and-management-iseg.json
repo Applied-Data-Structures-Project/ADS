@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "lisbon-school-of-economics-and-management-iseg",
+  "excel_rows": [
+    63
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1dpoW_YuoXPBHWmrUQK64EWDD8TnZ9SBW"
+    ],
+    "local_files": [
+      "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Lisbon School of Economics and Management (ISEG)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "short_name": {
+    "value": "ISEG",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "country": {
+    "value": "Portugal",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lisbon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Economics and Management",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": "Mapped from Excel scope 'Economics and Management'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Economics",
+      "Management"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": "Mapped from Excel scope 'Economics and Management'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Portuguese"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=6",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "notes": "Official ISEG pages confirm a wide range of English-taught courses across Bachelor and Master cycles."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum CEFR B2 English required for courses taught in English. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=6",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum CEFR B2 Portuguese required for courses taught in Portuguese.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=6",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 1st Sem: Aug 31, 2026 – Jan 9, 2027 (Welcome Week Aug 31–Sep 4; Lectures Sep 7–Nov 27; Exams Dec 3–19; Resits Jan 4–9).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/secretaria/informacoes-academicas/calendarios-academicos/calendario-escolar/",
+    "notes": "AY 2024-2025 Fact Sheet (#page=5) lists lectures Sep 9–Nov 29, 2024 & assessment Dec 5–Jan 11."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 2nd Sem: Jan 25 – Jun 5, 2027 (Lectures Jan 25–Apr 28; Easter Mar 20–29; Exams May 5–20; Resits May 31–Jun 5).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/secretaria/informacoes-academicas/calendarios-academicos/calendario-escolar/",
+    "notes": "AY 2024-2025 Fact Sheet (#page=5) lists lectures Jan 27–Apr 30, 2025 & assessment May 7–Jun 7."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "notes": "Official ISEG / ULisboa incoming mobility page confirms bilateral/Erasmus exchange students pay zero tuition fees to ISEG (Free-Movers pay EUR 60 application fee + course fees)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800.0,
+      "max": 950.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/en/life-at-iseg/living-in-lisbon/",
+    "notes": "ISEG 'Living in Lisbon' publishes EUR 600–700/month accommodation + EUR 200–250/month meals (= EUR 800–950/month before public transit and personal costs)."
+  },
+  "living_cost_usd_est": {
+    "value": 4835.25,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/en/life-at-iseg/living-in-lisbon/",
+    "notes": "5-month estimate in EUR: midpoint 875 EUR/month * 5 * 1.105200 USD/EUR = 4835.25 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). ISEG 'Living in Lisbon' publishes EUR 600–700/month accommodation + EUR 200–250/month meals (= EUR 800–950/month before public transit and personal costs)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=7",
+    "notes": "Fact Sheet states: 'There is no on-campus accommodation at ISEG, but students may find private accommodation'; private student residences/platforms suggested."
+  },
+  "housing_notes": {
+    "value": "No ISEG on-campus housing; shared rooms/private residences near campus (Santos/Cais do Sodre/Quelhas) EUR 600–700/month.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/en/life-at-iseg/living-in-lisbon/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students must obtain a Type D Student Visa before arrival (tourist visas cannot be converted) with passport (>=3 mos post-stay), ISEG Acceptance Letter, proof of subsistence/accommodation, criminal record, medical/health insurance.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/aquila/unidade/erasmus/incoming-mobility/visa-application-guide-and-residence-permit",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.iseg.ulisboa.pt/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:63",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; normal workload 30 ECTS per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=6",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate students must take undergraduate courses; Master courses are restricted to Master students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=6",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "ID card or passport copy",
+      "Transcript of Records",
+      "Signed and stamped Learning Agreement (uploaded via Fenix portal)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.iseg.ulisboa.pt/internacional/mobilidade-incoming/informacao-academica/",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: Nomination Apr 1–30, Application May 1–31; Spring: Nomination Sep 1–30, Application Oct 31.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ISEG - Lisbon School of Economics and Management/FACT-SHEET-2024-2025.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "meiji-gakuin-university",
+  "excel_rows": [
+    72
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1gQ0h90V9DbVr1fOw5W2ZYgjjTZtrR_a3",
+      "https://drive.google.com/drive/folders/1sdMlQJSEcdPV4ElcFlw99Yxx1fubmuN-"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+      "data/raw/factsheets/Meiji Gakuin University__1sdMlQ/Meiji Gakuin University.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf.txt",
+      "data/raw/extracted/Meiji Gakuin University__1sdMlQ/Meiji Gakuin University.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Meiji Gakuin University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "short_name": {
+    "value": "MGU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": null
+  },
+  "country": {
+    "value": "Japan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Tokyo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=72",
+    "notes": "Agreement scope is University-wide (UG, Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=72",
+    "notes": "University-wide UG exchange agreement (row 72); graduate courses are closed to ISP exchange students."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "Minimum cumulative GPA 2.0 on 4.0 scale (also stated in 2020/2021 DOCX fact sheet)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Japanese"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/program/",
+    "notes": "ISP combines English-taught content seminars on Japanese society/culture and Japanese language courses."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/program/",
+    "notes": "Curated English-taught ISP content seminars on Japanese society/culture plus Japanese language courses; regular degree offerings are primarily in Japanese."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 68, IELTS 6.0, or Duolingo English Test 100 (or 1 year university-level Japanese); applicants from Egypt/AUC are NOT exempt from language proficiency documentation.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "All ISP participants must also master hiragana and katakana prior to arrival."
+  },
+  "host_language_requirement": {
+    "value": "Mastery of hiragana and katakana required prior to arrival; either English proficiency (TOEFL 68/IELTS 6.0/DET 100) or 1 year university Japanese accepted.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": "Fall/ Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester: Early September – January (classes normally start mid-September; arrival early September).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/about/calendar/",
+    "notes": "Confirmed in 2020/2021 DOCX fact sheet ('September - January') and meijigakuin.ac.jp/en/international/program/."
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester: Late March – July (classes normally start early April; arrival late March).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/about/calendar/",
+    "notes": "Confirmed in 2020/2021 DOCX fact sheet ('March – July')."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/students/fee/",
+    "notes": "Partner university exchange students are exempt from MGU tuition (non-partner fee-paying students pay JPY 340,000/semester)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Japanese National Health Insurance (~¥14,400/year in Tokyo), Comprehensive Student Insurance (¥9,060 for 1 semester / ¥12,500 for 2 semesters), and ¥25,000 refundable dorm deposit.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/students/fee/",
+    "notes": "Dorm deposit at https://www.meijigakuin.ac.jp/en/international/dormitory/; National Health Insurance also in 2020/2021 DOCX."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1sdMlQ/Meiji Gakuin University.docx",
+    "notes": "All ISP exchange participants are obligated/required to stay in University-designated off-campus international dormitories (MG Okusawa House ¥50,000/mo near Shirokane or MISH ¥80,000/mo w/ meal plan near Yokohama per ACY2026 instructions and dormitory page)."
+  },
+  "housing_notes": {
+    "value": "Mandatory placement in University-owned off-campus dormitories: MG Okusawa House (Tokyo, single room, ¥50,000/mo, no meal plan) or MISH (Yokohama, single room, ¥80,000/mo w/ weekday & Sat breakfast/dinner); ¥25,000 deposit; paid in semester lump sum.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/dormitory/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Certificate of Eligibility (COE) requires minimum financial proof of ¥400,000 (1 semester) or ¥800,000 (2 semesters); JPETS TB screening note applies where required.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "Financial proof minimums also confirmed on meijigakuin.ac.jp."
+  },
+  "official_website_url": {
+    "value": "https://www.meijigakuin.ac.jp/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:72",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.meijigakuin.ac.jp/en/international/students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.meijigakuin.ac.jp/en/international/students/academics_program/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/students/academics_program/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "MGU credit system; maximum 24 credits per semester (Japanese language 1–4 credits; English content seminars typically 2 credits each).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.meijigakuin.ac.jp/en/international/program/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "No graduate-level courses open to ISP exchange students; Shirokane (Tokyo) and Yokohama campuses are ~90 minutes apart by commute.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "Both-campus registration noted at https://www.meijigakuin.ac.jp/en/international/program/."
+  },
+  "required_application_docs": {
+    "value": [
+      "ISP Checklist",
+      "ISP Application Form",
+      "ISP Certificate of Health",
+      "ISP Japanese Language Form",
+      "COE Application Form & financial proof",
+      "Official transcript",
+      "Language test scores"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1sdMlQ/Meiji Gakuin University.docx",
+    "notes": "2020/2021 DOCX document list; check ACY2026 online portal forms upon nomination."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "Two campuses (Shirokane in Minato City, Tokyo and Yokohama in Kanagawa), ~90 minutes apart."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Arrival orientation, mandatory Resident Registration and Japanese National Health Insurance enrollment assistance, and dedicated ISP dormitories.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1sdMlQ/Meiji Gakuin University.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "ACY 2026-2027 Partner Nomination: Spring (Apr entry) Sep 1 – Oct 1 (App Oct 10–24); Fall (Sep entry) Feb 1 – Mar 1 (App Mar 10–24).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Meiji Gakuin University__1gQ0h9/MGU-ISP+Instructions+(ACY2026).pdf",
+    "notes": "Also published on MGU official ISP guidelines page."
+  },
+  "ext": {}
+}

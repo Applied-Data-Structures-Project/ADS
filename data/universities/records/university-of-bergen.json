@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-bergen",
+  "excel_rows": [
+    130
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Bergen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "country": {
+    "value": "Norway",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bergen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www4.uib.no/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UiB",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be officially nominated under an active bilateral agreement; exact prior-credit cutoff on third-party sites excluded unless confirmed on uib.no.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:130",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Open/restricted course status depends on academic background/faculty approval on uib.no/en/find-course; no major exclusion list verified."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No fixed numeric GPA minimum verified directly on uib.no."
+  },
+  "instruction_languages": {
+    "value": [
+      "Norwegian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/find-course",
+    "notes": "Bachelor (100-level) to Master (300-level) English-taught exchange courses available alongside Norwegian courses."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/find-course",
+    "notes": "Dedicated exchange course finder filtered by language of instruction, faculty, and level (100-300)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum CEFR B2 level English required for English-taught courses (higher requirements such as C1 apply to specific subjects like English Literature).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught courses.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Exact Autumn calendar dates hosted at https://www.uib.no/en/education/admission-and-application/semester-dates (date snippets in earlier query traced to third-party partner sites and excluded).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/education/admission-and-application/semester-dates",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Exact Spring calendar dates hosted at https://www.uib.no/en/education/admission-and-application/semester-dates (date snippets in earlier query traced to third-party partner sites and excluded).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/education/admission-and-application/semester-dates",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: Tuition-exemption wording in search summaries did not resolve to a direct [uib.no] inline tag (though non-EU degree tuition on uib.no/91569 contrasts with semester-fee exemption on uib.no/104907); kept unknown pending direct official page text."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UiB official pages cite UDI statutory immigration subsistence thresholds (NOK 77,440 Autumn / NOK 92,928 Spring / NOK 170,368 AY = NOK 15,488/mo in visa_lead_time_and_financial_proof) rather than a separate monthly student living budget; third-party Bergen estimates excluded."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No UiB-published non-visa monthly living cost budget; UDI visa solvency threshold documented in visa_lead_time_and_financial_proof."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Incoming exchange students are officially EXEMPT from paying UiB's semester fee (NOK 700, incl. NOK 50 optional SAIH) to Sammen while retaining full Sammen student welfare access.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/education/104907/semester-fee",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": "Incoming exchange students staying >=1 semester receive a housing guarantee through Sammen (Student Welfare Organisation in Western Norway) if applying and accepting strictly by Sammen deadlines (typically May 1 Autumn / Nov 1 Spring, or May 15/Nov 1 per Sammen)."
+  },
+  "housing_notes": {
+    "value": "Subsidized student housing via Sammen (https://www.sammen.no/en); rent normally includes internet, water, and heating; applicants must accept assigned room offer online by deadline even while admission is processing.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming bilateral exchange stipend published on uib.no."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students requiring a Norwegian Study Permit (UDI) must prove subsistence funds: NOK 77,440 (Autumn single semester), NOK 92,928 (Spring single semester), or NOK 170,368 (full Academic Year).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/education/104907/semester-fee",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uib.no/en/exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.uib.no/en/find-course",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/find-course",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Dynamic course finder at https://www.uib.no/en/find-course; filter by language of instruction = English, faculty, and level (100-300)."
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Norwegian ECTS framework used; exact exchange semester min/max ECTS limits only cited on third-party partner sheets in search_web."
+  },
+  "course_restrictions_note": {
+    "value": "Courses on uib.no/en/find-course are marked open or restricted; restricted courses require academic background evaluation/faculty approval; 100-level BA to 300-level MA.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/find-course",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university partner nomination",
+      "Online application via Søknadsweb",
+      "English B2 confirmation",
+      "Proposed course selection"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly described in verified uib.no outputs."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Bergen, Norway; population tier not cited directly on verified uib.no pages."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "City-center Bergen campus description in search summary cited unverified third-party domains; kept unknown."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not rated on verified uib.no pages."
+  },
+  "international_support_services": {
+    "value": "Sammen welfare services (health, counseling, cafeterias, sports, guaranteed subsidized student housing) accessed free of semester fee by exchange students.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/education/104907/semester-fee",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Student application deadline via Søknadsweb: Apr 25 (Autumn/AY) and Oct 15 (occasionally extended to Oct 18, Spring); preceded by partner university nomination (exact uib.no nomination cutoffs omitted as third-party-cited).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uib.no/en/exchange",
+    "notes": null
+  },
+  "ext": {}
+}

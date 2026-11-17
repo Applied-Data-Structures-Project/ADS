@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "maastricht-university-school-of-business-and-economics",
+  "excel_rows": [
+    67
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "blocked",
+    "drive_links": [
+      "https://drive.google.com/open?id=1lYmu7tfrCQ-Eldk1XI3N-5qGBMqfy4FQ"
+    ],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": "Col H link (1lYmu7tfrCQ-Eldk1XI3N-5qGBMqfy4FQ) unreachable (error_html_response: Drive returned HTML page instead of document payload)"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Maastricht University, School of Business and Economics",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Maastricht University SBE",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/sbe",
+    "notes": null
+  },
+  "country": {
+    "value": "Netherlands",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Maastricht",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "BUS",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": "Excel agreement scope states 'BUS'."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement scope specifies AUC School 'BUS' rather than specific majors."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": "SBE exchange curriculum is taught in English via Problem-Based Learning (PBL)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "SBE utilizes English-taught Problem-Based Learning tutorials requiring strong English proficiency, but exact official SBE numeric test cutoffs or RHET 1020 waiver rules are not directly published on https://www.maastrichtuniversity.nl/education/exchange/sbe (local Drive fact sheet folder is blocked)."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Classes are taught in English; no official Dutch language requirement stated for SBE exchange."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall Semester 2026: Period 1 Aug 31 - Oct 23, 2026; Period 2 Oct 26 - Dec 18, 2026; Period 3 (skills period) Jan 4 - Jan 29, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/sites/default/files/2026-08/Student%20handbook%202026-2027.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring Semester 2027: Period 4 Feb 1 - Apr 2, 2027; Period 5 Apr 5 - Jun 4, 2027 (select faculties start Period 5 Mar 29; Period 6 follows in June).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/sites/default/files/2026-08/Student%20handbook%202026-2027.pdf",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": "Incoming exchange students officially nominated by a partner university do not pay tuition fees to Maastricht University's SBE and continue paying tuition to their home university."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1306.0,
+      "max": 1462.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/your-studies-begin/cost-studying-financial-assistance",
+    "notes": "Derived from UM official Nibud monthly student expense breakdown: Rent EUR 561 + Groceries EUR 272 + Books/materials EUR 53 + Transport EUR 67 + Leisure/sports EUR 238 + Clothing EUR 60 + Phone/internet EUR 55 = EUR 1,306/month excluding health insurance, or EUR 1,462/month including EUR 156/month health insurance. Separately, Dutch IND visa proof of means is EUR 1,250/month."
+  },
+  "living_cost_usd_est": {
+    "value": 7647.98,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/your-studies-begin/cost-studying-financial-assistance",
+    "notes": "Midpoint EUR 1,384.00/month (EUR 1,306 excl. insurance to EUR 1,462 incl. EUR 156/mo health insurance from UM Nibud breakdown) * 5 months = EUR 6,920.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 7,647.98 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fees are waived for nominated partner exchange students (non-partner fee-paying freemover exchange is not permitted at SBE). Non-EEA visa/residence permit applicants incur Dutch IND administrative fees (est. ~EUR 250+). Health insurance coverage is mandatory (UM Nibud table cites EUR 156/month; semester optional insurance/books/misc noted at ~EUR 300-500).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": "Nibud health insurance reference from https://www.maastrichtuniversity.nl/support/your-studies-begin/cost-studying-financial-assistance."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/um-guesthouse",
+    "notes": "Students book furnished short-stay UM Guesthouse rooms or private rooms through Maastricht Housing portal on a first-come, first-served basis."
+  },
+  "housing_notes": {
+    "value": "UM Guesthouse offers furnished single/double rooms and studios (minimum 3-month stay for exchange students; semester housing estimates ~EUR 3,600-6,200) via https://www.maastrichtuniversity.nl/about-um/um-guesthouse-and-maastrichthousingcom. Reservations require a 30-day rent down payment and one-time cleaning fee of EUR 60, EUR 75, or EUR 100.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/um-guesthouse",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students staying >90 days require an MVV entry visa and/or VVR residence permit submitted by Maastricht University as recognized IND sponsor (visa@maastrichtuniversity.nl). Applicants must show financial proof of EUR 1,250/month (e.g., EUR 6,250 for 5 months; EUR 15,000 for 12 months) via bank statements, scholarship, sponsorship, or refundable UM living-allowance deposit.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/your-studies-begin/coming-maastricht-university-abroad/visa-and-residence-permit",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.maastrichtuniversity.nl/about-um/faculties/school-business-and-economics",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:67",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": "See also SBE Bachelor exchange overview: https://www.maastrichtuniversity.nl/education/bachelor/exchanges-sbe."
+  },
+  "course_catalog_url": {
+    "value": "https://www.maastrichtuniversity.nl/sbe/course-descriptions-application",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/sbe/course-descriptions-application",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.maastrichtuniversity.nl/sbe/course-descriptions-application",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/sbe/course-descriptions-application",
+    "notes": "Filter by SBE / Non-Degree / Exchange tracks in the UM Course Descriptions Application."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; standard full-time semester workload at Maastricht University is 30 ECTS across modular periods.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Only students officially nominated by an active SBE partner university may attend SBE on exchange (freemover / non-partner fee-paying study abroad students cannot enroll at SBE).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/bachelor/exchanges-sbe",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university official partner nomination",
+      "SBE online exchange registration/application"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": "Local Drive fact sheet folder is blocked; full checklist is sent post-nomination."
+  },
+  "academic_style": {
+    "value": "Small-group Problem-Based Learning (PBL) tutorial system (~12-15 students per group) emphasizing active discussion, case work, and modular 8-week periods plus optional 2-week skills periods.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "UM Visa Office (visa@maastrichtuniversity.nl), SBE International Relations Office, and UM Guesthouse / Maastricht Housing services.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/support/your-studies-begin/coming-maastricht-university-abroad/visa-and-residence-permit",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall semester: Nomination April 15; Application May 1. Spring semester: Nomination September 15; Application October 1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.maastrichtuniversity.nl/education/exchange/sbe",
+    "notes": null
+  },
+  "ext": {}
+}

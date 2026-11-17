@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-the-pacific",
+  "excel_rows": [
+    148
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1xPtJjgai-04k4QGi6ns4v7-pKE4iYbji"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoT Pacific/University of the Pacific.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoT Pacific/University of the Pacific.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of the Pacific",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "short_name": {
+    "value": "University of the Pacific",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "California",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "city": {
+    "value": "Stockton",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Local University of the Pacific.docx (2020/21) eligibility clause ('sophomore standing, 1 semester in residency at Pacific, 2.5 Pacific GPA') describes outgoing Pacific study-abroad students and is excluded here."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange minimum GPA is published in local fact sheet or on pacific.edu (2.5 GPA in University of the Pacific.docx refers to outgoing Pacific students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "General undergraduate international admissions minimums are TOEFL iBT 80 / IELTS 6.5 (specific bilateral incoming exchange waivers and RHET 1020 equivalency not publicly posted).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission/undergraduate/english-language-proficiency",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (general international undergraduate benchmarks TOEFL iBT 80 / IELTS 6.5).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission/undergraduate/english-language-proficiency",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall semester begins late August and concludes mid-to-late December; exact program calendars published at https://www.pacific.edu/admission-and-aid/registrar/academic-calendars.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission-and-aid/registrar/academic-calendars",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester begins in January and concludes in May; exact program calendars published at https://www.pacific.edu/admission-and-aid/registrar/academic-calendars.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission-and-aid/registrar/academic-calendars",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral incoming exchange tuition-waiver terms are not publicly documented on pacific.edu."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1777.6,
+      "max": 1777.6
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admissions-and-aid/financial-aid-and-cost/cost-of-attendance",
+    "notes": "Derived from Stockton full-time on-campus undergraduate Cost of Attendance divided across 10 academic months (two 5-month semesters): Housing $9,876/yr + Food $7,900/yr = $17,776/year ($8,888/semester = $1,777.60/month). Excludes $1,984/semester Student Health Insurance."
+  },
+  "living_cost_usd_est": {
+    "value": 8888.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admissions-and-aid/financial-aid-and-cost/cost-of-attendance",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester equivalent of Stockton on-campus UG Housing ($9,876/yr) + Food ($7,900/yr) COA = $8,888.00/semester, excluding $1,984/term health insurance."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2026-27 Student Health Insurance Plan (effective Jul 1, 2026 - Jun 30, 2027) is mandatory for international students at $1,984 per term/semester UG ($2,524/term Graduate & Pharmacy).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admissions-and-aid/health-insurance-requirements",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoT Pacific/University of the Pacific.docx",
+    "notes": "Admitted students apply via the residential life housing portal for on-campus residence halls and meal plans (https://www.pacific.edu/campus-life/residential-life-and-housing/housing-selection.html)."
+  },
+  "housing_notes": {
+    "value": "On-campus Stockton UG housing COA listed at $9,876/yr plus $7,900/yr food (meal plans typically bundled with residential housing).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admissions-and-aid/financial-aid-and-cost/cost-of-attendance",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 exchange visitors require Form DS-2019 coordinated by International Programs after submitting a J-1 Personal Information Form, passport copy, official USD financial funding proof, and CV/statement.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission/international-students/admitted-international-students",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.pacific.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:148",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Incoming exchange is coordinated via partner agreements & International Programs rather than a dedicated public incoming-exchange webpage on pacific.edu."
+  },
+  "course_catalog_url": {
+    "value": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/about-pacific/administrative-offices/office-of-the-registrar/academic-catalogs",
+    "notes": "All coursework delivered in English."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit/unit system: full-time Stockton undergraduate flat-rate tuition load covers 12 to 18 units per semester (12-unit minimum full-time load for international visa compliance).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admissions-and-aid/tuition-and-fees/undergraduate-tuition-and-fees-stockton",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home institution partner nomination",
+      "J-1 DS-2019 Personal Information Form",
+      "Passport biographical copy",
+      "Official proof of USD financial funding",
+      "Official academic transcripts / English test scores (if applicable)"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission/international-students/admitted-international-students",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "175-acre campus at 3601 Pacific Avenue, Stockton, California (no unmixed official schema classification without third-party Wikipedia/Issuu)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Pacific International Programs / International Admissions coordinates pre-arrival J-1 DS-2019 issuance, housing portal onboarding, and mandatory health insurance compliance.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.pacific.edu/admission/international-students/admitted-international-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Exchange nomination deadlines coordinated directly with partner institutions (not published publicly on pacific.edu)."
+  },
+  "ext": {}
+}

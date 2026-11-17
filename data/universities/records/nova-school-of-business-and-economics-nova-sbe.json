@@ -1,0 +1,369 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "nova-school-of-business-and-economics-nova-sbe",
+  "excel_rows": [
+    80
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1gShlhWt5JSAPGMGp-6K_8j22VKeiKZK-"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Nova School of Business and Economics/2021_2022/BSc Factsheet_21.22.pdf",
+      "data/raw/factsheets/Nova School of Business and Economics/2021_2022/MSc Factsheet_21.22.pdf",
+      "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf",
+      "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming MSc Factsheet_26_27.pdf",
+      "data/raw/factsheets/Nova School of Business and Economics/NovaSBE_MSc_Factsheet_23_24.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Nova School of Business and Economics/2021_2022/BSc Factsheet_21.22.pdf.txt",
+      "data/raw/extracted/Nova School of Business and Economics/2021_2022/MSc Factsheet_21.22.pdf.txt",
+      "data/raw/extracted/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf.txt",
+      "data/raw/extracted/Nova School of Business and Economics/2026- 2027/Incoming MSc Factsheet_26_27.pdf.txt",
+      "data/raw/extracted/Nova School of Business and Economics/NovaSBE_MSc_Factsheet_23_24.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [
+    "universidade-nova-de-lisboa"
+  ],
+  "official_name": {
+    "value": "Nova School of Business and Economics (Nova SBE)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Nova SBE",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "country": {
+    "value": "Portugal",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Lisbon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "There is no minimum GPA required to join Nova SBE's Exchange Program; applicants must be officially nominated by a partner university through Nova SBE's online nomination platform and satisfy English proficiency requirements.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.novasbe.unl.pt/en/programs/exchange-programs/incoming-exchange-students",
+    "notes": "Online nomination platform requirement also confirmed in AY 2026/27 Fact Sheets (#page=2-3)."
+  },
+  "agreement_scope_raw": {
+    "value": "Business and Economics",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": "Mapped from Excel agreement_scope_raw 'Business and Economics' (Nova SBE is NOVA University Lisbon's Business & Economics school; note AUC also holds a cross-referenced partner entry for universidade-nova-de-lisboa)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business and Economics"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No excluded majors listed in AY 2026/27 BSc or MSc Fact Sheets; enrollment in specific courses is via Bidding and not guaranteed."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Official incoming exchange page (https://www.novasbe.unl.pt/en/programs/exchange-programs/incoming-exchange-students) explicitly states there is no minimum GPA required by Nova SBE."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Portuguese"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": "BSc Fact Sheet #page=3: course offer fully available in English (1st-year courses may also be taught in Portuguese); MSc Fact Sheet #page=3: programme only available in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": "BSc course offer fully available in English; MSc programme exclusively in English (MSc #page=3)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "One required: IELTS 6, TOEFL iBT 80 (online acceptable), Cambridge CFE >=170, CAE/CPE (any passing grade), proof that high school or current Bachelor's/Master's degree is fully taught in English, OR home-institution statement confirming CEFR B2 fluency. RHET 1020 not mentioned; AUC's English-medium current degree satisfies exemption.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": "Identical requirement in MSc Fact Sheet #page=3."
+  },
+  "host_language_requirement": {
+    "value": "No Portuguese required for English-taught BSc/MSc exchange courses (optional Portuguese semester courses offered via NOVA FCSH per 2023-24/2021-22 Fact Sheets).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026/27 Fall (S1): Course enrollments 14–16 Jul 2026 (BSc) / 21–23 Jul (MSc); Welcome Week 25–27 Aug (BSc) / 26–28 Aug (MSc); S1 Classes 31 Aug–4 Dec 2026 (1st-yr BSc starts 8 Sep; T1 31 Aug–12 Oct, T2 22 Oct–4 Dec); Exams: T1 14–20 Oct, S1/T2 7–21 Dec 2026; BSc resits 5–16 Jan 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=6",
+    "notes": "MSc Fall dates also on MSc Fact Sheet #page=6."
+  },
+  "spring_term_dates": {
+    "value": "AY 2026/27 Spring (S2): Course enrollments 5–7 Jan 2027 (BSc) / 18–20 Jan (MSc); Welcome Day 29 Jan 2027; S2 Classes 1 Feb–14 May 2027 (1st-yr BSc 2 Feb; T3 1 Feb–16 Mar, T4 5 Apr–14 May); Exams: T3 18–25 Mar, S2/T4 17 May–2 Jun 2027; BSc resits 14–23 Jun 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=6",
+    "notes": "MSc Spring dates also on MSc Fact Sheet #page=6."
+  },
+  "final_semester_allowed": {
+    "value": true,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": "Allowed with explicit warning: BSc & MSc Fact Sheets #page=5 state 'We do not guarantee enrollments in specific or first choice courses... Students who need to take specific courses and/or are in the last semester of their degree must be made aware of this rule before applying.'"
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.novasbe.unl.pt/en/programs/exchange-programs/faq",
+    "notes": "Bilateral/partner exchange students pay tuition at their home institution and are exempt from Nova SBE tuition (non-partner Freemovers pay Nova SBE tuition); all incoming students still pay the mandatory EUR 36.50 administrative/insurance fee (Fact Sheet #page=3)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 790,
+      "max": 1290
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": "Identical monthly estimate on BSc & MSc Fact Sheets #page=5: Accommodation EUR 450–850 + Meals EUR 180–200 + Books/Supplies EUR 50 + Public Transport EUR 30–40 + Leisure EUR 80–150 = EUR 790–1,290/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5747.04,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": "5-month USD midpoint estimate derived from EUR 790–1,290/month range (midpoint EUR 1,040/mo x 5 = EUR 5,200) converted at ECB 2026-11-13 reference rate 1 EUR = 1.1052 USD (collected 2026-11-15 via https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html): 5,200 x 1.1052 = 5,747.04 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "All incoming students (including exchange and Freemovers) must pay EUR 36.50 for Administrative Fees and School Insurance (non-waivable; NetPa documents/transcripts withheld until settled). Non-EU students without EHIC are encouraged to obtain full health insurance for their stay in Lisbon (#page=5). Grade improvement exam optional fee EUR 15 (BSc #page=4).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": "Insurance/resit details also on #page=4-5."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Nova SBE has partnerships with external housing companies helping foreign students find accommodation in Lisbon or Carcavelos (see Life at Nova Guide: https://novasbe.maglr.com/life-at-nova-sbe-guide/accommodation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Portuguese visa processing takes 2 weeks to 3 months; students must apply immediately upon receiving Acceptance Letter and must NOT enter on a Tourist Visa (cannot be renewed). School intervention in visa/residence permits is legally limited (#page=5). See Life at Nova Guide (https://novasbe.maglr.com/life-at-nova-sbe-guide/international-students) and Portuguese MFA visa forms (https://vistos.mne.gov.pt/en/short-stay-visas-schengen/general-information/application-forms).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.novasbe.unl.pt/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:80",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.novasbe.unl.pt/en/programs/exchange-programs/incoming-exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.novasbe.unl.pt/en/programs/exchange-programs/incoming-exchange-students",
+    "notes": "Also linked in AY 2026/27 Fact Sheet #page=2 /Annots."
+  },
+  "course_catalog_url": {
+    "value": "https://guia.unl.pt/en/2025/novasbe",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=4",
+    "notes": "Nova SBE notes Guia UNL descriptions may be outdated pre-acceptance (full syllabi posted on Moodle after acceptance). 2023-24 Fact Sheet also links https://www.novasbe.unl.pt/en/programs/exchange-programs/courses-for-exchange-students."
+  },
+  "english_course_list_url": {
+    "value": "https://guia.unl.pt/en/2025/novasbe",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=4",
+    "notes": "Full BSc (except some 1st-yr PT options) and MSc curriculum taught in English; pre-acceptance catalogue on UNL Guia."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS (1 ECTS = 28 total workload hours). Semester courses (S1/S2, 12 weeks) = 7 ECTS; trimester short courses (T1–T4, 6 weeks) = 3.5 ECTS. Incoming load: no minimum ECTS required, maximum 31.5 ECTS/semester. Grading scale 0–20 (10 minimum pass).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=4",
+    "notes": "Max 31.5 ECTS and no minimum stated on #page=5."
+  },
+  "course_restrictions_note": {
+    "value": "All classes/exams strictly on campus at Carcavelos (Rua da Holanda, 1); midterms/exams/presentations may occur on Saturdays (#page=6). Enrollment is via points Bidding platform + Add/Drop; specific/first-choice courses not guaranteed (#page=5). Overlapping-exam courses cannot be taken simultaneously; BSc allows max 2 resits per semester (#page=4), MSc has 1 exam period per course (MSc #page=4).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online nomination & application via http://apps.novasbe.pt/NovaMobility (instructions sent post-nomination)",
+      "English proficiency proof (IELTS 6, TOEFL iBT 80, CFE 170, CAE/CPE, full-English degree proof, or B2 home-school statement)",
+      "Learning Agreement (EWP for Erasmus or PDF A-Form for non-Erasmus)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Semester courses split into 2x 6-week trimesters (T1/T2 Fall, T3/T4 Spring) alongside full 12-week courses; mandatory >=50% in-class assessment weight and 30–70% exam weight; all classes/exams on Carcavelos coastal campus; Saturday exams possible.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=4",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Welcome Week / Welcome Day orientation, Student Central walk-ins (Mon/Wed/Fri 10:00–13:00, #page=2), NetPa student portal, Library & Documentation Centers, study rooms, cafeterias/canteen, private medical facilities on campus, Santander Bank branch, Student Organizations & Clubs open to incoming students (#page=5).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=5",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall & Full Year: Nominations 20 Feb–20 Apr, Applications 27 Apr; Spring: Nominations 20 Jul–20 Sep, Applications 27 Sep (online nomination platform only; email nominations not accepted).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Nova School of Business and Economics/2026- 2027/Incoming BSc Factsheet_26_27.pdf#page=3",
+    "notes": null
+  },
+  "ext": {}
+}

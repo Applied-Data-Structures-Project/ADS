@@ -1,0 +1,340 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "politehnica-bucuresti-university",
+  "excel_rows": [
+    88
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Politehnica București University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UPB",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://upb.ro/en/",
+    "notes": null
+  },
+  "country": {
+    "value": "Romania",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bucharest",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "HIST + EGPT",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "HUSS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=88",
+    "notes": "Excel row 88 specifies scope 'HIST + EGPT' (History and Egyptology, under AUC HUSS; student level and available terms blank in Excel; note UPB is primarily a science/engineering polytechnic institution)."
+  },
+  "eligible_majors": {
+    "value": [
+      "History",
+      "Egyptology"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=88",
+    "notes": "Partner list row 88 specifies 'HIST + EGPT'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Romanian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": "UPB offers English-taught engineering/applied programs (notably FILS) open to incoming exchange students alongside Romanian-taught programs."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": "English-taught tracks (e.g., Faculty of Engineering in Foreign Languages - FILS) are open to incoming mobility students alongside primarily Romanian technical curricula."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2/C1 proficiency typically expected for English- or French-medium exchange courses and tracks (CEFR level tracked on mobility applications).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://international.upb.ro/erasmus-incoming",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Autumn Semester: Courses Sep 28 – Dec 18, 2026 & Jan 11 – Jan 22, 2027 (Winter Holiday Dec 19, 2026 – Jan 10, 2027); Exams Jan 23 – Feb 12, 2027 (Inter-semester break Feb 13–28, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.upb.ro/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Courses Mar 1 – Jun 4, 2027; Exams Jun 5 – Jun 25, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.upb.ro/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": "Limited shared double dormitory rooms (no single rooms) on Regie Campus (e.g., P19 dorm), contra cost, requested via application form on erasmus.upb.ro subject to availability."
+  },
+  "housing_notes": {
+    "value": "Limited double-occupancy rooms on Regie Campus (no single rooms), allocated subject to availability upon request in the Erasmus UPB application.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://upb.ro/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:88",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://international.upb.ro/erasmus-incoming",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.upb.ro/erasmus-incoming",
+    "notes": "Also https://www.erasmus.upb.ro and https://www.international.upb.ro."
+  },
+  "course_catalog_url": {
+    "value": "https://www.erasmus.upb.ro",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": "Study programs and Learning Agreement course selection managed via erasmus.upb.ro and faculty pages such as https://fils.upb.ro."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; full-time semester workload is 30 ECTS (60 ECTS per academic year).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Note AUC Excel scope lists 'HIST + EGPT', while UPB is primarily a science, engineering, and technology university (confirm course availability with departmental coordinators before nomination).",
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=88",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Romanian/European polytechnic university (ECTS)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://upb.ro/en/",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Learning Agreement / application deadlines: June 30 (Autumn semester / full year); November 30 (Spring semester).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.erasmus.upb.ro",
+    "notes": null
+  },
+  "ext": {}
+}

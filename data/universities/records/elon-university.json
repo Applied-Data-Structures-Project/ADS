@@ -1,0 +1,361 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "elon-university",
+  "excel_rows": [
+    33
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1_7fZoT7vJP5LkI0zRhU0uxfwg0-DQ-Pb",
+      "https://drive.google.com/drive/folders/18rksp7HXz0MQyK88ksBmlCeFeh9rt0bc"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf",
+      "data/raw/factsheets/Elon University/Elon University.docx",
+      "data/raw/factsheets/Elon University/Latest Update- March 2025.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf.txt",
+      "data/raw/extracted/Elon University/Elon University.docx.txt",
+      "data/raw/extracted/Elon University/Latest Update- March 2025.docx.txt"
+    ],
+    "notes": "Col H link (1_7fZoT7vJP5LkI0zRhU0uxfwg0-DQ-Pb) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Elon University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "North Carolina",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "city": {
+    "value": "Elon",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'; see excluded_majors/course_restrictions_note for host exceptions."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.75,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=2",
+    "notes": "Minimum 2.75 GPA on a 4.0 scale for incoming exchange (AY 2025-2026 Fact Sheet)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 80, IELTS 6.5, or Duolingo 110 required for non-native English speakers; no RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall classes begin Aug 25, 2026; Fact Sheet notes Fall runs late Aug through mid Dec (Winter term starts Jan 4, 2027).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.elon.edu/u/academic-calendar/2026-2027-undergraduate-academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Jan 28-May 10, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.elon.edu/u/academic-calendar/2026-2027-undergraduate-academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Elon international student health insurance (Trailblazer Elite Plan via United Healthcare / Administrative Concepts) cannot be waived for F-1/J-1 students and is billed directly to the student account (age-tiered premium).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.elon.edu/u/counseling/health-insurance/international-students/",
+    "notes": "2025-2026 Fact Sheet p. 2 also confirms mandatory Elon health insurance; earlier 2020-2021 DOCX listed LewerMark."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=2",
+    "notes": "AY 2025-2026 Fact Sheet p. 2 states on-campus housing is guaranteed for incoming exchange students."
+  },
+  "housing_notes": {
+    "value": "On-campus housing guaranteed for incoming exchange students (per Elon Fact Sheet p. 2); standard 2026-2027 Food and Housing cost is $17,535/year ($8,767.50/semester), coordinated via https://www.elon.edu/u/residence-life/.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.elon.edu/u/residence-life/",
+    "notes": "Annual Food and Housing figure $17,535 confirmed on https://www.elon.edu/u/fa/sfs/ (2026-2027 Tuition and Costs)."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor visa (Form DS-2019); requires Certificate of Financial Responsibility (CFR) plus bank statement/official letter in English dated within 6 months proving sufficient funds (exact 2026-2027 dollar minimum not published on public GEC page).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/Elon University.docx",
+    "notes": "English CFR document rule confirmed on elon.edu."
+  },
+  "official_website_url": {
+    "value": "https://www.elon.edu/home/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:33",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.elon.edu/u/academics/global-education-center/international-students/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/Latest Update- March 2025.docx",
+    "notes": "Application registration link https://admissions.elon.edu/register/IntExchange also in Latest Update- March 2025.docx."
+  },
+  "course_catalog_url": {
+    "value": "https://elon.smartcatalogiq.com/2026-2027/academic-catalog/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://elon.smartcatalogiq.com/2026-2027/academic-catalog/",
+    "notes": "Majors/programs overview also at https://www.elon.edu/u/admissions/undergraduate/explore/majors-minors-and-academic-programs/."
+  },
+  "english_course_list_url": {
+    "value": "https://elon.smartcatalogiq.com/2026-2027/academic-catalog/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://elon.smartcatalogiq.com/2026-2027/academic-catalog/",
+    "notes": "All courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: 12-18 credits per semester full-time exchange load.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Student Exchange Application",
+      "Translated official transcripts",
+      "Personal statement (250-500 words)",
+      "English proficiency test scores (TOEFL 80 / IELTS 6.5 / Duolingo 110)",
+      "Passport copy",
+      "Certificate of Financial Responsibility (CFR) + bank statement/letter within 6 months"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/Elon University.docx",
+    "notes": "English score thresholds updated per Elon University_FactSheet_25_26.pdf#page=2."
+  },
+  "academic_style": {
+    "value": "Private liberal arts university (~7,000 students, 70+ majors across 6 schools) on a 690-acre central North Carolina campus emphasizing engaged experiential learning.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Global Education Center (GEC) orientation, peer mentorship, >250 student organizations, and regional North Carolina cultural outings.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Elon University/2026-2027/Elon University_FactSheet_25_26.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

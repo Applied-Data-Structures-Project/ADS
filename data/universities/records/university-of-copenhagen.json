@@ -1,0 +1,341 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-copenhagen",
+  "excel_rows": [
+    133
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Pu-u4v2Vw44Rs4e8uIUfCwZAhcEvtkLY"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoCopenhagen/University of Copenhagen- Details.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoCopenhagen/University of Copenhagen- Details.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Copenhagen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UCPH",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/",
+    "notes": null
+  },
+  "country": {
+    "value": "Denmark",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Copenhagen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Danish"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/course-information/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/course-information/",
+    "notes": "~2,000 English-taught courses available across faculties alongside Danish-taught courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "UCPH generally relies on home university nomination confirming sufficient English proficiency (recommending CEFR B2); specific departments or Master's modules (e.g., English Studies) may request formal TOEFL/IELTS proof during course selection. No explicit RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/course-information/english-proficiency/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught courses; pre-semester Danish language course offered via https://studies.ku.dk/study-abroad/exchange/course-information/pre-semester-course/.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/study-abroad/exchange/course-information/pre-semester-course/",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Autumn semester (AY 2026-2027): 1 Sep 2026 - 31 Jan 2027 (classes end Dec, exams through Jan; Science and Health & Medical Sciences use Block 1 late Aug/Sep - mid-Nov and Block 2 mid-Nov - Jan). Orientation final week of Aug.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/academic-matters/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester (AY 2026-2027): 1 Feb 2027 - 30 Jun 2027 (classes end May, exams Jun; Science/Health Block 3 Feb - late Apr and Block 4 late Apr - late Jun). Orientation late Jan.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/academic-matters/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/",
+    "notes": "UCPH states exchange students are enrolled on a 'no fee - no degree' basis and do not pay tuition fees (unlike fee-paying guest students)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UCPH publishes accommodation price ranges (~DKK 4,000-10,000/month via Housing Foundation Copenhagen) and SIRI sets DKK 7,426/month visa proof, but no total official UCPH monthly living cost range is published."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Cannot be derived without an official UCPH total monthly living cost range."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housingfoundation.dk/housing-options-for-student/",
+    "notes": null
+  },
+  "housing_notes": {
+    "value": "Exchange students receive a guaranteed invitation to Housing Foundation Copenhagen, though room placement is NOT guaranteed. Rents range ~DKK 4,500-9,000+/month (up to ~DKK 10,000), typically requiring quarterly upfront payment/deposits (https://housingfoundation.dk/pricerange-overview-for-student-accommodations/).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://housingfoundation.dk/pricerange-overview-for-student-accommodations/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students staying >3 months must obtain a Danish student residence permit prior to arrival (SIRI statutory proof of funds is DKK 7,426/month per nyidanmark.dk).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.nyidanmark.dk/en-GB/You-want-to-apply/Study/Higher-education",
+    "notes": "UCPH residence permit guidance link in UoCopenhagen/University of Copenhagen- Details.docx: https://www.ku.dk/studies/student-life/living-in-copenhagen/danish-residence-permit."
+  },
+  "official_website_url": {
+    "value": "https://www.ku.dk/english/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:133",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studies.ku.dk/exchange/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoCopenhagen/University of Copenhagen- Details.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://kurser.ku.dk/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoCopenhagen/University of Copenhagen- Details.docx",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UCPH course catalog at https://kurser.ku.dk/ requires interactive language and block filtering; no static English-only course list URL."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; normal full-time semester workload is 30 ECTS (Science and Health & Medical Sciences follow a 4-block calendar structure).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/academic-matters/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Course access depends on bilateral agreement scope and academic level; specific clinical/professional modules (e.g., Medicine/Law) and Master's prerequisites have restricted access (https://studies.ku.dk/study-abroad/exchange/course-information/course-requirements-and-restrictions/).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/study-abroad/exchange/course-information/course-requirements-and-restrictions/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Autumn semester / Full Year: nomination & application ~1 May; Spring semester: nomination & application ~1 Oct (exact partner nomination windows published by term).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.ku.dk/exchange/how-to-apply/deadlines/",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-tartu",
+  "excel_rows": [
+    145
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1PiOzWGfe6YSc8ItV20IP9HoDlGinpMBY"
+    ],
+    "local_files": [
+      "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Tartu",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UT",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Estonia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Tartu",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Left blank in AUC partner Excel; confirm eligible schools with OIP."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Left blank in AUC partner Excel; UT fact sheet allows selection across faculties unless restricted by agreement."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange minimum GPA stated in AY 2025-2026 fact sheet."
+  },
+  "instruction_languages": {
+    "value": [
+      "Estonian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=4",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=4",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English required (TOEFL iBT 75, IELTS 5.5, or official home-institution letter; exempt if current degree at home university is taught in English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught courses; free Estonian language courses offered.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=5",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 Autumn: Sep 1, 2025-Feb 1, 2026 (AY 2026-2027 Spring update published on ut.ee).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=3",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring: Rec arrival Feb 3, Orientation Feb 4-5, Classes start Feb 8, 2027 (AY 2025-2026 Spring ran Feb 9-Jun 28, 2026 per PDF p.3).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://ut.ee/en/welcome",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral exchange partner per Excel; confirm bilateral tuition waiver terms in OIP agreement."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 600,
+      "max": 800
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://ut.ee/en/welcome",
+    "notes": "UT welcome/living costs page budgets EUR 600-800/month total incl. housing (short-term Student Hostel twin ~EUR 276-431/mo, dorms from ~EUR 175/mo, private EUR 300-700/mo); 2025-26 PDF p.7 cites EUR 300-400/mo excluding housing."
+  },
+  "living_cost_usd_est": {
+    "value": 3868,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://ut.ee/en/welcome",
+    "notes": "5-month midpoint estimate from EUR 600-800/month (EUR 700/mo) converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 700 * 5 * 1.1052 = 3868.20 USD (approx. USD 3868)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory valid health/travel medical insurance covering stay in Estonia.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=9",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "lottery",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=6",
+    "notes": "Exchange students may apply to Student Hostel (Jun 1-10 for Autumn, Jan 2-10 for Spring), NOT guaranteed."
+  },
+  "housing_notes": {
+    "value": "Student Hostel (studenthostel.ee) applications open Jun 1-10 (Autumn) and Jan 2-10 (Spring), not guaranteed; twin rooms ~EUR 276-431/month (or dorms from ~EUR 175/mo; private EUR 300-700/mo).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students require an Estonian Long-Stay (D) visa and mandatory travel medical insurance; consulate lead time and financial proof amounts not specified in fact sheet.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=8",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://ut.ee/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:145",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://ut.ee/en/exchange-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=2",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://ut.ee/en/courses-taught-english-and-grading",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=4",
+    "notes": "Academic calendar and live catalog on https://ois2.ut.ee/#/dashboard."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Dynamic course catalog requires filtering by teaching language and exchange student availability on https://ois2.ut.ee/#/dashboard (guide at https://ut.ee/en/courses-taught-english-and-grading)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; minimum load 15 ECTS/semester for incoming exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=5",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Free course selection across faculties (subject to prerequisites and language level); min 15 ECTS/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Official academic transcript in English",
+      "Passport or ID copy",
+      "B2 English proficiency proof (or English-medium letter)",
+      "Course list / Learning Agreement"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Tartu city scale not explicitly categorized into schema city_tier options in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Academic buildings distributed across Tartu; schema campus_type not explicitly stated in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation course, free Estonian language courses, ESN & Buddy programme, counseling services, and Welcome Centre support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=7",
+    "notes": "Orientation/Estonian p.4-5; ESN/Buddy p.7; Welcome Centre p.8."
+  },
+  "nomination_deadlines": {
+    "value": "Autumn / Academic Year: nomination Mar 31, application Apr 15; Spring: nomination Oct 15, application Nov 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/University of Tartu/2025-2026/UT Information for Incoming Exchange Students 2025-26.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

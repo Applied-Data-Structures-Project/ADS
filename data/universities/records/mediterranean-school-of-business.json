@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "mediterranean-school-of-business",
+  "excel_rows": [
+    71
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1OAGtbnxbndwAX5DhdXeGt4Os6f6MBxx5"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf",
+      "data/raw/factsheets/Mediterranean School of Business/MSB Presentation 2025-2026.pdf",
+      "data/raw/factsheets/Mediterranean School of Business/Mediterranean School of Business.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf.txt",
+      "data/raw/extracted/Mediterranean School of Business/MSB Presentation 2025-2026.pdf.txt",
+      "data/raw/extracted/Mediterranean School of Business/Mediterranean School of Business.docx.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Mediterranean School of Business",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "short_name": {
+    "value": "MSB",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Tunisia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Tunis",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "region": {
+    "value": "Middle East & North Africa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange minimum GPA stated in AY 2025-2026 fact sheet or verified on smu.tn/msb.tn."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": "100% English-medium instruction."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 75, IELTS 6.0, CAE, CPE, or official English-medium waiver from home institution.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required (100% English instruction); optional Arabic or French language courses available via LCI.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 Fall: UPM (UG) Orientation Aug 25-30, Classes Sep 1-Dec 20, 2025; Master S1 Sep 15, 2025-Jan 30, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026 Spring: UPM (UG) Orientation Dec 29, 2025-Jan 3, 2026, Classes Jan 5-May 16, 2026; Master S2 Feb 2-Jun 30, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral exchange partner per Excel; AY 2025-2026 fact sheet does not explicitly state tuition waiver wording."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "TND",
+      "min": 1425,
+      "max": 2425
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=3",
+    "notes": "AY 2025-2026 fact sheet p.3 itemizes monthly Tunis costs in TND: accommodation 500-1,500, meals 450, transport 200, leisure 250, books 25 (total 1,425-2,425 TND/month; PDF also prints EUR 498-798/month equivalents)."
+  },
+  "living_cost_usd_est": {
+    "value": 3185,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=3",
+    "notes": "5-month midpoint estimate from TND 1,425-2,425/month (TND 1,925/mo) converted at Xe rate 1 TND = 0.330871 USD (collected 2026-11-15, https://www.xe.com/currencyconverter/convert/?Amount=1&From=TND&To=USD); math: 1,925 * 5 * 0.330871 = 3184.63 USD (approx. USD 3185)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=3",
+    "notes": "No on-campus dormitories; International Office assists incoming students via private realtors."
+  },
+  "housing_notes": {
+    "value": "No on-campus housing; estimated private accommodation 500-1,500 TND/month arranged with realtor assistance via International Office (housing link https://www.msb.tn/student-life/housing-office/ in DOCX fact sheet).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Residency/visa document assistance noted on smu.tn; specific lead time and financial proof thresholds not published."
+  },
+  "official_website_url": {
+    "value": "http://www.masteretudes.fr/universites/Tunisie/SMU-MSB/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:71",
+    "notes": "Preserved from Excel Col I; official institutional domains are msb.tn and smu.tn (e.g. https://www.msb.tn/student-life/housing-office/ and https://www.smu.tn/international-pathways)."
+  },
+  "exchange_page_url": {
+    "value": "https://www.smu.tn/international-pathways",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.smu.tn/international-pathways",
+    "notes": "Official South Mediterranean University (SMU/MSB) international pathways page."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No direct public exchange course catalog URL embedded in AY 2025-2026 fact sheet."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All MSB courses are taught 100% in English."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; limit of 30 ECTS/semester (typically 5-7 courses).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Maximum 30 ECTS (5-7 courses) per term; UPM (UG) and Master tracks follow slightly different semester dates.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Academic transcripts",
+      "Passport copy",
+      "English proficiency certificate or home-institution waiver"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US/North American A-F grading scale (minimum passing grade C), 100% English instruction.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Tunis is Tunisia's capital; schema city_tier label not explicitly classified in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Les Berges du Lac II, Tunis; physical campus layout type not explicitly classified."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation week, private housing realtor assistance, optional Arabic/French courses via LCI, and residency/banking guidance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=3",
+    "notes": "Orientation/language on p.2; housing assistance on p.3."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nomination May 15, application Jun 15; Spring: nomination Oct 15, application Nov 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Mediterranean School of Business/2025-2026/MSB Factsheet AY 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

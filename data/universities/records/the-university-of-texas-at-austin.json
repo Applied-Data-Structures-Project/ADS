@@ -1,0 +1,358 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-university-of-texas-at-austin",
+  "excel_rows": [
+    119
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Zyh_TXdTVHtoimGtE30kwxQMgz1TJw29"
+    ],
+    "local_files": [
+      "data/raw/factsheets/TUo Texas at Austin/University of Texas at Austin.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/TUo Texas at Austin/University of Texas at Austin.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The University of Texas at Austin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UT Austin",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://www.utexas.edu/",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Texas",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "city": {
+    "value": "Austin",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": "Agreement scope is University-wide (UG). Course access remains subject to departmental seat capacity and prerequisites."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": "University-wide undergraduate exchange agreement; check specific UT Austin college/department prerequisites."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utexas.edu/academics/areas-of-study",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.utexas.edu/academics/areas-of-study",
+    "notes": "English-medium U.S. university."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT minimum 79 or IELTS minimum 6.5 required for non-native English speakers (or accepted equivalent/home institution attestation per Texas Global).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange/before-you-apply",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English (U.S. university; see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange/before-you-apply",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": "Fall/Spring/Summer/Winter | Excel Col E also notes Winter term"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes Aug 24–Dec 7, 2026; study days Dec 8–9, 2026; final exams Dec 10–12 & 14, 2026 (2026-27 academic calendar).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.utexas.edu/calendars/26-27",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes Jan 11–May 3, 2027; final exams Apr 29–30, May 1 & 3, 2027 (2026-27 academic calendar).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.utexas.edu/calendars/26-27",
+    "notes": "Local 2020-21 fact sheet (University of Texas at Austin.docx) also notes Summer early June–mid August window."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange",
+    "notes": "Reciprocal exchange students do not pay tuition to UT Austin and continue paying home institution tuition."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1400,
+      "max": 1900
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo Texas at Austin/University of Texas at Austin.docx",
+    "notes": "Published monthly living estimate from 2020-21 local fact sheet ($1,400–$1,900/month). Current Texas Global J-1 DS-2019 proof minimum is $9,165 for 1 semester ($18,330 for 2 semesters) per https://global.utexas.edu/isss/students/exchange."
+  },
+  "living_cost_usd_est": {
+    "value": 8250,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo Texas at Austin/University of Texas at Austin.docx",
+    "notes": "5-month USD estimate from 2020-21 fact sheet midpoint: ($1,400 + $1,900) / 2 = $1,650/month × 5 months = $8,250 USD (USD local currency, no FX conversion). Current J-1 DS-2019 financial proof requires at least $9,165/semester."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "UT Austin Student Health Insurance is mandatory for all J-1 exchange visitors and cannot be waived.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/insurance/students/exchange",
+    "notes": "Also confirmed in local fact sheet (University of Texas at Austin.docx, 2020-21)."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/life/housing",
+    "notes": "University Housing and Dining (UHD) residence halls, UT apartments, UT-managed off-campus properties (e.g., 2400 Nueces), and off-campus search support via Texas Global."
+  },
+  "housing_notes": {
+    "value": "Housing options include on-campus UHD residence halls, UT apartments (such as East Campus Graduate Apartments), UT-managed off-campus apartments like 2400 Nueces, and private rentals/co-ops via Texas Global off-campus living resources.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/life/housing",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires J-1 Exchange Visitor visa (Form DS-2019) issued after uploading financial proof in myIO: minimum $9,165 for 1 semester or $18,330 for 2 semesters.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange",
+    "notes": "DS-2019 visa requirement also confirmed in local fact sheet (University of Texas at Austin.docx)."
+  },
+  "official_website_url": {
+    "value": "http://www.utexas.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:119",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://global.utexas.edu/isss/students/exchange",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange",
+    "notes": "Partner fact sheet portal: https://global.utexas.edu/isss/students/exchange/partner-fact-sheet."
+  },
+  "course_catalog_url": {
+    "value": "http://www.registrar.utexas.edu/schedules",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo Texas at Austin/University of Texas at Austin.docx",
+    "notes": "Official UT Austin Course Schedules link extracted from fact sheet; see areas of study at https://www.utexas.edu/academics/areas-of-study."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "U.S. semester credit hours; reciprocal exchange students must maintain full-time enrollment: minimum 12 credit hours/semester for undergraduates (max 1 ESL course may count toward the 12-credit minimum), 10 for Law, and 9 for MBA.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Full-time course of study required; at most one ESL course through the English Language Center may count toward the mandatory 12-credit-hour undergraduate full-time load, and departmental course approval/prerequisites apply.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Digital academic transcript uploaded via myIO after admission",
+      "English proficiency verification (TOEFL iBT 79 / IELTS 6.5 or accepted equivalent)",
+      "Proof of financial support via myIO for Form DS-2019"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange/before-you-apply",
+    "notes": "Official mailed paper transcripts are not required for initial application; admitted exchange students upload digital transcripts and financial proof in myIO."
+  },
+  "academic_style": {
+    "value": "Comprehensive U.S. public research university offering undergraduate areas of study across multiple colleges and schools with mandatory full-time semester enrollment.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.utexas.edu/academics/areas-of-study",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Texas Global / ISSS orientation, arrival check-in guidance, and International Hospitality Council (IHC) welcome and cultural programs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo Texas at Austin/University of Texas at Austin.docx",
+    "notes": "Links extracted from local fact sheet: https://global.utexas.edu/isss/welcome/ and https://global.utexas.edu/isss/programs/ihc."
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nom window Jan 15–Feb 15 / app deadline Mar 1; Spring: nom window Jul 15–Aug 15 / app deadline Sep 1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://global.utexas.edu/isss/students/exchange/partner-fact-sheet",
+    "notes": null
+  },
+  "ext": {}
+}

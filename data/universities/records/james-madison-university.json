@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "james-madison-university",
+  "excel_rows": [
+    51
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/15gTFpw9ymsXcJqwoeELtHQeMBrjS1VlN"
+    ],
+    "local_files": [
+      "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "James Madison University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "short_name": {
+    "value": "JMU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Virginia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "city": {
+    "value": "Harrisonburg",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (exclusions noted in excluded_majors)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (exclusions noted in excluded_majors)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Nursing",
+      "Medicine",
+      "Hospitality/Tourism Management",
+      "College of Business (Economics, Finance, Accounting, Administration, Management, Marketing)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2",
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT >= 81 (or >= 4.5 on updated TOEFL iBT scale for exams taken on/after Jan 21, 2026) or IELTS overall >= 6.5 (2021-22 sheet listed TOEFL PBT 550 / iBT 80-81 / IELTS 6-7). RHET 1020 exemption not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "Historical 2021-22 Fact Sheet figures at data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "host_language_requirement": {
+    "value": "English (TOEFL iBT >= 81 / 4.5 post-Jan 21, 2026; IELTS >= 6.5).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes Aug 26 - Dec 11, 2026; Final Exams Dec 12 - Dec 18, 2026 (Fall Break Oct 7-11; Thanksgiving Nov 23-27; orientation held the week prior per Fact Sheet p.2).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/registrar/dates/fall_2026.shtml",
+    "notes": "Pre-term Fall orientation timing from data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes Jan 19 - May 5, 2027; Final Exams May 6 - May 12, 2027 (Spring Break Mar 15-19).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/registrar/dates/spring_2027.shtml",
+    "notes": "Live inbound exchange portal (https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml) lists regular Spring nomination/application deadlines (whereas 2021-22 PDF noted special-permission Spring entry)."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1939.0,
+      "max": 1939.0
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/admissions/apply/international.shtml",
+    "notes": "Derived from JMU official international cost breakdown ($15,088 living expenses + $4,300 books/personal = $19,388 academic year / 2 semesters = $9,694 per 5-month semester, i.e., $1,939/month). 2026-27 on-campus housing ($3,428-$4,228/sem) + resident meal plans ($3,438-$3,819/sem) + internet ($138/sem) listed at https://www.jmu.edu/ubo/undergraduate-tuition-rates.shtml."
+  },
+  "living_cost_usd_est": {
+    "value": 9694.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/admissions/apply/international.shtml",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); 5-month semester estimate ($15,088 living + $4,300 books/personal = $19,388 annual / 2 semesters = $9,694 USD; 5 * $1,938.80/mo). Excludes tuition and health insurance."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory CISI health insurance: $1,656/year (split between fall and spring semesters; waivable only upon arrival with proven equivalent abroad coverage meeting U.S. Dept. of State rules). On-campus internet fee $138/semester (2026-27); 2021-22 sheet also noted $100/semester International Student Fee and $40 Housing Contract Fee.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/isss/resources/health-insurance.shtml",
+    "notes": "Internet fee ($138/sem) from https://www.jmu.edu/ubo/undergraduate-tuition-rates.shtml; legacy fee schedule in data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "Housing preferences/contract coordinated during exchange onboarding and Office of Residential Life portal (rms.jmu.edu); no unconditional guarantee stated."
+  },
+  "housing_notes": {
+    "value": "On-campus housing contract and preferences processed after acceptance via Residential Life (rms.jmu.edu). AY 2026-27 per-semester housing rates: $3,428-$4,228 (+$500 single occupancy) + $138 internet + mandatory resident meal plan ($3,438-$3,819/sem).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/ubo/undergraduate-tuition-rates.shtml",
+    "notes": "Housing onboarding via https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa (Form DS-2019 sent with acceptance packet). Financial evidence is a required initial application document ($53,250/yr international student COA total incl. $33,862 tuition/insurance, $15,088 living, $4,300 books/personal, $276 internet; exchange students document non-tuition living and fee support).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "International COA figure from https://www.jmu.edu/admissions/apply/international.shtml; acceptance-packet DS-2019 procedure in data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "official_website_url": {
+    "value": "http://www.jmu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:51",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "https://www.jmu.edu/global/programs/exchange-students-inbound.shtml also resolves on jmu.edu."
+  },
+  "course_catalog_url": {
+    "value": "https://www.jmu.edu/catalog/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/catalog/",
+    "notes": "Courses directory also at https://www.jmu.edu/catalog/courses/."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All JMU undergraduate courses in https://www.jmu.edu/catalog/courses/ are taught in English; no separate English-taught course list exists."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours; J-1 visa compliance requires minimum 12 credits per semester in-person (approx. 4 courses).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "Confirmed in data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "course_restrictions_note": {
+    "value": "Nursing, Medicine, Hospitality/Tourism Management, and College of Business (economics, finance, accounting, administration, management, marketing, etc.) are closed to exchange students. Preferred course list submitted at application, but specific enrollment is not guaranteed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home institution nomination",
+      "Personal statement",
+      "Official transcript",
+      "Financial evidence",
+      "Passport copy",
+      "English language proficiency scores (TOEFL/IELTS)",
+      "Preferred course selections",
+      "Enrollment, housing, and JMU Honor Code signature documents"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": "AY 2021-22 sheet (data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2) also listed a Letter of Recommendation."
+  },
+  "academic_style": {
+    "value": "Public university in Virginia (~22,000 UG/GR students, ~4,000 faculty/staff) on a semester calendar with dedicated final exam week.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=1",
+    "notes": "2026-27 semester exam schedules at https://www.jmu.edu/registrar/adjustable-calendar.shtml."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "JMU Center for Global Engagement advising, pre-semester orientation (1 week in Fall / 1 day in Spring), airport pickup from Washington Dulles International Airport (IAD), free English Language Learning Center tutoring, LIFE local-family connection program, Culture Nights, International Week, and career workshops.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=1",
+    "notes": "Orientation timing and IAD airport pickup details in data/raw/factsheets/James Madison University/James Madison University Incoming Exchange Info Sheet 2021-2022 - Global Dukes.pdf#page=2."
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: Nomination March 1, Application April 1; Spring: Nomination October 1, Application November 1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.jmu.edu/global/abroad/exchange-students-inbound.shtml",
+    "notes": null
+  },
+  "ext": {}
+}

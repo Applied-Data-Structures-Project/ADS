@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "st-olaf-college",
+  "excel_rows": [
+    101
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1JjBqs1Y0krydAeIM9G_TKVn5pQ47z1KF"
+    ],
+    "local_files": [
+      "data/raw/factsheets/St. Olaf College/St. Olaf College.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/St. Olaf College/St. Olaf College.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "St. Olaf College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Minnesota",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "city": {
+    "value": "Northfield",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://wp.stolaf.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be a continuing degree-seeking undergraduate in good academic standing nominated by a partner university; attends St. Olaf as a non-degree-seeking J-1 exchange student.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/smithcenter/",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:101",
+    "notes": "Exact University-wide agreement scope (note 8 departments excluded by St. Olaf policy)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Computer Science",
+      "Economics",
+      "Education",
+      "Mathematics",
+      "Music",
+      "Nursing",
+      "Social Work",
+      "Statistics"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/smithcenter/",
+    "notes": "St. Olaf Smith Center explicitly bars incoming exchange students from registering in Computer Science, Economics, Education, Mathematics, Music, Nursing, Social Work, and Statistics."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Good academic standing vetted by home institution; no numeric GPA cutoff published by St. Olaf for exchange partners."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.stolaf.edu/catalog/",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.stolaf.edu/catalog/",
+    "notes": "US liberal arts college operating in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Standard international admissions benchmarks: TOEFL 90, Academic IELTS 6.5, or Duolingo English Test 120 (specific exchange partnership agreements may vary; verify partner waiver via Smith Center).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/international-applications/",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/international-applications/",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester: Sep 10 - Dec 15, 2026 (new international students arrive Sep 1, 2026; optional January J-Term Jan 4 - Jan 29, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/registrar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Feb 10 - May 18, 2027 (note 4-1-4 calendar includes J-Term Jan 4 - 29, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/registrar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Smith Center site states incoming exchange students attend as non-degree students under their partner agreement, without publishing an explicit tuition-waiver quote on verified stolaf.edu pages (regular 2026-27 sticker tuition is $32,850/sem)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1500,
+      "max": 1500
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/stuacct/comprehensive-fee/",
+    "notes": "Derived monthly cost from St. Olaf AY 2026-2027 Student Accounts comprehensive fee schedule divided by 5 months: Multiple-occupancy housing $3,575/sem ($7,150/yr) + Meal Plan $3,925/sem ($7,850/yr) = $7,500/sem -> $1,500/mo. Excludes mandatory J-1 health insurance ($1,000/yr), $500 activities fee, books, and personal expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 7500.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/stuacct/comprehensive-fee/",
+    "notes": "5-month estimate derived from monthly USD range 1,500/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 1,500.0 USD = 7,500.00 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "J-1 exchange students are automatically enrolled (no waiver) in St. Olaf LewerMark J-1 health insurance at $1,000/yr (2026-27 billed in Fall/Spring installments), plus mandatory Minnesota immunizations (MMR & Td per St. Olaf DOCX).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/international-applications/",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/smithcenter/",
+    "notes": "Residential college: full-time and incoming exchange students are required to live in college-owned housing (2026-27 billed rates posted at https://wp.stolaf.edu/stuacct/comprehensive-fee/)."
+  },
+  "housing_notes": {
+    "value": "2026-27 billed rates: multiple-occupancy housing $3,575/sem ($7,150/yr) + meal plan $3,925/sem ($7,850/yr) per Student Accounts Comprehensive Fee schedule (see also https://wp.stolaf.edu/reslife/).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/stuacct/comprehensive-fee/",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No St. Olaf incoming exchange stipend verified."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires J-1 student visa (DS-2019 issued upon admission via Taylor Center/Smith Center), International Student Certification of Finances, English proficiency proof, mandatory J-1 health insurance, Minnesota immunizations, and potential 2-year home residency rule (212(e)) disclosure.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Olaf College/St. Olaf College.docx",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://wp.stolaf.edu/smithcenter/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/smithcenter/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.stolaf.edu/catalog/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.stolaf.edu/catalog/",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://www.stolaf.edu/catalog/ are taught in English; no separate English-only filter URL."
+  },
+  "credit_system_and_load": {
+    "value": "4-1-4 academic calendar system (Fall semester - January Term - Spring semester); exact numeric exchange credit limits unverified on stolaf.edu.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/registrar/",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Incoming exchange students cannot take courses in Computer Science, Economics, Education, Mathematics, Music, Nursing, Social Work, or Statistics.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://wp.stolaf.edu/smithcenter/",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "St. Olaf non-degree international application",
+      "Official academic transcript",
+      "International Student Certification of Finances form",
+      "English proficiency verification"
+    ],
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Olaf College/St. Olaf College.docx",
+    "notes": "See https://wp.stolaf.edu/international-applications/."
+  },
+  "academic_style": {
+    "value": "Residential 4-1-4 liberal arts college curriculum in Northfield, Minnesota.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.stolaf.edu/catalog/",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Northfield, MN; official population figures in search results came from Wikipedia/nse.org (excluded)."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "300-acre hilltop setting overlooking Cannon River Valley (~45 min south of Minneapolis-Saint Paul on stolaf.edu), without explicit rural/suburban enum confirmation."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on stolaf.edu or DOCX (US English-speaking campus)."
+  },
+  "international_support_services": {
+    "value": "Smith Center for Global Engagement, Taylor Center for Equity & Inclusion (J-1/DS-2019 advising), Residential Life, and Student Health Service.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/St. Olaf College/St. Olaf College.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Coordinated directly with partner schools via the Smith Center (Nov 1 / Jan 15 dates on stolaf.edu are degree admissions; third-party StudioAbroad portal excluded)."
+  },
+  "ext": {}
+}

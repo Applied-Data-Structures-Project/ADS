@@ -1,0 +1,373 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "kozminski-university",
+  "excel_rows": [
+    60
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1sDv8eX-Wb_l0uWc3dVOLUtTgLE3hA7_f"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Kozminski University/2024-2025/Kozminski_University_fact_sheet_2024_2025.pdf",
+      "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf",
+      "data/raw/factsheets/Kozminski University/2025-2026/List of courses - Spring 2025_v. 2.pdf",
+      "data/raw/factsheets/Kozminski University/2025-2026/List of courses Fall 2024_2025_v. I.pdf",
+      "data/raw/factsheets/Kozminski University/INCOMING PROCESS AT KU upd.pdf",
+      "data/raw/factsheets/Kozminski University/Kozminski_University_fact_sheet_2025_2026 (1).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Kozminski University/2024-2025/Kozminski_University_fact_sheet_2024_2025.pdf.txt",
+      "data/raw/extracted/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf.txt",
+      "data/raw/extracted/Kozminski University/2025-2026/List of courses - Spring 2025_v. 2.pdf.txt",
+      "data/raw/extracted/Kozminski University/2025-2026/List of courses Fall 2024_2025_v. I.pdf.txt",
+      "data/raw/extracted/Kozminski University/INCOMING PROCESS AT KU upd.pdf.txt",
+      "data/raw/extracted/Kozminski University/Kozminski_University_fact_sheet_2025_2026 (1).pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Kozminski University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "short_name": {
+    "value": "KU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Poland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Warsaw",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business and LAw",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS",
+      "GAPP"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": "Excel agreement scope reads 'Business and LAw'; Business maps to BUS and Law to GAPP at AUC."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business",
+      "Law"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": "Fact sheet p.3 notes Law exchange students may also take Business courses."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "KU 4.60 GPA threshold on kozminski.edu.pl applies to Rector scholarships for degree students; no incoming exchange GPA cutoff stated."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Polish"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": "Dedicated English-taught term course lists published for Fall and Spring incoming exchange students."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 English required (FCE, IELTS, TOEFL, or official home-institution confirmation if current programme is taught in English; confirm RHET 1020 / English-medium confirmation).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught courses; optional Polish for beginners available.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Spring",
+      "Academic Year"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": "AY/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2025-2026 Fall (host term dates): late Sep 2025-late Jan/mid-Feb 2026 (exams). Note: AUC Excel specifies Spring and Academic Year.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2025-2026 Spring: mid-Feb 2026-mid-Jun 2026 (exams late Jun).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Bilateral partner exchange per Excel; AY 2025-2026 fact sheet does not explicitly state tuition waiver terms."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 783,
+      "max": 1113
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=4",
+    "notes": "AY 2025-2026 fact sheet p.4 monthly living breakdown: rent EUR 500-700 + food EUR 170-250 + local public transport EUR 13 + utilities EUR 100-150 = EUR 783-1,113/month. KU living-costs guide (https://www.kozminski.edu.pl/en/student-living-costs) also publishes Warsaw PLN item lines (shared room ~1,400-2,200 PLN, private dorms ~1,800-3,500 PLN, food 1,200-2,000 PLN, 30-day transit 60 PLN, utilities 500-1,200 PLN)."
+  },
+  "living_cost_usd_est": {
+    "value": 5239,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=4",
+    "notes": "5-month USD estimate from AY 2025-2026 fact sheet EUR monthly range midpoint: (EUR 783 + EUR 1,113) / 2 = EUR 948/month * 5 months = EUR 4,740 * 1.1052 USD/EUR (ECB reference rate ref 2026-11-13, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html, collected 2026-11-15) = USD 5,238.65 (approx. USD 5,239)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Non-EU students require valid medical/travel insurance covering minimum EUR 30,000.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=4",
+    "notes": "Off-campus housing only; KU shares private offers (x.alk.edu.pl) and partner platforms (Pepe Housing, Spotahome)."
+  },
+  "housing_notes": {
+    "value": "No university-owned dormitories; shared rooms ~1,400-2,200 PLN/mo, private dorms ~1,800-3,500 PLN/mo, utilities 500-1,200 PLN/mo per KU living guide (2+ room apartments 4,500-7,000 PLN/mo); AY 2025-2026 fact sheet p.4 notes EUR 500-700/mo rent.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.kozminski.edu.pl/en/student-living-costs",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Rector scholarships apply to regular degree students; no KU-funded stipend documented for non-EU incoming exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students staying >90 days require a Polish National Visa (even if holding another EU country's residence permit) plus EUR 30,000 medical insurance; exact consulate lead time and solvency amount not itemized.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=4",
+    "notes": "Visa rule on p.4; EUR 30,000 insurance on p.3."
+  },
+  "official_website_url": {
+    "value": "http://www.kozminski.edu.pl/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:60",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.kozminski.edu.pl/incoming/",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/INCOMING PROCESS AT KU upd.pdf#page=1",
+    "notes": "Also linked at https://www.kozminski.edu.pl/pl/spolecznosc/incoming-students in 2025-26 fact sheet p.3."
+  },
+  "course_catalog_url": {
+    "value": "https://kozminski.my.site.com/s/sylabus-exchange-incoming-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": "Official exchange syllabus portal."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Term-specific English course list PDFs (Fall/Spring) are distributed separately and filtered via https://www.kozminski.edu.pl/pl/spolecznosc/incoming-students and the syllabus portal."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; normal full-time load 30 ECTS/semester (maximum 35 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Undergraduate and graduate students may mix Bachelor and Master courses with home-institution approval; Law students may take Business courses as well.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "ID or passport copy",
+      "Medical insurance proof (min EUR 30,000 for non-EU)",
+      "JPG photo",
+      "Academic transcript",
+      "B2 English certificate or home-institution confirmation"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Polish 2.0-5.0 grading scale.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=5",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Warsaw is Poland's capital city; schema city_tier label not explicitly categorized in fact sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Warsaw; physical campus layout category not explicitly stated in fact sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "KU Mate buddy programme, airport pickup, optional Polish language course for beginners, and KU International Society support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=4",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall / Academic Year: nomination May 1, application Jun 1; Spring: nomination Dec 1, application Jan 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Kozminski University/2025-2026/Kozminski University Fact sheet 2025_26.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "icn-business-school",
+  "excel_rows": [
+    41
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1QXh2DQooF5s9VZjmhukWkVDrCBBjdKMt?usp=drive_link",
+      "https://drive.google.com/drive/folders/1QXh2DQooF5s9VZjmhukWkVDrCBBjdKMt"
+    ],
+    "local_files": [
+      "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf",
+      "data/raw/factsheets/ICN Business School/ICN Business School Fact Sheet - Exchange Students - 2024-2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf.txt",
+      "data/raw/extracted/ICN Business School/ICN Business School Fact Sheet - Exchange Students - 2024-2025.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "ICN Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "short_name": {
+    "value": "ICN Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Nancy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank in partner Excel agreement list; ICN 2025-26 fact sheet covers Bachelor in Management (Y2-Y3) and Master/MSc programmes."
+  },
+  "min_standing_note": {
+    "value": "Maximum age limit: 25 years old. Prerequisite prior studies by level: Bachelor Y2 requires min 1 yr (60 ECTS); Bachelor Y3 requires min 2 yrs (120 ECTS); Pre-Master / MSc 1 requires min 3 yrs (180 ECTS); Master 2 / MSc 2 requires min 4 yrs (240 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=4",
+    "notes": "Master/MSc prior credit requirements detailed on p.5-7."
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel agreement scope states 'Business Administration' field rather than an AUC school code."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": "Excel agreement scope states 'Business Administration'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=8",
+    "notes": "Programmes offered in English or French across Nancy, Paris, and Berlin campuses (bilingual tracks require both)."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=4",
+    "notes": "Full English-track specializations offered at Bachelor and Master/MSc levels (p.4-7)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 required for English-taught tracks: TOEFL 80, IELTS 6.5, TOEIC 750, Cambridge C, Duolingo 110, OR a home-university certificate confirming completion of or current study in an English-taught degree programme (RHET 1020 policy not explicitly named; AUC instruction is in English).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=8",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "French CEFR B2 attestation from home university required only for French-taught or bilingual tracks; English-only tracks do not require French.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=8",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-27 web update & 2025-26 calendar: Fall semester runs late August/early September to mid/late December; mandatory online info session Jul 20, 2026; mandatory orientation Sep 4, 2026 (Nancy/Paris) and Sep 14-16, 2026 (Berlin).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": "Verified against 2025-26 calendar structure in ICN Fact Sheet p.2."
+  },
+  "spring_term_dates": {
+    "value": "2026-27 web update & 2025-26 calendar: Spring semester runs early January to mid/late May; mandatory online info session Dec 16, 2026; mandatory orientation Jan 8-9, 2027 (Nancy/Paris) and early Jan 2027 (Berlin).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": "Verified against 2025-26 calendar structure in ICN Fact Sheet p.2."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": "Official ICN exchange portal states tuition fees at ICN are waived for incoming exchange students under partner agreements."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 400.0,
+      "max": 1000.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=9",
+    "notes": "2025-26 Fact Sheet p.9 lists primary city Nancy cost of living: 400 to 1,000 EUR/month (private student residences 400-500 EUR/mo, state residences 150-535 EUR/mo). Also lists Paris: 900-1,300 EUR/month and Berlin: 800-1,000 EUR/month."
+  },
+  "living_cost_usd_est": {
+    "value": 3868.2,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=9",
+    "notes": "Nancy primary campus midpoint EUR 700.00/month (400-1,000 EUR/mo) * 5 months = EUR 3,500.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 3,868.20 USD (Paris/Berlin costs higher)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fees waived under exchange agreement; approx. EUR 40 library fee applies (p.9). Health insurance is mandatory: EU students use EHIC; non-EU students in France enroll in free French Social Security upon registration (etudiant-etranger.ameli.fr) while Germany campus students require Sozialversicherungsausweis / valid German student insurance.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=9",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=9",
+    "notes": "Housing intern assists Apr-Sep (housing-info@icn-artem.com) alongside LivinFrance / Studapart / VISALE platforms; state-owned residences ~150-535 EUR/mo and private residences ~400-500 EUR/mo."
+  },
+  "housing_notes": {
+    "value": "State-owned university residences ~150-535 EUR/mo; furnished studios in private residences ~400-500 EUR/mo. Support via LivinFrance platform and seasonal housing intern (Apr-Sep: housing-info@icn-artem.com).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=9",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note age ceiling in Fact Sheet p.4: maximum age limit for incoming exchange applicants is 25 years old."
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "For France, ICN adheres to the CEF (Etudes en France / Campus France) visa convention; LivinFrance platform provides step-by-step French/German visa support.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=8",
+    "notes": "LivinFrance visa assistance described on p.9."
+  },
+  "official_website_url": {
+    "value": "https://www.icn-artem.com/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:41",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.icn-artem.com/en/exchange-programmes/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.icn-artem.com/en/exchange-programmes/",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": "Fixed specialization tracks by campus (Nancy/Paris/Berlin) detailed in 2025-26 Fact Sheet p.4-7."
+  },
+  "english_course_list_url": {
+    "value": "https://www.icn-artem.com/en/exchange-programmes/",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "ECTS system (prior-study credit prerequisites 60/120/180/240 ECTS on p.4-7; explicit per-semester exchange credit minimum/maximum not stated in ICN 2025-26 Fact Sheet)."
+  },
+  "course_restrictions_note": {
+    "value": "Courses cannot be mixed across different programmes or academic levels due to timetable constraints; MSc 2 / Master 2 accepts Fall semester exchange students only; bilingual tracks require both French and English B2 proficiency; max age 25.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=6",
+    "notes": "Fixed-program policy verified on icn-artem.com; MSc 2 Fall-only on p.6-7."
+  },
+  "required_application_docs": {
+    "value": [
+      "Partner university online nomination",
+      "Completed online application form",
+      "ID photo",
+      "Copy of passport or identity card",
+      "Academic transcripts from last 2 years",
+      "CV (in French or English depending on track)",
+      "Letter of motivation (in French or English depending on track)",
+      "English test/degree-in-English certificate (for English tracks) or French B2 attestation (for French tracks)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=8",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Triple-accredited (AACSB, EQUIS, AMBA) French business school built on interdisciplinary ARTEM pillars connecting Management, Technology, and Art.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=2",
+    "notes": "Three campuses in Nancy (ARTEM campus), Paris, and Berlin."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ICN International Relations Office (icnexchange@icn-artem.com), mandatory online info sessions, campus orientation days (plus optional French Alps seminar for English Bachelor track), LivinFrance onboarding platform, and seasonal housing intern.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/ICN Business School/2025-2026/ICN Business School Fact Sheet - Exchange Students - 2025-2026.pdf#page=2",
+    "notes": "Orientation, LivinFrance, and housing intern details on p.2, 8-9."
+  },
+  "nomination_deadlines": {
+    "value": "2026-27 deadlines: Fall semester / Full year May 15; Spring semester October 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.icn-artem.com/en/exchange-programmes/",
+    "notes": "Matches 15 May / 15 October dates in 2025-26 Fact Sheet p.2."
+  },
+  "ext": {}
+}

@@ -1,0 +1,356 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "washington-college",
+  "excel_rows": [
+    158
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Washington College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Maryland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "city": {
+    "value": "Chestertown",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://www.washcoll.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Nominated home-institution undergraduate with >=3.0 GPA (washcoll.edu); no specific year-in-program rule verified."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:158",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Undergraduate-only liberal arts curriculum; no specific excluded majors verified on washcoll.edu."
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": "Minimum cumulative GPA 3.0 on a 4.0 scale (or equivalent)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/academics/college-catalog/index.php",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/academics/college-catalog/index.php",
+    "notes": "US liberal arts college teaching all courses in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must submit TOEFL >=90, IELTS >=6.5, Duolingo >=115, PTE >=53, or Cambridge B2/C1/C2 score 176.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester: Fall Break Oct 8-9; Classes end Dec 4; Final Exams Dec 7-11, 2026 (late August Fall start date omitted from retrieved PDF snippet).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/registrar/documents/academic-calendar-2026-2027.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Classes begin Jan 19, 2027 (Winter Session Jan 4-15; Spring end date in May not printed in retrieved snippet).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/registrar/documents/academic-calendar-2026-2027.pdf",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Note: Exchange-types breakdown ('Full Exchange' vs 'Tuition Exchange') traced to terradotta.com rather than washcoll.edu directly; left unknown per strict primary-source rules."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2144,
+      "max": 2233
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/financial-aid/tuition-and-fees.php",
+    "notes": "Derived monthly room & board from Washington College annual estimates divided by 9-month academic year: Housing $9,700-$10,500 + Meal plan ~$9,600 = $19,300-$20,100/yr ($2,144-$2,233/month; or $9,650-$10,050/sem). Excludes mandatory SHIP health insurance ($3,726/yr), books, and personal expenses."
+  },
+  "living_cost_usd_est": {
+    "value": 10942.5,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/financial-aid/tuition-and-fees.php",
+    "notes": "5-month estimate derived from monthly USD range 2,144-2,233 (midpoint 2,188.5)/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 2,188.5 USD = 10,942.50 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2026-27 mandatory Student Health Insurance Plan (SHIP) is $3,726/year (automatic enrollment for J-1 international/exchange students unless strict comparable US policy waiver applies); meal plans mandatory for on-campus residents.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/financial-aid/tuition-and-fees.php",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/financial-aid/tuition-and-fees.php",
+    "notes": "On-campus residential housing & required dining plans available ($9,700-$10,500 room + ~$9,600 board annually)."
+  },
+  "housing_notes": {
+    "value": "On-campus housing $9,700-$10,500/yr and required dining plan ~$9,600/yr per Tuition & Fees page.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/financial-aid/tuition-and-fees.php",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange stipend verified on washcoll.edu."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa sponsored via Global Education Office (GEO) with Form DS-2019 upon Financial Certification Form clearance; requires >=12 credit hrs/sem and mandatory health insurance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": "See also https://www.washcoll.edu/academics/study-abroad/incoming-students.php."
+  },
+  "course_catalog_url": {
+    "value": "https://www.washcoll.edu/academics/college-catalog/index.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/academics/college-catalog/index.php",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://www.washcoll.edu/academics/college-catalog/index.php are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours; J-1 undergraduate exchange students must maintain full-time enrollment of at least 12 credit hours per semester.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/registrar/documents/academic-calendar-2026-2027.pdf",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No major exclusions verified; standard course prerequisites apply in College Catalog."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination",
+      "Online Washington College application",
+      "Home university official transcript",
+      "Letter of recommendation",
+      "Essay / personal statement",
+      "Passport copy",
+      "Financial Certification Form",
+      "English language test scores (if applicable)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Historic private liberal arts college in Chestertown, MD; detailed pedagogical description not verified on washcoll.edu."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Chestertown, Maryland; rural/small-town label in summary lacked an explicit washcoll.edu citation tag; left unknown."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No explicit rural/suburban/urban classification verified in washcoll.edu citations."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on washcoll.edu (US English-speaking campus)."
+  },
+  "international_support_services": {
+    "value": "Global Education Office (GEO) J-1/DS-2019 advising, Academic Training authorization support, and Residential Life / Dining services.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/academics/study-abroad/incoming-students.php",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Incoming Exchange Application Deadlines: March 25 (Fall Semester & Full Year), September 15 (Spring Semester); coordinate prior nomination with home exchange office.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.washcoll.edu/people_departments/offices/global-education/incoming-exchange-students.php",
+    "notes": null
+  },
+  "ext": {}
+}

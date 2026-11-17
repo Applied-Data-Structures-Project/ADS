@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "concordia-university",
+  "excel_rows": [
+    22
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1x86w0dkfzugY4Psm-Cx_DC5kmhk27vS4"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Concordia University/Copy of Concordia University_AY2022_23_Fact_Sheet.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Concordia University/Copy of Concordia University_AY2022_23_Fact_Sheet.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Concordia University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Canada",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Quebec",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "city": {
+    "value": "Montreal",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum cumulative GPA equivalent to 3.00 on a 4.3 grading scale; undergraduate applicants must have completed at least one semester and graduate applicants at least one semester of graduate studies prior to arrival.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Concordia publishes a minimum cumulative GPA of 3.00 on a 4.30 grading scale (https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html); left null here rather than converting across the 4.0 vs 4.3 scale."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "notes": "English is the primary language of instruction."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-English-medium applicants must meet direct-admission English proficiency (no ESL/conditional admission): UG baseline TOEFL iBT 70 (4.0 on revised scale) or IELTS Academic 6.0 (min 5.5 component); GR/MBA often higher (e.g., TOEFL 95 with min 20 section / IELTS 7.0 with min 6.5). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html",
+    "notes": "Inbound exchange rule confirmed at https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html; graduate standards via https://www.concordia.ca/graduatestudies/admissions/international/english-language-proficiency.html."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (see english_proficiency_and_rhet1020); French not required for standard English-medium exchange coursework.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/admissions/undergraduate/requirements/english-language-proficiency.html",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": "Fall/Spring (AUC Spring maps to Concordia's Winter term, January–May)."
+  },
+  "fall_term_dates": {
+    "value": "2026-09-08 to 2026-12-22 (classes Sep 8–Dec 7; final exams Dec 9–22, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/undergraduate/term-dates-deadlines.html",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-11 to 2027-05-02 (Winter term: classes Jan 11–Apr 12; final exams Apr 15–May 2, 2027)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/undergraduate/term-dates-deadlines.html",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "notes": "Official partner exchange students pay regular tuition to their home university and study tuition-free at Concordia (exempt from international differential tuition)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "CAD",
+      "min": 2021,
+      "max": 2021
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/financial-aid/tuition-fees/cost-of-living.html",
+    "notes": "Sum of published monthly off-campus budget components ($1,100 housing/rent + $450 food + $63 student transit + $408 personal/phone from cost-of-living.html & https://www.concordia.ca/admissions/undergraduate/costs-aid.html), excluding books (~$2,800+/yr). Comparable to Quebec immigration 12-month living estimate of CAD $24,617/yr (~CAD $2,051/mo) on https://www.concordia.ca/students/international/immigration/study-permits/estimate-costs.html."
+  },
+  "living_cost_usd_est": {
+    "value": 7087.2,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/financial-aid/tuition-fees/cost-of-living.html",
+    "notes": "5-month estimate: 2,021 CAD/month * 5 months = 10,105 CAD * 0.701358 USD/CAD = 7,087.22 USD (ECB 2026-11-13 cross rate 1 EUR = 1.5758 CAD and 1 EUR = 1.1052 USD -> 1 CAD = 0.701358 USD, collected 2026-11-15: https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Compulsory Blue Cross international health insurance (2026-2027 rates): CAD $388 (4-month term), CAD $873 (9-month Fall & Winter), or CAD $1,164 (12-month).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/international/health-insurance.html",
+    "notes": "Inbound exchange health insurance FAQ at https://www.concordia.ca/international/students-from-abroad/inbound-exchange/faq/health-insurance.html."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "http://www.concordia.ca/students/housing.html",
+    "notes": "University housing portal and off-campus living guidance provided; most inbound exchange students budget for off-campus Montreal apartments (~CAD $1,100/month)."
+  },
+  "housing_notes": {
+    "value": "Residence and off-campus housing resources via Concordia Housing; estimated off-campus rent and utilities ~CAD $1,100/month.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/financial-aid/tuition-fees/cost-of-living.html",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "One-semester stays (<6 months) generally require only a visitor visa (TRV) or eTA; stays >6 months (full-year) require a Quebec CAQ and Canadian Study Permit with proof of CAD $24,617/year in living funds (plus insurance).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/students/international/immigration/study-permits/estimate-costs.html",
+    "notes": "Immigration hub at https://www.concordia.ca/students/international/immigration.html."
+  },
+  "official_website_url": {
+    "value": "http://www.concordia.ca/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:22",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://www.concordia.ca/academics/undergraduate/calendar/current.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://www.concordia.ca/academics/undergraduate/calendar/current.html",
+    "notes": "Graduate calendar at http://www.concordia.ca/academics/graduate/calendar.html (extracted from AY2022_23 fact sheet)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Instruction is primarily in English across all calendars; no separate English-only filter URL required."
+  },
+  "credit_system_and_load": {
+    "value": "North American credit hours (standard course = 3 credits). UG load: 12–15 credits/term (4–5 courses); GR load: 8–9 credits/term (2–3 courses), or 12 credits for MBA.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Fine Arts and Creative Writing require a password-free web portfolio; graduate/MBA course access restricted to graduate exchange nominations.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Incoming Exchange Application form (issued after partner nomination)",
+      "Official academic transcript of records",
+      "Personal statement in English (max 1 page)",
+      "List of courses currently in progress",
+      "Proof of English language proficiency (if applicable)",
+      "Photocopy of passport bio page",
+      "Portfolio (Fine Arts/Creative Writing) or CV/degree certificates (Graduate/MBA)"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/about/history.html",
+    "notes": "Operates two Montreal campuses: Sir George Williams (downtown) and Loyola."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Concordia International inbound exchange advising, International Students Office (ISO) immigration/health-insurance support, and housing assistance.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Annual inbound application deadline: April 1 (covers Fall, Full-Year, and Winter terms; prior partner nomination required).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.concordia.ca/international/students-from-abroad/inbound-exchange/how-to-apply.html",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -31,3 +31,8 @@ frontend/build/
 .vscode
 .idea/
 .DS_Store
+
+# Downloaded university fact sheets & extracted text cache (keep partner_list_extracted.json, data/universities/, scripts/, db/seed/ tracked)
+data/raw/factsheets/
+data/raw/extracted/
+

@@ -1,0 +1,347 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-california-education-abroad-programs-uceap",
+  "excel_rows": [
+    131
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of California Education Abroad Programs (UCEAP)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UCEAP",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "California",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "city": {
+    "value": "Multiple",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=131",
+    "notes": "University-wide UG exchange across multiple UC campuses (Fall/Spring)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=131",
+    "notes": "Subject to individual UC campus/department major availability and prerequisites."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": "Systemwide minimum good academic standing generally reflects 2.0 GPA, while specific UC campuses and impacted majors may require higher (e.g., 3.0)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/uc-courses/examinations",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/uc-courses/examinations",
+    "notes": "All UC courses taught in English (except foreign language courses)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT (campus minimum typically 80–83 or current scale equivalent), IELTS Academic (6.5–7.0 by campus), or Duolingo English Test (115 min) required unless native English / exempt.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/uc-courses/examinations",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/uc-courses/examinations",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Varies by UC campus: Semester campuses (UC Berkeley, UC Merced) Fall mid-Aug – mid-Dec (~15 wks); Quarter campuses (Davis, Irvine, UCLA, Riverside, San Diego, Santa Barbara, Santa Cruz) Fall Quarter late Sep – mid-Dec (~10 wks).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/after-you-apply/timeline",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Varies by UC campus: Semester campuses (Berkeley, Merced) Spring mid-Jan – mid-May; Quarter campuses Winter Quarter Jan – mid-Mar and Spring Quarter Apr – mid-Jun.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/after-you-apply/timeline",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": "Reciprocal exchange students are admitted on a no-fee-exchange basis with UC non-resident tuition and registration fees waived (confirmed across UCEAP / UC host reciprocity rules)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2694.44,
+      "max": 2694.44
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/budget",
+    "notes": "UCEAP Reciprocity Academic Year (~9 months) average budget sums Housing & Meals ($19,250) + Books & Supplies ($1,400) + Personal/Transportation ($3,600) = $24,250/academic year (~$2,694.44/month over 9 months); excl. $3,500 health insurance & campus/visa fees."
+  },
+  "living_cost_usd_est": {
+    "value": 13472.22,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/budget",
+    "notes": "5-month exchange semester estimate: $24,250 USD / 9 months = $2,694.444 USD/month * 5 months * 1.0 = $13,472.22 USD (already in USD, 1 USD = 1.0 USD, checked 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory UC health insurance / UC SHIP (~$3,500/year unless formal waiver approved), Document Fee ($68), Technology ($35–$60), Orientation ($20–$320), SEVIS ($220), Visa ($185), plus course material/lab fees.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/plan-your-studies/budget",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": "University housing is NOT guaranteed for incoming reciprocity students; strict deadlines apply for residence halls, International House, or private off-campus housing."
+  },
+  "housing_notes": {
+    "value": "University housing is not guaranteed; students apply early for campus residence halls, International House, or private rentals near their assigned UC campus.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://uceap.universityofcalifornia.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:131",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US quarter or semester units (Berkeley & Merced on semesters; other 7 UC campuses on quarters); most courses carry 3–5 units; reciprocity participants must enroll full-time.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu/after-you-apply/timeline",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US-style public research university system (semesters & quarters)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://reciprocity.uceap.universityofcalifornia.edu",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=131",
+    "notes": "Covers multiple University of California campuses (city listed as 'Multiple' in Excel row 131)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

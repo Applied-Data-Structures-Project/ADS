@@ -1,0 +1,394 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "universidad-carlos-iii-de-madrid-uc3m",
+  "excel_rows": [
+    122,
+    123
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1cKjf2JEzkySoHo9-EVY_HcJ79IoFfLUE"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/2024- 2025/COURSES TAUGHT IN ENGLISH Getafe Campus 24-25.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/2024- 2025/COURSES TAUGHT IN ENGLISH Leganes Campus 24-25.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/2024- 2025/UC3M Fact Sheet 2024_2025.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/2024- 2025/Useful Details.docx",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/0. UC3M English Proficiency Letter Template.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/3A. COURSES TAUGHT IN ENGLISH Getafe Campus 26-27.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/3B. COURSES TAUGHT IN ENGLISH Leganes Campus 26-27.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/4. HousingOptionsPartners.pdf",
+      "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/5. AUDIOVISUAL RESOURCES FOR UC3M PROMOTION.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/2024- 2025/COURSES TAUGHT IN ENGLISH Getafe Campus 24-25.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/2024- 2025/COURSES TAUGHT IN ENGLISH Leganes Campus 24-25.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/2024- 2025/UC3M Fact Sheet 2024_2025.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/2024- 2025/Useful Details.docx.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/0. UC3M English Proficiency Letter Template.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/3A. COURSES TAUGHT IN ENGLISH Getafe Campus 26-27.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/3B. COURSES TAUGHT IN ENGLISH Leganes Campus 26-27.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/4. HousingOptionsPartners.pdf.txt",
+      "data/raw/extracted/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/5. AUDIOVISUAL RESOURCES FOR UC3M PROMOTION.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Universidad Carlos III de Madrid (UC3M)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UC3M",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Madrid",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": "Excel agreement scope (row 123) states 'University-wide' (merged canonical record rows 122,123)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": "Excel agreement scope (row 123) states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": [
+      "Master's programs (unless explicitly authorized under Master agreement)",
+      "Hispanic Studies Program",
+      "Philosophy, Politics, and Economics",
+      "Science, Technology, and Humanities",
+      "Security Engineering / Public Security Management",
+      "Double Degree in Computer Engineering and Business Administration",
+      "Bachelor in Science",
+      "4th-year Robotics Engineering",
+      "Artificial Intelligence",
+      "Applied Mathematics",
+      "Neuroscience",
+      "Biomedical Sciences",
+      "Primary Education",
+      "Quantum Technology Engineering with Dual Mention"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=4",
+    "notes": "Restricted/excluded Bachelor degree programmes listed on Course Offer Guide 2026-27 p.4-5; Legal Clinic, Internships, and Final Degree Project excluded for non-Engineering schools."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "UC3M Fact Sheet 2026-27 p.4 explicitly states: 'Minimum GPA requirement: Not applicable. We rely on our partners' selection process.'"
+  },
+  "instruction_languages": {
+    "value": [
+      "Spanish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4",
+    "notes": "Courses offered in English, Spanish, or bilingual groups; extensive English course lists on Getafe and Leganes campuses."
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=10",
+    "notes": "Wide offer of courses taught in English across Getafe (3A PDF) and Leganes (3B PDF) 2026-27 lists; high-demand subjects subject to capacity."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 required for English-taught courses (referenced ~TOEFL 80 / IELTS 6.5 in UC3M English Proficiency Letter Template). No formal certificate upload is required by UC3M — partner home institution guarantees nominees hold B2 level. RHET 1020 waiver policy not mentioned.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4",
+    "notes": "CEFR B2 equivalency guidance in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/0. UC3M English Proficiency Letter Template.pdf#page=1."
+  },
+  "host_language_requirement": {
+    "value": "CEFR B2 in Spanish (for Spanish-taught courses) or CEFR B2 in English (for English-taught courses), certified/guaranteed by home partner university; C1 Spanish required for 'Spanish' Digital Humanities course.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4",
+    "notes": "Digital Humanities C1 rule on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=4."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-27 Fall Semester: Welcome Event Sep 4, 2026; Courses Sep 7 - Dec 11, 2026; Anticipated exams for Fall-only exchange students Dec 16-22, 2026 (Full-year students sit Fall exams Jan 11-25, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "notes": "Early vs Jan exam split explained in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4; calendar portal https://www.uc3m.es/bachelor-degree/practical-information/calendar-schedules."
+  },
+  "spring_term_dates": {
+    "value": "2026-27 Spring Semester: Welcome Event Jan 22, 2027; Courses Jan 26 - May 7, 2027; Exam period May 11-28, 2027; Extraordinary retakes Jun 14-30, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "notes": "Calendar portal https://www.uc3m.es/bachelor-degree/practical-information/calendar-schedules."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "notes": "Official UC3M exchange rules confirm tuition fee waiver for partner exchange students; optional Spanish Language Center courses carry an independent registration fee (Fact Sheet p.4 / Course Guide p.10)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 700.0,
+      "max": 800.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=7",
+    "notes": "UC3M Fact Sheet 2026-27 p.7 explicitly states: 'Living expenses in Madrid (including sharing an apartment, food and transportation) would be around 700/800 EUR/month.'"
+  },
+  "living_cost_usd_est": {
+    "value": 4144.5,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=7",
+    "notes": "Midpoint EUR 750.00/month (700-800 EUR/month) * 5 months = EUR 3,750.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 4,144.50 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived for exchange students. UC3M does not provide health insurance; incoming exchange students must arrange comprehensive travel/illness/accident insurance covering repatriation expenses due to illness or accident (Fact Sheet p.6).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/4. HousingOptionsPartners.pdf#page=1",
+    "notes": "UC3M Residence Halls (2 in Getafe, 1 in Leganes — semester students increasingly accommodated), plus partnered private student residences (LIV Student, MiCampus, Amro, Vivocoliving) and housing agencies."
+  },
+  "housing_notes": {
+    "value": "Options include UC3M Residence Halls (2 Getafe, 1 Leganes), partner residences (Getafe: LIV Student, MiCampus, Amro, Vivocoliving; Leganes: MiCampus), and verified housing agencies. Secure housing prior to arrival (Fact Sheet p.7).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/4. HousingOptionsPartners.pdf#page=1",
+    "notes": "Rental scam warning and Living in Madrid guide on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=7."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students receive a SIGMA Acceptance Letter to apply for a Spanish student visa at a Spanish embassy/consulate; must upload passport, visa, and insurance docs to SIGMA by Jul 20 (Fall/FY) or Jan 24 (Spring). Stays >6 months require a Foreigner's Identity Card (TIE) within 1 month of arrival. Spanish visa economic proof uses IPREM benchmark (~EUR 600/month * months of stay).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/ss/Satellite/UC3MInstitucional/en/TextoDosColumnas/1371219273906/International_Exchange_Students",
+    "notes": "Admission SIGMA upload workflow on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=3."
+  },
+  "official_website_url": {
+    "value": "https://www.uc3m.es/home",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:122,123",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "notes": "Portal info page also listed in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/5. AUDIOVISUAL RESOURCES FOR UC3M PROMOTION.pdf#page=1."
+  },
+  "course_catalog_url": {
+    "value": "https://www.uc3m.es/bachelor-degree/welcome",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/bachelor-degree/welcome",
+    "notes": "School degree links in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=4."
+  },
+  "english_course_list_url": {
+    "value": "https://www.uc3m.es/ss/Satellite/UC3MInstitucional/en/TextoDosColumnas/1371219273906/International_Exchange_Students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/5. AUDIOVISUAL RESOURCES FOR UC3M PROMOTION.pdf#page=1",
+    "notes": "International Exchange Students page hosts the 2026-27 English course offer PDFs for Getafe & Leganes campuses (local files 3A & 3B)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system: minimum 6 ECTS (1 course) and maximum 30 ECTS per semester (60 ECTS per full academic year); max 3 Humanities/Cross-curricula short courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=5",
+    "notes": "Also stated in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=5-6."
+  },
+  "course_restrictions_note": {
+    "value": "Non-European exchange students may enroll in courses across ALL UC3M schools (unlike Erasmus+, restricted to admitted school). Course enrollment is first-come, first-served with high-demand caps (plan backups). Distance exams are not allowed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=5",
+    "notes": "Full list of restricted/excluded degrees on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=4-5; no-distance-exam rule on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university online nomination",
+      "No separate online application form required post-nomination; upon admission email upload passport, visa, and health insurance documents via SIGMA"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Continuous assessment plus mandatory on-site final exams combining lecture and small practical/seminar sessions across 4 campuses; Fall semester exchange-only students take anticipated finals in December before Christmas.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4",
+    "notes": "Lecture/practicum split in data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/2. Course+Offer+Guide26-27.pdf#page=9."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=1",
+    "notes": "Four campuses in Madrid region: Getafe (Social Sciences/Law/Humanities/Health), Leganes (Engineering), Colmenarejo, and Puerta de Toledo."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "No airport pickup; Buddy program, Welcome Days, ESN UC3M, Student Support Center, psychological orientation in English & Spanish, special-needs support (register before Jul 15 Fall / Dec 15 Spring), and fee-paying Language Center Spanish courses.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=6",
+    "notes": "No-pickup & Buddy/Support/Special-Needs on data/raw/factsheets/Universidad Carlos III de Madrid (UC3M)/UC3M Materials/1. UC3M Fact Sheet 2026_2027.pdf#page=4,6,7."
+  },
+  "nomination_deadlines": {
+    "value": "2026-27 Non-European Mobility (MNE) nominations: Feb 20 - May 5, 2026 (Fall/FY) and Sep 1 - Oct 30, 2026 (Spring). Post-admission SIGMA document uploads due Jul 20 (Fall/FY) and Jan 24 (Spring).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uc3m.es/studies/international-exchange-students-in-UC3M-/bachelor-degrees/home",
+    "notes": "Erasmus+ nomination windows: Mar 13 - May 15, 2026 (Fall/FY) and Sep 15 - Oct 16, 2026 (Spring)."
+  },
+  "ext": {}
+}

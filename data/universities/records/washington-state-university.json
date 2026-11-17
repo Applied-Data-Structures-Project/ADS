@@ -1,0 +1,567 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "washington-state-university",
+  "excel_rows": [
+    159
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1gUVt9VvHy4kCZ7Ko0_pp6CthuJpK4jzk"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Washington State University/2024 -2025/Washington State University 2024-25.pdf",
+      "data/raw/factsheets/Washington State University/2025-2026/2025-2026 WSU Fact Sheet.pdf",
+      "data/raw/factsheets/Washington State University/2025-2026/WSU Exchange Brochure.pdf",
+      "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf",
+      "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 230 - Introduction to Financial Accounting.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 231 - Introduction to Managerial Accounting.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 330 - Intermediate Accounting I.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 331 - Intermediate Accounting II.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 335 - Taxation of Business Entities and Individuals.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Accounting (ACCTG)/ACCTG 338 - Cost Accounting.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Business Law (B_LAW)/B_LAW 210 - Law and the Legal Environment of Business.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 101 - Fundamentals of Microeconomics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 102 - Fundamentals of Macroeconomics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 181 - History of Economic Thought on Inequality.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 301 - Intermediate Microeconomic Theory with Calculus.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 302 - Intermediate Macroeconomic Analysis.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 305 - Intermediate Microeconomics without Calculus.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 310 - Statistics for Economists.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 311 - Introductory Econometrics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 320 - Money and Banking.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 321 - Economics of Sports in America.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 322 - Public Economics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 323 - Labor Economics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 326 - Aspects of Sustainable Development.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 327 - International Trade and Finance.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 329 - The Economics of Gaming.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 330 - Resources Economics Policy.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 335 - Business Finance Economics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 350 - Introduction to Farm and Ranch Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 351 - Introduction to Food and Agricultural Markets.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 352 - Business Management Economics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 404 - Economics for Managers.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 420 - Monetary and Financial Economics and Policy.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 425 - Industrial Organization.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 426 - Transportation Economics and Supply Chain Analysis.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 428 - Global Capitalism TOday Perspectives and Issues.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 430 - Managing the Global Environment.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 431 - Economic Analysis of Environmental and Natural Resource Policies.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 426 - Entrepreneurial Finance.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 485 - New Venture Planning.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 486- Launching New Ventures.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 489 - Entrepreneurial Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 490 - Entrepreneurial Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 223 - Personal Finance.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 325 - Introduction to Financial Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 330 - Introduction to Financial Wellbeing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 345 - Real Estate.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 350 - Risk and Insurance.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 421 - Financial Institutions and Intermediation.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 425 - Intermediate Financial Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 427 - Investment Analysis.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 429 - Financial Modeling.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 447 - Real Estate Finance and Investments.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 456 - Risk Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Finance (FIN)/FIN 481 - International Finance.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 301 - Introduction to Event Planning.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 350 - Beverage Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 358 - Foodservice Systems & Control.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 381 - Hospitality Leadership and Organizational Behavior.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 383 - Meeting and Convention Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 384 - Managed Services.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 480 - Marketing Strategy & Development.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 380 - International Business.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 415 - Law of International Trade.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 435 - International Tourism.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 453 - International Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 470 - International Trade and Finance (crosslisted as ECONS 327).pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 480 - Advanced International Business and Leadership.pdf",
+      "data/raw/factsheets/Washington State University/Courses/International Business (I_BUS)/I_BUS 482 - International Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 301 - Principles of Management and Organization.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 401 - Leading People and Organizations.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 415 - Managerial Effectiveness Through Diversity.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 450 - Personnel and Human Resources Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 455 Recruiting and Hiring Human Capital.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 456 - Evaluating and Rewarding Employees.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 483 - Management of Innovation and Change.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 485 - Negotiation Skills.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management (MGMT)/MGMT 487 - Sustainability and Corporate Social Responsibility.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 250 - Managing Information Technology.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 322 - Enterprise Business Process Analysis.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 325 - Enterprise Business Development.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 372 - Data Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 374 - Information Technology Infrastructure and Security.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 400 - Global Strategic Information Systems Leadership.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 420 - Business Intelligence.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Information Systems (MIS)/MIS 448 - Global IS Project Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 215 - Business Statistics.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 340 - Operations Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 452 - Supply Chain Management in the Digital Age.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 470 - Business Modeling with Spreadsheets.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 360 - Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 368 - Marketing Research.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 379 - Professional Sales.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 407 - Consumer Behavior.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 450 - Digital Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 467 - Consumer Judgment and Decision-Making.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 468 - Societal Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 478 - Sales Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 479 - Advanced Professional Sales.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 480 - Business to Business Marketing.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Marketing (MKTG)/MKTG 495 - Marketing Management.pdf",
+      "data/raw/factsheets/Washington State University/Courses/Syllabi List and Offerings.xlsx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Washington State University/2024 -2025/Washington State University 2024-25.pdf.txt",
+      "data/raw/extracted/Washington State University/2025-2026/2025-2026 WSU Fact Sheet.pdf.txt",
+      "data/raw/extracted/Washington State University/2025-2026/WSU Exchange Brochure.pdf.txt",
+      "data/raw/extracted/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf.txt",
+      "data/raw/extracted/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 230 - Introduction to Financial Accounting.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 231 - Introduction to Managerial Accounting.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 330 - Intermediate Accounting I.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 331 - Intermediate Accounting II.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 335 - Taxation of Business Entities and Individuals.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Accounting (ACCTG)/ACCTG 338 - Cost Accounting.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Business Law (B_LAW)/B_LAW 210 - Law and the Legal Environment of Business.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 101 - Fundamentals of Microeconomics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 102 - Fundamentals of Macroeconomics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 181 - History of Economic Thought on Inequality.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 301 - Intermediate Microeconomic Theory with Calculus.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 302 - Intermediate Macroeconomic Analysis.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 305 - Intermediate Microeconomics without Calculus.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 310 - Statistics for Economists.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 311 - Introductory Econometrics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 320 - Money and Banking.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 321 - Economics of Sports in America.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 322 - Public Economics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 323 - Labor Economics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 326 - Aspects of Sustainable Development.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 327 - International Trade and Finance.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 329 - The Economics of Gaming.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 330 - Resources Economics Policy.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 335 - Business Finance Economics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 350 - Introduction to Farm and Ranch Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 351 - Introduction to Food and Agricultural Markets.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 352 - Business Management Economics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 404 - Economics for Managers.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 420 - Monetary and Financial Economics and Policy.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 425 - Industrial Organization.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 426 - Transportation Economics and Supply Chain Analysis.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 428 - Global Capitalism TOday Perspectives and Issues.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 430 - Managing the Global Environment.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Economic Sciences (ECONS)/ECONS 431 - Economic Analysis of Environmental and Natural Resource Policies.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 426 - Entrepreneurial Finance.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 485 - New Venture Planning.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 486- Launching New Ventures.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 489 - Entrepreneurial Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Entrepreneurship (ENTRP)/ENTRP 490 - Entrepreneurial Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 223 - Personal Finance.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 325 - Introduction to Financial Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 330 - Introduction to Financial Wellbeing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 345 - Real Estate.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 350 - Risk and Insurance.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 421 - Financial Institutions and Intermediation.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 425 - Intermediate Financial Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 427 - Investment Analysis.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 429 - Financial Modeling.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 447 - Real Estate Finance and Investments.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 456 - Risk Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Finance (FIN)/FIN 481 - International Finance.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 301 - Introduction to Event Planning.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 350 - Beverage Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 358 - Foodservice Systems & Control.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 381 - Hospitality Leadership and Organizational Behavior.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 383 - Meeting and Convention Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 384 - Managed Services.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Hospitality Business Management (HBM)/HBM 480 - Marketing Strategy & Development.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 380 - International Business.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 415 - Law of International Trade.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 435 - International Tourism.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 453 - International Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 470 - International Trade and Finance (crosslisted as ECONS 327).pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 480 - Advanced International Business and Leadership.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/International Business (I_BUS)/I_BUS 482 - International Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 301 - Principles of Management and Organization.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 401 - Leading People and Organizations.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 415 - Managerial Effectiveness Through Diversity.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 450 - Personnel and Human Resources Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 455 Recruiting and Hiring Human Capital.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 456 - Evaluating and Rewarding Employees.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 483 - Management of Innovation and Change.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 485 - Negotiation Skills.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management (MGMT)/MGMT 487 - Sustainability and Corporate Social Responsibility.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 250 - Managing Information Technology.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 322 - Enterprise Business Process Analysis.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 325 - Enterprise Business Development.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 372 - Data Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 374 - Information Technology Infrastructure and Security.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 400 - Global Strategic Information Systems Leadership.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 420 - Business Intelligence.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Information Systems (MIS)/MIS 448 - Global IS Project Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 215 - Business Statistics.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 340 - Operations Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 452 - Supply Chain Management in the Digital Age.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Management Operations (MGTOP)/MGTOP 470 - Business Modeling with Spreadsheets.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 360 - Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 368 - Marketing Research.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 379 - Professional Sales.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 407 - Consumer Behavior.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 450 - Digital Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 467 - Consumer Judgment and Decision-Making.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 468 - Societal Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 478 - Sales Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 479 - Advanced Professional Sales.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 480 - Business to Business Marketing.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Marketing (MKTG)/MKTG 495 - Marketing Management.pdf.txt",
+      "data/raw/extracted/Washington State University/Courses/Syllabi List and Offerings.xlsx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Washington State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Washington",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "city": {
+    "value": "Pullman",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "https://wsu.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": null
+  },
+  "short_name": {
+    "value": "WSU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No specific semester-count prerequisite listed in WSU 2026-27 or 2025-26 Fact Sheets (exchange open to UG/GR per Excel, though 500+ grad courses closed per Fact Sheet p.2)."
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:159",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": [
+      "Non-Pullman campuses",
+      "500+ level graduate courses"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": "Courses outside the Pullman campus and 500+ graduate-level courses are not open to exchange students (further restrictions under Academics tab in myStudyAbroad)."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Good academic standing via home university/WSU 4.0 grading system noted on 2025-26 p.1; no fixed numeric incoming-exchange GPA threshold stated in Fact Sheets."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=1",
+    "notes": "All courses are taught in English."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=1",
+    "notes": "US land-grant research university teaching all courses in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "English test within past 2 years: Duolingo 105, IELTS 6.5, or TOEFL iBT 4 (2026 ETS 1-6 scale; 2025-26 sheet listed TOEFL iBT 79). Or qualify for Waiver Option E or F at https://ip.wsu.edu/future-students/requirements/.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Term (incl. exams): Mon Aug 24 - Fri Dec 18, 2026 (Mandatory Orientation Friday before first day of classes).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Term (incl. exams): Mon Jan 11 - Fri May 7, 2027 (Mandatory Orientation Friday prior).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=1",
+    "notes": "Bilateral exchange covers standard 12-18 credit load (base tuition omitted from COA table p.3); >18 credit overload incurs per-credit tuition (~$577.75/cr as of 2023 per 2025-26 p.1)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2218,
+      "max": 2218
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": "Derived monthly cost from WSU 2024-25 Cost of Attendance (latest published itemized sheet in Drive) divided by 5 months: Room & Board $8,887 + Books & Supplies $381 + Transportation/Misc $1,821 = $11,089/semester -> $2,217.80/mo (~$2,218/mo). Total COA incl. Mandatory Fees ($794) + Health Insurance ($1,100 Fall / $1,532 Spring) = $12,933/sem ($25,866/AY)."
+  },
+  "living_cost_usd_est": {
+    "value": 11090.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": "5-month estimate derived from monthly USD range 2,218/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 2,218.0 USD = 11,090.00 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "2024-25 Fact Sheet baseline per semester: Mandatory Fees $794/sem + mandatory WSU International Student Health Insurance $1,100 (Fall) / $1,532 (Spring/Summer) / $2,632 (AY) — strict US-comparable waiver rules (most students double-covered).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": "2026-27 Fact Sheet p.2 states 'On-campus housing is guaranteed'; 2025-26 p.3 notes all exchange students are required to live in University housing (residence halls or University apartments) during vacation periods as well."
+  },
+  "housing_notes": {
+    "value": "Arranged via WSU Housing & Residence Life (http://housing.wsu.edu/); variable dining plans available in residence halls (~$8,887/sem combined room & board in 2024-25 COA).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": "None; 2025-26 Fact Sheet p.3 explicitly states 'Exchange students are not eligible to apply for University scholarships'.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Visa (Form DS-2019) requires proof of funding equating the billable Cost of Attendance under myStudyAbroad Costs tab (Certificate of Finances; $12,933/sem or $25,866/AY in 2024-25 baseline).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://mystudyabroad.wsu.edu/?go=Exchange2WSU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://catalog.wsu.edu/Pullman/Courses",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=1",
+    "notes": "Live term schedule of classes also linked on 2026-27 p.2 at https://schedules.wsu.edu/."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://schedules.wsu.edu/ and http://catalog.wsu.edu/Pullman/Courses are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours (1 cr = 15 in-class hrs; most courses 3 cr). Limit: 12 credits min (immigration floor) to 18 credits max; 15 credits recommended (>18 cr billed extra per credit).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Restricted to WSU Pullman campus (100-400 undergraduate levels; 500+ graduate courses and non-Pullman campuses excluded); prerequisites enforced and preferred courses cannot be guaranteed.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online nomination (Signature Verification Form, signed ID/Passport copy, Official Transcripts, optional Language of Instruction letter)",
+      "Online exchange application",
+      "Proof of funding (Certificate of Finances)",
+      "Proof of English proficiency (within 2 years, or Waiver Option E/F)",
+      "Course selection form"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2026-2027/WSU 2026-2027 Fact Sheet.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "US public land-grant research university (~15:1 student-faculty ratio, 200+ study fields; syllabi strictly enforce assignment due dates even without in-class reminders).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://pullman.wsu.edu/",
+    "notes": "pullman.wsu.edu explicitly describes WSU Pullman as 'Located in a classic college town' (2025-26 Fact Sheet p.1 gives town population ~31,000)."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Pullman campus set in Palouse agricultural/wheat region (2025-26 p.1); no explicit rural vs suburban enum term used."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated in Fact Sheets or wsu.edu (US English-speaking college town)."
+  },
+  "international_support_services": {
+    "value": "WSU Education Abroad / Office of International Programs, mandatory Orientation, Pullman Regional Airport arrival pickup (or Spokane shuttle), Cougar Health insurance, Recreation Center, 250+ clubs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall/AY: Nomination Apr 1, Application Apr 15. Spring/Calendar Year: Nomination Oct 1, Application Oct 15 (note: 2026-27 Fact Sheet p.1 erroneously transposed Fall/Spring headings vs 2025-26 Fact Sheet p.2 and ip.wsu.edu).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Washington State University/2025-2026/WSU Fact Sheet 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

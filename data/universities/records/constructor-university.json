@@ -1,0 +1,334 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "constructor-university",
+  "excel_rows": [
+    23
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Constructor University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Constructor University",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/",
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bremen",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "check_slots",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Excel Col D: 'Need to check slots'"
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": "Requires GPA equivalent to 3.0 on the U.S. scale (B average); applicants with lower GPAs are still considered if their home university vouches for them."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": "All-English residential campus instruction."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Arrival Aug 24; Orientation Aug 25–31; Classes Sep 1–Dec 7; Final exams Dec 10–21; Checkout Dec 23, 2026 (Winter break ends Jan 6, 2027; Intersession Jan 7–20, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/academics/academic-calendar",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester examinations are held in May (retake/make-up exams in August); exact 2027 Spring class dates not extracted in search.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/student-services/student-faq-course-registration",
+    "notes": "Verify updated Spring dates on https://constructor.university/academics/academic-calendar."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": "Tuition is waived or covered for partner-university exchange students (whereas non-partner free-movers pay full tuition)."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory semester charges include University fee (€95–120/sem), Deutschlandsemesterticket (€189–200.40 Fall / €264.60–280.56 Spring), Rundfunkbeitrag (~€28/sem), one-time enrollment fee (€640 EU / €940 non-EU), refundable housing deposit (~€1,000), and health insurance (~€1,400–1,550/year).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/study-abroad-fees",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/residential-life/housing",
+    "notes": "On-campus residential colleges offer Type A/B/C rooms (utilities bundled; ~€1,890–2,500+/sem room plus ~€2,625/sem meal plan) alongside off-campus options (e.g., Vegesack)."
+  },
+  "housing_notes": {
+    "value": "Residential college housing bundles utilities, heating, water, and internet (Type B single with shared bath; rooms from ~€1,890–2,500+/semester plus ~€2,625/semester meal plan), or students may live off campus in nearby Vegesack.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/residential-life/housing",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://constructor.university/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:23",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://constructor.university/student-life/student-services/student-faq-course-registration",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/student-services/student-faq-course-registration",
+    "notes": "Course catalog and module registration run via CampusNet (campusnet.constructor.university)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Modules may contain multiple nested components; students must register individually in CampusNet for every course component inside a module rather than only the parent module.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/student-services/student-faq-course-registration",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Private English-language residential campus university in Bremen organized around modular coursework and CampusNet course/exam registration.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/student-services/student-faq-course-registration",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: nom Mar 15 / app Apr 15; Spring: nom Oct 15 / app Nov 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://constructor.university/student-life/study-abroad/incoming-students",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,362 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "cetys-universidad",
+  "excel_rows": [
+    18
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1wTieJCFwXjV65YEJbEdpCq9YAs9aikRq"
+    ],
+    "local_files": [
+      "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/CETYS/2025/CETYS Fact Sheet 2025.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "CETYS Universidad",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "short_name": {
+    "value": "CETYS",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Mexico",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Baja",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "region": {
+    "value": "Latin America & Caribbean",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": "Excel agreement scope states 'University-wide'."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No incoming exchange GPA requirement is stated in CETYS Fact Sheet 2025 (85/100 GPA requirement on cetys.mx applies to outgoing CETYS students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "Spanish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": "Primary instruction is Spanish; Mexicali and Tijuana campuses also offer 100% English 'Global Programs' in International Business and Industrial Engineering, plus selected English courses in Ensenada."
+  },
+  "english_course_availability": {
+    "value": "limited",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": "100% English 'Global Programs' offered in International Business and Industrial Engineering (Mexicali & Tijuana) plus selected English courses at Ensenada."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum CEFR B2 (upper intermediate) proficiency required for courses in English; proof of English or Spanish proficiency is required in the application (RHET 1020 waiver not mentioned).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum CEFR B2 (upper intermediate) in Spanish for Spanish-taught courses, or CEFR B2 in English for English Global Programs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY2025 reference pattern: Arrival/pickup Jul 28-31; Orientation Aug 1; Semester (incl. exams) Aug 4 - Dec 10 (see https://www.cetys.mx/en/school-calendar/ by campus for 2026-27).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": "2026-27 dynamic campus calendars hosted at https://www.cetys.mx/en/school-calendar/."
+  },
+  "spring_term_dates": {
+    "value": "AY2025 reference pattern: Arrival/pickup Jan 13-16; Orientation Jan 17; Semester (incl. exams) Jan 20 - Jun 3 (see https://www.cetys.mx/en/school-calendar/ by campus for 2026-27).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": "2026-27 dynamic campus calendars hosted at https://www.cetys.mx/en/school-calendar/."
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=3",
+    "notes": "Fact Sheet p.3 states: 'Tuition Fees: None, if the home institution has an exchange agreement with CETYS.'"
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 600.0,
+      "max": 600.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": "Fact sheet p.4 explicitly publishes monthly living estimate directly in USD: 'Estimated costs per month: USD $600 (500-550 Euros)' (shared housing USD $250-$300 + utilities, meals USD $20/day, cafeteria lunch USD $5, bus USD $0.70)."
+  },
+  "living_cost_usd_est": {
+    "value": 3000.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (published directly in USD by CETYS); 5-month semester estimate = USD $600/month * 5 months = 3,000.00 USD (fact sheet also notes 500-550 EUR/month equivalent)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fees waived under partner agreement. Health insurance (including COVID-19 coverage) is mandatory for all students; students must show proof prior to arrival or purchase insurance at CETYS upon arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": "Fact sheet p.4 states: 'There are no dormitories, facilities at CETYS. The international office will provide a list of options; however the students are free to select their own housing options.'"
+  },
+  "housing_notes": {
+    "value": "No on-campus dormitories; International Office supplies a list of off-campus housing options. Shared student housing estimated at USD $250-$300/month plus utilities.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "CETYS assists incoming exchange students in obtaining student visas when required; non-restricted nationalities staying <=180 days may enter under Mexico's FMM/visitor rules while restricted nationalities or >180-day stays require a consular Mexican student visa prior to arrival.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.cetys.mx/en/international-programs/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:18",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.cetys.mx/en/international-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.cetys.mx/en/international-students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Academic program lists are campus-specific; request syllabi from Ensenada (internacionales.ens@cetys.mx), Tijuana (internacionales.tij@cetys.mx), or Mexicali (internacionales.mxli@cetys.mx)."
+  },
+  "english_course_list_url": {
+    "value": "https://www.cetys.mx/en/academic-programs/undergraduate-programs/international-business/",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": "100% English Global Programs at Mexicali/Tijuana also include Industrial Engineering (https://www.cetys.mx/en/academic-programs/undergraduate-programs/industrial-engineering/); Ensenada English list maintained via Google Doc in Fact Sheet p.2."
+  },
+  "credit_system_and_load": {
+    "value": "Up to 5 courses per semester; 1 CETYS course = 8 credits (64 contact hours over 16 weeks, 4 hours/week).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Course availability depends on selected campus (Mexicali, Tijuana, or Ensenada); English Global Programs are only on Mexicali/Tijuana, while Spanish courses for non-credit are offered at Ensenada.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online CETYS e-application",
+      "Official academic transcript",
+      "Letter of recommendation from home faculty member",
+      "Proof of Spanish or English language proficiency (CEFR B2)",
+      "Letter of intent",
+      "Copy of valid passport"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Agreement covers three Baja California campuses (Mexicali, Tijuana, Ensenada); no single city_tier applies across Excel city 'Baja'."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=1",
+    "notes": "Three campuses across Baja California: Mexicali, Tijuana, and Ensenada International Campus."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Free airport pickup from Mexicali, Tijuana, or San Diego (US) airports; orientation day; non-credit Spanish language courses and Buddy Program at Ensenada International Campus.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=4",
+    "notes": "Orientation and campus coordinator contacts listed on p.1-2."
+  },
+  "nomination_deadlines": {
+    "value": "AY2025 pattern: Spring nomination Sep 1 - Nov 1 / application Nov 15; Fall nomination Mar 1 - May 15 / application May 30.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/CETYS/2025/CETYS Fact Sheet 2025.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

@@ -1,0 +1,346 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-ljubljana",
+  "excel_rows": [
+    139
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Ljubljana",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "short_name": {
+    "value": "University of Ljubljana",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "country": {
+    "value": "Slovenia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Ljubljana",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank in partner Excel agreement sheet; host offers Bachelor, Master, and Doctoral exchanges depending on faculty."
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank agreement scope in partner Excel list."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank agreement scope in partner Excel list."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Slovenian",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ef.uni-lj.si/en/international-exchange/incoming-students",
+    "notes": "Decentralized across 23 faculties and 3 academies, many publishing dedicated English course lists (e.g., SEB LU offers 120+ Bachelor/Master courses in English, plus Social Sciences, Arts, Education, Computer Science, Law)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native speakers taking English-taught courses must submit proof of minimum CEFR B2 English proficiency (home-institution language certificate, transcript of prior English-medium courses, or standardized test scores; specific faculty requirements vary and RHET 1020 waiver policy is not explicitly specified).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "Minimum CEFR B2 proficiency in the language of instruction (English or Slovenian depending on chosen courses).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank in partner Excel agreement sheet; University of Ljubljana operates Winter (Fall) and Summer (Spring) semesters."
+  },
+  "fall_term_dates": {
+    "value": "2026-27 Winter Semester: Orientation Days Sep 28-30, 2026; Lectures Oct 1, 2026 - Jan 15, 2027 (Christmas break Dec 25 - Jan 3); Examination period Jan 18 - Feb 12, 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/_files/129759/studijski-koledar-ul-2026-2027.pdf",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2026-27 Second (Summer) Semester: Lectures Feb 15 - Jun 2, 2027; Spring Examination Period Jun 3 - Jun 30, 2027 (Autumn exam period Aug 23 - Sep 17, 2027; individual faculty dates may vary slightly).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/_files/129759/studijski-koledar-ul-2026-2027.pdf",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/study/international-students/tuition-fees-and-other-study-contributions",
+    "notes": "Official UL policy states exchange students are exempt from paying tuition fees."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 500.0,
+      "max": 700.0
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/information-for-international-students/exchange-students/accommodation-cost-of-living-and-transport",
+    "notes": "Official UL living guide states approx. 500-700 EUR/month (dorms ~EUR 119.28-230.89 avg EUR 197.44 + ~EUR 30 expenses; private housing EUR 200-500; food EUR 200-300 with subsidized student 'boni' meals; Urbana monthly bus pass EUR 20)."
+  },
+  "living_cost_usd_est": {
+    "value": 3315.6,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/information-for-international-students/exchange-students/accommodation-cost-of-living-and-transport",
+    "notes": "Midpoint EUR 600.00/month (from official 500-700 EUR/month guide) * 5 months = EUR 3,000.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 3,315.60 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Exchange students are exempt from tuition fees. Valid health insurance covering Slovenia is mandatory for entry/residence permits for non-EU nationals (bilateral social-security holders must register locally upon arrival).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/international-students/entry-and-permits",
+    "notes": "Tuition exemption sourced from https://www.uni-lj.si/study/international-students/tuition-fees-and-other-study-contributions."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/international-students/accommodation-and-transport",
+    "notes": "UL does not own/manage dormitories directly, but a limited number of shared double rooms are allocated first-come, first-served based on timestamp (applications open mid-May); ŠOU assists with private rentals."
+  },
+  "housing_notes": {
+    "value": "Limited dormitory spots for exchange students (shared double rooms, average EUR 197.44/mo, range EUR 119.28-230.89/mo plus ~EUR 30/mo expenses) allocated first-come, first-served; private rooms/apartments range EUR 200-500/mo.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/international-students/accommodation-and-transport",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "EU/EEA nationals enter with passport/ID and register temporary residence for stays >90 days. Non-EU/EEA nationals require a Type D visa and/or temporary residence permit for study applied for in advance via a Slovenian embassy/consulate with valid health insurance.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/international-students/entry-and-permits",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.uni-lj.si/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:139",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No single central catalog covers all 23 faculties and 3 academies; consult host faculty portals (e.g. SEB LU https://www.ef.uni-lj.si/en/international-exchange/incoming-students, Arts https://www.ff.uni-lj.si/en/study/exchange-students/courses-english, Social Sciences https://www.fdv.uni-lj.si/en/study/exchange-programmes, Education https://www.pef.uni-lj.si/en/study/exchange-students/courses-in-english/)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Published individually per faculty rather than one central URL (e.g. SEB LU https://www.ef.uni-lj.si/en/international-exchange/incoming-students)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system (60 ECTS/academic year; standard semester load up to 30 ECTS at Bachelor level and up to 35 ECTS at Master level; typical course carries 6-7 ECTS).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/international-students/exchange-students",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university official nomination (EWP or email to intern.office@uni-lj.si / host faculty)",
+      "Online UL exchange application (no paper copies required)",
+      "Transcript of Records",
+      "Learning Agreement / Online Learning Agreement (OLA)",
+      "Language certificate (minimum CEFR B2 in English or Slovenian)",
+      "Copy of passport or personal ID card"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/university/about-us",
+    "notes": "Decentralized layout across Ljubljana with 23 faculties and 3 art academies (https://www.uni-lj.si/en/university/faculties-and-academies)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Central Office of International Relations (intern.office@uni-lj.si), Info tujci international student info point, faculty international offices, and ŠOU v Ljubljani / ESN Ljubljana support.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter semester / Full academic year: May 15. Summer (Spring) semester: November 15.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.uni-lj.si/en/study/exchanges/exchange-students",
+    "notes": null
+  },
+  "ext": {}
+}

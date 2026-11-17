@@ -1,0 +1,345 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "ebs-university-for-business-and-law",
+  "excel_rows": [
+    30
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "EBS University for Business and Law",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Oestrich-Winkel",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Good academic standing clause appears in an EBS Business School Fact Sheet PDF hosted under downloads on ebs.edu whose direct PDF URL did not print verbatim in search results (third-party partner sheets excluded)."
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": "Mapped from Excel scope 'Business Administration'."
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": "Verified via Excel scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": "EBS Business Term coursework is taught in English with an optional 3 ECTS German language course."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": "EBS Business Term provides full English-taught business curriculum for exchange students."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "TOEFL/IELTS/TOEIC/Cambridge proficiency cutoffs appear in an EBS Business School Fact Sheet PDF hosted under downloads on ebs.edu whose direct PDF URL did not print verbatim in search results (third-party partner sheets excluded)."
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Aug 20 – Dec 23, 2026 (optional Intensive German Aug 10–14, mandatory Orientation Aug 19–21, lectures begin Aug 24).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Jan 14 – May 14, 2027 (includes exams).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": "Bilateral partner exchange students do not pay EBS tuition; non-partner Visiting Students pay EBS tuition/enrollment fees."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/housing",
+    "notes": "EBS does not have on-campus dormitories; enrolled students receive access to the internal myEBS housing portal to find shared/private local rentals (e.g. Oestrich-Winkel, Wiesbaden, Mainz, SWAN1628)."
+  },
+  "housing_notes": {
+    "value": "No on-campus dorms; myEBS internal housing platform opened upon enrollment; early searching advised across Oestrich-Winkel and Rheingau/Wiesbaden/Mainz.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/housing",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.ebs.edu/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:30",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ebs.edu/en/program/ebs-business-term",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; recommended load 20–30 ECTS per semester plus optional 3 ECTS German language course.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Students must stay until final exams are completed; exam schedules are not modified for early flights.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall: Nomination Apr 25, Application May 1; Spring: Nomination Sep 25, Application Oct 1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ebs.edu/en/program/ebs-business-term",
+    "notes": null
+  },
+  "ext": {}
+}

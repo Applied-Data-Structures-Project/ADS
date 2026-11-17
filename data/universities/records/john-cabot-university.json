@@ -1,0 +1,350 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "john-cabot-university",
+  "excel_rows": [
+    53
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1Dstuhj7JqNcXlKMUpigLJQKQzLVALnhP"
+    ],
+    "local_files": [
+      "data/raw/factsheets/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx",
+      "data/raw/factsheets/John Cabot University/2024-2025/JCU Student Engagement Fall 2024 Calendar.pdf",
+      "data/raw/factsheets/John Cabot University/2024-2025/Spring 2025 Preliminary Schedule.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx.txt",
+      "data/raw/extracted/John Cabot University/2024-2025/JCU Student Engagement Fall 2024 Calendar.pdf.txt",
+      "data/raw/extracted/John Cabot University/2024-2025/Spring 2025 Preliminary Schedule.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "John Cabot University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "short_name": {
+    "value": "JCU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx",
+    "notes": null
+  },
+  "country": {
+    "value": "Italy",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Rome",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide/ computer science added 2025",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "notes": "English-language American liberal arts curriculum in Rome (JCU Fact Sheet 2020-2021)."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "notes": "~200 courses in English across liberal arts, business, communications, international affairs, and computer science."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Evidence of English proficiency required per https://www.johncabot.edu/admissions/undergraduate/evidence-of-english-language-proficiency.aspx; no specific RHET 1020 waiver mentioned.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "CISI mandatory health insurance (~$390/semester per 2026-2027 USD COA; http://www.culturalinsurance.com/johncabot/ linked in JCU DOCX); Visa & Permit to Stay combined estimate ~$270/semester. Non-waived visiting full-time tuition schedule is $15,000/sem (US/CA).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/financial-aid/cost-of-attendance-usd.aspx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx",
+    "notes": "JCU residence apartments in Trastevere/Gianicolo (Gianicolo Residence, Lungara Apartments) available via JCU Housing office (https://www.johncabot.edu/housing-residential-life/options.aspx), limited capacity."
+  },
+  "housing_notes": {
+    "value": "JCU Housing (optional basic option, e.g., Gianicolo Residence or Lungara Apartments): $7,050/semester ($14,100/year) in 2026-2027 USD COA; optional Meal Plan $2,075/semester.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/financial-aid/cost-of-attendance-usd.aspx",
+    "notes": "Housing options overview at https://www.johncabot.edu/housing-residential-life/options.aspx."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.johncabot.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:53",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.johncabot.edu/admissions/study-abroad-rome-italy/default.aspx",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/John Cabot University/2020-2021/John Cabot University Fact Sheet.docx",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/academics/courses/course-schedules-syllabi.aspx",
+    "notes": "All listed JCU courses are taught in English."
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: full-time undergraduate load is 10-17 credit hours per semester (typically 12-16 credits / 4 courses).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.johncabot.edu/financial-aid/cost-of-attendance-usd.aspx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": "American-accredited liberal arts university in Rome (Trastevere) with US credit structure, interactive seminar-style classes, and active student engagement/excursion programming.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/John Cabot University/2024-2025/JCU Student Engagement Fall 2024 Calendar.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "ext": {}
+}

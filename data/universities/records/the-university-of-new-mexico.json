@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-university-of-new-mexico",
+  "excel_rows": [
+    118
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1FbBbBXA8JPXOt3XyKW08jDiuzLYMti6S",
+      "https://drive.google.com/drive/folders/1mo26pB5cCITvJwYW0yEyyucIT-4kPUXF"
+    ],
+    "local_files": [
+      "data/raw/factsheets/New Mexico/2021- 2022/University of New Mexico Exchange Flyer.pdf",
+      "data/raw/factsheets/TUo New Mexico/Copy of University of New Mexico Information Sheet 2021-2022 (1).pdf",
+      "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/New Mexico/2021- 2022/University of New Mexico Exchange Flyer.pdf.txt",
+      "data/raw/extracted/TUo New Mexico/Copy of University of New Mexico Information Sheet 2021-2022 (1).pdf.txt",
+      "data/raw/extracted/TUo New Mexico/UNM Information Sheet 2025-2026.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The University of New Mexico",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New Mexico",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "city": {
+    "value": "Albuquerque",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring",
+      "Summer"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": "Fall/Spring/Summer/Winter | Excel Col E also notes Winter term"
+  },
+  "official_website_url": {
+    "value": "http://www.unm.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UNM",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Exchange students exempt from English tests if having >=1 yr full-time study at an English-medium university; UG/GR eligible per agreement.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:118",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": [
+      "School of Medicine",
+      "Nursing",
+      "Pharmacy"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=4",
+    "notes": "Fact Sheet p.4 explicitly states School of Medicine, Nursing, and Pharmacy do not allow exchange student enrollment."
+  },
+  "min_gpa_host": {
+    "value": 3.0,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": "Official transcript displaying at least 3.0 cumulative GPA out of 4.0."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=4",
+    "notes": "US state flagship university teaching all regular programs in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Exempt if attending a university where English is the medium of instruction for >=1 year full-time (applies to AUC) or qualifying HS diploma <=2 yrs old. Otherwise: UG TOEFL iBT 68 / IELTS 6.0 / PTE 47 / Duolingo 95 / C1-C2 169; GR iBT 79 / IELTS 6.5 / PTE 53 / Duolingo 105 / C1-C2 176; Law School TOEFL iBT 100.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "English only.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall Semester: Classes Aug 17 - Dec 12, 2026 (Fall Break Oct 8-9, 2026); arrive >=1 week prior for orientation (Fact Sheet p.2).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.unm.edu/academic-calendar/ten-year-semester-dates-calendar.html",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring Semester: Classes Jan 18 - May 15, 2027 (Spring Break Mar 14-21, 2027); arrive >=1 week prior (Fact Sheet p.2).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://registrar.unm.edu/academic-calendar/ten-year-semester-dates-calendar.html",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=6",
+    "notes": "Fact Sheet p.6 states: 'exchange students are not required to pay UNM tuition' (non-tuition mandatory/course fees still apply)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1782,
+      "max": 1964
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://bursar.unm.edu/tuition-and-fees/tuition-fee-information.html",
+    "notes": "Derived monthly UG living budget from UNM 2026-27 academic-year Cost of Attendance divided by 10 months (2 semesters x 5 mo): Housing & Food $10,648-$12,471 + Books $1,869 + Transportation $2,498 + Misc/Personal $2,800 = $17,815-$19,638/AY ($8,907.50-$9,819/sem -> $1,781.50-$1,963.80/mo). Visa financial proof minimum is $7,500/sem ($15,000/AY) per Fact Sheet p.3."
+  },
+  "living_cost_usd_est": {
+    "value": 9365.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://bursar.unm.edu/tuition-and-fees/tuition-fee-information.html",
+    "notes": "5-month estimate derived from monthly USD range 1,782-1,964 (midpoint 1,873.0)/month. No FX conversion (1 USD = 1.0 USD; 5-month equivalent = 5 * 1,873.0 USD = 9,365.00 USD), calculated 2026-11-15."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Per semester: Visa Processing & Admin Fee $275, Mandatory IT Fee $50, Department/Upper-Division Course Fees $25-$400 per class, plus mandatory UNM-negotiated International Student Health Insurance (non-US citizens; emergency coverage only) and US Gov SEVIS fee.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=6",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=6",
+    "notes": "Exchange students arrange their own housing using UNM resources: on-campus housing (http://housing.unm.edu/), off-campus portal (https://och.unm.edu/), and ISSS Albuquerque housing guide."
+  },
+  "housing_notes": {
+    "value": "On-campus housing and off-campus listings provided on Fact Sheet p.6 (Housing & Food AY 2026-27 estimate $10,648-$12,471 on unm.edu COA).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=6",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No UNM incoming exchange grant verified."
+  },
+  "citizenship_restrictions": {
+    "value": "US citizens cannot purchase UNM International Student Health Insurance (contact exchange@unm.edu).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=6",
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Visa requires liquid financial proof (<6 months old; no loans/credit cards/investments): $7,500 (1 semester), $15,000 (Academic Year Aug-May), $17,500 (Calendar Year Jan-Dec), or $4,375 (Summer), plus US SEVIS fee.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studyabroad.unm.edu/exchange",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=1",
+    "notes": "Incoming guide also at https://isss.unm.edu/students/coming-to-unm/exchange-students-info.html."
+  },
+  "course_catalog_url": {
+    "value": "https://registrar.unm.edu/UNM%20Catalog/index.html",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=4",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All courses in https://registrar.unm.edu/UNM%20Catalog/index.html are taught in English; no separate English-only URL."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credits (3 cr = 3 contact hrs/wk over 16 weeks). Immigration minimum: 12 credits UG, 9 credits GR per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=5",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "School of Medicine, Nursing, and Pharmacy are completely closed to exchange students; restrictions apply to Law, Nutrition, and Architecture courses (contact exchange@unm.edu).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=4",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online home advisor nomination",
+      "Online UNM exchange application",
+      "Official transcript (>=3.0 GPA, certified English translation)",
+      "Proof of finances (<6 months old)",
+      "English proficiency proof (unless >=1 yr English-medium study exemption)",
+      "Passport biographical page copy",
+      "List of proposed UNM courses"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=3",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "16-week semester US state research university (A-F grading rubric; transcripts issued 45-60 days post-term, $10 extra copies).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=5",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Albuquerque, New Mexico; city population figure not verified inside Fact Sheet."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Main campus in Albuquerque, NM; campus_type label not explicitly classified in Fact Sheet."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Not explicitly rated on unm.edu or Fact Sheet (US English-speaking campus)."
+  },
+  "international_support_services": {
+    "value": "Global Education Office / ISSS advising, check-in & orientation (>=1 wk prior), housing portals, and negotiated international student medical coverage.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=1",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester: Partner Nomination Mar 15, Student Application Mar 31. Spring Semester: Partner Nomination Sep 15, Student Application Sep 30 (nomination links emailed Feb/Aug).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/TUo New Mexico/UNM Information Sheet 2025-2026.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

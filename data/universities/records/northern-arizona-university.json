@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "northern-arizona-university",
+  "excel_rows": [
+    78
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1sV9gdJGwzso49C69VnnpzRUjIpjHfsaf"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf",
+      "data/raw/factsheets/Northern Arizona University/NAU Info for Sp. 25.docx",
+      "data/raw/factsheets/Northern Arizona University/NAU exchange program flyer.pdf",
+      "data/raw/factsheets/Northern Arizona University/Northern Arizona University.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Northern Arizona University/Fact Sheet 2024-25.pdf.txt",
+      "data/raw/extracted/Northern Arizona University/NAU Info for Sp. 25.docx.txt",
+      "data/raw/extracted/Northern Arizona University/NAU exchange program flyer.pdf.txt",
+      "data/raw/extracted/Northern Arizona University/Northern Arizona University.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Northern Arizona University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "short_name": {
+    "value": "NAU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Arizona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "city": {
+    "value": "Flagstaff",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 2.5/4.0 cumulative GPA and official home-university nomination required.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": "Excel agreement_scope_raw is 'University-wide' (note Dental Hygiene and Nursing excluded)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Dental Hygiene",
+      "Nursing"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": "Minimum 2.5 cumulative GPA on a 4.0 scale confirmed on https://nau.edu/isss/exchange-students/."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum TOEFL iBT 70 (code 4006; MyBestScore accepted; 3.5 on updated TOEFL scale), IELTS 6.0, Duolingo 95, European CEFR B2 (for European exchange), or native/English-medium school documentation. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/isss/exchange-students/",
+    "notes": "TOEFL 70 / IELTS 6 also in data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required (see english_proficiency_and_rhet1020).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-24 to 2026-12-11 (AY 2026-2027 Fall term)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/registrar/important-dates/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-11 to 2027-05-07 (AY 2026-2027 Spring term)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/registrar/important-dates/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/center-international-education/tuition-fees/",
+    "notes": "Reciprocal incoming partner exchange students pay tuition at their home university while covering NAU housing, meals, mandatory SHIP health insurance, and personal fees (the $18,000 WUE tuition figure applies to domestic WUE students, not bilateral international exchange)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1753,
+      "max": 1753
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": "Derived as $8,765 / 5 months = $1,753/month from 2024-2025 Fact Sheet 1-semester exchange living items ($4,380 housing + $2,885 meals + at least $1,500 personal expenses = $8,765/sem, excluding Books $450/sem and mandatory SHIP health insurance $1,088 Fall / $1,788 Spring)."
+  },
+  "living_cost_usd_est": {
+    "value": 8765.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": "1-semester USD living estimate summing Housing ($4,380) + Meals ($2,885) + Personal ($1,500 minimum) = $8,765.00 USD from 2024-2025 Fact Sheet (excluding Books $450 and SHIP insurance; already in USD, recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "NAU Student Health Insurance Plan (SHIP) is strictly mandatory for all international exchange students per Arizona Board of Regents policy and cannot be waived ($1,838 Spring 2027 / ~$2,956 full year on campus health site; 2024-25 factsheet listed $1,088 Fall / $1,788 Spring). Mandatory immunizations (MMR) required prior to class registration.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://in.nau.edu/campus-health-services/student-health-insurance-plan-ship/",
+    "notes": "Immunization requirement confirmed on NAU Fact Sheet 2024-25.pdf#page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": "On-campus residence halls (including NAU International House) are available after admission, though on-campus capacity is limited (apply immediately upon admission)."
+  },
+  "housing_notes": {
+    "value": "Residence halls & NAU International House (~$4,380/sem housing + $2,885/sem meals in 2024-25 Fact Sheet; 2025-26/2026-27 housing portal at http://nau.edu/residence-life). Single-semester exchange students typically pay ~60% of academic-year housing rate.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 visa (Form DS-2019) required; ISSS requires English-language bank statements or financial guarantee covering total estimated fees and living expenses for the stay in Flagstaff.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/isss/exchange-students/",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://nau.edu/?utm_source=google%20maps&utm_medium=organic",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:78",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://nau.edu/isss/exchange-students/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/isss/exchange-students/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: minimum 12 credits to maximum 19 credits per semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "All majors open to exchange students EXCEPT Dental Hygiene and Nursing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://nau.edu/isss/exchange-students/",
+    "notes": "Flagstaff, Arizona described by NAU as a mountain college town at 7,000 ft elevation."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "ISSS J-1 DS-2019 support, NAU International House living-learning community, and Campus Health Services.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=2",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester: nomination April 1, application April 15. Spring Semester: nomination October 1, application October 15 (late applications considered case-by-case).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Northern Arizona University/Fact Sheet 2024-25.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

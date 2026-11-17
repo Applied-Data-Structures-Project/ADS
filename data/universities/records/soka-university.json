@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "soka-university",
+  "excel_rows": [
+    100
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1MIJHqNDeAxX4PGB7Tl2F8eazrZrdQONA"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.docx",
+      "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Soka University/Fact Sheet Spring semeter 2022_Soka University.docx.txt",
+      "data/raw/extracted/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Soka University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Japan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Hachioji, Tokyo",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Soka University inbound exchange FAQs note no strict central institutional minimum GPA requirement (relies on partner home nomination)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "Japanese"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf#page=3",
+    "notes": "English-taught elective undergraduate courses available alongside Japanese-taught courses and Japanese language classes (ES-E5)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Students with TOEFL iBT 71 or above are eligible to enroll in elective undergraduate classes taught in English (2022 Fact Sheet #page=3). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "JLPT N2 or above required for elective undergraduate courses taught in Japanese; no prior Japanese required for English-taught courses or beginner ES-E5 Japanese language classes (up to 8 credits/semester).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall semester (AY 2026-2027 reference): Orientation ~11 Sep 2026, classes begin ~12 Sep 2026, final exams late Jan 2027 (official term dates mid-Sep - late Jan).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester (AY 2026-2027 reference): Early Apr (e.g. 6 Apr) - late Jul; dorm move-out early Aug.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": "Tuition fees are fully waived for official exchange students from partner universities."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Soka University publishes dormitory fees (184,000-224,000 JPY/semester), optional cafeteria meal plan (22,500-24,300 JPY/month), and COE bank proof minimums (300,000 JPY/semester), but no all-in monthly living cost estimate on soka.ac.jp."
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Cannot be derived without an official Soka University all-in monthly living cost range."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/accommodation",
+    "notes": "International student dormitories preferentially house exchange students (fee waivers may apply depending on bilateral agreement; 2022 Fact Sheet #page=7 noted dormitories fee-exempt for exchange students)."
+  },
+  "housing_notes": {
+    "value": "International dormitories preferentially house exchange students (https://www.soka.ac.jp/en/admissions/accommodation): Takiyama International Dormitory (on campus, single rooms, JPY 224,000/sem), Hoyu Dormitory (male, ~20 min walk, twin rooms, JPY 184,000/sem), plus Cosmos / Yuko / Manyo dormitories for female students. Standard entrance fee JPY 50,000; bilateral agreements may waive dorm fees (2022 Fact Sheet #page=7 noted dormitories fee-exempt for exchange students). Optional dorm cafeteria meal plan (Mon-Sat breakfast & dinner): JPY 24,300/month on soka.ac.jp (JPY 22,500/month in 2022 Fact Sheet #page=7).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/accommodation",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires Certificate of Eligibility (COE) processed via Soka University prior to Japanese embassy student visa application. Mandatory financial proof: bank statement showing >= JPY 300,000 (1 semester) or >= JPY 600,000 (2 semesters).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.soka.ac.jp/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:100",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Minimum load of 7 classes per week (at least 10 hours / 600 minutes per week, 90 min/class) required; each UG course is 2-4 credits and Japanese language courses are 1-2 credits (up to 8 credits/semester).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Soka University/Fact Sheet Spring semeter 2022_Soka University.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination + online application (soka-exchange.campus-p.jp)",
+      "Official academic transcript",
+      "Certificate of enrollment from home institution",
+      "Faculty/staff letter of recommendation",
+      "Language proficiency certificate (TOEFL/IELTS for English track or JLPT N2 for Japanese track)",
+      "Financial support evidence (>= JPY 300,000 / 1 sem or JPY 600,000 / 2 sem)",
+      "Passport ID page copy & immigration headshot photo"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall semester (Sep entry): Nomination 15 Mar, Application 31 Mar. Spring semester (Apr entry): Nomination 15 Oct, Application 31 Oct.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.soka.ac.jp/en/admissions/exchange-program-inbound",
+    "notes": null
+  },
+  "ext": {}
+}

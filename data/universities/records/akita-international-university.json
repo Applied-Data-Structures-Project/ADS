@@ -1,0 +1,363 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "akita-international-university",
+  "excel_rows": [
+    3
+  ],
+  "shard": 2,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1p2mwNxpqw9ye76JjCdmDe7DMwl30MiBY?usp=drive_link",
+      "https://drive.google.com/drive/folders/1p2mwNxpqw9ye76JjCdmDe7DMwl30MiBY"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Akita/Akita International University.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Akita/Akita International University.pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Akita International University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "country": {
+    "value": "Japan",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Akita",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "region": {
+    "value": "East Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": "Fall/Spring"
+  },
+  "official_website_url": {
+    "value": "http://www.aiu.ac.jp/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": null
+  },
+  "short_name": {
+    "value": "AIU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=1",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must have completed at least 2 semesters at home institution before exchange arrival.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=4",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:3",
+    "notes": "Exact University-wide agreement scope."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No academic majors excluded; only preparatory English courses, Teacher's License courses, and required degree-seeking non-content courses are closed (PDF p.2)."
+  },
+  "min_gpa_host": {
+    "value": 2.5,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=4",
+    "notes": "Minimum cumulative GPA 2.5 on a 4.0 scale (from official transcript)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=1",
+    "notes": "English for all subject-matter courses; Japanese language and Teacher's License courses excepted."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=2",
+    "notes": "All subject-matter courses in the Faculty of International Liberal Arts are taught in English."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT 71 or IELTS 6.0 (or equivalent) for non-native English speakers.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required; Japanese language courses offered from beginner to advanced levels (advanced Japan Studies electives may require Japanese).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=2",
+    "notes": null
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Arrival Aug 25, Orientation Aug 25-31, Classes Sep 2 - Dec 23, 2026 (Finals Dec 17-23, 2026).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/academic/academic-calendar/",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring semester runs early April to late July (AY 2020-2021 reference: Arrival Apr 1, Orientation Apr 2-7, Classes Apr 9 - Jul 29, Finals Jul 23-29; Winter program Jan-Mar open to Fall attendees).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/academic/academic-calendar/",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/st/financial/",
+    "notes": "Official partner nominees receive tuition and processing fee waivers."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "JPY",
+      "min": 39934,
+      "max": 74272
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=3",
+    "notes": "Derived monthly cost from AY 2020-2021 Fact Sheet p.3 exact printed semester items divided by 5 months: Min = Komachi Residence 90,000 + Bedding & Cleaning 20,000 + Initial 2-wk meal plan 14,670 + 10-meal plan 60,000 + Textbooks 15,000 = 199,670 JPY / 5 = 39,934 JPY/mo; Max = Sakura Village (Fall) 184,000 + Bedding & Cleaning 20,000 + Initial 2-wk meal plan 14,670 + 21-meal plan 102,690 + Textbooks 50,000 = 371,360 JPY / 5 = 74,272 JPY/mo (excludes refundable 20,000 JPY deposit and 20,000 JPY activity fee; newer aiu.ac.jp pages cite textbooks ~50,000-70,000 JPY and housing ~130,000-215,000+ JPY/semester)."
+  },
+  "living_cost_usd_est": {
+    "value": 1784.49,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=3",
+    "notes": "5-month estimate derived from monthly JPY range 39,934-74,272 (midpoint 57,103.0)/month. ECB cross-rate 1 EUR = 1.1052 USD and 1 EUR = 176.83 JPY -> 1 JPY = 0.006250 USD (2026-11-13, retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); 5-month USD est = 57,103.0 JPY * 5 * 0.006250 = 1,784.49 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "General deposit 20,000 JPY (partly refundable), International student activity fee 20,000 JPY/semester (non-refundable), initial 2-week meal plan 14,670 JPY (2020-21 PDF p.3); mandatory Japanese National Health Insurance plus Gakkensai/Inbound Futai-Gakuso insurance per aiu.ac.jp/en/st/financial/.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=3",
+    "notes": "All international students are required to live in guaranteed on-campus housing (Komachi Hall, Global Village, University Village, or Sakura Village); homestay unavailable."
+  },
+  "housing_notes": {
+    "value": "Komachi Hall 90,000 JPY/sem, Global Village 108,000-112,000 JPY/sem, University Village 108,000-114,000 JPY/sem, Sakura Village 180,000-184,000 JPY/sem + 20,000 JPY bedding/cleaning fee in 2020-21 PDF p.3; newer rates ~130,000-215,000+ JPY/sem on aiu.ac.jp/en/campuslife/housing/.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No AIU incoming exchange stipend verified in local PDF or official aiu.ac.jp results."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Requires Japanese Certificate of Eligibility (CoE) and Student Visa processed after AIU application.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=4",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://web.aiu.ac.jp/en/st/eligibility/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/st/eligibility/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "http://web.aiu.ac.jp/en/academic/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "http://web.aiu.ac.jp/en/academic/",
+    "notes": "Updated exchange academics portal also at https://web.aiu.ac.jp/en/st/academic/."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All subject-matter courses listed via https://web.aiu.ac.jp/en/academic/ and https://web.aiu.ac.jp/en/st/academic/ are taught in English; schedules hosted in ATOMS portal."
+  },
+  "credit_system_and_load": {
+    "value": "US-style semester credits (1 lecture cr = 15 class hrs; 50-min hours). Minimum 12 credits (required by Japanese immigration law), standard 15 credits (~5 x 3-credit courses), maximum 18 credits/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Preparatory English courses, Teacher's License courses, and required non-content courses for degree-seeking students are closed to incoming exchange students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home Online Nomination Form",
+      "Completed signed Application Form with Confirmation Sheet",
+      "Official Academic Transcript",
+      "One International Student Reference Form",
+      "Proof of English Proficiency (if applicable)",
+      "Two ID Photos",
+      "Copy of Passport",
+      "Evidence of Financial Support (for visa CoE)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=4",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Small liberal arts seminar/discussion classes averaging 18 students per class (Faculty of International Liberal Arts); 1 class hr = 50 min with expectation of 2 hrs independent prep per class hr.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Located in Yuwa, Akita City; official city population tier figure not cited on aiu.ac.jp."
+  },
+  "campus_type": {
+    "value": "rural",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/about/explore-japan/",
+    "notes": "aiu.ac.jp explicitly describes Yuwa, Akita as having 'the welcoming, friendly community you'd expect in a rural setting' surrounded by nature."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "On-campus instruction and residential community use English (PDF p.1), while off-campus rural Akita is Japanese-speaking; overall local daily-life level unverified."
+  },
+  "international_support_services": {
+    "value": "Center for International Affairs inbound exchange team, free arrival shuttle pickup from Akita Airport/JR station, orientation week, and residential life support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Akita/Akita International University.pdf#page=1",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall semester: Nomination Feb 1 - Feb 20, Application Feb 1 - Apr 1; Spring semester: Nomination Sep 1 - Sep 20, Application Sep 1 - Nov 1.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://web.aiu.ac.jp/en/st/timeline/",
+    "notes": null
+  },
+  "ext": {}
+}

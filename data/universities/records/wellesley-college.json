@@ -1,0 +1,366 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "wellesley-college",
+  "excel_rows": [
+    161
+  ],
+  "shard": 4,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1hwOwMa-qSffSkZuH6_ZrQ2axWK0Q1XN1",
+      "https://drive.google.com/drive/folders/1Dy3msT6bpUpqQufyn3nR8drc5fSEA7yZ"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Wellesley College/2025-2026/[Wellesley] Factsheet for Exchange Students 2025-2026.pdf",
+      "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf",
+      "data/raw/factsheets/Wellesley College/Wellesley College.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Wellesley College/2025-2026/[Wellesley] Factsheet for Exchange Students 2025-2026.pdf.txt",
+      "data/raw/extracted/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf.txt",
+      "data/raw/extracted/Wellesley College/Wellesley College.docx.txt"
+    ],
+    "notes": "Col H link (1hwOwMa-qSffSkZuH6_ZrQ2axWK0Q1XN1) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Wellesley College",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Massachusetts",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "city": {
+    "value": "Wellesley",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by partner university (cannot transfer to Wellesley); women's college gender policy considers applicants who consistently live and identify as women (cisgender, trans, and nonbinary students who consistently live and identify as women).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.wellesley.edu/about/gender-policy",
+    "notes": "Partner nomination requirement and non-transfer status stated on 2026-2027 Factsheet page 1 and https://www.wellesley.edu/interstudy/exchange/incoming."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=161",
+    "notes": "University-wide UG exchange agreement (Fall/Spring); note Wellesley women's college gender policy in citizenship_restrictions."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#row=161",
+    "notes": "Open across 55 majors (~1,000+ courses) EXCEPT Computer Science."
+  },
+  "excluded_majors": {
+    "value": [
+      "Computer Science"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=3",
+    "notes": "2026-2027 Factsheet page 3 explicitly states: 'Exchange students are NOT eligible to enroll in Computer Science courses.'"
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Non-native English speakers must submit proof of English proficiency: TOEFL score of 100 or equivalent on a comparable test.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (instruction is in English)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 Fall 2026: Arrival Aug 21, 2026; Classes Aug 31 – Dec 9, 2026; End of exam period Dec 17, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "AY 2026-2027 Spring 2027: Arrival mid-January (TBA); Classes Jan 25 – May 5, 2027; End of exam period May 13, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": "2026-2027 Factsheet page 2 states: 'Tuition: Exchange students continue to pay regular tuition to their home institution.'"
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2525.6,
+      "max": 2525.6
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.wellesley.edu/sfs/cost",
+    "notes": "Wellesley 2026-2027 SFS budget lists Academic Year Housing ($12,020) + Meals ($11,186) + Books ($800) + Personal Expenses ($1,250) = $25,256/year ($12,628/semester), prorated across a 5-month semester = $2,525.60 USD/month."
+  },
+  "living_cost_usd_est": {
+    "value": 12628.0,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://www.wellesley.edu/sfs/cost",
+    "notes": "5-month exchange semester estimate: ($12,020 housing + $11,186 meals + $800 books + $1,250 personal) / 2 semesters = $12,628.00 USD/semester ($2,525.60 USD/month * 5 months * 1.0 = $12,628 USD, 1 USD = 1.0 USD, checked 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory Student Activity Fee ($360/year per SFS), Wellesley meal plan, automatic Wellesley Student Health Insurance Plan (unless waived with US-based MA/J-1 compliant plan), and Health History & Immunization Form.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": "SFS Student Activity Fee $360/year on https://www.wellesley.edu/sfs/cost; Health Form deadlines (Jul 1 Fall / Dec 1 Spring) in Wellesley College.docx."
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": "2026-2027 Factsheet page 2 states: 'Exchange students are required to live in on-campus housing, typically in a double occupancy room ... randomly placed in one of our 15 residence halls' and automatically enrolled in the Wellesley meal plan."
+  },
+  "housing_notes": {
+    "value": "Mandatory on-campus furnished residence hall (typically double occupancy) + automatic Wellesley meal plan (4 dining halls); room/board billed per semester ($12,020 housing + $11,186 meals/yr in 2026-2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 DS-2019 requires Certification of Finances showing ~$14,000 USD/semester (inclusive of activity fee, housing, meal plan, and health insurance) plus $1,250 USD for books/supplies/personal expenses.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.wellesley.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:161",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.wellesley.edu/interstudy/exchange/incoming",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.wellesley.edu/interstudy/exchange/incoming",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.wellesley.edu/landing.php",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=3",
+    "notes": "Course catalog link embedded on page 3 (also https://www.wellesley.edu/academics/catalog on page 1)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Wellesley unit system: 1 Wellesley unit = 4 US credit hours = 7.5 ECTS (~12 hrs/week work); normal full load is 4 classes (~4 units); minimum 3 units required to maintain immigration status and housing.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Computer Science courses are NOT open to exchange students; cross-registration limited to max 1 course/semester at MIT, Olin College of Engineering, Babson College, or Brandeis University (MIT UROP excluded; single-semester students strongly encouraged to take all courses at Wellesley).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Online exchange application form",
+      "Photocopy of passport ID page",
+      "Official transcripts from all previous university coursework (English translation if applicable)",
+      "Proof of English proficiency (TOEFL 100 or equivalent, non-native speakers)",
+      "Certification of Finances & Health/Immunization Form (onboarding)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": "COF on page 2; Health History & Immunization Form in Wellesley College.docx."
+  },
+  "academic_style": {
+    "value": "US-style liberal arts",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory Orientation & Slater International Center J-1 check-in, Class Dean academic advising, and Accessibility & Disability Resources.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=2",
+    "notes": "Also page 3."
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 Fall / Full Year: Nomination Feb 15, 2026 / Application Mar 15, 2026; Spring 2027: Nomination Sep 15, 2026 / Application Oct 1, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Wellesley College/2026-2027/Factsheet for Exchange Students 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

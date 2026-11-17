@@ -1,0 +1,368 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "virginia-polytechnic-institute-and-state-university-virginia-tech",
+  "excel_rows": [
+    154
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1tLHTTH7Pw49ukpbEb0Ua0XTEdhX3-_ZK"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Virginia Tech/2026-2027/Inbound Exchange Fact Sheet 2026-27 (1).pdf",
+      "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf",
+      "data/raw/factsheets/Virginia Tech/24-25 Virginia Tech (VT) fact sheet.pdf",
+      "data/raw/factsheets/Virginia Tech/Useful Info.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Virginia Tech/2026-2027/Inbound Exchange Fact Sheet 2026-27 (1).pdf.txt",
+      "data/raw/extracted/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf.txt",
+      "data/raw/extracted/Virginia Tech/24-25 Virginia Tech (VT) fact sheet.pdf.txt",
+      "data/raw/extracted/Virginia Tech/Useful Info.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Virginia Polytechnic Institute and State University (Virginia Tech)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "short_name": {
+    "value": "Virginia Tech",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Virginia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "city": {
+    "value": "Blacksburg",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Must be nominated by home partner university in good academic standing with limited or no failing grades or withdrawals; undergraduate exchange primarily (Master's students accepted in special circumstances).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": "UG/special Master's rule stated on #page=1."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": "Excel agreement_scope_raw is 'University-wide' (Mechanical Engineering excluded; Pamplin Business 2+ courses incur supplemental fee)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": [
+      "Mechanical Engineering"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": "'Exchange students may take courses from all majors except Mechanical Engineering'."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "UG minimums (`24-25 Fact Sheet#page=2`): IELTS 6.5 (no subscore <6.5), TOEFL iBT 80 (no subscore <16; CBT 233), Cambridge C1, or Duolingo 115. GR minimums: IELTS 6.5 (no subscore <6.5) or TOEFL iBT 90 (no subscore <20). For exchange only, 2026-27 Fact Sheet (#page=3) also accepts DAAD B2 in each category; native speakers and English-medium university students are exempt. RHET 1020 waiver not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/24-25 Virginia Tech (VT) fact sheet.pdf#page=2",
+    "notes": "DAAD B2 and English-medium exemption confirmed in data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=3 and on https://www.globaleducation.vt.edu/students/visiting-exchange.html."
+  },
+  "host_language_requirement": {
+    "value": "English proficiency required unless native speaker or enrolled at an English-medium university.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-08-17 to 2026-12-16 (AY 2026-2027 Fall semester incl. required orientation and final exams; arrive by Aug 16, 2026)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "2027-01-11 to 2027-05-12 (AY 2026-2027 Spring semester incl. required orientation and final exams; arrive by Jan 10, 2027)",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.globaleducation.vt.edu/students/visiting-exchange.html",
+    "notes": "Incoming bilateral exchange students pay regular tuition to their home university (host tuition waived/adjusted), while covering VT Program Fee ($75), housing/food, health insurance, and Pamplin business fee if applicable."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2100,
+      "max": 2100
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": "Derived by dividing VT 2026-2027 1-semester DS-2019 proof-of-funding living cost ($10,500 USD/sem; $21,000/AY) by 5 months = $2,100/month. Factsheet itemizes on-campus housing & food ~$7,000/sem (off-campus shared rent $500–$1,200/mo) and mandatory Aetna health insurance ~$2,000/sem."
+  },
+  "living_cost_usd_est": {
+    "value": 10500.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": "Official 2026-2027 1-semester exchange DS-2019 living budget / proof of funding ($10,500.00 USD per semester; $21,000 USD full year), already in USD (recorded 2026-11-15)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory J-1 health insurance: VT Aetna plan (~$2,000/semester) or VT-approved comparable policy; VT Program Fee $75; visa/SEVIS ~$400. Note: Pamplin College of Business supplemental fee applies if taking 2+ business courses (~$1,275–$2,500/sem across 2026-27 factsheet variants). Required immunizations post-acceptance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": "Pamplin fee noted as ~$2,500 (2+ courses) on #page=2 and $1,275 on #page=4 ($1,275 for 7+ credits in alternate 2026-27 PDF copy); immunizations in 24-25 PDF #page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": "On-campus housing is NOT guaranteed for exchange students (may request during application; on-campus residents must purchase a meal plan; overflow lounge housing used in high-demand terms per Useful Info.docx). Off-campus shared rent ~$500–$1,200/mo."
+  },
+  "housing_notes": {
+    "value": "On-campus housing & standard meal plan ~$7,000/semester (not guaranteed); off-campus shared housing in Blacksburg $500–$1,200/month (VT does not arrange off-campus leases).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 visa (Form DS-2019) required unless US citizen/LPR; passport must be valid >=6 months past program end (`#page=3`). Must document $10,500 USD per semester or $21,000 USD per academic year in personal or family/private sponsor liquid funds (`#page=4`).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=4",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://www.vt.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:154",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.globaleducation.vt.edu/students/visiting-exchange.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.globaleducation.vt.edu/students/visiting-exchange.html",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "US credit hours: full-time UG minimum 12 credits/semester (with >=9 credits in-person; majority of courses within/pertaining to VT major for visa compliance). Letter grading 4.0 scale (A=90–100, C=70–79).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Mechanical Engineering excluded; taking 2+ courses (or 7+ credits) in Pamplin College of Business incurs a supplemental program fee (~$1,275–$2,500/sem); majority of courses must relate to student's declared VT major.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=2",
+    "notes": "Alternate Pamplin wording on #page=4."
+  },
+  "required_application_docs": {
+    "value": [
+      "VT Exchange Application (access emailed after partner nomination)",
+      "All post-secondary transcripts translated into English",
+      "Passport info page scan (valid >=6 months past program end)",
+      "Proof of English proficiency (unless native speaker or English-medium university)",
+      "List of 6–10 proposed VT courses",
+      "Financial proof for DS-2019 ($10,500/sem) & US green card copy if applicable"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=3",
+    "notes": "Financial proof $10,500/sem detailed on #page=4."
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": "college_town",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.globaleducation.vt.edu/students/visiting-exchange.html",
+    "notes": "Blacksburg, Virginia described on VT pages as a classic college town."
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Global Education Office (GEO) pre-departure/J-1 advising, required week-long orientation, free airport pickup from Roanoke-Blacksburg Airport (ROA), Academic Advising, Writing Center, and Schiffert Health Center.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=1",
+    "notes": "Free ROA airport pickup confirmed in 24-25 VT Fact Sheet #page=4; Academic Advising & Writing Center on #page=2."
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester & Academic Year: nomination March 1, application April 1. Spring Semester: nomination September 1, application October 1.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Virginia Tech/2026-2027/Virginia Tech Inbound Exchange Fact Sheet 2026-27.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

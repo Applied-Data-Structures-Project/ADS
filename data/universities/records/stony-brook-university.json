@@ -1,0 +1,370 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "stony-brook-university",
+  "excel_rows": [
+    104
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1HDA1DMeKUls3WCdYXpr_Jxo2QJxDRr8Y"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Stony Brook University/2024-2025 Stony Brook University Incoming Exchange Fact Sheet.pdf",
+      "data/raw/factsheets/Stony Brook University/2025-2026 Stony Brook University Incoming Exchange Fact Sheet (3) (1) (1).pdf",
+      "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Stony Brook University/2024-2025 Stony Brook University Incoming Exchange Fact Sheet.pdf.txt",
+      "data/raw/extracted/Stony Brook University/2025-2026 Stony Brook University Incoming Exchange Fact Sheet (3) (1) (1).pdf.txt",
+      "data/raw/extracted/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Stony Brook University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "short_name": {
+    "value": "SBU",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2",
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "city": {
+    "value": "New York",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (closed schools/courses noted in excluded_majors and course_restrictions_note)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (closed/limited subjects noted)."
+  },
+  "excluded_majors": {
+    "value": [
+      "Health Sciences (HAD)",
+      "School of Medicine",
+      "School of Nursing",
+      "School of Dental Medicine",
+      "Pharmacology",
+      "Computer Science (CSE Graduate Courses)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": "Additional specific undergraduate restricted course codes and department seat caps listed in course_restrictions_note."
+  },
+  "min_gpa_host": {
+    "value": 2.8,
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=1",
+    "notes": "AY 2026-2027 Fact Sheet p.1 requires 2.8/4.0 GPA."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "TOEFL iBT >= 80 (or >= 4 on TOEFL taken after Jan 21, 2026; MyBest scores NOT accepted), IELTS >= 6.5, or Duolingo >= 105. WRT 101 & WRT 102 are restricted for exchange students; RHET 1020 exemption not stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=1",
+    "notes": "WRT 101 & 102 course restriction on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3."
+  },
+  "host_language_requirement": {
+    "value": "English (TOEFL 80 / 4 post-Jan 21, 2026, IELTS 6.5, or Duolingo 105; no MyBest).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=1",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026 (subject to change): Housing check-in Aug 17-18, Mandatory Orientation Aug 20, First Day of Class Aug 24, Last Day of Finals Dec 17, Housing check-out Dec 17 (4pm).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=5",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027 (subject to change): Housing check-in Jan 19, Mandatory Orientation Jan 21, First Day of Class Jan 25, Last Day of Finals May 19, Housing check-out May 19.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=5",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4",
+    "notes": "AY 2026-2027 Fact Sheet p.4: 'Exchange students will receive a tuition waiver' ($16,301/sem out-of-state tuition waived)."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 2721.0,
+      "max": 2721.0
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4",
+    "notes": "Derived from AY 2026-2027 Fall semester exchange estimate on Fact Sheet p.4 divided across a 5-month semester: Living Expenses ($6,089) + Housing Single Room ($7,515) = $13,604/semester / 5 months = $2,720.80 (~$2,721/month); Full Year Living+Housing = $27,208. Excludes $2,143/sem University Fees and $982 Fall / $2,345 AY Health Insurance."
+  },
+  "living_cost_usd_est": {
+    "value": 13604.0,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4",
+    "notes": "1 USD = 1.0 USD on 2026-11-15 (native USD); Fall 2026 5-month semester Living Expenses ($6,089) + Housing Single Room ($7,515) = $13,604 USD from Fact Sheet p.4 (5 * $2,720.80/mo). Excludes $2,143 University Fees and $982 Health Insurance (Total Exchange Fall 2026 estimate = $16,729)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory SBU Health Insurance (auto-enrolled and billed on SOLAR): $982 for Fall 2026 / $2,345 for Fall 2026 - Spring 2027. Mandatory University Fees: $2,143 for Fall 2026 / $4,287 for AY 2026-2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4",
+    "notes": "Auto-enrollment insurance rule stated on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2",
+    "notes": "AY 2026-2027 Fact Sheet p.2 states 'Exchange students are given priority for on-campus housing' via Housing Portal application (upgraded carefully vs older guaranteed wording)."
+  },
+  "housing_notes": {
+    "value": "Priority on-campus housing across 6 residential facilities within walking distance of classes (each with computing and fitness centers); apply via Housing Portal. AY 2026-27 single room estimate: $7,515 Fall / $15,030 Academic Year; meal plan separate if warranted.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2",
+    "notes": "Housing cost table and links (housing/rates.php, mealplan/plans.php) on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "J-1 Exchange Visitor Visa required (VIS emails admitted students for DS-2019 request; min 12 credits/sem with >= 9 in-person and <= 3 online). Adequate proof of liquid funds meeting or exceeding estimated exchange expenses ($16,729 Fall 2026 / $33,840 AY 2026-27 incl. fees & insurance, or higher per VIS; SBU Coordinator provides tuition-waiver letter for DS-2019).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=4",
+    "notes": "J-1 visa credit breakdown and https://www.stonybrook.edu/commcms/visa/immigration-status/j1-students/index.php on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2."
+  },
+  "official_website_url": {
+    "value": "https://www.stonybrook.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:104",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "http://stonybrook.edu/studyabroad/incoming",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://catalog.stonybrook.edu/content.php?catoid=7&navoid=225",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "All SBU undergraduate courses in the catalog are taught in English; no separate English-taught course list exists."
+  },
+  "credit_system_and_load": {
+    "value": "US semester credit hours; J-1 minimum 12 credits/semester (>= 9 in-person, <= 3 online) and maximum 17 credits in first semester (19 credits in second semester with >= 3.0 GPA).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": "In-person/online J-1 split on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2."
+  },
+  "course_restrictions_note": {
+    "value": "Restricted: HAD, Medicine, Nursing, Dental Medicine, Pharmacology; AMS 325; BUS 301/487/488; CSE 316/320/416 & CSE grad; ECO 108/359; EEO online; EGL 204/301/360/440/441/454; MEC 225/316/317/325/411/440/441; PSY 310; WRT 101/102. Limited access: Arts, Biology, Chemistry, Dance, Political Science, some languages; CSE/ISE max 2/sem; ACC/BUS max 2/sem. Department approves prerequisites; no guaranteed seat enrollment.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "SBUAbroad Portal online application (post-nomination)",
+      "Typed 1-page Study Statement",
+      "Clear passport information page copy",
+      "Unexpired English proficiency exam score report (no MyBest)",
+      "Official Home University Transcript (in English)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Public research university on a semester calendar with final exams, department prerequisite verification, and 350+ student clubs/organizations.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3",
+    "notes": "Finals schedule on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=5."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Academic Programs incoming advising, mandatory pre-term orientation (Aug 20 / Jan 21), Visa and Immigration Services (vis@stonybrook.edu), residence computing/fitness centers, and 350+ campus clubs/organizations.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=2",
+    "notes": "Student clubs on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=3; orientation dates on data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=5."
+  },
+  "nomination_deadlines": {
+    "value": "Fall Semester: Nomination April 15, Application May 1; Spring Semester: Nomination October 1, Application October 15 (AY 2026-2027).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Stony Brook University/2026-2027/2026-2027 Stony Brook University Incoming Exchange Fact Sheet (8).pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

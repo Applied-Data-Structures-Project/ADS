@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "university-of-helsinki",
+  "excel_rows": [
+    151
+  ],
+  "shard": 5,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/17WSmKDHsL7sqH_XtZgqeE1wHwwMRWwz-"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UoHelsinki/2024-2025/University of Helsinki Fact Sheet 2024-2025 Erasmus+ ICM.pdf",
+      "data/raw/factsheets/UoHelsinki/2025-2026/University of Helsinki Fact Sheet 2025-2026 Erasmus+ ICM.pdf",
+      "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UoHelsinki/2024-2025/University of Helsinki Fact Sheet 2024-2025 Erasmus+ ICM.pdf.txt",
+      "data/raw/extracted/UoHelsinki/2025-2026/University of Helsinki Fact Sheet 2025-2026 Erasmus+ ICM.pdf.txt",
+      "data/raw/extracted/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "University of Helsinki",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "short_name": {
+    "value": "University of Helsinki",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "country": {
+    "value": "Finland",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Helsinki",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank in partner Excel agreement sheet; UH 2026-27 Fact Sheet covers Bachelor and Master-level exchange courses (min 1 year completed study)."
+  },
+  "min_standing_note": {
+    "value": "All applicants must have completed at least 1 year of university studies (2 years for Life Sciences and Psychology; 2 pre-clinical + 1 clinical year for Medicine).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=2",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank agreement scope in partner Excel list."
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank agreement scope in partner Excel list."
+  },
+  "excluded_majors": {
+    "value": [
+      "Accounting",
+      "Architecture",
+      "Business",
+      "Design",
+      "Engineering",
+      "Fine and Performing Arts",
+      "Nursing",
+      "Dentistry"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=2",
+    "notes": "Fields not offered or closed to exchange students (Fact Sheet p.2); Medicine unavailable in 2027-28; major-restricted tracks listed on p.2-3."
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Finnish",
+      "Swedish",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=1",
+    "notes": "Wide variety of courses taught in English across 37 Bachelor's and dozens of International Master's programmes (though select faculties offer English courses mainly at Master's level)."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 required in English, Finnish, or Swedish (primary language of study); exchange students do NOT need to submit proof of English language proficiency (partners verify nominees meet B2). RHET 1020 waiver not explicitly mentioned.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "CEFR B2 required in the main language of instruction (English, Finnish, or Swedish); Finnish language courses (4 hrs/week) are optional.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=3",
+    "notes": "B2 language trust policy on data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4."
+  },
+  "available_terms": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Blank in partner Excel agreement sheet; UH 2026-27 Fact Sheet operates Autumn (Fall) and Spring semesters."
+  },
+  "fall_term_dates": {
+    "value": "Autumn 2026: Aug 25 - Dec 18, 2026 (including mandatory orientation week).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": "Mandatory orientation week noted on p.5."
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Jan 13 - May 31, 2027 (including mandatory orientation week).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.helsinki.fi/instructions/article/how-apply-exchange-student",
+    "notes": "Incoming exchange students under valid exchange agreements do not pay tuition fees to the University of Helsinki."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 900.0,
+      "max": 1250.0
+    },
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.helsinki.fi/instructions/article/living-helsinki",
+    "notes": "Official UH Living in Helsinki guide states single student monthly expenses average EUR 900-1,250/month (including student housing rent of EUR 450-800/month). Finnish Immigration Service (Migri) visa proof threshold is EUR 800/month."
+  },
+  "living_cost_usd_est": {
+    "value": 5940.45,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://studies.helsinki.fi/instructions/article/living-helsinki",
+    "notes": "Midpoint EUR 1,075.00/month (900-1,250 EUR/month) * 5 months = EUR 5,375.00; converted at ECB 2026-11-13 rate (collected 2026-11-15) 1 EUR = 1.1052 USD (https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) = 5,940.45 USD."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fees waived. Non-EU nationals must hold comprehensive health insurance prior to applying for a Migri residence permit (EUR 450 online permit fee, partially covered only for Erasmus+ ICM per agreement; UH purchases insurance only for Erasmus+ ICM). Student Union membership (EUR 40-45/sem) is voluntary for exchange students.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=5",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "guaranteed",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": "Housing via Unihome & HOAS integrated into exchange registration (one housing offer per exchange student; explicitly guaranteed for Erasmus+ ICM, though exact room type not guaranteed; UH pays EUR 260-500 deposit)."
+  },
+  "housing_notes": {
+    "value": "Applied during exchange registration via Unihome and HOAS apartments across Helsinki (rent typically EUR 450-800/month per https://studies.helsinki.fi/instructions/article/living-helsinki). UH covers EUR 260-500 room deposit (reclaimed post-exchange).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact sheet p.5 notes Erasmus+ ICM organizational support covers insurance/part of permit fee solely for Erasmus+ ICM agreements."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU nationals must apply electronically via Finnish Immigration Service (Migri, http://migri.fi/en/studying-in-finland; EUR 450 fee) immediately upon receiving faculty acceptance (~4-6 wks post-deadline), visit Finnish consulate/authorized VFS in person, hold comprehensive health insurance, and show EUR 800/month financial proof.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=5",
+    "notes": "EUR 800/mo Migri threshold confirmed via helsinki.fi / migri.fi."
+  },
+  "official_website_url": {
+    "value": "https://www.helsinki.fi/en",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:151",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://studies.helsinki.fi/instructions/exchange-and-visiting-students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=1",
+    "notes": "Embedded hyperlink from Fact Sheet p.1 (25-26/26-27 PDFs); application guide at https://studies.helsinki.fi/instructions/article/how-apply-exchange-student."
+  },
+  "course_catalog_url": {
+    "value": "https://studies.helsinki.fi/instructions/article/course-selection",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=2",
+    "notes": "Embedded hyperlink from 2026-27 Fact Sheet p.2; updated course lists published late March/April."
+  },
+  "english_course_list_url": {
+    "value": "https://studies.helsinki.fi/instructions/article/courses-exchange-students",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://studies.helsinki.fi/instructions/article/courses-exchange-students",
+    "notes": "Live University of Helsinki exchange course guide (alongside https://studies.helsinki.fi/instructions/article/course-selection embedded in data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=2)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system (1 ECTS = 27 hours work): target full-time load 30 ECTS/semester (60 ECTS/year); strict minimum 20 ECTS/semester.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Majority of courses must come from one host faculty/programme. Restricted to majors: English Studies, Languages, Politics/Media/GPC, Economics (MSc), Law/IBL/GGL, Psychology. Severe quota (1-2/sem): Medicine (no clinical English in 2027-28), Translational Medicine (Spring only), Veterinary Medicine, Urban Studies & Planning. Fields not offered: Business, Accounting, Engineering, Architecture, Design, Arts, Nursing, Dentistry.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=2",
+    "notes": "Quota tables and language course exclusions detailed on p.3."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university online nomination",
+      "Online registration at University of Helsinki (no paper copies)",
+      "Learning Agreement (approved & signed by home coordinator)",
+      "Official Transcript of Records"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=6",
+    "notes": "Four campuses within 10 km: City Centre (Humanities/Social Sciences), Kumpula (Science), Meilahti (Medicine), and Viikki (Life Sciences)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "International Exchange Services on every campus (studentexchange@helsinki.fi), mandatory orientation week with student tutors, ESN Uni Helsinki, Unicafe, Unisport, Learning Centre Aleksandria, and disability/special arrangements services.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": "Tutoring, ESN, and support services detailed on p.4-6."
+  },
+  "nomination_deadlines": {
+    "value": "2026-27 strict periods: Autumn semester (Aug-Dec) nomination Mar 1 - Mar 31, student registration Apr 1 - Apr 15. Spring semester (Jan-May) nomination Aug 1 - Sep 15, student registration Sep 16 - Sep 30.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UoHelsinki/2026-2027/University of Helsinki Fact Sheet 2026-2027 Erasmus+ ICM.pdf#page=4",
+    "notes": null
+  },
+  "ext": {}
+}

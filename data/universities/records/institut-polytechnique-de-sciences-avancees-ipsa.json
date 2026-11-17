@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "institut-polytechnique-de-sciences-avancees-ipsa",
+  "excel_rows": [
+    46
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/11gRnIMav69wjl2iKSniS41NX0bSz2OZi?usp=drive_link",
+      "https://drive.google.com/drive/folders/11gRnIMav69wjl2iKSniS41NX0bSz2OZi",
+      "https://drive.google.com/drive/folders/1lvHANLKzh2VwOn7NCB2PRE4Y3JNUIkbK"
+    ],
+    "local_files": [
+      "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf",
+      "data/raw/factsheets/Institut Polytechnique de Sciences Avancees (IPSA)/2025/20250314_Factsheet_IPSA.pdf",
+      "data/raw/factsheets/Institut Polytechnique de Sciences Avancees (IPSA)/Copy of Institut Polytechnique des Sciences avancées (IPSA).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/IPSA France/20260902_Factsheet_IPSA.pdf.txt",
+      "data/raw/extracted/Institut Polytechnique de Sciences Avancees (IPSA)/2025/20250314_Factsheet_IPSA.pdf.txt",
+      "data/raw/extracted/Institut Polytechnique de Sciences Avancees (IPSA)/Copy of Institut Polytechnique des Sciences avancées (IPSA).pdf.txt"
+    ],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Institut Polytechnique de Sciences Avancees (IPSA)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IPSA",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": "Official acronym used across 2026-2027 Fact Sheet p.1 and ipsa.fr."
+  },
+  "country": {
+    "value": "France",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Ivry-sur-Seine",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Minimum 2 years of undergraduate study in Aerospace, Mechanical, Electronics Engineering, Robotics, or related fields required; home university nomination required (Aero 3 UG, Aero 4 Spring GR, Aero 5 Fall GR).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ipsa.fr/en/programmes/exchange-programs/",
+    "notes": "Aero 3/4/5 tracks also specified in 20260902_Factsheet_IPSA.pdf#page=2."
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (note IPSA is a specialized aerospace engineering school requiring STEM background)."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": "Normalized from agreement_scope_raw == 'University-wide' (engineering prerequisite background noted in min_standing_note & course_restrictions_note)."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "Aero 3 (UG, Fall & Spring) offers English or French tracks; Aero 4 (GR, Spring) is English track; Aero 5 (GR, Fall) is English track except Management option."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Recommended CEFR B2 English for English-track courses: TOEIC 700/990, TOEFL iBT 70/120, IELTS 5/9, Duolingo 100/160, or a letter from the home university confirming sufficient English proficiency (no RHET 1020 exemption stated).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-track Aero 3/4/5 courses; CEFR B2 French recommended for French-track Aero 3 and for the Aero 5 Management option. Free French lessons (FLE) and intercultural courses offered.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Orientation days 1 week before program start; Undergraduate (Aero 3) late August – mid-January; Graduate (Aero 5) late September – end of January.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Orientation days 1 week before program start; Undergraduate (Aero 3) mid-January – end of May; Graduate (Aero 4) February – June.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "AY 2026-2027 Fact Sheet p.2 Budget table explicitly lists Tuition fee: Waived for exchange students."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 932,
+      "max": 1232
+    },
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "Summed from AY 2026-2027 Fact Sheet p.2 monthly budget lines: Accommodation 600-900 EUR/month + Food 300 EUR/month + Transportation 32 EUR/month = 932-1,232 EUR/month (excludes one-time 50 EUR VLS-TS visa fee)."
+  },
+  "living_cost_usd_est": {
+    "value": 5979.13,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "Converted from midpoint 1,082 EUR/month (range 932-1,232 EUR/month) over 5 months: 1082 EUR * 5 * FX rate 1.1052 USD/EUR = 5,979.13 USD. FX rate 1 EUR = 1.1052 USD from ECB Euro reference exchange rates for 2026-11-13 (latest prior to 2026-11-15), retrieved 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition fee waived; VLS-TS visa fee 50 EUR. EU students must present a valid EHIC upon arrival; non-EU students must enroll in the free French student social security scheme once in France (complementary health insurance recommended). Civil (third-party) liability insurance is mandatory for all students.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "IPSA provides access to its partner's dedicated student housing platform (student residencies and offers with personalized rental support)."
+  },
+  "housing_notes": {
+    "value": "Access to IPSA's partner student housing platform offering student residencies and rental support; estimated accommodation 600-900 EUR/month. EU students renting in France may receive CAF APL housing allowance (up to 210 EUR/month per 2026-2027 Fact Sheet p.2).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": "CAF personal housing allowance (APL, up to 210 EUR/month) for EU students renting accommodation in France; Campus France scholarships vary by home country (no AUC-specific incoming IPSA stipend confirmed).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU students staying 4 months to 1 year require a French VLS-TS long-stay student visa (50 EUR fee; official portal https://france-visas.gouv.fr/en/web/france-visas/). Processing lead time and exact EUR/month solvency proof vary by country/consulate via France-Visas.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.ipsa.fr/en/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:46",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.ipsa.fr/en/programmes/exchange-programs/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.ipsa.fr/en/programmes/exchange-programs/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No public static exchange course catalog URL; updated course lists are emailed directly to nominated students as soon as available (AY 2026-2027 Fact Sheet p.2)."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Updated course lists (including English tracks for Aero 3/4/5) are emailed directly to nominated students by IPSA (AY 2026-2027 Fact Sheet p.2)."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; full-time degree workload is 30 ECTS per semester (exchange students may take fewer credits if allowed by their home university).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Aerospace engineering curriculum (Aero 3 UG, Aero 4 Spring GR, Aero 5 Fall GR); requires >=2 years UG study in Aerospace, Mechanical, Electronics Engineering, Robotics, or related fields. Paris-Ivry campus offers all programs; Toulouse campus is exclusively graduate and does not offer all options/majors. Aero 5 Management option requires B2 French + English.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": "Program tracks and Aero 5 Management French rule on p.2; >=2 years STEM background from https://www.ipsa.fr/en/programmes/exchange-programs/."
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination (via IPSA online form)",
+      "IPSA application form + Learning Agreement",
+      "Copy of passport",
+      "Academic transcripts (previous years + current year)",
+      "Proof of language proficiency (test certificate or home university letter)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "CTI-accredited French aerospace engineering grande école offering specialized tracks in aeronautics, space systems, robotics, and propulsion, complemented by 90+ student clubs.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "CTI-accredited engineering degree profile noted via https://www.ipsa.fr/en/programmes/exchange-programs/."
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": "AY 2026-2027 Fact Sheet p.1 lists two exchange campuses: Paris-Ivry (63 bis bd de Brandebourg, Ivry-sur-Seine) and Toulouse (81 av. de Grande Bretagne)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Orientation days 1 week before program start; buddy system, free French language (FLE) and intercultural courses, cultural activities with the international student association, 90+ clubs, and partner housing platform support.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=2",
+    "notes": "Orientation days timing on p.1."
+  },
+  "nomination_deadlines": {
+    "value": "Fall 2026: Nomination Apr 15, 2026, Application May 15, 2026; Spring 2027: Nomination Oct 15, 2026, Application Nov 15, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/IPSA France/20260902_Factsheet_IPSA.pdf#page=1",
+    "notes": null
+  },
+  "ext": {}
+}

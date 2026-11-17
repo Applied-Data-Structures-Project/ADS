@@ -1,0 +1,360 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "pforzheim-university",
+  "excel_rows": [
+    86
+  ],
+  "shard": 6,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1Y0Hcjz0uqvrpnG4YZAdIsQmQx_l8pXhy",
+      "https://drive.google.com/drive/folders/1fv1MgJi1J-G3rma1rUwxk8T2zqLnOkaz"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Pforzeim University/2025-2026/Courses in English.docx",
+      "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Pforzeim University/2025-2026/Courses in English.docx.txt",
+      "data/raw/extracted/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf.txt"
+    ],
+    "notes": "Col H link (1Y0Hcjz0uqvrpnG4YZAdIsQmQx_l8pXhy) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Pforzheim University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "Germany",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Pforzheim",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Industrial Engineering only in English as a full semester, the rest of engineering is mix + business school.",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS",
+      "SSE"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": "Mapped from Excel scope 'Industrial Engineering only in English as a full semester, the rest of engineering is mix + business school' (BUS + SSE)."
+  },
+  "eligible_majors": {
+    "value": [
+      "Industrial Engineering",
+      "Engineering",
+      "Business"
+    ],
+    "status": "partial",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": "Per Excel scope: Industrial Engineering can be studied as a full semester in English; other Engineering fields are mixed English/German; Business School also open."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "German"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://businesspf.hs-pforzheim.de/international/international_study_program_isp/information_for_incoming_bachelor_exchange_students/business_courses_in_english",
+    "notes": "Business School ISP offers well over 60 bachelor-level English-taught courses; Excel Partner List rows:86 confirms Industrial Engineering offers a full semester in English while other Engineering majors are mixed English/German."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Minimum B2 CEFR in English: TOEFL iBT >85 (CBT >235, ITP >570), IELTS >=6.5, or TOEIC/PTE/CPE/DTE >=110. No RHET 1020 waiver stated.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "B2 German required if taking German-taught courses (TestDaF >16 with min 4 in each part, DSH 2, Goethe C2, or telc C1 Hochschule); free in-semester German A1–C1 + optional 4-week pre-semester course (5 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": "Fall/Sping"
+  },
+  "fall_term_dates": {
+    "value": "Winter Semester: begins last week of September; classes & exams end early February (Fast Track pre-Christmas exam option available).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=2",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Summer Semester: begins 2nd week of March; classes & exams end mid-July.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=2",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": "Fact Sheet explicitly states 'TUITION: None for exchange students from partner universities'."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 800.0,
+      "max": 800.0
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": "Fact Sheet states: 'COST OF LIVING: On average 800 € for students'."
+  },
+  "living_cost_usd_est": {
+    "value": 4420.8,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": "5-month estimate in EUR: midpoint 800 EUR/month * 5 * 1.105200 USD/EUR = 4420.80 USD (1 EUR = 1.1052 USD; ECB 2026-11-13 reference rate collected 2026-11-15 at https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html). Fact Sheet states: 'COST OF LIVING: On average 800 € for students'."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Studierendenwerk student service fee €112/semester (includes free Pforzheim local public transit) + €20 student ID card; adequate health insurance required.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": "Fact Sheet explicitly states: 'Students are responsible for finding adequate housing by themselves. We recommend these student residences. Rent is between 220 € and 400 €.' (Studierendenwerk Karlsruhe housing tips at https://www.hs-pforzheim.de/en/international/studying_in_pforzheim/general_information/housing)."
+  },
+  "housing_notes": {
+    "value": "Self-arranged housing (recommended student residences €220–€400/month via https://www.hs-pforzheim.de/en/international/studying_in_pforzheim/general_information/housing).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU citizens must obtain a German student visa in advance (tourist visas cannot be converted); processing takes up to 3 months.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://engineeringpf.hs-pforzheim.de/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:86",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://www.hs-pforzheim.de/en/international/studying_in_pforzheim/exchange_students",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=1",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": "https://businesspf.hs-pforzheim.de/international/international_study_program_isp/information_for_incoming_bachelor_exchange_students/business_courses_in_english",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/Courses in English.docx",
+    "notes": "Business School ISP English course list; Engineering website at https://engineeringpf.hs-pforzheim.de/."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS; minimum 24 ECTS, recommended 30 ECTS, maximum 36 ECTS per semester; German grading scale 1.0–4.0 pass (4.3–5.0 fail).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=3",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Business School ISP offers >60 bachelor-level courses taught in English (prerequisites: >=1 year UG Business/Accounting/Economics + Statistics/Calculus and B2 English); per AUC agreement (rows:86), Industrial Engineering can be taken as a full semester in English while other Engineering majors are mixed English/German.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://businesspf.hs-pforzheim.de/international/international_study_program_isp/information_for_incoming_bachelor_exchange_students/business_courses_in_english",
+    "notes": "Combined with Excel Partner List rows:86 and FactSheet_HS_PF_Exchange_2025_2026.pdf#page=2 (School of Design applications go to exchange.design@hs-pforzheim.de; IMEP offers 1-semester graduate track)."
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Winter Semester: Nomination May 1, Application May 15; Summer Semester: Nomination Oct 1, Application Oct 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Pforzeim University/2025-2026/FactSheet_HS_PF_Exchange_2025_2026.pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}

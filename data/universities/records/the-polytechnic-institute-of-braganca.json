@@ -1,0 +1,351 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "the-polytechnic-institute-of-braganca",
+  "excel_rows": [
+    115
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1di9M17DQ8Egh4wV8Czy7WmiemLUm0J0N"
+    ],
+    "local_files": [
+      "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "The Polytechnic Institute of Braganca",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IPB",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://ipb.pt",
+    "notes": null
+  },
+  "country": {
+    "value": "Portugal",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Bragança",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": "Mapped directly from agreement_scope_raw='University-wide'; see excluded_majors/course_restrictions_note for host exceptions."
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "Portuguese",
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://portal3.ipb.pt/index.php/en/guia-ects/special-call-for-international-students",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://portal3.ipb.pt/index.php/en/guia-ects/special-call-for-international-students",
+    "notes": "IPB offers dedicated English-taught course lists across Schools of Agriculture, Technology & Management, Education, and Communication/Tourism, plus individual English tutorial support with professors for Portuguese-taught courses."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "AY 2026-2027 1st Semester (Autumn): Classes begin Sep 7, 2026 (Welcome Week Sep 7-10, 2026); ~19-20 weeks running through Jan/Feb.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://portal3.ipb.pt/index.php/en/study/students/academic-services/academic-calendar",
+    "notes": "2020-2021 DOCX noted Autumn semester starts mid-Sep."
+  },
+  "spring_term_dates": {
+    "value": "2nd Semester (Spring): Runs mid-February through June/July (~19 weeks).",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://portal3.ipb.pt/index.php/en/study/students/academic-services/academic-calendar",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": "2020-2021 fact sheet states no tuition fee for mobility students."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory student accident/health insurance required upon registration (no tuition fee for mobility students).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": "2020-2021 fact sheet noted SAS residences were reserved for Portuguese scholarship students while IRO + ESN Bragança helped find private rooms; current ipb.pt indicates IRO assists international/mobility students with student residences (subject to availability) or private flats."
+  },
+  "housing_notes": {
+    "value": "IRO and ESN assist incoming exchange students with housing (student residences subject to availability or shared private rooms; 2020-2021 fact sheet listed private rooms at €120-€140/month).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA students must obtain a Portuguese Study Visa from the Portuguese Embassy/Consulate before arrival using IPB's acceptance letter, proof of financial means, valid health insurance, and accommodation details. Lead time not specified.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://ipb.pt",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "http://portal3.ipb.pt/index.php/en/ipben/home",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:115",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "http://www.ipb.pt/iro",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": "Also linked on https://portal3.ipb.pt/index.php/en/guia-ects/special-call-for-international-students and http://www.ipb.pt/go/d731."
+  },
+  "course_catalog_url": {
+    "value": "http://www.ipb.pt/go/d733",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": "ECTS guides also accessible under https://ipb.pt."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system (1 ECTS = 27 hours workload per ipb.pt): standard full-time load is 30 ECTS per semester (60 ECTS/year).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": "Campuses in Bragança and Mirandela (EsACT), plus Chaves (per ipb.pt)."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Erasmus Opening Session, Welcome Week & Mentoring Academy, ESN Bragança buddy/housing support, and intensive/semester Portuguese language course (3 ECTS).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "2020-2021 Fact Sheet application windows: Autumn Mar 1-Jul 1; Spring Sep 1-Dec 1 (nominations prior by home IRO).",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/The Polytechnic Institute of Braganca/The Polytechnic Institute of Braganca.docx",
+    "notes": null
+  },
+  "ext": {}
+}

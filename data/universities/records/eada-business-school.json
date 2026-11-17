@@ -1,0 +1,364 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "eada-business-school",
+  "excel_rows": [
+    27
+  ],
+  "shard": 3,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/open?id=1Pd4ozVGKP6O6eCszmLl7zSbzUy_6B-Ti",
+      "https://drive.google.com/drive/folders/1Rs-5F9X8Lu-n0nJG98E8rSxWxh2F-lcN"
+    ],
+    "local_files": [
+      "data/raw/factsheets/EADA Business School/2025-2026/EADA NEW FACT SHEET 2025-2026.pdf",
+      "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf",
+      "data/raw/factsheets/EADA Business School/EADA NEW APPLICATION FORM 2025-2026.doc"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/EADA Business School/2025-2026/EADA NEW FACT SHEET 2025-2026.pdf.txt",
+      "data/raw/extracted/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf.txt",
+      "data/raw/extracted/EADA Business School/EADA NEW APPLICATION FORM 2025-2026.doc.txt"
+    ],
+    "notes": "Col H link (1Pd4ozVGKP6O6eCszmLl7zSbzUy_6B-Ti) unreachable (error_html_response: Drive returned HTML page instead of document payload) | Resolved via matching public folder inside Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "EADA Business School",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "short_name": {
+    "value": "EADA",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=1",
+    "notes": null
+  },
+  "country": {
+    "value": "Spain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Barcelona",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Specialized Master exchange requires completed undergraduate degree and <=3 years work experience; International MBA exchange requires >=3 years work experience.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=6",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "BUS"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": [
+      "Business Administration"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "EADA evaluates candidates holistically; no numeric minimum GPA published for incoming exchange students."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=8",
+    "notes": "English-taught Master and MBA exchange tracks (bilingual/Spanish tracks separate)."
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=6",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Home-institution English sufficiency letter accepted for standard term exchange (interview if needed); Double Degree applicants require GMAT 650 and TOEFL iBT 100 or IELTS 7.0.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=8",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None required for English-taught Master and MBA exchange terms.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=8",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: International MBA Sep 28-Dec 18, 2026; Specialized Masters Oct 7-Dec 18, 2026.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=5",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Winter 2027: Jan 11-Mar 19, 2027; Winter-Spring 2027: Jan 11-Jun 30/Jul 31, 2027.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=5",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Fact sheet p.6 states general programme caps (max 2 seats per Master programme, max 1 seat per MBA programme) rather than a specific AUC bilateral quota."
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Agreement type suggests bilateral exchange, though AY 2026-2027 fact sheet and observed eada.edu pages do not explicitly state incoming exchange tuition waiver terms."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "EUR",
+      "min": 1110,
+      "max": 2070
+    },
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=10",
+    "notes": "Fact sheet p.10 breakdown: accommodation EUR 450-900, food EUR 250-450, utilities EUR 100-200, transport EUR 60-70, other EUR 250-450."
+  },
+  "living_cost_usd_est": {
+    "value": 8786,
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=10",
+    "notes": "5-month midpoint estimate from EUR 1,110-2,070/month (EUR 1,590/mo) converted at ECB 2026-11-13 rate 1 EUR = 1.1052 USD (collected 2026-11-15, https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html); math: 1,590 * 5 * 1.1052 = 8,786.34 USD (approx. USD 8,786)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Spanish public health system excludes international students; private health insurance strongly recommended plus FIATC accident insurance coverage.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=11",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "off_campus_only",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=10",
+    "notes": "EADA has no on-campus dormitories in Barcelona; external housing platforms provided."
+  },
+  "housing_notes": {
+    "value": "No on-campus housing; estimated off-campus rent EUR 450-900/month plus utilities EUR 100-200/month.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=10",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Merit/diversity scholarships (10-40%) on EADA website apply to full-degree tuition-paying applicants, not incoming exchange."
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Non-EU students require a Spanish student visa; AY 2026-2027 fact sheet does not specify incoming Master/MBA visa lead times or financial proof thresholds."
+  },
+  "official_website_url": {
+    "value": "http://www.eada.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:27",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No dedicated public incoming-exchange URL published on eada.edu (administered via exchange@eada.edu and Qualtrics application portal in fact sheet)."
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "EADA links 9 individual Master/MBA programme pages in fact sheet p.6 rather than a single unified exchange course catalog."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Individual English-taught Master and MBA programme links provided in fact sheet p.6."
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system; Fall Masters ~16-17 ECTS, Winter Masters 25-29 ECTS; all courses in the chosen term/programme are mandatory.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=7",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Students cannot mix courses across different Master/MBA programmes; all term courses are mandatory; max 2 seats per Master programme and max 1 seat per MBA programme.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=7",
+    "notes": "Seat limits on p.6; programme lock and mandatory term coursework on p.7."
+  },
+  "required_application_docs": {
+    "value": [
+      "Application form",
+      "Passport or EU ID copy",
+      "CV",
+      "Master/MBA transcripts",
+      "Home-institution English sufficiency letter"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=8",
+    "notes": null
+  },
+  "academic_style": {
+    "value": "Case study, role-play, and experiential outdoor leadership training modules at the Collbató residential campus.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=7",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Barcelona is Spain's second-largest city; schema city_tier label not explicitly classified in fact sheet."
+  },
+  "campus_type": {
+    "value": "multi_campus",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=4",
+    "notes": "Urban Barcelona city-centre campus (Aragó 204) plus Collbató residential training campus 40 km outside Barcelona."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Exchange coordinator desk (exchange@eada.edu), external housing assistance links (Studentfy), and FIATC accident insurance guidance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=10",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "AY 2026-2027 deadlines: Fall May 4, 2026; Winter Sep 14, 2026 (nomination/application).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/EADA Business School/2026-2027/EADA FACT SHEET 2026-2027.pdf#page=9",
+    "notes": null
+  },
+  "ext": {}
+}

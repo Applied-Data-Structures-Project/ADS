@@ -1,0 +1,353 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "louvain-school-of-management-uc-louvain",
+  "excel_rows": [
+    64,
+    65
+  ],
+  "shard": 7,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1QwaXQy-u-q78gUYWo_650nQSJBr7Zk-4"
+    ],
+    "local_files": [
+      "data/raw/factsheets/UC Louvain/Partners_MOL_Guide.pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/UC Louvain/Partners_MOL_Guide.pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Louvain School of Management (UC Louvain)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "short_name": {
+    "value": "UC Louvain",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "country": {
+    "value": "Belgium",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "Louvain-la-Neuve",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "region": {
+    "value": "Europe",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Graduate-level Master's exchange (4th-5th university year) in Management and Business Engineering at Louvain School of Management.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "Management and Business Administration",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "eligible_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English",
+      "French"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "substantial",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": "LSM Master courses for incoming exchange students are primarily taught in English alongside French options."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "CEFR B2 level in English strongly recommended; accepted proofs include TOEFL, IELTS, OLS, or a home-university language center certificate (generally max 3 years old). RHET 1020 waiver not explicitly named.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "No French proficiency required for English-taught LSM tracks; B2 French recommended if selecting French-taught courses. Free ILV French courses (up to 2 courses / max 8 ECTS) available.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "LSM Fall Term: Mid-September to late January (Mandatory Orientation Day mid-September; 2026-2027 UCLouvain exchange schedule shows welcome week Sep 7-11, Orientation Sep 10, classes Sep 14-Dec 19, exams Jan 4-23, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "LSM Spring Term: Late January / early February to late June (2026-2027 UCLouvain exchange schedule shows welcome week Jan 25-28, Orientation Jan 29, classes Feb 1-May 15, exams May 31-Jun 26/27, resits Aug 13-Sep 3, 2027).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": "auc_exchange_waiver",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/international/come-to-uclouvain.html",
+    "notes": "Officially nominated incoming exchange students under Erasmus+ or bilateral agreements are exempt from paying tuition fees at UCLouvain."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Tuition waived; mandatory EHIC (EU) or private international health insurance covering healthcare and medical repatriation in Belgium for non-EU students. Optional Sports Affiliation €60.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/international/come-to-uclouvain.html",
+    "notes": "Sports fee and Belgian health insurance rules verified on official uclouvain.be pages."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/logement",
+    "notes": "University housing (Service des Logements / LOGE rooms, kots/KAPs) is limited and allocated on a first-come-first-served basis; students must apply early and may use the private market."
+  },
+  "housing_notes": {
+    "value": "University rooms (LOGE): approx. €295/month; private 1-bedroom flats €600-€800/month (2-bedroom €750-€900/month). General non-rent expenses estimated at €350+/month (per uclouvain.be).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/logement",
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-EU/EEA nationals require a Belgian Long-stay Type D Student Visa using UCLouvain's enrollment authorization; 2026-2027 statutory Belgian financial solvency minimum is €1,062 net/month (€12,744/12 months + admin fees via blocked account, scholarship, or Annex 32 guarantor).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/international/come-to-uclouvain.html",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://uclouvain.be/en/faculties/lsm",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:64,65",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": "General UCLouvain exchange guide also at https://uclouvain.be/en/study/etudiant-echange.html; Mobility-Online nomination guide in Partners_MOL_Guide.pdf."
+  },
+  "course_catalog_url": {
+    "value": "https://uclouvain.be/en/edugo/catalogue-des-cours.html",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/edugo/catalogue-des-cours.html",
+    "notes": "Requires faculty/LSM filtering in the UCLouvain catalog (Mob-i / mon programme d'échange); no standalone incoming-only English course URL."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "ECTS credit system: standard full-time load is 30 ECTS per semester (typically up to 6 courses of 5 ECTS each; max 2 free ILV French courses totaling up to 8 ECTS).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Home university nomination in Mobility-Online",
+      "Online Mobility-Online application & Learning Agreement",
+      "Language proficiency proof (B2 English recommended)",
+      "Passport / ID copy",
+      "Health insurance proof (EHIC or non-EU repatriation policy)"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/UC Louvain/Partners_MOL_Guide.pdf#page=1",
+    "notes": "Mobility-Online workflow verified in Partners_MOL_Guide.pdf; documents verified via uclouvain.be."
+  },
+  "academic_style": {
+    "value": "Graduate management training combining lectures with group project work, continuous evaluation, and mandatory attendance in LSM Master's courses.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Mandatory LSM Orientation Day, Welcome Weeks, free ILV French language courses (up to 8 ECTS), and UCLouvain mobility coordinators (https://uclouvain.be/en/study/les-coordonnateurs-de-mobilite-a-l-ucl.html).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/international/come-to-uclouvain.html",
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "LSM incoming exchange nomination/registration deadlines: May 15 (Fall Term / Full Academic Year); Nov 15 (Spring Term).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://uclouvain.be/en/colleges-institutes/lsm/incoming-exchange-students.html",
+    "notes": null
+  },
+  "ext": {}
+}

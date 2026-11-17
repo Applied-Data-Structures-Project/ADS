@@ -1,0 +1,348 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "iowa-state-university",
+  "excel_rows": [
+    49
+  ],
+  "shard": 1,
+  "fact_sheet_status": {
+    "match_status": "none",
+    "drive_links": [],
+    "local_files": [],
+    "extracted_files": [],
+    "notes": null
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Iowa State University",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "short_name": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "country": {
+    "value": "United States",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": "Iowa",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "city": {
+    "value": "Ames",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "region": {
+    "value": "North America",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": "Incoming international exchange students must be in good academic standing and officially nominated by a partner institution (designated as Non-Degree J-1 Exchange Students).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://isuabroad.iastate.edu",
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": "Mapped from University-wide scope in Excel partner list."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "No published institutional minimum GPA cutoff verified for incoming non-degree J-1 exchange students on iastate.edu (the 2.5 GPA figure on nse.dso.iastate.edu applies to outgoing National Student Exchange students)."
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.admissions.iastate.edu/nondegree",
+    "notes": null
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.admissions.iastate.edu/nondegree",
+    "notes": null
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Nondegree and exchange applicants must meet English proficiency: TOEFL iBT 71 (minimum 17 Speaking and 17 Writing; institutional code 6306) or IELTS 6.0 (all subscores >=5.5). No RHET 1020 exemption stated.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.admissions.iastate.edu/nondegree",
+    "notes": null
+  },
+  "host_language_requirement": {
+    "value": "None (English-medium institution).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.admissions.iastate.edu/nondegree",
+    "notes": null
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "Fall 2026: Classes begin Mon 24 Aug 2026; Thanksgiving Break 23-27 Nov; Final Exams 14-17 Dec; Semester ends Fri 18 Dec 2026.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.registrar.iastate.edu/calendar/academic-calendars",
+    "notes": null
+  },
+  "spring_term_dates": {
+    "value": "Spring 2027: Classes begin Tue 19 Jan 2027 (MLK Day 18 Jan); Spring Break 15-19 Mar; Final Exams 10-13 May; Semester ends Fri 14 May 2027.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.registrar.iastate.edu/calendar/academic-calendars",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "ISU notes exchange students are designated Non-Degree J-1 Exchange Students and tuition arrangements vary by specific bilateral agreement / NSE program; no explicit universal AUC waiver statement retrieved."
+  },
+  "est_monthly_living_local": {
+    "value": {
+      "currency": "USD",
+      "min": 1651,
+      "max": 1651
+    },
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://financialaid.iastate.edu/cost/undergraduate-students-fall-spring/",
+    "notes": "Derived from ISU 2026-27 9-month Undergraduate non-tuition living/indirect costs of USD 14,862 (Housing & Food USD 11,162 + Books/Supplies USD 800 + Personal USD 2,450 + Transportation USD 450) divided by 9 months = USD 1,651.33/month (excludes tuition & fees and SSHIP insurance; avoids conflating ISSO's USD 1,960/mo J-1 Scholar verification table)."
+  },
+  "living_cost_usd_est": {
+    "value": 8256.67,
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://financialaid.iastate.edu/cost/undergraduate-students-fall-spring/",
+    "notes": "5-month USD estimate derived from ISU 2026-27 9-month Undergraduate living/indirect costs USD 14,862 (USD 1,651.33/mo x 5 = USD 8,256.67; excluding SSHIP insurance), collected 2026-11-15 (USD local currency; no FX conversion)."
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "All international students taking >=1 credit are automatically enrolled in ISU SSHIP health insurance (2026-27 student-only rates: USD 1,050 Fall, USD 1,470 Spring/Summer = USD 2,520 annual per https://sship.hr.iastate.edu/undergrad-grad; strict waiver rules for pre-approved home policies at https://sship.hr.iastate.edu/international-student-waiver-process).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://sship.hr.iastate.edu/undergrad-grad",
+    "notes": null
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.isso.iastate.edu/j-1-exchange-visitor-program",
+    "notes": "On-campus residence halls and university apartments available via Department of Residence upon timely application after exchange admission."
+  },
+  "housing_notes": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Non-Degree J-1 Exchange Student DS-2019 issued through ISSO (https://www.isso.iastate.edu/j-1-exchange-visitor-program) upon proof of living expenses + SSHIP insurance coverage.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://www.isso.iastate.edu/j-1-exchange-visitor-program",
+    "notes": null
+  },
+  "official_website_url": {
+    "value": "https://www.iastate.edu/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:49",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://isuabroad.iastate.edu",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://isuabroad.iastate.edu",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "nomination_deadlines": {
+    "value": "Fall semester: Application deadline 1 April; Spring semester: Application deadline 1 October (following home university nomination).",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://isuabroad.iastate.edu",
+    "notes": null
+  },
+  "ext": {}
+}

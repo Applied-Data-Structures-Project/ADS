@@ -1,0 +1,354 @@
+{
+  "schema_version": "1.0.0",
+  "slug": "indian-institute-of-technology-delhi-iit-delhi",
+  "excel_rows": [
+    44
+  ],
+  "shard": 8,
+  "fact_sheet_status": {
+    "match_status": "matched",
+    "drive_links": [
+      "https://drive.google.com/drive/folders/1hWfYxCu9L0JCyaVt4tlyfznjru_YkCOC"
+    ],
+    "local_files": [
+      "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf"
+    ],
+    "extracted_files": [
+      "data/raw/extracted/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf.txt"
+    ],
+    "notes": "Excel Col H blank, but matching public folder found in Drive master folder"
+  },
+  "cross_references": [],
+  "official_name": {
+    "value": "Indian Institute of Technology-Delhi (IIT-Delhi)",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "short_name": {
+    "value": "IIT-Delhi",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "country": {
+    "value": "India",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "state_or_province": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city": {
+    "value": "New Delhi",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "region": {
+    "value": "South Asia",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": "From normalized manifest country/region mapping"
+  },
+  "agreement_status": {
+    "value": "active",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "agreement_student_levels": {
+    "value": [
+      "UG",
+      "GR"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "min_standing_note": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "agreement_scope_raw": {
+    "value": "University-wide",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "eligible_auc_schools": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": "Excel agreement_scope_raw is 'University-wide'."
+  },
+  "eligible_majors": {
+    "value": [
+      "ALL"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "excluded_majors": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "min_gpa_host": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "instruction_languages": {
+    "value": [
+      "English"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": "'The medium of instruction and assessment at IIT Delhi is English.'"
+  },
+  "english_course_availability": {
+    "value": "full",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": "Medium of instruction and assessment is English across IIT Delhi."
+  },
+  "english_proficiency_and_rhet1020": {
+    "value": "Medium of instruction and assessment is English (`#page=2`), with no special preparatory language courses prior to exchange (`#page=3`); no separate standardized test score cutoff published in the fact sheet. RHET 1020 waiver not stated.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": "No special language courses stated on #page=3; MoU partner nomination portal at https://international.iitd.ac.in/."
+  },
+  "host_language_requirement": {
+    "value": "Not required; instruction and assessment are in English and no pre-term language courses are offered (`#page=2–3`).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": "Pre-term language courses stated as 'No' on #page=3."
+  },
+  "available_terms": {
+    "value": [
+      "Fall",
+      "Spring"
+    ],
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": "Fall/Spring"
+  },
+  "fall_term_dates": {
+    "value": "2026-07-23 to 2026-11-25 (AY 2026-27 Semester I: reporting/orientation Jul 18–23; classes start Jul 23/27; mid-sem Sep 12–18; end-sem exams Nov 19–25, 2026)",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://timetable.iitd.ac.in/sem1_26-27",
+    "notes": "Published on https://home.iitd.ac.in/academic-calendar.php and https://timetable.iitd.ac.in/sem1_26-27."
+  },
+  "spring_term_dates": {
+    "value": "2027-01-01 to 2027-05 (AY 2026-27 Semester II: registration Jan 1, 2027; classes commence Jan 4, 2027; mid-sem Feb 22–27, 2027; semester end date TBA)",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://timetable.iitd.ac.in/sem2_26-27",
+    "notes": null
+  },
+  "final_semester_allowed": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "seat_quota": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "tuition_model": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Student exchanges operate strictly through active institutional MoUs (https://international.iitd.ac.in/); neither the undated local fact sheet nor non-mirror iitd.ac.in pages explicitly state incoming exchange tuition waiver terms without consulting the MoU."
+  },
+  "est_monthly_living_local": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "living_cost_usd_est": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "mandatory_host_fees_and_insurance": {
+    "value": "Mandatory personal comprehensive health insurance for the full stay (copy submitted upon joining). Regular BHM hostel/mess charges (`hostel-charges.pdf`): INR 7,000 non-refundable allotment + INR 15,000 refundable deposit; mess ~INR 38,580–52,980/semester + ~INR 8,600/semester seat rent.",
+    "status": "partial",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=3",
+    "notes": "Hostel/mess INR fee schedule from https://academics.iitd.ac.in/sites/default/files/fees/hostel-charges.pdf."
+  },
+  "housing_availability": {
+    "value": "assisted",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=3",
+    "notes": "On-campus hostel accommodation available for exchange students subject to prior confirmation."
+  },
+  "housing_notes": {
+    "value": "On-campus hostel accommodation available for incoming exchange students (`#page=3`); BHM hostel/mess charges on `hostel-charges.pdf` list mess ~INR 38,580–52,980/sem, seat rent ~INR 8,600/sem, plus one-time INR 7,000 allotment and INR 15,000 refundable security deposit.",
+    "status": "partial",
+    "source_type": "official_web",
+    "source_ref": "https://academics.iitd.ac.in/sites/default/files/fees/hostel-charges.pdf",
+    "notes": "Exchange hostel availability confirmed on data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=3."
+  },
+  "host_grants_or_stipends": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "citizenship_restrictions": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "visa_lead_time_and_financial_proof": {
+    "value": "Incoming exchange students must obtain an Indian Student Visa from the Indian Embassy prior to arrival and are strictly prohibited from working (paid or unpaid) (`#page=3`). Stays >180 days require FRRO Delhi registration within 14 days via https://indianfrro.gov.in/efrro.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=3",
+    "notes": "FRRO portal and 14-day rule also referenced on https://international.iitd.ac.in/."
+  },
+  "official_website_url": {
+    "value": "https://home.iitd.ac.in/",
+    "status": "verified",
+    "source_type": "excel_list",
+    "source_ref": "data/raw/partner_list_extracted.json#Universities List!rows:44",
+    "notes": null
+  },
+  "exchange_page_url": {
+    "value": "https://international.iitd.ac.in/",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://international.iitd.ac.in/",
+    "notes": null
+  },
+  "course_catalog_url": {
+    "value": "https://home.iitd.ac.in/curriculum.php",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://home.iitd.ac.in/curriculum.php",
+    "notes": "Semester timetables published at https://timetable.iitd.ac.in/."
+  },
+  "english_course_list_url": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "credit_system_and_load": {
+    "value": "Credit-based L-T-P (Lecture-Tutorial-Practical) system graded on a 10-point scale with mid-semester and end-semester evaluations.",
+    "status": "verified",
+    "source_type": "official_web",
+    "source_ref": "https://home.iitd.ac.in/curriculum.php",
+    "notes": null
+  },
+  "course_restrictions_note": {
+    "value": "Inter-departmental courses are allowed subject to approval by the course advisor; per-semester available courses can be provided on request (`#page=2`).",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": null
+  },
+  "required_application_docs": {
+    "value": [
+      "Curriculum Vitae (CV)",
+      "Motivation Letter",
+      "Consolidated academic transcript"
+    ],
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": null
+  },
+  "academic_style": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "city_tier": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "campus_type": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": "Campus sits at Hauz Khas, New Delhi-110016 (`#page=1`); omitted explicit campus_type label as neither fact sheet nor iitd.ac.in main pages explicitly print 'urban campus'."
+  },
+  "daily_life_english_friendliness": {
+    "value": null,
+    "status": "unknown",
+    "source_type": "unknown",
+    "source_ref": null,
+    "notes": null
+  },
+  "international_support_services": {
+    "value": "Airport pick-up service available once confirmed (`#page=3`); UG (`drugs@admin.iitd.ac.in`) and PG (`drgpsr@admin.iitd.ac.in`) administrative sections (`#page=1`), plus FRRO registration guidance.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=3",
+    "notes": "UG/PG coordinator contacts on data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=1."
+  },
+  "nomination_deadlines": {
+    "value": "1st Semester (July Entry): May 31. 2nd Semester (January Entry): November 15.",
+    "status": "verified",
+    "source_type": "fact_sheet",
+    "source_ref": "data/raw/factsheets/Indian Institute of Technology- Delhi (IIT- Delhi)/Indian Institute of Technology- Delhi (IIT- Delhi).pdf#page=2",
+    "notes": null
+  },
+  "ext": {}
+}
