@@ -29,9 +29,9 @@ CREATE TABLE IF NOT EXISTS applications (
     program_type         TEXT,                     -- 'Exchange' / 'Direct Enrollment'
 
     -- Preferences: 3 ranked choices from the student's saved list
-    pref1                INTEGER REFERENCES universities(id),  -- 1st choice
-    pref2                INTEGER REFERENCES universities(id),  -- 2nd choice
-    pref3                INTEGER REFERENCES universities(id),  -- 3rd choice
+    pref1                INTEGER REFERENCES universities(slug),  -- 1st choice
+    pref2                INTEGER REFERENCES universities(slug),  -- 2nd choice
+    pref3                INTEGER REFERENCES universities(slug),  -- 3rd choice
 
     -- Parent / guardian (real form)
     guardian_name        TEXT,                     -- full name
