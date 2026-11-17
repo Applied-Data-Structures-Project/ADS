@@ -21,6 +21,7 @@
 	import { onMount, type Snippet } from 'svelte';
 	import { page } from '$app/state';
 	import { store } from '#lib/student/store.svelte.ts';
+	import { auth } from '#lib/auth/store.svelte.ts';
 	import Icon from './Icon.svelte';
 
 	interface Props {
@@ -112,6 +113,17 @@
 		</div>
 
 		<div class="flex items-center justify-end gap-2 sm:gap-2.5 shrink-0">
+			{#if auth.demoEnabled}
+				<span
+					aria-label="Demo mode"
+					title="Demo mode"
+					class="h-9 sm:h-10 px-2 sm:px-2.5 rounded-xl bg-[#fffbeb] border border-[#c6c6cd]/50 text-[#b45309] flex items-center gap-1.5 text-[10px] font-semibold shrink-0"
+				>
+					<Icon name="alert" class="w-3.5 h-3.5" strokeWidth={2} />
+					<span class="hidden lg:inline">Demo</span>
+				</span>
+			{/if}
+
 			<button
 				type="button"
 				onclick={() => store.toggleDarkMode()}
@@ -121,6 +133,16 @@
 			>
 				<Icon name={store.darkMode ? 'sun' : 'moon'} class="w-4 h-4" strokeWidth={2} />
 				<span class="hidden lg:inline">{store.darkMode ? 'Light' : 'Dark'}</span>
+			</button>
+
+			<button
+				type="button"
+				onclick={() => auth.signOut()}
+				aria-label="Sign out"
+				title="Sign out"
+				class="h-9 sm:h-10 w-9 sm:w-10 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] border border-[#c6c6cd]/50 text-[#0b1c30] flex items-center justify-center cursor-pointer transition-colors shrink-0"
+			>
+				<Icon name="logout" class="w-4 h-4" strokeWidth={2} />
 			</button>
 
 			<div class="flex items-center gap-3 py-1.5 px-1.5 sm:px-3.5 rounded-xl sm:bg-[#f8f9ff] sm:border sm:border-[#c6c6cd]/50">

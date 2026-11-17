@@ -23,6 +23,9 @@ frontend/node_modules/
 frontend/.svelte-kit/
 frontend/build/
 
+# Superpowers scratch (ledger, briefs, review packages)
+.superpowers/
+
 # Editors / OS
 /.vs
 .vscode

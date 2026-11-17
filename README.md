@@ -38,6 +38,14 @@ npm run dev                             # http://localhost:5173
 
 The frontend dev server proxies every `/api/*` request to `localhost:18080`, so call the backend with relative URLs (`/api/...`) and there are no CORS issues.
 
+**Sign-in:** the app uses real AUC Microsoft (Entra ID) sign-in through
+`@azure/msal-browser`. Copy `frontend/.env.example` to `frontend/.env`, add the
+`PUBLIC_MSAL_CLIENT_ID` and `PUBLIC_MSAL_TENANT_ID` from the Entra app
+registration, and restart the dev server. Until those ids exist, set
+`PUBLIC_DEMO_AUTH=true` in `frontend/.env` to explore the portal with demo
+identities. Until the C++ backend verifies tokens, role checks are UI-only; see
+`frontend/README.md` for the checklist and the current limitation.
+
 ### Other commands
 
 ```bash

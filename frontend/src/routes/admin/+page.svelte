@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
+	import { auth } from '#lib/auth/store.svelte.ts';
 	import BipartiteMatchModal from '#lib/components/BipartiteMatchModal.svelte';
 	import {
 		DEFAULT_WEIGHT_CONFIG,
@@ -377,6 +378,21 @@
 
 		<!-- Right: Dark Mode Toggle + Coordinator Profile Card -->
 		<div class="flex items-center justify-end gap-2 sm:gap-2.5 shrink-0">
+			{#if auth.demoEnabled}
+				<span
+					aria-label="Demo mode"
+					title="Demo mode"
+					class="h-9 sm:h-10 px-2 sm:px-2.5 rounded-xl bg-[#fffbeb] border border-[#c6c6cd]/50 text-[#b45309] flex items-center gap-1.5 text-[10px] font-semibold shrink-0"
+				>
+					<svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+						<path d="M12 9v4" />
+						<path d="M12 17h.01" />
+						<path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0Z" />
+					</svg>
+					<span class="hidden lg:inline">Demo</span>
+				</span>
+			{/if}
+
 			<button
 				type="button"
 				onclick={toggleDarkMode}
@@ -409,13 +425,27 @@
 				<div
 					class="w-9 h-9 md:w-10 md:h-10 rounded-full bg-[#dce9ff] border border-[#c6c6cd] flex items-center justify-center text-xs md:text-sm font-bold text-[#0b1c30] shrink-0"
 				>
-					NH
+					{auth.initials || 'NH'}
 				</div>
 				<div class="hidden md:flex flex-col text-left">
-					<span class="text-sm font-semibold text-[#0b1c30] leading-tight">Nadia Hassan</span>
+					<span class="text-sm font-semibold text-[#0b1c30] leading-tight">{auth.displayName || 'Nadia Hassan'}</span>
 					<span class="text-xs font-medium text-[#515f74] leading-tight">IPSO Coordinator</span>
 				</div>
 			</div>
+
+			<button
+				type="button"
+				onclick={() => auth.signOut()}
+				aria-label="Sign out"
+				title="Sign out"
+				class="h-9 sm:h-10 w-9 sm:w-10 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] border border-[#c6c6cd]/50 text-[#0b1c30] flex items-center justify-center cursor-pointer transition-colors shrink-0"
+			>
+				<svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+					<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+					<polyline points="16 17 21 12 16 7" />
+					<line x1="21" y1="12" x2="9" y2="12" />
+				</svg>
+			</button>
 		</div>
 	</header>
 
