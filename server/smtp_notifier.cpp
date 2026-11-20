@@ -1,6 +1,4 @@
 // smtp_notifier.cpp
-// Group 3 - Malak
-//
 // An email is plain text: a few header lines (From, To, Subject...), an empty line, then the body.
 // libcurl connects to the mail server, logs in, and uploads that text.
 
@@ -10,7 +8,9 @@
 #include <cstdlib>
 #include <cstring>
 #include <ctime>
+#ifndef ADS_NO_CURL
 #include <curl/curl.h>
+#endif
 
 using namespace std;
 
@@ -26,6 +26,7 @@ SmtpNotifier::SmtpNotifier() {
     from = envOr("SMTP_FROM", user);
 }
 
+#ifndef ADS_NO_CURL
 // Emails need "\r\n" at the end of every line.
 static string withCrlf(const string& text) {
     string out;
@@ -58,14 +59,24 @@ static size_t readPart(char* buffer, size_t size, size_t count, void* userData) 
     up->pos += n;
     return n;   // 0 means "finished"
 }
+#endif
 
 bool SmtpNotifier::send(const string& to, const string& subject, const string& body) {
-    // Not set up: show the email in the terminal so the demo still works.
-    if (!configured()) {
-        printf("\n--- email (not sent: SMTP_USER is not set) ---\nTo: %s\nSubject: %s\n\n%s---\n",
-               to.c_str(), subject.c_str(), body.c_str());
+    // Not set up (or no libcurl on this computer): show the email in the terminal instead.
+#ifdef ADS_NO_CURL
+    const char* reason = "this computer has no libcurl";
+    bool canSend = false;
+#else
+    const char* reason = "SMTP_USER is not set";
+    bool canSend = configured();
+#endif
+    if (!canSend) {
+        printf("\n--- email (not sent: %s) ---\nTo: %s\nSubject: %s\n\n%s---\n",
+               reason, to.c_str(), subject.c_str(), body.c_str());
         return true;
     }
+
+#ifndef ADS_NO_CURL
 
     Upload up;
     up.data = withCrlf(
@@ -104,4 +115,7 @@ bool SmtpNotifier::send(const string& to, const string& subject, const string& b
     curl_slist_free_all(recipients);
     curl_easy_cleanup(curl);
     return result == CURLE_OK;
+#else
+    return false;   // never reached: without libcurl we always print above
+#endif
 }

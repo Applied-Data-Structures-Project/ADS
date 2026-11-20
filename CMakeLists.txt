@@ -82,8 +82,17 @@ endif()
 # ads_server: the REST API (Crow lives only in server/)
 file(GLOB_RECURSE ADS_SERVER_SOURCES CONFIGURE_DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/server/*.cpp)
 add_executable(ads_server ${ADS_SERVER_SOURCES})
-find_package(CURL REQUIRED)   # used by server/smtp_notifier.cpp to send emails
-target_link_libraries(ads_server PRIVATE ads_core crow_lib ads_warnings CURL::libcurl)
+target_link_libraries(ads_server PRIVATE ads_core crow_lib ads_warnings)
+
+# Emails (server/smtp_notifier.cpp) use libcurl. Macs have it; Windows often does not.
+# Without it the server still builds, and emails are printed in the terminal instead of sent.
+find_package(CURL QUIET)
+if(CURL_FOUND)
+  target_link_libraries(ads_server PRIVATE CURL::libcurl)
+else()
+  target_compile_definitions(ads_server PRIVATE ADS_NO_CURL)
+  message(STATUS "libcurl not found: emails will be printed, not sent")
+endif()
 target_compile_definitions(ads_server PRIVATE
   ADS_DEFAULT_DB_PATH="${CMAKE_CURRENT_SOURCE_DIR}/db/app.db")
 
