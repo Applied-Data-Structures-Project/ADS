@@ -14,6 +14,7 @@
 #include "vector.hpp"
 #include "models/application.hpp"
 #include "repo/application_repo.hpp"
+#include "services/notifier.hpp"
 class LetterService {
 public:
     explicit LetterService(ApplicationRepo& repo);
@@ -21,9 +22,15 @@ public:
     // At start-up: fill the HashMaps and every doctor's Queue from the database.
     void loadAll();
 
+        // Optional: email the doctor when asked, and the student when answered.
+    // Without this (nullptr), no emails are sent - that is what the tests do.
+    void setNotifier(Notifier* notifier, const std::string& siteUrl, const std::string& deadlineText);
+
     // A student asks a doctor. Returns the new request id, or -1 with the reason in error.
+    // studentName is only used in the email to the doctor.
     int requestLetter(const std::string& studentEmail, const std::string& doctorName,
-                      const std::string& doctorEmail, const std::string& now, std::string& error);
+                      const std::string& doctorEmail, const std::string& now, std::string& error,
+                      const std::string& studentName = "");
 
     // The doctor answers: send = true (with the letter) or false (declined).
     bool answer(int id, const std::string& doctorEmail, bool send, const std::string& letterText,
@@ -44,7 +51,14 @@ private:
     HashMap<std::string, Vector<int>> byStudent;
     HashMap<std::string, Queue<int>> doctorQueue;
 
+        Notifier* notifier = nullptr;
+    std::string siteUrl;
+    std::string deadlineText;
+
     static const int MAX_REQUESTS = 2;
+
+    void emailDoctor(const LetterRequest& l, const std::string& studentName);
+    void emailStudent(const LetterRequest& l);
 
     void cleanFront(const std::string& doctorEmail);
     static bool endsWith(const std::string& text, const std::string& ending);

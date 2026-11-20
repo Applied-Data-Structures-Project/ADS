@@ -43,7 +43,8 @@ void LetterService::loadAll() {
 // student asks 
 
 int LetterService::requestLetter(const string& studentEmail, const string& doctorName,
-                                 const string& doctorEmail, const string& now, string& error) {
+                                 const string& doctorEmail, const string& now, string& error,
+                                 const string& studentName) {
     // 1. Rules
     if (doctorName.empty() || doctorEmail.empty()) {
         error = "Enter the doctor's name and email.";
@@ -88,7 +89,10 @@ int LetterService::requestLetter(const string& studentEmail, const string& docto
     // 3. Our data structures
     requests.insert(l.id, l);
     byStudent[studentEmail].push_back(l.id);
-    doctorQueue[doctorEmail].push(l.id);   // joins the back of this doctor's line
+        doctorQueue[doctorEmail].push(l.id);   // joins the back of this doctor's line
+
+    // 4. Tell the doctor (if emails are switched on)
+    emailDoctor(l, studentName);
     return l.id;
 }
 //  doctor answers 
@@ -122,8 +126,9 @@ bool LetterService::answer(int id, const string& doctorEmail, bool send, const s
         return false;
     }
 
-    *l = updated;              // update the HashMap
+        *l = updated;              // update the HashMap
     cleanFront(doctorEmail);   // take answered requests off the front of the queue
+    emailStudent(updated);     // tell the student (if emails are switched on)
     return true;
 }
 
@@ -177,4 +182,57 @@ bool LetterService::hasReceivedLetter(const string& studentEmail) const {
         if (l != nullptr && l->status == "Received") return true;
     }
     return false;
+}
+//  emails 
+
+void LetterService::setNotifier(Notifier* n, const string& url, const string& deadline) {
+    notifier = n;
+    siteUrl = url;
+    deadlineText = deadline;
+}
+
+void LetterService::emailDoctor(const LetterRequest& l, const string& studentName) {
+    if (notifier == nullptr) return;
+    string who = studentName.empty() ? l.studentEmail : studentName;
+
+    string subject = "Recommendation letter request from " + who + " (AUC study abroad)";
+    string body =
+        "Dear " + l.doctorName + ",\n\n" +
+        who + " (" + l.studentEmail + ") is applying to study abroad through IPSO "
+        "and has asked you for a recommendation letter.\n\n"
+        "What to do:\n"
+        "1. Open the AUC Exchange Matcher: " + siteUrl + "/doctor\n"
+        "2. Sign in with your AUC Microsoft account.\n"
+        "3. Find " + who + " in your list of requests.\n"
+        "4. Write your letter and press Send, or press Decline if you cannot write one.\n\n"
+        "The student cannot submit the application until a letter is received, "
+        "so please answer before " + deadlineText + ".\n\n"
+        "This is an automatic message from the AUC Exchange Matcher. Please do not reply.\n";
+
+    notifier->send(l.doctorEmail, subject, body);   // if it fails, the request is still saved
+}
+
+void LetterService::emailStudent(const LetterRequest& l) {
+    if (notifier == nullptr) return;
+    string subject;
+    string body;
+
+    if (l.status == "Received") {
+        subject = l.doctorName + " has sent your recommendation letter";
+        body =
+            "Hello,\n\n" +
+            l.doctorName + " has sent your recommendation letter. You can now submit your application:\n"
+            "1. Sign in at " + siteUrl + "/apply\n"
+            "2. Check that nothing is missing on the status page.\n"
+            "3. Press Submit before " + deadlineText + ".\n\n"
+            "This is an automatic message from the AUC Exchange Matcher. Please do not reply.\n";
+    } else {
+        subject = l.doctorName + " cannot write your recommendation letter";
+        body =
+            "Hello,\n\n" +
+            l.doctorName + " cannot write your recommendation letter.\n"
+            "You can ask another AUC faculty member from the Letters page: " + siteUrl + "/letters\n\n"
+            "This is an automatic message from the AUC Exchange Matcher. Please do not reply.\n";
+    }
+    notifier->send(l.studentEmail, subject, body);
 }
