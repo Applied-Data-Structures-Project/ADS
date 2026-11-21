@@ -27,6 +27,10 @@
 //                    to every score so that "more students placed" always beats
 //                    "higher scores". Without it the Hungarian algorithm could leave a
 //                    student out just to get a higher total.
+//   runTopCandidates(): NOT an allocation. For every university it ranks the students who
+//                    are eligible there, best fit first, using one Heap per university.
+//                    The same student can appear in several lists. It ignores seats except
+//                    to show each university's seat count, so the admin sees the cutoff.
 //
 // This file must not include Crow (HTTP) or SQLite, so it can be tested alone.
 
@@ -63,6 +67,10 @@ public:
 
     // Option 2: the most students placed, then the best total fit.
     AdminMatchResult runBestFit() const;
+
+    // Option 3: a ranked shortlist of eligible students for every university.
+    // maxPerUniversity limits how many are listed per university (0 or less = everyone).
+    AdminShortlistResult runTopCandidates(int maxPerUniversity) const;
 
 private:
     Vector<AdminStudent> students;          // our own copy, so positions can never shift

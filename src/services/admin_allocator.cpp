@@ -1,6 +1,7 @@
 #include "services/admin_allocator.hpp"
 
 #include "bipartite.hpp"
+#include "heap.hpp"
 
 namespace
 {
@@ -27,6 +28,21 @@ Vector<double> buildScoreLookup(const Vector<PairResult> &pairs, int studentCoun
             scoreOf[pair.studentIndex * universityCount + pair.universityIndex] = pair.score;
     }
     return scoreOf;
+}
+
+// For every (student, university) pair that is eligible, the position of that pair in the
+// scorer's list. Pairs that are not eligible get -1. The entry for student s at university u
+// is at position s * universityCount + u. Used to read a candidate's warning flags.
+Vector<int> buildPairLookup(const Vector<PairResult> &pairs, int studentCount, int universityCount)
+{
+    Vector<int> where(studentCount * universityCount, -1);
+    for (int i = 0; i < pairs.size(); ++i)
+    {
+        const PairResult &pair = pairs[i];
+        if (pair.eligible())
+            where[pair.studentIndex * universityCount + pair.universityIndex] = i;
+    }
+    return where;
 }
 
 // Turns the matcher's answer (pairs of student number and seat number) into the
@@ -149,4 +165,66 @@ AdminMatchResult AdminAllocator::runBestFit() const
     addEdgesToGraph(seats.buildEdges(scorer.pairs()), bonus, graph);
     Vector<Pair<int, int>> matched = graph.get_max_weight_matching();
     return buildResult(students, universities, seats, scorer, matched);
+}
+
+// Option 3: one Heap per university holds that university's eligible students, ordered by
+// fit score (highest on top). The heap is a good fit because we usually need only the top
+// few, and popping gives the next best candidate each time, like a waiting list. PriorityItem
+// (from heap.hpp) breaks ties for us: on equal scores the smaller "seq" comes first, and we
+// use the student's position as seq, so the lower student number wins a tie.
+AdminShortlistResult AdminAllocator::runTopCandidates(int maxPerUniversity) const
+{
+    if (!valid())
+        return AdminShortlistResult();
+
+    AdminShortlistResult result;
+    int universityCount = universities.size();
+    const Vector<PairResult> &pairs = scorer.pairs();
+
+    // Fill the heaps: every eligible pair goes into the heap of its university.
+    Vector<Heap<PriorityItem>> heaps(universityCount, Heap<PriorityItem>());
+    for (int i = 0; i < pairs.size(); ++i)
+    {
+        const PairResult &pair = pairs[i];
+        if (pair.eligible())
+            heaps[pair.universityIndex].push(PriorityItem(pair.studentIndex, pair.score, pair.studentIndex));
+    }
+
+    Vector<int> pairOf = buildPairLookup(pairs, students.size(), universityCount);
+
+    // Build one shortlist per university, even if nobody is eligible there.
+    for (int u = 0; u < universityCount; ++u)
+    {
+        AdminUniversityShortlist section;
+        section.slug = universities[u].slug;
+        section.name = universities[u].name;
+        section.totalSeats = seats.universitySeats(u).totalSeats;
+        section.seatsAssumed = seats.universitySeats(u).assumed;
+        section.eligibleCount = heaps[u].size();
+
+        // How many to list: everyone, or at most maxPerUniversity.
+        int listed = heaps[u].size();
+        if (maxPerUniversity > 0 && maxPerUniversity < listed)
+            listed = maxPerUniversity;
+
+        // Pop the best candidate again and again; each pop gives the next best.
+        for (int rank = 1; rank <= listed; ++rank)
+        {
+            PriorityItem best;
+            heaps[u].pop(best);
+            const PairResult &pair = pairs[pairOf[best.id * universityCount + u]];
+
+            AdminCandidate candidate;
+            candidate.rank = rank;
+            candidate.student = students[best.id];
+            candidate.score = best.score;
+            candidate.minGpaUnknown = pair.minGpaUnknown;
+            candidate.statementMissing = pair.statementMissing;
+            section.candidates.push_back(candidate);
+        }
+        result.byUniversity.push_back(section);
+    }
+
+    result.valid = true;
+    return result;
 }
