@@ -816,6 +816,495 @@ static void testRandomAgainstBruteForce()
     }
 }
 
+// ---------------------------------------------------------------------------
+// Option 3 (runTopCandidates): helpers
+// ---------------------------------------------------------------------------
+
+// True when two shortlist results say exactly the same thing.
+static bool sameShortlistResult(const AdminShortlistResult &a, const AdminShortlistResult &b)
+{
+    if (a.valid != b.valid || a.byUniversity.size() != b.byUniversity.size())
+        return false;
+
+    for (int u = 0; u < a.byUniversity.size(); ++u)
+    {
+        const AdminUniversityShortlist &x = a.byUniversity[u];
+        const AdminUniversityShortlist &y = b.byUniversity[u];
+        if (x.slug != y.slug || x.name != y.name || x.totalSeats != y.totalSeats ||
+            x.seatsAssumed != y.seatsAssumed || x.eligibleCount != y.eligibleCount ||
+            x.candidates.size() != y.candidates.size())
+            return false;
+        for (int i = 0; i < x.candidates.size(); ++i)
+        {
+            if (x.candidates[i].rank != y.candidates[i].rank ||
+                x.candidates[i].student.name != y.candidates[i].student.name ||
+                !near(x.candidates[i].score, y.candidates[i].score, 1e-12) ||
+                x.candidates[i].minGpaUnknown != y.candidates[i].minGpaUnknown ||
+                x.candidates[i].statementMissing != y.candidates[i].statementMissing)
+                return false;
+        }
+    }
+    return true;
+}
+
+// True when the ranks are exactly 1, 2, 3, ... and the scores never go up down the list.
+static bool listIsOrdered(const AdminUniversityShortlist &shortlist)
+{
+    for (int i = 0; i < shortlist.candidates.size(); ++i)
+    {
+        if (shortlist.candidates[i].rank != i + 1)
+            return false;
+        if (i > 0 && shortlist.candidates[i].score > shortlist.candidates[i - 1].score)
+            return false;
+    }
+    return true;
+}
+
+// Checks every fact about the usual example's shortlist (no cap). The label names the run.
+static void checkUsualShortlist(const AdminShortlistResult &result, const std::string &label)
+{
+    check(result.valid, label + ": result is valid");
+    check(result.byUniversity.size() == 3, label + ": 3 universities in the result");
+    if (result.byUniversity.size() != 3)
+        return;
+
+    check(result.byUniversity[0].slug == "uva" && result.byUniversity[1].slug == "tum" &&
+              result.byUniversity[2].slug == "sciences-po",
+          label + ": universities are in the original order");
+
+    const AdminUniversityShortlist &uva = result.byUniversity[0];
+    check(uva.totalSeats == 2, label + ": uva has 2 seats");
+    check(!uva.seatsAssumed, label + ": uva seats were set by the admin");
+    check(uva.eligibleCount == 3, label + ": 3 students are eligible at uva");
+    check(uva.candidates.size() == 3, label + ": 3 candidates listed at uva (seats do not cut the list)");
+    if (uva.candidates.size() == 3)
+    {
+        check(uva.candidates[0].student.name == "Youssef" && uva.candidates[0].rank == 1,
+              label + ": Youssef is rank 1 at uva");
+        check(uva.candidates[1].student.name == "Laila" && uva.candidates[1].rank == 2,
+              label + ": Laila is rank 2 at uva");
+        check(uva.candidates[2].student.name == "Salma" && uva.candidates[2].rank == 3,
+              label + ": Salma is rank 3 at uva");
+        check(near(uva.candidates[0].score, 0.93, 0.005), label + ": Youssef's score is about 0.93");
+        check(near(uva.candidates[1].score, 0.83, 0.005), label + ": Laila's score is about 0.83");
+        check(near(uva.candidates[2].score, 0.73, 0.005), label + ": Salma's score is about 0.73");
+    }
+
+    const AdminUniversityShortlist &tum = result.byUniversity[1];
+    check(tum.candidates.size() == 0, label + ": nobody listed at tum");
+    check(tum.eligibleCount == 0, label + ": nobody eligible at tum");
+    check(tum.seatsAssumed, label + ": tum seats are assumed");
+    check(tum.totalSeats == DEFAULT_SEATS_PER_UNIVERSITY, label + ": tum has the default seats");
+
+    const AdminUniversityShortlist &sciencesPo = result.byUniversity[2];
+    check(sciencesPo.totalSeats == 0, label + ": sciences-po has 0 seats");
+    check(sciencesPo.candidates.size() == 0, label + ": nobody listed at sciences-po");
+}
+
+// ---------------------------------------------------------------------------
+// m) Option 3: the usual example
+// ---------------------------------------------------------------------------
+
+static void testShortlistUsualExample()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    check(allocator.valid(), "shortlist usual example: allocator is valid");
+    checkUsualShortlist(allocator.runTopCandidates(0), "shortlist usual example");
+}
+
+// ---------------------------------------------------------------------------
+// n) Option 3: the cap
+// ---------------------------------------------------------------------------
+
+static void testShortlistCap()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+
+    AdminShortlistResult capped = allocator.runTopCandidates(2);
+    check(capped.valid && capped.byUniversity.size() == 3, "shortlist cap 2: valid, 3 universities");
+    if (capped.valid && capped.byUniversity.size() == 3)
+    {
+        const AdminUniversityShortlist &uva = capped.byUniversity[0];
+        check(uva.candidates.size() == 2, "shortlist cap 2: only 2 listed at uva");
+        check(uva.eligibleCount == 3, "shortlist cap 2: eligibleCount stays 3");
+        if (uva.candidates.size() == 2)
+        {
+            check(uva.candidates[0].student.name == "Youssef" && uva.candidates[0].rank == 1,
+                  "shortlist cap 2: Youssef is rank 1");
+            check(uva.candidates[1].student.name == "Laila" && uva.candidates[1].rank == 2,
+                  "shortlist cap 2: Laila is rank 2");
+        }
+        check(capped.byUniversity[1].candidates.size() == 0, "shortlist cap 2: tum still has nobody");
+    }
+
+    // 0 and negative caps both mean everyone.
+    checkUsualShortlist(allocator.runTopCandidates(0), "shortlist cap 0");
+    checkUsualShortlist(allocator.runTopCandidates(-5), "shortlist cap -5");
+
+    // A cap bigger than the number of eligible students changes nothing.
+    checkUsualShortlist(allocator.runTopCandidates(10), "shortlist cap 10");
+}
+
+// ---------------------------------------------------------------------------
+// o) Option 3: allowUnranked
+// ---------------------------------------------------------------------------
+
+static void testShortlistAllowUnranked()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+    AdminAllocator allocator(students, universities, counts, true, defaultWeights());
+
+    AdminShortlistResult result = allocator.runTopCandidates(0);
+    check(result.valid && result.byUniversity.size() == 3, "shortlist unranked: valid, 3 universities");
+    if (!result.valid || result.byUniversity.size() != 3)
+        return;
+
+    for (int u = 0; u < 3; ++u)
+    {
+        const AdminUniversityShortlist &shortlist = result.byUniversity[u];
+        std::string label = "shortlist unranked, " + shortlist.slug;
+        check(shortlist.eligibleCount == 3, label + ": 3 eligible");
+        check(shortlist.candidates.size() == 3, label + ": 3 listed");
+        check(listIsOrdered(shortlist), label + ": ranks are 1, 2, 3 and scores never go up");
+    }
+}
+
+// ---------------------------------------------------------------------------
+// p) Option 3: ties are listed in student order
+// ---------------------------------------------------------------------------
+
+static void testShortlistTies()
+{
+    Vector<AdminStudent> students;
+    students.push_back(makeStudentWithFirstChoice("A", 3.5, 8.0, "uva"));
+    students.push_back(makeStudentWithFirstChoice("B", 3.5, 8.0, "uva"));
+    students.push_back(makeStudentWithFirstChoice("C", 3.5, 8.0, "uva"));
+    students.push_back(makeStudentWithFirstChoice("D", 3.5, 8.0, "uva"));
+
+    Vector<AdminUniversity> universities;
+    universities.push_back(makeUniversity("uva"));
+    Vector<AdminSeatCount> counts;
+    counts.push_back(makeCount("uva", 2));
+
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    AdminShortlistResult result = allocator.runTopCandidates(0);
+    check(result.valid && result.byUniversity.size() == 1, "shortlist ties: valid, 1 university");
+    if (!result.valid || result.byUniversity.size() != 1)
+        return;
+
+    const AdminUniversityShortlist &uva = result.byUniversity[0];
+    check(uva.eligibleCount == 4 && uva.candidates.size() == 4, "shortlist ties: all 4 listed");
+    if (uva.candidates.size() != 4)
+        return;
+    check(uva.candidates[0].student.name == "A" && uva.candidates[1].student.name == "B" &&
+              uva.candidates[2].student.name == "C" && uva.candidates[3].student.name == "D",
+          "shortlist ties: equal scores are listed in student order");
+    check(near(uva.candidates[0].score, uva.candidates[3].score, 1e-12), "shortlist ties: the scores really are equal");
+    check(listIsOrdered(uva), "shortlist ties: ranks are 1, 2, 3, 4");
+}
+
+// ---------------------------------------------------------------------------
+// q) Option 3: warning flags
+// ---------------------------------------------------------------------------
+
+static void testShortlistFlags()
+{
+    // "known" has a known minimum GPA. "unknown" does not (the default).
+    AdminUniversity known = makeUniversity("known");
+    known.minGpaKnown = true;
+    known.minGpa = 3.0;
+    AdminUniversity unknown = makeUniversity("unknown");
+
+    Vector<AdminUniversity> universities;
+    universities.push_back(known);
+    universities.push_back(unknown);
+
+    AdminStudent normal = makeStudentWithFirstChoice("Normal", 3.5, 8.0, "known");
+    AdminStudent noStatement = makeStudentWithFirstChoice("NoStatement", 3.4, 8.0, "known");
+    noStatement.hasStatementRating = false;
+    AdminStudent atUnknown = makeStudentWithFirstChoice("AtUnknown", 3.6, 8.0, "unknown");
+
+    Vector<AdminStudent> students;
+    students.push_back(normal);
+    students.push_back(noStatement);
+    students.push_back(atUnknown);
+
+    AdminAllocator allocator(students, universities, Vector<AdminSeatCount>(), false, defaultWeights());
+    AdminShortlistResult result = allocator.runTopCandidates(0);
+    check(result.valid && result.byUniversity.size() == 2, "flags: valid, 2 universities");
+    if (!result.valid || result.byUniversity.size() != 2)
+        return;
+
+    const AdminUniversityShortlist &knownList = result.byUniversity[0];
+    check(knownList.candidates.size() == 2, "flags: 2 candidates at the known-minimum university");
+    for (int i = 0; i < knownList.candidates.size(); ++i)
+    {
+        const AdminCandidate &c = knownList.candidates[i];
+        check(!c.minGpaUnknown, "flags: " + c.student.name + " has minGpaUnknown false (minimum is known)");
+        if (c.student.name == "Normal")
+            check(!c.statementMissing, "flags: Normal has statementMissing false");
+        else if (c.student.name == "NoStatement")
+            check(c.statementMissing, "flags: NoStatement has statementMissing true");
+        else
+            check(false, "flags: unexpected candidate at the known-minimum university");
+    }
+
+    const AdminUniversityShortlist &unknownList = result.byUniversity[1];
+    check(unknownList.candidates.size() == 1, "flags: 1 candidate at the unknown-minimum university");
+    if (unknownList.candidates.size() == 1)
+    {
+        check(unknownList.candidates[0].student.name == "AtUnknown", "flags: AtUnknown is the candidate there");
+        check(unknownList.candidates[0].minGpaUnknown, "flags: AtUnknown has minGpaUnknown true");
+        check(!unknownList.candidates[0].statementMissing, "flags: AtUnknown has statementMissing false");
+    }
+}
+
+// ---------------------------------------------------------------------------
+// r) Option 3: invalid and empty inputs
+// ---------------------------------------------------------------------------
+
+static void testShortlistInvalidAndEmpty()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+
+    // All-zero weights.
+    AdminAllocator zero(students, universities, counts, false, makeWeights(0.0, 0.0, 0.0, 0.0));
+    AdminShortlistResult zeroResult = zero.runTopCandidates(0);
+    check(!zeroResult.valid && zeroResult.byUniversity.size() == 0,
+          "shortlist invalid weights: invalid and empty");
+
+    // A negative admin seat count.
+    Vector<AdminSeatCount> negativeCounts;
+    negativeCounts.push_back(makeCount("uva", -1));
+    AdminAllocator negative(students, universities, negativeCounts, false, defaultWeights());
+    AdminShortlistResult negativeResult = negative.runTopCandidates(0);
+    check(!negativeResult.valid && negativeResult.byUniversity.size() == 0,
+          "shortlist negative seats: invalid and empty");
+
+    // No students: valid, every university present, nobody listed.
+    Vector<AdminStudent> noStudents;
+    AdminAllocator empty(noStudents, universities, Vector<AdminSeatCount>(), false, defaultWeights());
+    AdminShortlistResult emptyResult = empty.runTopCandidates(0);
+    check(emptyResult.valid, "shortlist no students: valid");
+    check(emptyResult.byUniversity.size() == 3, "shortlist no students: every university is present");
+    for (int u = 0; u < emptyResult.byUniversity.size(); ++u)
+    {
+        check(emptyResult.byUniversity[u].candidates.size() == 0 && emptyResult.byUniversity[u].eligibleCount == 0,
+              "shortlist no students: " + emptyResult.byUniversity[u].slug + " has no candidates");
+    }
+
+    // No universities: valid, nothing in the result.
+    AdminAllocator lonely(students, Vector<AdminUniversity>(), Vector<AdminSeatCount>(), false, defaultWeights());
+    AdminShortlistResult lonelyResult = lonely.runTopCandidates(0);
+    check(lonelyResult.valid && lonelyResult.byUniversity.size() == 0,
+          "shortlist no universities: valid and empty");
+}
+
+// ---------------------------------------------------------------------------
+// s) Option 3: snapshot and independence
+// ---------------------------------------------------------------------------
+
+static void testShortlistSnapshotAndIndependence()
+{
+    // The allocator and its input lists are destroyed at the end of the block.
+    AdminShortlistResult kept;
+    {
+        Vector<AdminStudent> students;
+        Vector<AdminUniversity> universities;
+        Vector<AdminSeatCount> counts;
+        fillUsualExample(students, universities, counts);
+        AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+        kept = allocator.runTopCandidates(0);
+    }
+    checkUsualShortlist(kept, "shortlist snapshot after lists are gone");
+
+    // Changing the original lists after the allocator was built changes nothing.
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    AdminShortlistResult before = allocator.runTopCandidates(0);
+
+    students[0].name = "Changed";
+    students[0].gpa = 1.0;
+    students.push_back(makeStudentWithFirstChoice("Extra", 3.9, 9.9, "uva"));
+    universities[0].slug = "renamed";
+    counts[0].seats = 0;
+
+    AdminShortlistResult after = allocator.runTopCandidates(0);
+    check(sameShortlistResult(before, after), "shortlist snapshot: a later run ignores changes to the original lists");
+    checkUsualShortlist(after, "shortlist snapshot: run after the lists changed");
+
+    // Running option 3 around options 1 and 2 changes nothing for them.
+    Vector<AdminStudent> students2;
+    Vector<AdminUniversity> universities2;
+    Vector<AdminSeatCount> counts2;
+    fillUsualExample(students2, universities2, counts2);
+    AdminAllocator plain(students2, universities2, counts2, false, defaultWeights());
+    AdminMatchResult plainMost = plain.runMostPlaced();
+    AdminMatchResult plainBest = plain.runBestFit();
+
+    AdminAllocator mixed(students2, universities2, counts2, false, defaultWeights());
+    AdminShortlistResult top1 = mixed.runTopCandidates(0);
+    AdminMatchResult mixedMost = mixed.runMostPlaced();
+    AdminMatchResult mixedBest = mixed.runBestFit();
+    AdminShortlistResult top2 = mixed.runTopCandidates(0);
+    AdminMatchResult mixedMostAgain = mixed.runMostPlaced();
+    AdminMatchResult mixedBestAgain = mixed.runBestFit();
+
+    check(sameResult(plainMost, mixedMost), "shortlist independence: most placed is the same after a shortlist");
+    check(sameResult(plainBest, mixedBest), "shortlist independence: best fit is the same after a shortlist");
+    check(sameResult(plainMost, mixedMostAgain), "shortlist independence: most placed is the same after two shortlists");
+    check(sameResult(plainBest, mixedBestAgain), "shortlist independence: best fit is the same after two shortlists");
+    check(sameShortlistResult(top1, top2), "shortlist independence: the shortlist is the same before and after the other runs");
+    checkUsualShortlist(top2, "shortlist independence: second shortlist");
+
+    // Calling it twice in a row gives the same answer.
+    check(sameShortlistResult(mixed.runTopCandidates(2), mixed.runTopCandidates(2)),
+          "shortlist independence: calling twice gives identical results");
+}
+
+// ---------------------------------------------------------------------------
+// t, u) Option 3: random comparison against an independent reference
+// ---------------------------------------------------------------------------
+
+static void testShortlistRandomAgainstReference()
+{
+    Lcg rng(20240611ULL);
+
+    for (int trial = 0; trial < 500; ++trial)
+    {
+        int failuresBefore = failures;
+        std::string tag = "shortlist random trial " + std::to_string(trial);
+
+        int studentCount = rng.nextInt(1, 8);
+        int universityCount = rng.nextInt(1, 4);
+
+        Vector<AdminUniversity> universities;
+        for (int u = 0; u < universityCount; ++u)
+        {
+            AdminUniversity university = makeUniversity("u" + std::to_string(u));
+            if (rng.nextInt(0, 2) == 0)  // about a third know their minimum GPA
+            {
+                university.minGpaKnown = true;
+                university.minGpa = rng.nextDouble(2.8, 3.9);
+            }
+            universities.push_back(university);
+        }
+
+        Vector<AdminStudent> students;
+        for (int s = 0; s < studentCount; ++s)
+        {
+            AdminStudent student = makeStudent("S" + std::to_string(s),
+                                               rng.nextDouble(2.6, 4.0),
+                                               rng.nextDouble(3.0, 10.0));
+            Vector<bool> taken(universityCount, false);
+            for (int rank = 0; rank < 3; ++rank)
+            {
+                if (rng.nextInt(0, 3) == 0)
+                    continue;  // no choice for this rank
+                int pick = rng.nextInt(0, universityCount - 1);
+                if (taken[pick])
+                    continue;  // a university is never ranked twice
+                taken[pick] = true;
+                student.prefs[rank] = "u" + std::to_string(pick);
+            }
+            student.studiedAbroadBefore = rng.nextInt(0, 1) == 1;
+            if (rng.nextInt(0, 7) == 0)  // about one in eight has no statement rating yet
+                student.hasStatementRating = false;
+            students.push_back(student);
+        }
+
+        bool allowUnranked = rng.nextInt(0, 1) == 1;
+        ScoringWeights weights = makeWeights(0.1 + 0.9 * rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0));
+        int cap = rng.nextInt(0, 4);
+
+        AdminAllocator allocator(students, universities, Vector<AdminSeatCount>(), allowUnranked, weights);
+        AdminFitScorer scorer(students, universities, allowUnranked, weights);
+
+        AdminShortlistResult result = allocator.runTopCandidates(cap);
+        check(result.valid, tag + ": valid");
+        check(result.byUniversity.size() == universityCount, tag + ": one entry per university");
+
+        if (result.valid && result.byUniversity.size() == universityCount)
+        {
+            const Vector<PairResult> &pairs = scorer.pairs();
+            for (int u = 0; u < universityCount; ++u)
+            {
+                // The reference list: the eligible pairs of this university, sorted by hand
+                // (insertion sort) by score high to low, then by lower student position.
+                Vector<int> refStudent;
+                Vector<double> refScore;
+                for (int i = 0; i < pairs.size(); ++i)
+                {
+                    if (pairs[i].universityIndex != u || !pairs[i].eligible())
+                        continue;
+
+                    int newStudent = pairs[i].studentIndex;
+                    double newScore = pairs[i].score;
+                    refStudent.push_back(newStudent);
+                    refScore.push_back(newScore);
+                    int pos = refStudent.size() - 1;
+                    while (pos > 0 && (refScore[pos - 1] < newScore ||
+                                       (refScore[pos - 1] == newScore && refStudent[pos - 1] > newStudent)))
+                    {
+                        refStudent[pos] = refStudent[pos - 1];
+                        refScore[pos] = refScore[pos - 1];
+                        --pos;
+                    }
+                    refStudent[pos] = newStudent;
+                    refScore[pos] = newScore;
+                }
+
+                const AdminUniversityShortlist &shortlist = result.byUniversity[u];
+                int refLength = refStudent.size();
+                int expectedListed = (cap > 0 && cap < refLength) ? cap : refLength;
+
+                check(shortlist.slug == universities[u].slug, tag + ": university order is kept");
+                check(shortlist.eligibleCount == refLength, tag + ": eligibleCount matches the reference");
+                check(shortlist.candidates.size() == expectedListed, tag + ": number listed matches min(cap, eligible)");
+                check(listIsOrdered(shortlist), tag + ": ranks are 1, 2, 3, ... and scores never increase");
+
+                if (shortlist.candidates.size() == expectedListed)
+                {
+                    for (int i = 0; i < expectedListed; ++i)
+                    {
+                        const AdminCandidate &c = shortlist.candidates[i];
+                        check(c.rank == i + 1, tag + ": rank matches the reference");
+                        check(c.student.name == students[refStudent[i]].name, tag + ": student matches the reference");
+                        check(near(c.score, refScore[i], 1e-12), tag + ": score matches the reference");
+                    }
+                }
+            }
+        }
+
+        if (failures != failuresBefore)
+        {
+            std::cout << "FAIL: shortlist random trial " << trial << " of 500 had failing checks (see above); stopping\n";
+            return;
+        }
+    }
+}
+
 int main()
 {
     testUsualExample();
@@ -830,6 +1319,14 @@ int main()
     testRunsDoNotInterfere();
     testEdgeCases();
     testRandomAgainstBruteForce();
+    testShortlistUsualExample();
+    testShortlistCap();
+    testShortlistAllowUnranked();
+    testShortlistTies();
+    testShortlistFlags();
+    testShortlistInvalidAndEmpty();
+    testShortlistSnapshotAndIndependence();
+    testShortlistRandomAgainstReference();
 
     if (failures == 0)
         std::cout << "All admin allocator checks passed\n";
