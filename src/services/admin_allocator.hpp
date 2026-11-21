@@ -27,6 +27,9 @@
 //                    to every score so that "more students placed" always beats
 //                    "higher scores". Without it the Hungarian algorithm could leave a
 //                    student out just to get a higher total.
+//   runHighestScore(): the ORIGINAL Hungarian behaviour with no bonus. It maximises the total
+//                    score only, so it can leave a student unplaced (even with a seat free)
+//                    if that gives a higher total. Quality first, headcount second.
 //   runTopCandidates(): NOT an allocation. For every university it ranks the students who
 //                    are eligible there, best fit first, using one Heap per university.
 //                    The same student can appear in several lists. It ignores seats except
@@ -67,6 +70,10 @@ public:
 
     // Option 2: the most students placed, then the best total fit.
     AdminMatchResult runBestFit() const;
+
+    // Option 4: the highest total score, even if fewer students are placed.
+    // (Compare option 2, which places the most students first.)
+    AdminMatchResult runHighestScore() const;
 
     // Option 3: a ranked shortlist of eligible students for every university.
     // maxPerUniversity limits how many are listed per university (0 or less = everyone).

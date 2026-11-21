@@ -167,6 +167,22 @@ AdminMatchResult AdminAllocator::runBestFit() const
     return buildResult(students, universities, seats, scorer, matched);
 }
 
+// Option 4: the same as option 2 but with NO bonus, so the Hungarian algorithm maximises the
+// total score and nothing else. This is quality first: it may leave a student unplaced, even
+// with a seat free, when that gives a higher total. Note that the Hungarian code treats a line
+// with a score of exactly 0 as padding, so a student whose only match scores 0 is left
+// unplaced here (placing them would add nothing to the total anyway).
+AdminMatchResult AdminAllocator::runHighestScore() const
+{
+    if (!valid())
+        return AdminMatchResult();
+
+    BipartiteGraph<int, int> graph;
+    addEdgesToGraph(seats.buildEdges(scorer.pairs()), 0.0, graph);
+    Vector<Pair<int, int>> matched = graph.get_max_weight_matching();
+    return buildResult(students, universities, seats, scorer, matched);
+}
+
 // Option 3: one Heap per university holds that university's eligible students, ordered by
 // fit score (highest on top). The heap is a good fit because we usually need only the top
 // few, and popping gives the next best candidate each time, like a waiting list. PriorityItem
