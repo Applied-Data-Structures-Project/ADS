@@ -1,0 +1,406 @@
+{
+  "year": 2027,
+  "source": "QS World University Rankings 2027 (user supplied spreadsheet)",
+  "matches": {
+    "aarhus-university": {
+      "rank": "128",
+      "name": "Aarhus University",
+      "status": "matched"
+    },
+    "auburn-university": {
+      "rank": "851-900",
+      "name": "Auburn University",
+      "status": "matched"
+    },
+    "bogazici-university": {
+      "rank": "345",
+      "name": "Boğaziçi University",
+      "status": "matched"
+    },
+    "boston-college": {
+      "rank": "549",
+      "name": "Boston College",
+      "status": "matched"
+    },
+    "brandeis-university": {
+      "rank": "751-760",
+      "name": "Brandeis University",
+      "status": "matched"
+    },
+    "catholic-university-of-sacred-heart-universita-cattolica-del-sacro-cuore": {
+      "rank": "388",
+      "name": "Università Cattolica del Sacro Cuore",
+      "status": "matched"
+    },
+    "central-european-university": {
+      "rank": "239",
+      "name": "Central European University",
+      "status": "matched"
+    },
+    "charles-university-univerzita-karlova": {
+      "rank": "273",
+      "name": "Charles University",
+      "status": "matched"
+    },
+    "chung-ang-university": {
+      "rank": "432",
+      "name": "Chung-Ang University (CAU)",
+      "status": "matched"
+    },
+    "concordia-university": {
+      "rank": "497",
+      "name": "Concordia University",
+      "status": "matched"
+    },
+    "cornell-university": {
+      "rank": "16",
+      "name": "Cornell University",
+      "status": "matched"
+    },
+    "eberhard-karls-universitat-tubingen": {
+      "rank": "230",
+      "name": "Eberhard Karls Universität Tübingen",
+      "status": "matched"
+    },
+    "freie-universitat-berlin": {
+      "rank": "98",
+      "name": "Freie Universitaet Berlin",
+      "status": "matched"
+    },
+    "fudan-university": {
+      "rank": "26",
+      "name": "Fudan University",
+      "status": "matched"
+    },
+    "indian-institute-of-technology-delhi-iit-delhi": {
+      "rank": "118",
+      "name": "Indian Institute of Technology Delhi (IITD)",
+      "status": "matched"
+    },
+    "iowa-state-university": {
+      "rank": "540",
+      "name": "Iowa State University",
+      "status": "matched"
+    },
+    "jagiellonian-university": {
+      "rank": "329",
+      "name": "Jagiellonian University",
+      "status": "matched"
+    },
+    "jinan-university": {
+      "rank": "483",
+      "name": "Jinan University (China)",
+      "status": "matched"
+    },
+    "karadeniz-technical-university": {
+      "rank": "1401+",
+      "name": "Karadeniz Technical University",
+      "status": "matched"
+    },
+    "kent-state-university": {
+      "rank": "1201-1400",
+      "name": "Kent State University",
+      "status": "matched"
+    },
+    "king-s-college-london-kcl": {
+      "rank": "37",
+      "name": "King's College London",
+      "status": "matched"
+    },
+    "koc-university": {
+      "rank": "329",
+      "name": "Koç University",
+      "status": "matched"
+    },
+    "leiden-university": {
+      "rank": "119",
+      "name": "Leiden University",
+      "status": "matched"
+    },
+    "louvain-school-of-management-uc-louvain": {
+      "rank": "196",
+      "name": "Université catholique de Louvain (UCLouvain)",
+      "status": "parent_institution"
+    },
+    "lund-university": {
+      "rank": "71",
+      "name": "Lund University",
+      "status": "matched"
+    },
+    "maastricht-university-school-of-business-and-economics": {
+      "rank": "254",
+      "name": "Maastricht University",
+      "status": "parent_institution"
+    },
+    "marquette-university": {
+      "rank": "1401+",
+      "name": "Marquette University",
+      "status": "matched"
+    },
+    "mcmaster-university": {
+      "rank": "174",
+      "name": "McMaster University",
+      "status": "matched"
+    },
+    "national-chengchi-university": {
+      "rank": "613",
+      "name": "National Chengchi University",
+      "status": "matched"
+    },
+    "north-carolina-state-university": {
+      "rank": "320",
+      "name": "North Carolina State University",
+      "status": "matched"
+    },
+    "northern-arizona-university": {
+      "rank": "1001-1200",
+      "name": "Northern Arizona University",
+      "status": "matched"
+    },
+    "northwestern-university": {
+      "rank": "45",
+      "name": "Northwestern University",
+      "status": "matched"
+    },
+    "oslomet": {
+      "rank": "1201-1400",
+      "name": "Oslo Metropolitan University",
+      "status": "matched"
+    },
+    "ozyegin-university": {
+      "rank": "1201-1400",
+      "name": "Ozyegin University",
+      "status": "matched"
+    },
+    "peking-university": {
+      "rank": "13",
+      "name": "Peking University",
+      "status": "matched"
+    },
+    "philipps-universitat-marburg": {
+      "rank": "951-1000",
+      "name": "Philipps-Universität Marburg",
+      "status": "matched"
+    },
+    "pompeu-fabra-university-upf": {
+      "rank": "263",
+      "name": "Universitat Pompeu Fabra (Barcelona)",
+      "status": "matched"
+    },
+    "queen-s-university-at-kingston": {
+      "rank": "179",
+      "name": "Queen's University at Kingston",
+      "status": "matched"
+    },
+    "radboud-university": {
+      "rank": "283",
+      "name": "Radboud University",
+      "status": "matched"
+    },
+    "ritsumeikan-asia-pacific-university": {
+      "rank": "1001-1200",
+      "name": "Ritsumeikan Asia Pacific University",
+      "status": "matched"
+    },
+    "sathyabama-institute-of-science-and-technology": {
+      "rank": "1201-1400",
+      "name": "Sathyabama Institute of Science and Technology (Deemed to be University)",
+      "status": "matched"
+    },
+    "sciences-po-institute-d-etudes-politiques-de-paris": {
+      "rank": "354",
+      "name": "Sciences Po",
+      "status": "matched"
+    },
+    "technical-university-darmstadt": {
+      "rank": "250",
+      "name": "Technical University of Darmstadt",
+      "status": "matched"
+    },
+    "technical-university-of-munich-tum": {
+      "rank": "25",
+      "name": "Technical University of Munich",
+      "status": "matched"
+    },
+    "technische-universiteit-eindhoven-tue": {
+      "rank": "152",
+      "name": "Eindhoven University of Technology",
+      "status": "matched"
+    },
+    "the-george-washington-university-elliott-school-of-global-affairs": {
+      "rank": "381",
+      "name": "George Washington University",
+      "status": "parent_institution"
+    },
+    "the-manchester-metropolitan-university-mmu": {
+      "rank": "600",
+      "name": "Manchester Metropolitan University",
+      "status": "matched"
+    },
+    "the-university-of-kansas": {
+      "rank": "515",
+      "name": "University of Kansas",
+      "status": "matched"
+    },
+    "the-university-of-new-mexico": {
+      "rank": "771-780",
+      "name": "University of New Mexico",
+      "status": "matched"
+    },
+    "the-university-of-texas-at-austin": {
+      "rank": "72",
+      "name": "University of Texas at Austin",
+      "status": "matched"
+    },
+    "trinity-college-dublin": {
+      "rank": "75",
+      "name": "Trinity College Dublin, The University of Dublin",
+      "status": "matched"
+    },
+    "universidad-carlos-iii-de-madrid-uc3m": {
+      "rank": "314",
+      "name": "Universidad Carlos III de Madrid (UC3M)",
+      "status": "matched"
+    },
+    "universidad-del-rosario": {
+      "rank": "901-950",
+      "name": "Universidad del Rosario",
+      "status": "matched"
+    },
+    "universidade-nova-de-lisboa": {
+      "rank": "337",
+      "name": "Universidade Nova de Lisboa",
+      "status": "matched"
+    },
+    "universita-degli-studi-di-torino": {
+      "rank": "397",
+      "name": "University of Turin",
+      "status": "matched"
+    },
+    "universitat-autonoma-de-barcelona-uab": {
+      "rank": "211",
+      "name": "Universitat Autònoma de Barcelona",
+      "status": "matched"
+    },
+    "university-of-antwerp": {
+      "rank": "277",
+      "name": "University of Antwerp",
+      "status": "matched"
+    },
+    "university-of-bergen": {
+      "rank": "283",
+      "name": "University of Bergen",
+      "status": "matched"
+    },
+    "university-of-central-florida-ucf": {
+      "rank": "731-740",
+      "name": "University of Central Florida",
+      "status": "matched"
+    },
+    "university-of-copenhagen": {
+      "rank": "90",
+      "name": "University of Copenhagen",
+      "status": "matched"
+    },
+    "university-of-edinburgh": {
+      "rank": "35",
+      "name": "The University of Edinburgh",
+      "status": "matched"
+    },
+    "university-of-geneva": {
+      "rank": "168",
+      "name": "University of Geneva",
+      "status": "matched"
+    },
+    "university-of-groningen": {
+      "rank": "157",
+      "name": "University of Groningen",
+      "status": "matched"
+    },
+    "university-of-helsinki": {
+      "rank": "123",
+      "name": "University of Helsinki",
+      "status": "matched"
+    },
+    "university-of-konstanz": {
+      "rank": "425",
+      "name": "Universität Konstanz",
+      "status": "matched"
+    },
+    "university-of-ljubljana": {
+      "rank": "530",
+      "name": "University of Ljubljana",
+      "status": "matched"
+    },
+    "university-of-oslo": {
+      "rank": "131",
+      "name": "University of Oslo",
+      "status": "matched"
+    },
+    "university-of-palermo": {
+      "rank": "801-850",
+      "name": "University of Palermo",
+      "status": "matched"
+    },
+    "university-of-pennsylvania": {
+      "rank": "15",
+      "name": "University of Pennsylvania",
+      "status": "matched"
+    },
+    "university-of-southern-denmark-usd": {
+      "rank": "283",
+      "name": "University of Southern Denmark (SDU)",
+      "status": "matched"
+    },
+    "university-of-st-andrews": {
+      "rank": "115",
+      "name": "University of St Andrews",
+      "status": "matched"
+    },
+    "university-of-tartu": {
+      "rank": "367",
+      "name": "University of Tartu",
+      "status": "matched"
+    },
+    "university-of-twente": {
+      "rank": "223",
+      "name": "University of Twente",
+      "status": "matched"
+    },
+    "virginia-polytechnic-institute-and-state-university-virginia-tech": {
+      "rank": "366",
+      "name": "Virginia Polytechnic Institute and State University",
+      "status": "matched"
+    },
+    "vrije-universiteit-amsterdam": {
+      "rank": "185",
+      "name": "Vrije Universiteit Amsterdam",
+      "status": "matched"
+    },
+    "vytautas-magnus-university": {
+      "rank": "751-760",
+      "name": "Vytautas Magnus University",
+      "status": "matched"
+    },
+    "washington-state-university": {
+      "rank": "510",
+      "name": "Washington State University",
+      "status": "matched"
+    },
+    "wayne-state-university": {
+      "rank": "801-850",
+      "name": "Wayne State University",
+      "status": "matched"
+    },
+    "west-virginia-university": {
+      "rank": "1001-1200",
+      "name": "West Virginia University",
+      "status": "matched"
+    },
+    "yildiz-technical-university": {
+      "rank": "634",
+      "name": "Yildiz Technical University",
+      "status": "matched"
+    }
+  }
+}

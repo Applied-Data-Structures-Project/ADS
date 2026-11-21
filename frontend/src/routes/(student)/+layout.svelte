@@ -19,6 +19,18 @@
 
 	const groups = $derived<NavGroup[]>([
 		{
+        section: 'Discover',
+        items: [
+            {
+                href: '/explore',
+                label: 'Explore Universities',
+                short: 'Explore',
+                icon: 'explore'
+            }
+        ]
+    },
+		
+		{
 			section: 'My Application',
 			items: [
 				{ href: '/apply', label: 'Application Form', short: 'Apply', icon: 'apply' },
@@ -35,7 +47,7 @@
 	]);
 
 	const mobileTabs = $derived<NavItem[]>(
-		['/apply', '/apply/status', '/letters', '/profile']
+			['/explore', '/apply', '/apply/status', '/letters', '/profile']
 			.map((href) => groups.flatMap((g) => g.items).find((i) => i.href === href))
 			.filter((i): i is NavItem => i !== undefined)
 	);
