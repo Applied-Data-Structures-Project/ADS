@@ -1305,6 +1305,345 @@ static void testShortlistRandomAgainstReference()
     }
 }
 
+// ---------------------------------------------------------------------------
+// Option 4 (runHighestScore): the six new cases
+// ---------------------------------------------------------------------------
+
+// ---------------------------------------------------------------------------
+// option 4, case 1: the usual example
+// ---------------------------------------------------------------------------
+
+static void testHighestScoreUsualExample()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    check(allocator.valid(), "option 4, case 1: allocator is valid");
+    checkUsualResult(allocator.runHighestScore(), "option 4, case 1: usual example");
+}
+
+// ---------------------------------------------------------------------------
+// option 4, case 2: the case where the options differ
+// ---------------------------------------------------------------------------
+
+static void testHighestScoreDiffersFromBestFit()
+{
+    // A only has X (third choice, score about 0.4). B has X (first choice, score about 1.0)
+    // and Y (third choice). Option 4 puts the highest total score first: B at X alone scores
+    // about 1.0, which beats A at X plus B at Y (about 0.8). Option 2 puts the most students
+    // placed first: it places both (A at X, B at Y) even though the total score is lower.
+    AdminStudent a = makeStudent("A", 3.5, 8.0);
+    a.prefs[2] = "X";
+    AdminStudent b = makeStudent("B", 3.5, 8.0);
+    b.prefs[0] = "X";
+    b.prefs[2] = "Y";
+
+    Vector<AdminStudent> students;
+    students.push_back(a);
+    students.push_back(b);
+
+    Vector<AdminUniversity> universities;
+    universities.push_back(makeUniversity("X"));
+    universities.push_back(makeUniversity("Y"));
+
+    Vector<AdminSeatCount> counts;
+    counts.push_back(makeCount("X", 1));
+    counts.push_back(makeCount("Y", 1));
+
+    AdminAllocator allocator(students, universities, counts, false, makeWeights(1.0, 0.0, 0.0, 0.0));
+    check(allocator.valid(), "option 4, case 2: allocator is valid");
+
+    AdminMatchResult highest = allocator.runHighestScore();
+    check(highest.valid, "option 4, case 2: highest score is valid");
+    int x = findUniversity(highest, "X");
+    int y = findUniversity(highest, "Y");
+    check(x >= 0 && y >= 0, "option 4, case 2: both universities are in the result");
+    if (x >= 0 && y >= 0)
+    {
+        check(highest.byUniversity[x].placed.size() == 1 && findPlaced(highest.byUniversity[x], "B") == 0,
+              "option 4, case 2: only B is placed, at X");
+        check(highest.byUniversity[x].placed.size() == 1 &&
+                  near(highest.byUniversity[x].placed[0].score, 1.0, 0.005),
+              "option 4, case 2: B's score at X is about 1.0");
+        check(highest.byUniversity[y].placed.size() == 0, "option 4, case 2: nobody is placed at Y");
+    }
+    check(highest.unplaced.size() == 1 && isUnplaced(highest, "A"), "option 4, case 2: A is the unplaced student");
+
+    // On the same allocator, options 2 and 1 place both students.
+    checkBothPlaced(allocator.runBestFit(), "option 4, case 2: best fit");
+    checkBothPlaced(allocator.runMostPlaced(), "option 4, case 2: most placed");
+}
+
+// ---------------------------------------------------------------------------
+// option 4, case 3: capacity
+// ---------------------------------------------------------------------------
+
+static void testHighestScoreCapacity()
+{
+    Vector<AdminStudent> students;
+    for (int i = 0; i < 5; ++i)
+        students.push_back(makeStudentWithFirstChoice("S" + std::to_string(i), 3.0 + 0.1 * i, 7.0 + 0.2 * i, "uva"));
+
+    Vector<AdminUniversity> universities;
+    universities.push_back(makeUniversity("uva"));
+
+    Vector<AdminSeatCount> counts;
+    counts.push_back(makeCount("uva", 3));
+
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    AdminMatchResult result = allocator.runHighestScore();
+
+    check(result.valid, "option 4, case 3: valid");
+    check(countPlaced(result) <= 3, "option 4, case 3: at most 3 placed");
+    check(result.byUniversity.size() == 1 && result.byUniversity[0].totalSeats == 3 &&
+              result.byUniversity[0].placed.size() <= result.byUniversity[0].totalSeats,
+          "option 4, case 3: uva is never over its 3 seats");
+    check(countPlaced(result) + result.unplaced.size() == 5, "option 4, case 3: placed + unplaced = 5");
+}
+
+// ---------------------------------------------------------------------------
+// option 4, case 4: invalid and empty inputs
+// ---------------------------------------------------------------------------
+
+static void testHighestScoreInvalidAndEmpty()
+{
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+
+    // All-zero weights.
+    AdminAllocator zero(students, universities, counts, false, makeWeights(0.0, 0.0, 0.0, 0.0));
+    check(!zero.valid(), "option 4, case 4: all-zero weights, valid() is false");
+    AdminMatchResult zeroResult = zero.runHighestScore();
+    check(!zeroResult.valid && zeroResult.byUniversity.size() == 0 && zeroResult.unplaced.size() == 0,
+          "option 4, case 4: all-zero weights, result is invalid and empty");
+
+    // A later valid setWeights fixes it.
+    check(zero.setWeights(defaultWeights()), "option 4, case 4: setWeights with valid weights returns true");
+    check(zero.valid(), "option 4, case 4: valid() is true after valid weights");
+    check(zero.runHighestScore().valid, "option 4, case 4: the run is valid after valid weights");
+
+    // A negative admin seat count.
+    Vector<AdminSeatCount> negativeCounts;
+    negativeCounts.push_back(makeCount("uva", -1));
+    AdminAllocator negative(students, universities, negativeCounts, false, defaultWeights());
+    AdminMatchResult negativeResult = negative.runHighestScore();
+    check(!negative.valid(), "option 4, case 4: negative seats, valid() is false");
+    check(!negativeResult.valid && negativeResult.byUniversity.size() == 0,
+          "option 4, case 4: negative seats, result is invalid and empty");
+    negative.setWeights(defaultWeights());
+    check(!negative.valid() && !negative.runHighestScore().valid,
+          "option 4, case 4: negative seats, still invalid after valid weights");
+
+    // No students.
+    Vector<AdminStudent> noStudents;
+    Vector<AdminUniversity> threeUniversities;
+    threeUniversities.push_back(makeUniversity("uva"));
+    threeUniversities.push_back(makeUniversity("tum"));
+    threeUniversities.push_back(makeUniversity("sciences-po"));
+    AdminAllocator empty(noStudents, threeUniversities, Vector<AdminSeatCount>(), false, defaultWeights());
+    checkNoStudents(empty.runHighestScore(), "option 4, case 4: no students");
+
+    // No universities.
+    Vector<AdminStudent> twoStudents;
+    twoStudents.push_back(makeStudentWithFirstChoice("One", 3.5, 8.0, "uva"));
+    twoStudents.push_back(makeStudentWithFirstChoice("Two", 3.6, 8.5, "tum"));
+    AdminAllocator lonely(twoStudents, Vector<AdminUniversity>(), Vector<AdminSeatCount>(), false, defaultWeights());
+    checkNoUniversities(lonely.runHighestScore(), "option 4, case 4: no universities");
+}
+
+// ---------------------------------------------------------------------------
+// option 4, case 5: snapshot and independence
+// ---------------------------------------------------------------------------
+
+static void testHighestScoreSnapshotAndIndependence()
+{
+    // The allocator and its input lists are destroyed at the end of the block.
+    AdminMatchResult kept;
+    {
+        Vector<AdminStudent> students;
+        Vector<AdminUniversity> universities;
+        Vector<AdminSeatCount> counts;
+        fillUsualExample(students, universities, counts);
+        AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+        kept = allocator.runHighestScore();
+    }
+    checkUsualResult(kept, "option 4, case 5: snapshot after lists are gone");
+
+    // Changing the original lists after the allocator was built changes nothing.
+    Vector<AdminStudent> students;
+    Vector<AdminUniversity> universities;
+    Vector<AdminSeatCount> counts;
+    fillUsualExample(students, universities, counts);
+    AdminAllocator allocator(students, universities, counts, false, defaultWeights());
+    AdminMatchResult before = allocator.runHighestScore();
+
+    students[0].name = "Changed";
+    students[0].gpa = 1.0;
+    students.push_back(makeStudentWithFirstChoice("Extra", 3.9, 9.9, "uva"));
+    universities[0].slug = "renamed";
+    counts[0].seats = 0;
+
+    AdminMatchResult after = allocator.runHighestScore();
+    check(sameResult(before, after), "option 4, case 5: a later run ignores changes to the original lists");
+    checkUsualResult(after, "option 4, case 5: run after the lists changed");
+
+    // Running option 4 between options 1 and 2 changes nothing for them.
+    Vector<AdminStudent> students2;
+    Vector<AdminUniversity> universities2;
+    Vector<AdminSeatCount> counts2;
+    fillUsualExample(students2, universities2, counts2);
+    AdminAllocator plain(students2, universities2, counts2, false, defaultWeights());
+    AdminMatchResult plainMost = plain.runMostPlaced();
+    AdminMatchResult plainBest = plain.runBestFit();
+
+    AdminAllocator mixed(students2, universities2, counts2, false, defaultWeights());
+    AdminMatchResult mixedMost = mixed.runMostPlaced();
+    AdminMatchResult highest1 = mixed.runHighestScore();
+    AdminMatchResult mixedBest = mixed.runBestFit();
+    AdminMatchResult highest2 = mixed.runHighestScore();
+
+    check(sameResult(plainMost, mixedMost), "option 4, case 5: most placed is unchanged by option 4");
+    check(sameResult(plainBest, mixedBest), "option 4, case 5: best fit is unchanged by option 4");
+    check(sameResult(plainMost, mixed.runMostPlaced()), "option 4, case 5: most placed is unchanged afterwards");
+    check(sameResult(plainBest, mixed.runBestFit()), "option 4, case 5: best fit is unchanged afterwards");
+    check(sameResult(highest1, highest2), "option 4, case 5: running option 4 twice gives identical results");
+}
+
+// ---------------------------------------------------------------------------
+// option 4, case 6: random comparison against brute force
+// ---------------------------------------------------------------------------
+
+// Like BruteForce, but it remembers the best TOTAL SCORE over all ways (whatever the
+// number placed) and, separately, the best NUMBER placed.
+struct BestTotalBruteForce
+{
+    const Vector<AdminSeatEdge> &edges;
+    int studentCount;
+    Vector<bool> used;   // which seats are taken right now
+    int bestCount;
+    double bestTotal;
+
+    BestTotalBruteForce(const Vector<AdminSeatEdge> &edgeList, int students, int seats)
+        : edges(edgeList), studentCount(students), used(seats, false), bestCount(0), bestTotal(0.0)
+    {
+    }
+
+    void go(int student, int count, double total)
+    {
+        if (student == studentCount)
+        {
+            if (count > bestCount)
+                bestCount = count;
+            if (total > bestTotal)
+                bestTotal = total;
+            return;
+        }
+
+        go(student + 1, count, total);  // this student takes no seat
+
+        for (int i = 0; i < edges.size(); ++i)
+        {
+            if (edges[i].studentIndex != student || used[edges[i].seatIndex])
+                continue;
+            used[edges[i].seatIndex] = true;
+            go(student + 1, count + 1, total + edges[i].score);
+            used[edges[i].seatIndex] = false;
+        }
+    }
+};
+
+static void testHighestScoreRandomAgainstBruteForce()
+{
+    Lcg rng(20240612ULL);
+
+    for (int trial = 0; trial < 500; ++trial)
+    {
+        int failuresBefore = failures;
+        std::string tag = "option 4, case 6, random trial " + std::to_string(trial);
+
+        int studentCount = rng.nextInt(1, 6);
+        int universityCount = rng.nextInt(1, 4);
+        int defaultSeats = rng.nextInt(0, 2);
+
+        // Universities, and admin seat counts for about half of them.
+        Vector<AdminUniversity> universities;
+        Vector<AdminSeatCount> counts;
+        for (int u = 0; u < universityCount; ++u)
+        {
+            std::string slug = "u" + std::to_string(u);
+            AdminUniversity university = makeUniversity(slug);
+            if (rng.nextInt(0, 2) == 0)  // about a third know their minimum GPA
+            {
+                university.minGpaKnown = true;
+                university.minGpa = rng.nextDouble(2.8, 3.9);
+            }
+            universities.push_back(university);
+            if (rng.nextInt(0, 1) == 1)
+                counts.push_back(makeCount(slug, rng.nextInt(0, 2)));
+        }
+
+        // Students with random GPA, choices (some empty), statement and history.
+        Vector<AdminStudent> students;
+        for (int s = 0; s < studentCount; ++s)
+        {
+            AdminStudent student = makeStudent("S" + std::to_string(s),
+                                               rng.nextDouble(2.6, 4.0),
+                                               rng.nextDouble(3.0, 10.0));
+            Vector<bool> taken(universityCount, false);
+            for (int rank = 0; rank < 3; ++rank)
+            {
+                if (rng.nextInt(0, 3) == 0)
+                    continue;  // no choice for this rank
+                int pick = rng.nextInt(0, universityCount - 1);
+                if (taken[pick])
+                    continue;  // a university is never ranked twice
+                taken[pick] = true;
+                student.prefs[rank] = "u" + std::to_string(pick);
+            }
+            student.studiedAbroadBefore = rng.nextInt(0, 1) == 1;
+            if (rng.nextInt(0, 7) == 0)  // about one in eight has no statement rating yet
+                student.hasStatementRating = false;
+            students.push_back(student);
+        }
+
+        bool allowUnranked = rng.nextInt(0, 1) == 1;
+        ScoringWeights weights = makeWeights(0.1 + 0.9 * rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0),
+                                             rng.nextDouble(0.0, 1.0));
+
+        AdminAllocator allocator(students, universities, counts, allowUnranked, weights, defaultSeats);
+
+        // The same inputs again, built separately, to get the lines for the brute force.
+        AdminFitScorer scorer(students, universities, allowUnranked, weights);
+        AdminSeatTable table(universities, counts, defaultSeats);
+        Vector<AdminSeatEdge> edges = table.buildEdges(scorer.pairs());
+
+        BestTotalBruteForce brute(edges, studentCount, table.seatCount());
+        brute.go(0, 0, 0.0);
+
+        AdminMatchResult highest = allocator.runHighestScore();
+        AdminMatchResult best = allocator.runBestFit();
+
+        checkRandomRun(highest, table, studentCount, tag);
+        check(near(totalScore(highest), brute.bestTotal, 1e-9), tag + ": total score equals the best possible total");
+        check(countPlaced(highest) <= brute.bestCount, tag + ": places no more than the best possible number");
+        check(totalScore(highest) >= totalScore(best) - 1e-9, tag + ": total is at least best fit's total");
+        check(countPlaced(highest) <= countPlaced(best), tag + ": places no more students than best fit");
+
+        if (failures != failuresBefore)
+        {
+            std::cout << "FAIL: option 4, case 6, random trial " << trial << " of 500 had failing checks (see above); stopping\n";
+            return;
+        }
+    }
+}
+
 int main()
 {
     testUsualExample();
@@ -1327,6 +1666,12 @@ int main()
     testShortlistInvalidAndEmpty();
     testShortlistSnapshotAndIndependence();
     testShortlistRandomAgainstReference();
+    testHighestScoreUsualExample();
+    testHighestScoreDiffersFromBestFit();
+    testHighestScoreCapacity();
+    testHighestScoreInvalidAndEmpty();
+    testHighestScoreSnapshotAndIndependence();
+    testHighestScoreRandomAgainstBruteForce();
 
     if (failures == 0)
         std::cout << "All admin allocator checks passed\n";
