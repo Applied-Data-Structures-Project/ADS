@@ -18,10 +18,15 @@ import {
 	RULES,
 	UNIVERSITIES
 } from './mocks.ts';
+import {
+	evaluateEligibility,
+	readEligibility,
+	writeEligibility,
+	type EligibilityProfile
+} from './eligibility.ts';
 import type {
 	Application,
 	DocType,
-	EligibilityCheck,
 	LetterRequest,
 	Level,
 	StudentProfile,
@@ -76,6 +81,9 @@ class StudentStore {
 	docs = $state<Record<DocType, UploadedDoc | null>>({ ...DEMO_DOCS });
 	letters = $state<LetterRequest[]>(DEMO_LETTERS.map((l) => ({ ...l })));
 
+	/** The academic record the student enters on /profile. Null until they save it. */
+	eligibilityProfile = $state<EligibilityProfile | null>(null);
+
 	// ---- UI ----------------------------------------------------------------
 	toast = $state<string | null>(null);
 	darkMode = $state(false);
@@ -86,30 +94,16 @@ class StudentStore {
 		this.savedIds.map(universityById).filter((u): u is University => u !== undefined)
 	);
 
-	/** GET /api/application/eligibility — the 3 IPSO checks. */
-	eligibility = $derived.by((): EligibilityCheck[] => {
-		const u = this.user;
-		if (!u) return [];
-		const min = RULES.minGpa[u.level];
-		return [
-			{
-				label: 'Officially declared major',
-				ok: u.declared,
-				detail: u.declared ? u.major : 'Undeclared students’ applications are disregarded.'
-			},
-			{
-				label: `At least ${RULES.minCredits} credits`,
-				ok: u.credits >= RULES.minCredits,
-				detail: `You have ${u.credits} credits.`
-			},
-			{
-				label: `GPA of ${min.toFixed(1)} or higher (${u.level})`,
-				ok: u.gpa >= min,
-				detail: `Your GPA is ${u.gpa.toFixed(2)}.`
-			}
-		];
-	});
-	isEligible = $derived(this.eligibility.length > 0 && this.eligibility.every((c) => c.ok));
+	/** The rules IPSO checks, derived from the profile saved on /profile. */
+	eligibilitySummary = $derived(
+		this.eligibilityProfile ? evaluateEligibility(this.eligibilityProfile) : null
+	);
+	eligibility = $derived(this.eligibilitySummary?.checks ?? []);
+	isEligible = $derived(this.eligibilitySummary?.eligible ?? false);
+	eligibilityProvisional = $derived(this.eligibilitySummary?.provisional ?? false);
+
+	/** False until the student saves the eligibility profile once. */
+	hasEligibilityProfile = $derived(this.eligibilityProfile !== null);
 
 	/** Error for each of the 3 preference slots, or null if that slot is fine. */
 	prefErrors = $derived.by((): (string | null)[] => {
@@ -238,6 +232,33 @@ class StudentStore {
 		} catch {
 			// Storage blocked: the choice only lasts for this visit.
 		}
+	}
+
+	// ---- Eligibility profile -------------------------------------------------
+
+	/** Load the profile saved for this account, if any. Call once in the browser. */
+	loadEligibility(accountId: string) {
+		this.eligibilityProfile = readEligibility(accountId);
+		if (this.eligibilityProfile) this.applyEligibilityToUser(this.eligibilityProfile);
+	}
+
+	/** Save the profile and make its academic fields the signed-in student's record. */
+	saveEligibility(accountId: string, profile: EligibilityProfile) {
+		writeEligibility(accountId, profile);
+		this.eligibilityProfile = profile;
+		this.applyEligibilityToUser(profile);
+	}
+
+	private applyEligibilityToUser(profile: EligibilityProfile) {
+		const base = this.user ?? DEMO_STUDENT;
+		this.user = {
+			...base,
+			level: profile.level === 'GR' ? 'GR' : 'UG',
+			major: profile.major,
+			declared: profile.majorDeclared,
+			credits: profile.credits ?? 0,
+			gpa: profile.gpa ?? 0
+		};
 	}
 
 	// ---- G3: application -----------------------------------------------------

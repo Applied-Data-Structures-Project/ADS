@@ -109,9 +109,11 @@ export interface LetterRequest {
 	answeredAt: string;
 }
 
-/** Result of GET /api/application/eligibility. */
+/** One eligibility rule shown to the student. */
 export interface EligibilityCheck {
 	label: string;
 	ok: boolean;
 	detail: string;
+	/** True for the graduate first-semester GPA rule. */
+	provisional?: boolean;
 }

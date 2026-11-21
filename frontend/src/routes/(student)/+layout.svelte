@@ -25,11 +25,17 @@
 				{ href: '/apply/status', label: 'Application Status', short: 'Status', icon: 'status' },
 				{ href: '/letters', label: 'Recommendation Letter', short: 'Letters', icon: 'letters', badge: pendingLetters }
 			]
+		},
+		{
+			section: 'Account',
+			items: [
+				{ href: '/profile', label: 'Eligibility Profile', short: 'Profile', icon: 'profile' }
+			]
 		}
 	]);
 
 	const mobileTabs = $derived<NavItem[]>(
-		['/apply', '/apply/status', '/letters']
+		['/apply', '/apply/status', '/letters', '/profile']
 			.map((href) => groups.flatMap((g) => g.items).find((i) => i.href === href))
 			.filter((i): i is NavItem => i !== undefined)
 	);
@@ -43,8 +49,17 @@
 		if (!auth.signedIn) {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/login?next=${encodeURIComponent(next)}`, { replace: true });
-		} else if (auth.needsProfile) {
+			return;
+		}
+		if (auth.needsProfile) {
 			await goto('/signup', { replace: true });
+			return;
+		}
+
+		store.loadEligibility(auth.account?.homeAccountId ?? auth.email);
+		if (!store.hasEligibilityProfile && page.url.pathname !== '/profile') {
+			const next = page.url.pathname + page.url.search;
+			await goto(`/profile?next=${encodeURIComponent(next)}`, { replace: true });
 		}
 	});
 </script>

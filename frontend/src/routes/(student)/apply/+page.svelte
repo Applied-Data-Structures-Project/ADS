@@ -26,6 +26,7 @@
 
 	const a = $derived(store.application);
 	const myLevel = $derived(store.user?.level ?? 'UG');
+	const myGpa = $derived(store.eligibilityProfile?.gpa ?? null);
 	const disabled = $derived(store.locked);
 	const goalsWords = $derived(wordCount(a.qGoals));
 	const adaptWords = $derived(wordCount(a.qAdaptability));
@@ -285,13 +286,16 @@
 			<fieldset class="p-4 sm:p-5 space-y-5" disabled={disabled && step !== 7}>
 				<!-- STEP 1: ELIGIBILITY -->
 				{#if step === 1}
-					<p class="text-sm text-[#515f74]">IPSO only considers applications that meet all three rules. They come from your profile.</p>
-					<div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+					<p class="text-sm text-[#515f74]">IPSO only considers applications that meet every rule below. They come from your eligibility profile.</p>
+					<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
 						{#each store.eligibility as c (c.label)}
 							<div class="p-4 rounded-xl border border-[#c6c6cd]/40 {c.ok ? 'bg-[#f0fdf4]' : 'bg-[#fef2f2]'}">
 								<div class="flex items-center gap-2 {c.ok ? 'text-[#15803d]' : 'text-[#ba1a1a]'}">
 									<Icon name={c.ok ? 'check' : 'x'} class="w-5 h-5" strokeWidth={2.4} />
 									<span class="text-sm font-semibold">{c.ok ? 'Meets the rule' : 'Does not meet the rule'}</span>
+									{#if c.provisional}
+										<span class="ml-auto px-1.5 py-0.5 rounded bg-[#fffbeb] text-[10px] font-semibold text-[#b45309]">Provisional</span>
+									{/if}
 								</div>
 								<div class="mt-2 text-sm font-semibold text-[#0b1c30]">{c.label}</div>
 								<div class="text-xs text-[#515f74]">{c.detail}</div>
@@ -361,7 +365,7 @@
 					</div>
 					<div class="rounded-xl bg-[#eff4ff] px-4 py-3 grid grid-cols-2 sm:grid-cols-4 gap-3 text-sm">
 						<div><div class="text-xs text-[#515f74]">AUC ID</div><div class="font-mono-num font-semibold">{store.user?.aucId}</div></div>
-						<div><div class="text-xs text-[#515f74]">GPA</div><div class="font-mono-num font-semibold">{store.user?.gpa.toFixed(2)}</div></div>
+						<div><div class="text-xs text-[#515f74]">GPA</div><div class="font-mono-num font-semibold">{myGpa === null ? '—' : myGpa.toFixed(2)}</div></div>
 						<div><div class="text-xs text-[#515f74]">Status</div><div class="font-semibold">{myLevel === 'UG' ? 'Undergraduate' : 'Graduate'}</div></div>
 						<div class="min-w-0"><div class="text-xs text-[#515f74]">Major</div><div class="font-semibold truncate">{store.user?.major}</div></div>
 						<div class="col-span-2 sm:col-span-4 text-xs text-[#515f74]">From your profile. <a href="/profile" class="font-semibold text-[#003ea8] hover:underline">Change it there.</a></div>
