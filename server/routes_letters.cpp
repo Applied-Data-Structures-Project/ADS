@@ -1,6 +1,4 @@
 // routes_letters.cpp
-// Group 3 - Malak
-//
 // The web addresses the Letters page (student) and the Doctor page call.
 // All the rules live in src/services/letter_service.cpp, not here.
 //

@@ -7,7 +7,8 @@
 // and routes_letters.cpp.
 // Config (env vars): PORT (default 18080), DB_PATH (default <repo>/db/app.db),
 //   UPLOAD_DIR (default <repo>/uploads), SITE_URL (default http://localhost:5173),
-//   SMTP_USER / SMTP_PASS for real emails (see smtp_notifier.hpp)
+//   SMTP_USER / SMTP_PASS for real emails (see smtp_notifier.hpp),
+//   GROQ_API_KEY for the AI essay coach (see groq_coach.hpp)
 
 #include <cstdlib>
 #include <filesystem>
@@ -20,6 +21,7 @@
 #include "sqlite3.h"
 
 #include "app_context.hpp"
+#include "groq_coach.hpp"
 #include "smtp_notifier.hpp"
 #include "repo/application_repo.hpp"
 #include "services/application_service.hpp"
@@ -50,6 +52,32 @@ bool checkDatabase(const std::string& path, std::string& versionOut) {
 std::string envOr(const char* name, const std::string& fallback) {
     const char* value = std::getenv(name);
     return (value && *value) ? std::string(value) : fallback;
+}
+
+// Reads the team's private settings file (<repo>/.env), one KEY=value per line, e.g.
+//   GROQ_API_KEY=...
+//   SMTP_USER=aucreccomendationsystem@gmail.com
+// The file is in .gitignore: it is shared privately, never on GitHub.
+// A setting already given in the terminal (export ...) wins over the file.
+void loadEnvFile(const std::filesystem::path& file) {
+    std::ifstream in(file);
+    std::string line;
+    while (std::getline(in, line)) {
+        if (!line.empty() && line.back() == '\r') line.pop_back();   // Windows line endings
+        if (line.empty() || line[0] == '#') continue;
+        size_t eq = line.find('=');
+        if (eq == std::string::npos) continue;
+        std::string name = line.substr(0, eq);
+        std::string value = line.substr(eq + 1);
+        if (value.size() >= 2 && value.front() == '"' && value.back() == '"')
+            value = value.substr(1, value.size() - 2);
+        if (std::getenv(name.c_str()) != nullptr) continue;
+#ifdef _WIN32
+        _putenv_s(name.c_str(), value.c_str());
+#else
+        setenv(name.c_str(), value.c_str(), 0);
+#endif
+    }
 }
 
 // Runs every .sql file in a folder, in name order (001_..., 002_..., ...).
@@ -96,12 +124,14 @@ bool needsSeed(sqlite3* db) {
 } // namespace
 
 int main() {
+    const std::filesystem::path repoRoot =
+        std::filesystem::path(ADS_DEFAULT_DB_PATH).parent_path().parent_path();
+    loadEnvFile(repoRoot / ".env");   // the team's Groq key and email settings
+
     const std::string dbPath = envOr("DB_PATH", ADS_DEFAULT_DB_PATH);
     const int port = std::atoi(envOr("PORT", "18080").c_str());
 
     // ---- Database: opened ONCE, shared by every request ----
-    const std::filesystem::path repoRoot =
-        std::filesystem::path(ADS_DEFAULT_DB_PATH).parent_path().parent_path();
     sqlite3* db = nullptr;
     if (sqlite3_open(dbPath.c_str(), &db) != SQLITE_OK) {
         CROW_LOG_CRITICAL << "Cannot open the database " << dbPath;
@@ -145,6 +175,10 @@ int main() {
 
     registerApplicationRoutes(app, ctx);
     registerLetterRoutes(app, ctx);
+
+    GroqCoach coach;   // the AI essay coach, if GROQ_API_KEY is set
+    registerCoachRoutes(app, coach);
+    if (!coach.configured()) CROW_LOG_INFO << "AI coach is off (GROQ_API_KEY is not set)";
 
     CROW_LOG_INFO << "Database: " << dbPath;
     app.port(port).multithreaded().run();

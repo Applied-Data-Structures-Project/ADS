@@ -1,6 +1,4 @@
 // routes_application.cpp
-// Group 3 - Malak
-//
 // The web addresses the application pages call. Each route is thin:
 //   1. who is calling?   2. read the JSON   3. ask the service   4. answer with JSON
 // All the rules live in src/services/application_service.cpp, not here.

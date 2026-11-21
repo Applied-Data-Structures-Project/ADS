@@ -1,6 +1,4 @@
 // routes_common.cpp
-// Group 3 - Malak
-//
 // Small helpers shared by routes_application.cpp and routes_letters.cpp.
 
 #include "app_context.hpp"
