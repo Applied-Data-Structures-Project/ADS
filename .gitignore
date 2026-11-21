@@ -36,3 +36,5 @@ frontend/build/
 data/raw/factsheets/
 data/raw/extracted/
 
+# Uploaded application PDFs (students' personal files)
+uploads/
