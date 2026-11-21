@@ -69,6 +69,7 @@
 		}
 
 		store.loadEligibility(auth.account?.homeAccountId ?? auth.email);
+		store.loadFromServer(auth.email); // the application, documents and letters from the C++ server
 		if (!store.hasEligibilityProfile && page.url.pathname !== '/profile') {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/profile?next=${encodeURIComponent(next)}`, { replace: true });

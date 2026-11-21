@@ -20,6 +20,8 @@ export interface StudentProfile {
 /** One row of `universities` (G1), cleaned from IPSO's "Fall 2027 list". id = sheet row number. */
 export interface University {
 	id: number;
+	/** The university's key in the database (universities.slug). Preferences are saved as slugs. */
+	slug: string;
 	name: string;
 	country: string;
 	city: string;

@@ -210,8 +210,7 @@
 	}
 
 	function saveAndContinue() {
-		store.saveDraft(true);
-		store.showToast('Draft saved.');
+		store.saveDraft(); // PUT /api/application, shows "Draft saved." or the server's error
 		go(step + 1);
 	}
 
@@ -224,8 +223,8 @@
 		input.value = '';
 	}
 
-	function submit() {
-		if (store.submit()) goto('/apply/status');
+	async function submit() {
+		if (await store.submit()) goto('/apply/status');
 	}
 
 	function counterClass(words: number, min?: number, max?: number) {

@@ -10,13 +10,17 @@
 	let doctorName = $state('');
 	let doctorEmail = $state('');
 	let error = $state<string | null>(null);
+	let busy = $state(false); // true while waiting for the server, so a double click sends once
 
 	const active = $derived(store.myLetters.filter((l) => l.status !== 'Declined').length);
 	const canAsk = $derived(active < RULES.maxLetters && !store.locked);
 
-	function send(e: SubmitEvent) {
+	async function send(e: SubmitEvent) {
 		e.preventDefault();
-		error = store.requestLetter(doctorName, doctorEmail);
+		if (busy) return;
+		busy = true;
+		error = await store.requestLetter(doctorName, doctorEmail);
+		busy = false;
 		if (!error) {
 			doctorName = '';
 			doctorEmail = '';
@@ -103,6 +107,7 @@
 				{/if}
 				<button
 					type="submit"
+					disabled={busy}
 					class="w-full h-11 bg-[#131b2e] hover:bg-[#1e293b] text-white text-sm font-semibold rounded-xl shadow-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center gap-2"
 				>
 					<Icon name="letters" class="w-4 h-4" /> Send request

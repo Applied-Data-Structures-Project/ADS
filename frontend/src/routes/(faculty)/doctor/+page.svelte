@@ -8,19 +8,24 @@
 
 	let text = $state('');
 	let error = $state<string | null>(null);
+	let busy = $state(false); // true while waiting for the server, so a double click sends once
 
 	const front = $derived(store.doctorQueue[0]);
 	const waiting = $derived(store.doctorQueue.slice(1));
 
-	function send() {
-		if (!front) return;
-		error = store.answerLetter(front.id, text);
+	async function send() {
+		if (!front || busy) return;
+		busy = true;
+		error = await store.answerLetter(front.id, text);
+		busy = false;
 		if (!error) text = '';
 	}
 
-	function decline() {
-		if (!front) return;
-		store.declineLetter(front.id);
+	async function decline() {
+		if (!front || busy) return;
+		busy = true;
+		await store.declineLetter(front.id);
+		busy = false;
 		text = '';
 		error = null;
 	}
@@ -97,10 +102,10 @@
 					{/if}
 				</div>
 				<div class="px-4 sm:px-5 py-4 border-t border-[#c6c6cd]/30 bg-[#eff4ff] flex justify-end gap-2.5">
-					<button type="button" onclick={decline} class="h-10 px-4 bg-white border border-[#c6c6cd]/40 rounded-xl text-xs sm:text-sm font-semibold shadow-sm cursor-pointer">
+					<button type="button" onclick={decline} disabled={busy} class="disabled:opacity-50 h-10 px-4 bg-white border border-[#c6c6cd]/40 rounded-xl text-xs sm:text-sm font-semibold shadow-sm cursor-pointer">
 						Decline
 					</button>
-					<button type="button" onclick={send} class="h-10 px-5 bg-[#131b2e] hover:bg-[#1e293b] text-white rounded-xl text-xs sm:text-sm font-semibold shadow-sm cursor-pointer inline-flex items-center gap-2">
+					<button type="button" onclick={send} disabled={busy} class="disabled:opacity-50 h-10 px-5 bg-[#131b2e] hover:bg-[#1e293b] text-white rounded-xl text-xs sm:text-sm font-semibold shadow-sm cursor-pointer inline-flex items-center gap-2">
 						<Icon name="letters" class="w-4 h-4" /> Send letter
 					</button>
 				</div>
