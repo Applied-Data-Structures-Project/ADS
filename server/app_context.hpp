@@ -47,9 +47,6 @@ void registerDiscoveryRoutes(App& app, AppContext& ctx);
 void registerRecommendationRoutes(App& app, AppContext& ctx);
 void registerAdminRoutes(App& app, AppContext& ctx);
 
-class GroqCoach;
-void registerCoachRoutes(App& app, GroqCoach& coach);
-
 // ---------- helpers shared by the route files (routes_common.cpp) ----------
 
 // Who is calling: the AUC email in the X-User-Email header, or "" if missing/not AUC.

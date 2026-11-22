@@ -7,8 +7,8 @@
 // and routes_letters.cpp.
 // Config (env vars): PORT (default 18080), DB_PATH (default <repo>/db/app.db),
 //   UPLOAD_DIR (default <repo>/uploads), SITE_URL (default http://localhost:5173),
-//   SMTP_USER / SMTP_PASS for real emails (see smtp_notifier.hpp),
-//   GROQ_API_KEY for the AI essay coach (see groq_coach.hpp)
+//   SMTP_USER / SMTP_PASS for real emails (relayed via SvelteKit, see smtp_notifier.hpp).
+//   (GROQ_API_KEY and SMTP TLS are handled directly by SvelteKit's Node.js server routes.)
 
 #include <cstdlib>
 #include <filesystem>
@@ -22,7 +22,6 @@
 
 
 #include "app_context.hpp"
-#include "groq_coach.hpp"
 #include "smtp_notifier.hpp"
 #include "repo/admin_repo.hpp"
 #include "repo/application_repo.hpp"
@@ -328,10 +327,6 @@ int main() {
     registerDiscoveryRoutes(app, ctx);
     registerRecommendationRoutes(app, ctx);
     registerAdminRoutes(app, ctx);
-
-    GroqCoach coach;   // the AI essay coach, if GROQ_API_KEY is set
-    registerCoachRoutes(app, coach);
-    if (!coach.configured()) CROW_LOG_INFO << "AI coach is off (GROQ_API_KEY is not set)";
 
     CROW_LOG_INFO << "Database: " << dbPath;
     app.port(port).multithreaded().run();

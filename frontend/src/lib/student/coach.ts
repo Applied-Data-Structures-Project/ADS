@@ -1,5 +1,5 @@
-// The AI essay coach (G3). Sends one answer to the C++ server (POST /api/coach),
-// which asks Groq for tips. The coach never rewrites the essay.
+// The AI essay coach (G3). Sends one answer to the SvelteKit server endpoint
+// (POST /api/coach), which asks Groq for tips. The coach never rewrites the essay.
 
 export type CoachQuestion =
 	| 'qPreparedness'
@@ -19,7 +19,7 @@ export async function getFeedback(question: CoachQuestion, text: string, email: 
 			body: JSON.stringify({ question, text })
 		});
 	} catch {
-		throw new Error('The coach is not reachable. Is the C++ server running?');
+		throw new Error('The coach is not reachable right now. Please try again.');
 	}
 	const data = await res.json().catch(() => null);
 	if (!res.ok) throw new Error(data?.error ?? 'The coach is not available right now.');

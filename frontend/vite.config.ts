@@ -3,6 +3,20 @@ import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
+const apiTarget = process.env.BACKEND_URL || 'http://localhost:18080';
+
+const apiProxy = {
+	'/api': {
+		target: apiTarget,
+		bypass(req: { url?: string }) {
+			const pathname = req.url?.split('?')[0];
+			if (pathname === '/api/coach' || pathname === '/api/internal/email') {
+				return req.url;
+			}
+		}
+	}
+};
+
 export default defineConfig({
 	plugins: [
 		tailwindcss(),
@@ -20,10 +34,11 @@ export default defineConfig({
 		})
 	],
 	server: {
-		// Forward every /api/* request to the C++ Crow backend during development,
-		// so the frontend can use relative URLs and never deal with CORS.
-		proxy: {
-			'/api': 'http://localhost:18080'
-		}
+		// Forward C++-backed /api/* requests to Crow during development, while
+		// letting SvelteKit serve /api/coach and /api/internal/email directly.
+		proxy: apiProxy
+	},
+	preview: {
+		proxy: apiProxy
 	}
 });
