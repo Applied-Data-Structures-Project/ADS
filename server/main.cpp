@@ -20,6 +20,7 @@
 #include "crow/middlewares/cors.h"
 #include "sqlite3.h"
 
+
 #include "app_context.hpp"
 #include "groq_coach.hpp"
 #include "smtp_notifier.hpp"
@@ -31,6 +32,12 @@
 #include "services/letter_service.hpp"
 #include "services/student_service.hpp"
 #include "vector.hpp"
+
+#include "repo/university_repo.hpp"
+#include "services/university_service.hpp"
+
+#include <utility>
+
 
 namespace {
 
@@ -170,8 +177,160 @@ int main() {
     cors.global()
         .origin("*")
         .methods("GET"_method, "POST"_method, "PUT"_method, "DELETE"_method, "OPTIONS"_method)
+
         .headers("Content-Type", "Authorization", "X-User-Email");
 
+    
+    
+    // Connect to the SQLite database.
+    sqlite3* universityDb = nullptr;
+
+    int status = sqlite3_open(dbPath.c_str(), &universityDb);
+
+    // Stop if we cannot open the database.
+    if (status != SQLITE_OK) {
+        CROW_LOG_ERROR << "Could not open university database";
+        sqlite3_close(universityDb);
+        return 1;
+    }
+
+    // Create the repository that reads universities from SQLite.
+    UniversityRepo universityRepo(universityDb);
+
+    // Create the service that stores universities using our Vector and HashMap.
+    UniversityService universityService(universityRepo);
+
+    // Load the universities from the database.
+    bool loaded = universityService.loadAll();
+
+    // Stop if loading the universities fails.
+    if (!loaded) {
+        CROW_LOG_ERROR << "Could not load universities";
+        sqlite3_close(universityDb);
+        return 1;
+    }
+
+    // Display the number of universities loaded.
+    CROW_LOG_INFO << "Universities loaded: "
+                  << universityService.count();
+
+
+    // API route that returns all universities to the frontend.
+    //
+    // When the frontend sends a GET request to /api/universities,
+    // Crow runs the code inside this route.
+
+    CROW_ROUTE(app, "/api/universities")
+    ([&universityService](const crow::request& req) {
+
+        // Read the search values from the URL.
+               // If a value was not provided, it will be nullptr.
+               const char* nameParam = req.url_params.get("name");
+               const char* countryParam = req.url_params.get("country");
+               const char* regionParam = req.url_params.get("region");
+
+               // Convert the values into normal C++ strings.
+               // An empty string means that filter is not used.
+               std::string name = nameParam ? nameParam : "";
+               std::string country = countryParam ? countryParam : "";
+               std::string region = regionParam ? regionParam : "";
+
+               // Ask our service to search the universities.
+               // The service uses our custom Vector.
+               Vector<University> universities =
+                   universityService.search(name, country, region);
+
+               // Create the JSON response for the frontend.
+               crow::json::wvalue response;
+
+               // Add the number of matching universities.
+               response["count"] = universities.size();
+
+               // Create a JSON list to store the university records.
+               crow::json::wvalue::list universityList;
+
+               // Go through the matching universities.
+               for (int i = 0; i < universities.size(); i++) {
+
+                   // Get the current university.
+                   University u = universities[i];
+
+                   // Each university has detailed information stored in metadataJson inside the SQLite database.
+                   // This includes academic requirements, housing, semesters, source information, and other details.
+                   crow::json::rvalue metadata =
+                       crow::json::load(u.metadataJson);
+
+                   // Make sure the university data is valid.
+                   if (!metadata ||
+                       metadata.t() != crow::json::type::Object) {
+
+                       crow::json::wvalue error;
+                       error["message"] = "Invalid university data";
+
+                       return crow::response(500, error);
+                   }
+
+                   // Convert the stored information into JSON.
+                   crow::json::wvalue item(metadata);
+
+                   // Add the complete university to our JSON list.
+                   universityList.push_back(std::move(item));
+               }
+
+               // Add the list to the response.
+               response["universities"] = std::move(universityList);
+
+               // Send the matching universities to the frontend.
+               return crow::response(200, response);
+           });
+    
+
+    CROW_ROUTE(app, "/api/universities/<string>")
+       ([&universityService](std::string slug) {
+           // Ask the UniversityService to find this university.
+                  // The service uses our custom HashMap to find the university's position inside the Vector.
+                  // We use a pointer because the university might not exist in our database.
+
+                  const University* university =
+                      universityService.find(slug);
+           if (university == nullptr) {
+
+                       crow::json::wvalue error;
+
+                       error["message"] = "University not found";
+
+                       return crow::response(404, error);
+                   }
+         
+           // All university details are already stored in metadataJson inside our SQLite database.
+           // Instead of adding every field manually, we read the complete JSON data and send it to the frontend.
+
+           crow::json::rvalue metadata =
+               crow::json::load(university->metadataJson);
+
+           // Check whether SQLite's stored metadata contains valid JSON.
+           // If the data is invalid, return an error instead of sending incorrect university information.
+
+           if (!metadata || metadata.t() != crow::json::type::Object) {
+
+               crow::json::wvalue error;
+               error["message"] = "University details are unavailable";
+
+               return crow::response(500, error);
+           }
+
+           // Convert the stored JSON into a response object.
+           // This includes the university name, country, GPA, available semesters, housing, eligible majors, course catalog, and other details.
+
+           crow::json::wvalue response(metadata);
+
+           // Send the complete university information to the frontend.
+           // HTTP 200 means the request was successful.
+
+           return crow::response(200, response);
+
+              });
+    
     CROW_ROUTE(app, "/api/health")
     ([&dbPath]() {
         std::string sqliteVersion;
@@ -195,7 +354,10 @@ int main() {
 
     CROW_LOG_INFO << "Database: " << dbPath;
     app.port(port).multithreaded().run();
+
     sqlite3_close(db);
+
+    sqlite3_close(universityDb);
     return 0;
 }
 

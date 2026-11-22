@@ -56,12 +56,61 @@ export function textList(field: Sourced<string[]>): string {
 }
 
 export async function loadUniversities(): Promise<UniversityRecord[]> {
-  const response = await fetch('/data/universities.json');
-  if (!response.ok) throw new Error(`Unable to load universities (${response.status})`);
-  const body: {universities: UniversityRecord[]} = await response.json();
-  if (!Array.isArray(body.universities)) throw new Error('Unexpected university data format');
-  return body.universities;
+	// Address of our C++ university API.
+	  const url = 'http://localhost:18080/api/universities';
+
+	  // Send a request to the backend.
+	  const response = await fetch(url);
+
+	  // Check whether the request succeeded.
+	  if (!response.ok) {
+		  throw new Error(
+			  `Unable to load universities (${response.status})`
+		  );
+	  }
+
+	  // Convert the response from JSON into a JavaScript object.
+	  const body: { universities: UniversityRecord[] } =
+		  await response.json();
+
+	  // Make sure the response contains a university list.
+	  if (!Array.isArray(body.universities)) {
+		  throw new Error('Unexpected university data format');
+	  }
+
+	  // Return the university records to our Explore page.
+	  return body.universities;
+  }
+
+
+
+/*Load one university using its unique slug.
+ * For example, if the student opens Aarhus University, we request /api/universities/aarhus-university.
+ * The C++ backend uses our custom HashMap to locate the university instead of searching the entire Vector.
+ */
+
+export async function loadUniversity(slug: string): Promise<UniversityRecord> {
+
+	// Build the API URL using the university slug.
+	const url =
+		'http://localhost:18080/api/universities/' + encodeURIComponent(slug);
+
+	// Request the university's details from the backend.
+	const response = await fetch(url);
+
+	// Check that the university was found.
+	if (!response.ok) {
+		throw new Error(
+			`Unable to load university (${response.status})`
+		);
+	}
+
+	// Read and return the university information.
+	const university: UniversityRecord = await response.json();
+
+	return university;
 }
+
 
 
 /** Keep only a handful of recently opened universities, locally in the browser. */
@@ -99,6 +148,11 @@ export function qsSortKey(rank: string | undefined): number {
   return first ? Number(first[0]) : Number.POSITIVE_INFINITY;
 }
 export function qsDisplay(match: QsMatch | undefined): string {
-  if (!match) return 'Not found in QS 2027 top 1,500 list';
-  return `${match.status === 'parent_institution' ? 'Parent institution · ' : ''}QS ${match.rank}`;
+	// If we cannot confirm a matching QS ranking, display a short message instead of a long sentence.
+	   if (!match) {
+		   return 'Not listed';
+	   }
+
+	   // If the university has a confirmed ranking, display the ranking as usual.
+	   return `${match.status === 'parent_institution' ? 'Parent institution · ' : ''}QS ${match.rank}`;
 }
