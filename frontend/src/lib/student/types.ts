@@ -17,20 +17,6 @@ export interface StudentProfile {
 	aucId: string;
 }
 
-/** One row of `universities` (G1), cleaned from IPSO's "Fall 2027 list". id = sheet row number. */
-export interface University {
-	id: number;
-	name: string;
-	country: string;
-	city: string;
-	region: string;
-	ug: boolean;
-	gr: boolean;
-	terms: string;
-	scope: string;
-	website: string;
-}
-
 export type AppStatus = 'Draft' | 'Submitted' | 'In Review' | 'Verified' | 'Ineligible';
 export type ProgramType = '' | 'Exchange' | 'Direct Enrollment';
 export type TravelExperience = '' | 'Yes, Study Abroad' | 'Yes, Non-Study Abroad' | 'No' | 'Other';
@@ -55,8 +41,8 @@ export interface Application {
 	accommodation: boolean;
 	scholarship: '' | 'None' | "Tomorrow's Leaders" | 'Other';
 	programType: ProgramType;
-	// Preferences: university ids, rank 1..3. -1 = not chosen.
-	pref: [number, number, number];
+	// Preferences: Explore university slugs, rank 1..3. '' = not chosen.
+	pref: [string, string, string];
 	// Guardian
 	guardianName: string;
 	guardianRelation: string;

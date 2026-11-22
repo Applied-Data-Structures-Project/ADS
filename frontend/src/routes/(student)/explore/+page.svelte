@@ -2,13 +2,19 @@
   import { onMount } from 'svelte';
   import PageHeader from '#lib/components/student/PageHeader.svelte';
   import Icon from '#lib/components/student/Icon.svelte';
-  import { loadUniversities, shown, textList, recentSlugs, statusLabel, loadQsRankings, qsSortKey, qsDisplay, type QsMatches, type UniversityRecord } from '#lib/explore/universities.ts';
+  import CompareTray from '#lib/components/student/CompareTray.svelte';
+  import { catalog } from '#lib/explore/catalog.svelte.ts';
+  import { demoMetrics, SAMPLE_METRICS_NOTE } from '#lib/explore/metrics.ts';
+  import { shown, textList, recentSlugs, statusLabel, loadQsRankings, qsSortKey, qsDisplay, type QsMatches, type UniversityRecord } from '#lib/explore/universities.ts';
+  import { discovery } from '#lib/student/discovery.svelte.ts';
+  import { store } from '#lib/student/store.svelte.ts';
 
-  let universities = $state<UniversityRecord[]>([]);
+  const universities = $derived(catalog.records);
+  const loading = $derived(catalog.status === 'idle' || catalog.status === 'loading');
+  const error = $derived(catalog.error);
+
   let rankings = $state<QsMatches>({});
   let recent = $state<string[]>([]);
-  let loading = $state(true);
-  let error = $state('');
   let query = $state('');
   let country = $state('All countries');
   let region = $state('All regions');
@@ -47,17 +53,37 @@
   function resetFilters() { query = ''; country = 'All countries'; region = 'All regions'; level = 'All levels'; term = 'Any term'; showCount = 18; }
   function resetCount() { showCount = 18; }
 
-  onMount(async () => {
+  function metricsFor(uni: UniversityRecord) {
+    return demoMetrics(uni, store.eligibilityProfile, store.application.budget);
+  }
+
+  function toggleSave(uni: UniversityRecord) {
+    const saved = discovery.toggleSaved(uni.slug);
+    store.showToast(saved ? 'Saved to your list.' : 'Removed from your list.');
+  }
+
+  function toggleCompare(uni: UniversityRecord) {
+    if (discovery.isCompared(uni.slug)) {
+      discovery.toggleCompare(uni.slug);
+      return;
+    }
+    if (!discovery.toggleCompare(uni.slug)) {
+      store.showToast('You can compare up to three universities at a time.');
+    }
+  }
+
+  onMount(() => {
     recent = recentSlugs();
-    try { universities = await loadUniversities(); rankings = await loadQsRankings(); }
-    catch (err) { error = err instanceof Error ? err.message : 'Unable to load universities'; }
-    finally { loading = false; }
+    void catalog.load();
+    loadQsRankings()
+      .then((matches) => (rankings = matches))
+      .catch(() => (rankings = {}));
   });
 </script>
 
 <svelte:head><title>Explore Universities · AUC Exchange Matcher</title></svelte:head>
 
-<section class="space-y-6 pb-10">
+<section class="space-y-6 pb-16">
   <PageHeader crumbs={['Discover', 'Explore Universities']} title="Explore Partner Universities" subtitle="Find your next exchange destination. Browse AUC partners, review the requirements, and explore life abroad." />
 
   <div class="rounded-2xl bg-[#0b1c30] px-5 py-6 sm:px-7 sm:py-7 text-white relative overflow-hidden">
@@ -113,30 +139,53 @@
     <div><h2 class="font-bold text-xl text-[#0b1c30]">Partner universities</h2><p class="text-sm text-[#515f74] mt-1">{loading ? 'Loading universities…' : `${filtered.length} universities found`}</p></div>
     <span class="rounded-lg border border-[#c6c6cd]/50 bg-white px-3 py-2 text-xs text-[#515f74]">Availability and requirements should be confirmed with IPSO</span>
   </div>
+  <p class="text-xs text-[#515f74]">{SAMPLE_METRICS_NOTE}</p>
   {#if error}
     <div role="alert" class="rounded-xl border border-red-200 bg-red-50 p-5 text-red-800">{error}</div>
   {:else if loading}
-    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">{#each [1,2,3,4,5,6] as i}<div class="h-64 rounded-2xl border border-[#c6c6cd]/40 bg-white animate-pulse" aria-label="Loading card"></div>{/each}</div>
+    <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">{#each [1,2,3,4,5,6] as i}<div class="h-72 rounded-2xl border border-[#c6c6cd]/40 bg-white animate-pulse" aria-label="Loading card"></div>{/each}</div>
   {:else if filtered.length === 0}
     <div class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-10 text-center space-y-3"><div class="flex justify-center text-[#515f74]"><Icon name="search" class="w-9 h-9" /></div><h3 class="text-lg font-bold">No universities found</h3><p class="text-sm text-[#515f74]">Try another search or remove some filters.</p><button type="button" onclick={resetFilters} class="rounded-xl bg-[#0b1c30] text-white px-5 py-2.5 font-semibold text-sm">Clear filters</button></div>
   {:else}
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       {#each filtered.slice(0, showCount) as uni (uni.slug)}
-        <article class="flex flex-col rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 shadow-sm hover:border-[#a4b3d0] hover:shadow-md transition-all min-h-[265px]">
+        {@const metrics = metricsFor(uni)}
+        <article class="flex flex-col rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 shadow-sm hover:border-[#a4b3d0] hover:shadow-md transition-all min-h-[300px]">
           <div class="flex items-start justify-between gap-3"><div class="rounded-xl bg-[#eff4ff] text-[#0b1c30] w-11 h-11 flex justify-center items-center"><Icon name="globe" class="w-5 h-5"/></div><span class="rounded-full px-2.5 py-1 text-[11px] font-semibold {uni.agreement_status.value === 'active' ? 'bg-[#edf8f1] text-[#247047]' : 'bg-[#fff6e3] text-[#986b1a]'}">{statusLabel(uni.agreement_status.value)}</span></div>
           <div class="mt-4"><h3 class="text-[16px] font-bold leading-snug text-[#0b1c30]">{uni.official_name.value}</h3><p class="mt-1.5 text-sm text-[#515f74]">{shown(uni.city.value)}, {shown(uni.country.value)}</p></div>
-          <div class="mt-4 flex flex-wrap gap-1.5"><span class="rounded-lg bg-[#eff4ff] px-2.5 py-1 text-xs text-[#314c76]">{textList(uni.agreement_student_levels)}</span><span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-xs text-[#515f74]">{shown(uni.region.value)}</span></div>
+          <div class="mt-4 flex flex-wrap gap-1.5"><span class="rounded-lg bg-[#eff4ff] px-2.5 py-1 text-xs text-[#314c76]">{textList(uni.agreement_student_levels)}</span><span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-xs text-[#515f74]">{shown(uni.region.value)}</span><span class="rounded-lg px-2.5 py-1 text-xs font-semibold {metrics.qualification ? 'bg-[#edf8f1] text-[#247047]' : 'bg-[#fff6e3] text-[#986b1a]'}">{metrics.qualification ? 'You qualify (sample)' : 'Check requirements'}</span></div>
           <div class="mt-3 text-xs text-[#515f74] space-y-1"><p><strong class="text-[#0b1c30]">Terms:</strong> {textList(uni.available_terms)}</p><p class="line-clamp-2"><strong class="text-[#0b1c30]">Agreement:</strong> {shown(uni.agreement_scope_raw.value)}</p></div>
           <div class="mt-3 rounded-xl border border-[#d9e3f5] bg-[#f3f7ff] px-3 py-2.5 flex items-center justify-between gap-3">
             <span class="text-xs font-semibold text-[#314c76]">QS World University Ranking 2027</span>
             <span class="text-sm font-bold text-[#0b1c30] text-right">{qsDisplay(rankings[uni.slug])}</span>
           </div>
           {#if !rankings[uni.slug]}<p class="mt-1 text-[11px] text-[#657087]">No confirmed QS entry; name differences may require checking.</p>{/if}
-          <div class="mt-auto pt-4 flex gap-2">
-            <a href={`/explore/university/${uni.slug}`} class="flex-1 inline-flex justify-center items-center gap-2 rounded-xl bg-[#0b1c30] text-white hover:bg-[#233853] py-2.5 text-sm font-semibold">View university <Icon name="arrow-right" class="w-4 h-4" /></a></div>
+          <div class="mt-auto pt-4 space-y-2">
+            <div class="flex gap-2">
+              <button
+                type="button"
+                onclick={() => toggleSave(uni)}
+                aria-pressed={discovery.isSaved(uni.slug)}
+                class="flex-1 inline-flex justify-center items-center gap-1.5 rounded-xl border py-2 text-xs font-semibold cursor-pointer {discovery.isSaved(uni.slug) ? 'border-[#131b2e] bg-[#dce9ff]/80 text-[#0b1c30]' : 'border-[#c6c6cd]/50 bg-white text-[#515f74] hover:bg-[#eff4ff]'}"
+              >
+                <Icon name="saved" class="w-3.5 h-3.5" /> {discovery.isSaved(uni.slug) ? 'Saved' : 'Save'}
+              </button>
+              <button
+                type="button"
+                onclick={() => toggleCompare(uni)}
+                aria-pressed={discovery.isCompared(uni.slug)}
+                class="flex-1 inline-flex justify-center items-center gap-1.5 rounded-xl border py-2 text-xs font-semibold cursor-pointer {discovery.isCompared(uni.slug) ? 'border-[#131b2e] bg-[#dce9ff]/80 text-[#0b1c30]' : 'border-[#c6c6cd]/50 bg-white text-[#515f74] hover:bg-[#eff4ff]'}"
+              >
+                <Icon name="compare" class="w-3.5 h-3.5" /> {discovery.isCompared(uni.slug) ? 'Selected' : 'Compare'}
+              </button>
+            </div>
+            <a href={`/explore/university/${uni.slug}`} class="w-full inline-flex justify-center items-center gap-2 rounded-xl bg-[#0b1c30] text-white hover:bg-[#233853] py-2.5 text-sm font-semibold">View university <Icon name="arrow-right" class="w-4 h-4" /></a>
+          </div>
         </article>
       {/each}
     </div>
     {#if filtered.length > showCount}<div class="text-center"><button type="button" onclick={() => showCount += 18} class="rounded-xl bg-white border border-[#c6c6cd]/60 px-6 py-3 text-[#0b1c30] text-sm font-semibold hover:bg-[#eff4ff]">Load more universities ({filtered.length - showCount} remaining)</button></div>{/if}
   {/if}
 </section>
+
+<CompareTray />

@@ -7,7 +7,6 @@ import type {
 	DocType,
 	LetterRequest,
 	StudentProfile,
-	University,
 	UploadedDoc
 } from './types.ts';
 
@@ -35,44 +34,6 @@ export const DOCUMENTS: { type: DocType; label: string; hint: string; template?:
 	{ type: 'passport', label: 'Copy of Your Passport', hint: 'Make sure your passport is valid.' }
 ];
 
-export const UNIVERSITIES: University[] = [
-	{id: 1, name: "Aarhus University", country: "Denmark", city: "Aarhus", region: "Europe", ug: true, gr: true, terms: "AY/Spring, Summer", scope: "University-wide", website: "http://www.au.dk/en/"},
-	{id: 2, name: "Akita International University", country: "Japan", city: "Akita", region: "East Asia", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "http://www.aiu.ac.jp/"},
-	{id: 3, name: "Al Akhawayn University", country: "Morocco", city: "Ifrane", region: "Middle East & Africa", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "http://www.aui.ma/en/"},
-	{id: 10, name: "Bocconi University", country: "Italy", city: "Milan", region: "Europe", ug: true, gr: false, terms: "Fall/Spring", scope: "Business and Economics", website: "http://www.unibocconi.eu"},
-	{id: 11, name: "Boğaziçi University", country: "Turkey", city: "Istanbul", region: "Europe", ug: true, gr: true, terms: "Fall/Spring/Summer", scope: "University-wide", website: "https://bogazici.edu.tr"},
-	{id: 15, name: "Catholic University of Sacred Heart (Università Cattolica del Sacro Cuore)", country: "Italy", city: "Milan", region: "Europe", ug: true, gr: true, terms: "Fall/Spring/Summer", scope: "University-wide", website: "http://www.unicatt.it/"},
-	{id: 16, name: "Central European University", country: "Austria", city: "Vienna", region: "Europe", ug: true, gr: false, terms: "Fall/Spring", scope: "Political science", website: "https://www.ceu.edu/"},
-	{id: 18, name: "Charles University (Univerzita Karlova)", country: "Czech Republic", city: "Prague", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://cuni.cz/"},
-	{id: 19, name: "Chung-Ang University", country: "South Korea", city: "Seoul / Anseong", region: "East Asia", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.cau.ac.kr/"},
-	{id: 21, name: "Concordia University", country: "Canada", city: "Montreal, Quebec", region: "North America", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "http://www.concordia.ca/"},
-	{id: 23, name: "Copenhagen Business School", country: "Denmark", city: "Copenhagen", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "Business Administration", website: "https://www.cbs.dk/en"},
-	{id: 24, name: "Cornell University", country: "USA", city: "Ithaca, New York", region: "North America", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "https://www.cornell.edu/"},
-	{id: 31, name: "EDHEC Business School", country: "France", city: "Nice", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "Business Administration", website: "https://www.edhec.edu/en"},
-	{id: 33, name: "Emlyon Business School", country: "France", city: "Lyon", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "Business Administration", website: "https://www.em-lyon.com"},
-	{id: 36, name: "Freie Universität Berlin", country: "Germany", city: "Berlin", region: "Europe", ug: true, gr: true, terms: "AY/Spring", scope: "University-wide", website: "http://www.fu-berlin.de"},
-	{id: 52, name: "John Cabot University", country: "Italy", city: "Rome", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.johncabot.edu"},
-	{id: 57, name: "King's College London (KCL)", country: "UK", city: "London", region: "Europe", ug: true, gr: false, terms: "Summer", scope: "University-wide", website: "https://www.kcl.ac.uk/"},
-	{id: 61, name: "Lingnan University", country: "China", city: "Tuen Mun, Hong Kong", region: "East Asia", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "https://www.ln.edu.hk"},
-	{id: 65, name: "Lund University", country: "Sweden", city: "Lund", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "http://www.lunduniversity.lu.se/"},
-	{id: 71, name: "Meiji Gakuin University", country: "Japan", city: "Tokyo", region: "East Asia", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "https://www.meijigakuin.ac.jp/en/"},
-	{id: 79, name: "Nova School of Business and Economics (Nova SBE)", country: "Portugal", city: "Lisbon", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "Business and Economics", website: "http://www.novasbe.unl.pt"},
-	{id: 82, name: "Ozyegin University", country: "Turkey", city: "Istanbul", region: "Europe", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "https://www.ozyegin.edu.tr"},
-	{id: 88, name: "Pompeu Fabra University (UPF)", country: "Spain", city: "Barcelona", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "Global Studies and Humanities", website: "https://www.upf.edu"},
-	{id: 90, name: "Radboud University", country: "Netherlands", city: "Nijmegen", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.ru.nl/io/english"},
-	{id: 94, name: "Richmond American University London (RAUL)", country: "UK", city: "Richmond", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.richmond.ac.uk/"},
-	{id: 98, name: "Sciences Po (Institute d'Etudes Politiques de Paris)", country: "France", city: "Paris", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "http://www.sciencespo.fr"},
-	{id: 104, name: "Technical University Darmstadt", country: "Germany", city: "Darmstadt", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.tu-darmstadt.de"},
-	{id: 105, name: "Technical University of Munich (TUM)", country: "Germany", city: "München", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "http://www.tum.de/"},
-	{id: 108, name: "The American College of Greece (ACG)", country: "Greece", city: "Athens", region: "Europe", ug: true, gr: true, terms: "Fall/Spring/Summer", scope: "University-wide", website: "http://www.acg.edu/"},
-	{id: 119, name: "Trinity College Dublin", country: "Ireland", city: "Dublin", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.tcd.ie"},
-	{id: 122, name: "Universidad Carlos III de Madrid (UC3M)", country: "Spain", city: "Madrid", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://www.uc3m.es"},
-	{id: 133, name: "University of Edinburgh", country: "UK", city: "Edinburgh", region: "Europe", ug: true, gr: false, terms: "Fall/Spring", scope: "University-wide", website: "https://www.ed.ac.uk"},
-	{id: 134, name: "University of Geneva", country: "Switzerland", city: "Geneva", region: "Europe", ug: true, gr: true, terms: "AY/Spring", scope: "University-wide", website: "http://www.unige.ch/international/en/"},
-	{id: 154, name: "Vrije Universiteit Amsterdam", country: "Netherlands", city: "Amsterdam", region: "Europe", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://vu.nl/nl"},
-	{id: 158, name: "Washington State University", country: "USA", city: "Pullman, Washington", region: "North America", ug: true, gr: true, terms: "Fall/Spring", scope: "University-wide", website: "https://wsu.edu/"},
-];
-
 /** The logged-in demo student. Same person as AUC-900219 in the admin mocks. */
 export const DEMO_STUDENT: StudentProfile = {
 	email: 's.abdelrahman@aucegypt.edu',
@@ -98,8 +59,6 @@ export const DEMO_DOCTOR: StudentProfile = {
 	aucId: '100045871'
 };
 
-export const DEMO_SAVED: number[] = [10, 98, 154, 65, 23];
-
 export const DEMO_APPLICATION: Application = {
 	studentEmail: DEMO_STUDENT.email,
 	firstName: 'Salma',
@@ -118,7 +77,11 @@ export const DEMO_APPLICATION: Application = {
 	accommodation: false,
 	scholarship: 'None',
 	programType: 'Exchange',
-	pref: [98, 10, -1],
+	pref: [
+		'sciences-po-institute-d-etudes-politiques-de-paris',
+		'bocconi-university',
+		''
+	],
 	guardianName: 'Hany Abdelrahman',
 	guardianRelation: 'Father',
 	guardianPhone: '+20 122 410 7733',

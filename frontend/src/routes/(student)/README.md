@@ -9,6 +9,11 @@ Each store action has a `TODO` naming the backend route that will replace the mo
 
 | Page | URL | Owner |
 |---|---|---|
+| Explore universities | `/explore` | G1 Maya |
+| Saved universities | `/saved` | G2 Muhammad |
+| Compare universities | `/compare` | G2 Muhammad |
+| Me (notifications, budget, letters) | `/me` | G2 Muhammad |
+| Eligibility profile | `/profile` | G3 Malak |
 | Application form (7 steps) | `/apply` | G3 Malak |
 | Application status | `/apply/status` | G3 Malak |
 | Recommendation letter | `/letters` | G3 Malak |

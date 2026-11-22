@@ -6,7 +6,9 @@
 	import { page } from '$app/state';
 	import PageHeader from '#lib/components/student/PageHeader.svelte';
 	import Icon from '#lib/components/student/Icon.svelte';
-	import { store, wordCount, universityById, acceptsLevel } from '#lib/student/store.svelte.ts';
+	import { store, wordCount } from '#lib/student/store.svelte.ts';
+	import { catalog } from '#lib/explore/catalog.svelte.ts';
+	import { auth } from '#lib/auth/store.svelte.ts';
 	import { DOCUMENTS, RULES } from '#lib/student/mocks.ts';
 	import type { DocType } from '#lib/student/types.ts';
 
@@ -43,7 +45,7 @@
 		{
 			n: 3,
 			title: 'Program & preferences',
-			lines: [a.programType || '—', ...a.pref.map((id, i) => `#${i + 1} ${universityById(id)?.name ?? '—'}`)]
+			lines: [a.programType || '—', ...a.pref.map((slug, i) => `#${i + 1} ${catalog.bySlug(slug)?.official_name.value ?? '—'}`)]
 		},
 		{ n: 4, title: 'Guardian', lines: [`${a.guardianName} (${a.guardianRelation})`, a.guardianPhone, a.guardianEmail] },
 		{
@@ -146,7 +148,10 @@
 
 	function saveAndContinue() {
 		store.saveDraft(true);
-		store.showToast('Draft saved.');
+		if (step === 5) {
+			store.saveBudget(auth.account?.homeAccountId ?? auth.email, store.application.budget);
+			store.showToast('Draft and budget saved.');
+		} else store.showToast('Draft saved.');
 		go(step + 1);
 	}
 
@@ -392,16 +397,16 @@
 					<div class="space-y-3">
 						<div class="flex items-end justify-between gap-3 flex-wrap">
 							<span class={labelCls}>Your 3 preferences, in order *</span>
-							<a href="/saved" class="text-xs font-semibold text-[#003ea8] hover:underline">Manage saved list ({store.savedIds.length})</a>
+							<a href="/saved" class="text-xs font-semibold text-[#003ea8] hover:underline">Manage saved list ({store.savedCount})</a>
 						</div>
-						{#if store.saved.length < 3}
+						{#if store.savedCount < 3}
 							<div class="rounded-xl bg-[#fffbeb] px-4 py-3 text-sm text-[#b45309] font-medium">
-								You have {store.saved.length} saved. Save at least 3 universities on <a href="/explore" class="underline">Explore</a> first.
+								You have {store.savedCount} saved. Save at least 3 universities on <a href="/explore" class="underline">Explore</a> first.
 							</div>
 						{/if}
 						{#each [0, 1, 2] as slot (slot)}
 							{@const err = store.prefErrors[slot]}
-							{@const chosen = universityById(store.application.pref[slot])}
+							{@const chosen = catalog.bySlug(store.application.pref[slot])}
 							<div class="grid grid-cols-[44px_minmax(0,1fr)] gap-3 items-start">
 								<span class="h-11 rounded-xl flex items-center justify-center font-mono-num font-bold text-sm {slot === 0 ? 'bg-[#131b2e] text-white' : 'bg-[#e5eeff] text-[#0b1c30]'}">
 									#{slot + 1}
@@ -410,19 +415,20 @@
 									<select
 										id={`pref-${slot}`}
 										aria-label={`Preference ${slot + 1}`}
-										class="stitch-select {field} {err && store.application.pref[slot] >= 0 ? 'border-[#ba1a1a]' : ''}"
+										class="stitch-select {field} {err && store.application.pref[slot] !== '' ? 'border-[#ba1a1a]' : ''}"
 										value={store.application.pref[slot]}
-										onchange={(e) => store.setPref(slot, Number((e.currentTarget as HTMLSelectElement).value))}
+										onchange={(e) => store.setPref(slot, (e.currentTarget as HTMLSelectElement).value)}
 									>
-										<option value={-1}>Choose from your saved list…</option>
-										{#each store.saved as u (u.id)}
-											<option value={u.id}>{u.name} · {u.country}{acceptsLevel(u, myLevel) ? '' : ` (not open to ${myLevel})`}</option>
+										<option value="">Choose from your saved list…</option>
+										{#each store.saved as u (u.slug)}
+											{@const levels = u.agreement_student_levels.value ?? []}
+											<option value={u.slug}>{u.official_name.value} · {u.country.value}{levels.length === 0 || levels.includes(myLevel) ? '' : ` (not open to ${myLevel})`}</option>
 										{/each}
 									</select>
-									{#if err && store.application.pref[slot] >= 0}
+									{#if err && store.application.pref[slot] !== ''}
 										<div class="text-xs font-semibold text-[#ba1a1a]">{err}</div>
 									{:else if chosen}
-										<div class="text-xs text-[#515f74]">{chosen.city} · {chosen.terms || 'Terms TBC'} · {chosen.scope}</div>
+										<div class="text-xs text-[#515f74]">{chosen.city.value} · {chosen.available_terms.value?.join(' / ') || 'Terms TBC'} · {chosen.agreement_scope_raw.value}</div>
 									{/if}
 								</div>
 							</div>

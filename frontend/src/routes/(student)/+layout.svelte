@@ -6,6 +6,8 @@
 	import { page } from '$app/state';
 	import AppShell, { type NavGroup, type NavItem } from '#lib/components/student/AppShell.svelte';
 	import SessionGate from '#lib/components/auth/SessionGate.svelte';
+	import { catalog } from '#lib/explore/catalog.svelte.ts';
+	import { discovery } from '#lib/student/discovery.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
 	import { RULES } from '#lib/student/mocks.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
@@ -19,17 +21,18 @@
 
 	const groups = $derived<NavGroup[]>([
 		{
-        section: 'Discover',
-        items: [
-            {
-                href: '/explore',
-                label: 'Explore Universities',
-                short: 'Explore',
-                icon: 'explore'
-            }
-        ]
-    },
-		
+			section: 'Discover',
+			items: [
+				{ href: '/explore', label: 'Explore Universities', short: 'Explore', icon: 'explore' },
+				{
+					href: '/saved',
+					label: 'Saved Universities',
+					short: 'Saved',
+					icon: 'saved',
+					badge: store.savedCount
+				}
+			]
+		},
 		{
 			section: 'My Application',
 			items: [
@@ -41,13 +44,14 @@
 		{
 			section: 'Account',
 			items: [
+				{ href: '/me', label: 'Me', short: 'Me', icon: 'profile', badge: discovery.unreadCount },
 				{ href: '/profile', label: 'Eligibility Profile', short: 'Profile', icon: 'profile' }
 			]
 		}
 	]);
 
 	const mobileTabs = $derived<NavItem[]>(
-			['/explore', '/apply', '/apply/status', '/letters', '/profile']
+		['/explore', '/saved', '/apply', '/apply/status', '/me']
 			.map((href) => groups.flatMap((g) => g.items).find((i) => i.href === href))
 			.filter((i): i is NavItem => i !== undefined)
 	);
@@ -69,6 +73,9 @@
 		}
 
 		store.loadEligibility(auth.account?.homeAccountId ?? auth.email);
+		store.loadBudget(auth.account?.homeAccountId ?? auth.email);
+		discovery.init(auth.account?.homeAccountId ?? auth.email);
+		void catalog.load();
 		if (!store.hasEligibilityProfile && page.url.pathname !== '/profile') {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/profile?next=${encodeURIComponent(next)}`, { replace: true });

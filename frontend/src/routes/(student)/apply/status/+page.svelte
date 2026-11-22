@@ -3,7 +3,8 @@
 	// The student sets Draft → Submitted; the admin side moves it to In Review, then Verified or Ineligible.
 	import PageHeader from '#lib/components/student/PageHeader.svelte';
 	import Icon from '#lib/components/student/Icon.svelte';
-	import { store, universityById } from '#lib/student/store.svelte.ts';
+	import { store } from '#lib/student/store.svelte.ts';
+	import { catalog } from '#lib/explore/catalog.svelte.ts';
 	import { DOCUMENTS } from '#lib/student/mocks.ts';
 	import type { AppStatus } from '#lib/student/types.ts';
 
@@ -130,11 +131,11 @@
 		<!-- Preferences summary -->
 		<div class="bg-white rounded-xl shadow-sm border border-[#c6c6cd]/40 p-4 sm:p-5 space-y-3 self-start">
 			<div class="text-xs font-semibold uppercase tracking-wider text-[#515f74]">Your ranked preferences</div>
-			{#each a.pref as id, i (i)}
-				{@const u = universityById(id)}
+			{#each a.pref as slug, i (i)}
+				{@const u = catalog.bySlug(slug)}
 				<div class="flex items-center gap-3 px-3.5 py-2.5 bg-white border border-[#c6c6cd]/40 rounded-lg shadow-sm">
 					<span class="font-mono-num font-bold text-sm">#{i + 1}</span>
-					<span class="text-sm min-w-0 truncate {u ? 'text-[#0b1c30] font-medium' : 'text-[#515f74]'}">{u?.name ?? 'Not chosen'}</span>
+					<span class="text-sm min-w-0 truncate {u ? 'text-[#0b1c30] font-medium' : 'text-[#515f74]'}">{u?.official_name.value ?? 'Not chosen'}</span>
 				</div>
 			{/each}
 			<div class="text-xs text-[#515f74] pt-2 border-t border-[#c6c6cd]/20">

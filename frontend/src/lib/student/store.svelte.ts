@@ -4,20 +4,21 @@
 // Each action has a TODO naming the backend route that replaces it. When the route exists,
 // call it with `api` from '#lib/api/client.ts' and keep the same function name, so the pages don't change.
 //
-// The logged-in student and the saved list belong to G2 (Muhammad); here they are read-only mocks
-// until his login and saved routes exist.
+// The logged-in student and the saved list belong to G2 (Muhammad). The saved,
+// compare and notification state is frontend-only for now (see discovery.svelte.ts);
+// the application and letters below are still G3's mock-backed pages.
 
 import {
 	DEMO_APPLICATION,
 	DEMO_DOCS,
 	DEMO_DOCTOR,
 	DEMO_LETTERS,
-	DEMO_SAVED,
 	DEMO_STUDENT,
 	DOCUMENTS,
-	RULES,
-	UNIVERSITIES
+	RULES
 } from './mocks.ts';
+import { catalog } from '../explore/catalog.svelte.ts';
+import { discovery } from './discovery.svelte.ts';
 import {
 	evaluateEligibility,
 	readEligibility,
@@ -28,9 +29,7 @@ import type {
 	Application,
 	DocType,
 	LetterRequest,
-	Level,
 	StudentProfile,
-	University,
 	UploadedDoc
 } from './types.ts';
 
@@ -44,14 +43,6 @@ export function wordCount(text: string): number {
 	return t ? t.split(/\s+/).length : 0;
 }
 
-export function universityById(id: number): University | undefined {
-	return UNIVERSITIES.find((u) => u.id === id);
-}
-
-export function acceptsLevel(u: University, level: Level): boolean {
-	return level === 'UG' ? u.ug : u.gr;
-}
-
 function today(): string {
 	return new Date().toISOString().slice(0, 10);
 }
@@ -63,6 +54,7 @@ export interface MissingItem {
 }
 
 const DARK_KEY = 'auc-student-dark-mode';
+const budgetKey = (accountId: string) => `auc-budget-v1:${accountId}`;
 
 class StudentStore {
 	// ---- From G2 (read-only here) ------------------------------------------
@@ -70,13 +62,10 @@ class StudentStore {
 	user = $state<StudentProfile | null>({ ...DEMO_STUDENT });
 	doctor = $state<StudentProfile>({ ...DEMO_DOCTOR });
 
-	/** TODO: replace with Muhammad's GET /api/saved. The 3 preferences are picked from this list. */
-	savedIds = $state<number[]>([...DEMO_SAVED]);
-
 	// ---- Application + letters (G3) -----------------------------------------
 	application = $state<Application>({
 		...DEMO_APPLICATION,
-		pref: [...DEMO_APPLICATION.pref] as [number, number, number]
+		pref: [...DEMO_APPLICATION.pref] as [string, string, string]
 	});
 	docs = $state<Record<DocType, UploadedDoc | null>>({ ...DEMO_DOCS });
 	letters = $state<LetterRequest[]>(DEMO_LETTERS.map((l) => ({ ...l })));
@@ -90,9 +79,10 @@ class StudentStore {
 	private toastTimer: ReturnType<typeof setTimeout> | null = null;
 
 	// ---- Derived values ------------------------------------------------------
-	saved = $derived(
-		this.savedIds.map(universityById).filter((u): u is University => u !== undefined)
-	);
+	/** The saved schools, shared with the Explorer, Saved and Compare pages. */
+	saved = $derived(discovery.saved);
+
+	savedCount = $derived(discovery.savedSlugs.length);
 
 	/** The rules IPSO checks, derived from the profile saved on /profile. */
 	eligibilitySummary = $derived(
@@ -108,13 +98,18 @@ class StudentStore {
 	/** Error for each of the 3 preference slots, or null if that slot is fine. */
 	prefErrors = $derived.by((): (string | null)[] => {
 		const level = this.user?.level ?? 'UG';
-		return this.application.pref.map((id, i) => {
-			if (id < 0) return 'Choose a university';
-			const first = this.application.pref.indexOf(id);
+		const pref = this.application.pref;
+		return pref.map((slug, i) => {
+			if (!slug) return 'Choose a university';
+			const first = pref.indexOf(slug);
 			if (first !== i) return `Already your #${first + 1} choice`;
-			if (!this.savedIds.includes(id)) return 'Not in your saved list';
-			const u = universityById(id);
-			if (u && !acceptsLevel(u, level)) return `Doesn't accept ${level} students`;
+			if (!discovery.savedSlugs.includes(slug)) return 'Not in your saved list';
+			// The catalog loads once per visit; do not report false errors meanwhile.
+			if (catalog.status !== 'ready') return null;
+			const record = catalog.bySlug(slug);
+			if (!record) return 'Not in the current university list';
+			const levels = record.agreement_student_levels.value ?? [];
+			if (levels.length > 0 && !levels.includes(level)) return `Doesn't accept ${level} students`;
 			return null;
 		});
 	});
@@ -261,6 +256,43 @@ class StudentStore {
 		};
 	}
 
+	// ---- Budget (used by Compare) --------------------------------------------
+
+	/** Load the budget saved for this account, if any. Call once in the browser. */
+	loadBudget(accountId: string) {
+		if (!accountId || typeof localStorage === 'undefined') return;
+		try {
+			const raw = localStorage.getItem(budgetKey(accountId));
+			if (raw === null) return;
+			const amount = Number(raw);
+			if (Number.isFinite(amount) && amount >= 0) this.application.budget = amount;
+		} catch {
+			// Storage blocked: keep the demo budget for this visit.
+		}
+	}
+
+	/** Save the per-semester budget for this account. */
+	saveBudget(accountId: string, amount: number) {
+		const safe = Number.isFinite(amount) ? Math.max(0, Math.round(amount)) : 0;
+		this.application.budget = safe;
+		if (accountId && typeof localStorage !== 'undefined') {
+			try {
+				localStorage.setItem(budgetKey(accountId), String(safe));
+			} catch {
+				// Storage blocked: the value still lasts for this visit.
+			}
+		}
+		this.showToast('Budget saved.');
+	}
+
+	/** Copy the first three saved schools into the application preference slots. */
+	useSavedPreferences(slugs: readonly string[]): string[] {
+		if (this.locked) return [];
+		const unique = [...new Set(slugs.filter((slug) => slug !== ''))].slice(0, 3);
+		this.application.pref = [unique[0] ?? '', unique[1] ?? '', unique[2] ?? ''];
+		return unique;
+	}
+
 	// ---- G3: application -----------------------------------------------------
 
 	/** TODO(G3): api.put('/api/application', this.application). Refused by the server after submit. */
@@ -272,10 +304,10 @@ class StudentStore {
 	}
 
 	/** TODO(G3): api.put('/api/application/preferences', { pref }). */
-	setPref(slot: number, id: number) {
+	setPref(slot: number, slug: string) {
 		if (this.locked) return;
-		const next = [...this.application.pref] as [number, number, number];
-		next[slot] = id;
+		const next = [...this.application.pref] as [string, string, string];
+		next[slot] = slug;
 		this.application.pref = next;
 	}
 
