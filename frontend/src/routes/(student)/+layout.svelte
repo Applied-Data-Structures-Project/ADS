@@ -72,10 +72,13 @@
 			return;
 		}
 
-		store.loadEligibility(auth.account?.homeAccountId ?? auth.email);
-		store.loadBudget(auth.account?.homeAccountId ?? auth.email);
-		discovery.init(auth.account?.homeAccountId ?? auth.email);
+		const accountId = auth.account?.homeAccountId ?? auth.email;
+		store.loadEligibility(accountId);
+		store.loadBudget(accountId);
+		discovery.init(accountId);
 		void catalog.load();
+		await store.loadFromServer(auth.email); // the application, documents and letters from the C++ server
+		store.loadBudget(accountId); // the server has no budget; keep the one saved on this device
 		if (!store.hasEligibilityProfile && page.url.pathname !== '/profile') {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/profile?next=${encodeURIComponent(next)}`, { replace: true });

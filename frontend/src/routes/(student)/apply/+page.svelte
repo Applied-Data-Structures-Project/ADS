@@ -11,13 +11,14 @@
 	import { auth } from '#lib/auth/store.svelte.ts';
 	import { DOCUMENTS, RULES } from '#lib/student/mocks.ts';
 	import type { DocType } from '#lib/student/types.ts';
+	import { getFeedback } from '#lib/student/coach.ts';
 
 	const STEPS = [
 		{ title: 'Eligibility', hint: 'GPA, declared major, credits' },
 		{ title: 'Personal information', hint: 'As on your passport' },
 		{ title: 'Program & preferences', hint: '3 ranked universities' },
 		{ title: 'Parent / guardian', hint: 'Emergency contact' },
-		{ title: 'Questionnaire', hint: '7 questions' },
+		{ title: 'Questionnaire', hint: '8 questions, one at a time' },
 		{ title: 'Documents & letter', hint: '4 PDFs + 1 letter' },
 		{ title: 'Review & submit', hint: 'Declaration' }
 	];
@@ -136,6 +137,69 @@
 
 	const TRAVEL = ['Yes, Study Abroad', 'Yes, Non-Study Abroad', 'No', 'Other'] as const;
 
+	// ---- Questionnaire: one question at a time, then "Review all" ----
+	// 6 essays + travel experience + budget = 8 questions.
+	type QuestionItem =
+		| { kind: 'essay'; essay: (typeof ESSAYS)[number] }
+		| { kind: 'travel' }
+		| { kind: 'budget' };
+
+	const QUESTIONS: QuestionItem[] = [
+		{ kind: 'essay', essay: ESSAYS[0] },
+		{ kind: 'essay', essay: ESSAYS[1] },
+		{ kind: 'travel' },
+		...ESSAYS.slice(2).map((essay): QuestionItem => ({ kind: 'essay', essay })),
+		{ kind: 'budget' }
+	];
+
+	let qIndex = $state(0);
+	let qReview = $state(false);
+	const question = $derived(QUESTIONS[qIndex]);
+	// After submit the answers can only be read, so show them all together.
+	const showReview = $derived(qReview || disabled);
+
+	function questionTitle(item: QuestionItem): string {
+		if (item.kind === 'essay') return item.essay.label;
+		if (item.kind === 'travel') return 'Previous international travel experience?';
+		return 'Estimated budget per semester (USD)';
+	}
+
+	function questionAnswer(item: QuestionItem): string {
+		if (item.kind === 'essay') return store.application[item.essay.key];
+		if (item.kind === 'travel') return store.application.travelExperience;
+		return store.application.budget ? `${store.application.budget} USD` : '';
+	}
+
+	function nextQuestion() {
+		if (qIndex < QUESTIONS.length - 1) qIndex++;
+		else qReview = true;
+	}
+
+	function editQuestion(i: number) {
+		qIndex = i;
+		qReview = false;
+	}
+
+	// ---- AI coach: feedback for one essay at a time ----
+	let coachFor = $state<EssayKey | null>(null);
+	let coachLoading = $state(false);
+	let coachText = $state('');
+	let coachError = $state('');
+
+	async function askCoach(key: EssayKey) {
+		coachFor = key;
+		coachLoading = true;
+		coachText = '';
+		coachError = '';
+		try {
+			coachText = await getFeedback(key, store.application[key], auth.email);
+		} catch (e) {
+			coachError = e instanceof Error ? e.message : 'The coach is not available right now.';
+		} finally {
+			coachLoading = false;
+		}
+	}
+
 	const PROGRAMS = [
 		{ v: 'Exchange', d: 'Pay AUC tuition in one payment (no installments while on exchange).' },
 		{ v: 'Direct Enrollment', d: 'Enroll and pay the host university directly.' }
@@ -146,12 +210,11 @@
 		if (typeof window !== 'undefined') window.scrollTo({ top: 0, behavior: 'smooth' });
 	}
 
-	function saveAndContinue() {
-		store.saveDraft(true);
+	async function saveAndContinue() {
 		if (step === 5) {
 			store.saveBudget(auth.account?.homeAccountId ?? auth.email, store.application.budget);
-			store.showToast('Draft and budget saved.');
-		} else store.showToast('Draft saved.');
+		}
+		await store.saveDraft(step === 5); // PUT /api/application; on step 5 the budget toast is enough
 		go(step + 1);
 	}
 
@@ -164,8 +227,8 @@
 		input.value = '';
 	}
 
-	function submit() {
-		if (store.submit()) goto('/apply/status');
+	async function submit() {
+		if (await store.submit()) goto('/apply/status');
 	}
 
 	function counterClass(words: number, min?: number, max?: number) {
@@ -450,30 +513,71 @@
 						{/each}
 					</div>
 
-				<!-- STEP 5: QUESTIONNAIRE -->
+				<!-- STEP 5: QUESTIONNAIRE (one question at a time, then review all) -->
 				{:else if step === 5}
-					<p class="text-sm text-[#515f74]">Answer as accurately as possible. The selection committee reads these.</p>
-					{#each ESSAYS as q (q.key)}
-						{@const words = wordCount(store.application[q.key])}
-						<div class="space-y-1.5">
-							<label for={`ap-${q.key}`} class="block text-sm font-semibold text-[#0b1c30]">{q.label} *</label>
-							<p class="text-xs text-[#515f74]">{q.help}</p>
-							<textarea
-								id={`ap-${q.key}`}
-								rows={q.min ? 8 : 4}
-								bind:value={store.application[q.key]}
-								class="w-full px-3.5 py-3 bg-white text-[#0b1c30] text-sm leading-relaxed rounded-xl border border-[#c6c6cd]/40 focus:outline-none focus:border-black focus:ring-0 shadow-sm disabled:bg-[#eff4ff]"
-							></textarea>
-							<div class="flex justify-between text-xs">
-								<span class="font-mono-num font-semibold {counterClass(words, q.min, q.max)}">
-									{words} words{q.min ? ` · needs ${q.min}${q.max && q.max < 1000 ? `–${q.max}` : '+'}` : ''}
-								</span>
-								{#if q.min && words < q.min}<span class="text-[#515f74]">{q.min - words} to go</span>{/if}
+					{#if !showReview}
+						<!-- Progress: "Question 3 of 8" + dots -->
+						<div class="flex items-center justify-between gap-3 flex-wrap">
+							<span class="text-xs font-semibold text-[#515f74] uppercase tracking-wider">Question {qIndex + 1} of {QUESTIONS.length}</span>
+							<div class="flex gap-1.5" aria-hidden="true">
+								{#each QUESTIONS as item, i (i)}
+									<span class="h-1.5 w-6 rounded-full {i < qIndex ? 'bg-[#15803d]' : i === qIndex ? 'bg-[#131b2e]' : 'bg-[#c6c6cd]/60'}"></span>
+								{/each}
 							</div>
 						</div>
-						{#if q.key === 'qGoals'}
+
+						{#if question.kind === 'essay'}
+							{@const q = question.essay}
+							{@const words = wordCount(store.application[q.key])}
+							<div class="space-y-1.5">
+								<label for={`ap-${q.key}`} class="block text-base font-semibold text-[#0b1c30]">{q.label} *</label>
+								<p class="text-sm text-[#515f74]">{q.help}</p>
+								<textarea
+									id={`ap-${q.key}`}
+									rows={q.min ? 10 : 6}
+									bind:value={store.application[q.key]}
+									class="w-full px-3.5 py-3 bg-white text-[#0b1c30] text-sm leading-relaxed rounded-xl border border-[#c6c6cd]/40 focus:outline-none focus:border-black focus:ring-0 shadow-sm disabled:bg-[#eff4ff]"
+								></textarea>
+								<div class="flex justify-between text-xs">
+									<span class="font-mono-num font-semibold {counterClass(words, q.min, q.max)}">
+										{words} words{q.min ? ` · needs ${q.min}${q.max && q.max < 1000 ? `–${q.max}` : '+'}` : ''}
+									</span>
+									{#if q.min && words < q.min}<span class="text-[#515f74]">{q.min - words} to go</span>{/if}
+								</div>
+							</div>
+
+							<!-- AI coach -->
+							{#if !disabled}
+								<div class="rounded-xl border border-[#c6c6cd]/40 bg-[#eff4ff] p-3.5 sm:p-4 space-y-2.5">
+									<div class="flex items-center justify-between gap-3 flex-wrap">
+										<div>
+											<div class="text-sm font-semibold text-[#0b1c30]">AI writing coach</div>
+											<div class="text-xs text-[#515f74]">Tips on content, grammar and spelling. It never writes your answer for you.</div>
+										</div>
+										<button
+											type="button"
+											onclick={() => askCoach(q.key)}
+											disabled={coachLoading || words < 20}
+											class="h-9 px-4 bg-white border border-[#c6c6cd]/40 rounded-xl text-xs sm:text-sm font-semibold shadow-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+										>
+											{coachLoading && coachFor === q.key ? 'Reading your answer…' : 'Get feedback'}
+										</button>
+									</div>
+									{#if words < 20}
+										<p class="text-xs text-[#515f74]">Write at least 20 words to get feedback.</p>
+									{/if}
+									{#if coachFor === q.key && coachError}
+										<p class="text-sm text-[#ba1a1a]">{coachError}</p>
+									{/if}
+									{#if coachFor === q.key && coachText}
+										<div class="text-sm text-[#0b1c30] leading-relaxed whitespace-pre-line bg-white rounded-lg border border-[#c6c6cd]/40 p-3">{coachText}</div>
+										<p class="text-[11px] text-[#515f74]">AI suggestions, based on the question, not IPSO's official marking.</p>
+									{/if}
+								</div>
+							{/if}
+						{:else if question.kind === 'travel'}
 							<div class="space-y-2">
-								<span class="block text-sm font-semibold text-[#0b1c30]">Previous international travel experience? *</span>
+								<span class="block text-base font-semibold text-[#0b1c30]">Previous international travel experience? *</span>
 								<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
 									{#each TRAVEL as t (t)}
 										<label
@@ -487,13 +591,61 @@
 									{/each}
 								</div>
 							</div>
+						{:else}
+							<div class={fieldBox}>
+								<label for="ap-budget" class="text-base font-semibold text-[#0b1c30]">Estimated budget per semester (USD)</label>
+								<input id="ap-budget" type="number" min="0" step="100" class="{field} font-mono-num sm:max-w-xs" bind:value={store.application.budget} />
+								<span class="text-xs text-[#515f74]">Used by IPSO when matching you to universities you can afford.</span>
+							</div>
 						{/if}
-					{/each}
-					<div class={fieldBox}>
-						<label for="ap-budget" class={labelCls}>Estimated budget per semester (USD)</label>
-						<input id="ap-budget" type="number" min="0" step="100" class="{field} font-mono-num sm:max-w-xs" bind:value={store.application.budget} />
-						<span class="text-xs text-[#515f74]">Used by IPSO when matching you to universities you can afford.</span>
-					</div>
+
+						<!-- Previous / next question -->
+						<div class="flex items-center justify-between gap-3 pt-1">
+							<button
+								type="button"
+								onclick={() => qIndex--}
+								disabled={qIndex === 0}
+								class="h-9 px-3.5 bg-white border border-[#c6c6cd]/40 rounded-xl text-xs sm:text-sm font-semibold shadow-sm inline-flex items-center gap-1.5 cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+							>
+								<Icon name="arrow-left" class="w-4 h-4" /> Previous question
+							</button>
+							<button
+								type="button"
+								onclick={nextQuestion}
+								class="h-9 px-3.5 bg-[#131b2e] hover:bg-[#1e293b] text-white rounded-xl text-xs sm:text-sm font-semibold shadow-sm inline-flex items-center gap-1.5 cursor-pointer"
+							>
+								{qIndex === QUESTIONS.length - 1 ? 'Review all answers' : 'Next question'} <Icon name="arrow-right" class="w-4 h-4" />
+							</button>
+						</div>
+					{:else}
+						<!-- Review all answers together -->
+						<p class="text-sm text-[#515f74]">All your answers together. Press Edit to change one.</p>
+						<div class="space-y-3">
+							{#each QUESTIONS as item, i (i)}
+								{@const answer = questionAnswer(item)}
+								<div class="rounded-xl border border-[#c6c6cd]/40 bg-white p-3.5 sm:p-4">
+									<div class="flex items-start justify-between gap-3">
+										<div class="min-w-0">
+											<div class="text-xs font-semibold text-[#515f74]">Question {i + 1}</div>
+											<div class="text-sm font-semibold text-[#0b1c30]">{questionTitle(item)}</div>
+										</div>
+										{#if !disabled}
+											<button type="button" onclick={() => editQuestion(i)} class="text-xs font-semibold text-[#003ea8] hover:underline cursor-pointer shrink-0">Edit</button>
+										{/if}
+									</div>
+									{#if answer}
+										<p class="mt-2 text-sm text-[#0b1c30] leading-relaxed whitespace-pre-line break-words">{answer}</p>
+										{#if item.kind === 'essay'}
+											{@const words = wordCount(answer)}
+											<p class="mt-1 text-xs font-mono-num {counterClass(words, item.essay.min, item.essay.max)}">{words} words</p>
+										{/if}
+									{:else}
+										<p class="mt-2 text-sm text-[#ba1a1a]">Not answered yet</p>
+									{/if}
+								</div>
+							{/each}
+						</div>
+					{/if}
 
 				<!-- STEP 6: DOCUMENTS + LETTER -->
 				{:else if step === 6}

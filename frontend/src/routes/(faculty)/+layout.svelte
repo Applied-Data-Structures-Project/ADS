@@ -35,7 +35,9 @@
 		if (!auth.signedIn) {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/login?next=${encodeURIComponent(next)}`, { replace: true });
+			return;
 		}
+		if (auth.role === 'faculty') store.loadDoctor(); // this doctor's queue from the C++ server
 	});
 </script>
 
