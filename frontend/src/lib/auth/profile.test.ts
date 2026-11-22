@@ -3,7 +3,7 @@ import { isProfileComplete, profileKey, validateProfile, type StudentProfileInpu
 
 const valid: StudentProfileInput = {
 	level: 'UG',
-	major: 'Economics (ECON)',
+	major: 'Economics (B.A.)',
 	aucId: '900219004',
 	phone: '+20 100 555 2190'
 };

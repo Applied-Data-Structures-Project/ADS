@@ -8,6 +8,11 @@
 	import CompareTray from '#lib/components/student/CompareTray.svelte';
 	import { catalog } from '#lib/explore/catalog.svelte.ts';
 	import {
+		eligibilityBadgeClass,
+		evaluateUniversityEligibility,
+		type UniversityEligibility
+	} from '#lib/explore/eligibility.ts';
+	import {
 		daysLeft,
 		demoMetrics,
 		formatDeadline,
@@ -21,7 +26,7 @@
 	import type { UniversityRecord } from '#lib/explore/universities.ts';
 
 	type SortBy = 'deadline' | 'fit' | 'cost';
-	type Scored = { record: UniversityRecord; metrics: DemoMetrics };
+	type Scored = { record: UniversityRecord; metrics: DemoMetrics; eligibility: UniversityEligibility };
 
 	let sortBy = $state<SortBy>('deadline');
 
@@ -31,7 +36,11 @@
 	const budget = $derived(store.application.budget);
 
 	const items = $derived(
-		discovery.saved.map((record) => ({ record, metrics: demoMetrics(record, profile, budget) }))
+		discovery.saved.map((record) => ({
+			record,
+			metrics: demoMetrics(record, profile, budget),
+			eligibility: evaluateUniversityEligibility(record, profile)
+		}))
 	);
 
 	/** Nearest deadline uses a min-heap; the other orders use merge sort. */
@@ -50,12 +59,20 @@
 		return sorted;
 	});
 
-	/** Top three by fit that are not saved yet. `topK` is backed by a max-heap. */
+	/** Top three by fit that are not saved yet. Prefers eligible schools when any qualify. */
 	const recommendations = $derived.by((): Scored[] => {
 		const saved = new Set(discovery.savedSlugs);
-		const pool = catalog.records
+		const allUnsaved = catalog.records
 			.filter((record) => !saved.has(record.slug))
-			.map((record) => ({ record, metrics: demoMetrics(record, profile, budget) }));
+			.map((record) => ({
+				record,
+				metrics: demoMetrics(record, profile, budget),
+				eligibility: evaluateUniversityEligibility(record, profile)
+			}));
+		const eligibleUnsaved = allUnsaved.filter(
+			(item) => item.eligibility.status === 'eligible' || item.eligibility.status === 'provisional'
+		);
+		const pool = eligibleUnsaved.length >= 3 ? eligibleUnsaved : allUnsaved;
 		return topK(pool, (item) => item.metrics.fit, 3);
 	});
 
@@ -198,16 +215,20 @@
 
 					<div class="mt-3 flex flex-wrap gap-1.5">
 						<span
-							class="rounded-lg px-2.5 py-1 text-[11px] font-semibold {item.metrics.qualification
-								? 'bg-[#edf8f1] text-[#247047]'
-								: 'bg-[#fff6e3] text-[#986b1a]'}"
+							title={item.eligibility.reason}
+							class="rounded-lg px-2.5 py-1 text-[11px] font-semibold {eligibilityBadgeClass(
+								item.eligibility.status
+							)}"
 						>
-							{item.metrics.qualification ? 'You qualify (sample)' : 'Check requirements'}
+							{item.eligibility.label}
 						</span>
 						<span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-[11px] text-[#515f74]">
 							{item.record.region.value ?? 'Region TBC'}
 						</span>
 					</div>
+					{#if item.eligibility.status === 'ineligible'}
+						<p class="mt-1.5 text-[11px] font-medium text-[#ba1a1a]">{item.eligibility.reason}</p>
+					{/if}
 
 					<dl class="mt-4 grid grid-cols-2 gap-2 text-xs">
 						<div class="rounded-xl bg-[#f8faff] border border-[#dce4f0] px-3 py-2.5">
@@ -308,6 +329,16 @@
 							{[item.record.city.value, item.record.country.value].filter(Boolean).join(', ') ||
 								'Location not available'}
 						</p>
+						<div class="mt-2">
+							<span
+								title={item.eligibility.reason}
+								class="inline-block rounded-lg px-2 py-0.5 text-[11px] font-semibold {eligibilityBadgeClass(
+									item.eligibility.status
+								)}"
+							>
+								{item.eligibility.label}
+							</span>
+						</div>
 						<p class="mt-2 text-xs text-[#515f74]">
 							Estimated semester cost
 							<span class="font-semibold text-[#0b1c30] font-mono-num">

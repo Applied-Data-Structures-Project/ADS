@@ -9,7 +9,7 @@ import {
 function ug(overrides: Partial<EligibilityProfile> = {}): EligibilityProfile {
 	return {
 		level: 'UG',
-		major: 'Economics (ECON)',
+		major: 'Economics (B.A.)',
 		gpa: 3.2,
 		credits: 30,
 		majorDeclared: true,
@@ -27,7 +27,7 @@ function ug(overrides: Partial<EligibilityProfile> = {}): EligibilityProfile {
 function gr(overrides: Partial<EligibilityProfile> = {}): EligibilityProfile {
 	return {
 		level: 'GR',
-		major: 'Economics (ECON)',
+		major: 'Economics (M.A.)',
 		gpa: 3.4,
 		credits: 0,
 		majorDeclared: true,

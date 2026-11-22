@@ -4,7 +4,7 @@
   import Icon from '#lib/components/student/Icon.svelte';
   import CompareTray from '#lib/components/student/CompareTray.svelte';
   import { catalog } from '#lib/explore/catalog.svelte.ts';
-  import { demoMetrics, SAMPLE_METRICS_NOTE } from '#lib/explore/metrics.ts';
+  import { eligibilityBadgeClass, evaluateUniversityEligibility } from '#lib/explore/eligibility.ts';
   import { shown, textList, recentSlugs, statusLabel, loadQsRankings, qsSortKey, qsDisplay, type QsMatches, type UniversityRecord } from '#lib/explore/universities.ts';
   import { discovery } from '#lib/student/discovery.svelte.ts';
   import { store } from '#lib/student/store.svelte.ts';
@@ -20,22 +20,37 @@
   let region = $state('All regions');
   let level = $state('All levels');
   let term = $state('Any term');
+  let eligibleOnly = $state(false);
   let sortBy = $state('name');
   let showCount = $state(18);
 
   const countries = $derived(['All countries', ...Array.from(new Set(universities.map((u) => u.country.value).filter((v): v is string => Boolean(v)))).sort()]);
   const regions = $derived(['All regions', ...Array.from(new Set(universities.map((u) => u.region.value).filter((v): v is string => Boolean(v)))).sort()]);
   const recentlyViewed = $derived(recent.map((slug) => universities.find((u) => u.slug === slug)).filter((u): u is UniversityRecord => Boolean(u)));
+
+  function eligibilityFor(uni: UniversityRecord) {
+    return evaluateUniversityEligibility(uni, store.eligibilityProfile);
+  }
+
+  const eligibleCount = $derived(
+    universities.filter((u) => {
+      const status = evaluateUniversityEligibility(u, store.eligibilityProfile).status;
+      return status === 'eligible' || status === 'provisional';
+    }).length
+  );
+
   const filtered = $derived.by(() => {
     const needle = query.trim().toLowerCase();
     const matches = universities.filter((u) => {
       const searchable = [u.official_name.value, u.short_name.value, u.country.value, u.city.value, u.region.value, u.agreement_scope_raw.value].filter(Boolean).join(' ').toLowerCase();
       const terms = (u.available_terms.value ?? []).join(' ').toLowerCase();
+      const eligStatus = eligibleOnly ? evaluateUniversityEligibility(u, store.eligibilityProfile).status : null;
       return (!needle || searchable.includes(needle))
         && (country === 'All countries' || u.country.value === country)
         && (region === 'All regions' || u.region.value === region)
         && (level === 'All levels' || (u.agreement_student_levels.value ?? []).includes(level))
-        && (term === 'Any term' || terms.includes(term.toLowerCase()));
+        && (term === 'Any term' || terms.includes(term.toLowerCase()))
+        && (!eligibleOnly || eligStatus === 'eligible' || eligStatus === 'provisional');
     });
     matches.sort((a, b) => {
       if (sortBy === 'qs') {
@@ -49,13 +64,9 @@
     });
     return matches;
   });
-  const activeFilters = $derived(query.trim() !== '' || country !== 'All countries' || region !== 'All regions' || level !== 'All levels' || term !== 'Any term');
-  function resetFilters() { query = ''; country = 'All countries'; region = 'All regions'; level = 'All levels'; term = 'Any term'; showCount = 18; }
+  const activeFilters = $derived(query.trim() !== '' || country !== 'All countries' || region !== 'All regions' || level !== 'All levels' || term !== 'Any term' || eligibleOnly);
+  function resetFilters() { query = ''; country = 'All countries'; region = 'All regions'; level = 'All levels'; term = 'Any term'; eligibleOnly = false; showCount = 18; }
   function resetCount() { showCount = 18; }
-
-  function metricsFor(uni: UniversityRecord) {
-    return demoMetrics(uni, store.eligibilityProfile, store.application.budget);
-  }
 
   function toggleSave(uni: UniversityRecord) {
     const saved = discovery.toggleSaved(uni.slug);
@@ -117,8 +128,24 @@
       <label class="space-y-1.5"><span class="block text-[11px] font-bold tracking-wide text-[#515f74]">SORT BY</span>
         <select bind:value={sortBy} class="w-full h-10 rounded-xl border-[#c6c6cd]/60 text-xs sm:text-sm bg-white text-[#0b1c30]"><option value="name">University name</option><option value="country">Country</option><option value="city">City</option><option value="qs">QS 2027 ranking</option></select></label>
     </div>
-    {#if activeFilters}<div class="flex items-center justify-between gap-3"><p class="text-xs text-[#515f74]">Showing results matching your filters</p><button type="button" onclick={resetFilters} class="text-xs font-bold text-[#003ea8] hover:underline">Clear all filters</button></div>{/if}
+    <div class="flex flex-wrap items-center justify-between gap-3 pt-1">
+      <label class="inline-flex items-center gap-2 text-xs font-semibold text-[#0b1c30] cursor-pointer select-none">
+        <input type="checkbox" bind:checked={eligibleOnly} onchange={resetCount} class="w-4 h-4 rounded border-[#c6c6cd] accent-[#131b2e]" />
+        <span>Eligible for me only</span>
+        {#if store.hasEligibilityProfile && !loading}
+          <span class="rounded-full bg-[#eff4ff] px-2 py-0.5 text-[11px] font-semibold text-[#314c76] font-mono-num">{eligibleCount}</span>
+        {/if}
+      </label>
+      {#if activeFilters}<button type="button" onclick={resetFilters} class="text-xs font-bold text-[#003ea8] hover:underline cursor-pointer">Clear all filters</button>{/if}
+    </div>
   </section>
+
+  {#if store.hasEligibilityProfile && !store.isEligible}
+    <div class="rounded-xl border border-[#ba1a1a]/25 bg-[#fef2f2] px-4 py-3 flex flex-wrap items-center justify-between gap-3 text-xs text-[#ba1a1a]">
+      <span>Your current academic profile does not meet all AUC study-abroad eligibility rules yet.</span>
+      <a href="/profile" class="font-bold underline shrink-0">Review my profile</a>
+    </div>
+  {/if}
 
   {#if !loading && recentlyViewed.length && !activeFilters}
     <section class="space-y-3">
@@ -139,7 +166,6 @@
     <div><h2 class="font-bold text-xl text-[#0b1c30]">Partner universities</h2><p class="text-sm text-[#515f74] mt-1">{loading ? 'Loading universities…' : `${filtered.length} universities found`}</p></div>
     <span class="rounded-lg border border-[#c6c6cd]/50 bg-white px-3 py-2 text-xs text-[#515f74]">Availability and requirements should be confirmed with IPSO</span>
   </div>
-  <p class="text-xs text-[#515f74]">{SAMPLE_METRICS_NOTE}</p>
   {#if error}
     <div role="alert" class="rounded-xl border border-red-200 bg-red-50 p-5 text-red-800">{error}</div>
   {:else if loading}
@@ -149,11 +175,14 @@
   {:else}
     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
       {#each filtered.slice(0, showCount) as uni (uni.slug)}
-        {@const metrics = metricsFor(uni)}
+        {@const elig = eligibilityFor(uni)}
         <article class="flex flex-col rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 shadow-sm hover:border-[#a4b3d0] hover:shadow-md transition-all min-h-[300px]">
           <div class="flex items-start justify-between gap-3"><div class="rounded-xl bg-[#eff4ff] text-[#0b1c30] w-11 h-11 flex justify-center items-center"><Icon name="globe" class="w-5 h-5"/></div><span class="rounded-full px-2.5 py-1 text-[11px] font-semibold {uni.agreement_status.value === 'active' ? 'bg-[#edf8f1] text-[#247047]' : 'bg-[#fff6e3] text-[#986b1a]'}">{statusLabel(uni.agreement_status.value)}</span></div>
           <div class="mt-4"><h3 class="text-[16px] font-bold leading-snug text-[#0b1c30]">{uni.official_name.value}</h3><p class="mt-1.5 text-sm text-[#515f74]">{shown(uni.city.value)}, {shown(uni.country.value)}</p></div>
-          <div class="mt-4 flex flex-wrap gap-1.5"><span class="rounded-lg bg-[#eff4ff] px-2.5 py-1 text-xs text-[#314c76]">{textList(uni.agreement_student_levels)}</span><span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-xs text-[#515f74]">{shown(uni.region.value)}</span><span class="rounded-lg px-2.5 py-1 text-xs font-semibold {metrics.qualification ? 'bg-[#edf8f1] text-[#247047]' : 'bg-[#fff6e3] text-[#986b1a]'}">{metrics.qualification ? 'You qualify (sample)' : 'Check requirements'}</span></div>
+          <div class="mt-4 flex flex-wrap gap-1.5"><span class="rounded-lg bg-[#eff4ff] px-2.5 py-1 text-xs text-[#314c76]">{textList(uni.agreement_student_levels)}</span><span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-xs text-[#515f74]">{shown(uni.region.value)}</span><span title={elig.reason} class="rounded-lg px-2.5 py-1 text-xs font-semibold {eligibilityBadgeClass(elig.status)}">{elig.label}</span></div>
+          {#if elig.status === 'ineligible'}
+            <p class="mt-2 text-[11px] font-medium text-[#ba1a1a]">{elig.reason}</p>
+          {/if}
           <div class="mt-3 text-xs text-[#515f74] space-y-1"><p><strong class="text-[#0b1c30]">Terms:</strong> {textList(uni.available_terms)}</p><p class="line-clamp-2"><strong class="text-[#0b1c30]">Agreement:</strong> {shown(uni.agreement_scope_raw.value)}</p></div>
           <div class="mt-3 rounded-xl border border-[#d9e3f5] bg-[#f3f7ff] px-3 py-2.5 flex items-center justify-between gap-3">
             <span class="text-xs font-semibold text-[#314c76]">QS World University Ranking 2027</span>

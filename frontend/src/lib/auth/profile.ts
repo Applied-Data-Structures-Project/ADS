@@ -6,6 +6,7 @@
 // Microsoft account id, so two accounts on one browser do not collide.
 
 import type { Level } from '#lib/student/types.ts';
+import { isValidAucMajor } from '#lib/student/auc-majors.ts';
 
 export interface StudentProfileInput {
 	name?: string;
@@ -20,7 +21,9 @@ export type ProfileErrors = Partial<Record<keyof StudentProfileInput, string>>;
 export function validateProfile(profile: StudentProfileInput): ProfileErrors {
 	const errors: ProfileErrors = {};
 	if (profile.level !== 'UG' && profile.level !== 'GR') errors.level = 'Choose your level.';
-	if (profile.major.trim().length < 2) errors.major = 'Enter your major.';
+	if (!isValidAucMajor(profile.major, profile.level)) {
+		errors.major = 'Select your AUC major from the list.';
+	}
 	if (!/^\d{9}$/.test(profile.aucId.trim())) errors.aucId = 'Your AUC ID is 9 digits.';
 	if (profile.phone.trim().length < 8) errors.phone = 'Enter a phone number with a country code.';
 	return errors;
