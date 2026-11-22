@@ -69,10 +69,36 @@ Answer: the same shape as `GET /api/me`. `400` on invalid GPA, credits, level, o
 
 ## Saved Universities & Notifications
 
-### `GET /api/saved`
-The signed-in student's saved university slugs, in the order they were saved.
+### `GET /api/saved` (optional `?sort=deadline|fit|cost`)
+Without `?sort=`, returns the signed-in student's saved university slugs in the order they were saved:
 ```json
 { "saved": ["bocconi-university", "aarhus-university"] }
+```
+With `?sort=deadline`, `?sort=fit`, or `?sort=cost`, scores and orders the student's saved universities in C++ using `Heap` (`include/heap.hpp`, min-heap for `deadline`) or stable `mergeSort` (`include/mergesort.hpp`, for `fit` and `cost`):
+```json
+{
+  "sort": "deadline",
+  "algorithm": "cpp-min-heap",
+  "saved": ["bocconi-university", "aarhus-university"],
+  "items": [
+    {
+      "slug": "aarhus-university",
+      "name": "Aarhus University",
+      "country": "Denmark",
+      "city": "Aarhus",
+      "region": "Europe",
+      "fitScore": 84,
+      "eligible": true,
+      "provisional": false,
+      "eligibilityReason": "",
+      "minGpaHost": 2.8,
+      "estimatedSemesterCostUsd": 5400,
+      "withinBudget": true,
+      "deadline": "2026-10-15",
+      "matchSummary": "Strong GPA match and within your budget"
+    }
+  ]
+}
 ```
 
 ### `POST /api/saved/<slug>`
@@ -84,7 +110,7 @@ Removes a saved university slug.
 Answer: `{ "saved": [...] }`.
 
 ### `GET /api/notifications`
-The signed-in student's notifications in FIFO order (oldest first), plus `unreadCount` from the server's `Queue<int>`. Seeds one welcome notification on first visit.
+The signed-in student's notifications ordered oldest-first by C++ `mergeSort` (`include/mergesort.hpp`), plus `unreadCount` from the server's FIFO `Queue<int>` (`include/queue.hpp`). Seeds one welcome notification on first visit.
 ```json
 {
   "notifications": [
@@ -104,6 +130,33 @@ Answer: `{ "readId": 1, "notifications": [...], "unreadCount": 1 }`.
 ### `POST /api/notifications/read-all`
 Marks all unread notifications for the student as read and empties the unread `Queue`.
 Answer: `{ "notifications": [...], "unreadCount": 0 }`.
+
+### `GET /api/recommendations?k=3`
+Computes the top `k` (`1..20`, default `3`) unsaved partner universities for the signed-in student in C++ using our `Heap` (`include/heap.hpp`, `O(n)` `buildFromArray` + `O(k log n)` pops) over `UniversityService`, excluding saved slugs in `O(1)` via `DiscoveryService`.
+```json
+{
+  "algorithm": "cpp-max-heap",
+  "count": 3,
+  "recommendations": [
+    {
+      "slug": "bocconi-university",
+      "name": "Bocconi University",
+      "country": "Italy",
+      "city": "Milan",
+      "region": "Europe",
+      "fitScore": 92,
+      "eligible": true,
+      "provisional": false,
+      "eligibilityReason": "",
+      "minGpaHost": 3.0,
+      "estimatedSemesterCostUsd": 5200,
+      "withinBudget": true,
+      "deadline": "2026-10-15",
+      "matchSummary": "Direct major match and within your budget"
+    }
+  ]
+}
+```
 
 ---
 

@@ -1,80 +1,99 @@
 <script lang="ts">
-	// Saved universities, ordered by nearest deadline (default), best fit or
-	// lowest cost. The first three in the current order can be copied straight
-	// into the application form.
+	// Saved universities, ordered in C++ by nearest deadline (Min-Heap),
+	// best fit (mergeSort), or lowest cost (mergeSort). Recommendations are
+	// computed in C++ by Max-Heap (GET /api/recommendations).
+	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import PageHeader from '#lib/components/student/PageHeader.svelte';
 	import Icon from '#lib/components/student/Icon.svelte';
 	import CompareTray from '#lib/components/student/CompareTray.svelte';
-	import { catalog } from '#lib/explore/catalog.svelte.ts';
 	import {
 		eligibilityBadgeClass,
-		evaluateUniversityEligibility,
-		type UniversityEligibility
+		type UniversityEligibilityStatus
 	} from '#lib/explore/eligibility.ts';
 	import {
 		daysLeft,
-		demoMetrics,
 		formatDeadline,
 		formatUsd,
-		SAMPLE_METRICS_NOTE,
-		type DemoMetrics
+		SAMPLE_METRICS_NOTE
 	} from '#lib/explore/metrics.ts';
-	import { mergeSort, MinHeap, topK } from '#lib/explore/structures.ts';
-	import { discovery } from '#lib/student/discovery.svelte.ts';
+	import {
+		discovery,
+		type SavedSortBy,
+		type ServerRecommendation
+	} from '#lib/student/discovery.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
-	import type { UniversityRecord } from '#lib/explore/universities.ts';
 
-	type SortBy = 'deadline' | 'fit' | 'cost';
-	type Scored = { record: UniversityRecord; metrics: DemoMetrics; eligibility: UniversityEligibility };
+	type UniversityCard = {
+		slug: string;
+		name: string;
+		location: string;
+		region: string;
+		fitScore: number;
+		estimatedSemesterCostUsd: number;
+		withinBudget: boolean;
+		deadline: string;
+		status: UniversityEligibilityStatus;
+		statusLabel: string;
+		reason: string;
+		matchSummary: string;
+	};
 
-	let sortBy = $state<SortBy>('deadline');
+	let sortBy = $state<SavedSortBy>(discovery.savedSort);
 
-	const loading = $derived(catalog.status === 'idle' || catalog.status === 'loading');
-	const failed = $derived(catalog.status === 'error');
-	const profile = $derived(store.eligibilityProfile);
+	onMount(() => {
+		void discovery.loadSortedSaved(sortBy);
+		void discovery.loadRecommendations(3);
+	});
+
+	const loading = $derived(discovery.savedLoading && !discovery.savedFromServer);
 	const budget = $derived(store.application.budget);
 
-	const items = $derived(
-		discovery.saved.map((record) => ({
-			record,
-			metrics: demoMetrics(record, profile, budget),
-			eligibility: evaluateUniversityEligibility(record, profile)
-		}))
+	function toCard(item: ServerRecommendation): UniversityCard {
+		const status: UniversityEligibilityStatus = item.eligible
+			? item.provisional
+				? 'provisional'
+				: 'eligible'
+			: 'ineligible';
+		return {
+			slug: item.slug,
+			name: item.name || item.slug,
+			location: [item.city, item.country].filter(Boolean).join(', ') || 'Location not available',
+			region: item.region || 'Region TBC',
+			fitScore: item.fitScore,
+			estimatedSemesterCostUsd: item.estimatedSemesterCostUsd,
+			withinBudget: item.withinBudget,
+			deadline: item.deadline,
+			status,
+			statusLabel:
+				status === 'eligible'
+					? 'Eligible'
+					: status === 'provisional'
+						? 'Provisionally eligible'
+						: 'Not eligible',
+			reason: item.eligibilityReason || item.matchSummary,
+			matchSummary: item.matchSummary
+		};
+	}
+
+	/** Ordered directly by C++ Min-Heap (deadline) or C++ mergeSort (fit / cost). */
+	const ordered = $derived(discovery.sortedSaved.map(toCard));
+
+	/** Top three unsaved recommendations computed by C++ Max-Heap (GET /api/recommendations). */
+	const recommendations = $derived(discovery.recommendations.map(toCard));
+
+	const algorithmLabel = $derived(
+		discovery.savedAlgorithm === 'cpp-min-heap'
+			? 'C++ Min-Heap'
+			: discovery.savedAlgorithm === 'cpp-merge-sort'
+				? 'C++ Merge Sort'
+				: 'C++'
 	);
 
-	/** Nearest deadline uses a min-heap; the other orders use merge sort. */
-	const ordered = $derived.by((): Scored[] => {
-		if (sortBy === 'fit') return mergeSort(items, (a, b) => b.metrics.fit - a.metrics.fit);
-		if (sortBy === 'cost') {
-			return mergeSort(items, (a, b) => a.metrics.semesterCostUsd - b.metrics.semesterCostUsd);
-		}
-
-		const heap = new MinHeap<Scored>(
-			(a, b) => Date.parse(a.metrics.deadline) - Date.parse(b.metrics.deadline)
-		);
-		for (const item of items) heap.push(item);
-		const sorted: Scored[] = [];
-		while (heap.size > 0) sorted.push(heap.pop() as Scored);
-		return sorted;
-	});
-
-	/** Top three by fit that are not saved yet. Prefers eligible schools when any qualify. */
-	const recommendations = $derived.by((): Scored[] => {
-		const saved = new Set(discovery.savedSlugs);
-		const allUnsaved = catalog.records
-			.filter((record) => !saved.has(record.slug))
-			.map((record) => ({
-				record,
-				metrics: demoMetrics(record, profile, budget),
-				eligibility: evaluateUniversityEligibility(record, profile)
-			}));
-		const eligibleUnsaved = allUnsaved.filter(
-			(item) => item.eligibility.status === 'eligible' || item.eligibility.status === 'provisional'
-		);
-		const pool = eligibleUnsaved.length >= 3 ? eligibleUnsaved : allUnsaved;
-		return topK(pool, (item) => item.metrics.fit, 3);
-	});
+	function changeSort(next: SavedSortBy) {
+		sortBy = next;
+		void discovery.loadSortedSaved(next);
+	}
 
 	function prefRank(slug: string): number {
 		return store.application.pref.indexOf(slug);
@@ -85,22 +104,22 @@
 			store.showToast('Save at least three universities first.');
 			return;
 		}
-		store.useSavedPreferences(ordered.slice(0, 3).map((item) => item.record.slug));
+		store.useSavedPreferences(ordered.slice(0, 3).map((item) => item.slug));
 		store.showToast('Saved schools copied into your application preferences.');
 		goto('/apply?step=3');
 	}
 
-	function toggleSave(record: UniversityRecord) {
-		const saved = discovery.toggleSaved(record.slug);
+	function toggleSave(slug: string) {
+		const saved = discovery.toggleSaved(slug);
 		store.showToast(saved ? 'Saved to your list.' : 'Removed from your list.');
 	}
 
-	function toggleCompare(record: UniversityRecord) {
-		if (discovery.isCompared(record.slug)) {
-			discovery.toggleCompare(record.slug);
+	function toggleCompare(slug: string) {
+		if (discovery.isCompared(slug)) {
+			discovery.toggleCompare(slug);
 			return;
 		}
-		if (!discovery.toggleCompare(record.slug)) {
+		if (!discovery.toggleCompare(slug)) {
 			store.showToast('You can compare up to three universities at a time.');
 		}
 	}
@@ -126,15 +145,15 @@
 		{/snippet}
 	</PageHeader>
 
-	{#if failed}
-		<div role="alert" class="rounded-xl border border-red-200 bg-red-50 p-5 text-red-800">
-			{catalog.error}
-		</div>
-	{:else if loading}
+	{#if loading}
 		<div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-4">
 			{#each [1, 2, 3] as i (i)}
 				<div class="h-72 rounded-2xl border border-[#c6c6cd]/40 bg-white animate-pulse"></div>
 			{/each}
+		</div>
+	{:else if !discovery.savedFromServer}
+		<div role="alert" class="rounded-xl border border-amber-200 bg-amber-50 p-5 text-amber-900 text-sm">
+			Could not reach the C++ backend to sort your saved universities. Start <code class="font-mono">ads_server</code> and refresh this page.
 		</div>
 	{:else if ordered.length === 0}
 		<div class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-10 text-center space-y-3">
@@ -154,7 +173,12 @@
 	{:else}
 		<div class="flex flex-wrap items-end justify-between gap-3">
 			<div>
-				<h2 class="text-xl font-bold text-[#0b1c30]">{ordered.length} saved</h2>
+				<div class="flex items-center gap-2 flex-wrap">
+					<h2 class="text-xl font-bold text-[#0b1c30]">{ordered.length} saved</h2>
+					<span class="rounded-lg border border-[#c6c6cd]/50 bg-white px-2.5 py-1 text-[11px] font-medium text-[#515f74]">
+						{algorithmLabel}
+					</span>
+				</div>
 				<p class="text-sm text-[#515f74] mt-1">Choose an order, then compare or apply.</p>
 			</div>
 			<div class="flex items-center gap-1 rounded-xl border border-[#c6c6cd]/50 bg-white p-1">
@@ -165,7 +189,7 @@
 				] as option (option.id)}
 					<button
 						type="button"
-						onclick={() => (sortBy = option.id as SortBy)}
+						onclick={() => changeSort(option.id as SavedSortBy)}
 						aria-pressed={sortBy === option.id}
 						class="rounded-lg px-3 py-2 text-xs font-semibold transition-colors cursor-pointer {sortBy ===
 						option.id
@@ -179,10 +203,10 @@
 		</div>
 
 		<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-			{#each ordered as item (item.record.slug)}
-				{@const days = daysLeft(item.metrics.deadline)}
-				{@const rank = prefRank(item.record.slug)}
-				{@const withinBudget = budget > 0 && item.metrics.semesterCostUsd <= budget}
+			{#each ordered as item (item.slug)}
+				{@const days = daysLeft(item.deadline)}
+				{@const rank = prefRank(item.slug)}
+				{@const withinBudget = budget > 0 && item.withinBudget}
 				<article
 					class="flex flex-col rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 shadow-sm hover:border-[#a4b3d0] transition-colors"
 				>
@@ -197,44 +221,43 @@
 									</span>
 								{/if}
 								<h3 class="text-[16px] font-bold leading-snug text-[#0b1c30]">
-									{item.record.official_name.value ?? item.record.slug}
+									{item.name}
 								</h3>
 							</div>
 							<p class="mt-1.5 text-sm text-[#515f74]">
-								{[item.record.city.value, item.record.country.value].filter(Boolean).join(', ') ||
-									'Location not available'}
+								{item.location}
 							</p>
 						</div>
 						<span
 							class="shrink-0 rounded-xl bg-[#eff4ff] px-2.5 py-1.5 text-sm font-bold text-[#0b1c30] font-mono-num"
-							title="Sample fit score"
+							title="Fit score computed in C++"
 						>
-							{item.metrics.fit}%
+							{item.fitScore}%
 						</span>
 					</div>
 
 					<div class="mt-3 flex flex-wrap gap-1.5">
 						<span
-							title={item.eligibility.reason}
+							title={item.reason}
 							class="rounded-lg px-2.5 py-1 text-[11px] font-semibold {eligibilityBadgeClass(
-								item.eligibility.status
+								item.status
 							)}"
 						>
-							{item.eligibility.label}
+							{item.statusLabel}
 						</span>
 						<span class="rounded-lg bg-[#f2f3f7] px-2.5 py-1 text-[11px] text-[#515f74]">
-							{item.record.region.value ?? 'Region TBC'}
+							{item.region}
 						</span>
 					</div>
-					{#if item.eligibility.status === 'ineligible'}
-						<p class="mt-1.5 text-[11px] font-medium text-[#ba1a1a]">{item.eligibility.reason}</p>
+					{#if item.status === 'ineligible'}
+						<p class="mt-1.5 text-[11px] font-medium text-[#ba1a1a]">{item.reason}</p>
 					{/if}
 
 					<dl class="mt-4 grid grid-cols-2 gap-2 text-xs">
 						<div class="rounded-xl bg-[#f8faff] border border-[#dce4f0] px-3 py-2.5">
 							<dt class="text-[#515f74]">Semester cost</dt>
 							<dd class="mt-1 font-bold text-[#0b1c30] font-mono-num">
-								{formatUsd(item.metrics.semesterCostUsd)}
+								{formatUsd(item.estimatedSemesterCostUsd)}
 							</dd>
 							<dd
 								class="mt-0.5 text-[11px] {budget <= 0
@@ -258,24 +281,24 @@
 								{days < 0 ? 'Closed' : `${days} days left`}
 							</dd>
 							<dd class="mt-0.5 text-[11px] text-[#515f74]">
-								{formatDeadline(item.metrics.deadline)}
+								{formatDeadline(item.deadline)}
 							</dd>
 						</div>
 					</dl>
 
 					<div class="mt-auto pt-4 flex gap-2">
 						<a
-							href={`/explore/university/${item.record.slug}`}
+							href={`/explore/university/${item.slug}`}
 							class="flex-1 inline-flex justify-center items-center gap-1.5 rounded-xl bg-[#0b1c30] text-white hover:bg-[#233853] py-2.5 text-xs font-semibold"
 						>
 							View <Icon name="arrow-right" class="w-3.5 h-3.5" />
 						</a>
 						<button
 							type="button"
-							onclick={() => toggleCompare(item.record)}
-							aria-pressed={discovery.isCompared(item.record.slug)}
+							onclick={() => toggleCompare(item.slug)}
+							aria-pressed={discovery.isCompared(item.slug)}
 							class="rounded-xl border px-3 py-2.5 text-xs font-semibold inline-flex items-center gap-1.5 cursor-pointer {discovery.isCompared(
-								item.record.slug
+								item.slug
 							)
 								? 'border-[#131b2e] bg-[#dce9ff]/80 text-[#0b1c30]'
 								: 'border-[#c6c6cd]/50 bg-white text-[#515f74] hover:bg-[#eff4ff]'}"
@@ -284,8 +307,8 @@
 						</button>
 						<button
 							type="button"
-							onclick={() => toggleSave(item.record)}
-							aria-label={`Remove ${item.record.official_name.value ?? item.record.slug} from saved`}
+							onclick={() => toggleSave(item.slug)}
+							aria-label={`Remove ${item.name} from saved`}
 							class="rounded-xl border border-[#c6c6cd]/50 bg-white px-3 py-2.5 text-[#515f74] hover:bg-[#fef2f2] hover:text-[#ba1a1a] cursor-pointer"
 						>
 							<Icon name="x" class="w-3.5 h-3.5" />
@@ -303,7 +326,7 @@
 		{/if}
 	{/if}
 
-	{#if !loading && !failed && recommendations.length > 0}
+	{#if !loading && recommendations.length > 0}
 		<section class="space-y-3 pt-2">
 			<div class="flex flex-wrap items-end justify-between gap-2">
 				<div>
@@ -311,45 +334,50 @@
 					<p class="text-sm text-[#515f74] mt-1">Not in your saved list yet.</p>
 				</div>
 				<span class="rounded-lg border border-[#c6c6cd]/50 bg-white px-3 py-2 text-[11px] text-[#515f74]">
-					Top 3 by fit · max-heap
+					Top 3 by fit · C++ Max-Heap
 				</span>
 			</div>
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-				{#each recommendations as item (item.record.slug)}
+				{#each recommendations as item (item.slug)}
 					<article class="flex flex-col rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 shadow-sm">
 						<div class="flex items-start justify-between gap-2">
 							<h3 class="text-sm font-bold leading-snug text-[#0b1c30]">
-								{item.record.official_name.value ?? item.record.slug}
+								{item.name}
 							</h3>
 							<span class="shrink-0 text-sm font-bold font-mono-num text-[#0b1c30]">
-								{item.metrics.fit}%
+								{item.fitScore}%
 							</span>
 						</div>
 						<p class="mt-1 text-xs text-[#515f74]">
-							{[item.record.city.value, item.record.country.value].filter(Boolean).join(', ') ||
-								'Location not available'}
+							{item.location}
 						</p>
-						<div class="mt-2">
+						<div class="mt-2 flex flex-wrap gap-1.5">
 							<span
-								title={item.eligibility.reason}
+								title={item.reason}
 								class="inline-block rounded-lg px-2 py-0.5 text-[11px] font-semibold {eligibilityBadgeClass(
-									item.eligibility.status
+									item.status
 								)}"
 							>
-								{item.eligibility.label}
+								{item.statusLabel}
 							</span>
+							{#if item.withinBudget}
+								<span class="inline-block rounded-lg bg-[#eff4ff] px-2 py-0.5 text-[11px] font-semibold text-[#314c76]">
+									Within budget
+								</span>
+							{/if}
 						</div>
+						<p class="mt-2 text-xs text-[#515f74]">{item.matchSummary}</p>
 						<p class="mt-2 text-xs text-[#515f74]">
 							Estimated semester cost
 							<span class="font-semibold text-[#0b1c30] font-mono-num">
-								{formatUsd(item.metrics.semesterCostUsd)}
+								{formatUsd(item.estimatedSemesterCostUsd)}
 							</span>
 						</p>
 						<div class="mt-auto pt-4 flex gap-2">
 							<button
 								type="button"
 								onclick={() => {
-									discovery.toggleSaved(item.record.slug);
+									discovery.toggleSaved(item.slug);
 									store.showToast('Saved to your list.');
 								}}
 								class="flex-1 rounded-xl bg-[#131b2e] text-white hover:bg-[#1e293b] py-2.5 text-xs font-semibold cursor-pointer inline-flex items-center justify-center gap-1.5"
@@ -357,7 +385,7 @@
 								<Icon name="saved" class="w-3.5 h-3.5" /> Save
 							</button>
 							<a
-								href={`/explore/university/${item.record.slug}`}
+								href={`/explore/university/${item.slug}`}
 								class="rounded-xl border border-[#c6c6cd]/50 px-3 py-2.5 text-xs font-semibold text-[#515f74] hover:bg-[#eff4ff]"
 							>
 								View
@@ -371,7 +399,7 @@
 
 	<p class="text-xs text-[#515f74]">{SAMPLE_METRICS_NOTE}</p>
 	<p class="text-[11px] text-[#657087]">
-		Saved order: nearest deadline uses a min-heap, best fit and lowest cost use merge sort.
+		Saved order &amp; recommendations run in C++: nearest deadline uses Heap (min-heap), best fit and lowest cost use mergeSort, and recommendations use Heap (max-heap).
 	</p>
 </section>
 

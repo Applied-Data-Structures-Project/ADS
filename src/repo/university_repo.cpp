@@ -61,7 +61,8 @@ bool UniversityRepo::loadUniversities(Vector<University>& result) {
     const char* sql =
     "SELECT slug, official_name, country, city, region, metadata_json, "
             "min_gpa_host, available_terms_json, eligible_majors_json, "
-            "course_catalog_url "
+            "course_catalog_url, agreement_status, agreement_student_levels_json, "
+            "excluded_majors_json, tuition_model, living_cost_usd_est "
             "FROM universities";
 
     // A statement is the SQL query after SQLite prepares it.
@@ -118,6 +119,17 @@ bool UniversityRepo::loadUniversities(Vector<University>& result) {
 
         // Read the university's course catalog URL.
         u.courseCatalogUrl = getText(statement, 9);
+
+        // Additional fields for the C++ Heap recommender.
+        u.agreementStatus = getText(statement, 10);
+        u.studentLevelsJson = getText(statement, 11);
+        u.excludedMajorsJson = getText(statement, 12);
+        u.tuitionModel = getText(statement, 13);
+        if (sqlite3_column_type(statement, 14) == SQLITE_NULL) {
+            u.livingCostUsdEst = -1.0;
+        } else {
+            u.livingCostUsdEst = sqlite3_column_double(statement, 14);
+        }
         
 
         // Add the university to our Vector.

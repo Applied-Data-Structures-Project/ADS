@@ -15,6 +15,25 @@ export interface StudentNotification {
 	read: boolean;
 }
 
+export type SavedSortBy = 'deadline' | 'fit' | 'cost';
+
+export interface ServerRecommendation {
+	slug: string;
+	name: string;
+	country: string;
+	city: string;
+	region: string;
+	fitScore: number;
+	eligible: boolean;
+	provisional: boolean;
+	eligibilityReason: string;
+	minGpaHost: number | null;
+	estimatedSemesterCostUsd: number;
+	withinBudget: boolean;
+	deadline: string;
+	matchSummary: string;
+}
+
 interface StoredDiscovery {
 	saved: string[];
 	compare: string[];
@@ -25,9 +44,22 @@ interface ServerSavedResponse {
 	saved: string[];
 }
 
+interface ServerSortedSavedResponse {
+	saved: string[];
+	sort: string;
+	algorithm: string;
+	items: ServerRecommendation[];
+}
+
 interface ServerNotificationsResponse {
 	notifications: StudentNotification[];
 	unreadCount: number;
+}
+
+interface ServerRecommendationsResponse {
+	algorithm: string;
+	count: number;
+	recommendations: ServerRecommendation[];
 }
 
 /** Real slugs, one per region, used only if the C++ backend is offline on a first visit. */
@@ -103,10 +135,18 @@ class DiscoveryStore {
 	savedSlugs = $state<string[]>([]);
 	compareSlugs = $state<string[]>([]);
 	notifications = $state<StudentNotification[]>([]);
+	savedSort = $state<SavedSortBy>('deadline');
+	sortedSaved = $state<ServerRecommendation[]>([]);
+	savedAlgorithm = $state('cpp-min-heap');
+	savedFromServer = $state(false);
+	savedLoading = $state(false);
+	recommendations = $state<ServerRecommendation[]>([]);
+	recommendationsFromServer = $state(false);
 	initialized = $state(false);
 	serverConnected = $state(false);
 
 	private accountId = '';
+	private savedSortSeq = 0;
 
 	/** The saved schools, in the order they were saved. */
 	saved = $derived(catalog.bySlugs(this.savedSlugs));
@@ -160,6 +200,61 @@ class DiscoveryStore {
 		}
 	}
 
+	/** Fetch saved universities sorted in C++ (Min-Heap for deadline, mergeSort for fit/cost). */
+	async loadSortedSaved(sort: SavedSortBy = this.savedSort): Promise<boolean> {
+		this.savedSort = sort;
+		const seq = ++this.savedSortSeq;
+		if (!this.savedFromServer) this.savedLoading = true;
+		try {
+			const res = await callServer<ServerSortedSavedResponse>(
+				'GET',
+				`/api/saved?sort=${encodeURIComponent(sort)}`
+			);
+			if (seq !== this.savedSortSeq) return false;
+			if (Array.isArray(res.saved)) {
+				this.savedSlugs = res.saved;
+				this.persist();
+			}
+			if (Array.isArray(res.items)) {
+				this.sortedSaved = res.items;
+				this.savedAlgorithm = res.algorithm || 'cpp-min-heap';
+				this.savedFromServer = true;
+				this.serverConnected = true;
+				return true;
+			}
+			return false;
+		} catch {
+			if (seq === this.savedSortSeq) {
+				this.savedFromServer = false;
+			}
+			return false;
+		} finally {
+			if (seq === this.savedSortSeq) {
+				this.savedLoading = false;
+			}
+		}
+	}
+
+	/** Fetch top-K unsaved recommendations computed by the C++ Max-Heap (GET /api/recommendations). */
+	async loadRecommendations(k = 3): Promise<boolean> {
+		try {
+			const res = await callServer<ServerRecommendationsResponse>(
+				'GET',
+				`/api/recommendations?k=${k}`
+			);
+			if (Array.isArray(res.recommendations)) {
+				this.recommendations = res.recommendations;
+				this.recommendationsFromServer = true;
+				this.serverConnected = true;
+				return true;
+			}
+			return false;
+		} catch {
+			this.recommendationsFromServer = false;
+			return false;
+		}
+	}
+
 	/** Re-fetch notifications from GET /api/notifications after backend events (submit, letters, profile). */
 	async refreshNotifications(): Promise<void> {
 		try {
@@ -182,8 +277,12 @@ class DiscoveryStore {
 	toggleSaved(slug: string): boolean {
 		if (!slug) return false;
 		const before = [...this.savedSlugs];
+		const beforeSorted = [...this.sortedSaved];
 		const wasSaved = before.includes(slug);
 		this.savedSlugs = wasSaved ? before.filter((item) => item !== slug) : [...before, slug];
+		if (wasSaved) {
+			this.sortedSaved = this.sortedSaved.filter((item) => item.slug !== slug);
+		}
 		this.persist();
 
 		const method = wasSaved ? 'DELETE' : 'POST';
@@ -193,12 +292,15 @@ class DiscoveryStore {
 					this.savedSlugs = res.saved;
 					this.serverConnected = true;
 					this.persist();
+					void this.loadSortedSaved(this.savedSort);
+					void this.loadRecommendations();
 				}
 			})
 			.catch((e) => {
 				// Roll back only on an explicit server refusal (not when offline with status 0).
 				if (e instanceof ServerError && e.status > 0) {
 					this.savedSlugs = before;
+					this.sortedSaved = beforeSorted;
 					this.persist();
 				}
 			});

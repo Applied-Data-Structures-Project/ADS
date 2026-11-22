@@ -37,6 +37,10 @@ int UniversityService::count() {
     return universities.size();
 }
 
+const Vector<University>& UniversityService::all() const {
+    return universities;
+}
+
 // Find one university using the HashMap.
 const University* UniversityService::find(string slug) {
 

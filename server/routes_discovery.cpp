@@ -10,8 +10,29 @@
 //   POST   /api/notifications/read-all     mark all unread notifications read
 
 #include "app_context.hpp"
+#include "services/recommender_service.hpp"
 
 using namespace std;
+
+static crow::json::wvalue recommendationItemJson(const UniversityRecommendation& r) {
+    crow::json::wvalue item;
+    item["slug"] = r.slug;
+    item["name"] = r.name;
+    item["country"] = r.country;
+    item["city"] = r.city;
+    item["region"] = r.region;
+    item["fitScore"] = r.fitScore;
+    item["eligible"] = r.eligible;
+    item["provisional"] = r.provisional;
+    item["eligibilityReason"] = r.eligibilityReason;
+    if (r.minGpaHost > 0.0) item["minGpaHost"] = r.minGpaHost;
+    else item["minGpaHost"] = nullptr;
+    item["estimatedSemesterCostUsd"] = r.estimatedSemesterCostUsd;
+    item["withinBudget"] = r.withinBudget;
+    item["deadline"] = r.deadline;
+    item["matchSummary"] = r.matchSummary;
+    return item;
+}
 
 static crow::json::wvalue savedResponse(const DiscoveryService& discovery, const string& email) {
     Vector<string> slugs = discovery.savedOf(email);
@@ -20,6 +41,37 @@ static crow::json::wvalue savedResponse(const DiscoveryService& discovery, const
     for (int i = 0; i < slugs.size(); i++) {
         body["saved"][i] = slugs[i];
     }
+    return body;
+}
+
+static crow::json::wvalue sortedSavedResponse(AppContext& ctx, const string& email, const string& sortBy) {
+    Vector<string> slugs = ctx.discovery.savedOf(email);
+    Vector<University> savedUnis;
+    savedUnis.reserve(slugs.size());
+    for (int i = 0; i < slugs.size(); i++) {
+        const University* u = ctx.universities.find(slugs[i]);
+        if (u != nullptr) savedUnis.push_back(*u);
+    }
+
+    StudentRecord student;
+    if (const StudentRecord* found = ctx.students.find(email)) {
+        student = *found;
+    } else {
+        student.email = email;
+    }
+
+    Vector<UniversityRecommendation> ordered =
+        RecommenderService::sortSaved(student, savedUnis, sortBy);
+
+    crow::json::wvalue body;
+    body["sort"] = sortBy;
+    body["algorithm"] = (sortBy == "deadline") ? "cpp-min-heap"
+                        : (sortBy == "fit" || sortBy == "cost") ? "cpp-merge-sort"
+                                                                : "save-order";
+    body["saved"] = crow::json::wvalue::list();
+    body["items"] = crow::json::wvalue::list();
+    for (int i = 0; i < slugs.size(); i++) body["saved"][i] = slugs[i];
+    for (int i = 0; i < ordered.size(); i++) body["items"][i] = recommendationItemJson(ordered[i]);
     return body;
 }
 
@@ -41,13 +93,19 @@ static crow::json::wvalue notificationsResponse(const DiscoveryService& discover
 
 void registerDiscoveryRoutes(App& app, AppContext& ctx) {
 
-    // GET /api/saved
+    // GET /api/saved   (optional ?sort=deadline|fit|cost uses C++ Min-Heap / mergeSort)
     CROW_ROUTE(app, "/api/saved").methods("GET"_method)
     ([&ctx](const crow::request& req) {
         string email = currentUser(req);
         if (email.empty()) return jsonError(401, "Sign in with your AUC account.");
 
+        const char* sortParam = req.url_params.get("sort");
+        string sortBy = sortParam ? string(sortParam) : "";
+
         lock_guard<mutex> guard(ctx.lock);
+        if (!sortBy.empty()) {
+            return crow::response(200, sortedSavedResponse(ctx, email, sortBy));
+        }
         return crow::response(200, savedResponse(ctx.discovery, email));
     });
 

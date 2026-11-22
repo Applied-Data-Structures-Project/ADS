@@ -1,23 +1,16 @@
 <script lang="ts">
 	// "Me": the student's academic summary, budget, notifications and letters.
-	// Notifications are shown oldest first, like a queue.
+	// Notifications arrive ordered oldest-first by C++ mergeSort + FIFO Queue.
 	import PageHeader from '#lib/components/student/PageHeader.svelte';
 	import Icon from '#lib/components/student/Icon.svelte';
-	import { mergeSort, NotificationQueue } from '#lib/explore/structures.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
-	import { discovery, type StudentNotification } from '#lib/student/discovery.svelte.ts';
+	import { discovery } from '#lib/student/discovery.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
 
 	const accountId = $derived(auth.account?.homeAccountId ?? auth.email);
 	const profile = $derived(store.eligibilityProfile);
 
-	const notifications = $derived.by((): StudentNotification[] => {
-		const sorted = mergeSort(
-			discovery.notifications,
-			(a, b) => a.createdAt.localeCompare(b.createdAt) || a.id - b.id
-		);
-		return NotificationQueue.from(sorted).toArray();
-	});
+	const notifications = $derived(discovery.notifications);
 
 	const englishStatus = $derived(
 		profile && (profile.englishComplete || profile.rhet120) ? 'Complete' : 'Not complete'

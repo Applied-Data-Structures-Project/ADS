@@ -155,19 +155,27 @@ int main() {
     ApplicationRepo repo(db);
     StudentRepo studentRepo(db);
     DiscoveryRepo discoveryRepo(db);
+    UniversityRepo universityRepo(db);
     ApplicationService applications(repo);
     LetterService letters(repo);
     StudentService students(studentRepo);
     DiscoveryService discovery(discoveryRepo);
+    UniversityService universityService(universityRepo);
     applications.loadAll();
     letters.loadAll();
     students.loadAll();
     discovery.loadAll();
+    if (!universityService.loadAll()) {
+        CROW_LOG_ERROR << "Could not load universities";
+        sqlite3_close(db);
+        return 1;
+    }
+    CROW_LOG_INFO << "Universities loaded: " << universityService.count();
 
     SmtpNotifier smtp;   // real emails if SMTP_USER/SMTP_PASS are set, otherwise printed
     letters.setNotifier(&smtp, envOr("SITE_URL", "http://localhost:5173"), "30 November");
 
-    AppContext ctx(applications, letters, students, discovery,
+    AppContext ctx(applications, letters, students, discovery, universityService,
                    envOr("UPLOAD_DIR", (repoRoot / "uploads").string()));
 
     App app;
@@ -177,42 +185,7 @@ int main() {
     cors.global()
         .origin("*")
         .methods("GET"_method, "POST"_method, "PUT"_method, "DELETE"_method, "OPTIONS"_method)
-
         .headers("Content-Type", "Authorization", "X-User-Email");
-
-    
-    
-    // Connect to the SQLite database.
-    sqlite3* universityDb = nullptr;
-
-    int status = sqlite3_open(dbPath.c_str(), &universityDb);
-
-    // Stop if we cannot open the database.
-    if (status != SQLITE_OK) {
-        CROW_LOG_ERROR << "Could not open university database";
-        sqlite3_close(universityDb);
-        return 1;
-    }
-
-    // Create the repository that reads universities from SQLite.
-    UniversityRepo universityRepo(universityDb);
-
-    // Create the service that stores universities using our Vector and HashMap.
-    UniversityService universityService(universityRepo);
-
-    // Load the universities from the database.
-    bool loaded = universityService.loadAll();
-
-    // Stop if loading the universities fails.
-    if (!loaded) {
-        CROW_LOG_ERROR << "Could not load universities";
-        sqlite3_close(universityDb);
-        return 1;
-    }
-
-    // Display the number of universities loaded.
-    CROW_LOG_INFO << "Universities loaded: "
-                  << universityService.count();
 
 
     // API route that returns all universities to the frontend.
@@ -347,6 +320,7 @@ int main() {
     registerLetterRoutes(app, ctx);
     registerStudentRoutes(app, ctx);
     registerDiscoveryRoutes(app, ctx);
+    registerRecommendationRoutes(app, ctx);
 
     GroqCoach coach;   // the AI essay coach, if GROQ_API_KEY is set
     registerCoachRoutes(app, coach);
@@ -356,8 +330,6 @@ int main() {
     app.port(port).multithreaded().run();
 
     sqlite3_close(db);
-
-    sqlite3_close(universityDb);
     return 0;
 }
 

@@ -32,6 +32,9 @@ public:
     // Returns the number of universities.
     int count();
 
+    // Returns all loaded universities (read-only reference, no copy).
+    const Vector<University>& all() const;
+
     // Finds one university using its unique slug.
     const University* find(string slug);
 

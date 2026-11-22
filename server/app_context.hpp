@@ -15,6 +15,7 @@
 #include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
 #include "services/student_service.hpp"
+#include "services/university_service.hpp"
 
 using App = crow::App<crow::CORSHandler>;
 
@@ -23,6 +24,7 @@ struct AppContext {
     LetterService& letters;
     StudentService& students;
     DiscoveryService& discovery;
+    UniversityService& universities;
     std::string uploadDir;
 
     // Crow answers requests on several threads at once, but our HashMaps and Queues
@@ -31,8 +33,8 @@ struct AppContext {
     std::mutex lock;
 
     AppContext(ApplicationService& a, LetterService& l, StudentService& s,
-               DiscoveryService& d, const std::string& uploads)
-        : applications(a), letters(l), students(s), discovery(d), uploadDir(uploads) {}
+               DiscoveryService& d, UniversityService& u, const std::string& uploads)
+        : applications(a), letters(l), students(s), discovery(d), universities(u), uploadDir(uploads) {}
 };
 
 // Each route file adds its routes to the app.
@@ -40,6 +42,7 @@ void registerApplicationRoutes(App& app, AppContext& ctx);
 void registerLetterRoutes(App& app, AppContext& ctx);
 void registerStudentRoutes(App& app, AppContext& ctx);
 void registerDiscoveryRoutes(App& app, AppContext& ctx);
+void registerRecommendationRoutes(App& app, AppContext& ctx);
 
 class GroqCoach;
 void registerCoachRoutes(App& app, GroqCoach& coach);
