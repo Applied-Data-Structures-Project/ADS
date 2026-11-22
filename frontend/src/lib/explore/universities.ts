@@ -57,7 +57,7 @@ export function textList(field: Sourced<string[]>): string {
 
 export async function loadUniversities(): Promise<UniversityRecord[]> {
 	// Address of our C++ university API.
-	  const url = 'http://localhost:18080/api/universities';
+	  const url = '/api/universities';
 
 	  // Send a request to the backend.
 	  const response = await fetch(url);
@@ -93,7 +93,7 @@ export async function loadUniversity(slug: string): Promise<UniversityRecord> {
 
 	// Build the API URL using the university slug.
 	const url =
-		'http://localhost:18080/api/universities/' + encodeURIComponent(slug);
+	'/api/universities/'  + encodeURIComponent(slug);
 
 	// Request the university's details from the backend.
 	const response = await fetch(url);
