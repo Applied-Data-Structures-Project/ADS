@@ -40,7 +40,7 @@ export const DEMO_STUDENT: StudentProfile = {
 	name: 'Salma Abdelrahman',
 	role: 'student',
 	level: 'UG',
-	major: 'Economics (ECON)',
+	major: 'Economics (B.A.)',
 	declared: true,
 	credits: 64,
 	gpa: 3.92,

@@ -8,6 +8,7 @@
 // kept in localStorage per signed-in account until the backend has a route.
 
 import type { EligibilityCheck, Level } from './types.ts';
+import { isValidAucMajor } from './auc-majors.ts';
 
 export interface EligibilityProfile {
 	level: Level | '';
@@ -43,8 +44,8 @@ export function validateEligibilityProfile(profile: EligibilityProfile): Eligibi
 	if (profile.level !== 'UG' && profile.level !== 'GR') {
 		errors.level = 'Choose undergraduate or graduate.';
 	}
-	if (profile.major.trim().length < 2) {
-		errors.major = 'Enter your major.';
+	if (!isValidAucMajor(profile.major, profile.level)) {
+		errors.major = 'Select your AUC major from the list.';
 	}
 	if (
 		profile.credits === null ||

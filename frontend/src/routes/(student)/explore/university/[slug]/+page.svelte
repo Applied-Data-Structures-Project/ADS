@@ -4,6 +4,7 @@
   import PageHeader from '#lib/components/student/PageHeader.svelte';
   import Icon from '#lib/components/student/Icon.svelte';
   import { catalog } from '#lib/explore/catalog.svelte.ts';
+  import { eligibilityBadgeClass, evaluateUniversityEligibility } from '#lib/explore/eligibility.ts';
   import { daysLeft, demoMetrics, formatDeadline, formatUsd, SAMPLE_METRICS_NOTE } from '#lib/explore/metrics.ts';
   import { rememberUniversity, shown, textList, statusLabel, loadQsRankings, qsDisplay, type QsMatches, type UniversityRecord } from '#lib/explore/universities.ts';
   import { discovery } from '#lib/student/discovery.svelte.ts';
@@ -23,6 +24,9 @@
 
   const metrics = $derived(
     uni ? demoMetrics(uni, store.eligibilityProfile, store.application.budget) : null
+  );
+  const eligibility = $derived(
+    uni ? evaluateUniversityEligibility(uni, store.eligibilityProfile) : null
   );
 
   // Present source notes as individual scan-friendly rows without editing the dataset.
@@ -141,7 +145,31 @@
           </section></section>
         {/if}
       </div>
-      <aside class="space-y-4">{#if metrics}<section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-3"><div class="flex items-center justify-between gap-2"><h2 class="font-bold text-base">Sample comparison data</h2><span class="rounded-lg px-2.5 py-1 text-[11px] font-bold {metrics.qualification ? 'bg-[#edf8f1] text-[#247047]' : 'bg-[#fff6e3] text-[#986b1a]'}">{metrics.qualification ? 'You qualify' : 'Check rules'}</span></div><dl class="grid grid-cols-2 gap-2 text-xs"><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Fit score</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.fit}%</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Semester cost</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{formatUsd(metrics.semesterCostUsd)}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Deadline</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{formatDeadline(metrics.deadline)}</dd><dd class="text-[11px] text-[#515f74]">{daysLeft(metrics.deadline) < 0 ? 'Closed' : `${daysLeft(metrics.deadline)} days left`}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Seats</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.seats}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">GPA needed</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.gpaRequired.toFixed(2)}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">IELTS</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.ielts.toFixed(1)}</dd></div></dl><p class="text-[11px] text-[#657087]">{SAMPLE_METRICS_NOTE}</p></section>{/if}<section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-4"><h2 class="font-bold text-base">Planning your exchange</h2><p class="text-sm text-[#515f74]">Review the university information, then select your three preferences in the application form.</p><a href="/apply?step=3" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1c30] text-white px-4 py-3 text-sm font-semibold hover:bg-[#233853]">Go to preferences <Icon name="arrow-right" class="w-4 h-4" /></a></section><section class="rounded-2xl border border-[#c6c6cd]/50 bg-[#eff4ff] p-5 space-y-2"><div class="font-bold text-sm flex items-center gap-2"><Icon name="alert" class="w-4 h-4"/> Confirm details with IPSO</div><p class="text-sm text-[#515f74]">Academic information and course restrictions are provided for reference. IPSO and the host university must confirm the latest requirements and seat availability.</p></section><section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-2"><h2 class="font-bold text-sm">QS World University Ranking (2027)</h2><p class="text-lg font-bold text-[#0b1c30]">{qsDisplay(rankings[uni.slug])}</p><p class="text-xs text-[#515f74]">{rankings[uni.slug] ? `QS 2027 source name: ${rankings[uni.slug].name}. Ranking taken from the supplied QS spreadsheet.` : "No confirmed name match in the supplied QS 2027 top-1,500 list. This is not proof the institution is unranked; alternative or parent institution names may need review."}</p><a class="inline-block text-sm font-semibold text-[#003ea8] hover:underline" href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener noreferrer">View official QS rankings ↗</a></section></aside>
+      <aside class="space-y-4">
+        {#if eligibility}
+          <section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-3">
+            <div class="flex items-center justify-between gap-2">
+              <h2 class="font-bold text-base text-[#0b1c30]">Your eligibility</h2>
+              <span class="rounded-lg px-2.5 py-1 text-[11px] font-bold {eligibilityBadgeClass(eligibility.status)}">{eligibility.label}</span>
+            </div>
+            {#if eligibility.reasons.length > 0}
+              <ul class="space-y-1.5 text-xs text-[#ba1a1a]">
+                {#each eligibility.reasons as reason (reason)}
+                  <li class="flex items-start gap-2">
+                    <Icon name="x" class="w-3.5 h-3.5 mt-0.5 shrink-0" strokeWidth={2.4} />
+                    <span>{reason}</span>
+                  </li>
+                {/each}
+              </ul>
+            {:else}
+              <p class="text-xs text-[#515f74] leading-relaxed">{eligibility.reason}</p>
+            {/if}
+            <a href="/profile" class="inline-block text-xs font-semibold text-[#003ea8] hover:underline">
+              {store.hasEligibilityProfile ? 'Update eligibility profile' : 'Complete eligibility profile'}
+            </a>
+          </section>
+        {/if}
+        {#if metrics}<section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-3"><div class="flex items-center justify-between gap-2"><h2 class="font-bold text-base">Sample comparison data</h2></div><dl class="grid grid-cols-2 gap-2 text-xs"><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Fit score</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.fit}%</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Semester cost</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{formatUsd(metrics.semesterCostUsd)}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Deadline</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{formatDeadline(metrics.deadline)}</dd><dd class="text-[11px] text-[#515f74]">{daysLeft(metrics.deadline) < 0 ? 'Closed' : `${daysLeft(metrics.deadline)} days left`}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">Seats</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.seats}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">GPA needed</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.gpaRequired.toFixed(2)}</dd></div><div class="rounded-lg bg-[#f8faff] border border-[#dce4f0] px-3 py-2"><dt class="text-[#515f74]">IELTS</dt><dd class="mt-0.5 font-bold text-[#0b1c30] font-mono-num">{metrics.ielts.toFixed(1)}</dd></div></dl><p class="text-[11px] text-[#657087]">{SAMPLE_METRICS_NOTE}</p></section>{/if}<section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-4"><h2 class="font-bold text-base">Planning your exchange</h2><p class="text-sm text-[#515f74]">Review the university information, then select your three preferences in the application form.</p><a href="/apply?step=3" class="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#0b1c30] text-white px-4 py-3 text-sm font-semibold hover:bg-[#233853]">Go to preferences <Icon name="arrow-right" class="w-4 h-4" /></a></section><section class="rounded-2xl border border-[#c6c6cd]/50 bg-[#eff4ff] p-5 space-y-2"><div class="font-bold text-sm flex items-center gap-2"><Icon name="alert" class="w-4 h-4"/> Confirm details with IPSO</div><p class="text-sm text-[#515f74]">Academic information and course restrictions are provided for reference. IPSO and the host university must confirm the latest requirements and seat availability.</p></section><section class="rounded-2xl border border-[#c6c6cd]/50 bg-white p-5 space-y-2"><h2 class="font-bold text-sm">QS World University Ranking (2027)</h2><p class="text-lg font-bold text-[#0b1c30]">{qsDisplay(rankings[uni.slug])}</p><p class="text-xs text-[#515f74]">{rankings[uni.slug] ? `QS 2027 source name: ${rankings[uni.slug].name}. Ranking taken from the supplied QS spreadsheet.` : "No confirmed name match in the supplied QS 2027 top-1,500 list. This is not proof the institution is unranked; alternative or parent institution names may need review."}</p><a class="inline-block text-sm font-semibold text-[#003ea8] hover:underline" href="https://www.topuniversities.com/world-university-rankings" target="_blank" rel="noopener noreferrer">View official QS rankings ↗</a></section></aside>
     </div>
   {/if}
 </section>

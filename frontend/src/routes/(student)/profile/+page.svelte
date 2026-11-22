@@ -6,6 +6,7 @@
 	import { page } from '$app/state';
 	import PageHeader from '#lib/components/student/PageHeader.svelte';
 	import Icon from '#lib/components/student/Icon.svelte';
+	import MajorSelect from '#lib/components/student/MajorSelect.svelte';
 	import { isSafeNext } from '#lib/auth/roles.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
@@ -15,6 +16,7 @@
 		type EligibilityErrors,
 		type EligibilityProfile
 	} from '#lib/student/eligibility.ts';
+	import { isValidAucMajor } from '#lib/student/auc-majors.ts';
 	import type { Level } from '#lib/student/types.ts';
 
 	let level = $state<Level | ''>('UG');
@@ -103,6 +105,9 @@
 	function chooseLevel(value: Level) {
 		level = value;
 		if (value === 'UG') firstSemesterNoGpa = false;
+		if (major && !isValidAucMajor(major, value)) {
+			major = '';
+		}
 	}
 
 	async function submit(event: SubmitEvent) {
@@ -188,15 +193,8 @@
 					</div>
 
 					<div class={fieldBox}>
-						<label for="major" class={labelCls}>Major</label>
-						<input
-							id="major"
-							class={field}
-							bind:value={major}
-							placeholder="Economics (ECON)"
-							autocomplete="organization-title"
-							aria-invalid={!!errors.major}
-						/>
+						<label for="major" class={labelCls}>AUC Major</label>
+						<MajorSelect id="major" {level} bind:value={major} invalid={!!errors.major} />
 						{#if errors.major}<p class="text-xs font-medium text-[#ba1a1a]">{errors.major}</p>{/if}
 					</div>
 

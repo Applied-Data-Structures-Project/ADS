@@ -16,6 +16,7 @@
 #include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
 #include "services/student_service.hpp"
+#include "services/university_service.hpp"
 
 using App = crow::App<crow::CORSHandler>;
 
@@ -24,6 +25,7 @@ struct AppContext {
     LetterService& letters;
     StudentService& students;
     DiscoveryService& discovery;
+    UniversityService& universities;
     AdminService& admin;
     std::string uploadDir;
 
@@ -33,8 +35,8 @@ struct AppContext {
     std::mutex lock;
 
     AppContext(ApplicationService& a, LetterService& l, StudentService& s,
-               DiscoveryService& d, AdminService& adm, const std::string& uploads)
-        : applications(a), letters(l), students(s), discovery(d), admin(adm), uploadDir(uploads) {}
+               DiscoveryService& d, UniversityService& u, AdminService& adm, const std::string& uploads)
+        : applications(a), letters(l), students(s), discovery(d), universities(u), admin(adm), uploadDir(uploads) {}
 };
 
 // Each route file adds its routes to the app.
@@ -42,6 +44,7 @@ void registerApplicationRoutes(App& app, AppContext& ctx);
 void registerLetterRoutes(App& app, AppContext& ctx);
 void registerStudentRoutes(App& app, AppContext& ctx);
 void registerDiscoveryRoutes(App& app, AppContext& ctx);
+void registerRecommendationRoutes(App& app, AppContext& ctx);
 void registerAdminRoutes(App& app, AppContext& ctx);
 
 class GroqCoach;

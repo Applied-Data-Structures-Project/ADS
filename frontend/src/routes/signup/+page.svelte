@@ -4,9 +4,11 @@
 	import { onMount } from 'svelte';
 	import { goto } from '$app/navigation';
 	import Icon from '#lib/components/student/Icon.svelte';
+	import MajorSelect from '#lib/components/student/MajorSelect.svelte';
 	import { roleHome } from '#lib/auth/roles.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
 	import { validateProfile, type ProfileErrors, type StudentProfileInput } from '#lib/auth/profile.ts';
+	import { isValidAucMajor } from '#lib/student/auc-majors.ts';
 	import { callServer } from '#lib/student/api.ts';
 
 	let ready = $state(false);
@@ -19,6 +21,13 @@
 	let aucId = $state('');
 	let phone = $state('');
 	let errors = $state<ProfileErrors>({});
+
+	function chooseLevel(nextLevel: 'UG' | 'GR') {
+		level = nextLevel;
+		if (major && !isValidAucMajor(major, nextLevel)) {
+			major = '';
+		}
+	}
 
 	const firstName = $derived(
 		(fullName.trim() || auth.displayName).split(/\s+/)[0] || 'there'
@@ -135,7 +144,7 @@
 		</div>
 	</header>
 
-	<div class="px-5 sm:px-8 pb-12">
+	<div class="px-5 sm:px-8 pb-24">
 		<div class="mx-auto w-full max-w-xl space-y-5">
 			{#if !ready}
 				<div class="bg-white rounded-2xl border border-[#c6c6cd]/40 shadow-sm p-8 text-center">
@@ -205,7 +214,7 @@
 						<div class="grid grid-cols-2 gap-1 rounded-xl bg-[#eff4ff] border border-[#c6c6cd]/40 p-1">
 							<button
 								type="button"
-								onclick={() => (level = 'UG')}
+								onclick={() => chooseLevel('UG')}
 								aria-pressed={level === 'UG'}
 								class="h-9 rounded-lg text-sm font-semibold transition-colors cursor-pointer {level === 'UG'
 									? 'bg-white text-[#0b1c30] shadow-sm'
@@ -215,7 +224,7 @@
 							</button>
 							<button
 								type="button"
-								onclick={() => (level = 'GR')}
+								onclick={() => chooseLevel('GR')}
 								aria-pressed={level === 'GR'}
 								class="h-9 rounded-lg text-sm font-semibold transition-colors cursor-pointer {level === 'GR'
 									? 'bg-white text-[#0b1c30] shadow-sm'
@@ -227,15 +236,9 @@
 						{#if errors.level}<p class="text-xs font-medium text-[#ba1a1a]">{errors.level}</p>{/if}
 					</div>
 
-					<div class="flex flex-col gap-1.5">
-						<label for="major" class={labelCls}>Major</label>
-						<input
-							id="major"
-							class={field}
-							bind:value={major}
-							placeholder="Economics (ECON)"
-							autocomplete="organization-title"
-						/>
+					<div class="flex flex-col gap-1.5 min-w-0">
+						<label for="major" class={labelCls}>AUC Major</label>
+						<MajorSelect id="major" {level} bind:value={major} invalid={!!errors.major} />
 						{#if errors.major}<p class="text-xs font-medium text-[#ba1a1a]">{errors.major}</p>{/if}
 					</div>
 

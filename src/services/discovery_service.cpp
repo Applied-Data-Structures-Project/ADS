@@ -2,6 +2,7 @@
 // Saved universities and FIFO notification queue backed by SQLite.
 
 #include "services/discovery_service.hpp"
+#include "mergesort.hpp"
 
 #include <cctype>
 
@@ -152,6 +153,11 @@ Vector<Notification> DiscoveryService::notificationsOf(const string& email) cons
         const Notification* n = notificationsById.get((*ids)[i]);
         if (n != nullptr) out.push_back(*n);
     }
+    // Guarantee oldest-first FIFO display order using our C++ stable mergeSort.
+    mergeSort(out, [](const Notification& a, const Notification& b) {
+        if (a.createdAt != b.createdAt) return a.createdAt < b.createdAt;
+        return a.id < b.id;
+    });
     return out;
 }
 

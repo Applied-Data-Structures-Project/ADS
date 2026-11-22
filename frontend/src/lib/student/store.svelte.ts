@@ -438,6 +438,8 @@ class StudentStore {
 			this.applyServerProfile(res.profile, accountId, email, displayName);
 			this.meLoaded = true;
 			void discovery.refreshNotifications();
+			void discovery.loadSortedSaved();
+			void discovery.loadRecommendations();
 			return true;
 		} catch (e) {
 			// Offline fallback: keep local cache usable if the C++ server isn't running.
@@ -482,6 +484,8 @@ class StudentStore {
 			this.applyServerProfile(res.profile, accountId, email, displayName);
 			this.meLoaded = true;
 			void discovery.refreshNotifications();
+			void discovery.loadSortedSaved();
+			void discovery.loadRecommendations();
 			return true;
 		} catch (e) {
 			this.showToast(errorText(e));
@@ -530,6 +534,8 @@ class StudentStore {
 		try {
 			const res = await callServer<ServerMe>('PUT', '/api/me', { budget: safe });
 			this.applyServerProfile(res.profile, accountId, this.user?.email ?? '');
+			void discovery.loadSortedSaved();
+			void discovery.loadRecommendations();
 			this.showToast('Budget saved.');
 			return true;
 		} catch (e) {

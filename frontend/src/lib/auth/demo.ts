@@ -60,7 +60,7 @@ export function demoAccount(role: Role): AccountInfo {
 export function demoProfile(): StudentProfileInput {
 	return {
 		level: 'UG',
-		major: 'Economics (ECON)',
+		major: 'Economics (B.A.)',
 		aucId: '900219004',
 		phone: '+20 100 555 2190'
 	};

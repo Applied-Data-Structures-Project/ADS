@@ -6,6 +6,7 @@
 	import CompareTray from '#lib/components/student/CompareTray.svelte';
 	import { catalog } from '#lib/explore/catalog.svelte.ts';
 	import { bestColumns, COMPARE_ROWS } from '#lib/explore/compare.ts';
+	import { eligibilityBadgeClass, evaluateUniversityEligibility } from '#lib/explore/eligibility.ts';
 	import { demoMetrics, formatUsd, SAMPLE_METRICS_NOTE } from '#lib/explore/metrics.ts';
 	import { discovery } from '#lib/student/discovery.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
@@ -17,7 +18,8 @@
 	const columns = $derived(
 		discovery.compare.map((record) => ({
 			record,
-			metrics: demoMetrics(record, profile, budget)
+			metrics: demoMetrics(record, profile, budget),
+			eligibility: evaluateUniversityEligibility(record, profile)
 		}))
 	);
 
@@ -134,8 +136,18 @@
 												.filter(Boolean)
 												.join(', ') || 'Location not available'}
 										</div>
-										<div class="mt-1.5 text-xs font-semibold text-[#314c76]">
-											Fit {column.metrics.fit}%
+										<div class="mt-1.5 flex items-center gap-2 flex-wrap">
+											<span class="text-xs font-semibold text-[#314c76]">
+												Fit {column.metrics.fit}%
+											</span>
+											<span
+												title={column.eligibility.reason}
+												class="rounded-md px-2 py-0.5 text-[10px] font-bold {eligibilityBadgeClass(
+													column.eligibility.status
+												)}"
+											>
+												{column.eligibility.label}
+											</span>
 										</div>
 									</div>
 									<button
