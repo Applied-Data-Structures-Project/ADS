@@ -204,3 +204,26 @@ student's details:
 ```
 or `{ "send": false }` to decline. Answer: `{ "ok": true }`. The student gets an email.
 `409`: not your request, already answered, or an empty letter.
+
+---
+
+## Admin Portal (`/api/admin/*`)
+
+Every admin endpoint is handled cleanly by `server/routes_admin.cpp` and backed by `AdminService` (`src/services/admin_service.*`), which orchestrates `AdminFitScorer`, `AdminSeatTable`, `AdminAllocator`, and `AdminRepo` with zero STL containers. Requires `X-User-Email` (`@aucegypt.edu`).
+
+- `GET /api/admin/overview?cycle=...` — Cohort KPI counts, partner seat totals, review queue count, and Hopcroft–Karp feasibility upper bound (`hkMaxFeasible`).
+- `GET /api/admin/applications` — Joined student applications (with `students`, `application_documents`, `letters`, and `admin_application_reviews`), filterable in C++ via `cohort`, `search`, `standing`, `level`, `gpaMin`, `gpaMax`, `uni`, `prior`, `major`, `status`.
+- `GET /api/admin/applications/<email>` — Full applicant dossier including guardian info and all questionnaire essays.
+- `PUT /api/admin/applications/<email>/review` — Update audit `status`, `goodStanding`, `statementRating` (`0.0..10.0` or `null`), and `notes`; syncs `ApplicationService` and emits student notification on `Verified` / `Ineligible`.
+- `GET /api/admin/universities` — All 155 seeded partner universities with effective seat quotas (`Default` vs `Custom` override) and live applicant demand counts, filterable via `search`, `region`, `status`, `term`, `level`, `quota`.
+- `GET /api/admin/universities/<slug>` — Complete partner university dossier (deadlines, term dates, eligibility rules, language, living cost, housing, visa, links, fact-sheet provenance).
+- `PUT /api/admin/universities/<slug>/seats` — Body `{ "seats": 6 }`. Persists IPSO seat quota override (`admin_seat_overrides`).
+- `POST /api/admin/matching/simulate` — Body `{ "cycle", "mode": "best_fit" | "highest_score" | "most_placed" | "shortlists", "weights": { "pref", "gpa", "llm", "equity", "allowUnranked" }, "shortlistLimit", "compareRunId" }`. Executes C++ `AdminAllocator` + unplaced diagnostics (`AdminFitScorer`) + optional baseline diff.
+- `GET /api/admin/runs` — Lists saved matching run summaries.
+- `GET /api/admin/runs/<id>` — Full saved run snapshot (summary + placed assignments + unplaced analyses).
+- `POST /api/admin/runs` — Executes simulation and persists a named snapshot run (`Draft`) to SQLite.
+- `POST /api/admin/runs/<id>/publish` — Marks the run `Published`, archives prior published runs, and sends placement notifications to non-demo matched students.
+- `GET /api/admin/runs/diff?a=<id>&b=<id>` — Computes student-level placement diff (`gained`, `lost`, `shifted`, deltas) in C++.
+- `POST /api/admin/demo/seed` — Transactionally seeds 500 realistic varied demo applicants (`is_demo = 1`) matching student-side schemas across real slugs from the 155 partners.
+- `DELETE /api/admin/demo/seed` — Removes only `is_demo = 1` demo records while keeping real student applications intact.
+

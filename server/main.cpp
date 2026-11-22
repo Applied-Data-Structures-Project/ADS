@@ -24,9 +24,11 @@
 #include "app_context.hpp"
 #include "groq_coach.hpp"
 #include "smtp_notifier.hpp"
+#include "repo/admin_repo.hpp"
 #include "repo/application_repo.hpp"
 #include "repo/discovery_repo.hpp"
 #include "repo/student_repo.hpp"
+#include "services/admin_service.hpp"
 #include "services/application_service.hpp"
 #include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
@@ -167,7 +169,11 @@ int main() {
     SmtpNotifier smtp;   // real emails if SMTP_USER/SMTP_PASS are set, otherwise printed
     letters.setNotifier(&smtp, envOr("SITE_URL", "http://localhost:5173"), "30 November");
 
-    AppContext ctx(applications, letters, students, discovery,
+    AdminRepo adminRepo(db);
+    AdminService adminService(adminRepo, applications, discovery);
+    adminService.loadAll();
+
+    AppContext ctx(applications, letters, students, discovery, adminService,
                    envOr("UPLOAD_DIR", (repoRoot / "uploads").string()));
 
     App app;
@@ -347,6 +353,7 @@ int main() {
     registerLetterRoutes(app, ctx);
     registerStudentRoutes(app, ctx);
     registerDiscoveryRoutes(app, ctx);
+    registerAdminRoutes(app, ctx);
 
     GroqCoach coach;   // the AI essay coach, if GROQ_API_KEY is set
     registerCoachRoutes(app, coach);

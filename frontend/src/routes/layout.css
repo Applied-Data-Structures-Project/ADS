@@ -147,6 +147,14 @@ input[type='range'] {
 	background-color: #182235;
 }
 
+.admin-dark .bg-\[\#eff4ff\]\/50 {
+	background-color: rgba(30, 41, 59, 0.55);
+}
+
+.admin-dark .border-l-\[\#003ea8\] {
+	border-left-color: #60a5fa;
+}
+
 .admin-dark .bg-\[\#e5eeff\] {
 	background-color: #1e293b;
 }
@@ -218,6 +226,10 @@ input[type='range'] {
 	background-color: rgba(21, 128, 61, 0.2);
 }
 
+.admin-dark .bg-\[\#f0fdf4\]\/40 {
+	background-color: rgba(21, 128, 61, 0.14);
+}
+
 .admin-dark .text-\[\#15803d\] {
 	color: #4ade80;
 }
@@ -234,8 +246,24 @@ input[type='range'] {
 	background-color: rgba(186, 26, 26, 0.22);
 }
 
+.admin-dark .hover\:bg-\[\#fee2e2\]:hover {
+	background-color: rgba(186, 26, 26, 0.34);
+}
+
 .admin-dark .text-\[\#ba1a1a\] {
 	color: #f87171;
+}
+
+/* Modal & drawer backdrops + form controls */
+.admin-dark .bg-\[\#0b1c30\]\/40,
+.admin-dark .bg-\[\#0b1c30\]\/45,
+.admin-dark .bg-\[\#0b1c30\]\/35 {
+	background-color: rgba(2, 6, 23, 0.72);
+}
+
+.admin-dark option {
+	background-color: #111827;
+	color: #f1f5f9;
 }
 
 /* Borders, dividers & form controls */
@@ -287,8 +315,25 @@ input[type='range'] {
 	accent-color: #3b82f6;
 }
 
-.admin-dark .focus\:border-black:focus {
+.admin-dark .focus\:border-black:focus,
+.admin-dark .focus\:border-\[\#003ea8\]:focus {
 	border-color: #60a5fa;
+}
+
+.admin-dark .bg-\[\#15803d\] {
+	background-color: #22c55e;
+}
+
+.admin-dark .bg-\[\#d97706\] {
+	background-color: #f59e0b;
+}
+
+.admin-dark .bg-\[\#003ea8\] {
+	background-color: #3b82f6;
+}
+
+.admin-dark .ring-\[\#003ea8\]\/40 {
+	--tw-ring-color: rgba(96, 165, 250, 0.55);
 }
 
 /* Bipartite graph edges in dark mode */
