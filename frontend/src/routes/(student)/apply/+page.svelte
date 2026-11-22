@@ -212,7 +212,7 @@
 
 	async function saveAndContinue() {
 		if (step === 5) {
-			store.saveBudget(auth.account?.homeAccountId ?? auth.email, store.application.budget);
+			await store.saveBudget(auth.account?.homeAccountId ?? auth.email, store.application.budget);
 		}
 		await store.saveDraft(step === 5); // PUT /api/application; on step 5 the budget toast is enough
 		go(step + 1);

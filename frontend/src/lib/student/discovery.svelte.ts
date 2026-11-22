@@ -1,12 +1,12 @@
 // Saved schools, the compare tray and notifications for Group 2's pages.
 //
-// Frontend only for now: state lives in localStorage under the signed-in
-// account, and every university is identified by its Explore slug. When the
-// backend saved/notifications routes exist, replace the read/write helpers in
-// this file and keep the public methods the same.
+// Saved universities and notifications live on the C++ server (DiscoveryService's
+// HashMaps and FIFO Queue, persisted in SQLite). localStorage holds the 3-slot
+// compare tray and acts as an offline cache if the C++ server is not running.
 
 import { catalog } from '../explore/catalog.svelte.ts';
 import type { UniversityRecord } from '../explore/universities.ts';
+import { callServer, ServerError } from './api.ts';
 
 export interface StudentNotification {
 	id: number;
@@ -21,8 +21,17 @@ interface StoredDiscovery {
 	notifications: StudentNotification[];
 }
 
-/** Real slugs, one per region, so a fresh demo account has something to show. */
-const SEED_SAVED = [
+interface ServerSavedResponse {
+	saved: string[];
+}
+
+interface ServerNotificationsResponse {
+	notifications: StudentNotification[];
+	unreadCount: number;
+}
+
+/** Real slugs, one per region, used only if the C++ backend is offline on a first visit. */
+const OFFLINE_SEED_SAVED = [
 	'bocconi-university',
 	'sciences-po-institute-d-etudes-politiques-de-paris',
 	'aarhus-university',
@@ -71,7 +80,7 @@ function readStored(accountId: string): StoredDiscovery | null {
 	}
 }
 
-function seedNotifications(): StudentNotification[] {
+function seedOfflineNotifications(): StudentNotification[] {
 	const now = Date.now();
 	const hour = 3_600_000;
 	return [
@@ -83,12 +92,6 @@ function seedNotifications(): StudentNotification[] {
 		},
 		{
 			id: 2,
-			message: 'Your application is 43% complete. Finish the questionnaire to raise it.',
-			createdAt: new Date(now - 26 * hour).toISOString(),
-			read: false
-		},
-		{
-			id: 3,
 			message: 'Review your saved universities before the application deadline.',
 			createdAt: new Date(now - 4 * hour).toISOString(),
 			read: false
@@ -101,6 +104,7 @@ class DiscoveryStore {
 	compareSlugs = $state<string[]>([]);
 	notifications = $state<StudentNotification[]>([]);
 	initialized = $state(false);
+	serverConnected = $state(false);
 
 	private accountId = '';
 
@@ -112,7 +116,7 @@ class DiscoveryStore {
 
 	unreadCount = $derived(this.notifications.filter((item) => !item.read).length);
 
-	/** Load this account's list once. Seeds a demo list the first time. */
+	/** Load cached local state (including the compare tray) once per account. */
 	init(accountId: string): void {
 		if (!accountId) return;
 		if (this.initialized && this.accountId === accountId) return;
@@ -124,26 +128,81 @@ class DiscoveryStore {
 			this.compareSlugs = stored.compare;
 			this.notifications = stored.notifications;
 		} else {
-			this.savedSlugs = [...SEED_SAVED];
+			this.savedSlugs = [];
 			this.compareSlugs = [];
-			this.notifications = seedNotifications();
-			this.persist();
+			this.notifications = [];
 		}
 		this.initialized = true;
+	}
+
+	/** Load saved universities and FIFO notifications from the C++ server. */
+	async loadFromServer(accountId: string): Promise<boolean> {
+		this.init(accountId);
+		try {
+			const [savedRes, notifRes] = await Promise.all([
+				callServer<ServerSavedResponse>('GET', '/api/saved'),
+				callServer<ServerNotificationsResponse>('GET', '/api/notifications')
+			]);
+			this.savedSlugs = Array.isArray(savedRes.saved) ? savedRes.saved : [];
+			this.notifications = Array.isArray(notifRes.notifications) ? notifRes.notifications : [];
+			this.serverConnected = true;
+			this.persist();
+			return true;
+		} catch {
+			// Offline fallback: if nothing was cached yet, populate demo defaults so UI stays usable.
+			this.serverConnected = false;
+			if (readStored(accountId) === null && this.savedSlugs.length === 0) {
+				this.savedSlugs = [...OFFLINE_SEED_SAVED];
+				this.notifications = seedOfflineNotifications();
+				this.persist();
+			}
+			return false;
+		}
+	}
+
+	/** Re-fetch notifications from GET /api/notifications after backend events (submit, letters, profile). */
+	async refreshNotifications(): Promise<void> {
+		try {
+			const res = await callServer<ServerNotificationsResponse>('GET', '/api/notifications');
+			if (Array.isArray(res.notifications)) {
+				this.notifications = res.notifications;
+				this.serverConnected = true;
+				this.persist();
+			}
+		} catch {
+			// Offline: keep current list.
+		}
 	}
 
 	isSaved(slug: string): boolean {
 		return this.savedSlugs.includes(slug);
 	}
 
-	/** Returns true when the school is saved after the toggle. */
+	/** Returns true when the school is saved after the toggle. Syncs with POST/DELETE /api/saved/<slug>. */
 	toggleSaved(slug: string): boolean {
 		if (!slug) return false;
-		const wasSaved = this.savedSlugs.includes(slug);
-		this.savedSlugs = wasSaved
-			? this.savedSlugs.filter((item) => item !== slug)
-			: [...this.savedSlugs, slug];
+		const before = [...this.savedSlugs];
+		const wasSaved = before.includes(slug);
+		this.savedSlugs = wasSaved ? before.filter((item) => item !== slug) : [...before, slug];
 		this.persist();
+
+		const method = wasSaved ? 'DELETE' : 'POST';
+		void callServer<ServerSavedResponse>(method, `/api/saved/${encodeURIComponent(slug)}`)
+			.then((res) => {
+				if (Array.isArray(res.saved)) {
+					this.savedSlugs = res.saved;
+					this.serverConnected = true;
+					this.persist();
+				}
+			})
+			.catch((e) => {
+				// Roll back only on an explicit server refusal (not when offline with status 0).
+				if (e instanceof ServerError && e.status > 0) {
+					this.savedSlugs = before;
+					this.persist();
+				}
+			});
+
 		return !wasSaved;
 	}
 
@@ -174,27 +233,73 @@ class DiscoveryStore {
 	}
 
 	notify(message: string): void {
+		const trimmed = message.trim();
+		if (!trimmed) return;
 		const id = Math.max(0, ...this.notifications.map((item) => item.id)) + 1;
 		this.notifications = [
 			...this.notifications,
-			{ id, message, createdAt: new Date().toISOString(), read: false }
+			{ id, message: trimmed, createdAt: new Date().toISOString(), read: false }
 		];
 		this.persist();
+
+		void callServer<ServerNotificationsResponse>('POST', '/api/notifications', { message: trimmed })
+			.then((res) => {
+				if (Array.isArray(res.notifications)) {
+					this.notifications = res.notifications;
+					this.serverConnected = true;
+					this.persist();
+				}
+			})
+			.catch(() => {
+				// Keep optimistic local notification when offline.
+			});
 	}
 
 	markAllRead(): void {
+		const before = this.notifications;
 		this.notifications = this.notifications.map((item) => ({ ...item, read: true }));
 		this.persist();
+
+		void callServer<ServerNotificationsResponse>('POST', '/api/notifications/read-all')
+			.then((res) => {
+				if (Array.isArray(res.notifications)) {
+					this.notifications = res.notifications;
+					this.serverConnected = true;
+					this.persist();
+				}
+			})
+			.catch((e) => {
+				if (e instanceof ServerError && e.status > 0) {
+					this.notifications = before;
+					this.persist();
+				}
+			});
 	}
 
 	/** Marks the first unread notification, the one at the front of the queue. */
 	markOldestRead(): void {
 		const index = this.notifications.findIndex((item) => !item.read);
 		if (index < 0) return;
+		const before = this.notifications;
 		this.notifications = this.notifications.map((item, i) =>
 			i === index ? { ...item, read: true } : item
 		);
 		this.persist();
+
+		void callServer<ServerNotificationsResponse>('POST', '/api/notifications/read-oldest')
+			.then((res) => {
+				if (Array.isArray(res.notifications)) {
+					this.notifications = res.notifications;
+					this.serverConnected = true;
+					this.persist();
+				}
+			})
+			.catch((e) => {
+				if (e instanceof ServerError && e.status > 0) {
+					this.notifications = before;
+					this.persist();
+				}
+			});
 	}
 
 	private persist(): void {

@@ -27,6 +27,86 @@ token on the server instead.
 
 ---
 
+## Student Profile, Eligibility & Budget
+
+### `GET /api/me`
+The signed-in student's profile, eligibility intake fields, and per-semester budget.
+`profile` is `null` until the student saves at least once.
+
+```json
+{
+  "profile": {
+    "email": "salma@aucegypt.edu",
+    "name": "Salma Hassan",
+    "aucId": "900214512",
+    "phone": "+201001234567",
+    "level": "UG",
+    "major": "Computer Science",
+    "gpa": 3.5,
+    "credits": 60,
+    "majorDeclared": true,
+    "rhet110": true,
+    "rhet120": true,
+    "finalSemester": false,
+    "academicProbation": false,
+    "disciplinaryProbation": false,
+    "englishComplete": false,
+    "firstSemesterNoGpa": false,
+    "eligibilitySaved": true,
+    "budget": 5000,
+    "hasBudget": true,
+    "updatedAt": "2026-11-22T19:35:00"
+  },
+  "eligibility": { "eligible": true, "provisional": false, "reason": "" }
+}
+```
+
+### `PUT /api/me`
+Creates or partially updates the signed-in student's profile. Only fields included in the JSON body are updated (so `/signup`, `/profile`, and `/me` budget updates do not overwrite each other).
+Answer: the same shape as `GET /api/me`. `400` on invalid GPA, credits, level, or incomplete eligibility submission.
+
+---
+
+## Saved Universities & Notifications
+
+### `GET /api/saved`
+The signed-in student's saved university slugs, in the order they were saved.
+```json
+{ "saved": ["bocconi-university", "aarhus-university"] }
+```
+
+### `POST /api/saved/<slug>`
+Saves a university slug (idempotent, `O(1)` membership check via `HashMap`).
+Answer: `{ "saved": [...] }`. `400` on invalid slug.
+
+### `DELETE /api/saved/<slug>`
+Removes a saved university slug.
+Answer: `{ "saved": [...] }`.
+
+### `GET /api/notifications`
+The signed-in student's notifications in FIFO order (oldest first), plus `unreadCount` from the server's `Queue<int>`. Seeds one welcome notification on first visit.
+```json
+{
+  "notifications": [
+    { "id": 1, "message": "Welcome to the AUC exchange portal...", "createdAt": "2026-11-22T20:00:00", "read": false }
+  ],
+  "unreadCount": 1
+}
+```
+
+### `POST /api/notifications`
+Body: `{ "message": "..." }`. Appends a notification to SQLite and pushes its ID onto the student's unread FIFO `Queue`. Answer `201`: `{ "id": 2, "notifications": [...], "unreadCount": 2 }`.
+
+### `POST /api/notifications/read-oldest`
+Dequeues the front (oldest unread) notification from the student's `Queue` and marks it read.
+Answer: `{ "readId": 1, "notifications": [...], "unreadCount": 1 }`.
+
+### `POST /api/notifications/read-all`
+Marks all unread notifications for the student as read and empties the unread `Queue`.
+Answer: `{ "notifications": [...], "unreadCount": 0 }`.
+
+---
+
 ## Application
 
 ### `GET /api/application`
@@ -52,18 +132,14 @@ Answer: the same shape as `GET /api/application`.
 `409` once the application is submitted.
 
 ### `POST /api/application/eligibility`
-```json
-{ "level": "UG", "declared": true, "credits": 30, "gpa": 2.5 }
-```
+Evaluates full IPSO eligibility directly from the student's saved `/api/me` record in `O(1)` (falls back to `{ "level", "declared", "credits", "gpa" }` in the request body only if no profile is saved yet).
 Answer:
 ```json
-{ "eligible": false, "reason": "Your GPA is below the minimum for UG students." }
+{ "eligible": false, "provisional": false, "reason": "Your GPA is below the 2.8 minimum for UG students." }
 ```
 
 ### `POST /api/application/submit`
-Body: the same 4 fields as eligibility (from the student's profile). Checks eligibility, the
-deadline, every required field, the 4 PDFs and a received letter, then locks the application and
-puts the student in IPSO's review queue.
+Body: `{}` (or legacy `{ "level", "declared", "credits", "gpa" }` if no `/api/me` profile exists). Checks full IPSO eligibility from `/api/me`, the deadline, every required field, the 4 PDFs and a received letter, then locks the application and puts the student in IPSO's review queue.
 Answer: the same shape as `GET /api/application`, with `"status": "Submitted"`.
 `403` not eligible, `409` with the first missing item or "deadline has passed".
 

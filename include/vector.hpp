@@ -6,7 +6,7 @@ template <class T>
 class Vector
 {
 public:
-    Vector() : s(0), c(0), arr(nullptr) {}
+    Vector() : arr(nullptr), s(0), c(0) {}
 
     explicit Vector(int size) : s(size), c(size)
     {

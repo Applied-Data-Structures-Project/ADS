@@ -7,16 +7,22 @@
 	import { roleHome } from '#lib/auth/roles.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
 	import { validateProfile, type ProfileErrors, type StudentProfileInput } from '#lib/auth/profile.ts';
+	import { callServer } from '#lib/student/api.ts';
 
 	let ready = $state(false);
 	let saving = $state(false);
+	let fullName = $state('');
+	let nameError = $state('');
+	let serverError = $state('');
 	let level = $state<'UG' | 'GR' | ''>('UG');
 	let major = $state('');
 	let aucId = $state('');
 	let phone = $state('');
 	let errors = $state<ProfileErrors>({});
 
-	const firstName = $derived(auth.displayName.split(/\s+/)[0] ?? 'there');
+	const firstName = $derived(
+		(fullName.trim() || auth.displayName).split(/\s+/)[0] || 'there'
+	);
 
 	onMount(async () => {
 		await auth.init();
@@ -28,11 +34,28 @@
 			await goto(roleHome(auth.role), { replace: true });
 			return;
 		}
+		try {
+			const me = await callServer<{
+				profile: {
+					name?: string;
+					level?: string;
+					major?: string;
+					aucId?: string;
+					phone?: string;
+				} | null;
+			}>('GET', '/api/me');
+			auth.syncFromServerProfile(me.profile);
+		} catch {
+			// Offline: continue with local state.
+		}
 		if (auth.profile) {
+			fullName = auth.profile.name ?? (auth.demoEnabled ? '' : auth.displayName);
 			level = auth.profile.level;
 			major = auth.profile.major;
 			aucId = auth.profile.aucId;
 			phone = auth.profile.phone;
+		} else {
+			fullName = auth.demoEnabled ? '' : auth.displayName;
 		}
 		if (!auth.needsProfile) {
 			await goto('/apply', { replace: true });
@@ -41,21 +64,43 @@
 		ready = true;
 	});
 
-	function submit(event: SubmitEvent) {
+	async function submit(event: SubmitEvent) {
 		event.preventDefault();
-		const input: StudentProfileInput = { level, major, aucId, phone };
+		serverError = '';
+		const trimmedName = fullName.trim();
+		nameError = trimmedName.length < 2 ? 'Enter your full name.' : '';
+
+		const input: StudentProfileInput = { name: trimmedName, level, major, aucId, phone };
 		const found = validateProfile(input);
 		errors = found;
-		if (Object.keys(found).length > 0) return;
+		if (nameError || Object.keys(found).length > 0) return;
 
 		saving = true;
+		let eligibilitySaved = false;
+		try {
+			const res = await callServer<{
+				profile: { eligibilitySaved?: boolean } | null;
+			}>('PUT', '/api/me', {
+				name: trimmedName,
+				level: input.level,
+				major: input.major.trim(),
+				aucId: input.aucId.trim(),
+				phone: input.phone.trim()
+			});
+			eligibilitySaved = Boolean(res.profile?.eligibilitySaved);
+		} catch (e) {
+			serverError = e instanceof Error ? e.message : 'Could not save your profile to the server.';
+			saving = false;
+			return;
+		}
+
 		const saved = auth.saveProfile(input);
 		errors = saved;
 		if (Object.keys(saved).length > 0) {
 			saving = false;
 			return;
 		}
-		goto('/apply');
+		await goto(eligibilitySaved ? '/apply' : '/profile', { replace: true });
 	}
 
 	const field =
@@ -74,9 +119,11 @@
 			<span class="hidden sm:inline text-sm font-semibold text-[#0b1c30]">IPSO Exchange</span>
 		</div>
 		<div class="flex items-center gap-2 sm:gap-3 min-w-0">
-			<span class="hidden sm:inline text-xs font-medium text-[#515f74] font-mono-num truncate max-w-[220px]">
-				{auth.email}
-			</span>
+			{#if !auth.demoEnabled}
+				<span class="hidden sm:inline text-xs font-medium text-[#515f74] font-mono-num truncate max-w-[220px]">
+					{auth.email}
+				</span>
+			{/if}
 			<button
 				type="button"
 				onclick={() => auth.signOut()}
@@ -101,31 +148,58 @@
 						One-time setup
 					</p>
 					<h1 class="text-2xl sm:text-[30px] font-bold tracking-tight leading-tight">
-						Welcome, {firstName}
+						{#if auth.demoEnabled}
+							Set up your student profile
+						{:else}
+							Welcome, {firstName}
+						{/if}
 					</h1>
 					<p class="text-sm text-[#515f74] leading-relaxed max-w-lg">
-						Microsoft gave us your name and AUC email. Add the academic details the exchange
-						application needs — you only do this once.
+						{#if auth.demoEnabled}
+							Enter your student details to set up your demo profile — this is saved to the backend and pre-fills your portal.
+						{:else}
+							Microsoft gave us your name and AUC email. Add the academic details the exchange
+							application needs — you only do this once.
+						{/if}
 					</p>
 				</div>
 
-				<div class="flex items-center gap-3 rounded-xl bg-[#eff4ff] border border-[#c6c6cd]/40 px-4 py-3">
-					<div class="w-10 h-10 rounded-full bg-[#dce9ff] border border-[#c6c6cd]/60 flex items-center justify-center text-sm font-bold">
-						{auth.initials}
+				{#if !auth.demoEnabled}
+					<div class="flex items-center gap-3 rounded-xl bg-[#eff4ff] border border-[#c6c6cd]/40 px-4 py-3">
+						<div class="w-10 h-10 rounded-full bg-[#dce9ff] border border-[#c6c6cd]/60 flex items-center justify-center text-sm font-bold">
+							{auth.initials}
+						</div>
+						<div class="min-w-0">
+							<div class="text-sm font-semibold text-[#0b1c30] truncate">{fullName.trim() || auth.displayName}</div>
+							<div class="text-xs text-[#515f74] font-mono-num truncate">{auth.email}</div>
+						</div>
+						<span class="ml-auto px-2.5 py-1 rounded-full bg-white border border-[#c6c6cd]/40 text-[11px] font-semibold text-[#15803d] inline-flex items-center gap-1.5 shrink-0">
+							<Icon name="check" class="w-3 h-3" strokeWidth={2.4} /> Verified by Microsoft
+						</span>
 					</div>
-					<div class="min-w-0">
-						<div class="text-sm font-semibold text-[#0b1c30] truncate">{auth.displayName}</div>
-						<div class="text-xs text-[#515f74] font-mono-num truncate">{auth.email}</div>
-					</div>
-					<span class="ml-auto px-2.5 py-1 rounded-full bg-white border border-[#c6c6cd]/40 text-[11px] font-semibold text-[#15803d] inline-flex items-center gap-1.5 shrink-0">
-						<Icon name="check" class="w-3 h-3" strokeWidth={2.4} /> Verified by Microsoft
-					</span>
-				</div>
+				{/if}
 
 				<form
 					onsubmit={submit}
 					class="bg-white rounded-2xl border border-[#c6c6cd]/40 shadow-sm p-5 sm:p-7 space-y-5"
 				>
+					{#if serverError}
+						<div class="rounded-xl bg-[#fef2f2] border border-[#ba1a1a]/30 px-4 py-3 text-xs font-medium text-[#ba1a1a]">
+							{serverError}
+						</div>
+					{/if}
+
+					<div class="flex flex-col gap-1.5">
+						<label for="full-name" class={labelCls}>Full name</label>
+						<input
+							id="full-name"
+							class={field}
+							bind:value={fullName}
+							placeholder="Mohamed Hassan"
+							autocomplete="name"
+						/>
+						{#if nameError}<p class="text-xs font-medium text-[#ba1a1a]">{nameError}</p>{/if}
+					</div>
 					<div class="flex flex-col gap-2">
 						<span class={labelCls}>Level</span>
 						<div class="grid grid-cols-2 gap-1 rounded-xl bg-[#eff4ff] border border-[#c6c6cd]/40 p-1">

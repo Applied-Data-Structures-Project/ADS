@@ -171,13 +171,34 @@ void registerApplicationRoutes(App& app, AppContext& ctx) {
         return crow::response(200, fullState(ctx, email));
     });
 
-    // POST /api/application/eligibility   (body: level, declared, credits, gpa)
+    // POST /api/application/eligibility
+    // Uses the student's saved /api/me eligibility profile in O(1) when present;
+    // falls back to the request body only for callers that have not saved a profile yet.
     CROW_ROUTE(app, "/api/application/eligibility").methods("POST"_method)
     ([&ctx](const crow::request& req) {
         string email = currentUser(req);
         if (email.empty()) return jsonError(401, "Sign in with your AUC account.");
+
+        lock_guard<mutex> guard(ctx.lock);
+        const StudentRecord* rec = ctx.students.find(email);
+        if (rec != nullptr && rec->eligibilitySaved) {
+            StudentEligibilityOutcome outcome = StudentService::evaluateEligibility(*rec);
+            string reason = StudentService::checkEligibilityReason(*rec);
+            crow::json::wvalue j;
+            j["eligible"] = outcome.eligible;
+            j["provisional"] = outcome.provisional;
+            j["reason"] = reason;
+            return crow::response(200, j);
+        }
+
         auto body = crow::json::load(req.body);
-        if (!body) return jsonError(400, "The request is not valid JSON.");
+        if (!body || !body.has("level")) {
+            crow::json::wvalue j;
+            j["eligible"] = false;
+            j["provisional"] = false;
+            j["reason"] = "Complete your eligibility profile first.";
+            return crow::response(200, j);
+        }
 
         StudentInfo s;
         s.email = email;
@@ -186,36 +207,53 @@ void registerApplicationRoutes(App& app, AppContext& ctx) {
         s.credits = jsonInt(body, "credits");
         s.gpa = jsonNumber(body, "gpa");
 
-        lock_guard<mutex> guard(ctx.lock);
         string reason = ctx.applications.checkEligibility(s);
         crow::json::wvalue j;
         j["eligible"] = reason.empty();
+        j["provisional"] = false;
         j["reason"] = reason;
         return crow::response(200, j);
     });
 
-    // POST /api/application/submit   (body: level, declared, credits, gpa from the profile)
+    // POST /api/application/submit
+    // Checks full IPSO eligibility from the student's saved /api/me record in O(1),
+    // then verifies the deadline, required fields, documents and letter before locking.
     CROW_ROUTE(app, "/api/application/submit").methods("POST"_method)
     ([&ctx](const crow::request& req) {
         string email = currentUser(req);
         if (email.empty()) return jsonError(401, "Sign in with your AUC account.");
-        auto body = crow::json::load(req.body);
-        if (!body) return jsonError(400, "The request is not valid JSON.");
-
-        StudentInfo s;
-        s.email = email;
-        s.level = jsonText(body, "level");
-        s.declared = jsonBool(body, "declared");
-        s.credits = jsonInt(body, "credits");
-        s.gpa = jsonNumber(body, "gpa");
 
         lock_guard<mutex> guard(ctx.lock);
-        string reason = ctx.applications.checkEligibility(s);
+        string reason;
+        const StudentRecord* rec = ctx.students.find(email);
+        if (rec != nullptr && rec->eligibilitySaved) {
+            reason = StudentService::checkEligibilityReason(*rec);
+        } else {
+            auto body = crow::json::load(req.body);
+            if (body && body.has("level")) {
+                StudentInfo s;
+                s.email = email;
+                s.level = jsonText(body, "level");
+                s.declared = jsonBool(body, "declared");
+                s.credits = jsonInt(body, "credits");
+                s.gpa = jsonNumber(body, "gpa");
+                reason = ctx.applications.checkEligibility(s);
+            } else {
+                reason = "Complete your eligibility profile before submitting.";
+            }
+        }
         if (!reason.empty()) return jsonError(403, reason);
 
+        string now = nowText();
         string error;
         bool letter = ctx.letters.hasReceivedLetter(email);
-        if (!ctx.applications.submit(email, letter, nowText(), error)) return jsonError(409, error);
+        if (!ctx.applications.submit(email, letter, now, error)) return jsonError(409, error);
+
+        string ignored;
+        ctx.discovery.notify(
+            email,
+            "Your Fall 2027 exchange application has been submitted for IPSO review.",
+            now, ignored);
         return crow::response(200, fullState(ctx, email));
     });
 

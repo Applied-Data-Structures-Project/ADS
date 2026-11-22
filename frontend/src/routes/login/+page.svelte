@@ -9,6 +9,7 @@
 	import { DEMO_ROLES, demoLabel } from '#lib/auth/demo.ts';
 	import { isSafeNext, roleHome, type Role } from '#lib/auth/roles.ts';
 	import { auth, type LoginKind } from '#lib/auth/store.svelte.ts';
+	import { callServer } from '#lib/student/api.ts';
 
 	let kind = $state<LoginKind>('student');
 	let busy = $state(false);
@@ -61,6 +62,18 @@
 
 	async function demoSignIn(role: Role) {
 		auth.signInAsDemo(role);
+		if (role === 'student') {
+			try {
+				const me = await callServer<{
+					profile: { name?: string; level?: string; major?: string; aucId?: string; phone?: string } | null;
+				}>('GET', '/api/me');
+				auth.syncFromServerProfile(me.profile);
+			} catch {
+				// Offline: fall back to any locally cached profile.
+			}
+			await goto(auth.needsProfile ? '/signup' : (next ?? roleHome(role)), { replace: true });
+			return;
+		}
 		await goto(roleHome(role), { replace: true });
 	}
 </script>

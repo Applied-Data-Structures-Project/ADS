@@ -47,18 +47,30 @@ void registerLetterRoutes(App& app, AppContext& ctx) {
         if (!body) return jsonError(400, "The request is not valid JSON.");
 
         lock_guard<mutex> guard(ctx.lock);
-        // The student's name for the email, from her application if she started one.
+        // The student's name for the email, from her application or saved student profile.
         string studentName;
         Application* a = ctx.applications.find(email);
         if (a != nullptr && !a->firstName.empty()) studentName = a->firstName + " " + a->surname;
+        if (studentName.empty()) {
+            const StudentRecord* s = ctx.students.find(email);
+            if (s != nullptr) studentName = s->name;
+        }
 
+        string doctorName = jsonText(body, "doctorName");
         string doctorEmail = jsonText(body, "doctorEmail");
         for (char& c : doctorEmail) c = (char)tolower((unsigned char)c);
 
+        string now = nowText();
         string error;
-        int id = ctx.letters.requestLetter(email, jsonText(body, "doctorName"), doctorEmail,
-                                           nowText(), error, studentName);
+        int id = ctx.letters.requestLetter(email, doctorName, doctorEmail,
+                                           now, error, studentName);
         if (id == -1) return jsonError(409, error);
+
+        string ignored;
+        ctx.discovery.notify(
+            email,
+            "Recommendation letter requested from " + doctorName + ".",
+            now, ignored);
 
         crow::json::wvalue j;
         j["id"] = id;
@@ -78,9 +90,16 @@ void registerLetterRoutes(App& app, AppContext& ctx) {
             crow::json::wvalue item = letterJson(pending[i]);
             // Add the student's details so the doctor knows who is asking (HashMap lookup).
             Application* a = ctx.applications.find(pending[i].studentEmail);
-            item["studentName"] = (a != nullptr) ? a->firstName + " " + a->surname : "";
-            item["studentMajor"] = (a != nullptr) ? a->major : "";
-            item["studentGpa"] = (a != nullptr) ? a->gpa : 0.0;
+            const StudentRecord* s = ctx.students.find(pending[i].studentEmail);
+            string name = (a != nullptr && !a->firstName.empty()) ? a->firstName + " " + a->surname
+                                                                  : (s != nullptr ? s->name : "");
+            string major = (a != nullptr && !a->major.empty()) ? a->major
+                                                               : (s != nullptr ? s->major : "");
+            double gpa = (a != nullptr && a->gpa > 0.0) ? a->gpa
+                                                        : (s != nullptr && s->hasGpa ? s->gpa : 0.0);
+            item["studentName"] = name;
+            item["studentMajor"] = major;
+            item["studentGpa"] = gpa;
             j[i] = std::move(item);
         }
         return crow::response(200, j);
@@ -95,10 +114,31 @@ void registerLetterRoutes(App& app, AppContext& ctx) {
         if (!body) return jsonError(400, "The request is not valid JSON.");
 
         lock_guard<mutex> guard(ctx.lock);
+        string targetStudent;
+        string targetDoctor;
+        Vector<LetterRequest> pending = ctx.letters.pendingFor(email);
+        for (int i = 0; i < pending.size(); i++) {
+            if (pending[i].id == id) {
+                targetStudent = pending[i].studentEmail;
+                targetDoctor = pending[i].doctorName;
+                break;
+            }
+        }
+
+        bool send = jsonBool(body, "send");
+        string now = nowText();
         string error;
-        if (!ctx.letters.answer(id, email, jsonBool(body, "send"), jsonText(body, "letterText"),
-                                nowText(), error))
+        if (!ctx.letters.answer(id, email, send, jsonText(body, "letterText"),
+                                now, error))
             return jsonError(409, error);
+
+        if (!targetStudent.empty()) {
+            string ignored;
+            string msg = send
+                ? (targetDoctor + " submitted your recommendation letter.")
+                : (targetDoctor + " declined your recommendation letter request.");
+            ctx.discovery.notify(targetStudent, msg, now, ignored);
+        }
 
         crow::json::wvalue j;
         j["ok"] = true;

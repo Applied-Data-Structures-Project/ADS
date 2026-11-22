@@ -8,6 +8,7 @@
 import type { Level } from '#lib/student/types.ts';
 
 export interface StudentProfileInput {
+	name?: string;
 	level: Level | '';
 	major: string;
 	aucId: string;
@@ -41,6 +42,7 @@ export function readProfile(homeAccountId: string): StudentProfileInput | null {
 		if (!raw) return null;
 		const parsed = JSON.parse(raw) as Partial<StudentProfileInput>;
 		const profile: StudentProfileInput = {
+			name: typeof parsed.name === 'string' && parsed.name.trim() ? parsed.name.trim() : undefined,
 			level: parsed.level === 'UG' || parsed.level === 'GR' ? parsed.level : '',
 			major: typeof parsed.major === 'string' ? parsed.major : '',
 			aucId: typeof parsed.aucId === 'string' ? parsed.aucId : '',
@@ -58,5 +60,14 @@ export function writeProfile(homeAccountId: string, profile: StudentProfileInput
 		localStorage.setItem(profileKey(homeAccountId), JSON.stringify(profile));
 	} catch {
 		// Storage blocked: the profile lasts for this visit only.
+	}
+}
+
+export function removeProfile(homeAccountId: string): void {
+	if (typeof localStorage === 'undefined') return;
+	try {
+		localStorage.removeItem(profileKey(homeAccountId));
+	} catch {
+		// Storage blocked: nothing to remove.
 	}
 }

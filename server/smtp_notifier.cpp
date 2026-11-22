@@ -106,6 +106,8 @@ bool SmtpNotifier::send(const string& to, const string& subject, const string& b
     curl_easy_setopt(curl, CURLOPT_READDATA, &up);
     curl_easy_setopt(curl, CURLOPT_UPLOAD, 1L);
     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 20L);
+    string caBundle = envOr("CURL_CA_BUNDLE", envOr("SSL_CERT_FILE", ""));
+    if (!caBundle.empty()) curl_easy_setopt(curl, CURLOPT_CAINFO, caBundle.c_str());
 
     CURLcode result = curl_easy_perform(curl);
     if (result != CURLE_OK) {

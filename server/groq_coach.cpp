@@ -78,6 +78,8 @@ bool GroqCoach::ask(const string& instructions, const string& essay, string& fee
     curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, keepPart);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &answer);
     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 30L);
+    string caBundle = envOr("CURL_CA_BUNDLE", envOr("SSL_CERT_FILE", ""));
+    if (!caBundle.empty()) curl_easy_setopt(curl, CURLOPT_CAINFO, caBundle.c_str());
 
     CURLcode result = curl_easy_perform(curl);
     long status = 0;

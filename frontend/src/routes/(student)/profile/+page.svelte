@@ -32,6 +32,7 @@
 
 	let errors = $state<EligibilityErrors>({});
 	let loaded = $state(false);
+	let saving = $state(false);
 	let hadProfile = $state(false);
 
 	const requestedNext = page.url.searchParams.get('next');
@@ -73,7 +74,9 @@
 	onMount(async () => {
 		await auth.init();
 		const accountId = auth.account?.homeAccountId ?? auth.email;
-		store.loadEligibility(accountId);
+		if (!store.meLoaded) {
+			await store.loadMe(accountId, auth.email, auth.displayName);
+		}
 
 		const saved = store.eligibilityProfile;
 		if (saved) {
@@ -102,16 +105,21 @@
 		if (value === 'UG') firstSemesterNoGpa = false;
 	}
 
-	function submit(event: SubmitEvent) {
+	async function submit(event: SubmitEvent) {
 		event.preventDefault();
+		if (saving) return;
 		const found = validateEligibilityProfile(draft);
 		errors = found;
 		if (Object.keys(found).length > 0) return;
 
+		saving = true;
 		const accountId = auth.account?.homeAccountId ?? auth.email;
-		store.saveEligibility(accountId, draft);
+		const ok = await store.saveEligibility(accountId, draft, auth.displayName);
+		saving = false;
+		if (!ok) return;
+
 		store.showToast('Eligibility profile saved.');
-		goto(next, { replace: true });
+		await goto(next, { replace: true });
 	}
 
 	const field =
@@ -363,9 +371,10 @@
 				<div class="flex flex-col sm:flex-row sm:items-center gap-3">
 					<button
 						type="submit"
-						class="h-11 px-5 rounded-xl bg-[#131b2e] hover:bg-[#1e293b] text-white text-sm font-semibold shadow-sm inline-flex items-center justify-center gap-2 cursor-pointer"
+						disabled={saving}
+						class="h-11 px-5 rounded-xl bg-[#131b2e] hover:bg-[#1e293b] disabled:opacity-60 text-white text-sm font-semibold shadow-sm inline-flex items-center justify-center gap-2 cursor-pointer"
 					>
-						{hadProfile ? 'Save changes' : 'Save and continue'}
+						{saving ? 'Saving…' : hadProfile ? 'Save changes' : 'Save and continue'}
 						<Icon name="arrow-right" class="w-4 h-4" />
 					</button>
 					{#if hadProfile}

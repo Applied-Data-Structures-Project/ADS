@@ -17,6 +17,7 @@ import {
 import {
 	isProfileComplete,
 	readProfile,
+	removeProfile,
 	writeProfile,
 	validateProfile,
 	type ProfileErrors,
@@ -96,7 +97,10 @@ class AuthStore {
 	role = $derived(roleFromRoles(rolesClaim(this.account)));
 	email = $derived(this.account?.username ?? '');
 	displayName = $derived(
-		this.account?.name?.trim() || this.account?.username?.split('@')[0] || 'Signed-in user'
+		this.profile?.name?.trim() ||
+			this.account?.name?.trim() ||
+			this.account?.username?.split('@')[0] ||
+			'Signed-in user'
 	);
 	initials = $derived(
 		this.displayName
@@ -174,8 +178,10 @@ class AuthStore {
 
 	private applyDemo(role: Role): void {
 		this.demoRole = role;
-		this.account = demoAccount(role);
-		this.profile = demoProfile();
+		const account = demoAccount(role);
+		this.account = account;
+		// Staff never use /signup; demo students go through /signup until saved on the backend.
+		this.profile = role === 'student' ? readProfile(account.homeAccountId) : demoProfile();
 		this.error = null;
 		this.status = 'signedIn';
 		writeSession(DEMO_ROLE_KEY, role);
@@ -234,6 +240,7 @@ class AuthStore {
 		if (Object.keys(errors).length > 0) return errors;
 		if (!this.account) return { major: 'Sign in again to save your profile.' };
 		const cleaned: StudentProfileInput = {
+			name: input.name?.trim() || undefined,
 			level: input.level,
 			major: input.major.trim(),
 			aucId: input.aucId.trim(),
@@ -242,6 +249,38 @@ class AuthStore {
 		writeProfile(this.account.homeAccountId, cleaned);
 		this.profile = cleaned;
 		return {};
+	}
+
+	/** Keep auth.profile (and displayName/needsProfile) in sync with GET/PUT /api/me. */
+	syncFromServerProfile(
+		server: {
+			name?: string;
+			level?: string;
+			major?: string;
+			aucId?: string;
+			phone?: string;
+		} | null
+	): void {
+		if (!this.account || this.role !== 'student') return;
+		if (!server) {
+			this.profile = null;
+			removeProfile(this.account.homeAccountId);
+			return;
+		}
+		const candidate: StudentProfileInput = {
+			name: server.name?.trim() || undefined,
+			level: server.level === 'UG' || server.level === 'GR' ? server.level : '',
+			major: server.major?.trim() ?? '',
+			aucId: server.aucId?.trim() ?? '',
+			phone: server.phone?.trim() ?? ''
+		};
+		if (isProfileComplete(candidate)) {
+			this.profile = candidate;
+			writeProfile(this.account.homeAccountId, candidate);
+		} else {
+			this.profile = null;
+			removeProfile(this.account.homeAccountId);
+		}
 	}
 
 	clearError(): void {

@@ -56,9 +56,20 @@
 			.filter((i): i is NavItem => i !== undefined)
 	);
 
-	const personRole = $derived(
-		auth.profile ? `${auth.profile.level} · ${auth.profile.major}` : roleLabel(auth.role)
-	);
+	const personName = $derived(store.user?.name?.trim() || auth.displayName);
+
+	const personRole = $derived.by(() => {
+		const level =
+			store.eligibilityProfile?.level || store.user?.level || auth.profile?.level || '';
+		const major =
+			store.eligibilityProfile?.major?.trim() ||
+			store.user?.major?.trim() ||
+			auth.profile?.major?.trim() ||
+			'';
+		if (level && major) return `${level} · ${major}`;
+		if (major) return major;
+		return roleLabel(auth.role);
+	});
 
 	onMount(async () => {
 		await auth.init();
@@ -67,18 +78,18 @@
 			await goto(`/login?next=${encodeURIComponent(next)}`, { replace: true });
 			return;
 		}
+
+		const accountId = auth.account?.homeAccountId ?? auth.email;
+		discovery.init(accountId);
+		void catalog.load();
+		await Promise.all([
+			store.loadFromServer(auth.email, accountId, auth.displayName),
+			discovery.loadFromServer(accountId)
+		]); // application, letters, /api/me profile, saved universities and notifications from C++ server
 		if (auth.needsProfile) {
 			await goto('/signup', { replace: true });
 			return;
 		}
-
-		const accountId = auth.account?.homeAccountId ?? auth.email;
-		store.loadEligibility(accountId);
-		store.loadBudget(accountId);
-		discovery.init(accountId);
-		void catalog.load();
-		await store.loadFromServer(auth.email); // the application, documents and letters from the C++ server
-		store.loadBudget(accountId); // the server has no budget; keep the one saved on this device
 		if (!store.hasEligibilityProfile && page.url.pathname !== '/profile') {
 			const next = page.url.pathname + page.url.search;
 			await goto(`/profile?next=${encodeURIComponent(next)}`, { replace: true });
@@ -95,7 +106,7 @@
 		{groups}
 		{mobileTabs}
 		cycleLabel={`Fall 2027 · Applications close ${deadline}`}
-		personName={auth.displayName}
+		personName={personName}
 		personRole={personRole}
 	>
 		{@render children()}

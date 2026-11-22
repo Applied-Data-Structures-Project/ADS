@@ -24,6 +24,7 @@ import type {
 	UploadedDoc
 } from './types.ts';
 import { callServer, errorText } from './api.ts';
+import { auth } from '../auth/store.svelte.ts';
 import { catalog } from '../explore/catalog.svelte.ts';
 import { discovery } from './discovery.svelte.ts';
 
@@ -65,6 +66,39 @@ interface ServerLetter {
 	studentName?: string;
 	studentMajor?: string;
 	studentGpa?: number;
+}
+
+/** What GET/PUT /api/me answers. */
+interface ServerStudentProfile {
+	email: string;
+	name: string;
+	aucId: string;
+	phone: string;
+	level: 'UG' | 'GR' | '';
+	major: string;
+	gpa: number | null;
+	credits: number | null;
+	majorDeclared: boolean;
+	rhet110: boolean;
+	rhet120: boolean;
+	finalSemester: boolean;
+	academicProbation: boolean;
+	disciplinaryProbation: boolean;
+	englishComplete: boolean;
+	firstSemesterNoGpa: boolean;
+	eligibilitySaved: boolean;
+	budget: number;
+	hasBudget: boolean;
+	updatedAt: string;
+}
+
+interface ServerMe {
+	profile: ServerStudentProfile | null;
+	eligibility: {
+		eligible: boolean;
+		provisional: boolean;
+		reason?: string;
+	};
 }
 
 /** A blank application for a student who has not started yet. */
@@ -160,6 +194,8 @@ class StudentStore {
 	doctorAnswered = $state<LetterRequest[]>([]);
 	/** True after the first load from the server. */
 	loaded = $state(false);
+	/** True once GET /api/me has completed (or fallen back offline). */
+	meLoaded = $state(false);
 
 	/** The academic record the student enters on /profile. Null until they save it. */
 	eligibilityProfile = $state<EligibilityProfile | null>(null);
@@ -315,19 +351,142 @@ class StudentStore {
 		}
 	}
 
-	// ---- Eligibility profile -------------------------------------------------
+	// ---- Student profile, eligibility & budget (GET/PUT /api/me) -------------
 
-	/** Load the profile saved for this account, if any. Call once in the browser. */
+	private applyServerProfile(
+		profile: ServerStudentProfile | null,
+		accountId: string,
+		email: string,
+		displayName?: string
+	) {
+		auth.syncFromServerProfile(profile);
+		const fallbackName = displayName?.trim() || email.split('@')[0] || DEMO_STUDENT.name;
+		if (!profile) {
+			this.eligibilityProfile = null;
+			this.user = {
+				...(this.user ?? DEMO_STUDENT),
+				email: email || DEMO_STUDENT.email,
+				name: fallbackName
+			};
+			return;
+		}
+
+		if (profile.eligibilitySaved) {
+			const elig: EligibilityProfile = {
+				level: profile.level === 'GR' ? 'GR' : profile.level === 'UG' ? 'UG' : '',
+				major: profile.major,
+				gpa: profile.gpa,
+				credits: profile.credits,
+				majorDeclared: profile.majorDeclared,
+				rhet110: profile.rhet110,
+				rhet120: profile.rhet120,
+				finalSemester: profile.finalSemester,
+				academicProbation: profile.academicProbation,
+				disciplinaryProbation: profile.disciplinaryProbation,
+				englishComplete: profile.englishComplete,
+				firstSemesterNoGpa: profile.firstSemesterNoGpa
+			};
+			this.eligibilityProfile = elig;
+			if (accountId) writeEligibility(accountId, elig);
+		} else {
+			this.eligibilityProfile = null;
+		}
+
+		this.user = {
+			...(this.user ?? DEMO_STUDENT),
+			email: profile.email || email || DEMO_STUDENT.email,
+			name: profile.name || fallbackName,
+			level: profile.level === 'GR' ? 'GR' : 'UG',
+			major: profile.major || this.user?.major || '',
+			declared: profile.majorDeclared,
+			credits: profile.credits ?? 0,
+			gpa: profile.gpa ?? 0
+		};
+
+		// Pre-fill a brand-new (unsaved) application draft from /signup + /profile fields.
+		if (!this.application.updatedAt) {
+			if (!this.application.firstName && profile.name) {
+				const parts = profile.name.trim().split(/\s+/);
+				this.application.firstName = parts[0] ?? '';
+				if (!this.application.surname && parts.length > 1) {
+					this.application.surname = parts.slice(1).join(' ');
+				}
+			}
+			if (!this.application.phone && profile.phone) this.application.phone = profile.phone;
+			if (!this.application.aucId && profile.aucId) this.application.aucId = profile.aucId;
+			if (!this.application.major && profile.major) this.application.major = profile.major;
+			if (profile.level === 'UG' || profile.level === 'GR') this.application.level = profile.level;
+			if (profile.gpa !== null && this.application.gpa === 0) this.application.gpa = profile.gpa;
+		}
+
+		if (profile.hasBudget && Number.isFinite(profile.budget) && profile.budget >= 0) {
+			this.application.budget = profile.budget;
+			if (accountId && typeof localStorage !== 'undefined') {
+				try {
+					localStorage.setItem(budgetKey(accountId), String(profile.budget));
+				} catch {
+					// Storage blocked: server already holds the value.
+				}
+			}
+		}
+	}
+
+	/** Load the student's profile, eligibility and budget from GET /api/me. */
+	async loadMe(accountId: string, email: string, displayName?: string): Promise<boolean> {
+		try {
+			const res = await callServer<ServerMe>('GET', '/api/me');
+			this.applyServerProfile(res.profile, accountId, email, displayName);
+			this.meLoaded = true;
+			void discovery.refreshNotifications();
+			return true;
+		} catch (e) {
+			// Offline fallback: keep local cache usable if the C++ server isn't running.
+			this.loadEligibility(accountId);
+			this.loadBudget(accountId);
+			this.meLoaded = true;
+			this.showToast(errorText(e));
+			return false;
+		}
+	}
+
+	/** Load the locally cached profile for this account, if any. */
 	loadEligibility(accountId: string) {
 		this.eligibilityProfile = readEligibility(accountId);
 		if (this.eligibilityProfile) this.applyEligibilityToUser(this.eligibilityProfile);
 	}
 
-	/** Save the profile and make its academic fields the signed-in student's record. */
-	saveEligibility(accountId: string, profile: EligibilityProfile) {
-		writeEligibility(accountId, profile);
-		this.eligibilityProfile = profile;
-		this.applyEligibilityToUser(profile);
+	/** Save the eligibility profile to PUT /api/me and mirror it into the student record. */
+	async saveEligibility(
+		accountId: string,
+		profile: EligibilityProfile,
+		displayName?: string
+	): Promise<boolean> {
+		const email = this.user?.email ?? this.application.studentEmail;
+		try {
+			const res = await callServer<ServerMe>('PUT', '/api/me', {
+				name: displayName?.trim() || this.user?.name || '',
+				level: profile.level,
+				major: profile.major,
+				gpa: profile.gpa,
+				credits: profile.credits,
+				majorDeclared: profile.majorDeclared,
+				rhet110: profile.rhet110,
+				rhet120: profile.rhet120,
+				finalSemester: profile.finalSemester,
+				academicProbation: profile.academicProbation,
+				disciplinaryProbation: profile.disciplinaryProbation,
+				englishComplete: profile.englishComplete,
+				firstSemesterNoGpa: profile.firstSemesterNoGpa,
+				eligibilitySaved: true
+			});
+			this.applyServerProfile(res.profile, accountId, email, displayName);
+			this.meLoaded = true;
+			void discovery.refreshNotifications();
+			return true;
+		} catch (e) {
+			this.showToast(errorText(e));
+			return false;
+		}
 	}
 
 	private applyEligibilityToUser(profile: EligibilityProfile) {
@@ -344,7 +503,7 @@ class StudentStore {
 
 	// ---- Budget (used by Compare) --------------------------------------------
 
-	/** Load the budget saved for this account, if any. Call once in the browser. */
+	/** Load the locally cached budget for this account, if any. */
 	loadBudget(accountId: string) {
 		if (!accountId || typeof localStorage === 'undefined') return;
 		try {
@@ -357,18 +516,26 @@ class StudentStore {
 		}
 	}
 
-	/** Save the per-semester budget for this account. */
-	saveBudget(accountId: string, amount: number) {
+	/** Save the per-semester budget to PUT /api/me (and cache locally). */
+	async saveBudget(accountId: string, amount: number): Promise<boolean> {
 		const safe = Number.isFinite(amount) ? Math.max(0, Math.round(amount)) : 0;
 		this.application.budget = safe;
 		if (accountId && typeof localStorage !== 'undefined') {
 			try {
 				localStorage.setItem(budgetKey(accountId), String(safe));
 			} catch {
-				// Storage blocked: the value still lasts for this visit.
+				// Storage blocked: server still persists the budget.
 			}
 		}
-		this.showToast('Budget saved.');
+		try {
+			const res = await callServer<ServerMe>('PUT', '/api/me', { budget: safe });
+			this.applyServerProfile(res.profile, accountId, this.user?.email ?? '');
+			this.showToast('Budget saved.');
+			return true;
+		} catch (e) {
+			this.showToast(errorText(e));
+			return false;
+		}
 	}
 
 	/** Copy the first three saved schools into the application preference slots. */
@@ -421,14 +588,23 @@ class StudentStore {
 		};
 	}
 
-	/** Student pages: GET /api/application and GET /api/letters. Call once after sign-in. */
-	async loadFromServer(email: string) {
+	/** Student pages: GET /api/application, GET /api/letters, and GET /api/me. Call once after sign-in. */
+	async loadFromServer(email: string, accountId = email, displayName?: string) {
 		try {
-			const state = await callServer<ServerState>('GET', '/api/application');
+			const [state, list, me] = await Promise.all([
+				callServer<ServerState>('GET', '/api/application'),
+				callServer<ServerLetter[]>('GET', '/api/letters'),
+				callServer<ServerMe>('GET', '/api/me')
+			]);
 			this.applyState(state, email);
-			await this.loadLetters();
+			this.applyServerProfile(me.profile, accountId, email, displayName);
+			this.letters = list.map((l) => this.toLetter(l));
+			this.meLoaded = true;
 			this.loaded = true;
 		} catch (e) {
+			this.loadEligibility(accountId);
+			this.loadBudget(accountId);
+			this.meLoaded = true;
 			this.showToast(errorText(e));
 		}
 	}
@@ -524,15 +700,11 @@ class StudentStore {
 			return false;
 		}
 		if (!(await this.saveDraft(true))) return false;
-		const p = this.eligibilityProfile;
 		try {
-			const state = await callServer<ServerState>('POST', '/api/application/submit', {
-				level: p?.level === 'GR' ? 'GR' : 'UG',
-				declared: p?.majorDeclared ?? false,
-				credits: p?.credits ?? 0,
-				gpa: p?.gpa ?? 0
-			});
+			// The server verifies full IPSO eligibility directly from /api/me's StudentService HashMap.
+			const state = await callServer<ServerState>('POST', '/api/application/submit', {});
 			this.applyState(state, this.application.studentEmail);
+			void discovery.refreshNotifications();
 			this.showToast('Application submitted. It can no longer be edited.');
 			return true;
 		} catch (e) {
@@ -551,6 +723,7 @@ class StudentStore {
 		try {
 			await callServer('POST', '/api/letters', { doctorName: doctorName.trim(), doctorEmail: email });
 			await this.loadLetters();
+			void discovery.refreshNotifications();
 			this.showToast(`Request sent to ${doctorName.trim()}.`);
 			return null;
 		} catch (e) {

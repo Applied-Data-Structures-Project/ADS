@@ -27,6 +27,7 @@ static int failures = 0;
 static std::string projectRoot() {
     std::string here = __FILE__;
     std::size_t pos = here.rfind("tests/");
+    if (pos == std::string::npos) pos = here.rfind("tests\\");
     if (pos == std::string::npos || pos == 0) return ".";   // built from inside the project folder
     return here.substr(0, pos - 1);                          // everything before "/tests/"
 }

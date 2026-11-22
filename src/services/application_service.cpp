@@ -55,9 +55,11 @@ Application* ApplicationService::find(const string& email) {
 // eligibility 
 
 string ApplicationService::checkEligibility(const StudentInfo& s) const {
-    if (!s.declared) return "Only students with an officially declared major can apply.";
-    if (s.credits < rules.minCredits)
-        return "You need at least " + to_string(rules.minCredits) + " credits.";
+    if (s.level != "GR") {
+        if (!s.declared) return "Only students with an officially declared major can apply.";
+        if (s.credits < rules.minCredits)
+            return "You need at least " + to_string(rules.minCredits) + " credits.";
+    }
     double minGpa = (s.level == "GR") ? rules.minGpaGR : rules.minGpaUG;
     if (s.gpa < minGpa) return "Your GPA is below the minimum for " + s.level + " students.";
     return "";

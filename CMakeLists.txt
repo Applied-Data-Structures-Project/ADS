@@ -48,6 +48,9 @@ target_include_directories(crow_lib SYSTEM INTERFACE
   ${asio_SOURCE_DIR}/asio/include)
 target_compile_definitions(crow_lib INTERFACE ASIO_STANDALONE)
 target_link_libraries(crow_lib INTERFACE Threads::Threads)
+if(WIN32)
+  target_link_libraries(crow_lib INTERFACE ws2_32 mswsock)
+endif()
 
 # SQLite (C library)
 add_library(sqlite3_lib STATIC ${sqlite3_SOURCE_DIR}/sqlite3.c)

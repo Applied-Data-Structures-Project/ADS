@@ -24,8 +24,12 @@
 #include "groq_coach.hpp"
 #include "smtp_notifier.hpp"
 #include "repo/application_repo.hpp"
+#include "repo/discovery_repo.hpp"
+#include "repo/student_repo.hpp"
 #include "services/application_service.hpp"
+#include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
+#include "services/student_service.hpp"
 #include "vector.hpp"
 
 namespace {
@@ -140,17 +144,24 @@ int main() {
     if (!runSqlFolder(db, repoRoot / "db" / "migrations")) return 1;
     if (needsSeed(db)) runSqlFolder(db, repoRoot / "db" / "seed");
 
-    // ---- Group 3: load everything into our data structures once ----
+    // ---- Group 2 & 3: load everything into our data structures once ----
     ApplicationRepo repo(db);
+    StudentRepo studentRepo(db);
+    DiscoveryRepo discoveryRepo(db);
     ApplicationService applications(repo);
     LetterService letters(repo);
+    StudentService students(studentRepo);
+    DiscoveryService discovery(discoveryRepo);
     applications.loadAll();
     letters.loadAll();
+    students.loadAll();
+    discovery.loadAll();
 
     SmtpNotifier smtp;   // real emails if SMTP_USER/SMTP_PASS are set, otherwise printed
     letters.setNotifier(&smtp, envOr("SITE_URL", "http://localhost:5173"), "30 November");
 
-    AppContext ctx(applications, letters, envOr("UPLOAD_DIR", (repoRoot / "uploads").string()));
+    AppContext ctx(applications, letters, students, discovery,
+                   envOr("UPLOAD_DIR", (repoRoot / "uploads").string()));
 
     App app;
 
@@ -175,6 +186,8 @@ int main() {
 
     registerApplicationRoutes(app, ctx);
     registerLetterRoutes(app, ctx);
+    registerStudentRoutes(app, ctx);
+    registerDiscoveryRoutes(app, ctx);
 
     GroqCoach coach;   // the AI essay coach, if GROQ_API_KEY is set
     registerCoachRoutes(app, coach);
