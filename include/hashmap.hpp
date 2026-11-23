@@ -29,6 +29,16 @@
 #include <string>
 #include <stdexcept>
 using namespace std;
+// Our hash formulas: turn a key into a big number. hash() then takes % capacity
+// to pick the bucket. Bodies are in hashmap.tpp.
+//   text keys:   polynomial hash, h = h * 31 + letter, for every letter
+//   number keys: the number itself
+//   other types: fall back to C++'s std::hash
+inline unsigned long hashKey(const std::string& key);
+inline unsigned long hashKey(int key);
+template <typename Key>
+unsigned long hashKey(const Key& key);
+
 template <typename Index,typename Value>
 class HashMap {
 public:

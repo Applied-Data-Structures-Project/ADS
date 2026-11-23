@@ -3,6 +3,37 @@
 // this file at its end instead of compiling it as a separate .cpp.
 // Do not include this file directly; include "hashmap.hpp".
 
+// ---------- hash formulas ----------
+
+// Polynomial hash for text (emails, slugs, "email|docType").
+// Every letter changes the number, and multiplying by 31 makes the order of the
+// letters matter, so "ab" and "ba" get different numbers.
+// Example: "ab" -> h = 0*31 + 97 = 97, then h = 97*31 + 98 = 3105.
+// 31 is a small prime, which spreads the keys well across the buckets.
+// unsigned long wraps around on overflow, which is fine for hashing.
+inline unsigned long hashKey(const std::string& key)
+{
+    unsigned long h = 0;
+    for (int i = 0; i < (int)key.size(); i++)
+    {
+        h = h * 31 + (unsigned char)key[i];
+    }
+    return h;
+}
+
+// Number keys (like a letter id): the number itself is already spread out.
+inline unsigned long hashKey(int key)
+{
+    return (unsigned long)key;
+}
+
+// Any other key type: use C++'s built-in hash function.
+template <typename Key>
+unsigned long hashKey(const Key& key)
+{
+    return std::hash<Key>{}(key);
+}
+
 template <typename Index,typename Value>
 HashMap<Index,Value>::HashMap(int cap) : capacity(cap), count(0)
 {
@@ -108,8 +139,8 @@ HashMap<Index,Value>::~HashMap()
 template <typename Index,typename Value>
 int HashMap<Index,Value>::hash(const Index &key) const
 {
-    unsigned long hash_value = std::hash<Index>{}(key);
-    return hash_value % capacity;
+    unsigned long hash_value = hashKey(key);   // our formula (see hashKey above)
+    return hash_value % capacity;               // the remainder is the bucket number
 }
 
 template <typename Index,typename Value>
