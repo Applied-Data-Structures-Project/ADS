@@ -142,7 +142,7 @@ bool DiscoveryService::removeUniversity(const string& rawEmail, const string& ra
     return true;
 }
 
-// ---------- Notifications (FIFO queue) ----------
+// Notifications (FIFO queue) 
 
 Vector<Notification> DiscoveryService::notificationsOf(const string& email) const {
     Vector<Notification> out;

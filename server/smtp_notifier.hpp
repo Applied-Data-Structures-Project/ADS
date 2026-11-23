@@ -1,8 +1,6 @@
 #pragma once
 
 // smtp_notifier.hpp
-// Group 3 - Malak
-//
 // Sends real emails via the SvelteKit Node.js email relay (POST /api/internal/email),
 // avoiding any C++ TLS / libcurl OS dependencies on Windows, macOS, and Linux.
 // Lives in server/, not src/, so the services and tests stay isolated from HTTP.

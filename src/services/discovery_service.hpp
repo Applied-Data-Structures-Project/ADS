@@ -23,7 +23,7 @@ public:
     // Load saved universities and notifications from SQLite into memory at startup.
     void loadAll();
 
-    // ---- Saved universities ----
+    // Saved universities 
     Vector<std::string> savedOf(const std::string& email) const;
     bool isSaved(const std::string& email, const std::string& slug) const;
     bool saveUniversity(const std::string& email, const std::string& slug,
