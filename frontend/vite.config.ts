@@ -10,7 +10,11 @@ const apiProxy = {
 		target: apiTarget,
 		bypass(req: { url?: string }) {
 			const pathname = req.url?.split('?')[0];
-			if (pathname === '/api/coach' || pathname === '/api/internal/email') {
+			if (
+				pathname === '/api/coach' ||
+				pathname === '/api/internal/email' ||
+				pathname === '/api/transfer-equivalencies'
+			) {
 				return req.url;
 			}
 		}

@@ -13,6 +13,7 @@
 #include "crow/middlewares/cors.h"
 #include "services/admin_service.hpp"
 #include "services/application_service.hpp"
+#include "services/course_plan_service.hpp"
 #include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
 #include "services/student_service.hpp"
@@ -26,6 +27,7 @@ struct AppContext {
     StudentService& students;
     DiscoveryService& discovery;
     UniversityService& universities;
+    CoursePlanService& coursePlans;
     AdminService& admin;
     std::string uploadDir;
 
@@ -35,8 +37,10 @@ struct AppContext {
     std::mutex lock;
 
     AppContext(ApplicationService& a, LetterService& l, StudentService& s,
-               DiscoveryService& d, UniversityService& u, AdminService& adm, const std::string& uploads)
-        : applications(a), letters(l), students(s), discovery(d), universities(u), admin(adm), uploadDir(uploads) {}
+               DiscoveryService& d, UniversityService& u, CoursePlanService& cp,
+               AdminService& adm, const std::string& uploads)
+        : applications(a), letters(l), students(s), discovery(d), universities(u),
+          coursePlans(cp), admin(adm), uploadDir(uploads) {}
 };
 
 // Each route file adds its routes to the app.
@@ -45,6 +49,7 @@ void registerLetterRoutes(App& app, AppContext& ctx);
 void registerStudentRoutes(App& app, AppContext& ctx);
 void registerDiscoveryRoutes(App& app, AppContext& ctx);
 void registerRecommendationRoutes(App& app, AppContext& ctx);
+void registerCoursePlanRoutes(App& app, AppContext& ctx);
 void registerAdminRoutes(App& app, AppContext& ctx);
 
 // ---------- helpers shared by the route files (routes_common.cpp) ----------

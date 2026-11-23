@@ -160,6 +160,24 @@ Computes the top `k` (`1..20`, default `3`) unsaved partner universities for the
 
 ---
 
+## Course Equivalencies & Draft Course Plans
+
+### `GET /api/course-plans`
+Returns all saved Draft Lists of Courses for the signed-in student, ordered most recently updated first via C++ `mergeSort` (`include/mergesort.hpp`) and backed by `CoursePlanService` (`HashMap` + `Vector` + SQLite `course_plans` / `course_plan_items`).
+
+### `PUT /api/course-plans/<slug>`
+Saves or replaces the signed-in student's Draft List of Courses for the given host university `<slug>` (max 15 courses per university). Returns `{ "plan": {...}, "plans": [...] }`.
+
+### `DELETE /api/course-plans/<slug>`
+Deletes the signed-in student's saved course plan for `<slug>`. Returns `{ "plans": [...] }`.
+
+### `GET /api/transfer-equivalencies` (SvelteKit Node.js server route)
+Live proxy to AUC Banner's public Transfer Equivalency Tool (with 10-minute in-memory caching):
+- `?mode=institutions&q=<name>&fallback=1&max=30` — searches Banner institutions (`SORBTAG_SBGI_CODE`, `STVSBGI_DESC`).
+- `?mode=courses&instCode=<code>&q=<title>&offset=0&max=100` — fetches, sanitizes, and parses Banner course equivalencies for an institution.
+
+---
+
 ## Application
 
 ### `GET /api/application`

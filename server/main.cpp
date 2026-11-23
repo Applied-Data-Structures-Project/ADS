@@ -25,10 +25,12 @@
 #include "smtp_notifier.hpp"
 #include "repo/admin_repo.hpp"
 #include "repo/application_repo.hpp"
+#include "repo/course_plan_repo.hpp"
 #include "repo/discovery_repo.hpp"
 #include "repo/student_repo.hpp"
 #include "services/admin_service.hpp"
 #include "services/application_service.hpp"
+#include "services/course_plan_service.hpp"
 #include "services/discovery_service.hpp"
 #include "services/letter_service.hpp"
 #include "services/student_service.hpp"
@@ -156,16 +158,19 @@ int main() {
     ApplicationRepo repo(db);
     StudentRepo studentRepo(db);
     DiscoveryRepo discoveryRepo(db);
+    CoursePlanRepo coursePlanRepo(db);
     UniversityRepo universityRepo(db);
     ApplicationService applications(repo);
     LetterService letters(repo);
     StudentService students(studentRepo);
     DiscoveryService discovery(discoveryRepo);
+    CoursePlanService coursePlans(coursePlanRepo);
     UniversityService universityService(universityRepo);
     applications.loadAll();
     letters.loadAll();
     students.loadAll();
     discovery.loadAll();
+    coursePlans.loadAll();
     if (!universityService.loadAll()) {
         CROW_LOG_ERROR << "Could not load universities";
         sqlite3_close(db);
@@ -180,7 +185,7 @@ int main() {
     AdminService adminService(adminRepo, applications, discovery);
     adminService.loadAll();
 
-    AppContext ctx(applications, letters, students, discovery, universityService, adminService,
+    AppContext ctx(applications, letters, students, discovery, universityService, coursePlans, adminService,
                    envOr("UPLOAD_DIR", (repoRoot / "uploads").string()));
 
     App app;
@@ -326,6 +331,7 @@ int main() {
     registerStudentRoutes(app, ctx);
     registerDiscoveryRoutes(app, ctx);
     registerRecommendationRoutes(app, ctx);
+    registerCoursePlanRoutes(app, ctx);
     registerAdminRoutes(app, ctx);
 
     CROW_LOG_INFO << "Database: " << dbPath;

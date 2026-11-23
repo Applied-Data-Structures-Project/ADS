@@ -681,6 +681,39 @@ class StudentStore {
 		return null;
 	}
 
+	/** Uploads a generated PDF (e.g. Draft List of Courses) and awaits the server response. */
+	async uploadDocumentAsync(type: DocType, file: File): Promise<string | null> {
+		if (this.locked) return 'Your application is submitted, so files can no longer change.';
+		const isPdf = file.type === 'application/pdf' || file.name.toLowerCase().endsWith('.pdf');
+		if (!isPdf) return 'Only PDF files are accepted.';
+		if (file.size > RULES.maxFileMb * 1024 * 1024) return `The file is larger than ${RULES.maxFileMb} MB.`;
+
+		const before = this.docs[type];
+		this.docs[type] = {
+			docType: type,
+			fileName: file.name,
+			sizeKb: Math.max(1, Math.round(file.size / 1024)),
+			uploadedAt: today()
+		};
+		try {
+			const state = await callServer<ServerState>('PUT', `/api/application/documents/${type}`, file);
+			this.applyState(state, this.application.studentEmail, true);
+			this.docs[type] = {
+				docType: type,
+				fileName: file.name,
+				sizeKb: Math.max(1, Math.round(file.size / 1024)),
+				uploadedAt: today()
+			};
+			this.showToast('Draft course list PDF attached to your application.');
+			return null;
+		} catch (e) {
+			this.docs[type] = before;
+			const msg = errorText(e);
+			this.showToast(msg);
+			return msg;
+		}
+	}
+
 	/** DELETE /api/application/documents/<type>. */
 	async removeDoc(type: DocType) {
 		if (this.locked) return;

@@ -22,7 +22,9 @@
 		| 'moon'
 		| 'sun'
 		| 'logout'
-		| 'plus';
+		| 'plus'
+		| 'book'
+		| 'download';
 </script>
 
 <script lang="ts">
@@ -121,5 +123,12 @@
 	{:else if name === 'plus'}
 		<line x1="12" y1="5" x2="12" y2="19" />
 		<line x1="5" y1="12" x2="19" y2="12" />
+	{:else if name === 'book'}
+		<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+		<path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+	{:else if name === 'download'}
+		<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+		<polyline points="7 10 12 15 17 10" />
+		<line x1="12" y1="15" x2="12" y2="3" />
 	{/if}
 </svg>

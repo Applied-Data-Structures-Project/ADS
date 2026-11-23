@@ -7,6 +7,7 @@
 	import AppShell, { type NavGroup, type NavItem } from '#lib/components/student/AppShell.svelte';
 	import SessionGate from '#lib/components/auth/SessionGate.svelte';
 	import { catalog } from '#lib/explore/catalog.svelte.ts';
+	import { coursePlans } from '#lib/student/coursePlans.svelte.ts';
 	import { discovery } from '#lib/student/discovery.svelte.ts';
 	import { store } from '#lib/student/store.svelte.ts';
 	import { RULES } from '#lib/student/mocks.ts';
@@ -30,6 +31,13 @@
 					short: 'Saved',
 					icon: 'saved',
 					badge: store.savedCount
+				},
+				{
+					href: '/courses',
+					label: 'Course Equivalencies',
+					short: 'Courses',
+					icon: 'book',
+					badge: coursePlans.plans.length
 				}
 			]
 		},
@@ -84,8 +92,9 @@
 		void catalog.load();
 		await Promise.all([
 			store.loadFromServer(auth.email, accountId, auth.displayName),
-			discovery.loadFromServer(accountId)
-		]); // application, letters, /api/me profile, saved universities and notifications from C++ server
+			discovery.loadFromServer(accountId),
+			coursePlans.loadAll()
+		]); // application, letters, /api/me profile, saved universities, notifications, and course plans from C++ server
 		if (auth.needsProfile) {
 			await goto('/signup', { replace: true });
 			return;

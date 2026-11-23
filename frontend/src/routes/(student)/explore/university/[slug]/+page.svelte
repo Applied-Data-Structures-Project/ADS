@@ -103,7 +103,12 @@
             <Icon name="compare" class="w-3.5 h-3.5" /> {discovery.isCompared(uni.slug) ? 'In compare' : 'Compare'}
           </button>
         </div>
-        {#if uni.official_website_url.value}<a target="_blank" rel="noopener noreferrer" href={uni.official_website_url.value} class="shrink-0 rounded-xl bg-white px-4 py-3 text-[#0b1c30] font-semibold text-sm hover:bg-[#eff4ff]">Official website ↗</a>{/if}
+        <div class="flex flex-wrap gap-2 justify-end">
+          <a href={`/courses?university=${encodeURIComponent(uni.slug)}`} class="rounded-xl bg-white/15 hover:bg-white/25 text-white px-4 py-2.5 text-xs font-semibold inline-flex items-center gap-1.5">
+            <Icon name="book" class="w-3.5 h-3.5" /> Transferable courses
+          </a>
+          {#if uni.official_website_url.value}<a target="_blank" rel="noopener noreferrer" href={uni.official_website_url.value} class="shrink-0 rounded-xl bg-white px-4 py-2.5 text-[#0b1c30] font-semibold text-xs hover:bg-[#eff4ff] inline-flex items-center">Official website ↗</a>{/if}
+        </div>
       </div></div>
     </div>
     <section class="flex flex-wrap items-center justify-between gap-3 rounded-xl border border-[#b8cbe9] bg-[#eff4ff] p-4" aria-label="QS worldwide ranking">

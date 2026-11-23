@@ -685,7 +685,14 @@
 												Remove
 											</button>
 										{/if}
-										{#if d.template}
+										{#if d.type === 'courses'}
+											<a
+												href="/courses"
+												class="ml-auto h-9 px-3 rounded-lg text-xs font-semibold bg-[#eff4ff] text-[#003ea8] hover:bg-[#dce9ff] inline-flex items-center gap-1.5"
+											>
+												<Icon name="book" class="w-3.5 h-3.5" /> Open Course Planner
+											</a>
+										{:else if d.template}
 											<span class="ml-auto text-xs text-[#515f74]">Template: {d.template}</span>
 										{/if}
 									</div>
