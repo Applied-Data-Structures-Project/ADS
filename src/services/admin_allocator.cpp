@@ -30,7 +30,7 @@ Vector<double> buildScoreLookup(const Vector<PairResult> &pairs, int studentCoun
 }
 
 // For every (student, university) pair that is eligible, the position of that pair in the
-// scorer's list. Pairs that are not eligible get -1..
+// scorer's list. Pairs that are not eligible get -1.
 Vector<int> buildPairLookup(const Vector<PairResult> &pairs, int studentCount, int universityCount)
 {
     Vector<int> where(studentCount * universityCount, -1);
@@ -144,11 +144,10 @@ AdminMatchResult AdminAllocator::runMostPlaced() const
     return buildResult(students, universities, seats, scorer, matched);
 }
 
-// Option 2: Modified Hunagarian Algorithm to maximize the total score, but with a bonus added to every score so that placing one more student always beats any gain in scores. This ensures that the algorithm prioritizes placing as many students as possible, and then uses the scores to decide between ways of placing the same number of students. The bonus also keeps every edge weight above 0, which is necessary for the Hungarian algorithm to distinguish real edges from its padding 
-// so placing one more student always beats any gain in scores.
-// Scores then only decide between ways of placing the same number
-// of students. 
-
+// Option 2: Hungarian algorithm maximising the total score, with a bonus added to every
+// score so that placing one more student always beats any gain in scores. Scores then only
+// decide between ways of placing the same number of students. The bonus also keeps every
+// edge weight above 0, which the Hungarian code needs to tell real edges from its padding.
 AdminMatchResult AdminAllocator::runBestFit() const
 {
     if (!valid())
