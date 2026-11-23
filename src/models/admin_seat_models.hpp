@@ -1,5 +1,5 @@
 #pragma once
-// Plain data structs for the seat table (admin side). No logic here, only data.
+
 
 #include <string>
 #include "vector.hpp"

@@ -1,29 +1,6 @@
 #pragma once
 // Admin seat table: turns "university X has N places" into N numbered seats.
-//
-// WHY THIS EXISTS
-// The matcher (BipartiteGraph) puts ONE student into ONE item, and an item can be
-// used only once. A university with 2 places must therefore become 2 separate
-// items, "uva #1" and "uva #2". This class creates those seats, produces the lines
-// ("this student may take this seat, with this score") that feed the matcher, and
-// translates the matcher's answer back from a seat to its university.
-//
-// WHY EVERY UNIVERSITY KEEPS ALL ITS SEATS
-// Even a university nobody applied to keeps its seats. The admin needs to see real
-// seat counts and how many are left, and students who miss their choices can later
-// be offered the seats that remain. For the same reason, "seats left" is worked out
-// HERE from our own seat list, not from the matcher: a seat nobody can take never
-// appears in the matcher's graph.
-//
-// WHY A CLASS
-// The seat list has to be remembered between calls (build once, then look things up
-// and count seats left), so it lives in an object. The table is never changed after
-// it is built, so every matching option can share the same one.
-//
-// IMPORTANT: this table and the AdminFitScorer must be built from the SAME
-// university list in the SAME order. Each pair points at its university by position.
-//
-// This file must not include Crow (HTTP) or SQLite, so it can be tested alone.
+
 
 #include "vector.hpp"
 #include "models/admin_models.hpp"
@@ -36,9 +13,7 @@ const int DEFAULT_SEATS_PER_UNIVERSITY = 2;
 class AdminSeatTable
 {
 public:
-    // Builds every seat once. Copies what it needs and keeps no link to the inputs.
-    // If a university in the list ends up with a NEGATIVE seat count (or the default
-    // is negative) the table is INVALID: valid() is false and it holds no seats.
+
     AdminSeatTable(const Vector<AdminUniversity> &universities,
                    const Vector<AdminSeatCount> &adminCounts,
                    int defaultSeats = DEFAULT_SEATS_PER_UNIVERSITY);
@@ -47,7 +22,7 @@ public:
     int seatCount() const;       // total seats across all universities
     int universityCount() const; // number of universities the table was built from
 
-    // Details of one seat / one university. Throw std::out_of_range for a bad index.
+    // Details of one seat / one university.
     const AdminSeatSlot &slot(int seatIndex) const;
     const AdminUniversitySeats &universitySeats(int universityIndex) const;
 

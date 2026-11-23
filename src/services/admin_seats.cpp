@@ -9,9 +9,7 @@ namespace
 {
 
 // Puts the admin's counts into a lookup book: university name -> seats.
-// We use our HashMap so that, later, "did the admin set this university?" is answered
-// instantly instead of searching the admin's whole list once per university.
-// If the same name appears twice, the LATER entry replaces the earlier one.
+
 void loadAdminCounts(const Vector<AdminSeatCount> &adminCounts, HashMap<std::string, int> &book)
 {
     for (int i = 0; i < adminCounts.size(); ++i)
@@ -24,7 +22,7 @@ std::string seatLabel(const std::string &slug, int number)
     return slug + " #" + std::to_string(number);
 }
 
-} // namespace
+} 
 
 // Builds the whole table once, in local variables, and keeps it only if every
 // university's seat count is valid. On any problem we return early and the

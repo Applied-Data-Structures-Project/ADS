@@ -1,29 +1,7 @@
 #pragma once
-// Admin "fit score" service: declarations only (the code is in admin_scoring.cpp).
-//
-// DESIGN
-// For every (student, university) pair we answer two SEPARATE questions:
-//   (a) Is the student ALLOWED to go there?  Yes/no. If no, we record the reason.
-//   (b) If allowed, how good is the fit?     One number from 0 to 1.
-// The matching algorithms (a later step) only see the allowed pairs and their
-// scores. The matcher never sees GPA directly.
-//
-// All of this lives in one class, AdminFitScorer. Its work is split into two
-// stages so moving a slider is cheap:
-//   1. The CONSTRUCTOR runs the eligibility checks and converts the raw data
-//      into four factor numbers (0..1) for every pair. Done once.
-//   2. setWeights() blends the stored factors with the slider weights into one
-//      score. Done again every time a slider moves. It does NOT redo the
-//      eligibility checks or the factor conversions.
-// That is why each PairResult stores the four factors, not just the final score.
-//
-// The scorer COPIES what it needs. It keeps no references or pointers to the
-// students/universities Vectors that were passed in, so nothing can dangle.
-//
-// Unknown data never blocks a student: an unknown minimum GPA, an empty
-// accepted-majors list, or an empty semester list counts as "check passed".
-//
-// This file must not include Crow (HTTP) or SQLite, so it can be tested alone.
+// Admin "fit score" does two tasks
+// 1. For every (student, university) pair, it checks whether the student is eligible
+// 2. It computes a score for every eligible pair, based on four factors and the admin's weights.
 
 #include "vector.hpp"
 #include "models/admin_models.hpp"
@@ -64,7 +42,7 @@ struct PairResult
     bool eligible() const { return reason == PairReason::Eligible; }
 };
 
-// Plain-English sentence for a reason, e.g. "GPA is below the AUC minimum of 2.8".
+
 const char *reasonText(PairReason reason);
 
 // Holds one PairResult for every (student, university) pair and keeps the
@@ -73,10 +51,7 @@ class AdminFitScorer
 {
 public:
     // Stage 1: builds one result for EVERY pair, eligible or not.
-    // allowUnranked = true lets a student be matched to a university outside
-    // their 3 choices (with a low preference factor).
-    // If the weights are invalid the object is still created, every score
-    // stays 0, and weightsApplied() returns false.
+
     AdminFitScorer(const Vector<AdminStudent> &students,
                    const Vector<AdminUniversity> &universities,
                    bool allowUnranked,

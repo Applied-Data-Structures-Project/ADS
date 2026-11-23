@@ -1,8 +1,5 @@
 #pragma once
-// Plain data structs for the result of one matching run (admin side).
-// No logic here, only data. A result is a SNAPSHOT: it holds copies of the real
-// data (students, university names), not positions in lists, so it stays correct
-// even if the live student list changes afterwards (for example in a saved run).
+
 
 #include <string>
 #include "vector.hpp"

@@ -16,8 +16,7 @@ void addEdgesToGraph(const Vector<AdminSeatEdge> &edges, double bonus,
 }
 
 // One flat list holding the score of every (student, university) pair, so a placed
-// student's score can be found instantly. The entry for student s at university u is
-// at position s * universityCount + u. Pairs that are not eligible stay 0.
+// student's score can be found instantly.
 Vector<double> buildScoreLookup(const Vector<PairResult> &pairs, int studentCount, int universityCount)
 {
     Vector<double> scoreOf(studentCount * universityCount, 0.0);
@@ -31,8 +30,7 @@ Vector<double> buildScoreLookup(const Vector<PairResult> &pairs, int studentCoun
 }
 
 // For every (student, university) pair that is eligible, the position of that pair in the
-// scorer's list. Pairs that are not eligible get -1. The entry for student s at university u
-// is at position s * universityCount + u. Used to read a candidate's warning flags.
+// scorer's list. Pairs that are not eligible get -1..
 Vector<int> buildPairLookup(const Vector<PairResult> &pairs, int studentCount, int universityCount)
 {
     Vector<int> where(studentCount * universityCount, -1);
@@ -47,7 +45,7 @@ Vector<int> buildPairLookup(const Vector<PairResult> &pairs, int studentCount, i
 
 // Turns the matcher's answer (pairs of student number and seat number) into the
 // snapshot result: who is placed at each university, and who is not placed.
-// Returns an invalid (empty) result if the answer is impossible (a bug upstream).
+// Returns an invalid (empty) result if the answer is impossible.
 AdminMatchResult buildResult(const Vector<AdminStudent> &students,
                              const Vector<AdminUniversity> &universities,
                              const AdminSeatTable &seats,
@@ -90,12 +88,11 @@ AdminMatchResult buildResult(const Vector<AdminStudent> &students,
         placedSeats.push_back(seat);
     }
 
-    // Sanity check: no seat used twice, and no university over its seat count.
+    // Check that no seat used twice, and no university over its seat count.
     if (!seats.countSeatsLeft(placedSeats).valid)
         return AdminMatchResult();
 
-    // Everyone who was not placed (this includes students the matcher never heard of,
-    // because they had no eligible university).
+    // Everyone who was not placed is pushed into the unplaced list.
     for (int s = 0; s < students.size(); ++s)
     {
         if (!isPlaced[s])
@@ -106,11 +103,11 @@ AdminMatchResult buildResult(const Vector<AdminStudent> &students,
     return result;
 }
 
-} // namespace
+}
 
 // Copies the lists first, then builds the scorer and the seat table FROM THE COPIES
 // (the members are declared in this order, so students and universities exist before
-// the scorer and seat table are built). Both therefore use the same university list.
+// the scorer and seat table are built). Both therefore use the same university list ensuring correctness.
 AdminAllocator::AdminAllocator(const Vector<AdminStudent> &studentList,
                                const Vector<AdminUniversity> &universityList,
                                const Vector<AdminSeatCount> &adminSeatCounts,
@@ -124,20 +121,18 @@ AdminAllocator::AdminAllocator(const Vector<AdminStudent> &studentList,
 {
 }
 
-// Usable only if the seat table built properly and valid sliders were applied.
 bool AdminAllocator::valid() const
 {
     return seats.valid() && scorer.weightsApplied();
 }
 
-// Passes the sliders to the scorer, which only redoes the blending.
+// Passes the sliders to the scorer
 bool AdminAllocator::setWeights(const ScoringWeights &weights)
 {
     return scorer.setWeights(weights);
 }
 
-// Option 1: build the graph from the seat table's lines, run Hopcroft-Karp (which
-// maximises the number of students placed and ignores scores), then build the result.
+// Option 1: build the graph from the seat table's lines, run Hopcroft-Karp then build the result.
 AdminMatchResult AdminAllocator::runMostPlaced() const
 {
     if (!valid())
@@ -149,12 +144,11 @@ AdminMatchResult AdminAllocator::runMostPlaced() const
     return buildResult(students, universities, seats, scorer, matched);
 }
 
-// Option 2: the same, but with the Hungarian algorithm, which maximises the total
-// score. The bonus added to every score is larger than the scores of all students
-// added together (each score is at most 1), so placing one more student always beats
-// any gain in scores. Scores then only decide between ways of placing the same number
-// of students. The bonus also keeps every edge weight above 0, which the Hungarian
-// code needs to tell real edges from its padding.
+// Option 2: Modified Hunagarian Algorithm to maximize the total score, but with a bonus added to every score so that placing one more student always beats any gain in scores. This ensures that the algorithm prioritizes placing as many students as possible, and then uses the scores to decide between ways of placing the same number of students. The bonus also keeps every edge weight above 0, which is necessary for the Hungarian algorithm to distinguish real edges from its padding 
+// so placing one more student always beats any gain in scores.
+// Scores then only decide between ways of placing the same number
+// of students. 
+
 AdminMatchResult AdminAllocator::runBestFit() const
 {
     if (!valid())
@@ -167,11 +161,8 @@ AdminMatchResult AdminAllocator::runBestFit() const
     return buildResult(students, universities, seats, scorer, matched);
 }
 
-// Option 4: the same as option 2 but with NO bonus, so the Hungarian algorithm maximises the
-// total score and nothing else. This is quality first: it may leave a student unplaced, even
-// with a seat free, when that gives a higher total. Note that the Hungarian code treats a line
-// with a score of exactly 0 as padding, so a student whose only match scores 0 is left
-// unplaced here (placing them would add nothing to the total anyway).
+// Option 3: the same as option 2 but with NO bonus, so the Hungarian algorithm maximises the
+// total score and nothing else. This is quality first.
 AdminMatchResult AdminAllocator::runHighestScore() const
 {
     if (!valid())
@@ -184,10 +175,7 @@ AdminMatchResult AdminAllocator::runHighestScore() const
 }
 
 // Option 3: one Heap per university holds that university's eligible students, ordered by
-// fit score (highest on top). The heap is a good fit because we usually need only the top
-// few, and popping gives the next best candidate each time, like a waiting list. PriorityItem
-// (from heap.hpp) breaks ties for us: on equal scores the smaller "seq" comes first, and we
-// use the student's position as seq, so the lower student number wins a tie.
+// fit score (highest on top).
 AdminShortlistResult AdminAllocator::runTopCandidates(int maxPerUniversity) const
 {
     if (!valid())

@@ -2,9 +2,7 @@
 
 #include <string>
 
-// ---------------------------------------------------------------------------
-// Numbers you may want to change
-// ---------------------------------------------------------------------------
+
 
 // Preference factor by rank: 1st choice, 2nd choice, 3rd choice, unranked.
 // Change these four numbers to change how much a student's choice order matters.
@@ -22,9 +20,6 @@ static const double MAX_STATEMENT_RATING = 10.0;
 namespace
 {
 
-// ---------------------------------------------------------------------------
-// Small general helpers
-// ---------------------------------------------------------------------------
 
 // Forces a number into the range 0..1 (below 0 becomes 0, above 1 becomes 1).
 double clamp01(double value)
@@ -170,8 +165,7 @@ double fairnessFactor(const AdminStudent &student)
     return student.studiedAbroadBefore ? 0.0 : 1.0;
 }
 
-} // namespace
-
+}
 // ---------------------------------------------------------------------------
 // Public functions (declared in admin_scoring.hpp)
 // ---------------------------------------------------------------------------
@@ -199,8 +193,7 @@ const char *reasonText(PairReason reason)
     return "Unknown reason";
 }
 
-// Weights are valid when none is negative and they do not all add up to zero.
-// (A zero sum would mean dividing by zero in blendScore.)
+
 bool AdminFitScorer::weightsAreValid(const ScoringWeights &weights)
 {
     if (weights.preference < 0.0 || weights.gpa < 0.0 ||
@@ -225,9 +218,7 @@ double AdminFitScorer::blendScore(const FactorScores &factors, const ScoringWeig
 }
 
 // Stage 1 (constructor): builds one PairResult for every student/university pair.
-// For eligible pairs it also fills in the four factors and the two flags.
-// Everything is copied into our own Vector, so we keep no link to the inputs.
-// At the end it tries the given weights; if they are invalid, scores stay 0.
+
 AdminFitScorer::AdminFitScorer(const Vector<AdminStudent> &students,
                                const Vector<AdminUniversity> &universities,
                                bool allowUnranked,

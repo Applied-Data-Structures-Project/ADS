@@ -1,6 +1,4 @@
 #pragma once
-// Plain data structs for the ADMIN side. No logic here, only data.
-// The "Admin" prefix keeps these names separate from the student side's files.
 
 #include <string>
 #include "vector.hpp"
