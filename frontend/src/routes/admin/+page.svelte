@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onDestroy, onMount } from 'svelte';
 	import { auth } from '#lib/auth/store.svelte.ts';
+	import { theme } from '#lib/theme.svelte.ts';
 	import { adminApi, AdminApiError } from '#lib/admin/api.ts';
 	import {
 		filterAndSortPlacements,
@@ -66,7 +67,7 @@
 	let selectedCycle = $state<string>(ACADEMIC_CYCLES[0]);
 	let activePage = $state<AdminPageId>('applications');
 	let sidebarCollapsed = $state(false);
-	let darkMode = $state(false);
+	const darkMode = $derived(theme.dark);
 	let filterPanelOpen = $state(true);
 	let mobileWeightsOpen = $state(true);
 
@@ -224,7 +225,7 @@
 	});
 
 	onMount(async () => {
-		darkMode = localStorage.getItem('auc-admin-dark-mode') === '1';
+		theme.init();
 		await refreshAllData();
 	});
 
@@ -266,9 +267,8 @@
 	}
 
 	function toggleDarkMode() {
-		darkMode = !darkMode;
-		localStorage.setItem('auc-admin-dark-mode', darkMode ? '1' : '0');
-		showToast(darkMode ? 'Switched to Dark Mode.' : 'Switched to Light Mode.');
+		const next = theme.toggle();
+		showToast(next ? 'Switched to Dark Mode.' : 'Switched to Light Mode.');
 	}
 
 	const modalReturnPoint = $derived(

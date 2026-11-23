@@ -5,6 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="text-scale" content="scale" />
 		<title>AUC Exchange Matcher — IPSO Admin Console</title>
+		<script>
+			try {
+				var saved = localStorage.getItem('auc-theme-dark');
+				var isDark =
+					saved !== null
+						? saved === '1'
+						: localStorage.getItem('auc-student-dark-mode') === '1' ||
+							localStorage.getItem('auc-admin-dark-mode') === '1';
+				if (isDark) document.documentElement.classList.add('admin-dark');
+			} catch {}
+		</script>
 		%sveltekit.head%
 	</head>
 	<body data-sveltekit-preload-data="hover">

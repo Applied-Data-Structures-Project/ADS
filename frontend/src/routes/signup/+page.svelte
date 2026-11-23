@@ -7,6 +7,7 @@
 	import MajorSelect from '#lib/components/student/MajorSelect.svelte';
 	import { roleHome } from '#lib/auth/roles.ts';
 	import { auth } from '#lib/auth/store.svelte.ts';
+	import { theme } from '#lib/theme.svelte.ts';
 	import { validateProfile, type ProfileErrors, type StudentProfileInput } from '#lib/auth/profile.ts';
 	import { isValidAucMajor } from '#lib/student/auc-majors.ts';
 	import { callServer } from '#lib/student/api.ts';
@@ -133,6 +134,15 @@
 					{auth.email}
 				</span>
 			{/if}
+			<button
+				type="button"
+				onclick={() => theme.toggle()}
+				aria-label={theme.dark ? 'Switch to light mode' : 'Switch to dark mode'}
+				class="h-9 px-3 rounded-xl bg-[#eff4ff] hover:bg-[#e5eeff] border border-[#c6c6cd]/50 text-[#0b1c30] text-xs font-semibold inline-flex items-center gap-2 cursor-pointer shrink-0 transition-colors"
+			>
+				<Icon name={theme.dark ? 'sun' : 'moon'} class="w-4 h-4" strokeWidth={2} />
+				<span class="hidden sm:inline">{theme.dark ? 'Light' : 'Dark'}</span>
+			</button>
 			<button
 				type="button"
 				onclick={() => auth.signOut()}

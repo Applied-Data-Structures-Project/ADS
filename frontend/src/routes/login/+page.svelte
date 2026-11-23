@@ -9,11 +9,12 @@
 	import { DEMO_ROLES, demoLabel } from '#lib/auth/demo.ts';
 	import { isSafeNext, roleHome, type Role } from '#lib/auth/roles.ts';
 	import { auth, type LoginKind } from '#lib/auth/store.svelte.ts';
+	import { theme } from '#lib/theme.svelte.ts';
 	import { callServer } from '#lib/student/api.ts';
 
 	let kind = $state<LoginKind>('student');
 	let busy = $state(false);
-	let dark = $state(false);
+	const dark = $derived(theme.dark);
 
 	const requestedNext = $derived(page.url.searchParams.get('next'));
 	const next = $derived(isSafeNext(requestedNext) ? requestedNext : null);
@@ -31,11 +32,7 @@
 	);
 
 	onMount(async () => {
-		try {
-			dark = localStorage.getItem('auc-student-dark-mode') === '1';
-		} catch {
-			dark = false;
-		}
+		theme.init();
 
 		auth.rememberNext(next);
 		await auth.init();
@@ -45,12 +42,7 @@
 	});
 
 	function toggleDark() {
-		dark = !dark;
-		try {
-			localStorage.setItem('auc-student-dark-mode', dark ? '1' : '0');
-		} catch {
-			// Storage blocked: the choice only lasts for this visit.
-		}
+		theme.toggle();
 	}
 
 	async function signIn() {

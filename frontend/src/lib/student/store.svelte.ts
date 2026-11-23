@@ -27,6 +27,7 @@ import { callServer, errorText } from './api.ts';
 import { auth } from '../auth/store.svelte.ts';
 import { catalog } from '../explore/catalog.svelte.ts';
 import { discovery } from './discovery.svelte.ts';
+import { theme } from '../theme.svelte.ts';
 
 // ---------------------------------------------------------------------------
 // Small helpers used by several pages
@@ -169,7 +170,6 @@ export interface MissingItem {
 	label: string;
 }
 
-const DARK_KEY = 'auc-student-dark-mode';
 const budgetKey = (accountId: string) => `auc-budget-v1:${accountId}`;
 
 class StudentStore {
@@ -202,8 +202,11 @@ class StudentStore {
 
 	// ---- UI ----------------------------------------------------------------
 	toast = $state<string | null>(null);
-	darkMode = $state(false);
 	private toastTimer: ReturnType<typeof setTimeout> | null = null;
+
+	get darkMode(): boolean {
+		return theme.dark;
+	}
 
 	// ---- Derived values ------------------------------------------------------
 	/** The saved schools, shared with the Explorer, Saved and Compare pages. */
@@ -335,20 +338,11 @@ class StudentStore {
 
 	/** Call once in the browser (onMount). */
 	loadDarkMode() {
-		try {
-			this.darkMode = localStorage.getItem(DARK_KEY) === '1';
-		} catch {
-			this.darkMode = false;
-		}
+		theme.init();
 	}
 
 	toggleDarkMode() {
-		this.darkMode = !this.darkMode;
-		try {
-			localStorage.setItem(DARK_KEY, this.darkMode ? '1' : '0');
-		} catch {
-			// Storage blocked: the choice only lasts for this visit.
-		}
+		theme.toggle();
 	}
 
 	// ---- Student profile, eligibility & budget (GET/PUT /api/me) -------------

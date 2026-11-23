@@ -1145,7 +1145,7 @@
 									bind:value={slot.hostCourseTitle}
 									oninput={markDirty}
 									placeholder="e.g. Algorithms in Bioinformatics"
-									class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 text-xs text-[#0b1c30] focus:outline-none focus:border-black"
+									class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 bg-white text-xs text-[#0b1c30] focus:outline-none focus:border-black"
 								/>
 							</div>
 							<div>
@@ -1158,7 +1158,7 @@
 									bind:value={slot.hostCourseCode}
 									oninput={markDirty}
 									placeholder="e.g. CS 301"
-									class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 text-xs font-mono-num text-[#0b1c30] focus:outline-none focus:border-black"
+									class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 bg-white text-xs font-mono-num text-[#0b1c30] focus:outline-none focus:border-black"
 								/>
 							</div>
 						</div>
@@ -1173,7 +1173,7 @@
 								bind:value={slot.aucEquivalent}
 								oninput={markDirty}
 								placeholder="e.g. CSCE 3201 Algorithms, cr.hrs.: 3"
-								class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 text-xs text-[#0b1c30] focus:outline-none focus:border-black"
+								class="w-full h-9 px-2.5 rounded-lg border border-[#c6c6cd]/50 bg-white text-xs text-[#0b1c30] focus:outline-none focus:border-black"
 							/>
 						</div>
 					</div>
