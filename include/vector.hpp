@@ -6,34 +6,16 @@ template <class T>
 class Vector
 {
 public:
-    Vector() : arr(nullptr), s(0), c(0) {}
+    Vector();
+    explicit Vector(int size);
+    Vector(int size, const T &val);
+    Vector(const Vector &other);
+    ~Vector();
 
-    explicit Vector(int size) : s(size), c(size)
-    {
-        arr = (c > 0) ? new T[c] : nullptr;
-        for (int i = 0; i < s; ++i)
-            arr[i] = T();
-    }
-
-    Vector(int size, const T &val) : s(size), c(size)
-    {
-        arr = (c > 0) ? new T[c] : nullptr;
-        for (int i = 0; i < s; ++i)
-            arr[i] = val;
-    }
-
-    Vector(const Vector &other) : s(other.s), c(other.s)
-    {
-        arr = (c > 0) ? new T[c] : nullptr;
-        for (int i = 0; i < s; ++i)
-            arr[i] = other.arr[i];
-    }
-    ~Vector() { delete[] arr; }
-
-    T *begin() { return arr; }
-    T *end() { return arr + s; }
-    const T *begin() const { return arr; }
-    const T *end() const { return arr + s; }
+    T *begin();
+    T *end();
+    const T *begin() const;
+    const T *end() const;
 
     Vector &operator=(const Vector &other);
     T &operator[](const int &idx);
@@ -54,112 +36,4 @@ private:
     int c; // capacity
 };
 
-template <class T>
-Vector<T> &Vector<T>::operator=(const Vector &other)
-{
-    if (this != &other)
-    {
-        delete[] arr;
-        s = other.s;
-        c = other.s;
-        arr = (c > 0) ? new T[c] : nullptr;
-        for (int i = 0; i < s; ++i)
-            arr[i] = other.arr[i];
-    }
-    return *this;
-}
-template <class T>
-T &Vector<T>::operator[](const int &idx)
-{
-    return arr[idx];
-}
-
-template <class T>
-const T &Vector<T>::operator[](const int &idx) const
-{
-    return arr[idx];
-}
-
-template <class T>
-T &Vector<T>::at(const int &idx)
-{
-    if (idx < s && idx >= 0)
-        return arr[idx];
-    throw std::out_of_range("Index is out of bounds");
-}
-
-template <class T>
-int Vector<T>::size() const
-{
-    return s;
-}
-
-template <class T>
-int Vector<T>::capacity() const
-{
-    return c;
-}
-
-template <class T>
-void Vector<T>::erase()
-{
-    for (int i = 0; i < s; ++i)
-        arr[i] = T();
-    s = 0;
-}
-
-template <class T>
-void Vector<T>::reserve(const int &new_cap)
-{
-    if (new_cap <= c)
-        return;
-
-    T *new_arr = new T[new_cap];
-    for (int i = 0; i < s; ++i)
-    {
-        new_arr[i] = std::move(arr[i]); // Single pass copy
-    }
-    delete[] arr;
-    arr = new_arr;
-    c = new_cap;
-}
-
-template <class T>
-void Vector<T>::resize(const int &size)
-{
-    if (size > c)
-    {
-        reserve(size);
-    }
-    for (int i = s; i < size; ++i)
-    {
-        arr[i] = T();
-    }
-    s = size;
-}
-
-template <class T>
-void Vector<T>::push_back(const T &item)
-{
-    if (s == c)
-    {
-        reserve(c == 0 ? 1 : c * 2);
-    }
-    arr[s++] = item;
-}
-
-template <class T>
-void Vector<T>::assign(const int &size, const T &val)
-{
-    if (size > c)
-    {
-        delete[] arr;
-        c = size;
-        arr = new T[c];
-    }
-    s = size;
-    for (int i = 0; i < s; ++i)
-    {
-        arr[i] = val;
-    }
-}
+#include "vector.tpp"   // function bodies

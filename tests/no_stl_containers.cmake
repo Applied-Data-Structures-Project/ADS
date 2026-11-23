@@ -10,7 +10,7 @@ set(FORBIDDEN_HEADERS
 
 set(violations "")
 foreach(dir ${SCAN_DIRS})
-  file(GLOB_RECURSE files "${dir}/*.hpp" "${dir}/*.h" "${dir}/*.cpp")
+  file(GLOB_RECURSE files "${dir}/*.hpp" "${dir}/*.h" "${dir}/*.tpp" "${dir}/*.cpp")
   foreach(f ${files})
     file(STRINGS "${f}" lines REGEX "^[ \t]*#[ \t]*include[ \t]*<")
     foreach(line ${lines})

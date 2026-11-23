@@ -1,5 +1,8 @@
 #pragma once
 
+// Circular-array queue (first in, first out).
+// push, pop, front, empty and size are O(1); push is O(1) amortized because
+// grow() doubles the array only when it is full.
 template <typename T>
 class Queue {
 private:
@@ -9,88 +12,21 @@ private:
     int tail;      // Index where the next item will be pushed
     int count;     // Number of items currently in the queue
 
-    void grow() {
-        int newCapacity = capacity * 2;
-        T* newArr = new T[newCapacity];
-        
-        // Copy elements in logical order from head to tail
-        for (int i = 0; i < count; i++) {
-            newArr[i] = arr[(head + i) % capacity];
-        }
-
-        delete[] arr;
-        arr = newArr;
-        capacity = newCapacity;
-        head = 0;
-        tail = count;
-    }
+    void grow();   // doubles the array, keeping the items in order
 
 public:
-    Queue(int initialCapacity = 10) : capacity(initialCapacity), head(0), tail(0), count(0) {
-        if (capacity < 1) capacity = 10;
-        arr = new T[capacity];
-    }
+    Queue(int initialCapacity = 10);
+    Queue(const Queue& other);
+    Queue& operator=(const Queue& other);
+    ~Queue();
 
-    Queue(const Queue& other) : capacity(other.capacity), head(0), tail(other.count), count(other.count) {
-        arr = new T[capacity];
-        for (int i = 0; i < count; i++) {
-            arr[i] = other.arr[(other.head + i) % other.capacity];
-        }
-    }
-
-    Queue& operator=(const Queue& other) {
-        if (this != &other) {
-            delete[] arr;
-            capacity = other.capacity;
-            count = other.count;
-            head = 0;
-            tail = count;
-            arr = new T[capacity];
-            for (int i = 0; i < count; i++) {
-                arr[i] = other.arr[(other.head + i) % other.capacity];
-            }
-        }
-        return *this;
-    }
-
-    ~Queue() {
-        delete[] arr;
-    }
-
-    void push(const T& val) {
-        if (count == capacity) {
-            grow();
-        }
-        arr[tail] = val;
-        tail = (tail + 1) % capacity;
-        count++;
-    }
-
-    void pop() {
-        if (count == 0) return;
-        head = (head + 1) % capacity;
-        count--;
-    }
-
-    T& front() {
-        return arr[head];
-    }
-
-    const T& front() const {
-        return arr[head];
-    }
-
-    bool empty() const {
-        return count == 0;
-    }
-
-    int size() const {
-        return count;
-    }
-
-    void clear() {
-        head = 0;
-        tail = 0;
-        count = 0;
-    }
+    void push(const T& val);
+    void pop();
+    T& front();
+    const T& front() const;
+    bool empty() const;
+    int size() const;
+    void clear();
 };
+
+#include "queue.tpp"   // function bodies
