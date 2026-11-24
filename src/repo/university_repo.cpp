@@ -5,11 +5,8 @@ using namespace std;
 
 // This function helps us read text from our SQLite database.
 // SQLite returns text as a pointer, but we want to store it as a normal C++ string inside our University struct.
-//
 // We pass two things to the function:
 // 1. statement: the SQL query that we are reading from.
-// 2. column: the number of the column we want to read.
-//
 // For example, column 0 contains the university slug,and column 1 contains the university name.
 
 static string getText(sqlite3_stmt* statement, int column) {
@@ -18,9 +15,7 @@ static string getText(sqlite3_stmt* statement, int column) {
     const unsigned char* text =
         sqlite3_column_text(statement, column);
 
-    // Some university fields may be empty in our database.
-       // SQLite represents missing values using NULL.
-       // If we find a NULL value, we return an empty strin so the program does not try to read a null pointer.
+    // Some university fields may be empty in our database and SQLite represents missing values using NULL. If we find a NULL value, we return an empty string so the program does not try to read a null pointer.
     if (text == nullptr) {
         return "";
     }
@@ -38,25 +33,17 @@ UniversityRepo::UniversityRepo(sqlite3* database) {
 
 // This function loads all universities from SQLite.
 // The result parameter is a reference to our Vector.
-// This means we can fill the original Vector directly, instead of returning a separate copy.
-// The function returns:
-// true  -> if the universities were loaded successfully.
-// false -> if there was a problem reading the database.
+// This means we can fill the original vector directly instead of returning a separate copy.
+// The function returns: true if the universities were loaded successfully and false if there was a problem reading the database.
 
 bool UniversityRepo::loadUniversities(Vector<University>& result) {
 
-    // Before using the database, we check that the connection actually exists.
-     // nullptr means the pointer does not point to a valid database connection.
     if (db == nullptr) {
         return false;
     }
 
-    // This query selects the university information we need.
-       // SELECT tells SQLite which columns to retrieve.
-       // The first six columns contain the basic university details.
-       // The next four columns contain academic requirements
-       // and the university's course catalog link.
-       // We will read the columns in exactly this order below.
+    
+    //SELECT tells SQLite which columns to retrieve. The first six columns contain the basic university details. The next four columns contain academic requirements and the university's course catalog link.
     
     const char* sql =
     "SELECT slug, official_name, country, city, region, metadata_json, "
@@ -66,15 +53,14 @@ bool UniversityRepo::loadUniversities(Vector<University>& result) {
             "FROM universities";
 
     // A statement is the SQL query after SQLite prepares it.
-       // We start with nullptr because the statement has not been prepared yet.
     sqlite3_stmt* statement = nullptr;
 
     // Prepare the SQL query so SQLite can execute it.
-       // db        -> the database connection.
-       // sql       -> the query we want to execute.
-       // -1        -> SQLite reads the full query string.
-       // &statement -> stores the prepared statement.
-       // nullptr   -> we do not need the unused SQL remainder.
+       // db is the database connection.
+       // sql is the query we want to execute.
+       // -1 is so SQLite reads the full query string.
+       // &statement stores the newly prepared statement.
+       // nullptr is because we do not need the unused SQL remainder.
        // SQLite returns a status code telling us whether preparing the query was successful.
     int status = sqlite3_prepare_v2(
         db, sql, -1, &statement, nullptr
@@ -120,7 +106,7 @@ bool UniversityRepo::loadUniversities(Vector<University>& result) {
         // Read the university's course catalog URL.
         u.courseCatalogUrl = getText(statement, 9);
 
-        // Additional fields for the C++ Heap recommender.
+        // Additional fields
         u.agreementStatus = getText(statement, 10);
         u.studentLevelsJson = getText(statement, 11);
         u.excludedMajorsJson = getText(statement, 12);
@@ -139,9 +125,7 @@ bool UniversityRepo::loadUniversities(Vector<University>& result) {
     // Release the SQL statement after using it.
     sqlite3_finalize(statement);
 
-    // SQLITE_DONE means SQLite reached the end of the query results successfully.
-        // If the loop stopped for another reason, an error may have happened while reading.
-        // In that case, we return false rather than giving the program incomplete university data.
+    // SQLITE_DONE means SQLite reached the end of the query results successfully. If the loop stopped for another reason, an error may have happened while reading. In that case, we return false rather than giving the program incomplete university data.
 
     if (status != SQLITE_DONE) {
         return false;

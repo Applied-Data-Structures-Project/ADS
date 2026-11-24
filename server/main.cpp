@@ -206,20 +206,17 @@ int main() {
     CROW_ROUTE(app, "/api/universities")
     ([&universityService](const crow::request& req) {
 
-        // Read the search values from the URL.
-               // If a value was not provided, it will be nullptr.
+        // Read the search values from the URL. If a value was not provided, it will be nullptr.
                const char* nameParam = req.url_params.get("name");
                const char* countryParam = req.url_params.get("country");
                const char* regionParam = req.url_params.get("region");
 
-               // Convert the values into normal C++ strings.
-               // An empty string means that filter is not used.
+               // Convert the values into normal C++ strings. An empty string means that filter is not used.
                std::string name = nameParam ? nameParam : "";
                std::string country = countryParam ? countryParam : "";
                std::string region = regionParam ? regionParam : "";
 
                // Ask our service to search the universities.
-               // The service uses our custom Vector.
                Vector<University> universities =
                    universityService.search(name, country, region);
 

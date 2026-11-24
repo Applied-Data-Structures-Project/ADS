@@ -58,7 +58,6 @@ const University* UniversityService::find(string slug) {
 
 static string toLowercase(string text) {
 
-    // Use size_t because string length is an unsigned number.
     for (size_t i = 0; i < text.length(); i++) {
         text[i] = tolower((unsigned char)text[i]);
     }
@@ -74,8 +73,7 @@ Vector<University> UniversityService::search(string name, string country, string
     Vector<University> results;
 
     
-    // Convert the search inputs to lowercase.
-       // This allows students to search without matching capital letters.
+    // Convert the search inputs to lowercase. This allows students to search without matching capital letters.
        name = toLowercase(name);
        country = toLowercase(country);
        region = toLowercase(region);
@@ -85,7 +83,7 @@ Vector<University> UniversityService::search(string name, string country, string
     for (int i = 0; i < universities.size(); i++) {
         
         // Get the university we are currently checking.
-               University u = universities[i];
+           const University& u = universities[i];
         
         
         // Compare lowercase values to ignore capitalization.
@@ -93,18 +91,15 @@ Vector<University> UniversityService::search(string name, string country, string
                string universityCountry = toLowercase(u.country);
                string universityRegion = toLowercase(u.region);
 
-        // Check whether the university name contains the search text.
-               // If name is empty, every university matches this condition.
+        // Check whether the university name contains the search text. If name is empty, every university matches this condition.
                bool nameMatches =
                    universityName.find(name) != string::npos;
 
-               // Check whether the country matches the selected country.
-               // If country is empty, we include universities from all countries.
+               // Check whether the country matches the selected country. If country is empty, we include universities from all countries.
                bool countryMatches =
                    country == "" || universityCountry == country;
 
-               // Check whether the region matches the selected region.
-               // If region is empty, we include universities from all regions.
+               // Check whether the region matches the selected region. If region is empty, we include universities from all regions.
                bool regionMatches =
                    region == "" || universityRegion == region;
 

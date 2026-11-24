@@ -16,10 +16,10 @@ class UniversityService {
 private:
     UniversityRepo& repo;  // Reads university data from SQLite
 
-    // Stores all universities in our Vector.
+    // Stores all universities in our vector.
     Vector<University> universities;
 
-    // Stores each university slug and its position in the Vector.
+    // Stores each university slug and its position in the vector.
     HashMap<string, int> universityIndex;
 
 public:
@@ -32,7 +32,7 @@ public:
     // Returns the number of universities.
     int count();
 
-    // Returns all loaded universities (read-only reference, no copy).
+    // Returns all loaded universities (read-only reference).
     const Vector<University>& all() const;
 
     // Finds one university using its unique slug.
